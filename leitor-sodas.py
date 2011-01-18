@@ -93,10 +93,9 @@ class Classe:
 		self.desc = _desc
 
 class Variavel:
-	def __init__(self, _id, _tipo, _desc):
+	def __init__(self, _id, _tipo):
 		self.id = _id
 		self.tipo = _tipo
-		self.desc = _desc
 
 def leitor(filename):
 	f = open(filename, 'rU')
@@ -129,15 +128,15 @@ def leitor(filename):
 	variaveis = []
 	for var_cont in vars_cont:
 		print var_cont
-		variavel = Variavel(var_cont[0], var_cont[1], var_cont[2])
+		variavel = Variavel(var_cont[0], var_cont[1])
 		variaveis.append(variavel)
-	print vars_categ.group()
-#	for var_categ in vars_categ:
-#		print var_categ
+#	print vars_categ.group()
+
+	variavel_nominal = Variavel(vars_categ.group(1), vars_categ.group(2))
+	variaveis.append(variavel_nominal)
 
 	for v in variaveis:
-		print v.id, v.tipo, v.desc
-	
+		print v.id, v.tipo
 
 	classes = []
 	for cls in classes_re:
@@ -147,12 +146,13 @@ def leitor(filename):
 	#for classe in classes:
 	#	print classe.id, classe.desc
 
-	# busca a classificação categórica de cada individuo
-	#class_individuos = re.search(r'RECTANGLE_MATRIX[\s]*=[\w|\W]*DIST_MATRIX[\s]*=', text)
-	#if class_individuos:
-	#	classificacoes = re.findall(r'[\d]', class_individuos.group())
-	#	for classific in classificacoes:
-	#		print classific,
+	# busca os atributos de cada individuo
+	atrib_individuos = re.search(r'(RECTANGLE_MATRIX[\s]*=[\w|\W]*)DIST_MATRIX[\s]*=', text)
+	print atrib_individuos.group(1)
+	if atrib_individuos:		
+		atribs = re.findall(r'[\([\s]*([\d|.]+[\s]*[:|,][\s]*[\d|.]+)[\s]*\)|\((\d)\)|(\d)\)|\((\d)]', atrib_individuos.group(1))
+		for classific in atribs:
+			print classific,
 	
 	numbers = []
 	m = re.search(r'DIST_MATRIX=\s[\w|\W]+END',  text)
@@ -162,7 +162,7 @@ def leitor(filename):
 		print "WARNING: O arquivo nao contem matriz de dissimilaridades"
 		
 	values = []
-	for i in range(len(numbers)):
+	for i in range(len(numbers)):	
 		values.append(float(numbers[i]))
 		
 	dissimilaridades = []	
