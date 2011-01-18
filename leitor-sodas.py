@@ -72,6 +72,9 @@ class Individual:
 	def set_cluster(self, cluster):
 		self.cluster = cluster
 
+	def set_classe_a_priori(self, classe):
+		self.classe_a_priori = classe
+
 class Cluster:
 	def __init__(self, prototipo):
 		self.prototipo = prototipo
@@ -91,11 +94,18 @@ class Classe:
 	def __init__(self, _id, _desc):
 		self.id = _id
 		self.desc = _desc
+		self.objetos = []
+
+	def inserir_objeto(self, obj):
+		self.objetos.append(obj)
 
 class Variavel:
 	def __init__(self, _id, _tipo):
 		self.id = _id
 		self.tipo = _tipo
+	
+	def classe(self, classes):
+		self.classes = classes
 
 def leitor(filename):
 	f = open(filename, 'rU')
@@ -113,7 +123,7 @@ def leitor(filename):
 	# busca a variável categórica na base
 	vs = []
 	var = re.search(r'VARIABLES[\s]*=[\w|\W]*RECTANGLE_MATRIX[\s]*=', text)
-	print var.group()
+	
 	if var:
 		#busca variáveis do tipo inter_cont
 		vars_cont = re.findall(r'([\d]+) ,(inter_cont) ,"" ,"[\w]+" ,"([\w|\/|\_|\(|\)]+)" ,[\d|\.]+, [\d|\.]+, [\d|\.]+, [\d|\.]+', var.group())
@@ -125,41 +135,54 @@ def leitor(filename):
 		if categ:
 			classes_re = re.findall(r'([\d]+)[\s]*,[\s]*"([\w]+)"[\s]*,[\s]*"([\w|\W][^\n]+)"[\s]*,[\d]+', categ.group())
 
-	variaveis = []
-	for var_cont in vars_cont:
-		print var_cont
-		variavel = Variavel(var_cont[0], var_cont[1])
-		variaveis.append(variavel)
-#	print vars_categ.group()
+	#variaveis = []
+	#for var_cont in vars_cont:
+	#	print var_cont
+	#	variavel = Variavel(var_cont[0], var_cont[1])
+	#	variaveis.append(variavel)
 
 	variavel_nominal = Variavel(vars_categ.group(1), vars_categ.group(2))
-	variaveis.append(variavel_nominal)
+	#variaveis.append(variavel_nominal)
 
-	for v in variaveis:
-		print v.id, v.tipo
+	#for v in variaveis:
+	#	print v.id, v.tipo
 
+	# classes a priori de uma variável categórica de classe
 	classes = []
 	for cls in classes_re:
 		classe = Classe(cls[0], cls[2])
 		classes.append(classe)
 
-	#for classe in classes:
-	#	print classe.id, classe.desc
-
 	# busca os atributos de cada individuo
 	atrib_individuos = re.search(r'(RECTANGLE_MATRIX[\s]*=[\w|\W]*)DIST_MATRIX[\s]*=', text)
-	print atrib_individuos.group(1)
+	#print atrib_individuos.group(1)
 	if atrib_individuos:		
-		atribs = re.findall(r'[\([\s]*([\d|.]+[\s]*[:|,][\s]*[\d|.]+)[\s]*\)|\((\d)\)|(\d)\)|\((\d)]', atrib_individuos.group(1))
+		atribs = re.findall(r'[\([\s]*[\d|.]+[\s]*[:|,][\s]*[\d|.]+[\s]*\)|\(\d\)|\d\)|\(\d]', atrib_individuos.group(1))
+		i = 1
+		j = 0
 		for classific in atribs:
-			print classific,
+			if i % int(variavel_nominal.id) == 0:
+				classe_individuo = re.search(r'[\d]+', atribs[i-1])
+				classe_id = classe_individuo.group()				
+				individuals_objects[j].set_classe_a_priori(classe_id)
+				for cls in classes:
+					if cls.id == classe_id:
+						cls.inserir_objeto(individuals_objects[j])
+				j += 1
+			i += 1
+
+
+	for classe in classes:
+		print "\n", classe.id,
+		for obj in classe.objetos:
+			print obj.nome,
 	
 	numbers = []
 	m = re.search(r'DIST_MATRIX=\s[\w|\W]+END',  text)
 	if m:
 		numbers = re.findall(r'[\d]+\.[\d]+', m.group())
 	else:
-		print "WARNING: O arquivo nao contem matriz de dissimilaridades"
+		print "WARNING: O arquivo não contém matriz de dissimilaridades"
 		
 	values = []
 	for i in range(len(numbers)):	
@@ -309,6 +332,7 @@ def calcula_cluster_vencedor(obj, mapa, T, matrizes, c, point1):
 			diss = matriz[int(obj.id)][int(cluster.prototipo.id)]
 			sum2 += diss
 			
+
 		sum1 += ( ( math.exp ( (-1) * ( delta(point1, point2) / denom ) ) ) * sum2 )
 		
 	return sum1
@@ -337,6 +361,10 @@ def calcula_energia(mapa, objetos, matrizes, T):
 		energia += sum1
 
 	return energia
+
+def combinacao(n):
+	resultado = (n * (n - 1)) / 2
+	return resultado
 		
 def main():
 	args = sys.argv[1:]
@@ -449,6 +477,79 @@ def main():
 				text.append(str(objeto.nome))
 	
 	energia = calcula_energia(mapa, individuals, matrizes, T)
+
+	no_clusters_completos = 0
+	for cluster in mapa.flat:
+		if len(cluster.objetos) > 0:
+			no_clusters_completos += 1
+
+	confusion_matrix = np.zeros( (len(classes_a_priori),no_clusters_completos), dtype=np.int32 )
+	i = 0
+	for classe in classes_a_priori:
+		j = 0
+		for cluster in mapa.flat:
+			if len(cluster.objetos) > 0:
+				for obj in classe.objetos:
+					if obj in cluster.objetos:
+						confusion_matrix[i,j] += 1
+				j += 1
+		i += 1
+	
+	for n in confusion_matrix:
+		print n,
+	
+
+	print "\n====================================="
+	print "\n\tmatriz de confusão"
+	print "Classes\t\t\t Clusters"
+	print "---------------------------------------"
+	print "\t",
+	for cluster in mapa.flat:
+		if len(cluster.objetos) > 0:
+			print cluster.prototipo.nome, "\t",
+	print "Total"
+	print "\n"
+	i = 0
+	for classe in classes_a_priori:	
+		print classe.id, "\t", 
+		for j in range(no_clusters_completos):
+			print confusion_matrix[i,j], "\t\t\t",
+		print confusion_matrix[i,:].sum(axis=0)
+		i+=1
+	
+	print "Total", "\t", confusion_matrix.sum(axis=0)
+		
+
+	##########################################################################################
+	# Cálculo do índice de Rand Corrigido 
+
+	# Cálculo do numerador
+	soma1 = 0
+	for m in range(len(classes_a_priori)):
+		for k in range(no_clusters_completos):
+			soma1 += combinacao(confusion_matrix[m,k]) - math.pow( combinacao(len(individuals)), -1)
+
+	soma2 = 0
+	for m in range(len(classes_a_priori)):
+		soma2 += combinacao(confusion_matrix[m,:].sum(axis=0))
+
+	soma3 = 0
+	for k in range(no_clusters_completos):
+		soma3 += combinacao(confusion_matrix[:,k].sum(axis=0))
+
+	numerador_cr = soma1 * soma2 * soma3
+
+	# Cálculo do denominador
+	fator1 = ((0.5) * (soma2 + soma3)) - math.pow( combinacao(len(individuals)), -1)
+
+	denominador_cr = fator1 * soma2 * soma3
+
+	cr = numerador_cr / denominador_cr
+
+	print "####################"
+	print "Corrected Rand index"
+	print cr, "\n"
+
 	
 	text.append("\nEnergia: " + str(energia))
 	
@@ -464,6 +565,6 @@ def main():
 	# text = '\n'.join(dissimilaridades_txt)
 	# dados.write(text + '\n')
 	# dados.close()
-	
+
 if __name__ == '__main__':
 	main()
