@@ -1,0 +1,27 @@
+numero_variaveis:  14
+Parâmetros iniciais
+
+Topologia:  2  x  3
+Cardinalidade (q):  1
+Tmin:  0.4 Tmax:  3
+Critério de adequação (energia):  100711.536007
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Ageneiosusbrevifili 	Pseudoancistrusbarbatus 	Cynodongibbus 	Total
+
+
+1 	3 			0 			1 			4
+2 	3 			1 			0 			4
+3 	0 			2 			0 			2
+4 	0 			2 			0 			2
+Total 	[6 5 1]
+####################
+Corrected Rand index
+0.401244167963 
+
+F-measure(P,Q):  0.6
+OERC:  0.5
