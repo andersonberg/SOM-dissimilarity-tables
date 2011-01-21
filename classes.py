@@ -81,6 +81,21 @@ class Cluster:
 		if obj in self.objetos:
 			self.objetos.remove(obj)
 
+	def __eq__(self, other):
+		if self.point.x == other.point.x and self.point.y == other.point.y and self.prototipo.nome == other.prototipo.nome:
+			return True
+		else:
+			return False
+			
+	def __ne__(self, other):
+		if self.prototipo.nome != other.prototipo.nome and self.point.x != other.point.x and self.point.y != other.point.y:
+			return True
+		else:
+			return False
+
+	def __hash__(self):
+		return id(self)
+
 class Classe:
 	def __init__(self, _id, _desc):
 		self.id = _id
