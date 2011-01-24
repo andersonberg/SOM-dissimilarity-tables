@@ -10,6 +10,7 @@ import pdb
 from operator import itemgetter, attrgetter
 from classes import *
 from leitor_sodas import *
+from datetime import *
 
 def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, individuals):
 
@@ -135,8 +136,12 @@ def main():
 	
 	#Lê mais de um arquivo sodas
 	for filename in args:
+		filename_base = re.search(r'/([\w]+)[\w|\d|\W]+[\.sds]', filename)
+
 		dissimilaridades, individuals_objects, classes_a_priori = leitor(filename)
 		matrizes.append(dissimilaridades)
+
+	nome_base = filename_base.group(1)
 		
 	#Etapa de inicialização
 	print "Parâmetros iniciais\n"
@@ -151,7 +156,7 @@ def main():
 	t_min = 0.4
 	t_max = 6.0
 	print "Tmin: ", t_min, "Tmax: ", t_max
-	n_iter = 1000.0
+	n_iter = 10.0
 	T = t_max
 	(mapa, prototipos, individuals) = inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, individuals_objects)
 	
@@ -296,8 +301,11 @@ def main():
 
 
 	text.append("\nEnergia: " + str(energia))
-	
-	resultado = open("clusters.txt", 'w')
+
+	hoje = date.today()
+	filename_result = "clusters-" + nome_base + str(hoje.day) + "0" + str(hoje.month) + str(hoje.year) + ".txt"
+
+	resultado = open(filename_result, 'w')
 	txt = ' '.join(text)
 	resultado.write(txt + '\n')
 	resultado.close()
