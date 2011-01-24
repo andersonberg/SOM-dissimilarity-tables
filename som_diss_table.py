@@ -119,6 +119,60 @@ def calcula_criterio(obj, mapa, T, matrizes, point1):
 
 	return sum1
 
+def atualiza_particao(individuals, mapa, T, matrizes):
+	for objeto in individuals:
+		cluster_atual = objeto.cluster
+		criterios = {}
+		#print "\n### Definindo cluster do objeto: ", objeto.indice, objeto.nome, " ###"
+		for cluster in mapa.flat:
+			point1 = Point(cluster.point.x, cluster.point.y)
+			criterio = calcula_criterio(objeto, mapa, T, matrizes, point1)
+			criterios[ cluster ] = criterio				
+			#criterios[ point1 ] = criterio
+
+		(menor_criterio_cluster, menor_criterio) = min(criterios.items(), key=lambda x: x[1])
+		#print "Menor criterio: ", menor_criterio_cluster.point.x, menor_criterio_cluster.point.y, menor_criterio_cluster.prototipo.nome, id(menor_criterio_cluster)
+		#print "Cluster atual: ", cluster_atual.point.x, cluster_atual.point.y, cluster_atual.prototipo.nome, id(cluster_atual)
+
+		#sorted_criterios = sorted(criterios.items(), key=lambda x: x[1])
+			
+		#sorted_criterios = sorted(criterios.items(), key=itemgetter(1,0))
+		#(menor_criterio_cluster, menor_criterio) = mapa[sorted_criterios[0][0].x, sorted_criterios[0][0].y], sorted_criterios[0][1]
+			
+		if menor_criterio_cluster.point != cluster_atual.point:
+		#Insere o objeto no cluster de menor critério
+			mapa[menor_criterio_cluster.point.x, menor_criterio_cluster.point.y].inserir_objeto(objeto)
+			objeto.set_cluster(mapa[menor_criterio_cluster.point.x, menor_criterio_cluster.point.y])
+			mapa[cluster_atual.point.x, cluster_atual.point.y].remover_objeto(objeto)
+
+			#print "### Alteracao de cluster ###"
+			#print "Novo Cluster: ", menor_criterio_cluster.point.x, menor_criterio_cluster.point.y, menor_criterio_cluster.prototipo.nome,
+			#print "Objetos: ",
+			#for obj in menor_criterio_cluster.objetos:
+			#	print obj.nome,
+
+			#print "\nAntigo Cluster: ", cluster_atual.point.x, cluster_atual.point.y, cluster_atual.prototipo.nome,
+			#print "Objetos: ",
+			#for obj in cluster_atual.objetos:
+			#	print obj.nome,
+
+			#print
+
+			#menor_criterio_cluster.inserir_objeto(objeto)
+			#cluster_atual.remover_objeto(objeto)
+			#objeto.cluster = menor_criterio_cluster
+			
+	for cluster1 in mapa.flat:
+		for cluster2 in mapa.flat:
+			if cluster1.point != cluster2.point and cluster1.prototipo.nome == cluster2.prototipo.nome:
+				if cluster1.point < cluster2.point:
+					for obj in cluster2.objetos:
+						cluster1.objetos.append(obj)
+						obj.cluster = cluster1
+					cluster2.objetos = []
+
+return mapa, individuals
+
 def delta(point1, point2):
 	dist = float(np.square(point1.x - point2.x) + np.square(point1.y - point2.y))
 	#dist = math.fabs(point1.x - point2.x) + math.fabs(point1.y - point2.y)
@@ -144,20 +198,24 @@ def main():
 	nome_base = filename_base.group(1)
 		
 	#Etapa de inicialização
-	print "Parâmetros iniciais\n"
+	
 	t = 0.0
 	# c = 9
 	mapa_x = 3
 	mapa_y = 2
-	print "Topologia: ", mapa_x, " x ", mapa_y
 	c = mapa_x * mapa_y
 	q = 1
-	print "Cardinalidade (q): ", q
 	t_min = 0.4
 	t_max = 6.0
-	print "Tmin: ", t_min, "Tmax: ", t_max
-	n_iter = 10.0
+	n_iter = 500.0
 	T = t_max
+
+	print "Parâmetros iniciais\n"
+	print "Topologia: ", mapa_x, " x ", mapa_y
+	print "Cardinalidade (q): ", q
+	print "Tmin: ", t_min, "Tmax: ", t_max
+
+	#Inicialização
 	(mapa, prototipos, individuals) = inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, individuals_objects)
 	
 	text = []
@@ -185,57 +243,9 @@ def main():
 				
 		#Step 2: definition of the best partition
 			
-		for objeto in individuals:
-			cluster_atual = objeto.cluster
-			criterios = {}
-			#print "\n### Definindo cluster do objeto: ", objeto.indice, objeto.nome, " ###"
-			for cluster in mapa.flat:
-				point1 = Point(cluster.point.x, cluster.point.y)
-				criterio = calcula_criterio(objeto, mapa, T, matrizes, point1)
-				criterios[ cluster ] = criterio				
-				#criterios[ point1 ] = criterio
+		mapa, individuals = atualiza_particao(individuals, mapa, T, matrizes)
 
-			(menor_criterio_cluster, menor_criterio) = min(criterios.items(), key=lambda x: x[1])
-			#print "Menor criterio: ", menor_criterio_cluster.point.x, menor_criterio_cluster.point.y, menor_criterio_cluster.prototipo.nome, id(menor_criterio_cluster)
-			#print "Cluster atual: ", cluster_atual.point.x, cluster_atual.point.y, cluster_atual.prototipo.nome, id(cluster_atual)
-
-			#sorted_criterios = sorted(criterios.items(), key=lambda x: x[1])
-			
-			#sorted_criterios = sorted(criterios.items(), key=itemgetter(1,0))
-			#(menor_criterio_cluster, menor_criterio) = mapa[sorted_criterios[0][0].x, sorted_criterios[0][0].y], sorted_criterios[0][1]
-			
-			if menor_criterio_cluster.point != cluster_atual.point:
-				#Insere o objeto no cluster de menor critério
-				mapa[menor_criterio_cluster.point.x, menor_criterio_cluster.point.y].inserir_objeto(objeto)
-				objeto.set_cluster(mapa[menor_criterio_cluster.point.x, menor_criterio_cluster.point.y])
-				mapa[cluster_atual.point.x, cluster_atual.point.y].remover_objeto(objeto)
-
-				#print "### Alteracao de cluster ###"
-				#print "Novo Cluster: ", menor_criterio_cluster.point.x, menor_criterio_cluster.point.y, menor_criterio_cluster.prototipo.nome,
-				#print "Objetos: ",
-				#for obj in menor_criterio_cluster.objetos:
-				#	print obj.nome,
-
-				#print "\nAntigo Cluster: ", cluster_atual.point.x, cluster_atual.point.y, cluster_atual.prototipo.nome,
-				#print "Objetos: ",
-				#for obj in cluster_atual.objetos:
-				#	print obj.nome,
-
-				#print
-
-				#menor_criterio_cluster.inserir_objeto(objeto)
-				#cluster_atual.remover_objeto(objeto)
-				#objeto.cluster = menor_criterio_cluster
-			
-		for cluster1 in mapa.flat:
-			for cluster2 in mapa.flat:
-				if cluster1.point != cluster2.point and cluster1.prototipo.nome == cluster2.prototipo.nome:
-					if cluster1.point < cluster2.point:
-						for obj in cluster2.objetos:
-							cluster1.objetos.append(obj)
-							obj.cluster = cluster1
-						cluster2.objetos = []
-
+		#Calcula critério de adequação a cada iteração
 		energia = calcula_energia(mapa, individuals, matrizes, T)
 
 		print "Criterio de adequacao (energia): ", energia
