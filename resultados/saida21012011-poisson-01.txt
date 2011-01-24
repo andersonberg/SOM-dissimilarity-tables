@@ -1,0 +1,65 @@
+numero_variaveis:  14
+Parâmetros iniciais
+
+Topologia:  2  x  3
+Cardinalidade (q):  1
+Tmin:  0.4 Tmax:  6
+#########################################################
+			Inicializacao
+
+>>> Objeto:  Ageneiosusbrevifili
+Menor criterio:  97162.5283219 Dorasmicropoeus 1 0
+
+>>> Objeto:  Cynodongibbus
+Menor criterio:  195534.401803 Cynodongibbus 0 2
+
+>>> Objeto:  Hopliasa�mara
+Menor criterio:  99453.1750019 Dorasmicropoeus 1 0
+
+>>> Objeto:  Potamotrygonhystrix
+Menor criterio:  79155.2244069 Dorasmicropoeus 1 0
+
+>>> Objeto:  Leporinusfasciatus
+Menor criterio:  100248.332161 Dorasmicropoeus 1 0
+
+>>> Objeto:  Leporinusfrederici
+Menor criterio:  104410.066108 Dorasmicropoeus 1 0
+
+>>> Objeto:  Dorasmicropoeus
+Menor criterio:  73046.8242533 Dorasmicropoeus 1 0
+
+>>> Objeto:  Platydorascostatus
+Menor criterio:  78542.6870762 Dorasmicropoeus 1 0
+
+>>> Objeto:  Pseudoancistrusbarbatus
+Menor criterio:  107027.635218 Dorasmicropoeus 1 0
+
+>>> Objeto:  Semaprochilodusvari
+Menor criterio:  117809.927238 Dorasmicropoeus 1 0
+
+>>> Objeto:  Acnodonoligacanthus
+Menor criterio:  107768.614825 Dorasmicropoeus 1 0
+
+>>> Objeto:  Myleusrubripinis
+Menor criterio:  110980.994446 Dorasmicropoeus 1 0
+Critério de adequação (energia):  68895.4603543
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Dorasmicropoeus 	Acnodonoligacanthus 	Cynodongibbus 	Ageneiosusbrevifili 	Potamotrygonhystrix 	Total
+
+
+1 	1 			0 			1 			1 			1 			4
+2 	1 			1 			0 			1 			1 			4
+3 	0 			2 			0 			0 			0 			2
+4 	0 			2 			0 			0 			0 			2
+Total 	[2 5 1 2 2]
+####################
+Corrected Rand index
+0.125842696629 
+
+F-measure(P,Q):  0.571428571429
+OERC:  0.5
