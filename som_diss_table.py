@@ -20,7 +20,7 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, individuals):
 	i = 0
 	while i < c:
 		prot = random.choice(individuals)
-		novo_prototipo = Individual(prot.id, prot.id2, prot.nome)
+		novo_prototipo = Individual(prot.indice, prot.id2, prot.nome)
 		if not novo_prototipo in prototipos:
 			prototipos.append(novo_prototipo)
 			cluster = Cluster(novo_prototipo)
@@ -29,7 +29,6 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, individuals):
 	
 	#criando uma matriz com numpy
 	mapa = np.array(clusters)
-	# mapa.shape = (int(np.sqrt(c)), int(np.sqrt(c)))
 	mapa.shape = (mapa_x, mapa_y)
 	
 	#define as coordenadas de cada cluster no mapa
@@ -37,22 +36,22 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, individuals):
 		for j in range(len(mapa[i])):
 			mapa[i,j].definir_ponto(i,j)
 		
-	print "#########################################################"
-	print "\t\t\tInicializacao"
+	#print "#########################################################"
+	#print "\t\t\tInicializacao"
 			
 	for objeto in individuals:
-		print "\n>>> Objeto: ", objeto.nome
+		#print "\n>>> Objeto: ", objeto.nome
 		criterios = {}
 		for cluster in mapa.flat:
 			#print "Coordenada: ", cluster.point.x, cluster.point.y, " Prototipo: ", cluster.prototipo.nome
 			point1 = Point(cluster.point.x, cluster.point.y)
-			criterio = calcula_criterio(objeto, mapa, T, matrizes, c, point1)
+			criterio = calcula_criterio(objeto, mapa, T, matrizes, point1)
 			#print "Cluster: ", cluster.point.x, cluster.point.y, "Prototipo: ", cluster.prototipo.nome, "Criterio: ", criterio, "\n"
 			criterios[ cluster ] = criterio
 	
 		
 		(menor_criterio_cluster, menor_criterio) = min(criterios.items(), key=lambda x: x[1])
-		print "Menor criterio: ", menor_criterio, menor_criterio_cluster.prototipo.nome, menor_criterio_cluster.point.x, menor_criterio_cluster.point.y
+		#print "Menor criterio: ", menor_criterio, menor_criterio_cluster.prototipo.nome, menor_criterio_cluster.point.x, menor_criterio_cluster.point.y
 
 		#Insere o objeto no cluster de menor critério
 		mapa[menor_criterio_cluster.point.x, menor_criterio_cluster.point.y].inserir_objeto(objeto)
@@ -68,42 +67,51 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, individuals):
 			
 	return mapa, prototipos, individuals
 	
-def calcula_melhor_prototipo(objetos, mapa, T, matrizes, point2):
+def calcula_prototipo(objeto_alvo, objetos, mapa, T, matrizes, point2):
 
-	somas = {}
-	denom = (2 * math.pow(T,2))
+	#somas = {}
+	denom = 2. * math.pow(T,2)
 	sum1 = 0.0
-	for obj in objetos:	
-		for cluster in mapa.flat:
-			point1 = Point(obj.cluster.point.x, obj.cluster.point.y)
-			sum2 = 0
-			for matriz in matrizes:
-				diss = matriz[int(obj.id)][int(mapa[point2.x,point2.y].prototipo.id)]
-				sum2 += diss
-			
-			sum1 += ( ( math.exp ( (-1) * ( delta(point1, point2) / denom ) ) ) * sum2 )
-					
-		somas[obj] = sum1
+	for obj in objetos:
+		point1 = Point(obj.cluster.point.x, obj.cluster.point.y)
+		sum2 = 0
+		for matriz in matrizes:
+			diss = matriz[int(obj.indice)][int(objeto_alvo.indice)]
+			sum2 += diss
 		
-	(menor_criterio_obj, menor_criterio) = min(somas.items(), key=lambda x: x[1])
+		sum1 += ( ( math.exp ( (-1) * ( delta(point1, point2) / denom ) ) ) * sum2 )
 						
-	return menor_criterio_obj, menor_criterio
+	return sum1
+
+def atualiza_prototipo(mapa, individuals, T, matrizes):
+	for cluster in mapa.flat:
+		if len(cluster.objetos) > 0:
+			somas = {}
+			point2 = Point(cluster.point.x, cluster.point.y)
+			for obj in individuals:
+				menor_criterio_sum = calcula_prototipo(obj, individuals, mapa, T, matrizes, point2)
+				somas[obj] = menor_criterio_sum
 	
-def calcula_criterio(obj, mapa, T, matrizes, c, point1):
+			(menor_criterio_obj, menor_criterio) = min(somas.items(), key=lambda x: x[1])
+
+			novo_prototipo = Individual(menor_criterio_obj.indice, menor_criterio_obj.id2, menor_criterio_obj.nome)
+			cluster.prototipo = novo_prototipo
+
+	return mapa
 	
-	denom = (2 * math.pow(T,2))
+def calcula_criterio(obj, mapa, T, matrizes, point1):
+	
+	denom = 2. * math.pow(T,2)
 	sum1 = 0.0
 	for cluster in mapa.flat:
 		point2 = Point(cluster.point.x, cluster.point.y)
-		sum2 = 0
+		sum2 = 0.0
 		
 		for matriz in matrizes:
-			diss = matriz[int(obj.id)][int(cluster.prototipo.id)]
+			diss = matriz[int(obj.indice)][int(cluster.prototipo.indice)]
 			sum2 += diss
-
-		#print "Dissimilaridade entre ", int(obj.id), " e ", int(cluster.prototipo.id), ": ", sum2
 		
-		kernel = math.exp ( (-1) * ( delta(point1, point2) / denom ) )
+		kernel = math.exp ( (-1.) * ( delta(point1, point2) / denom ) )
 		#print "Kernel: ", kernel
 		sum1 += ( kernel  * sum2 )
 		#print "Criterio: ", sum1
@@ -111,11 +119,197 @@ def calcula_criterio(obj, mapa, T, matrizes, c, point1):
 	return sum1
 
 def delta(point1, point2):
-	dist = np.square(point1.x - point2.x) + np.square(point1.y - point2.y)
+	dist = float(np.square(point1.x - point2.x) + np.square(point1.y - point2.y))
 	#dist = math.fabs(point1.x - point2.x) + math.fabs(point1.y - point2.y)
 	#print "distancia(", point1.x, point1.y, ";", point2.x, point2.y, ") = ", dist
-	return dist
+	return dist			
 	
+def main():
+	args = sys.argv[1:]
+	
+	if not args:
+		print 'usage: files'
+		sys.exit(1)
+	
+	matrizes = []
+	
+	#Lê mais de um arquivo sodas
+	for filename in args:
+		dissimilaridades, individuals_objects, classes_a_priori = leitor(filename)
+		matrizes.append(dissimilaridades)
+		
+	#Etapa de inicialização
+	print "Parâmetros iniciais\n"
+	t = 0.0
+	# c = 9
+	mapa_x = 3
+	mapa_y = 2
+	print "Topologia: ", mapa_x, " x ", mapa_y
+	c = mapa_x * mapa_y
+	q = 1
+	print "Cardinalidade (q): ", q
+	t_min = 0.4
+	t_max = 6.0
+	print "Tmin: ", t_min, "Tmax: ", t_max
+	n_iter = 1000.0
+	T = t_max
+	(mapa, prototipos, individuals) = inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, individuals_objects)
+	
+	text = []
+	
+	text.append("Topologia: " + str(mapa_x) + " x " + str(mapa_y))
+	
+	text.append("\n>>>>>> Iteracao 0 <<<<<<<<")
+	for cluster in mapa.flat:
+		text.append("\nCluster (prototipo): " + str(cluster.prototipo.nome) + "\n")
+		text.append("Objetos:\n")
+		for objeto in cluster.objetos:
+			text.append(str(objeto.nome))
+	
+	while T > t_min:
+	# while t < (n_iter - 1):
+		#Step 1: computation of the best prototypes
+		t += 1.0
+		
+		text.append("\n\n>>>>>>Iteracao " + str(t) + " <<<<<<<<")
+		# print ">>>>>>Iteracao ", t, "<<<<<<<<"
+		
+		T = t_max * math.pow( (t_min / t_max), (t / (n_iter - 1.0)) )
+		
+		mapa = atualiza_prototipo(mapa, individuals, T, matrizes)
+				
+		#Step 2: definition of the best partition
+			
+		for objeto in individuals:
+			cluster_atual = objeto.cluster
+			criterios = {}
+			#print "\n### Definindo cluster do objeto: ", objeto.indice, objeto.nome, " ###"
+			for cluster in mapa.flat:
+				point1 = Point(cluster.point.x, cluster.point.y)
+				criterio = calcula_criterio(objeto, mapa, T, matrizes, point1)
+				criterios[ cluster ] = criterio				
+				#criterios[ point1 ] = criterio
+
+			(menor_criterio_cluster, menor_criterio) = min(criterios.items(), key=lambda x: x[1])
+			#print "Menor criterio: ", menor_criterio_cluster.point.x, menor_criterio_cluster.point.y, menor_criterio_cluster.prototipo.nome, id(menor_criterio_cluster)
+			#print "Cluster atual: ", cluster_atual.point.x, cluster_atual.point.y, cluster_atual.prototipo.nome, id(cluster_atual)
+
+			#sorted_criterios = sorted(criterios.items(), key=lambda x: x[1])
+			
+			#sorted_criterios = sorted(criterios.items(), key=itemgetter(1,0))
+			#(menor_criterio_cluster, menor_criterio) = mapa[sorted_criterios[0][0].x, sorted_criterios[0][0].y], sorted_criterios[0][1]
+			
+			if menor_criterio_cluster.point != cluster_atual.point:
+				#Insere o objeto no cluster de menor critério
+				mapa[menor_criterio_cluster.point.x, menor_criterio_cluster.point.y].inserir_objeto(objeto)
+				objeto.set_cluster(mapa[menor_criterio_cluster.point.x, menor_criterio_cluster.point.y])
+				mapa[cluster_atual.point.x, cluster_atual.point.y].remover_objeto(objeto)
+
+				#print "### Alteracao de cluster ###"
+				#print "Novo Cluster: ", menor_criterio_cluster.point.x, menor_criterio_cluster.point.y, menor_criterio_cluster.prototipo.nome,
+				#print "Objetos: ",
+				#for obj in menor_criterio_cluster.objetos:
+				#	print obj.nome,
+
+				#print "\nAntigo Cluster: ", cluster_atual.point.x, cluster_atual.point.y, cluster_atual.prototipo.nome,
+				#print "Objetos: ",
+				#for obj in cluster_atual.objetos:
+				#	print obj.nome,
+
+				#print
+
+				#menor_criterio_cluster.inserir_objeto(objeto)
+				#cluster_atual.remover_objeto(objeto)
+				#objeto.cluster = menor_criterio_cluster
+			
+		for cluster1 in mapa.flat:
+			for cluster2 in mapa.flat:
+				if cluster1.point != cluster2.point and cluster1.prototipo.nome == cluster2.prototipo.nome:
+					if cluster1.point < cluster2.point:
+						for obj in cluster2.objetos:
+							cluster1.objetos.append(obj)
+							obj.cluster = cluster1
+						cluster2.objetos = []
+
+		energia = calcula_energia(mapa, individuals, matrizes, T)
+
+		print "Criterio de adequacao (energia): ", energia
+
+		for cluster in mapa.flat:
+			# print "\nCluster (prototipo): ", cluster.prototipo.nome 
+			text.append("\n\nCluster " + str(cluster.point.x) + "," + str(cluster.point.y) + " Prototipo: " + str(cluster.prototipo.nome) +
+			" [" + str(len(cluster.objetos)) + " objetos]\n")
+			# print "Objetos:"
+			text.append("Objetos: ")
+			for objeto in cluster.objetos:
+				# print objeto.nome
+				text.append(str(objeto.nome))
+
+	no_clusters_completos = 0
+	for cluster in mapa.flat:
+		if len(cluster.objetos) > 0:
+			no_clusters_completos += 1
+	
+	energia = calcula_energia(mapa, individuals, matrizes, T)
+
+	print "Criterio de adequacao (energia): ", energia
+
+	########################################
+	#Calcula a matrix de confusão #
+	confusion_matrix = calcula_confusion_matrix(mapa, classes_a_priori, no_clusters_completos)
+		
+
+	##########################################################################################
+	# Cálculo do índice de Rand Corrigido #
+	no_objetos = len(individuals)
+	cr = calcula_cr(confusion_matrix, classes_a_priori, no_clusters_completos, no_objetos)	
+	
+	
+	##########################################################
+	# Cálculo da precisão #
+	precisao_matrix = calcula_precisao(confusion_matrix, classes_a_priori, no_clusters_completos)
+	#print precisao_matrix
+
+	###########################################################
+	# Cálculo do recall #
+	recall_matrix =	calcula_recall(confusion_matrix, classes_a_priori, no_clusters_completos)
+	#print recall_matrix
+
+	###########################################################
+	# Cálculo do f_measure #
+
+	len_cls_priori = len(classes_a_priori)
+	f_measure_matrix = calcula_f_measure(precisao_matrix, recall_matrix, len_cls_priori, no_clusters_completos)
+	#print f_measure_matrix
+
+	soma2 = 0
+	for i in range(len(classes_a_priori)):
+		soma2 += confusion_matrix[i,:].sum(axis=0)
+
+	f_measure = float(soma2 / no_objetos) * f_measure_matrix.max()
+	print "F-measure(P,Q): ", f_measure
+
+	###########################################################
+	# Cálculo do oerc (taxa de erro de classificação global) #
+	oerc = calcula_oerc(confusion_matrix, no_clusters_completos, no_objetos)
+	print "OERC: ", oerc
+
+
+	text.append("\nEnergia: " + str(energia))
+	
+	resultado = open("clusters.txt", 'w')
+	txt = ' '.join(text)
+	resultado.write(txt + '\n')
+	resultado.close()
+	# dissimilaridades_txt = []
+	# for dissimilaridade in dissimilaridades:
+		# dissimilaridades_txt.append(str(dissimilaridade) + " " + str(len(dissimilaridade)))
+	
+	# dados = open("matriz.txt", 'w')
+	# text = '\n'.join(dissimilaridades_txt)
+	# dados.write(text + '\n')
+	# dados.close()
+
 def calcula_energia(mapa, objetos, matrizes, T):
 	
 	energia = 0
@@ -128,7 +322,7 @@ def calcula_energia(mapa, objetos, matrizes, T):
 			point2 = Point(cluster.point.x, cluster.point.y)
 			sum2 = 0
 			for matriz in matrizes:
-				diss = matriz[int(obj.id)][int(cluster.prototipo.id)]
+				diss = matriz[int(obj.indice)][int(cluster.prototipo.indice)]
 				sum2 += diss
 				
 			sum1 += ( ( math.exp ( (-1) * ( delta(point1, point2) / denom ) ) ) * sum2 )
@@ -255,179 +449,6 @@ def calcula_oerc(confusion_matrix, len_clusters_comp, len_objetos):
 	resultado = 1. - (float(soma) / float(len_objetos))
 
 	return resultado
-			
-	
-def main():
-	args = sys.argv[1:]
-	
-	if not args:
-		print 'usage: files'
-		sys.exit(1)
-	
-	matrizes = []
-	
-	#Lê mais de um arquivo sodas
-	for filename in args:
-		dissimilaridades, individuals_objects, classes_a_priori = leitor(filename)
-		matrizes.append(dissimilaridades)
-		
-	#Etapa de inicialização
-	print "Parâmetros iniciais\n"
-	t = 0
-	# c = 9
-	mapa_x = 2
-	mapa_y = 3
-	print "Topologia: ", mapa_x, " x ", mapa_y
-	c = mapa_x * mapa_y
-	q = 1
-	print "Cardinalidade (q): ", q
-	t_min = 0.4
-	t_max = 6
-	print "Tmin: ", t_min, "Tmax: ", t_max
-	n_iter = 500
-	T = t_max
-	(mapa, prototipos, individuals) = inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, individuals_objects)
-	
-	text = []
-	
-	text.append("Topologia: " + str(mapa_x) + " x " + str(mapa_y))
-	
-	text.append("\n>>>>>> Iteracao 0 <<<<<<<<")
-	for cluster in mapa.flat:
-		text.append("\nCluster (prototipo): " + str(cluster.prototipo.nome) + "\n")
-		text.append("Objetos:\n")
-		for objeto in cluster.objetos:
-			text.append(str(objeto.nome))
-	
-	while T > t_min:
-	# while t < (n_iter - 1):
-		#Step 1: computation of the best prototypes
-		t += 1
-		
-		text.append("\n\n>>>>>>Iteracao " + str(t) + " <<<<<<<<")
-		# print ">>>>>>Iteracao ", t, "<<<<<<<<"
-		
-		T = t_max * math.pow( (t_min / t_max), (t / (n_iter - 1)) )
-		
-		for cluster in mapa.flat:
-			point2 = Point(cluster.point.x, cluster.point.y)
-			menor_criterio_obj, menor_criterio = calcula_melhor_prototipo(individuals, mapa, T, matrizes, point2)
-			if len(cluster.objetos) != 0:
-				cluster.prototipo = menor_criterio_obj
-				
-		#Step 2: definition of the best partition
-			
-		for objeto in individuals:
-			cluster_atual = objeto.cluster
-			criterios = {}
-			
-			for cluster in mapa.flat:
-				point1 = Point(cluster.point.x, cluster.point.y)
-				criterio = calcula_criterio(objeto, mapa, T, matrizes, c, point1)
-				criterios[ cluster ] = criterio				
-				#criterios[ point1 ] = criterio
-
-			(menor_criterio_cluster, menor_criterio) = min(criterios.items(), key=lambda x: x[1])
-			print "Menor criterio: ", menor_criterio, menor_criterio_cluster.prototipo.nome, menor_criterio_cluster.point.x, menor_criterio_cluster.point.y		
-
-			#sorted_criterios = sorted(criterios.items(), key=lambda x: x[1])
-			
-			#sorted_criterios = sorted(criterios.items(), key=itemgetter(1,0))
-			#(menor_criterio_cluster, menor_criterio) = mapa[sorted_criterios[0][0].x, sorted_criterios[0][0].y], sorted_criterios[0][1]
-			
-			if menor_criterio_cluster != cluster_atual:
-				#Insere o objeto no cluster de menor critério
-				mapa[menor_criterio_cluster.point.x, menor_criterio_cluster.point.y].inserir_objeto(objeto)
-				objeto.set_cluster(mapa[menor_criterio_cluster.point.x, menor_criterio_cluster.point.y])
-				mapa[cluster_atual.point.x, cluster_atual.point.y].remover_objeto(objeto)
-
-				#menor_criterio_cluster.inserir_objeto(objeto)
-				#cluster_atual.remover_objeto(objeto)
-				#objeto.cluster = menor_criterio_cluster
-			
-		for cluster1 in mapa.flat:
-			for cluster2 in mapa.flat:
-				if cluster1 != cluster2 and cluster1.prototipo.nome == cluster2.prototipo.nome:
-					if cluster1.point < cluster2.point:
-						for obj in cluster2.objetos:
-							cluster1.objetos.append(obj)
-							obj.cluster = cluster1
-						cluster2.objetos = []
-
-		for cluster in mapa.flat:
-			# print "\nCluster (prototipo): ", cluster.prototipo.nome 
-			text.append("\n\nCluster " + str(cluster.point.x) + "," + str(cluster.point.y) + " Prototipo: " + str(cluster.prototipo.nome) +
-			" [" + str(len(cluster.objetos)) + " objetos]\n")
-			# print "Objetos:"
-			text.append("Objetos: ")
-			for objeto in cluster.objetos:
-				# print objeto.nome
-				text.append(str(objeto.nome))
-
-	no_clusters_completos = 0
-	for cluster in mapa.flat:
-		if len(cluster.objetos) > 0:
-			no_clusters_completos += 1
-	
-	energia = calcula_energia(mapa, individuals, matrizes, T)
-
-	print "Critério de adequação (energia): ", energia
-
-	########################################
-	#Calcula a matrix de confusão #
-	confusion_matrix = calcula_confusion_matrix(mapa, classes_a_priori, no_clusters_completos)
-		
-
-	##########################################################################################
-	# Cálculo do índice de Rand Corrigido #
-	no_objetos = len(individuals)
-	cr = calcula_cr(confusion_matrix, classes_a_priori, no_clusters_completos, no_objetos)	
-	
-	
-	##########################################################
-	# Cálculo da precisão #
-	precisao_matrix = calcula_precisao(confusion_matrix, classes_a_priori, no_clusters_completos)
-	#print precisao_matrix
-
-	###########################################################
-	# Cálculo do recall #
-	recall_matrix =	calcula_recall(confusion_matrix, classes_a_priori, no_clusters_completos)
-	#print recall_matrix
-
-	###########################################################
-	# Cálculo do f_measure #
-
-	len_cls_priori = len(classes_a_priori)
-	f_measure_matrix = calcula_f_measure(precisao_matrix, recall_matrix, len_cls_priori, no_clusters_completos)
-	#print f_measure_matrix
-
-	soma2 = 0
-	for i in range(len(classes_a_priori)):
-		soma2 += confusion_matrix[i,:].sum(axis=0)
-
-	f_measure = float(soma2 / no_objetos) * f_measure_matrix.max()
-	print "F-measure(P,Q): ", f_measure
-
-	###########################################################
-	# Cálculo do oerc (taxa de erro de classificação global) #
-	oerc = calcula_oerc(confusion_matrix, no_clusters_completos, no_objetos)
-	print "OERC: ", oerc
-
-
-	text.append("\nEnergia: " + str(energia))
-	
-	resultado = open("resultados.txt", 'w')
-	txt = ' '.join(text)
-	resultado.write(txt + '\n')
-	resultado.close()
-	# dissimilaridades_txt = []
-	# for dissimilaridade in dissimilaridades:
-		# dissimilaridades_txt.append(str(dissimilaridade) + " " + str(len(dissimilaridade)))
-	
-	# dados = open("matriz.txt", 'w')
-	# text = '\n'.join(dissimilaridades_txt)
-	# dados.write(text + '\n')
-	# dados.close()
 
 if __name__ == '__main__':
 	main()

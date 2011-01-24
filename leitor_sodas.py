@@ -25,7 +25,7 @@ def leitor(filename):
 		
 	no_vars = re.search(r'var_nb = ([\d]+)', text)
 	numero_variaveis = int(no_vars.group(1))
-	print "numero_variaveis: ", numero_variaveis
+	#print "numero_variaveis: ", numero_variaveis
 	# busca a variável categórica na base
 	vs = []
 	var = re.search(r'VARIABLES[\s]*=[\w|\W]*RECTANGLE_MATRIX[\s]*=', text)
