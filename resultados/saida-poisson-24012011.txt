@@ -1,0 +1,35 @@
+Parâmetros iniciais
+
+Topologia:  3  x  2
+Cardinalidade (q):  1
+Tmin:  0.4 Tmax:  6.0
+Criterio de adequacao (energia):  803730.523167
+Criterio de adequacao (energia):  770386.255447
+Criterio de adequacao (energia):  715358.172121
+Criterio de adequacao (energia):  631274.618667
+Criterio de adequacao (energia):  518007.446638
+Criterio de adequacao (energia):  391093.0815
+Criterio de adequacao (energia):  273505.656567
+Criterio de adequacao (energia):  165989.405058
+Criterio de adequacao (energia):  85917.108273
+Criterio de adequacao (energia):  85917.108273
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Dorasmicropoeus 	Platydorascostatus 	Ageneiosusbrevifili 	Acnodonoligacanthus 	Total
+
+
+1 	2 			1 			1 			0 			4
+2 	1 			2 			0 			1 			4
+3 	0 			0 			0 			2 			2
+4 	0 			0 			0 			2 			2
+Total 	[3 3 1 5]
+####################
+Corrected Rand index
+0.250758341759 
+
+F-measure(P,Q):  0.571428571429
+OERC:  0.416666666667
