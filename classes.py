@@ -29,7 +29,7 @@ class Point:
 			return False
 			
 	def __ne__(self, other):
-		if self.x != other.x and self.y != other.y:
+		if self.x != other.x or self.y != other.y:
 			return True
 		else:
 			return False
@@ -55,8 +55,8 @@ class Point:
 		return id(self)
 
 class Individual:
-	def __init__(self, _id, _id2, _nome):
-		self.id = _id
+	def __init__(self, _indice, _id2, _nome):
+		self.indice = _indice
 		self.id2 = _id2
 		self.nome = _nome
 		
