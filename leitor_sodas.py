@@ -13,16 +13,18 @@ from classes import *
 def leitor(filename):
 	f = open(filename, 'rU')
 	text = f.read()
-	
 	# busca os individuos na base
 	match = re.compile(r"\b",re.U)
-	individuals = re.findall(r'([\d]+),[\s]*"([\w]+)",[\s]*"([\w|\W][^\n]+)"[\s]*', text)
+	individuals = re.findall(r'([\d]+),[\s]*"([\w]+)",[\s]*"([\w|\W][^\n]+)"[\s]*\)', text)
 	individuals_objects = []
 	
 	for ind in individuals:
 		individual = Individual(ind[0], ind[1], ind[2])
 		individuals_objects.append(individual)
 		
+	title = re.search(r'title = "([\w]+)"', text)
+	title_base = title.group(1)
+
 	no_vars = re.search(r'var_nb = ([\d]+)', text)
 	numero_variaveis = int(no_vars.group(1))
 	#print "numero_variaveis: ", numero_variaveis
@@ -32,14 +34,26 @@ def leitor(filename):
 	
 	if var:
 		#busca variáveis do tipo inter_cont
-		vars_cont = re.findall(r'([\d]+) ,(inter_cont) ,"" ,"[\w]+" ,"([\w|\/|\_|\(|\)]+)" ,[\d|\.]+, [\d|\.]+, [\d|\.]+, [\d|\.]+', var.group())
+		#vars_cont = re.findall(r'([\d]+) ,(inter_cont) ,"" ,"[\w]+" ,"([\w|\/|\_|\(|\)]+)" ,[\d|\.]+, [\d|\.]+, [\d|\.]+, [\d|\.]+', var.group())
 
 		#busca variáveis do tipo nominal
-		vars_categ = re.search(r'([\d]+)[\s]*,[\s]*(nominal)[\s]*,[\s]*""[\s]*,[\s]*"[\w]+"[\s]*,[\s]*"([\w|\/|\_|\(|\)|\']+)"[\s]*,[\s]*[\d|\.]+[\s]*,[\s]*[\d|\.]+[\s]*,[\s]*[\d|\.]+[\s]*,[\s]*([\w|\W]+)[\n][\s]+\)', var.group())
+		if title_base == "chevaux":
+			vars_categ = re.search(r'([\d]+)[\s]*,[\s]*(nominal)[\s]*,[\s]*""[\s]*,[\s]*"[\w]+"[\s]*,[\s]*"([\w|\s|\d|\/|\_|\(|\)|\']+)"[\s]*,[\s]*[\d|\.]+[\s]*,[\s]*[\d|\.]+[\s]*,[\s]*[\d|\.]+[\s]*,[\s]*([\w|\W]+)[\n][\s]+\)', var.group())
+			if vars_categ:
+				classes_re = re.findall(r'([\d]+)[\s]*,[\s]*"([\w]+)"[\s]*,[\s]*"([\w|\W][^\n]+)"[\s]*,[\s]*[\d]+', vars_categ.group())
+			
+			variavel_nominal = Variavel(vars_categ.group(1), vars_categ.group(2))
+		else:
+			categ = re.search(r'([\d]+)[\s]*,[\s]*(nominal)[\w|\W]*[\n][\s]*\)', var.group())
 
-		categ = re.search(r'[\d]+[\s]*,nominal[\w|\W]*[\n][\s]*\)', var.group())
-		if categ:
-			classes_re = re.findall(r'([\d]+)[\s]*,[\s]*"([\w]+)"[\s]*,[\s]*"([\w|\W][^\n]+)"[\s]*,[\d]+', categ.group())
+			#print "categ", categ.group()
+			classes_re = re.findall(r'([\d]+)[\s]*,[\s]*"([\w]+)"[\s]*,[\s]*"([\w|\W][^\n]+)"[\s]*,[\s]*[\d]+', categ.group())
+
+			#if categ:
+			#	classes_re = re.findall(r'([\d]+)[\s]*,[\s]*"([\w]+)"[\s]*,[\s]*"([\w|\W][^\n]+)"[\s]*,[\s]*[\d]+', categ.group())
+			#	for c in classes_re:
+			#		print c
+			variavel_nominal = Variavel(categ.group(1), categ.group(2))
 
 	#variaveis = []
 	#for var_cont in vars_cont:
@@ -47,8 +61,10 @@ def leitor(filename):
 	#	variavel = Variavel(var_cont[0], var_cont[1])
 	#	variaveis.append(variavel)
 
-	variavel_nominal = Variavel(vars_categ.group(1), vars_categ.group(2))
+	#variavel_nominal = Variavel(categ.group(1), categ.group(2))
+	#variavel_nominal = Variavel(vars_categ.group(1), vars_categ.group(2))
 	#variaveis.append(variavel_nominal)
+	#print variavel_nominal.id, variavel_nominal.tipo
 
 	#for v in variaveis:
 	#	print v.id, v.tipo
@@ -57,6 +73,7 @@ def leitor(filename):
 	classes = []
 	for cls in classes_re:
 		classe = Classe(cls[0], cls[2])
+		#print classe.id, classe.desc
 		classes.append(classe)
 
 	# busca os atributos de cada individuo
@@ -64,27 +81,43 @@ def leitor(filename):
 	#print atrib_individuos.group(1)
 	if atrib_individuos:		
 		#|\(\d,
-		atribs = re.findall(r'[\([\s]*[\d|.]+[\s]*[:|,][\s]*[\d|.]+[\s]*\)|\(\d\)|\d\)|\(\d]', atrib_individuos.group(1))
-		#print atribs
-		i = 1
-		j = 0
-		#for classific in atribs:
-		for i in range(int(variavel_nominal.id)-1, len(atribs), numero_variaveis):
-		#if i % int(variavel_nominal.id) == 0:
-			#print "i: ", i
-			classe_individuo = re.search(r'[\d]+', atribs[i])
-			classe_id = classe_individuo.group()
-			#print "classe_id: ", classe_id
-			individuals_objects[j].set_classe_a_priori(classe_id)
-			for cls in classes:
-				if cls.id == classe_id:
-					cls.inserir_objeto(individuals_objects[j])
-			j += 1
-			#i += 1
+		if title_base == "chevaux":
+			lines = atrib_individuos.group(1).split("\n")
+			j = 0
+			for line in range(0, len(lines), int(variavel_nominal.id)):
+				if line > 0:
+					classe_individuo = re.search(r'[\d]+', lines[line])
+					classe_id = classe_individuo.group()
+					individuals_objects[j].set_classe_a_priori(classe_id)
+					for cls in classes:
+						if cls.id == classe_id:
+							cls.inserir_objeto(individuals_objects[j])
+
+					j += 1
+
+
+		else:
+			atribs = re.findall(r'[\([\s]*[\-]*[\d|.]+[\s]*[:|,][\s]*[\-]*[\d|.]+[\s]*\)|\(\d\)|\d\)|\d\,[\s]|\(\d^\(]', atrib_individuos.group(1))
+			print atribs
+			i = 1
+			j = 0
+			#for classific in atribs:
+			for i in range(int(variavel_nominal.id)-1, len(atribs), numero_variaveis):
+			#if i % int(variavel_nominal.id) == 0:
+				#print "i: ", i
+				classe_individuo = re.search(r'[\d]+', atribs[i])
+				classe_id = classe_individuo.group()
+				#print "classe_id: ", classe_id
+				individuals_objects[j].set_classe_a_priori(classe_id)
+				for cls in classes:
+					if cls.id == classe_id:
+						cls.inserir_objeto(individuals_objects[j])
+				j += 1
+				#i += 1
 
 
 	#for classe in classes:
-	#	print "\n", classe.id,
+	#	print "\n", classe.id, "[ ", len(classe.objetos), " ]"
 	#	for obj in classe.objetos:
 	#		print obj.nome,
 	
@@ -103,7 +136,7 @@ def leitor(filename):
 	i=0
 	n=0
 	
-	#Contrói uma matriz diagonal
+	#Constrói uma matriz diagonal
 	while i < len(individuals):
 		while n < len(values):
 			dissimilaridades.append(values[n:n+i+1])

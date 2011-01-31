@@ -11,11 +11,16 @@ from operator import itemgetter, attrgetter
 from classes import *
 from leitor_sodas import *
 from datetime import *
+import os.path
 
-def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, individuals):
+def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, individuals_objects):
 
 	prototipos = []
 	clusters = []
+	individuals = []
+	
+	for obj in individuals_objects:
+		individuals.append(obj)
 	
 	# para cardinalidade q = 1:
 	i = 0
@@ -171,7 +176,7 @@ def atualiza_particao(individuals, mapa, T, matrizes):
 						obj.cluster = cluster1
 					cluster2.objetos = []
 
-return mapa, individuals
+	return mapa, individuals
 
 def delta(point1, point2):
 	dist = float(np.square(point1.x - point2.x) + np.square(point1.y - point2.y))
@@ -197,123 +202,137 @@ def main():
 
 	nome_base = filename_base.group(1)
 		
-	#Etapa de inicialização
-	
-	t = 0.0
+	repeticoes = 100
+	criterios_energia = []
+
 	# c = 9
-	mapa_x = 3
-	mapa_y = 2
+	mapa_x = 2
+	mapa_y = 3
 	c = mapa_x * mapa_y
 	q = 1
-	t_min = 0.4
-	t_max = 6.0
+	t_min = 0.00105
+	t_max = 1.05
 	n_iter = 500.0
-	T = t_max
 
 	print "Parâmetros iniciais\n"
 	print "Topologia: ", mapa_x, " x ", mapa_y
 	print "Cardinalidade (q): ", q
 	print "Tmin: ", t_min, "Tmax: ", t_max
+	print "Número de iterações: ", n_iter
 
-	#Inicialização
-	(mapa, prototipos, individuals) = inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, individuals_objects)
-	
 	text = []
+
+	for a in range(repeticoes):
+
+		#Etapa de inicialização
+
+		print "\n#####################################"
+		print "Repetição do experimento: ", a, "\n"
+
+		#Inicialização
+		T = t_max
+		t = 0.0
+		(mapa, prototipos, individuals) = inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, individuals_objects)		
 	
-	text.append("Topologia: " + str(mapa_x) + " x " + str(mapa_y))
+		text.append("Topologia: " + str(mapa_x) + " x " + str(mapa_y))
+
+		text.append("\n#####################################")
+		text.append("Repeticao do experimento: " + str(a) + "\n")
 	
-	text.append("\n>>>>>> Iteracao 0 <<<<<<<<")
-	for cluster in mapa.flat:
-		text.append("\nCluster (prototipo): " + str(cluster.prototipo.nome) + "\n")
-		text.append("Objetos:\n")
-		for objeto in cluster.objetos:
-			text.append(str(objeto.nome))
+		#text.append("\n>>>>>> Iteracao 0 <<<<<<<<")
+		#for cluster in mapa.flat:
+		#	text.append("\nCluster (prototipo): " + str(cluster.prototipo.nome) + "\n")
+		#	text.append("Objetos:\n")
+		#	for objeto in cluster.objetos:
+		#		text.append(str(objeto.nome))
 	
-	while T > t_min:
-	# while t < (n_iter - 1):
-		#Step 1: computation of the best prototypes
-		t += 1.0
+		while T > t_min:
+		# while t < (n_iter - 1):
+			#Step 1: computation of the best prototypes
+			t += 1.0
 		
-		text.append("\n\n>>>>>>Iteracao " + str(t) + " <<<<<<<<")
-		# print ">>>>>>Iteracao ", t, "<<<<<<<<"
+			#text.append("\n\n>>>>>>Iteracao " + str(t) + " <<<<<<<<")
+			# print ">>>>>>Iteracao ", t, "<<<<<<<<"
 		
-		T = t_max * math.pow( (t_min / t_max), (t / (n_iter - 1.0)) )
+			T = t_max * math.pow( (t_min / t_max), (t / (n_iter - 1.0)) )
 		
-		mapa = atualiza_prototipo(mapa, individuals, T, matrizes)
+			mapa = atualiza_prototipo(mapa, individuals, T, matrizes)
 				
-		#Step 2: definition of the best partition
+			#Step 2: definition of the best partition
 			
-		mapa, individuals = atualiza_particao(individuals, mapa, T, matrizes)
+			mapa, individuals = atualiza_particao(individuals, mapa, T, matrizes)
 
-		#Calcula critério de adequação a cada iteração
-		energia = calcula_energia(mapa, individuals, matrizes, T)
+			#Calcula critério de adequação a cada iteração
+			#energia = calcula_energia(mapa, individuals, matrizes, T)
 
-		print "Criterio de adequacao (energia): ", energia
+			#print "Criterio de adequacao (energia): ", energia
 
 		for cluster in mapa.flat:
-			# print "\nCluster (prototipo): ", cluster.prototipo.nome 
 			text.append("\n\nCluster " + str(cluster.point.x) + "," + str(cluster.point.y) + " Prototipo: " + str(cluster.prototipo.nome) +
 			" [" + str(len(cluster.objetos)) + " objetos]\n")
-			# print "Objetos:"
 			text.append("Objetos: ")
 			for objeto in cluster.objetos:
-				# print objeto.nome
 				text.append(str(objeto.nome))
 
-	no_clusters_completos = 0
-	for cluster in mapa.flat:
-		if len(cluster.objetos) > 0:
-			no_clusters_completos += 1
+		no_clusters_completos = 0
+		for cluster in mapa.flat:
+			if len(cluster.objetos) > 0:
+				no_clusters_completos += 1
+
+		energia = calcula_energia(mapa, individuals, matrizes, T)
+		criterios_energia.append(energia)
+
+		print "Critério de adequação (energia): ", energia
+
+		########################################
+		#Calcula a matrix de confusão #
+		confusion_matrix = calcula_confusion_matrix(mapa, classes_a_priori, no_clusters_completos)
 	
-	energia = calcula_energia(mapa, individuals, matrizes, T)
 
-	print "Criterio de adequacao (energia): ", energia
-
-	########################################
-	#Calcula a matrix de confusão #
-	confusion_matrix = calcula_confusion_matrix(mapa, classes_a_priori, no_clusters_completos)
+		##########################################################################################
+		# Cálculo do índice de Rand Corrigido #
+		no_objetos = len(individuals)
 		
-
-	##########################################################################################
-	# Cálculo do índice de Rand Corrigido #
-	no_objetos = len(individuals)
-	cr = calcula_cr(confusion_matrix, classes_a_priori, no_clusters_completos, no_objetos)	
-	
-	
-	##########################################################
-	# Cálculo da precisão #
-	precisao_matrix = calcula_precisao(confusion_matrix, classes_a_priori, no_clusters_completos)
-	#print precisao_matrix
-
-	###########################################################
-	# Cálculo do recall #
-	recall_matrix =	calcula_recall(confusion_matrix, classes_a_priori, no_clusters_completos)
-	#print recall_matrix
-
-	###########################################################
-	# Cálculo do f_measure #
-
-	len_cls_priori = len(classes_a_priori)
-	f_measure_matrix = calcula_f_measure(precisao_matrix, recall_matrix, len_cls_priori, no_clusters_completos)
-	#print f_measure_matrix
-
-	soma2 = 0
-	for i in range(len(classes_a_priori)):
-		soma2 += confusion_matrix[i,:].sum(axis=0)
-
-	f_measure = float(soma2 / no_objetos) * f_measure_matrix.max()
-	print "F-measure(P,Q): ", f_measure
-
-	###########################################################
-	# Cálculo do oerc (taxa de erro de classificação global) #
-	oerc = calcula_oerc(confusion_matrix, no_clusters_completos, no_objetos)
-	print "OERC: ", oerc
+		cr = calcula_cr(confusion_matrix, classes_a_priori, no_clusters_completos, no_objetos)	
 
 
-	text.append("\nEnergia: " + str(energia))
+		##########################################################
+		# Cálculo da precisão #
+		precisao_matrix = calcula_precisao(confusion_matrix, classes_a_priori, no_clusters_completos)
+		#print precisao_matrix
+
+		###########################################################
+		# Cálculo do recall #
+		recall_matrix =	calcula_recall(confusion_matrix, classes_a_priori, no_clusters_completos)
+		#print recall_matrix
+
+		###########################################################
+		# Cálculo do f_measure #
+
+		len_cls_priori = len(classes_a_priori)
+		f_measure_matrix = calcula_f_measure(precisao_matrix, recall_matrix, len_cls_priori, no_clusters_completos)
+		#print f_measure_matrix
+
+		soma2 = 0
+		for i in range(len(classes_a_priori)):
+			soma2 += confusion_matrix[i,:].sum(axis=0)
+
+		f_measure = float(soma2 / no_objetos) * f_measure_matrix.max()
+		print "F-measure(P,Q): ", f_measure
+
+		###########################################################
+		# Cálculo do oerc (taxa de erro de classificação global) #
+		oerc = calcula_oerc(confusion_matrix, no_clusters_completos, no_objetos)
+		print "OERC: ", oerc
+
+
+		text.append("\nEnergia: " + str(energia))
+
+	menor_criterio_energia = min(criterios_energia)
+	print "Melhor repetição: ", criterios_energia.index(menor_criterio_energia)
 
 	hoje = date.today()
-	filename_result = "clusters-" + nome_base + str(hoje.day) + "0" + str(hoje.month) + str(hoje.year) + ".txt"
+	filename_result = "clusters-" + nome_base + "-" + str(hoje.day) + "0" + str(hoje.month) + str(hoje.year) + "_01.txt"
 
 	resultado = open(filename_result, 'w')
 	txt = ' '.join(text)
@@ -419,7 +438,6 @@ def calcula_cr(confusion_matrix, classes_a_priori, no_clusters_completos, no_obj
 
 	cr = numerador_cr / denominador_cr
 
-	print "####################"
 	print "Corrected Rand index"
 	print cr, "\n"
 
@@ -461,6 +479,7 @@ def calcula_f_measure(precisao_matrix, recall_matrix, len_cls_priori, len_cluste
 
 def calcula_oerc(confusion_matrix, len_clusters_comp, len_objetos):
 
+	print "len_objetos", len_objetos
 	array_max = confusion_matrix.max(axis=0)
 	soma = float(array_max.sum())
 
