@@ -21,17 +21,31 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, individuals_o
 	
 	for obj in individuals_objects:
 		individuals.append(obj)
+
+	for i in range(c+1):
+		cluster = Cluster(i+1)
+		clusters.append(cluster)
 	
 	# para cardinalidade q = 1:
+	#i = 0
+	#while i < c:
+	#	prot = random.choice(individuals)
+	#	novo_prototipo = Individual(prot.indice, prot.id2, prot.nome)
+	#	if not novo_prototipo in prototipos:
+	#		prototipos.append(novo_prototipo)
+	#		cluster = Cluster(novo_prototipo)
+	#		clusters.append(cluster)
+	#		i += 1
+
+	# para cardinalidade q > 1:
 	i = 0
-	while i < c:
-		prot = random.choice(individuals)
-		novo_prototipo = Individual(prot.indice, prot.id2, prot.nome)
-		if not novo_prototipo in prototipos:
-			prototipos.append(novo_prototipo)
-			cluster = Cluster(novo_prototipo)
-			clusters.append(cluster)
-			i += 1
+	for i in range(c):
+		for j in range(q):
+			prot = random.choice(individuals)
+			novo_prototipo = Individual(prot.indice, prot.id2, prot.nome)
+			if not novo_prototipo in clusters[i].prototipos:
+				clusters[i].prototipos.append(novo_prototipo)
+			if not novo_prototipo in prototipos:
 	
 	#criando uma matriz com numpy
 	mapa = np.array(clusters)
@@ -478,6 +492,7 @@ def calcula_f_measure(precisao_matrix, recall_matrix, len_cls_priori, len_cluste
 	return f_measure_matrix	
 
 def calcula_oerc(confusion_matrix, len_clusters_comp, len_objetos):
+
 
 	array_max = confusion_matrix.max(axis=0)
 	soma = float(array_max.sum())
