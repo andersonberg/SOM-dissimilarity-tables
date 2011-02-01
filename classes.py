@@ -67,8 +67,9 @@ class Individual:
 		self.classe_a_priori = classe
 
 class Cluster:
-	def __init__(self, prototipo):
-		self.prototipo = prototipo
+	def __init__(self, _indice):
+		self.indice = _indice
+		self.prototipos = []
 		self.objetos = []
 	
 	def definir_ponto(self, x, y):
