@@ -103,7 +103,7 @@ def calcula_prototipo(objeto_alvo, objetos, mapa, T, matrizes, point2):
 						
 	return sum1
 
-def atualiza_prototipo(mapa, individuals, T, matrizes):
+def atualiza_prototipo(mapa, individuals, T, matrizes, q):
 	for cluster in mapa.flat:
 		if len(cluster.objetos) > 0:
 			somas = {}
@@ -111,11 +111,18 @@ def atualiza_prototipo(mapa, individuals, T, matrizes):
 			for obj in individuals:
 				menor_criterio_sum = calcula_prototipo(obj, individuals, mapa, T, matrizes, point2)
 				somas[obj] = menor_criterio_sum
-	
-			(menor_criterio_obj, menor_criterio) = min(somas.items(), key=lambda x: x[1])
-
-			novo_prototipo = Individual(menor_criterio_obj.indice, menor_criterio_obj.id2, menor_criterio_obj.nome)
-			cluster.prototipo = novo_prototipo
+			
+			# se q > 1:
+			sorted_criterios = sorted(criterios.items(), key=lambda x: x[1])
+			cluster.prototipos = []
+			for i in range(q):
+				novo_prototipo = Individual(sorted_criterios[i].indice, sorted_criterios[i].id2, sorted_criterios[i].nome)
+				cluster.prototipos.append(novo_prototipo)
+			
+			# se q = 1:
+			#(menor_criterio_obj, menor_criterio) = min(somas.items(), key=lambda x: x[1])
+			#novo_prototipo = Individual(menor_criterio_obj.indice, menor_criterio_obj.id2, menor_criterio_obj.nome)
+			#cluster.prototipo = novo_prototipo
 
 	return mapa
 	
@@ -270,7 +277,7 @@ def main():
 		
 			T = t_max * math.pow( (t_min / t_max), (t / (n_iter - 1.0)) )
 		
-			mapa = atualiza_prototipo(mapa, individuals, T, matrizes)
+			mapa = atualiza_prototipo(mapa, individuals, T, matrizes, q)
 				
 			#Step 2: definition of the best partition
 			
