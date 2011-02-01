@@ -479,7 +479,6 @@ def calcula_f_measure(precisao_matrix, recall_matrix, len_cls_priori, len_cluste
 
 def calcula_oerc(confusion_matrix, len_clusters_comp, len_objetos):
 
-	print "len_objetos", len_objetos
 	array_max = confusion_matrix.max(axis=0)
 	soma = float(array_max.sum())
 
