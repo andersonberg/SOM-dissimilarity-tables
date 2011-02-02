@@ -97,7 +97,7 @@ def leitor(filename):
 
 
 		else:
-			atribs = re.findall(r'[\([\s]*[\-]*[\d|.]+[\s]*[:|,][\s]*[\-]*[\d|.]+[\s]*\)|\(\d\)|\d\)|\d\,[\s]|\(\d^\(]', atrib_individuos.group(1))
+			atribs = re.findall(r'[\([\s]*[\-]*[\d|.]+[\s]*[:|,][\s]*[\-]*[\d|.]+[\s]*\)|\(\d\)|\d\)|\d\,[\s]*|\(\d^\(]', atrib_individuos.group(1))
 			#print atribs
 			i = 1
 			j = 0
