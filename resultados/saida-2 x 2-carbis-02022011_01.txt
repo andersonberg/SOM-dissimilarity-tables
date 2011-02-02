@@ -1,0 +1,2407 @@
+Parâmetros iniciais
+
+Topologia:  2  x  2
+Cardinalidade (q):  1
+Tmin:  0.00066 Tmax:  0.66
+Número de iterações:  500.0
+
+#####################################
+Repetição do experimento:  0 
+
+Critério de adequação (energia):  549.738551
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Bmw serie 7_L 	Porsche_S 	Bmw serie 5_L 	Skoda Octavia_B 	Total
+
+
+1 	1 			3 			5 			1 			10
+2 	2 			4 			1 			1 			8
+3 	3 			2 			2 			1 			8
+4 	0 			3 			2 			2 			7
+Total 	[ 6 12 10  5]
+Corrected Rand index
+0.232326643273 
+
+F-measure(P,Q):  0.5
+OERC:  0.575757575758
+
+#####################################
+Repetição do experimento:  1 
+
+Critério de adequação (energia):  546.497355
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Nissan Micra_U 	Porsche_S 	Maserati GT_S 	Bmw serie 7_L 	Total
+
+
+1 	1 			2 			7 			0 			10
+2 	0 			3 			1 			4 			8
+3 	4 			1 			1 			2 			8
+4 	1 			3 			2 			1 			7
+Total 	[ 6  9 11  7]
+Corrected Rand index
+0.337111128014 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.454545454545
+
+#####################################
+Repetição do experimento:  2 
+
+Critério de adequação (energia):  579.495575
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Porsche_S 	Bmw serie 5_L 	Skoda Octavia_B 	Total
+
+
+1 	3 			6 			1 			10
+2 	5 			1 			2 			8
+3 	4 			2 			2 			8
+4 	3 			2 			2 			7
+Total 	[15 11  7]
+Corrected Rand index
+0.277081171632 
+
+F-measure(P,Q):  0.571428571429
+OERC:  0.606060606061
+
+#####################################
+Repetição do experimento:  3 
+
+Critério de adequação (energia):  535.991742
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Bmw serie 7_L 	Porsche_S 	Bmw serie 5_L 	Twingo_U 	Total
+
+
+1 	1 			1 			5 			3 			10
+2 	3 			3 			1 			1 			8
+3 	3 			2 			2 			1 			8
+4 	0 			3 			2 			2 			7
+Total 	[ 7  9 10  7]
+Corrected Rand index
+0.236490978525 
+
+F-measure(P,Q):  0.5
+OERC:  0.575757575758
+
+#####################################
+Repetição do experimento:  4 
+
+Critério de adequação (energia):  553.762657
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Porsche_S 	Bmw serie 7_L 	Maserati GT_S 	Mercedes Classe S_L 	Total
+
+
+1 	2 			0 			8 			0 			10
+2 	3 			3 			1 			1 			8
+3 	2 			1 			2 			3 			8
+4 	3 			0 			2 			2 			7
+Total 	[10  4 13  6]
+Corrected Rand index
+0.338122837247 
+
+F-measure(P,Q):  0.695652173913
+OERC:  0.484848484848
+
+#####################################
+Repetição do experimento:  5 
+
+Critério de adequação (energia):  601.848821
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Porsche_S 	Fiesta_U 	Maserati GT_S 	Total
+
+
+1 	2 			1 			7 			10
+2 	3 			2 			3 			8
+3 	2 			3 			3 			8
+4 	4 			1 			2 			7
+Total 	[11  7 15]
+Corrected Rand index
+0.283681914215 
+
+F-measure(P,Q):  0.56
+OERC:  0.575757575758
+
+#####################################
+Repetição do experimento:  6 
+
+Critério de adequação (energia):  572.878117
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Maserati GT_S 	Mercedes Classe S_L 	Corsa_U 	Total
+
+
+1 	9 			0 			1 			10
+2 	5 			1 			2 			8
+3 	1 			2 			5 			8
+4 	3 			3 			1 			7
+Total 	[18  6  9]
+Corrected Rand index
+0.392503166285 
+
+F-measure(P,Q):  0.642857142857
+OERC:  0.484848484848
+
+#####################################
+Repetição do experimento:  7 
+
+Critério de adequação (energia):  549.502805
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Twingo_U 	Porsche_S 	Bmw serie 7_L 	Maserati GT_S 	Total
+
+
+1 	2 			0 			0 			8 			10
+2 	1 			2 			4 			1 			8
+3 	2 			3 			2 			1 			8
+4 	1 			3 			1 			2 			7
+Total 	[ 6  8  7 12]
+Corrected Rand index
+0.356907721677 
+
+F-measure(P,Q):  0.727272727273
+OERC:  0.484848484848
+
+#####################################
+Repetição do experimento:  8 
+
+Critério de adequação (energia):  575.4627
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Maserati GT_S 	Focus_B 	Porsche_S 	Total
+
+
+1 	8 			0 			2 			10
+2 	1 			4 			3 			8
+3 	3 			5 			0 			8
+4 	1 			3 			3 			7
+Total 	[13 12  8]
+Corrected Rand index
+0.38760548863 
+
+F-measure(P,Q):  0.695652173913
+OERC:  0.515151515152
+
+#####################################
+Repetição do experimento:  9 
+
+Critério de adequação (energia):  545.209913
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Bmw serie 5_L 	Maserati GT_S 	Porsche_S 	Skoda Fabia_U 	Total
+
+
+1 	4 			3 			2 			1 			10
+2 	1 			2 			4 			1 			8
+3 	2 			2 			0 			4 			8
+4 	2 			1 			3 			1 			7
+Total 	[9 8 9 7]
+Corrected Rand index
+0.238437436673 
+
+F-measure(P,Q):  0.533333333333
+OERC:  0.545454545455
+
+#####################################
+Repetição do experimento:  10 
+
+Critério de adequação (energia):  575.4627
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Porsche_S 	Maserati GT_S 	Focus_B 	Total
+
+
+1 	2 			8 			0 			10
+2 	3 			1 			4 			8
+3 	0 			3 			5 			8
+4 	3 			1 			3 			7
+Total 	[ 8 13 12]
+Corrected Rand index
+0.38760548863 
+
+F-measure(P,Q):  0.695652173913
+OERC:  0.515151515152
+
+#####################################
+Repetição do experimento:  11 
+
+Critério de adequação (energia):  570.340986
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Maserati GT_S 	Nissan Micra_U 	Bmw serie 7_L 	Skoda Octavia_B 	Total
+
+
+1 	9 			1 			0 			0 			10
+2 	2 			1 			4 			1 			8
+3 	1 			4 			2 			1 			8
+4 	3 			1 			2 			1 			7
+Total 	[15  7  8  3]
+Corrected Rand index
+0.38688480076 
+
+F-measure(P,Q):  0.72
+OERC:  0.454545454545
+
+#####################################
+Repetição do experimento:  12 
+
+Critério de adequação (energia):  573.896208
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Porsche_S 	Bmw serie 7_L 	Mercedes SL_S 	Ferrari_S 	Total
+
+
+1 	3 			2 			4 			1 			10
+2 	3 			2 			1 			2 			8
+3 	3 			2 			0 			3 			8
+4 	3 			1 			1 			2 			7
+Total 	[12  7  6  8]
+Corrected Rand index
+0.20611180423 
+
+F-measure(P,Q):  0.5
+OERC:  0.636363636364
+
+#####################################
+Repetição do experimento:  13 
+
+Critério de adequação (energia):  541.180138
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Corsa_U 	Honda  NSK_S 	Bmw serie 7_L 	Porsche_S 	Total
+
+
+1 	2 			3 			2 			3 			10
+2 	2 			1 			2 			3 			8
+3 	4 			3 			1 			0 			8
+4 	1 			1 			1 			4 			7
+Total 	[ 9  8  6 10]
+Corrected Rand index
+0.227399411792 
+
+F-measure(P,Q):  0.470588235294
+OERC:  0.606060606061
+
+#####################################
+Repetição do experimento:  14 
+
+Critério de adequação (energia):  554.445757
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Mercedes Classe S_L 	Porsche_S 	Skoda Octavia_B 	Ferrari_S 	Total
+
+
+1 	3 			5 			1 			1 			10
+2 	2 			3 			2 			1 			8
+3 	2 			1 			2 			3 			8
+4 	1 			3 			2 			1 			7
+Total 	[ 8 12  7  6]
+Corrected Rand index
+0.214048431464 
+
+F-measure(P,Q):  0.454545454545
+OERC:  0.606060606061
+
+#####################################
+Repetição do experimento:  15 
+
+Critério de adequação (energia):  541.029282
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Corsa_U 	Porsche_S 	Maserati GT_S 	Bmw serie 7_L 	Total
+
+
+1 	1 			2 			7 			0 			10
+2 	2 			2 			1 			3 			8
+3 	5 			0 			1 			2 			8
+4 	1 			3 			2 			1 			7
+Total 	[ 9  7 11  6]
+Corrected Rand index
+0.337111128014 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.454545454545
+
+#####################################
+Repetição do experimento:  16 
+
+Critério de adequação (energia):  585.004105
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Porsche_S 	Mercedes Classe S_L 	Maserati GT_S 	Total
+
+
+1 	2 			0 			8 			10
+2 	3 			2 			3 			8
+3 	2 			3 			3 			8
+4 	3 			2 			2 			7
+Total 	[10  7 16]
+Corrected Rand index
+0.311544563466 
+
+F-measure(P,Q):  0.615384615385
+OERC:  0.575757575758
+
+#####################################
+Repetição do experimento:  17 
+
+Critério de adequação (energia):  546.497355
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Bmw serie 7_L 	Maserati GT_S 	Porsche_S 	Nissan Micra_U 	Total
+
+
+1 	0 			7 			2 			1 			10
+2 	4 			1 			3 			0 			8
+3 	2 			1 			1 			4 			8
+4 	1 			2 			3 			1 			7
+Total 	[ 7 11  9  6]
+Corrected Rand index
+0.337111128014 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.454545454545
+
+#####################################
+Repetição do experimento:  18 
+
+Critério de adequação (energia):  597.006541
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Bmw serie 7_L 	Porsche_S 	Twingo_U 	Total
+
+
+1 	5 			2 			3 			10
+2 	4 			3 			1 			8
+3 	3 			3 			2 			8
+4 	1 			4 			2 			7
+Total 	[13 12  8]
+Corrected Rand index
+0.251549313921 
+
+F-measure(P,Q):  0.434782608696
+OERC:  0.636363636364
+
+#####################################
+Repetição do experimento:  19 
+
+Critério de adequação (energia):  542.042297
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Lancia Y_U 	Mercedes Classe E_L 	Honda  NSK_S 	Porsche_S 	Total
+
+
+1 	1 			4 			3 			2 			10
+2 	2 			1 			2 			3 			8
+3 	5 			1 			2 			0 			8
+4 	1 			2 			1 			3 			7
+Total 	[9 8 8 8]
+Corrected Rand index
+0.24768732293 
+
+F-measure(P,Q):  0.588235294118
+OERC:  0.545454545455
+
+#####################################
+Repetição do experimento:  20 
+
+Critério de adequação (energia):  556.740853
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Skoda Octavia_B 	Corsa_U 	Porsche_S 	Mercedes Classe S_L 	Total
+
+
+1 	1 			2 			5 			2 			10
+2 	1 			2 			3 			2 			8
+3 	2 			4 			0 			2 			8
+4 	2 			0 			4 			1 			7
+Total 	[ 6  8 12  7]
+Corrected Rand index
+0.253731567634 
+
+F-measure(P,Q):  0.5
+OERC:  0.606060606061
+
+#####################################
+Repetição do experimento:  21 
+
+Critério de adequação (energia):  576.404644
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Maserati GT_S 	Corsa_U 	Porsche_S 	Total
+
+
+1 	7 			1 			2 			10
+2 	3 			2 			3 			8
+3 	2 			6 			0 			8
+4 	2 			2 			3 			7
+Total 	[14 11  8]
+Corrected Rand index
+0.337688596547 
+
+F-measure(P,Q):  0.631578947368
+OERC:  0.515151515152
+
+#####################################
+Repetição do experimento:  22 
+
+Critério de adequação (energia):  556.885117
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Mercedes Classe S_L 	Porsche_S 	Bmw serie 7_L 	Focus_B 	Total
+
+
+1 	2 			4 			3 			1 			10
+2 	1 			3 			2 			2 			8
+3 	4 			0 			1 			3 			8
+4 	2 			3 			0 			2 			7
+Total 	[ 9 10  6  8]
+Corrected Rand index
+0.235529618281 
+
+F-measure(P,Q):  0.470588235294
+OERC:  0.575757575758
+
+#####################################
+Repetição do experimento:  23 
+
+Critério de adequação (energia):  534.988195
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Ferrari_S 	Corsa_U 	Maserati GT_S 	Twingo_U 	Total
+
+
+1 	0 			1 			7 			2 			10
+2 	2 			1 			3 			2 			8
+3 	1 			6 			0 			1 			8
+4 	2 			2 			1 			2 			7
+Total 	[ 5 10 11  7]
+Corrected Rand index
+0.355496998099 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.484848484848
+
+#####################################
+Repetição do experimento:  24 
+
+Critério de adequação (energia):  586.961006
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Fiesta_U 	Ferrari_S 	Mercedes Classe S_L 	Bmw serie 7_L 	Total
+
+
+1 	2 			1 			4 			3 			10
+2 	1 			1 			1 			5 			8
+3 	3 			2 			2 			1 			8
+4 	2 			1 			4 			0 			7
+Total 	[ 8  5 11  9]
+Corrected Rand index
+0.254742465629 
+
+F-measure(P,Q):  0.588235294118
+OERC:  0.575757575758
+
+#####################################
+Repetição do experimento:  25 
+
+Critério de adequação (energia):  533.902066
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Bmw serie 5_L 	Porsche_S 	Honda  NSK_S 	Bmw serie 7_L 	Total
+
+
+1 	5 			2 			2 			1 			10
+2 	1 			4 			1 			2 			8
+3 	2 			1 			4 			1 			8
+4 	2 			4 			1 			0 			7
+Total 	[10 11  8  4]
+Corrected Rand index
+0.257579568826 
+
+F-measure(P,Q):  0.5
+OERC:  0.545454545455
+
+#####################################
+Repetição do experimento:  26 
+
+Critério de adequação (energia):  567.860511
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Corsa_U 	Bmw serie 7_L 	Fiesta_U 	Porsche_S 	Total
+
+
+1 	2 			3 			1 			4 			10
+2 	2 			3 			1 			2 			8
+3 	5 			2 			1 			0 			8
+4 	2 			1 			0 			4 			7
+Total 	[11  9  3 10]
+Corrected Rand index
+0.252645022713 
+
+F-measure(P,Q):  0.526315789474
+OERC:  0.606060606061
+
+#####################################
+Repetição do experimento:  27 
+
+Critério de adequação (energia):  533.902066
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Honda  NSK_S 	Bmw serie 5_L 	Bmw serie 7_L 	Porsche_S 	Total
+
+
+1 	2 			5 			1 			2 			10
+2 	1 			1 			2 			4 			8
+3 	4 			2 			1 			1 			8
+4 	1 			2 			0 			4 			7
+Total 	[ 8 10  4 11]
+Corrected Rand index
+0.257579568826 
+
+F-measure(P,Q):  0.5
+OERC:  0.545454545455
+
+#####################################
+Repetição do experimento:  28 
+
+Critério de adequação (energia):  568.676577
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Audi A3_U 	Maserati GT_S 	Nissan Micra_U 	Porsche_S 	Total
+
+
+1 	2 			6 			1 			1 			10
+2 	0 			3 			2 			3 			8
+3 	0 			1 			6 			1 			8
+4 	2 			1 			0 			4 			7
+Total 	[ 4 11  9  9]
+Corrected Rand index
+0.352708744931 
+
+F-measure(P,Q):  0.705882352941
+OERC:  0.454545454545
+
+#####################################
+Repetição do experimento:  29 
+
+Critério de adequação (energia):  552.104754
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Mercedes Classe S_L 	Honda  NSK_S 	Porsche_S 	Maserati GT_S 	Total
+
+
+1 	0 			2 			1 			7 			10
+2 	2 			0 			3 			3 			8
+3 	3 			1 			2 			2 			8
+4 	1 			1 			3 			2 			7
+Total 	[ 6  4  9 14]
+Corrected Rand index
+0.281260960451 
+
+F-measure(P,Q):  0.583333333333
+OERC:  0.545454545455
+
+#####################################
+Repetição do experimento:  30 
+
+Critério de adequação (energia):  597.381076
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Porsche_S 	Maserati GT_S 	Bmw serie 7_L 	Total
+
+
+1 	2 			8 			0 			10
+2 	3 			1 			4 			8
+3 	4 			2 			2 			8
+4 	3 			2 			2 			7
+Total 	[12 13  8]
+Corrected Rand index
+0.346788636217 
+
+F-measure(P,Q):  0.695652173913
+OERC:  0.515151515152
+
+#####################################
+Repetição do experimento:  31 
+
+Critério de adequação (energia):  608.017015
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Porsche_S 	Focus_B 	Audi A6_B 	Total
+
+
+1 	4 			0 			6 			10
+2 	3 			4 			1 			8
+3 	3 			5 			0 			8
+4 	3 			3 			1 			7
+Total 	[13 12  8]
+Corrected Rand index
+0.333183018746 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.545454545455
+
+#####################################
+Repetição do experimento:  32 
+
+Critério de adequação (energia):  538.963042
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Twingo_U 	Maserati GT_S 	Bmw serie 5_L 	Porsche_S 	Total
+
+
+1 	2 			3 			5 			0 			10
+2 	2 			2 			1 			3 			8
+3 	2 			2 			2 			2 			8
+4 	1 			1 			2 			3 			7
+Total 	[ 7  8 10  8]
+Corrected Rand index
+0.221066521773 
+
+F-measure(P,Q):  0.5
+OERC:  0.606060606061
+
+#####################################
+Repetição do experimento:  33 
+
+Critério de adequação (energia):  600.102103
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Mercedes Classe E_L 	Maserati GT_S 	Porsche_S 	Total
+
+
+1 	3 			5 			2 			10
+2 	1 			2 			5 			8
+3 	2 			4 			2 			8
+4 	3 			1 			3 			7
+Total 	[ 9 12 12]
+Corrected Rand index
+0.268812288562 
+
+F-measure(P,Q):  0.5
+OERC:  0.606060606061
+
+#####################################
+Repetição do experimento:  34 
+
+Critério de adequação (energia):  561.965704
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Audi A8_L 	Rover 25_U 	Maserati GT_S 	Porsche_S 	Total
+
+
+1 	3 			1 			4 			2 			10
+2 	5 			1 			0 			2 			8
+3 	1 			3 			3 			1 			8
+4 	1 			1 			2 			3 			7
+Total 	[10  6  9  8]
+Corrected Rand index
+0.251790031258 
+
+F-measure(P,Q):  0.555555555556
+OERC:  0.545454545455
+
+#####################################
+Repetição do experimento:  35 
+
+Critério de adequação (energia):  541.125999
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Bmw serie 5_L 	Twingo_U 	Mercedes Classe S_L 	Porsche_S 	Total
+
+
+1 	6 			3 			0 			1 			10
+2 	1 			1 			2 			4 			8
+3 	2 			2 			3 			1 			8
+4 	2 			2 			0 			3 			7
+Total 	[11  8  5  9]
+Corrected Rand index
+0.27864720885 
+
+F-measure(P,Q):  0.571428571429
+OERC:  0.515151515152
+
+#####################################
+Repetição do experimento:  36 
+
+Critério de adequação (energia):  533.902066
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Honda  NSK_S 	Bmw serie 7_L 	Bmw serie 5_L 	Porsche_S 	Total
+
+
+1 	2 			1 			5 			2 			10
+2 	1 			2 			1 			4 			8
+3 	4 			1 			2 			1 			8
+4 	1 			0 			2 			4 			7
+Total 	[ 8  4 10 11]
+Corrected Rand index
+0.257579568826 
+
+F-measure(P,Q):  0.5
+OERC:  0.545454545455
+
+#####################################
+Repetição do experimento:  37 
+
+Critério de adequação (energia):  573.941211
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Honda  NSK_S 	Fiesta_U 	Mercedes Classe S_L 	Bmw serie 7_L 	Total
+
+
+1 	3 			1 			3 			3 			10
+2 	0 			2 			1 			5 			8
+3 	2 			3 			2 			1 			8
+4 	1 			3 			3 			0 			7
+Total 	[6 9 9 9]
+Corrected Rand index
+0.252817761561 
+
+F-measure(P,Q):  0.588235294118
+OERC:  0.575757575758
+
+#####################################
+Repetição do experimento:  38 
+
+Critério de adequação (energia):  548.440174
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Ferrari_S 	Maserati GT_S 	Aston Martin_S 	Porsche_S 	Total
+
+
+1 	0 			8 			0 			2 			10
+2 	2 			3 			1 			2 			8
+3 	2 			0 			5 			1 			8
+4 	2 			1 			1 			3 			7
+Total 	[ 6 12  7  8]
+Corrected Rand index
+0.388654230613 
+
+F-measure(P,Q):  0.727272727273
+OERC:  0.454545454545
+
+#####################################
+Repetição do experimento:  39 
+
+Critério de adequação (energia):  585.004105
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Maserati GT_S 	Porsche_S 	Mercedes Classe S_L 	Total
+
+
+1 	8 			2 			0 			10
+2 	3 			3 			2 			8
+3 	3 			2 			3 			8
+4 	2 			3 			2 			7
+Total 	[16 10  7]
+Corrected Rand index
+0.311544563466 
+
+F-measure(P,Q):  0.615384615385
+OERC:  0.575757575758
+
+#####################################
+Repetição do experimento:  40 
+
+Critério de adequação (energia):  560.737625
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Porsche_S 	Audi A8_L 	Mercedes Classe S_L 	Honda  NSK_S 	Total
+
+
+1 	2 			5 			0 			3 			10
+2 	2 			4 			2 			0 			8
+3 	2 			1 			3 			2 			8
+4 	4 			1 			1 			1 			7
+Total 	[10 11  6  6]
+Corrected Rand index
+0.261668194868 
+
+F-measure(P,Q):  0.47619047619
+OERC:  0.545454545455
+
+#####################################
+Repetição do experimento:  41 
+
+Critério de adequação (energia):  557.419835
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Lancia Y_U 	Ferrari_S 	Mercedes Classe S_L 	Maserati GT_S 	Total
+
+
+1 	1 			0 			0 			9 			10
+2 	0 			2 			2 			4 			8
+3 	6 			0 			2 			0 			8
+4 	2 			1 			3 			1 			7
+Total 	[ 9  3  7 14]
+Corrected Rand index
+0.468648971153 
+
+F-measure(P,Q):  0.75
+OERC:  0.393939393939
+
+#####################################
+Repetição do experimento:  42 
+
+Critério de adequação (energia):  536.244082
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Porsche_S 	Bmw serie 5_L 	Corsa_U 	Maserati GT_S 	Total
+
+
+1 	2 			4 			1 			3 			10
+2 	3 			1 			2 			2 			8
+3 	0 			1 			5 			2 			8
+4 	3 			2 			1 			1 			7
+Total 	[8 8 9 8]
+Corrected Rand index
+0.24768732293 
+
+F-measure(P,Q):  0.588235294118
+OERC:  0.545454545455
+
+#####################################
+Repetição do experimento:  43 
+
+Critério de adequação (energia):  609.877525
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Bmw serie 5_L 	Maserati GT_S 	Bmw serie 7_L 	Total
+
+
+1 	6 			4 			0 			10
+2 	2 			2 			4 			8
+3 	2 			4 			2 			8
+4 	2 			2 			3 			7
+Total 	[12 12  9]
+Corrected Rand index
+0.289502213979 
+
+F-measure(P,Q):  0.545454545455
+OERC:  0.575757575758
+
+#####################################
+Repetição do experimento:  44 
+
+Critério de adequação (energia):  551.300283
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Corsa_U 	Porsche_S 	Ferrari_S 	Bmw serie 7_L 	Total
+
+
+1 	2 			4 			1 			3 			10
+2 	1 			3 			2 			2 			8
+3 	5 			0 			1 			2 			8
+4 	2 			3 			1 			1 			7
+Total 	[10 10  5  8]
+Corrected Rand index
+0.239761208503 
+
+F-measure(P,Q):  0.555555555556
+OERC:  0.575757575758
+
+#####################################
+Repetição do experimento:  45 
+
+Critério de adequação (energia):  536.398614
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Ferrari_S 	Maserati GT_S 	Skoda Octavia_B 	Porsche_S 	Total
+
+
+1 	0 			8 			0 			2 			10
+2 	2 			2 			2 			2 			8
+3 	4 			0 			2 			2 			8
+4 	1 			1 			1 			4 			7
+Total 	[ 7 11  5 10]
+Corrected Rand index
+0.371307511491 
+
+F-measure(P,Q):  0.761904761905
+OERC:  0.454545454545
+
+#####################################
+Repetição do experimento:  46 
+
+Critério de adequação (energia):  543.14835
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Maserati GT_S 	Porsche_S 	Mercedes Classe S_L 	Nissan Micra_U 	Total
+
+
+1 	7 			2 			0 			1 			10
+2 	3 			3 			2 			0 			8
+3 	1 			1 			2 			4 			8
+4 	2 			3 			1 			1 			7
+Total 	[13  9  5  6]
+Corrected Rand index
+0.30628564794 
+
+F-measure(P,Q):  0.608695652174
+OERC:  0.515151515152
+
+#####################################
+Repetição do experimento:  47 
+
+Critério de adequação (energia):  594.081799
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Mercedes Classe E_L 	Corsa_U 	Porsche_S 	Total
+
+
+1 	5 			1 			4 			10
+2 	1 			3 			4 			8
+3 	1 			6 			1 			8
+4 	2 			2 			3 			7
+Total 	[ 9 12 12]
+Corrected Rand index
+0.310192139396 
+
+F-measure(P,Q):  0.6
+OERC:  0.545454545455
+
+#####################################
+Repetição do experimento:  48 
+
+Critério de adequação (energia):  525.207488
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Mercedes Classe S_L 	Focus_B 	Maserati GT_S 	Porsche_S 	Total
+
+
+1 	0 			0 			8 			2 			10
+2 	2 			2 			1 			3 			8
+3 	2 			4 			2 			0 			8
+4 	2 			1 			1 			3 			7
+Total 	[ 6  7 12  8]
+Corrected Rand index
+0.364844348911 
+
+F-measure(P,Q):  0.727272727273
+OERC:  0.484848484848
+
+#####################################
+Repetição do experimento:  49 
+
+Critério de adequação (energia):  587.730392
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Porsche_S 	Bmw serie 5_L 	Nissan Micra_U 	Total
+
+
+1 	3 			5 			2 			10
+2 	5 			1 			2 			8
+3 	0 			2 			6 			8
+4 	3 			2 			2 			7
+Total 	[11 10 12]
+Corrected Rand index
+0.319290815588 
+
+F-measure(P,Q):  0.6
+OERC:  0.515151515152
+
+#####################################
+Repetição do experimento:  50 
+
+Critério de adequação (energia):  585.868094
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Nissan Micra_U 	Porsche_S 	Maserati GT_S 	Total
+
+
+1 	1 			2 			7 			10
+2 	2 			3 			3 			8
+3 	6 			1 			1 			8
+4 	1 			4 			2 			7
+Total 	[10 10 13]
+Corrected Rand index
+0.35157199023 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.484848484848
+
+#####################################
+Repetição do experimento:  51 
+
+Critério de adequação (energia):  590.286165
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Maserati GT_S 	Porsche_S 	Skoda Fabia_U 	Total
+
+
+1 	7 			2 			1 			10
+2 	3 			4 			1 			8
+3 	2 			1 			5 			8
+4 	2 			4 			1 			7
+Total 	[14 11  8]
+Corrected Rand index
+0.330931753324 
+
+F-measure(P,Q):  0.625
+OERC:  0.515151515152
+
+#####################################
+Repetição do experimento:  52 
+
+Critério de adequação (energia):  595.509852
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Porsche_S 	Corsa_U 	Audi A8_L 	Total
+
+
+1 	3 			1 			6 			10
+2 	1 			2 			5 			8
+3 	1 			6 			1 			8
+4 	3 			2 			2 			7
+Total 	[ 8 11 14]
+Corrected Rand index
+0.330931753324 
+
+F-measure(P,Q):  0.631578947368
+OERC:  0.545454545455
+
+#####################################
+Repetição do experimento:  53 
+
+Critério de adequação (energia):  552.072649
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Mercedes Classe S_L 	Maserati GT_S 	Porsche_S 	Audi A8_L 	Total
+
+
+1 	0 			5 			2 			3 			10
+2 	2 			0 			2 			4 			8
+3 	3 			3 			1 			1 			8
+4 	2 			2 			3 			0 			7
+Total 	[ 7 10  8  8]
+Corrected Rand index
+0.270247613134 
+
+F-measure(P,Q):  0.5
+OERC:  0.545454545455
+
+#####################################
+Repetição do experimento:  54 
+
+Critério de adequação (energia):  553.464436
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Twingo_U 	Audi A8_L 	Maserati GT_S 	Mercedes Classe E_L 	Total
+
+
+1 	2 			0 			5 			3 			10
+2 	4 			3 			0 			1 			8
+3 	2 			1 			3 			2 			8
+4 	2 			0 			1 			4 			7
+Total 	[10  4  9 10]
+Corrected Rand index
+0.275356051003 
+
+F-measure(P,Q):  0.526315789474
+OERC:  0.515151515152
+
+#####################################
+Repetição do experimento:  55 
+
+Critério de adequação (energia):  533.24768
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Mercedes Classe S_L 	Bmw serie 5_L 	Maserati GT_S 	Porsche_S 	Total
+
+
+1 	0 			5 			3 			2 			10
+2 	2 			1 			2 			3 			8
+3 	2 			2 			3 			1 			8
+4 	1 			2 			1 			3 			7
+Total 	[ 5 10  9  9]
+Corrected Rand index
+0.224659618164 
+
+F-measure(P,Q):  0.5
+OERC:  0.606060606061
+
+#####################################
+Repetição do experimento:  56 
+
+Critério de adequação (energia):  536.331109
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Porsche_S 	Mercedes Classe E_L 	Corsa_U 	Honda  NSK_S 	Total
+
+
+1 	2 			4 			1 			3 			10
+2 	3 			1 			2 			2 			8
+3 	0 			1 			4 			3 			8
+4 	3 			2 			1 			1 			7
+Total 	[8 8 8 9]
+Corrected Rand index
+0.231158138588 
+
+F-measure(P,Q):  0.5
+OERC:  0.575757575758
+
+#####################################
+Repetição do experimento:  57 
+
+Critério de adequação (energia):  552.104754
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Maserati GT_S 	Honda  NSK_S 	Porsche_S 	Mercedes Classe S_L 	Total
+
+
+1 	7 			2 			1 			0 			10
+2 	3 			0 			3 			2 			8
+3 	2 			1 			2 			3 			8
+4 	2 			1 			3 			1 			7
+Total 	[14  4  9  6]
+Corrected Rand index
+0.281260960451 
+
+F-measure(P,Q):  0.583333333333
+OERC:  0.545454545455
+
+#####################################
+Repetição do experimento:  58 
+
+Critério de adequação (energia):  533.87217
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Bmw serie 5_L 	Twingo_U 	Vectra_B 	Bmw serie 7_L 	Total
+
+
+1 	6 			3 			0 			1 			10
+2 	1 			3 			1 			3 			8
+3 	2 			1 			2 			3 			8
+4 	2 			2 			2 			1 			7
+Total 	[11  9  5  8]
+Corrected Rand index
+0.254742465629 
+
+F-measure(P,Q):  0.571428571429
+OERC:  0.575757575758
+
+#####################################
+Repetição do experimento:  59 
+
+Critério de adequação (energia):  541.029282
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Maserati GT_S 	Porsche_S 	Bmw serie 7_L 	Corsa_U 	Total
+
+
+1 	7 			2 			0 			1 			10
+2 	1 			2 			3 			2 			8
+3 	1 			0 			2 			5 			8
+4 	2 			3 			1 			1 			7
+Total 	[11  7  6  9]
+Corrected Rand index
+0.337111128014 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.454545454545
+
+#####################################
+Repetição do experimento:  60 
+
+Critério de adequação (energia):  545.994763
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Ferrari_S 	Corsa_U 	Twingo_U 	Bmw serie 7_L 	Total
+
+
+1 	0 			2 			3 			5 			10
+2 	2 			1 			2 			3 			8
+3 	0 			5 			1 			2 			8
+4 	1 			2 			2 			2 			7
+Total 	[ 3 10  8 12]
+Corrected Rand index
+0.249774015353 
+
+F-measure(P,Q):  0.555555555556
+OERC:  0.545454545455
+
+#####################################
+Repetição do experimento:  61 
+
+Critério de adequação (energia):  581.71053
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Fiesta_U 	Nissan Micra_U 	Mercedes Classe S_L 	Bmw serie 7_L 	Total
+
+
+1 	2 			2 			3 			3 			10
+2 	2 			0 			1 			5 			8
+3 	0 			5 			2 			1 			8
+4 	2 			2 			3 			0 			7
+Total 	[6 9 9 9]
+Corrected Rand index
+0.285471327633 
+
+F-measure(P,Q):  0.588235294118
+OERC:  0.545454545455
+
+#####################################
+Repetição do experimento:  62 
+
+Critério de adequação (energia):  599.598916
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Porsche_S 	Bmw serie 7_L 	Honda  NSK_S 	Total
+
+
+1 	3 			4 			3 			10
+2 	4 			3 			1 			8
+3 	3 			1 			4 			8
+4 	5 			1 			1 			7
+Total 	[15  9  9]
+Corrected Rand index
+0.267409894217 
+
+F-measure(P,Q):  0.470588235294
+OERC:  0.606060606061
+
+#####################################
+Repetição do experimento:  63 
+
+Critério de adequação (energia):  527.101515
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Bmw serie 5_L 	Porsche_S 	Maserati GT_S 	Skoda Octavia_B 	Total
+
+
+1 	5 			2 			3 			0 			10
+2 	1 			4 			1 			2 			8
+3 	2 			1 			3 			2 			8
+4 	2 			3 			1 			1 			7
+Total 	[10 10  8  5]
+Corrected Rand index
+0.239761208503 
+
+F-measure(P,Q):  0.5
+OERC:  0.575757575758
+
+#####################################
+Repetição do experimento:  64 
+
+Critério de adequação (energia):  548.885453
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Porsche_S 	Nissan Micra_U 	Maserati GT_S 	Ferrari_S 	Total
+
+
+1 	2 			1 			7 			0 			10
+2 	2 			1 			3 			2 			8
+3 	1 			4 			0 			3 			8
+4 	4 			1 			1 			1 			7
+Total 	[ 9  7 11  6]
+Corrected Rand index
+0.337111128014 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.454545454545
+
+#####################################
+Repetição do experimento:  65 
+
+Critério de adequação (energia):  552.717446
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Twingo_U 	Maserati GT_S 	Porsche_S 	Audi A8_L 	Total
+
+
+1 	2 			5 			0 			3 			10
+2 	2 			0 			2 			4 			8
+3 	3 			2 			2 			1 			8
+4 	1 			2 			3 			1 			7
+Total 	[8 9 7 9]
+Corrected Rand index
+0.254898598619 
+
+F-measure(P,Q):  0.526315789474
+OERC:  0.545454545455
+
+#####################################
+Repetição do experimento:  66 
+
+Critério de adequação (energia):  596.529397
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Porsche_S 	Focus_B 	Bmw serie 7_L 	Total
+
+
+1 	4 			1 			5 			10
+2 	3 			2 			3 			8
+3 	1 			4 			3 			8
+4 	3 			3 			1 			7
+Total 	[11 10 12]
+Corrected Rand index
+0.263734529337 
+
+F-measure(P,Q):  0.454545454545
+OERC:  0.606060606061
+
+#####################################
+Repetição do experimento:  67 
+
+Critério de adequação (energia):  597.381076
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Maserati GT_S 	Porsche_S 	Bmw serie 7_L 	Total
+
+
+1 	8 			2 			0 			10
+2 	1 			3 			4 			8
+3 	2 			4 			2 			8
+4 	2 			3 			2 			7
+Total 	[13 12  8]
+Corrected Rand index
+0.346788636217 
+
+F-measure(P,Q):  0.695652173913
+OERC:  0.515151515152
+
+#####################################
+Repetição do experimento:  68 
+
+Critério de adequação (energia):  581.68316
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Maserati GT_S 	Corsa_U 	Bmw serie 7_L 	Total
+
+
+1 	9 			1 			0 			10
+2 	2 			2 			4 			8
+3 	1 			5 			2 			8
+4 	3 			2 			2 			7
+Total 	[15 10  8]
+Corrected Rand index
+0.399853533504 
+
+F-measure(P,Q):  0.72
+OERC:  0.454545454545
+
+#####################################
+Repetição do experimento:  69 
+
+Critério de adequação (energia):  585.004105
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Maserati GT_S 	Porsche_S 	Mercedes Classe S_L 	Total
+
+
+1 	8 			2 			0 			10
+2 	3 			3 			2 			8
+3 	3 			2 			3 			8
+4 	2 			3 			2 			7
+Total 	[16 10  7]
+Corrected Rand index
+0.311544563466 
+
+F-measure(P,Q):  0.615384615385
+OERC:  0.575757575758
+
+#####################################
+Repetição do experimento:  70 
+
+Critério de adequação (energia):  571.313463
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Skoda Octavia_B 	Mercedes SL_S 	Porsche_S 	Mercedes Classe S_L 	Total
+
+
+1 	1 			5 			3 			1 			10
+2 	1 			1 			4 			2 			8
+3 	3 			0 			1 			4 			8
+4 	2 			1 			3 			1 			7
+Total 	[ 7  7 11  8]
+Corrected Rand index
+0.266965203122 
+
+F-measure(P,Q):  0.588235294118
+OERC:  0.515151515152
+
+#####################################
+Repetição do experimento:  71 
+
+Critério de adequação (energia):  597.381076
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Maserati GT_S 	Porsche_S 	Bmw serie 7_L 	Total
+
+
+1 	8 			2 			0 			10
+2 	1 			3 			4 			8
+3 	2 			4 			2 			8
+4 	2 			3 			2 			7
+Total 	[13 12  8]
+Corrected Rand index
+0.346788636217 
+
+F-measure(P,Q):  0.695652173913
+OERC:  0.515151515152
+
+#####################################
+Repetição do experimento:  72 
+
+Critério de adequação (energia):  585.004105
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Porsche_S 	Maserati GT_S 	Mercedes Classe S_L 	Total
+
+
+1 	2 			8 			0 			10
+2 	3 			3 			2 			8
+3 	2 			3 			3 			8
+4 	3 			2 			2 			7
+Total 	[10 16  7]
+Corrected Rand index
+0.311544563466 
+
+F-measure(P,Q):  0.615384615385
+OERC:  0.575757575758
+
+#####################################
+Repetição do experimento:  73 
+
+Critério de adequação (energia):  547.994904
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Mercedes Classe S_L 	Mercedes Classe E_L 	Twingo_U 	Bmw serie 7_L 	Total
+
+
+1 	0 			6 			3 			1 			10
+2 	1 			2 			3 			2 			8
+3 	3 			2 			2 			1 			8
+4 	0 			4 			3 			0 			7
+Total 	[ 4 14 11  4]
+Corrected Rand index
+0.264072836483 
+
+F-measure(P,Q):  0.5
+OERC:  0.575757575758
+
+#####################################
+Repetição do experimento:  74 
+
+Critério de adequação (energia):  528.320517
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Lancia K_L 	Maserati GT_S 	Porsche_S 	Focus_B 	Total
+
+
+1 	0 			8 			2 			0 			10
+2 	1 			1 			3 			3 			8
+3 	2 			1 			0 			5 			8
+4 	1 			1 			3 			2 			7
+Total 	[ 4 11  8 10]
+Corrected Rand index
+0.390394034003 
+
+F-measure(P,Q):  0.761904761905
+OERC:  0.454545454545
+
+#####################################
+Repetição do experimento:  75 
+
+Critério de adequação (energia):  555.409248
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Maserati GT_S 	Ferrari_S 	Bmw serie 7_L 	Lancia Y_U 	Total
+
+
+1 	9 			0 			0 			1 			10
+2 	1 			3 			4 			0 			8
+3 	0 			0 			2 			6 			8
+4 	1 			1 			2 			3 			7
+Total 	[11  4  8 10]
+Corrected Rand index
+0.507583267982 
+
+F-measure(P,Q):  0.857142857143
+OERC:  0.333333333333
+
+#####################################
+Repetição do experimento:  76 
+
+Critério de adequação (energia):  590.286165
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Skoda Fabia_U 	Maserati GT_S 	Porsche_S 	Total
+
+
+1 	1 			7 			2 			10
+2 	1 			3 			4 			8
+3 	5 			2 			1 			8
+4 	1 			2 			4 			7
+Total 	[ 8 14 11]
+Corrected Rand index
+0.330931753324 
+
+F-measure(P,Q):  0.625
+OERC:  0.515151515152
+
+#####################################
+Repetição do experimento:  77 
+
+Critério de adequação (energia):  601.34847
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Porsche_S 	Skoda Octavia_B 	Mercedes Classe S_L 	Total
+
+
+1 	5 			2 			3 			10
+2 	4 			2 			2 			8
+3 	1 			3 			4 			8
+4 	4 			2 			1 			7
+Total 	[14  9 10]
+Corrected Rand index
+0.258352122657 
+
+F-measure(P,Q):  0.444444444444
+OERC:  0.636363636364
+
+#####################################
+Repetição do experimento:  78 
+
+Critério de adequação (energia):  565.082335
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Porsche_S 	Mercedes Classe S_L 	Skoda Fabia_U 	Bmw serie 7_L 	Total
+
+
+1 	4 			2 			1 			3 			10
+2 	4 			1 			0 			3 			8
+3 	1 			2 			4 			1 			8
+4 	4 			2 			1 			0 			7
+Total 	[13  7  6  7]
+Corrected Rand index
+0.256577298923 
+
+F-measure(P,Q):  0.571428571429
+OERC:  0.606060606061
+
+#####################################
+Repetição do experimento:  79 
+
+Critério de adequação (energia):  550.53794
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Corsa_U 	Audi A8_L 	Ferrari_S 	Maserati GT_S 	Total
+
+
+1 	1 			2 			0 			7 			10
+2 	1 			4 			3 			0 			8
+3 	5 			1 			2 			0 			8
+4 	2 			2 			1 			2 			7
+Total 	[9 9 6 9]
+Corrected Rand index
+0.367105242815 
+
+F-measure(P,Q):  0.736842105263
+OERC:  0.424242424242
+
+#####################################
+Repetição do experimento:  80 
+
+Critério de adequação (energia):  534.859208
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Porsche_S 	Bmw serie 7_L 	Focus_B 	Honda  NSK_S 	Total
+
+
+1 	3 			4 			0 			3 			10
+2 	3 			2 			2 			1 			8
+3 	0 			1 			4 			3 			8
+4 	3 			1 			2 			1 			7
+Total 	[9 8 8 8]
+Corrected Rand index
+0.24768732293 
+
+F-measure(P,Q):  0.5
+OERC:  0.575757575758
+
+#####################################
+Repetição do experimento:  81 
+
+Critério de adequação (energia):  596.64875
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Porsche_S 	Corsa_U 	Mercedes Classe S_L 	Total
+
+
+1 	5 			2 			3 			10
+2 	3 			3 			2 			8
+3 	0 			6 			2 			8
+4 	4 			1 			2 			7
+Total 	[12 12  9]
+Corrected Rand index
+0.30329549759 
+
+F-measure(P,Q):  0.6
+OERC:  0.575757575758
+
+#####################################
+Repetição do experimento:  82 
+
+Critério de adequação (energia):  539.476761
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Maserati GT_S 	Porsche_S 	Focus_B 	Bmw serie 7_L 	Total
+
+
+1 	8 			2 			0 			0 			10
+2 	0 			3 			2 			3 			8
+3 	2 			0 			4 			2 			8
+4 	1 			3 			2 			1 			7
+Total 	[11  8  8  6]
+Corrected Rand index
+0.386858303676 
+
+F-measure(P,Q):  0.761904761905
+OERC:  0.454545454545
+
+#####################################
+Repetição do experimento:  83 
+
+Critério de adequação (energia):  541.125999
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Porsche_S 	Bmw serie 5_L 	Twingo_U 	Mercedes Classe S_L 	Total
+
+
+1 	1 			6 			3 			0 			10
+2 	4 			1 			1 			2 			8
+3 	1 			2 			2 			3 			8
+4 	3 			2 			2 			0 			7
+Total 	[ 9 11  8  5]
+Corrected Rand index
+0.27864720885 
+
+F-measure(P,Q):  0.571428571429
+OERC:  0.515151515152
+
+#####################################
+Repetição do experimento:  84 
+
+Critério de adequação (energia):  552.309328
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Porsche_S 	Audi A8_L 	Nissan Micra_U 	Maserati GT_S 	Total
+
+
+1 	2 			2 			1 			5 			10
+2 	2 			5 			1 			0 			8
+3 	1 			1 			5 			1 			8
+4 	3 			1 			1 			2 			7
+Total 	[8 9 8 8]
+Corrected Rand index
+0.305539468123 
+
+F-measure(P,Q):  0.625
+OERC:  0.454545454545
+
+#####################################
+Repetição do experimento:  85 
+
+Critério de adequação (energia):  587.357857
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Porsche_S 	Mercedes SL_S 	Maserati GT_S 	Audi A8_L 	Total
+
+
+1 	1 			2 			5 			2 			10
+2 	2 			2 			0 			4 			8
+3 	3 			0 			4 			1 			8
+4 	2 			1 			2 			2 			7
+Total 	[ 8  5 11  9]
+Corrected Rand index
+0.254742465629 
+
+F-measure(P,Q):  0.47619047619
+OERC:  0.575757575758
+
+#####################################
+Repetição do experimento:  86 
+
+Critério de adequação (energia):  552.309328
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Porsche_S 	Nissan Micra_U 	Audi A8_L 	Maserati GT_S 	Total
+
+
+1 	2 			1 			2 			5 			10
+2 	2 			1 			5 			0 			8
+3 	1 			5 			1 			1 			8
+4 	3 			1 			1 			2 			7
+Total 	[8 8 9 8]
+Corrected Rand index
+0.305539468123 
+
+F-measure(P,Q):  0.625
+OERC:  0.454545454545
+
+#####################################
+Repetição do experimento:  87 
+
+Critério de adequação (energia):  549.347783
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Maserati GT_S 	Porsche_S 	Skoda Fabia_U 	Twingo_U 	Total
+
+
+1 	7 			0 			1 			2 			10
+2 	3 			3 			0 			2 			8
+3 	1 			1 			5 			1 			8
+4 	2 			4 			0 			1 			7
+Total 	[13  8  6  6]
+Corrected Rand index
+0.356359472038 
+
+F-measure(P,Q):  0.714285714286
+OERC:  0.454545454545
+
+#####################################
+Repetição do experimento:  88 
+
+Critério de adequação (energia):  578.662656
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Mercedes Classe E_L 	Skoda Octavia_B 	Bmw serie 7_L 	Mercedes Classe S_L 	Total
+
+
+1 	7 			1 			2 			0 			10
+2 	2 			2 			3 			1 			8
+3 	2 			1 			1 			4 			8
+4 	4 			3 			0 			0 			7
+Total 	[15  7  6  5]
+Corrected Rand index
+0.31480068266 
+
+F-measure(P,Q):  0.615384615385
+OERC:  0.484848484848
+
+#####################################
+Repetição do experimento:  89 
+
+Critério de adequação (energia):  546.497355
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Porsche_S 	Maserati GT_S 	Nissan Micra_U 	Bmw serie 7_L 	Total
+
+
+1 	2 			7 			1 			0 			10
+2 	3 			1 			0 			4 			8
+3 	1 			1 			4 			2 			8
+4 	3 			2 			1 			1 			7
+Total 	[ 9 11  6  7]
+Corrected Rand index
+0.337111128014 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.454545454545
+
+#####################################
+Repetição do experimento:  90 
+
+Critério de adequação (energia):  555.820693
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Audi A8_L 	Bmw serie 7_L 	Porsche_S 	Lancia Y_U 	Total
+
+
+1 	4 			2 			3 			1 			10
+2 	2 			4 			1 			1 			8
+3 	1 			2 			0 			5 			8
+4 	1 			1 			3 			2 			7
+Total 	[8 9 7 9]
+Corrected Rand index
+0.263129179592 
+
+F-measure(P,Q):  0.588235294118
+OERC:  0.515151515152
+
+#####################################
+Repetição do experimento:  91 
+
+Critério de adequação (energia):  567.722201
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Mercedes Classe E_L 	Corsa_U 	Vectra_B 	Bmw serie 7_L 	Total
+
+
+1 	6 			1 			1 			2 			10
+2 	0 			2 			2 			4 			8
+3 	1 			4 			1 			2 			8
+4 	3 			1 			3 			0 			7
+Total 	[10  8  7  8]
+Corrected Rand index
+0.303035007374 
+
+F-measure(P,Q):  0.6
+OERC:  0.484848484848
+
+#####################################
+Repetição do experimento:  92 
+
+Critério de adequação (energia):  546.497355
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Bmw serie 7_L 	Maserati GT_S 	Porsche_S 	Nissan Micra_U 	Total
+
+
+1 	0 			7 			2 			1 			10
+2 	4 			1 			3 			0 			8
+3 	2 			1 			1 			4 			8
+4 	1 			2 			3 			1 			7
+Total 	[ 7 11  9  6]
+Corrected Rand index
+0.337111128014 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.454545454545
+
+#####################################
+Repetição do experimento:  93 
+
+Critério de adequação (energia):  542.653433
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Corsa_U 	Maserati GT_S 	Mercedes Classe E_L 	Porsche_S 	Total
+
+
+1 	1 			5 			2 			2 			10
+2 	2 			2 			1 			3 			8
+3 	5 			2 			1 			0 			8
+4 	1 			1 			2 			3 			7
+Total 	[ 9 10  6  8]
+Corrected Rand index
+0.259920237747 
+
+F-measure(P,Q):  0.588235294118
+OERC:  0.545454545455
+
+#####################################
+Repetição do experimento:  94 
+
+Critério de adequação (energia):  545.823255
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Twingo_U 	Mercedes Classe S_L 	Porsche_S 	Maserati GT_S 	Total
+
+
+1 	2 			0 			0 			8 			10
+2 	1 			2 			2 			3 			8
+3 	3 			2 			2 			1 			8
+4 	1 			1 			3 			2 			7
+Total 	[ 7  5  7 14]
+Corrected Rand index
+0.324304235338 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.515151515152
+
+#####################################
+Repetição do experimento:  95 
+
+Critério de adequação (energia):  558.845001
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Mercedes Classe S_L 	Bmw serie 7_L 	Porsche_S 	Twingo_U 	Total
+
+
+1 	3 			2 			2 			3 			10
+2 	1 			3 			3 			1 			8
+3 	3 			1 			2 			2 			8
+4 	1 			0 			4 			2 			7
+Total 	[ 8  6 11  8]
+Corrected Rand index
+0.209436238945 
+
+F-measure(P,Q):  0.444444444444
+OERC:  0.606060606061
+
+#####################################
+Repetição do experimento:  96 
+
+Critério de adequação (energia):  660.658803
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Porsche_S 	Maserati GT_S 	Total
+
+
+1 	2 			8 			10
+2 	5 			3 			8
+3 	4 			4 			8
+4 	4 			3 			7
+Total 	[15 18]
+Corrected Rand index
+0.331502507003 
+
+F-measure(P,Q):  0.571428571429
+OERC:  0.606060606061
+
+#####################################
+Repetição do experimento:  97 
+
+Critério de adequação (energia):  543.14835
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Nissan Micra_U 	Mercedes Classe S_L 	Porsche_S 	Maserati GT_S 	Total
+
+
+1 	1 			0 			2 			7 			10
+2 	0 			2 			3 			3 			8
+3 	4 			2 			1 			1 			8
+4 	1 			1 			3 			2 			7
+Total 	[ 6  5  9 13]
+Corrected Rand index
+0.30628564794 
+
+F-measure(P,Q):  0.608695652174
+OERC:  0.515151515152
+
+#####################################
+Repetição do experimento:  98 
+
+Critério de adequação (energia):  545.994763
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Twingo_U 	Ferrari_S 	Bmw serie 7_L 	Corsa_U 	Total
+
+
+1 	3 			0 			5 			2 			10
+2 	2 			2 			3 			1 			8
+3 	1 			0 			2 			5 			8
+4 	2 			1 			2 			2 			7
+Total 	[ 8  3 12 10]
+Corrected Rand index
+0.249774015353 
+
+F-measure(P,Q):  0.555555555556
+OERC:  0.545454545455
+
+#####################################
+Repetição do experimento:  99 
+
+Critério de adequação (energia):  585.868094
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Maserati GT_S 	Nissan Micra_U 	Porsche_S 	Total
+
+
+1 	7 			1 			2 			10
+2 	3 			2 			3 			8
+3 	1 			6 			1 			8
+4 	2 			1 			4 			7
+Total 	[13 10 10]
+Corrected Rand index
+0.35157199023 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.484848484848
+Melhor repetição:  48
