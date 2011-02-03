@@ -1,0 +1,2308 @@
+Parâmetros iniciais
+
+Topologia:  2 x 5
+Cardinalidade (q):  1
+Tmin:  0.002 Tmax:  2.0
+Número de iterações:  500.0
+
+#####################################
+Repetição do experimento:  0 
+
+Critério de adequação (energia):  52480.76
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Dorasmicropoeus 	Ageneiosusbrevifili 	Leporinusfasciatus 	Leporinusfrederici 	Hopliasa�mara 	Platydorascostatus 	Myleusrubripinis 	Total
+
+
+1 	1 			1 			0 			0 			1 			1 			0 			4
+2 	1 			0 			0 			0 			0 			2 			1 			4
+3 	0 			0 			1 			1 			0 			0 			0 			2
+4 	0 			0 			0 			0 			0 			0 			2 			2
+Total 	[2 1 1 1 1 3 3]
+Corrected Rand index:  0.150289017341 
+
+F-measure(P,Q):  0.8
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  1 
+
+Critério de adequação (energia):  70549.31
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Dorasmicropoeus 	Platydorascostatus 	Potamotrygonhystrix 	Pseudoancistrusbarbatus 	Acnodonoligacanthus 	Total
+
+
+1 	2 			1 			1 			0 			0 			4
+2 	1 			2 			0 			1 			0 			4
+3 	0 			0 			0 			0 			2 			2
+4 	0 			0 			0 			0 			2 			2
+Total 	[3 3 1 1 4]
+Corrected Rand index:  0.28471411902 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.333333333333
+
+#####################################
+Repetição do experimento:  2 
+
+Critério de adequação (energia):  65352.76
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Pseudoancistrusbarbatus 	Platydorascostatus 	Myleusrubripinis 	Dorasmicropoeus 	Leporinusfrederici 	Ageneiosusbrevifili 	Total
+
+
+1 	0 			1 			0 			2 			0 			1 			4
+2 	1 			2 			0 			1 			0 			0 			4
+3 	0 			0 			0 			0 			2 			0 			2
+4 	0 			0 			2 			0 			0 			0 			2
+Total 	[1 3 2 3 2 1]
+Corrected Rand index:  0.331034482759 
+
+F-measure(P,Q):  1.0
+OERC:  0.166666666667
+
+#####################################
+Repetição do experimento:  3 
+
+Critério de adequação (energia):  48414.705
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Myleusrubripinis 	Leporinusfrederici 	Dorasmicropoeus 	Acnodonoligacanthus 	Pseudoancistrusbarbatus 	Semaprochilodusvari 	Hopliasa�mara 	Platydorascostatus 	Total
+
+
+1 	0 			0 			1 			0 			0 			0 			1 			2 			4
+2 	0 			0 			1 			0 			1 			1 			0 			1 			4
+3 	0 			2 			0 			0 			0 			0 			0 			0 			2
+4 	1 			0 			0 			1 			0 			0 			0 			0 			2
+Total 	[1 2 2 1 1 1 1 3]
+Corrected Rand index:  0.159744408946 
+
+F-measure(P,Q):  1.0
+OERC:  0.166666666667
+
+#####################################
+Repetição do experimento:  4 
+
+Critério de adequação (energia):  40164.14
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Platydorascostatus 	Leporinusfasciatus 	Pseudoancistrusbarbatus 	Myleusrubripinis 	Leporinusfrederici 	Cynodongibbus 	Semaprochilodusvari 	Total
+
+
+1 	3 			0 			0 			0 			0 			1 			0 			4
+2 	2 			0 			1 			0 			0 			0 			1 			4
+3 	0 			1 			0 			0 			1 			0 			0 			2
+4 	0 			0 			0 			2 			0 			0 			0 			2
+Total 	[5 1 1 2 1 1 1]
+Corrected Rand index:  0.366504854369 
+
+F-measure(P,Q):  1.0
+OERC:  0.166666666667
+
+#####################################
+Repetição do experimento:  5 
+
+Critério de adequação (energia):  34187.695
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Myleusrubripinis 	Leporinusfrederici 	Platydorascostatus 	Leporinusfasciatus 	Potamotrygonhystrix 	Cynodongibbus 	Dorasmicropoeus 	Total
+
+
+1 	0 			0 			1 			0 			1 			1 			1 			4
+2 	1 			0 			2 			0 			0 			0 			1 			4
+3 	0 			1 			0 			1 			0 			0 			0 			2
+4 	2 			0 			0 			0 			0 			0 			0 			2
+Total 	[3 1 3 1 1 1 2]
+Corrected Rand index:  0.150289017341 
+
+F-measure(P,Q):  0.8
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  6 
+
+Critério de adequação (energia):  51347.07
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Platydorascostatus 	Dorasmicropoeus 	Hopliasa�mara 	Leporinusfasciatus 	Ageneiosusbrevifili 	Leporinusfrederici 	Pseudoancistrusbarbatus 	Myleusrubripinis 	Total
+
+
+1 	1 			1 			1 			0 			1 			0 			0 			0 			4
+2 	2 			1 			0 			0 			0 			0 			1 			0 			4
+3 	0 			0 			0 			1 			0 			1 			0 			0 			2
+4 	0 			0 			0 			0 			0 			0 			0 			2 			2
+Total 	[3 2 1 1 1 1 1 2]
+Corrected Rand index:  0.159744408946 
+
+F-measure(P,Q):  1.0
+OERC:  0.166666666667
+
+#####################################
+Repetição do experimento:  7 
+
+Critério de adequação (energia):  10204.625
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Hopliasa�mara 	Potamotrygonhystrix 	Cynodongibbus 	Semaprochilodusvari 	Myleusrubripinis 	Dorasmicropoeus 	Ageneiosusbrevifili 	Leporinusfrederici 	Total
+
+
+1 	1 			1 			1 			0 			0 			0 			1 			0 			4
+2 	0 			1 			0 			1 			1 			1 			0 			0 			4
+3 	0 			0 			0 			0 			0 			0 			0 			2 			2
+4 	0 			0 			0 			0 			2 			0 			0 			0 			2
+Total 	[1 2 1 1 3 1 1 2]
+Corrected Rand index:  0.159744408946 
+
+F-measure(P,Q):  1.0
+OERC:  0.166666666667
+
+#####################################
+Repetição do experimento:  8 
+
+Critério de adequação (energia):  37945.67
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Cynodongibbus 	Dorasmicropoeus 	Platydorascostatus 	Leporinusfasciatus 	Leporinusfrederici 	Myleusrubripinis 	Pseudoancistrusbarbatus 	Total
+
+
+1 	1 			1 			2 			0 			0 			0 			0 			4
+2 	0 			1 			2 			0 			0 			0 			1 			4
+3 	0 			0 			0 			1 			1 			0 			0 			2
+4 	0 			0 			0 			0 			0 			2 			0 			2
+Total 	[1 2 4 1 1 2 1]
+Corrected Rand index:  0.234482758621 
+
+F-measure(P,Q):  1.0
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  9 
+
+Critério de adequação (energia):  59405.045
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Dorasmicropoeus 	Hopliasa�mara 	Platydorascostatus 	Leporinusfrederici 	Myleusrubripinis 	Leporinusfasciatus 	Pseudoancistrusbarbatus 	Total
+
+
+1 	1 			1 			2 			0 			0 			0 			0 			4
+2 	1 			0 			2 			0 			0 			0 			1 			4
+3 	0 			0 			0 			1 			0 			1 			0 			2
+4 	0 			0 			0 			0 			2 			0 			0 			2
+Total 	[2 1 4 1 2 1 1]
+Corrected Rand index:  0.234482758621 
+
+F-measure(P,Q):  1.0
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  10 
+
+Critério de adequação (energia):  44837.935
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Myleusrubripinis 	Leporinusfasciatus 	Potamotrygonhystrix 	Leporinusfrederici 	Dorasmicropoeus 	Ageneiosusbrevifili 	Semaprochilodusvari 	Platydorascostatus 	Total
+
+
+1 	0 			0 			1 			0 			2 			1 			0 			0 			4
+2 	1 			0 			0 			0 			1 			0 			1 			1 			4
+3 	0 			1 			0 			1 			0 			0 			0 			0 			2
+4 	2 			0 			0 			0 			0 			0 			0 			0 			2
+Total 	[3 1 1 1 3 1 1 1]
+Corrected Rand index:  0.151745068285 
+
+F-measure(P,Q):  0.8
+OERC:  0.166666666667
+
+#####################################
+Repetição do experimento:  11 
+
+Critério de adequação (energia):  36329.075
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Dorasmicropoeus 	Potamotrygonhystrix 	Hopliasa�mara 	Pseudoancistrusbarbatus 	Leporinusfrederici 	Platydorascostatus 	Ageneiosusbrevifili 	Semaprochilodusvari 	Myleusrubripinis 	Total
+
+
+1 	1 			1 			1 			0 			0 			0 			1 			0 			0 			4
+2 	1 			0 			0 			1 			0 			1 			0 			1 			0 			4
+3 	0 			0 			0 			0 			2 			0 			0 			0 			0 			2
+4 	0 			0 			0 			0 			0 			0 			0 			0 			2 			2
+Total 	[2 1 1 1 2 1 1 1 2]
+Corrected Rand index:  0.171428571429 
+
+F-measure(P,Q):  1.0
+OERC:  0.0833333333333
+
+#####################################
+Repetição do experimento:  12 
+
+Critério de adequação (energia):  64750.545
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Platydorascostatus 	Hopliasa�mara 	Acnodonoligacanthus 	Dorasmicropoeus 	Pseudoancistrusbarbatus 	Total
+
+
+1 	2 			1 			0 			1 			0 			4
+2 	2 			0 			0 			1 			1 			4
+3 	0 			0 			2 			0 			0 			2
+4 	0 			0 			2 			0 			0 			2
+Total 	[4 1 4 2 1]
+Corrected Rand index:  0.274157303371 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.416666666667
+
+#####################################
+Repetição do experimento:  13 
+
+Critério de adequação (energia):  34336.645
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Myleusrubripinis 	Platydorascostatus 	Cynodongibbus 	Dorasmicropoeus 	Leporinusfrederici 	Ageneiosusbrevifili 	Total
+
+
+1 	0 			1 			1 			1 			0 			1 			4
+2 	1 			2 			0 			1 			0 			0 			4
+3 	0 			0 			0 			0 			2 			0 			2
+4 	2 			0 			0 			0 			0 			0 			2
+Total 	[3 3 1 2 2 1]
+Corrected Rand index:  0.24 
+
+F-measure(P,Q):  1.0
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  14 
+
+Critério de adequação (energia):  28953.03
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Myleusrubripinis 	Leporinusfrederici 	Cynodongibbus 	Dorasmicropoeus 	Semaprochilodusvari 	Platydorascostatus 	Total
+
+
+1 	0 			0 			1 			1 			0 			2 			4
+2 	1 			0 			0 			1 			1 			1 			4
+3 	0 			2 			0 			0 			0 			0 			2
+4 	2 			0 			0 			0 			0 			0 			2
+Total 	[3 2 1 2 1 3]
+Corrected Rand index:  0.24 
+
+F-measure(P,Q):  1.0
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  15 
+
+Critério de adequação (energia):  57308.01
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Platydorascostatus 	Leporinusfasciatus 	Potamotrygonhystrix 	Acnodonoligacanthus 	Dorasmicropoeus 	Hopliasa�mara 	Total
+
+
+1 	1 			0 			1 			0 			1 			1 			4
+2 	2 			0 			0 			1 			1 			0 			4
+3 	0 			1 			0 			1 			0 			0 			2
+4 	0 			0 			0 			2 			0 			0 			2
+Total 	[3 1 1 4 2 1]
+Corrected Rand index:  0.136536030341 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.333333333333
+
+#####################################
+Repetição do experimento:  16 
+
+Critério de adequação (energia):  64488.75
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Dorasmicropoeus 	Pseudoancistrusbarbatus 	Leporinusfrederici 	Myleusrubripinis 	Acnodonoligacanthus 	Platydorascostatus 	Ageneiosusbrevifili 	Total
+
+
+1 	2 			0 			0 			0 			0 			1 			1 			4
+2 	1 			1 			0 			0 			0 			2 			0 			4
+3 	0 			0 			2 			0 			0 			0 			0 			2
+4 	0 			0 			0 			1 			1 			0 			0 			2
+Total 	[3 1 2 1 1 3 1]
+Corrected Rand index:  0.245664739884 
+
+F-measure(P,Q):  1.0
+OERC:  0.166666666667
+
+#####################################
+Repetição do experimento:  17 
+
+Critério de adequação (energia):  61173.49
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Platydorascostatus 	Pseudoancistrusbarbatus 	Leporinusfrederici 	Ageneiosusbrevifili 	Dorasmicropoeus 	Leporinusfasciatus 	Myleusrubripinis 	Acnodonoligacanthus 	Total
+
+
+1 	1 			0 			0 			1 			2 			0 			0 			0 			4
+2 	2 			1 			0 			0 			1 			0 			0 			0 			4
+3 	0 			0 			1 			0 			0 			1 			0 			0 			2
+4 	0 			0 			0 			0 			0 			0 			1 			1 			2
+Total 	[3 1 1 1 3 1 1 1]
+Corrected Rand index:  0.151745068285 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.166666666667
+
+#####################################
+Repetição do experimento:  18 
+
+Critério de adequação (energia):  37945.67
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Platydorascostatus 	Pseudoancistrusbarbatus 	Myleusrubripinis 	Leporinusfrederici 	Leporinusfasciatus 	Cynodongibbus 	Dorasmicropoeus 	Total
+
+
+1 	2 			0 			0 			0 			0 			1 			1 			4
+2 	2 			1 			0 			0 			0 			0 			1 			4
+3 	0 			0 			0 			1 			1 			0 			0 			2
+4 	0 			0 			2 			0 			0 			0 			0 			2
+Total 	[4 1 2 1 1 1 2]
+Corrected Rand index:  0.234482758621 
+
+F-measure(P,Q):  1.0
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  19 
+
+Critério de adequação (energia):  60134.91
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Acnodonoligacanthus 	Platydorascostatus 	Cynodongibbus 	Total
+
+
+1 	0 			3 			1 			4
+2 	1 			3 			0 			4
+3 	2 			0 			0 			2
+4 	2 			0 			0 			2
+Total 	[5 6 1]
+Corrected Rand index:  0.401244167963 
+
+F-measure(P,Q):  0.6
+OERC:  0.5
+
+#####################################
+Repetição do experimento:  20 
+
+Critério de adequação (energia):  37905.48
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Dorasmicropoeus 	Potamotrygonhystrix 	Ageneiosusbrevifili 	Leporinusfasciatus 	Leporinusfrederici 	Hopliasa�mara 	Myleusrubripinis 	Pseudoancistrusbarbatus 	Semaprochilodusvari 	Total
+
+
+1 	1 			1 			1 			0 			0 			1 			0 			0 			0 			4
+2 	1 			1 			0 			0 			0 			0 			0 			1 			1 			4
+3 	0 			0 			0 			1 			1 			0 			0 			0 			0 			2
+4 	0 			0 			0 			0 			0 			0 			2 			0 			0 			2
+Total 	[2 2 1 1 1 1 2 1 1]
+Corrected Rand index:  0.0535714285714 
+
+F-measure(P,Q):  1.0
+OERC:  0.166666666667
+
+#####################################
+Repetição do experimento:  21 
+
+Critério de adequação (energia):  65622.44
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Acnodonoligacanthus 	Leporinusfrederici 	Myleusrubripinis 	Dorasmicropoeus 	Platydorascostatus 	Ageneiosusbrevifili 	Total
+
+
+1 	0 			0 			0 			2 			1 			1 			4
+2 	0 			0 			1 			1 			2 			0 			4
+3 	0 			2 			0 			0 			0 			0 			2
+4 	1 			0 			1 			0 			0 			0 			2
+Total 	[1 2 2 3 3 1]
+Corrected Rand index:  0.24 
+
+F-measure(P,Q):  1.0
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  22 
+
+Critério de adequação (energia):  40740.3
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Platydorascostatus 	Leporinusfasciatus 	Cynodongibbus 	Dorasmicropoeus 	Acnodonoligacanthus 	Total
+
+
+1 	2 			0 			1 			1 			0 			4
+2 	2 			0 			0 			1 			1 			4
+3 	0 			1 			0 			0 			1 			2
+4 	0 			0 			0 			0 			2 			2
+Total 	[4 1 1 2 4]
+Corrected Rand index:  0.2 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.416666666667
+
+#####################################
+Repetição do experimento:  23 
+
+Critério de adequação (energia):  42958.77
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Cynodongibbus 	Leporinusfasciatus 	Platydorascostatus 	Semaprochilodusvari 	Acnodonoligacanthus 	Total
+
+
+1 	1 			0 			3 			0 			0 			4
+2 	0 			0 			2 			1 			1 			4
+3 	0 			1 			0 			0 			1 			2
+4 	0 			0 			0 			0 			2 			2
+Total 	[1 1 5 1 4]
+Corrected Rand index:  0.313447927199 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.333333333333
+
+#####################################
+Repetição do experimento:  24 
+
+Critério de adequação (energia):  63648.45
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Acnodonoligacanthus 	Leporinusfasciatus 	Dorasmicropoeus 	Platydorascostatus 	Pseudoancistrusbarbatus 	Ageneiosusbrevifili 	Total
+
+
+1 	0 			0 			2 			1 			0 			1 			4
+2 	0 			0 			1 			2 			1 			0 			4
+3 	1 			1 			0 			0 			0 			0 			2
+4 	2 			0 			0 			0 			0 			0 			2
+Total 	[3 1 3 3 1 1]
+Corrected Rand index:  0.229551451187 
+
+F-measure(P,Q):  0.8
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  25 
+
+Critério de adequação (energia):  68519.07
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Platydorascostatus 	Potamotrygonhystrix 	Pseudoancistrusbarbatus 	Leporinusfrederici 	Myleusrubripinis 	Dorasmicropoeus 	Total
+
+
+1 	1 			1 			0 			0 			0 			2 			4
+2 	2 			0 			1 			0 			0 			1 			4
+3 	0 			0 			0 			2 			0 			0 			2
+4 	0 			0 			0 			0 			2 			0 			2
+Total 	[3 1 1 2 2 3]
+Corrected Rand index:  0.331034482759 
+
+F-measure(P,Q):  1.0
+OERC:  0.166666666667
+
+#####################################
+Repetição do experimento:  26 
+
+Critério de adequação (energia):  61015.995
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Dorasmicropoeus 	Platydorascostatus 	Hopliasa�mara 	Leporinusfasciatus 	Acnodonoligacanthus 	Pseudoancistrusbarbatus 	Total
+
+
+1 	1 			2 			1 			0 			0 			0 			4
+2 	1 			2 			0 			0 			0 			1 			4
+3 	0 			0 			0 			1 			1 			0 			2
+4 	0 			0 			0 			0 			2 			0 			2
+Total 	[2 4 1 1 3 1]
+Corrected Rand index:  0.21997471555 
+
+F-measure(P,Q):  0.8
+OERC:  0.333333333333
+
+#####################################
+Repetição do experimento:  27 
+
+Critério de adequação (energia):  53605.73
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Cynodongibbus 	Platydorascostatus 	Pseudoancistrusbarbatus 	Myleusrubripinis 	Leporinusfasciatus 	Leporinusfrederici 	Total
+
+
+1 	1 			3 			0 			0 			0 			0 			4
+2 	0 			3 			1 			0 			0 			0 			4
+3 	0 			0 			0 			0 			1 			1 			2
+4 	0 			0 			0 			2 			0 			0 			2
+Total 	[1 6 1 2 1 1]
+Corrected Rand index:  0.442871587462 
+
+F-measure(P,Q):  1.0
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  28 
+
+Critério de adequação (energia):  62307.18
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Dorasmicropoeus 	Leporinusfasciatus 	Platydorascostatus 	Leporinusfrederici 	Myleusrubripinis 	Ageneiosusbrevifili 	Acnodonoligacanthus 	Total
+
+
+1 	2 			0 			1 			0 			0 			1 			0 			4
+2 	1 			0 			2 			0 			1 			0 			0 			4
+3 	0 			1 			0 			1 			0 			0 			0 			2
+4 	0 			0 			0 			0 			1 			0 			1 			2
+Total 	[3 1 3 1 2 1 1]
+Corrected Rand index:  0.150289017341 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  29 
+
+Critério de adequação (energia):  19240.735
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Acnodonoligacanthus 	Potamotrygonhystrix 	Ageneiosusbrevifili 	Semaprochilodusvari 	Dorasmicropoeus 	Leporinusfasciatus 	Cynodongibbus 	Total
+
+
+1 	0 			1 			1 			0 			1 			0 			1 			4
+2 	1 			1 			0 			1 			1 			0 			0 			4
+3 	1 			0 			0 			0 			0 			1 			0 			2
+4 	2 			0 			0 			0 			0 			0 			0 			2
+Total 	[4 2 1 1 2 1 1]
+Corrected Rand index:  0.0524137931034 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.333333333333
+
+#####################################
+Repetição do experimento:  30 
+
+Critério de adequação (energia):  62720.305
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Dorasmicropoeus 	Hopliasa�mara 	Myleusrubripinis 	Leporinusfrederici 	Pseudoancistrusbarbatus 	Platydorascostatus 	Total
+
+
+1 	1 			1 			0 			0 			0 			2 			4
+2 	1 			0 			0 			0 			1 			2 			4
+3 	0 			0 			0 			2 			0 			0 			2
+4 	0 			0 			2 			0 			0 			0 			2
+Total 	[2 1 2 2 1 4]
+Corrected Rand index:  0.316622691293 
+
+F-measure(P,Q):  1.0
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  31 
+
+Critério de adequação (energia):  41220.74
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Hopliasa�mara 	Ageneiosusbrevifili 	Pseudoancistrusbarbatus 	Myleusrubripinis 	Leporinusfrederici 	Dorasmicropoeus 	Potamotrygonhystrix 	Semaprochilodusvari 	Total
+
+
+1 	1 			1 			0 			0 			0 			1 			1 			0 			4
+2 	0 			0 			1 			0 			0 			1 			1 			1 			4
+3 	0 			0 			0 			0 			2 			0 			0 			0 			2
+4 	0 			0 			0 			2 			0 			0 			0 			0 			2
+Total 	[1 1 1 2 2 2 2 1]
+Corrected Rand index:  0.168634064081 
+
+F-measure(P,Q):  1.0
+OERC:  0.166666666667
+
+#####################################
+Repetição do experimento:  32 
+
+Critério de adequação (energia):  36266.41
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Acnodonoligacanthus 	Platydorascostatus 	Pseudoancistrusbarbatus 	Ageneiosusbrevifili 	Cynodongibbus 	Semaprochilodusvari 	Total
+
+
+1 	0 			1 			0 			2 			1 			0 			4
+2 	0 			2 			1 			0 			0 			1 			4
+3 	2 			0 			0 			0 			0 			0 			2
+4 	2 			0 			0 			0 			0 			0 			2
+Total 	[4 3 1 2 1 1]
+Corrected Rand index:  0.303413400759 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  33 
+
+Critério de adequação (energia):  55216.68
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Platydorascostatus 	Pseudoancistrusbarbatus 	Leporinusfasciatus 	Acnodonoligacanthus 	Cynodongibbus 	Total
+
+
+1 	3 			0 			0 			0 			1 			4
+2 	3 			1 			0 			0 			0 			4
+3 	0 			0 			1 			1 			0 			2
+4 	0 			0 			0 			2 			0 			2
+Total 	[6 1 1 3 1]
+Corrected Rand index:  0.418957345972 
+
+F-measure(P,Q):  0.8
+OERC:  0.333333333333
+
+#####################################
+Repetição do experimento:  34 
+
+Critério de adequação (energia):  56056.98
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Platydorascostatus 	Cynodongibbus 	Leporinusfrederici 	Pseudoancistrusbarbatus 	Myleusrubripinis 	Acnodonoligacanthus 	Total
+
+
+1 	3 			1 			0 			0 			0 			0 			4
+2 	3 			0 			0 			1 			0 			0 			4
+3 	0 			0 			2 			0 			0 			0 			2
+4 	0 			0 			0 			0 			1 			1 			2
+Total 	[6 1 2 1 1 1]
+Corrected Rand index:  0.442871587462 
+
+F-measure(P,Q):  1.0
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  35 
+
+Critério de adequação (energia):  24773.76
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Leporinusfasciatus 	Myleusrubripinis 	Leporinusfrederici 	Semaprochilodusvari 	Platydorascostatus 	Acnodonoligacanthus 	Dorasmicropoeus 	Cynodongibbus 	Total
+
+
+1 	0 			0 			0 			0 			2 			0 			1 			1 			4
+2 	0 			1 			0 			1 			1 			0 			1 			0 			4
+3 	1 			0 			1 			0 			0 			0 			0 			0 			2
+4 	0 			1 			0 			0 			0 			1 			0 			0 			2
+Total 	[1 2 1 1 3 1 2 1]
+Corrected Rand index:  0.0543130990415 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  36 
+
+Critério de adequação (energia):  67655.06
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Leporinusfrederici 	Myleusrubripinis 	Potamotrygonhystrix 	Acnodonoligacanthus 	Dorasmicropoeus 	Pseudoancistrusbarbatus 	Platydorascostatus 	Total
+
+
+1 	0 			0 			1 			0 			2 			0 			1 			4
+2 	0 			0 			0 			0 			1 			1 			2 			4
+3 	2 			0 			0 			0 			0 			0 			0 			2
+4 	0 			1 			0 			1 			0 			0 			0 			2
+Total 	[2 1 1 1 3 1 3]
+Corrected Rand index:  0.245664739884 
+
+F-measure(P,Q):  1.0
+OERC:  0.166666666667
+
+#####################################
+Repetição do experimento:  37 
+
+Critério de adequação (energia):  71706.425
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Dorasmicropoeus 	Platydorascostatus 	Pseudoancistrusbarbatus 	Leporinusfasciatus 	Acnodonoligacanthus 	Total
+
+
+1 	2 			2 			0 			0 			0 			4
+2 	1 			2 			1 			0 			0 			4
+3 	0 			0 			0 			1 			1 			2
+4 	0 			0 			0 			0 			2 			2
+Total 	[3 4 1 1 3]
+Corrected Rand index:  0.28471411902 
+
+F-measure(P,Q):  0.8
+OERC:  0.333333333333
+
+#####################################
+Repetição do experimento:  38 
+
+Critério de adequação (energia):  51308.955
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Semaprochilodusvari 	Dorasmicropoeus 	Pseudoancistrusbarbatus 	Acnodonoligacanthus 	Hopliasa�mara 	Platydorascostatus 	Total
+
+
+1 	0 			1 			0 			0 			1 			2 			4
+2 	1 			1 			1 			0 			0 			1 			4
+3 	0 			0 			0 			2 			0 			0 			2
+4 	0 			0 			0 			2 			0 			0 			2
+Total 	[1 2 1 4 1 3]
+Corrected Rand index:  0.21997471555 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.333333333333
+
+#####################################
+Repetição do experimento:  39 
+
+Critério de adequação (energia):  94993.99
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Platydorascostatus 	Leporinusfasciatus 	Myleusrubripinis 	Pseudoancistrusbarbatus 	Acnodonoligacanthus 	Leporinusfrederici 	Total
+
+
+1 	4 			0 			0 			0 			0 			0 			4
+2 	3 			0 			0 			1 			0 			0 			4
+3 	0 			1 			0 			0 			0 			1 			2
+4 	0 			0 			1 			0 			1 			0 			2
+Total 	[7 1 1 1 1 1]
+Corrected Rand index:  0.493934142114 
+
+F-measure(P,Q):  0.727272727273
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  40 
+
+Critério de adequação (energia):  65203.81
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Leporinusfasciatus 	Dorasmicropoeus 	Potamotrygonhystrix 	Platydorascostatus 	Myleusrubripinis 	Pseudoancistrusbarbatus 	Leporinusfrederici 	Total
+
+
+1 	0 			2 			1 			1 			0 			0 			0 			4
+2 	0 			1 			0 			2 			0 			1 			0 			4
+3 	1 			0 			0 			0 			0 			0 			1 			2
+4 	0 			0 			0 			0 			2 			0 			0 			2
+Total 	[1 3 1 3 2 1 1]
+Corrected Rand index:  0.245664739884 
+
+F-measure(P,Q):  1.0
+OERC:  0.166666666667
+
+#####################################
+Repetição do experimento:  41 
+
+Critério de adequação (energia):  37905.48
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Dorasmicropoeus 	Semaprochilodusvari 	Potamotrygonhystrix 	Pseudoancistrusbarbatus 	Myleusrubripinis 	Hopliasa�mara 	Ageneiosusbrevifili 	Leporinusfasciatus 	Leporinusfrederici 	Total
+
+
+1 	1 			0 			1 			0 			0 			1 			1 			0 			0 			4
+2 	1 			1 			1 			1 			0 			0 			0 			0 			0 			4
+3 	0 			0 			0 			0 			0 			0 			0 			1 			1 			2
+4 	0 			0 			0 			0 			2 			0 			0 			0 			0 			2
+Total 	[2 1 2 1 2 1 1 1 1]
+Corrected Rand index:  0.0535714285714 
+
+F-measure(P,Q):  1.0
+OERC:  0.166666666667
+
+#####################################
+Repetição do experimento:  42 
+
+Critério de adequação (energia):  14869.7
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Myleusrubripinis 	Leporinusfrederici 	Pseudoancistrusbarbatus 	Semaprochilodusvari 	Dorasmicropoeus 	Platydorascostatus 	Ageneiosusbrevifili 	Potamotrygonhystrix 	Cynodongibbus 	Total
+
+
+1 	0 			0 			0 			0 			1 			0 			1 			1 			1 			4
+2 	0 			0 			1 			1 			1 			1 			0 			0 			0 			4
+3 	0 			2 			0 			0 			0 			0 			0 			0 			0 			2
+4 	2 			0 			0 			0 			0 			0 			0 			0 			0 			2
+Total 	[2 2 1 1 2 1 1 1 1]
+Corrected Rand index:  0.171428571429 
+
+F-measure(P,Q):  1.0
+OERC:  0.0833333333333
+
+#####################################
+Repetição do experimento:  43 
+
+Critério de adequação (energia):  69231.465
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Myleusrubripinis 	Leporinusfrederici 	Dorasmicropoeus 	Leporinusfasciatus 	Platydorascostatus 	Acnodonoligacanthus 	Pseudoancistrusbarbatus 	Total
+
+
+1 	0 			0 			2 			0 			2 			0 			0 			4
+2 	0 			0 			1 			0 			2 			0 			1 			4
+3 	0 			1 			0 			1 			0 			0 			0 			2
+4 	1 			0 			0 			0 			0 			1 			0 			2
+Total 	[1 1 3 1 4 1 1]
+Corrected Rand index:  0.224274406332 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  44 
+
+Critério de adequação (energia):  62307.18
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Leporinusfrederici 	Leporinusfasciatus 	Dorasmicropoeus 	Platydorascostatus 	Acnodonoligacanthus 	Myleusrubripinis 	Ageneiosusbrevifili 	Total
+
+
+1 	0 			0 			2 			1 			0 			0 			1 			4
+2 	0 			0 			1 			2 			0 			1 			0 			4
+3 	1 			1 			0 			0 			0 			0 			0 			2
+4 	0 			0 			0 			0 			1 			1 			0 			2
+Total 	[1 1 3 3 1 2 1]
+Corrected Rand index:  0.150289017341 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  45 
+
+Critério de adequação (energia):  34187.695
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Platydorascostatus 	Cynodongibbus 	Potamotrygonhystrix 	Leporinusfrederici 	Dorasmicropoeus 	Leporinusfasciatus 	Myleusrubripinis 	Total
+
+
+1 	1 			1 			1 			0 			1 			0 			0 			4
+2 	2 			0 			0 			0 			1 			0 			1 			4
+3 	0 			0 			0 			1 			0 			1 			0 			2
+4 	0 			0 			0 			0 			0 			0 			2 			2
+Total 	[3 1 1 1 2 1 3]
+Corrected Rand index:  0.150289017341 
+
+F-measure(P,Q):  0.8
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  46 
+
+Critério de adequação (energia):  96991.69
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Platydorascostatus 	Leporinusfasciatus 	Myleusrubripinis 	Leporinusfrederici 	Total
+
+
+1 	4 			0 			0 			0 			4
+2 	3 			0 			1 			0 			4
+3 	0 			1 			0 			1 			2
+4 	0 			0 			2 			0 			2
+Total 	[7 1 3 1]
+Corrected Rand index:  0.513966480447 
+
+F-measure(P,Q):  0.8
+OERC:  0.333333333333
+
+#####################################
+Repetição do experimento:  47 
+
+Critério de adequação (energia):  56124.33
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Platydorascostatus 	Potamotrygonhystrix 	Acnodonoligacanthus 	Hopliasa�mara 	Pseudoancistrusbarbatus 	Dorasmicropoeus 	Leporinusfasciatus 	Total
+
+
+1 	1 			1 			0 			1 			0 			1 			0 			4
+2 	2 			0 			0 			0 			1 			1 			0 			4
+3 	0 			0 			1 			0 			0 			0 			1 			2
+4 	0 			0 			2 			0 			0 			0 			0 			2
+Total 	[3 1 3 1 1 2 1]
+Corrected Rand index:  0.150289017341 
+
+F-measure(P,Q):  0.8
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  48 
+
+Critério de adequação (energia):  18057.055
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Acnodonoligacanthus 	Leporinusfasciatus 	Cynodongibbus 	Pseudoancistrusbarbatus 	Dorasmicropoeus 	Potamotrygonhystrix 	Ageneiosusbrevifili 	Semaprochilodusvari 	Total
+
+
+1 	0 			0 			1 			0 			1 			1 			1 			0 			4
+2 	0 			0 			0 			1 			1 			1 			0 			1 			4
+3 	1 			1 			0 			0 			0 			0 			0 			0 			2
+4 	2 			0 			0 			0 			0 			0 			0 			0 			2
+Total 	[3 1 1 1 2 2 1 1]
+Corrected Rand index:  0.0543130990415 
+
+F-measure(P,Q):  0.8
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  49 
+
+Critério de adequação (energia):  48153.195
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Dorasmicropoeus 	Ageneiosusbrevifili 	Potamotrygonhystrix 	Platydorascostatus 	Semaprochilodusvari 	Myleusrubripinis 	Leporinusfrederici 	Total
+
+
+1 	2 			1 			1 			0 			0 			0 			0 			4
+2 	1 			0 			0 			1 			1 			1 			0 			4
+3 	0 			0 			0 			0 			0 			0 			2 			2
+4 	0 			0 			0 			0 			0 			2 			0 			2
+Total 	[3 1 1 1 1 3 2]
+Corrected Rand index:  0.245664739884 
+
+F-measure(P,Q):  1.0
+OERC:  0.166666666667
+
+#####################################
+Repetição do experimento:  50 
+
+Critério de adequação (energia):  55216.68
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Acnodonoligacanthus 	Platydorascostatus 	Pseudoancistrusbarbatus 	Cynodongibbus 	Leporinusfasciatus 	Total
+
+
+1 	0 			3 			0 			1 			0 			4
+2 	0 			3 			1 			0 			0 			4
+3 	1 			0 			0 			0 			1 			2
+4 	2 			0 			0 			0 			0 			2
+Total 	[3 6 1 1 1]
+Corrected Rand index:  0.418957345972 
+
+F-measure(P,Q):  0.8
+OERC:  0.333333333333
+
+#####################################
+Repetição do experimento:  51 
+
+Critério de adequação (energia):  70095.475
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Myleusrubripinis 	Leporinusfasciatus 	Platydorascostatus 	Pseudoancistrusbarbatus 	Dorasmicropoeus 	Leporinusfrederici 	Total
+
+
+1 	0 			0 			2 			0 			2 			0 			4
+2 	0 			0 			2 			1 			1 			0 			4
+3 	0 			1 			0 			0 			0 			1 			2
+4 	2 			0 			0 			0 			0 			0 			2
+Total 	[2 1 4 1 3 1]
+Corrected Rand index:  0.303413400759 
+
+F-measure(P,Q):  1.0
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  52 
+
+Critério de adequação (energia):  66337.5
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Myleusrubripinis 	Platydorascostatus 	Leporinusfasciatus 	Leporinusfrederici 	Potamotrygonhystrix 	Dorasmicropoeus 	Total
+
+
+1 	0 			1 			0 			0 			1 			2 			4
+2 	1 			2 			0 			0 			0 			1 			4
+3 	0 			0 			1 			1 			0 			0 			2
+4 	2 			0 			0 			0 			0 			0 			2
+Total 	[3 3 1 1 1 3]
+Corrected Rand index:  0.229551451187 
+
+F-measure(P,Q):  0.8
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  53 
+
+Critério de adequação (energia):  63183.065
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Dorasmicropoeus 	Platydorascostatus 	Semaprochilodusvari 	Acnodonoligacanthus 	Total
+
+
+1 	2 			2 			0 			0 			4
+2 	1 			1 			1 			1 			4
+3 	0 			0 			0 			2 			2
+4 	0 			0 			0 			2 			2
+Total 	[3 3 1 5]
+Corrected Rand index:  0.250758341759 
+
+F-measure(P,Q):  0.571428571429
+OERC:  0.416666666667
+
+#####################################
+Repetição do experimento:  54 
+
+Critério de adequação (energia):  47289.185
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Dorasmicropoeus 	Ageneiosusbrevifili 	Leporinusfrederici 	Myleusrubripinis 	Acnodonoligacanthus 	Semaprochilodusvari 	Potamotrygonhystrix 	Platydorascostatus 	Total
+
+
+1 	2 			1 			0 			0 			0 			0 			1 			0 			4
+2 	1 			0 			0 			1 			0 			1 			0 			1 			4
+3 	0 			0 			2 			0 			0 			0 			0 			0 			2
+4 	0 			0 			0 			1 			1 			0 			0 			0 			2
+Total 	[3 1 2 2 1 1 1 1]
+Corrected Rand index:  0.159744408946 
+
+F-measure(P,Q):  1.0
+OERC:  0.166666666667
+
+#####################################
+Repetição do experimento:  55 
+
+Critério de adequação (energia):  69652.76
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Myleusrubripinis 	Leporinusfrederici 	Platydorascostatus 	Dorasmicropoeus 	Potamotrygonhystrix 	Total
+
+
+1 	0 			0 			1 			2 			1 			4
+2 	1 			0 			2 			1 			0 			4
+3 	0 			2 			0 			0 			0 			2
+4 	2 			0 			0 			0 			0 			2
+Total 	[3 2 3 3 1]
+Corrected Rand index:  0.308470290771 
+
+F-measure(P,Q):  1.0
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  56 
+
+Critério de adequação (energia):  69231.465
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Dorasmicropoeus 	Platydorascostatus 	Myleusrubripinis 	Leporinusfasciatus 	Pseudoancistrusbarbatus 	Acnodonoligacanthus 	Leporinusfrederici 	Total
+
+
+1 	2 			2 			0 			0 			0 			0 			0 			4
+2 	1 			2 			0 			0 			1 			0 			0 			4
+3 	0 			0 			0 			1 			0 			0 			1 			2
+4 	0 			0 			1 			0 			0 			1 			0 			2
+Total 	[3 4 1 1 1 1 1]
+Corrected Rand index:  0.224274406332 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  57 
+
+Critério de adequação (energia):  25637.77
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Myleusrubripinis 	Platydorascostatus 	Leporinusfasciatus 	Semaprochilodusvari 	Leporinusfrederici 	Dorasmicropoeus 	Cynodongibbus 	Total
+
+
+1 	0 			2 			0 			0 			0 			1 			1 			4
+2 	1 			1 			0 			1 			0 			1 			0 			4
+3 	0 			0 			1 			0 			1 			0 			0 			2
+4 	2 			0 			0 			0 			0 			0 			0 			2
+Total 	[3 3 1 1 1 2 1]
+Corrected Rand index:  0.150289017341 
+
+F-measure(P,Q):  0.8
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  58 
+
+Critério de adequação (energia):  55789.875
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Dorasmicropoeus 	Semaprochilodusvari 	Myleusrubripinis 	Acnodonoligacanthus 	Platydorascostatus 	Pseudoancistrusbarbatus 	Leporinusfasciatus 	Leporinusfrederici 	Total
+
+
+1 	2 			0 			0 			0 			2 			0 			0 			0 			4
+2 	1 			1 			0 			0 			1 			1 			0 			0 			4
+3 	0 			0 			0 			0 			0 			0 			1 			1 			2
+4 	0 			0 			1 			1 			0 			0 			0 			0 			2
+Total 	[3 1 1 1 3 1 1 1]
+Corrected Rand index:  0.151745068285 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.166666666667
+
+#####################################
+Repetição do experimento:  59 
+
+Critério de adequação (energia):  64488.75
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Leporinusfrederici 	Myleusrubripinis 	Dorasmicropoeus 	Platydorascostatus 	Acnodonoligacanthus 	Pseudoancistrusbarbatus 	Ageneiosusbrevifili 	Total
+
+
+1 	0 			0 			2 			1 			0 			0 			1 			4
+2 	0 			0 			1 			2 			0 			1 			0 			4
+3 	2 			0 			0 			0 			0 			0 			0 			2
+4 	0 			1 			0 			0 			1 			0 			0 			2
+Total 	[2 1 3 3 1 1 1]
+Corrected Rand index:  0.245664739884 
+
+F-measure(P,Q):  1.0
+OERC:  0.166666666667
+
+#####################################
+Repetição do experimento:  60 
+
+Critério de adequação (energia):  50206.86
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Dorasmicropoeus 	Ageneiosusbrevifili 	Pseudoancistrusbarbatus 	Acnodonoligacanthus 	Potamotrygonhystrix 	Semaprochilodusvari 	Leporinusfasciatus 	Total
+
+
+1 	2 			1 			0 			0 			1 			0 			0 			4
+2 	1 			0 			1 			0 			1 			1 			0 			4
+3 	0 			0 			0 			1 			0 			0 			1 			2
+4 	0 			0 			0 			2 			0 			0 			0 			2
+Total 	[3 1 1 3 2 1 1]
+Corrected Rand index:  0.150289017341 
+
+F-measure(P,Q):  0.8
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  61 
+
+Critério de adequação (energia):  72890.105
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Acnodonoligacanthus 	Leporinusfasciatus 	Platydorascostatus 	Dorasmicropoeus 	Total
+
+
+1 	0 			0 			2 			2 			4
+2 	1 			0 			2 			1 			4
+3 	1 			1 			0 			0 			2
+4 	2 			0 			0 			0 			2
+Total 	[4 1 4 3]
+Corrected Rand index:  0.259414225941 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.416666666667
+
+#####################################
+Repetição do experimento:  62 
+
+Critério de adequação (energia):  48758.085
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Dorasmicropoeus 	Hopliasa�mara 	Acnodonoligacanthus 	Semaprochilodusvari 	Leporinusfasciatus 	Platydorascostatus 	Total
+
+
+1 	1 			1 			0 			0 			0 			2 			4
+2 	1 			0 			1 			1 			0 			1 			4
+3 	0 			0 			1 			0 			1 			0 			2
+4 	0 			0 			2 			0 			0 			0 			2
+Total 	[2 1 4 1 1 3]
+Corrected Rand index:  0.136536030341 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.333333333333
+
+#####################################
+Repetição do experimento:  63 
+
+Critério de adequação (energia):  39039.17
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Myleusrubripinis 	Potamotrygonhystrix 	Ageneiosusbrevifili 	Dorasmicropoeus 	Leporinusfrederici 	Leporinusfasciatus 	Semaprochilodusvari 	Hopliasa�mara 	Total
+
+
+1 	0 			1 			1 			1 			0 			0 			0 			1 			4
+2 	1 			1 			0 			1 			0 			0 			1 			0 			4
+3 	0 			0 			0 			0 			1 			1 			0 			0 			2
+4 	2 			0 			0 			0 			0 			0 			0 			0 			2
+Total 	[3 2 1 2 1 1 1 1]
+Corrected Rand index:  0.0543130990415 
+
+F-measure(P,Q):  0.8
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  64 
+
+Critério de adequação (energia):  66337.5
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Myleusrubripinis 	Leporinusfasciatus 	Platydorascostatus 	Dorasmicropoeus 	Leporinusfrederici 	Potamotrygonhystrix 	Total
+
+
+1 	0 			0 			1 			2 			0 			1 			4
+2 	1 			0 			2 			1 			0 			0 			4
+3 	0 			1 			0 			0 			1 			0 			2
+4 	2 			0 			0 			0 			0 			0 			2
+Total 	[3 1 3 3 1 1]
+Corrected Rand index:  0.229551451187 
+
+F-measure(P,Q):  0.8
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  65 
+
+Critério de adequação (energia):  64339.8
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Dorasmicropoeus 	Acnodonoligacanthus 	Potamotrygonhystrix 	Myleusrubripinis 	Pseudoancistrusbarbatus 	Leporinusfasciatus 	Leporinusfrederici 	Platydorascostatus 	Total
+
+
+1 	2 			0 			1 			0 			0 			0 			0 			1 			4
+2 	1 			0 			0 			0 			1 			0 			0 			2 			4
+3 	0 			0 			0 			0 			0 			1 			1 			0 			2
+4 	0 			1 			0 			1 			0 			0 			0 			0 			2
+Total 	[3 1 1 1 1 1 1 3]
+Corrected Rand index:  0.151745068285 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.166666666667
+
+#####################################
+Repetição do experimento:  66 
+
+Critério de adequação (energia):  28866.19
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Dorasmicropoeus 	Acnodonoligacanthus 	Platydorascostatus 	Cynodongibbus 	Hopliasa�mara 	Pseudoancistrusbarbatus 	Leporinusfasciatus 	Total
+
+
+1 	0 			0 			2 			1 			1 			0 			0 			4
+2 	1 			0 			2 			0 			0 			1 			0 			4
+3 	0 			1 			0 			0 			0 			0 			1 			2
+4 	0 			2 			0 			0 			0 			0 			0 			2
+Total 	[1 3 4 1 1 1 1]
+Corrected Rand index:  0.224274406332 
+
+F-measure(P,Q):  0.8
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  67 
+
+Critério de adequação (energia):  63171.19
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Myleusrubripinis 	Leporinusfasciatus 	Platydorascostatus 	Leporinusfrederici 	Ageneiosusbrevifili 	Dorasmicropoeus 	Total
+
+
+1 	0 			0 			1 			0 			1 			2 			4
+2 	1 			0 			2 			0 			0 			1 			4
+3 	0 			1 			0 			1 			0 			0 			2
+4 	2 			0 			0 			0 			0 			0 			2
+Total 	[3 1 3 1 1 3]
+Corrected Rand index:  0.229551451187 
+
+F-measure(P,Q):  0.8
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  68 
+
+Critério de adequação (energia):  48595.91
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Semaprochilodusvari 	Pseudoancistrusbarbatus 	Dorasmicropoeus 	Leporinusfasciatus 	Potamotrygonhystrix 	Ageneiosusbrevifili 	Myleusrubripinis 	Leporinusfrederici 	Total
+
+
+1 	0 			0 			2 			0 			1 			1 			0 			0 			4
+2 	1 			1 			1 			0 			1 			0 			0 			0 			4
+3 	0 			0 			0 			1 			0 			0 			0 			1 			2
+4 	0 			0 			0 			0 			0 			0 			2 			0 			2
+Total 	[1 1 3 1 2 1 2 1]
+Corrected Rand index:  0.159744408946 
+
+F-measure(P,Q):  1.0
+OERC:  0.166666666667
+
+#####################################
+Repetição do experimento:  69 
+
+Critério de adequação (energia):  45099.445
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Myleusrubripinis 	Acnodonoligacanthus 	Leporinusfasciatus 	Pseudoancistrusbarbatus 	Dorasmicropoeus 	Leporinusfrederici 	Hopliasa�mara 	Platydorascostatus 	Semaprochilodusvari 	Total
+
+
+1 	0 			0 			0 			0 			1 			0 			1 			2 			0 			4
+2 	0 			0 			0 			1 			1 			0 			0 			1 			1 			4
+3 	0 			0 			1 			0 			0 			1 			0 			0 			0 			2
+4 	1 			1 			0 			0 			0 			0 			0 			0 			0 			2
+Total 	[1 1 1 1 2 1 1 3 1]
+Corrected Rand index:  0.0505902192243 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.166666666667
+
+#####################################
+Repetição do experimento:  70 
+
+Critério de adequação (energia):  42840.235
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Pseudoancistrusbarbatus 	Acnodonoligacanthus 	Leporinusfasciatus 	Myleusrubripinis 	Leporinusfrederici 	Ageneiosusbrevifili 	Platydorascostatus 	Potamotrygonhystrix 	Semaprochilodusvari 	Dorasmicropoeus 	Total
+
+
+1 	0 			0 			0 			0 			0 			1 			0 			1 			0 			2 			4
+2 	1 			0 			0 			0 			0 			0 			1 			0 			1 			1 			4
+3 	0 			0 			1 			0 			1 			0 			0 			0 			0 			0 			2
+4 	0 			1 			0 			1 			0 			0 			0 			0 			0 			0 			2
+Total 	[1 1 1 1 1 1 1 1 1 3]
+Corrected Rand index:  0.0464285714286 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.0833333333333
+
+#####################################
+Repetição do experimento:  71 
+
+Critério de adequação (energia):  27255.24
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Platydorascostatus 	Leporinusfrederici 	Leporinusfasciatus 	Cynodongibbus 	Dorasmicropoeus 	Myleusrubripinis 	Pseudoancistrusbarbatus 	Hopliasa�mara 	Total
+
+
+1 	2 			0 			0 			1 			0 			0 			0 			1 			4
+2 	2 			0 			0 			0 			1 			0 			1 			0 			4
+3 	0 			1 			1 			0 			0 			0 			0 			0 			2
+4 	0 			0 			0 			0 			0 			2 			0 			0 			2
+Total 	[4 1 1 1 1 2 1 1]
+Corrected Rand index:  0.239884393064 
+
+F-measure(P,Q):  1.0
+OERC:  0.166666666667
+
+#####################################
+Repetição do experimento:  72 
+
+Critério de adequação (energia):  59674.725
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Myleusrubripinis 	Leporinusfasciatus 	Acnodonoligacanthus 	Dorasmicropoeus 	Leporinusfrederici 	Platydorascostatus 	Hopliasa�mara 	Total
+
+
+1 	0 			0 			0 			1 			0 			2 			1 			4
+2 	1 			0 			0 			1 			0 			2 			0 			4
+3 	0 			1 			0 			0 			1 			0 			0 			2
+4 	1 			0 			1 			0 			0 			0 			0 			2
+Total 	[2 1 1 2 1 4 1]
+Corrected Rand index:  0.143448275862 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.333333333333
+
+#####################################
+Repetição do experimento:  73 
+
+Critério de adequação (energia):  51911.17
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Pseudoancistrusbarbatus 	Semaprochilodusvari 	Potamotrygonhystrix 	Ageneiosusbrevifili 	Dorasmicropoeus 	Leporinusfrederici 	Myleusrubripinis 	Total
+
+
+1 	0 			0 			1 			1 			2 			0 			0 			4
+2 	1 			1 			1 			0 			1 			0 			0 			4
+3 	0 			0 			0 			0 			0 			2 			0 			2
+4 	0 			0 			0 			0 			0 			0 			2 			2
+Total 	[1 1 2 1 3 2 2]
+Corrected Rand index:  0.257966616085 
+
+F-measure(P,Q):  1.0
+OERC:  0.166666666667
+
+#####################################
+Repetição do experimento:  74 
+
+Critério de adequação (energia):  55789.875
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Myleusrubripinis 	Pseudoancistrusbarbatus 	Dorasmicropoeus 	Acnodonoligacanthus 	Semaprochilodusvari 	Leporinusfrederici 	Leporinusfasciatus 	Platydorascostatus 	Total
+
+
+1 	0 			0 			2 			0 			0 			0 			0 			2 			4
+2 	0 			1 			1 			0 			1 			0 			0 			1 			4
+3 	0 			0 			0 			0 			0 			1 			1 			0 			2
+4 	1 			0 			0 			1 			0 			0 			0 			0 			2
+Total 	[1 1 3 1 1 1 1 3]
+Corrected Rand index:  0.151745068285 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.166666666667
+
+#####################################
+Repetição do experimento:  75 
+
+Critério de adequação (energia):  54783.06
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Myleusrubripinis 	Acnodonoligacanthus 	Platydorascostatus 	Hopliasa�mara 	Dorasmicropoeus 	Leporinusfrederici 	Leporinusfasciatus 	Potamotrygonhystrix 	Total
+
+
+1 	0 			0 			1 			1 			1 			0 			0 			1 			4
+2 	1 			0 			2 			0 			1 			0 			0 			0 			4
+3 	0 			0 			0 			0 			0 			1 			1 			0 			2
+4 	1 			1 			0 			0 			0 			0 			0 			0 			2
+Total 	[2 1 3 1 2 1 1 1]
+Corrected Rand index:  0.0543130990415 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  76 
+
+Critério de adequação (energia):  55647.07
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Platydorascostatus 	Leporinusfasciatus 	Hopliasa�mara 	Myleusrubripinis 	Dorasmicropoeus 	Leporinusfrederici 	Potamotrygonhystrix 	Total
+
+
+1 	1 			0 			1 			0 			1 			0 			1 			4
+2 	2 			0 			0 			1 			1 			0 			0 			4
+3 	0 			1 			0 			0 			0 			1 			0 			2
+4 	0 			0 			0 			2 			0 			0 			0 			2
+Total 	[3 1 1 3 2 1 1]
+Corrected Rand index:  0.150289017341 
+
+F-measure(P,Q):  0.8
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  77 
+
+Critério de adequação (energia):  45315.195
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Acnodonoligacanthus 	Pseudoancistrusbarbatus 	Platydorascostatus 	Ageneiosusbrevifili 	Semaprochilodusvari 	Leporinusfasciatus 	Potamotrygonhystrix 	Dorasmicropoeus 	Total
+
+
+1 	0 			0 			0 			1 			0 			0 			1 			2 			4
+2 	0 			1 			1 			0 			1 			0 			0 			1 			4
+3 	1 			0 			0 			0 			0 			1 			0 			0 			2
+4 	2 			0 			0 			0 			0 			0 			0 			0 			2
+Total 	[3 1 1 1 1 1 1 3]
+Corrected Rand index:  0.151745068285 
+
+F-measure(P,Q):  0.8
+OERC:  0.166666666667
+
+#####################################
+Repetição do experimento:  78 
+
+Critério de adequação (energia):  22633.255
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Hopliasa�mara 	Potamotrygonhystrix 	Platydorascostatus 	Leporinusfasciatus 	Myleusrubripinis 	Dorasmicropoeus 	Cynodongibbus 	Acnodonoligacanthus 	Leporinusfrederici 	Total
+
+
+1 	1 			1 			1 			0 			0 			0 			1 			0 			0 			4
+2 	0 			0 			2 			0 			1 			1 			0 			0 			0 			4
+3 	0 			0 			0 			1 			0 			0 			0 			0 			1 			2
+4 	0 			0 			0 			0 			1 			0 			0 			1 			0 			2
+Total 	[1 1 3 1 2 1 1 1 1]
+Corrected Rand index:  0.0505902192243 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.166666666667
+
+#####################################
+Repetição do experimento:  79 
+
+Critério de adequação (energia):  54662.33
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Dorasmicropoeus 	Ageneiosusbrevifili 	Myleusrubripinis 	Platydorascostatus 	Hopliasa�mara 	Pseudoancistrusbarbatus 	Leporinusfrederici 	Total
+
+
+1 	1 			1 			0 			1 			1 			0 			0 			4
+2 	1 			0 			0 			2 			0 			1 			0 			4
+3 	0 			0 			0 			0 			0 			0 			2 			2
+4 	0 			0 			2 			0 			0 			0 			0 			2
+Total 	[2 1 2 3 1 1 2]
+Corrected Rand index:  0.257966616085 
+
+F-measure(P,Q):  1.0
+OERC:  0.166666666667
+
+#####################################
+Repetição do experimento:  80 
+
+Critério de adequação (energia):  72546.725
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Dorasmicropoeus 	Platydorascostatus 	Leporinusfrederici 	Acnodonoligacanthus 	Myleusrubripinis 	Pseudoancistrusbarbatus 	Total
+
+
+1 	2 			2 			0 			0 			0 			0 			4
+2 	1 			2 			0 			0 			0 			1 			4
+3 	0 			0 			2 			0 			0 			0 			2
+4 	0 			0 			0 			1 			1 			0 			2
+Total 	[3 4 2 1 1 1]
+Corrected Rand index:  0.303413400759 
+
+F-measure(P,Q):  1.0
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  81 
+
+Critério de adequação (energia):  60538.735
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Dorasmicropoeus 	Platydorascostatus 	Leporinusfasciatus 	Myleusrubripinis 	Leporinusfrederici 	Hopliasa�mara 	Total
+
+
+1 	1 			2 			0 			0 			0 			1 			4
+2 	1 			2 			0 			1 			0 			0 			4
+3 	0 			0 			1 			0 			1 			0 			2
+4 	0 			0 			0 			2 			0 			0 			2
+Total 	[2 4 1 3 1 1]
+Corrected Rand index:  0.21997471555 
+
+F-measure(P,Q):  0.8
+OERC:  0.333333333333
+
+#####################################
+Repetição do experimento:  82 
+
+Critério de adequação (energia):  61173.49
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Dorasmicropoeus 	Ageneiosusbrevifili 	Myleusrubripinis 	Platydorascostatus 	Leporinusfasciatus 	Pseudoancistrusbarbatus 	Acnodonoligacanthus 	Leporinusfrederici 	Total
+
+
+1 	2 			1 			0 			1 			0 			0 			0 			0 			4
+2 	1 			0 			0 			2 			0 			1 			0 			0 			4
+3 	0 			0 			0 			0 			1 			0 			0 			1 			2
+4 	0 			0 			1 			0 			0 			0 			1 			0 			2
+Total 	[3 1 1 3 1 1 1 1]
+Corrected Rand index:  0.151745068285 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.166666666667
+
+#####################################
+Repetição do experimento:  83 
+
+Critério de adequação (energia):  46155.495
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Myleusrubripinis 	Leporinusfrederici 	Pseudoancistrusbarbatus 	Dorasmicropoeus 	Acnodonoligacanthus 	Semaprochilodusvari 	Ageneiosusbrevifili 	Potamotrygonhystrix 	Platydorascostatus 	Total
+
+
+1 	0 			0 			0 			2 			0 			0 			1 			1 			0 			4
+2 	0 			0 			1 			1 			0 			1 			0 			0 			1 			4
+3 	0 			2 			0 			0 			0 			0 			0 			0 			0 			2
+4 	1 			0 			0 			0 			1 			0 			0 			0 			0 			2
+Total 	[1 2 1 3 1 1 1 1 1]
+Corrected Rand index:  0.161888701518 
+
+F-measure(P,Q):  1.0
+OERC:  0.0833333333333
+
+#####################################
+Repetição do experimento:  84 
+
+Critério de adequação (energia):  48758.085
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Semaprochilodusvari 	Hopliasa�mara 	Platydorascostatus 	Dorasmicropoeus 	Leporinusfasciatus 	Acnodonoligacanthus 	Total
+
+
+1 	0 			1 			2 			1 			0 			0 			4
+2 	1 			0 			1 			1 			0 			1 			4
+3 	0 			0 			0 			0 			1 			1 			2
+4 	0 			0 			0 			0 			0 			2 			2
+Total 	[1 1 3 2 1 4]
+Corrected Rand index:  0.136536030341 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.333333333333
+
+#####################################
+Repetição do experimento:  85 
+
+Critério de adequação (energia):  61173.49
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Dorasmicropoeus 	Platydorascostatus 	Leporinusfasciatus 	Leporinusfrederici 	Acnodonoligacanthus 	Myleusrubripinis 	Ageneiosusbrevifili 	Pseudoancistrusbarbatus 	Total
+
+
+1 	2 			1 			0 			0 			0 			0 			1 			0 			4
+2 	1 			2 			0 			0 			0 			0 			0 			1 			4
+3 	0 			0 			1 			1 			0 			0 			0 			0 			2
+4 	0 			0 			0 			0 			1 			1 			0 			0 			2
+Total 	[3 3 1 1 1 1 1 1]
+Corrected Rand index:  0.151745068285 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.166666666667
+
+#####################################
+Repetição do experimento:  86 
+
+Critério de adequação (energia):  69652.76
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Dorasmicropoeus 	Platydorascostatus 	Leporinusfrederici 	Myleusrubripinis 	Potamotrygonhystrix 	Total
+
+
+1 	2 			1 			0 			0 			1 			4
+2 	1 			2 			0 			1 			0 			4
+3 	0 			0 			2 			0 			0 			2
+4 	0 			0 			0 			2 			0 			2
+Total 	[3 3 2 3 1]
+Corrected Rand index:  0.308470290771 
+
+F-measure(P,Q):  1.0
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  87 
+
+Critério de adequação (energia):  18057.055
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Dorasmicropoeus 	Semaprochilodusvari 	Pseudoancistrusbarbatus 	Leporinusfasciatus 	Acnodonoligacanthus 	Cynodongibbus 	Ageneiosusbrevifili 	Potamotrygonhystrix 	Total
+
+
+1 	1 			0 			0 			0 			0 			1 			1 			1 			4
+2 	1 			1 			1 			0 			0 			0 			0 			1 			4
+3 	0 			0 			0 			1 			1 			0 			0 			0 			2
+4 	0 			0 			0 			0 			2 			0 			0 			0 			2
+Total 	[2 1 1 1 3 1 1 2]
+Corrected Rand index:  0.0543130990415 
+
+F-measure(P,Q):  0.8
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  88 
+
+Critério de adequação (energia):  52958.02
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Platydorascostatus 	Acnodonoligacanthus 	Pseudoancistrusbarbatus 	Ageneiosusbrevifili 	Dorasmicropoeus 	Leporinusfasciatus 	Hopliasa�mara 	Total
+
+
+1 	1 			0 			0 			1 			1 			0 			1 			4
+2 	2 			0 			1 			0 			1 			0 			0 			4
+3 	0 			1 			0 			0 			0 			1 			0 			2
+4 	0 			2 			0 			0 			0 			0 			0 			2
+Total 	[3 3 1 1 2 1 1]
+Corrected Rand index:  0.150289017341 
+
+F-measure(P,Q):  0.8
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  89 
+
+Critério de adequação (energia):  59674.725
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Myleusrubripinis 	Leporinusfasciatus 	Acnodonoligacanthus 	Hopliasa�mara 	Dorasmicropoeus 	Leporinusfrederici 	Platydorascostatus 	Total
+
+
+1 	0 			0 			0 			1 			1 			0 			2 			4
+2 	1 			0 			0 			0 			1 			0 			2 			4
+3 	0 			1 			0 			0 			0 			1 			0 			2
+4 	1 			0 			1 			0 			0 			0 			0 			2
+Total 	[2 1 1 1 2 1 4]
+Corrected Rand index:  0.143448275862 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.333333333333
+
+#####################################
+Repetição do experimento:  90 
+
+Critério de adequação (energia):  46155.495
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Ageneiosusbrevifili 	Pseudoancistrusbarbatus 	Leporinusfrederici 	Potamotrygonhystrix 	Semaprochilodusvari 	Platydorascostatus 	Dorasmicropoeus 	Myleusrubripinis 	Acnodonoligacanthus 	Total
+
+
+1 	1 			0 			0 			1 			0 			0 			2 			0 			0 			4
+2 	0 			1 			0 			0 			1 			1 			1 			0 			0 			4
+3 	0 			0 			2 			0 			0 			0 			0 			0 			0 			2
+4 	0 			0 			0 			0 			0 			0 			0 			1 			1 			2
+Total 	[1 1 2 1 1 1 3 1 1]
+Corrected Rand index:  0.161888701518 
+
+F-measure(P,Q):  1.0
+OERC:  0.0833333333333
+
+#####################################
+Repetição do experimento:  91 
+
+Critério de adequação (energia):  13813.65
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Myleusrubripinis 	Leporinusfasciatus 	Dorasmicropoeus 	Semaprochilodusvari 	Platydorascostatus 	Leporinusfrederici 	Pseudoancistrusbarbatus 	Cynodongibbus 	Hopliasa�mara 	Total
+
+
+1 	0 			0 			0 			0 			2 			0 			0 			1 			1 			4
+2 	0 			0 			1 			1 			1 			0 			1 			0 			0 			4
+3 	0 			1 			0 			0 			0 			1 			0 			0 			0 			2
+4 	2 			0 			0 			0 			0 			0 			0 			0 			0 			2
+Total 	[2 1 1 1 3 1 1 1 1]
+Corrected Rand index:  0.161888701518 
+
+F-measure(P,Q):  1.0
+OERC:  0.0833333333333
+
+#####################################
+Repetição do experimento:  92 
+
+Critério de adequação (energia):  47731.9
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Dorasmicropoeus 	Ageneiosusbrevifili 	Leporinusfasciatus 	Leporinusfrederici 	Semaprochilodusvari 	Potamotrygonhystrix 	Pseudoancistrusbarbatus 	Myleusrubripinis 	Acnodonoligacanthus 	Total
+
+
+1 	2 			1 			0 			0 			0 			1 			0 			0 			0 			4
+2 	1 			0 			0 			0 			1 			1 			1 			0 			0 			4
+3 	0 			0 			1 			1 			0 			0 			0 			0 			0 			2
+4 	0 			0 			0 			0 			0 			0 			0 			1 			1 			2
+Total 	[3 1 1 1 1 2 1 1 1]
+Corrected Rand index:  0.0505902192243 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.166666666667
+
+#####################################
+Repetição do experimento:  93 
+
+Critério de adequação (energia):  27255.24
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Myleusrubripinis 	Pseudoancistrusbarbatus 	Cynodongibbus 	Leporinusfasciatus 	Dorasmicropoeus 	Leporinusfrederici 	Platydorascostatus 	Hopliasa�mara 	Total
+
+
+1 	0 			0 			1 			0 			0 			0 			2 			1 			4
+2 	0 			1 			0 			0 			1 			0 			2 			0 			4
+3 	0 			0 			0 			1 			0 			1 			0 			0 			2
+4 	2 			0 			0 			0 			0 			0 			0 			0 			2
+Total 	[2 1 1 1 1 1 4 1]
+Corrected Rand index:  0.239884393064 
+
+F-measure(P,Q):  1.0
+OERC:  0.166666666667
+
+#####################################
+Repetição do experimento:  94 
+
+Critério de adequação (energia):  25637.77
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Platydorascostatus 	Dorasmicropoeus 	Leporinusfasciatus 	Myleusrubripinis 	Semaprochilodusvari 	Cynodongibbus 	Leporinusfrederici 	Total
+
+
+1 	2 			1 			0 			0 			0 			1 			0 			4
+2 	1 			1 			0 			1 			1 			0 			0 			4
+3 	0 			0 			1 			0 			0 			0 			1 			2
+4 	0 			0 			0 			2 			0 			0 			0 			2
+Total 	[3 2 1 3 1 1 1]
+Corrected Rand index:  0.150289017341 
+
+F-measure(P,Q):  0.8
+OERC:  0.25
+
+#####################################
+Repetição do experimento:  95 
+
+Critério de adequação (energia):  24504.08
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Semaprochilodusvari 	Pseudoancistrusbarbatus 	Dorasmicropoeus 	Platydorascostatus 	Cynodongibbus 	Leporinusfrederici 	Leporinusfasciatus 	Myleusrubripinis 	Total
+
+
+1 	0 			0 			1 			2 			1 			0 			0 			0 			4
+2 	1 			1 			1 			1 			0 			0 			0 			0 			4
+3 	0 			0 			0 			0 			0 			1 			1 			0 			2
+4 	0 			0 			0 			0 			0 			0 			0 			2 			2
+Total 	[1 1 2 3 1 1 1 2]
+Corrected Rand index:  0.159744408946 
+
+F-measure(P,Q):  1.0
+OERC:  0.166666666667
+
+#####################################
+Repetição do experimento:  96 
+
+Critério de adequação (energia):  48595.91
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Dorasmicropoeus 	Pseudoancistrusbarbatus 	Leporinusfasciatus 	Myleusrubripinis 	Leporinusfrederici 	Potamotrygonhystrix 	Ageneiosusbrevifili 	Semaprochilodusvari 	Total
+
+
+1 	2 			0 			0 			0 			0 			1 			1 			0 			4
+2 	1 			1 			0 			0 			0 			1 			0 			1 			4
+3 	0 			0 			1 			0 			1 			0 			0 			0 			2
+4 	0 			0 			0 			2 			0 			0 			0 			0 			2
+Total 	[3 1 1 2 1 2 1 1]
+Corrected Rand index:  0.159744408946 
+
+F-measure(P,Q):  1.0
+OERC:  0.166666666667
+
+#####################################
+Repetição do experimento:  97 
+
+Critério de adequação (energia):  41220.74
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Dorasmicropoeus 	Potamotrygonhystrix 	Pseudoancistrusbarbatus 	Leporinusfrederici 	Ageneiosusbrevifili 	Semaprochilodusvari 	Hopliasa�mara 	Myleusrubripinis 	Total
+
+
+1 	1 			1 			0 			0 			1 			0 			1 			0 			4
+2 	1 			1 			1 			0 			0 			1 			0 			0 			4
+3 	0 			0 			0 			2 			0 			0 			0 			0 			2
+4 	0 			0 			0 			0 			0 			0 			0 			2 			2
+Total 	[2 2 1 2 1 1 1 2]
+Corrected Rand index:  0.168634064081 
+
+F-measure(P,Q):  1.0
+OERC:  0.166666666667
+
+#####################################
+Repetição do experimento:  98 
+
+Critério de adequação (energia):  16003.39
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Myleusrubripinis 	Ageneiosusbrevifili 	Semaprochilodusvari 	Potamotrygonhystrix 	Platydorascostatus 	Leporinusfrederici 	Cynodongibbus 	Dorasmicropoeus 	Total
+
+
+1 	0 			1 			0 			1 			0 			0 			1 			1 			4
+2 	1 			0 			1 			0 			1 			0 			0 			1 			4
+3 	0 			0 			0 			0 			0 			2 			0 			0 			2
+4 	2 			0 			0 			0 			0 			0 			0 			0 			2
+Total 	[3 1 1 1 1 2 1 2]
+Corrected Rand index:  0.159744408946 
+
+F-measure(P,Q):  1.0
+OERC:  0.166666666667
+
+#####################################
+Repetição do experimento:  99 
+
+Critério de adequação (energia):  42958.77
+
+=====================================
+
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	Leporinusfasciatus 	Platydorascostatus 	Semaprochilodusvari 	Acnodonoligacanthus 	Cynodongibbus 	Total
+
+
+1 	0 			3 			0 			0 			1 			4
+2 	0 			2 			1 			1 			0 			4
+3 	1 			0 			0 			1 			0 			2
+4 	0 			0 			0 			2 			0 			2
+Total 	[1 5 1 4 1]
+Corrected Rand index:  0.313447927199 
+
+F-measure(P,Q):  0.666666666667
+OERC:  0.333333333333
+Melhor repetição:  7
+Menor oerc:  11
