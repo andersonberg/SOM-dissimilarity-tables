@@ -315,7 +315,7 @@ def main():
 			" [" + str(len(cluster.objetos)) + " objetos]")
 			text.append("Objetos: ")
 			for objeto in cluster.objetos:
-				text.append(str(objeto.nome))
+				text.append(str(objeto.nome) + " ")
 
 		no_clusters_completos = 0
 		for cluster in mapa.flat:
