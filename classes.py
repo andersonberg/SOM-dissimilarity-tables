@@ -72,6 +72,7 @@ class Cluster:
 		#self.prototipos = []
 		self.prototipo = _prototipo
 		self.objetos = []
+		self.pesos = []
 	
 	def definir_ponto(self, x, y):
 		self.point = Point(x, y)
