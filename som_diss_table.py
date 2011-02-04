@@ -334,7 +334,7 @@ def main():
 		text.append("\n=====================================")
 		text.append("\n\tmatriz de confusão")
 		text.append("\nClasses\t\t\t Clusters")
-		text.append("\n---------------------------------------")
+		text.append("\n---------------------------------------\n")
 		text.append("\t")
 		for cluster in mapa.flat:
 			if len(cluster.objetos) > 0:
