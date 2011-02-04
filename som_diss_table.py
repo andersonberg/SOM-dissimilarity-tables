@@ -338,14 +338,14 @@ def main():
 		text.append("\t")
 		for cluster in mapa.flat:
 			if len(cluster.objetos) > 0:
-				text.append(str(cluster.prototipo.nome) + "\t")
+				text.append(str(cluster.point.x) + "," + str(cluster.point.y) + "\t")
 		text.append( "Total")
 		text.append( "\n")
 		i = 0
 		for classe in classes_a_priori:	
 			text.append("\n" + str(classe.id) + "\t")
 			for j in range(no_clusters_completos):
-				text.append(str(confusion_matrix[i,j]) + "\t\t\t")
+				text.append(str(confusion_matrix[i,j]) + "\t" + " ")
 			text.append(str(confusion_matrix[i,:].sum(axis=0)))
 			i+=1
 	
