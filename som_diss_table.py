@@ -1,5 +1,9 @@
 # *-* coding: utf-8 *-*
 
+# som_diss_table.py
+# Projeto de mestrado
+# Autor: Anderson Berg
+
 import re
 import sys
 import random
@@ -14,8 +18,6 @@ from datetime import *
 import os.path
 
 def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, individuals_objects):
-
-	#print "inicializando..."
 
 	prototipos = []
 	clusters = []
@@ -56,18 +58,12 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, individuals_o
 	for i in range(len(mapa)):
 		for j in range(len(mapa[i])):
 			mapa[i,j].definir_ponto(i,j)
-		
-	#print "#########################################################"
-	#print "\t\t\tInicializacao"
 			
 	for objeto in individuals:
-		#print "\n>>> Objeto: ", objeto.nome
 		criterios = {}
 		for cluster in mapa.flat:
-			#print "Coordenada: ", cluster.point.x, cluster.point.y, " Prototipo: ", cluster.prototipo.nome
 			point1 = Point(cluster.point.x, cluster.point.y)
 			criterio = calcula_criterio(objeto, mapa, T, matrizes, point1)
-			#print "Cluster: ", cluster.point.x, cluster.point.y, "Prototipo: ", cluster.prototipo.nome, "Criterio: ", criterio, "\n"
 			criterios[ cluster ] = criterio
 	
 		
@@ -83,14 +79,11 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, individuals_o
 		#	print "Objetos: ",
 		#	for obj in cluster.objetos:
 		#		print obj.nome,
-
-		#print
 			
 	return mapa, prototipos, individuals
 	
 def calcula_prototipo(objeto_alvo, objetos, mapa, T, matrizes, point2):
 
-	#somas = {}
 	denom = 2. * math.pow(T,2)
 	sum1 = 0.0
 	for obj in objetos:
@@ -140,9 +133,7 @@ def calcula_criterio(obj, mapa, T, matrizes, point1):
 			sum2 += diss
 		
 		kernel = math.exp ( (-1.) * ( delta(point1, point2) / denom ) )
-		#print "Kernel: ", kernel
 		sum1 += ( kernel  * sum2 )
-		#print "Criterio: ", sum1
 
 	return sum1
 
@@ -150,7 +141,6 @@ def atualiza_particao(individuals, mapa, T, matrizes):
 	for objeto in individuals:
 		cluster_atual = objeto.cluster
 		criterios = {}
-		#print "\n### Definindo cluster do objeto: ", objeto.indice, objeto.nome, " ###"
 		for cluster in mapa.flat:
 			point1 = Point(cluster.point.x, cluster.point.y)
 			criterio = calcula_criterio(objeto, mapa, T, matrizes, point1)
@@ -284,18 +274,10 @@ def main():
 		t = 0.0
 		(mapa, prototipos, individuals) = inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, individuals_objects)	
 	
-		#text.append("Topologia: " + str(mapa_x) + " x " + str(mapa_y))
-
-		#text.append("\n#####################################")
-		#text.append("Repeticao do experimento: " + str(a) + "\n")
-	
 		while T > t_min:
 		# while t < (n_iter - 1):
 			#Step 1: computation of the best prototypes
 			t += 1.0
-		
-			#text.append("\n\n>>>>>>Iteracao " + str(t) + " <<<<<<<<")
-			# print ">>>>>>Iteracao ", t, "<<<<<<<<"
 		
 			T = t_max * math.pow( (t_min / t_max), (t / (n_iter - 1.0)) )
 		
@@ -304,11 +286,6 @@ def main():
 			#Step 2: definition of the best partition
 			
 			mapa, individuals = atualiza_particao(individuals, mapa, T, matrizes)
-
-			#Calcula critério de adequação a cada iteração
-			#energia = calcula_energia(mapa, individuals, matrizes, T)
-
-			#print "Criterio de adequacao (energia): ", energia
 
 		for cluster in mapa.flat:
 			text.append("\nCluster " + str(cluster.point.x) + "," + str(cluster.point.y) + " Prototipo: " + str(cluster.prototipo.nome) +
@@ -406,6 +383,7 @@ def main():
 	resultado.close()
 
 	print "Fim do experimento."
+
 	# dissimilaridades_txt = []
 	# for dissimilaridade in dissimilaridades:
 		# dissimilaridades_txt.append(str(dissimilaridade) + " " + str(len(dissimilaridade)))
@@ -484,7 +462,7 @@ def calcula_cr(confusion_matrix, classes_a_priori, no_clusters_completos, no_obj
 
 	return cr
 	
-
+# Cálculo da precisão #
 def calcula_precisao(confusion_matrix, classes_a_priori, no_clusters_completos):
 	precisao_matrix = np.empty( (len(classes_a_priori),no_clusters_completos) )
 
@@ -494,6 +472,7 @@ def calcula_precisao(confusion_matrix, classes_a_priori, no_clusters_completos):
 
 	return precisao_matrix
 
+# Cálculo do recall #
 def calcula_recall(confusion_matrix, classes_a_priori, no_clusters_completos):
 	recall_matrix = np.empty( (len(classes_a_priori),no_clusters_completos) )
 	
@@ -503,6 +482,7 @@ def calcula_recall(confusion_matrix, classes_a_priori, no_clusters_completos):
 
 	return recall_matrix
 
+# Cálculo do F-measure #
 def calcula_f_measure(precisao_matrix, recall_matrix, len_cls_priori, len_clusters_comp):
 
 	f_measure_matrix = np.empty( (len_cls_priori, len_clusters_comp) )
@@ -518,6 +498,7 @@ def calcula_f_measure(precisao_matrix, recall_matrix, len_cls_priori, len_cluste
 
 	return f_measure_matrix	
 
+# Cálculo do oerc (erro global) #
 def calcula_oerc(confusion_matrix, len_clusters_comp, len_objetos):
 
 
