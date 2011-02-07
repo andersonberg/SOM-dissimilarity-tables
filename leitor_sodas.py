@@ -124,7 +124,7 @@ def leitor(filename):
 	numbers = []
 	m = re.search(r'DIST_MATRIX=\s[\w|\W]+END',  text)
 	if m:
-		numbers = re.findall(r'[\d]+\.[\d]+', m.group())
+		numbers = re.findall(r'[\d]+\.[\d]+[e]?[+|-]?[\d]*', m.group())
 	else:
 		print "WARNING: O arquivo não contém matriz de dissimilaridades"
 		
@@ -154,6 +154,8 @@ def leitor(filename):
 				lin+=1
 			i+=1
 			col+=1
+
+	#print dissimilaridades
 	
 	return dissimilaridades, individuals_objects, classes
 
