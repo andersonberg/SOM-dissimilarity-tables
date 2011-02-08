@@ -222,9 +222,13 @@ def atualiza_pesos(objetos, mapa, T, matrizes):
 			numerador = math.pow(produto, 1./len(matrizes))
 			matriz_atual = matrizes[i]
 			denominador = 0.
+ 
 			for objeto in objetos:
+				#print objeto.cluster.point.x, objeto.cluster.point.y, cluster.point.x, cluster.point.y,
+				#print math.exp ( (-1.) * ( delta(objeto.cluster.point, cluster.point) / denom ) )
 				denominador += math.exp ( (-1.) * ( delta(objeto.cluster.point, cluster.point) / denom ) ) * matriz_atual[int(objeto.indice)][int(cluster.prototipo.indice)]
-
+			
+			print
 			cluster.pesos[i] = numerador/denominador
 	
 def main():
@@ -281,8 +285,10 @@ def main():
 	text.append("Parâmetros iniciais\n")
 	text.append("\nTopologia: " + str(mapa_x) + "x" + str(mapa_y))
 	text.append("\nCardinalidade (q): " + str(q))
-	text.append("\nTmin: " + str(t_min) + "Tmax: " + str(t_max))
+	text.append("\nTmin: " + str(t_min) + " Tmax: " + str(t_max))
 	text.append("\nNúmero de iterações: " + str(n_iter))
+	if adaptativo:
+		text.append("\n*Modelo adaptativo*")
 
 	#Lê mais de um arquivo sodas
 	for filename in filenames:
@@ -317,7 +323,7 @@ def main():
 		# while t < (n_iter - 1):
 			#Step 1: computation of the best prototypes
 			t += 1.0
-		
+			#print 't', t
 			T = t_max * math.pow( (t_min / t_max), (t / (n_iter - 1.0)) )
 		
 			mapa = atualiza_prototipo(mapa, individuals, T, matrizes, q, adaptativo)
