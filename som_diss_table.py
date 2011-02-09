@@ -102,7 +102,7 @@ def calcula_prototipo(objeto_alvo, objetos, mapa, T, matrizes, point2, adaptativ
 			else:
 				sum2 += diss
 		
-		sum1 += ( ( math.exp ( (-1) * ( delta(point1, point2) / denom ) ) ) * sum2 )
+		sum1 += ( ( math.exp ( (-1.) * ( delta(point1, point2) / denom ) ) ) * sum2 )
 						
 	return sum1
 
@@ -414,12 +414,19 @@ def main():
 		text.append("\nOERC: " + str(oerc))
 
 	menor_criterio_energia = min(criterios_energia)
+	maior_criterio_energia = max(criterios_energia)
 	menor_erro = min(oercs)
 	text.append("\n\nMelhor repetição: " + str(criterios_energia.index(menor_criterio_energia)))
+	text.append("\nMaior critério: " + str(criterios_energia.index(maior_criterio_energia)))
 	text.append("\nMenor oerc: " + str(oercs.index(menor_erro)))
 
 	hoje = date.today()
-	filename_result = nome_base + "-" + str(mapa_x) + "x" + str(mapa_y) + "-" + str(hoje.day) + "0" + str(hoje.month) + str(hoje.year) + "_01.txt"
+	filename_result = nome_base + "-" + str(mapa_x) + "x" + str(mapa_y) + "-" + hoje.strftime("%d%m%y")
+
+	if adaptativo:
+		filename_result = filename_result + "_adaptativo" + "_01.txt"
+	else:
+		filename_result = filename_result + "_01.txt"
 
 	resultado = open(filename_result, 'w')
 	resultado.writelines(text)
@@ -442,27 +449,27 @@ def main():
 
 def calcula_energia(mapa, objetos, matrizes, T):
 	
-	energia = 0
+	energia = 0.
 	for obj in objetos:
 		point1 = Point(obj.cluster.point.x, obj.cluster.point.y)
-		denom = (2 * math.pow(T,2))
+		denom = (2. * math.pow(T,2))
 		sum1 = 0.0
 		
 		for cluster in mapa.flat:
 			point2 = Point(cluster.point.x, cluster.point.y)
-			sum2 = 0
+			sum2 = 0.
 			for matriz in matrizes:
 				diss = matriz[int(obj.indice)][int(cluster.prototipo.indice)]
 				sum2 += diss
 				
-			sum1 += ( ( math.exp ( (-1) * ( delta(point1, point2) / denom ) ) ) * sum2 )
+			sum1 += ( ( math.exp ( (-1.) * ( delta(point1, point2) / denom ) ) ) * sum2 )
 		
 		energia += sum1
 
 	return energia
 
 def combinacao(n):
-	resultado = (n * (n - 1)) / 2
+	resultado = (n * (n - 1.)) / 2.
 	return resultado
 
 #Calcula a matrix de confusão
@@ -485,16 +492,16 @@ def calcula_confusion_matrix(mapa, classes_a_priori, no_clusters_completos):
 # Cálculo do índice de Rand Corrigido #
 def calcula_cr(confusion_matrix, classes_a_priori, no_clusters_completos, no_objetos):
 	# Cálculo do numerador
-	soma1 = 0
+	soma1 = 0.
 	for i in range(len(classes_a_priori)):
 		for j in range(no_clusters_completos):
 			soma1 += (combinacao(confusion_matrix[i,j]) - math.pow( combinacao(no_objetos), -1))
 
-	soma2 = 0
+	soma2 = 0.
 	for i in range(len(classes_a_priori)):
 		soma2 += combinacao(confusion_matrix[i,:].sum(axis=0))
 
-	soma3 = 0
+	soma3 = 0.
 	for j in range(no_clusters_completos):
 		soma3 += combinacao(confusion_matrix[:,j].sum(axis=0))
 
@@ -536,7 +543,7 @@ def calcula_f_measure(precisao_matrix, recall_matrix, len_cls_priori, len_cluste
 
 	for i in range(len_cls_priori):
 		for j in range(len_clusters_comp):
-			result = 2 * ( (precisao_matrix[i,j]*recall_matrix[i,j]) /  (precisao_matrix[i,j]+recall_matrix[i,j]) )
+			result = 2. * ( (precisao_matrix[i,j]*recall_matrix[i,j]) /  (precisao_matrix[i,j]+recall_matrix[i,j]) )
 			if not math.isnan(result):
 				f_measure_matrix[i,j] = result
 			else:
