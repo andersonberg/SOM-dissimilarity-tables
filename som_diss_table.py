@@ -25,7 +25,8 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, individuals_o
 	
 	for obj in individuals_objects:
 		individuals.append(obj)
-
+	#individuals_objects = np.array(individuals_objects)
+	
 	# para cardinalidade q = 1
 	for i in range(c):
 		prot = random.choice(individuals)
@@ -87,15 +88,14 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, individuals_o
 			
 	return mapa, prototipos, individuals
 	
-def calcula_prototipo(objeto_alvo, objetos, mapa, T, matrizes, point2, adaptativo):
+def calcula_prototipo(objeto_alvo, objetos, mapa, denom, matrizes, point2, adaptativo):
 
-	denom = 2. * math.pow(T,2)
 	sum1 = 0.0
 	for obj in objetos:
 		point1 = Point(obj.cluster.point.x, obj.cluster.point.y)
 		sum2 = 0
 		for matriz in matrizes:
-			diss = matriz[int(obj.indice)][int(objeto_alvo.indice)]
+			diss = matriz[int(obj.indice),int(objeto_alvo.indice)]
 			if adaptativo:
 				peso = mapa[point2.x, point2.y].pesos[matrizes.index(matriz)]
 				sum2 += peso * diss
@@ -106,13 +106,13 @@ def calcula_prototipo(objeto_alvo, objetos, mapa, T, matrizes, point2, adaptativ
 						
 	return sum1
 
-def atualiza_prototipo(mapa, individuals, T, matrizes, q, adaptativo):
+def atualiza_prototipo(mapa, individuals, denom, matrizes, q, adaptativo):
 	for cluster in mapa.flat:
 		if len(cluster.objetos) > 0:
 			somas = {}
 			point2 = Point(cluster.point.x, cluster.point.y)
 			for obj in individuals:
-				menor_criterio_sum = calcula_prototipo(obj, individuals, mapa, T, matrizes, point2, adaptativo)
+				menor_criterio_sum = calcula_prototipo(obj, individuals, mapa, denom, matrizes, point2, adaptativo)
 				somas[obj] = menor_criterio_sum
 			
 			#se q > 1
@@ -129,16 +129,15 @@ def atualiza_prototipo(mapa, individuals, T, matrizes, q, adaptativo):
 
 	return mapa
 	
-def calcula_criterio(obj, mapa, T, matrizes, point1, adaptativo):
+def calcula_criterio(obj, mapa, denom, matrizes, point1, adaptativo):
 	
-	denom = 2. * math.pow(T,2)
 	sum1 = 0.0
 	for cluster in mapa.flat:
 		point2 = Point(cluster.point.x, cluster.point.y)
 		sum2 = 0.0
 		
 		for matriz in matrizes:
-			diss = matriz[int(obj.indice)][int(cluster.prototipo.indice)]
+			diss = matriz[int(obj.indice),int(cluster.prototipo.indice)]
 			if adaptativo:
 				peso = cluster.pesos[matrizes.index(matriz)]
 				sum2 += peso * diss
@@ -150,13 +149,13 @@ def calcula_criterio(obj, mapa, T, matrizes, point1, adaptativo):
 
 	return sum1
 
-def atualiza_particao(individuals, mapa, T, matrizes, adaptativo):
+def atualiza_particao(individuals, mapa, denom, matrizes, adaptativo):
 	for objeto in individuals:
 		cluster_atual = objeto.cluster
 		criterios = {}
 		for cluster in mapa.flat:
 			point1 = Point(cluster.point.x, cluster.point.y)
-			criterio = calcula_criterio(objeto, mapa, T, matrizes, point1, adaptativo)
+			criterio = calcula_criterio(objeto, mapa, denom, matrizes, point1, adaptativo)
 			criterios[ cluster ] = criterio				
 			#criterios[ point1 ] = criterio
 
@@ -209,22 +208,22 @@ def delta(point1, point2):
 	#print "distancia(", point1.x, point1.y, ";", point2.x, point2.y, ") = ", dist
 	return dist
 
-def atualiza_pesos(objetos, mapa, T, matrizes):
-	denom = 2. * math.pow(T,2)
+def atualiza_pesos(objetos, mapa, denom, matrizes):
+
 	for cluster in mapa.flat:
 		for i in range (len(cluster.pesos)):
 			produto = 1.
 			for matriz in matrizes:
 				soma = 0.
 				for objeto in objetos:
-					soma += math.exp ( (-1.) * ( delta(objeto.cluster.point, cluster.point) / denom ) ) * matriz[int(objeto.indice)][int(cluster.prototipo.indice)]  
+					soma += math.exp ( (-1.) * ( delta(objeto.cluster.point, cluster.point) / denom ) ) * matriz[int(objeto.indice),int(cluster.prototipo.indice)]  
 				produto *= soma
 			numerador = math.pow(produto, 1./len(matrizes))
 			matriz_atual = matrizes[i]
 			denominador = 0.
  
 			for objeto in objetos:
-				denominador += math.exp ( (-1.) * ( delta(objeto.cluster.point, cluster.point) / denom ) ) * matriz_atual[int(objeto.indice)][int(cluster.prototipo.indice)]
+				denominador += math.exp ( (-1.) * ( delta(objeto.cluster.point, cluster.point) / denom ) ) * matriz_atual[int(objeto.indice),int(cluster.prototipo.indice)]
 			
 			if numerador != 0 and denominador != 0:
 				cluster.pesos[i] = numerador/denominador
@@ -293,8 +292,10 @@ def main():
 		filename_base = re.search(r'/([\w]+)[\w|\d|\W]+[\.sds]', filename)
 
 		dissimilaridades, individuals_objects, classes_a_priori = leitor(filename)
+		dissimilaridades = np.array(dissimilaridades)
 		matrizes.append(dissimilaridades)
 
+	#matrizes = np.array(matrizes)
 	nome_base = filename_base.group(1)
 
 	criterios_energia = []
@@ -315,7 +316,8 @@ def main():
 		#Inicialização
 		T = t_max
 		t = 0.0
-		(mapa, prototipos, individuals) = inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, individuals_objects, adaptativo)	
+		denom = 2. * math.pow(T,2)
+		(mapa, prototipos, individuals) = inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, individuals_objects, adaptativo)	
 	
 		while T > t_min:
 		# while t < (n_iter - 1):
@@ -323,16 +325,17 @@ def main():
 			t += 1.0
 			#print 't', t
 			T = t_max * math.pow( (t_min / t_max), (t / (n_iter - 1.0)) )
-		
-			mapa = atualiza_prototipo(mapa, individuals, T, matrizes, q, adaptativo)
+			denom = 2. * math.pow(T,2)
+
+			mapa = atualiza_prototipo(mapa, individuals, denom, matrizes, q, adaptativo)
 
 			#Step 2 (adaptativo): computation of the best weights
 			if adaptativo:
-				atualiza_pesos(individuals, mapa, T, matrizes)
+				atualiza_pesos(individuals, mapa, denom, matrizes)
 				
 			#Step 2 (Step 3 adaptativo): definition of the best partition
 			
-			mapa, individuals = atualiza_particao(individuals, mapa, T, matrizes, adaptativo)
+			mapa, individuals = atualiza_particao(individuals, mapa, denom, matrizes, adaptativo)
 
 		for cluster in mapa.flat:
 			text.append("\nCluster " + str(cluster.point.x) + "," + str(cluster.point.y) + " Prototipo: " + str(cluster.prototipo.nome) +
@@ -459,7 +462,7 @@ def calcula_energia(mapa, objetos, matrizes, T):
 			point2 = Point(cluster.point.x, cluster.point.y)
 			sum2 = 0.
 			for matriz in matrizes:
-				diss = matriz[int(obj.indice)][int(cluster.prototipo.indice)]
+				diss = matriz[int(obj.indice),int(cluster.prototipo.indice)]
 				sum2 += diss
 				
 			sum1 += ( ( math.exp ( (-1.) * ( delta(point1, point2) / denom ) ) ) * sum2 )
