@@ -1,4 +1,5 @@
-# *-* coding: utf-8 *-*
+#!/usr/bin/env python
+# -*- coding: latin1 -*-
 
 # som_diss_table.py
 # Projeto de mestrado
@@ -17,7 +18,7 @@ from leitor_sodas import *
 from datetime import *
 import os.path
 
-def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, individuals_objects, adaptativo):
+def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, soma_dissimilaridades, individuals_objects, adaptativo):
 
 	prototipos = []
 	clusters = []
@@ -69,7 +70,7 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, individuals_o
 		criterios = {}
 		for cluster in mapa.flat:
 			point1 = Point(cluster.point.x, cluster.point.y)
-			criterio = calcula_criterio(objeto, mapa, T, matrizes, point1, adaptativo)
+			criterio = calcula_criterio(objeto, mapa, T, soma_dissimilaridades, point1, adaptativo)
 			criterios[ cluster ] = criterio
 	
 		
@@ -88,31 +89,32 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, individuals_o
 			
 	return mapa, prototipos, individuals
 	
-def calcula_prototipo(objeto_alvo, objetos, mapa, denom, matrizes, point2, adaptativo):
+def calcula_prototipo(objeto_alvo, objetos, mapa, denom, soma_dissimilaridades, point2, adaptativo):
 
 	sum1 = 0.0
 	for obj in objetos:
 		point1 = Point(obj.cluster.point.x, obj.cluster.point.y)
-		sum2 = 0
-		for matriz in matrizes:
-			diss = matriz[int(obj.indice),int(objeto_alvo.indice)]
-			if adaptativo:
-				peso = mapa[point2.x, point2.y].pesos[matrizes.index(matriz)]
-				sum2 += peso * diss
-			else:
-				sum2 += diss
+		sum2 = soma_dissimilaridades[obj.indice, objeto_alvo.indice]
+		#for matriz in matrizes:
+			#diss = matriz[int(obj.indice),int(objeto_alvo.indice)]
+		#	if adaptativo:
+				#peso = mapa[point2.x, point2.y].pesos[matrizes.index(matriz)]
+				#sum2 += peso * diss
+		#		sum2 += diss
+		#	else:
+		#		sum2 += diss
 		
 		sum1 += ( ( math.exp ( (-1.) * ( delta(point1, point2) / denom ) ) ) * sum2 )
 						
 	return sum1
 
-def atualiza_prototipo(mapa, individuals, denom, matrizes, q, adaptativo):
+def atualiza_prototipo(mapa, individuals, denom, soma_dissimilaridades, q, adaptativo):
 	for cluster in mapa.flat:
 		if len(cluster.objetos) > 0:
 			somas = {}
 			point2 = Point(cluster.point.x, cluster.point.y)
 			for obj in individuals:
-				menor_criterio_sum = calcula_prototipo(obj, individuals, mapa, denom, matrizes, point2, adaptativo)
+				menor_criterio_sum = calcula_prototipo(obj, individuals, mapa, denom, soma_dissimilaridades, point2, adaptativo)
 				somas[obj] = menor_criterio_sum
 			
 			#se q > 1
@@ -129,33 +131,36 @@ def atualiza_prototipo(mapa, individuals, denom, matrizes, q, adaptativo):
 
 	return mapa
 	
-def calcula_criterio(obj, mapa, denom, matrizes, point1, adaptativo):
+def calcula_criterio(obj, mapa, denom, soma_dissimilaridades, point1, adaptativo):
 	
 	sum1 = 0.0
 	for cluster in mapa.flat:
 		point2 = Point(cluster.point.x, cluster.point.y)
-		sum2 = 0.0
+		sum2 = soma_dissimilaridades[obj.indice, cluster.prototipo.indice]
 		
-		for matriz in matrizes:
-			diss = matriz[int(obj.indice),int(cluster.prototipo.indice)]
-			if adaptativo:
-				peso = cluster.pesos[matrizes.index(matriz)]
-				sum2 += peso * diss
-			else:
-				sum2 += diss
+		#for matriz in matrizes:
+		#	diss = matriz[int(obj.indice),int(cluster.prototipo.indice)]
+		#	if adaptativo:
+				#itemindex = np.where(matrizes==matriz)
+				#print itemindex
+				#peso = cluster.pesos[matrizes.index(matriz)]
+				#sum2 += peso * diss
+		#		sum2 += diss
+		#	else:
+		#		sum2 += diss
 		
 		kernel = math.exp ( (-1.) * ( delta(point1, point2) / denom ) )
 		sum1 += ( kernel  * sum2 )
 
 	return sum1
 
-def atualiza_particao(individuals, mapa, denom, matrizes, adaptativo):
+def atualiza_particao(individuals, mapa, denom, soma_dissimilaridades, adaptativo):
 	for objeto in individuals:
 		cluster_atual = objeto.cluster
 		criterios = {}
 		for cluster in mapa.flat:
 			point1 = Point(cluster.point.x, cluster.point.y)
-			criterio = calcula_criterio(objeto, mapa, denom, matrizes, point1, adaptativo)
+			criterio = calcula_criterio(objeto, mapa, denom, soma_dissimilaridades, point1, adaptativo)
 			criterios[ cluster ] = criterio				
 			#criterios[ point1 ] = criterio
 
@@ -220,6 +225,8 @@ def atualiza_pesos(objetos, mapa, denom, matrizes):
 				produto *= soma
 			numerador = math.pow(produto, 1./len(matrizes))
 			matriz_atual = matrizes[i]
+			itemindex = np.where(matrizes==matriz)
+			print itemindex
 			denominador = 0.
  
 			for objeto in objetos:
@@ -295,8 +302,20 @@ def main():
 		dissimilaridades = np.array(dissimilaridades)
 		matrizes.append(dissimilaridades)
 
-	#matrizes = np.array(matrizes)
+	matrizes = np.array(matrizes)
 	nome_base = filename_base.group(1)
+
+	soma_dissimilaridades = []
+	for obj1 in individuals_objects:
+		for obj2 in individuals_objects:
+			soma_dissimilaridades.append(sum(matrizes[:,obj1.indice,obj2.indice]))
+
+	soma_dissimilaridades = np.array(soma_dissimilaridades).reshape(len(individuals_objects), len(individuals_objects))
+	#soma_dissimilaridades.reshape(len(individuals_objects), len(individuals_objects))
+
+	#print soma_dissimilaridades[0,1]
+
+	#print sum(matrizes[:,1,2])
 
 	criterios_energia = []
 	oercs = []
@@ -317,7 +336,7 @@ def main():
 		T = t_max
 		t = 0.0
 		denom = 2. * math.pow(T,2)
-		(mapa, prototipos, individuals) = inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, individuals_objects, adaptativo)	
+		(mapa, prototipos, individuals) = inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, soma_dissimilaridades, individuals_objects, adaptativo)	
 	
 		while T > t_min:
 		# while t < (n_iter - 1):
@@ -327,7 +346,7 @@ def main():
 			T = t_max * math.pow( (t_min / t_max), (t / (n_iter - 1.0)) )
 			denom = 2. * math.pow(T,2)
 
-			mapa = atualiza_prototipo(mapa, individuals, denom, matrizes, q, adaptativo)
+			mapa = atualiza_prototipo(mapa, individuals, denom, soma_dissimilaridades, q, adaptativo)
 
 			#Step 2 (adaptativo): computation of the best weights
 			if adaptativo:
@@ -335,7 +354,7 @@ def main():
 				
 			#Step 2 (Step 3 adaptativo): definition of the best partition
 			
-			mapa, individuals = atualiza_particao(individuals, mapa, denom, matrizes, adaptativo)
+			mapa, individuals = atualiza_particao(individuals, mapa, denom, soma_dissimilaridades, adaptativo)
 
 		for cluster in mapa.flat:
 			text.append("\nCluster " + str(cluster.point.x) + "," + str(cluster.point.y) + " Prototipo: " + str(cluster.prototipo.nome) +
@@ -349,7 +368,7 @@ def main():
 			if len(cluster.objetos) > 0:
 				no_clusters_completos += 1
 
-		energia = calcula_energia(mapa, individuals, matrizes, T)
+		energia = calcula_energia(mapa, individuals, soma_dissimilaridades, T)
 		criterios_energia.append(energia)
 
 		text.append("\n\nCritério de adequação (energia): " + str(energia))
@@ -450,7 +469,7 @@ def main():
 	# dados.write(text + '\n')
 	# dados.close()
 
-def calcula_energia(mapa, objetos, matrizes, T):
+def calcula_energia(mapa, objetos, soma_dissimilaridades, T):
 	
 	energia = 0.
 	for obj in objetos:
@@ -460,10 +479,10 @@ def calcula_energia(mapa, objetos, matrizes, T):
 		
 		for cluster in mapa.flat:
 			point2 = Point(cluster.point.x, cluster.point.y)
-			sum2 = 0.
-			for matriz in matrizes:
-				diss = matriz[int(obj.indice),int(cluster.prototipo.indice)]
-				sum2 += diss
+			sum2 = soma_dissimilaridades[obj.indice, cluster.prototipo.indice]
+			#for matriz in matrizes:
+			#	diss = matriz[int(obj.indice),int(cluster.prototipo.indice)]
+			#	sum2 += diss
 				
 			sum1 += ( ( math.exp ( (-1.) * ( delta(point1, point2) / denom ) ) ) * sum2 )
 		
