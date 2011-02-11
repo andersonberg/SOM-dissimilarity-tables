@@ -80,12 +80,6 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, soma_dissimil
 		#Insere o objeto no cluster de menor critério
 		mapa[menor_criterio_cluster.point.x, menor_criterio_cluster.point.y].inserir_objeto(objeto)
 		objeto.set_cluster(mapa[menor_criterio_cluster.point.x, menor_criterio_cluster.point.y])
-		
-		#for cluster in mapa.flat:
-		#	print "\nCluster: ", cluster.point.x, cluster.point.y, "Prototipo: ", cluster.prototipo.nome,
-		#	print "Objetos: ",
-		#	for obj in cluster.objetos:
-		#		print obj.nome,
 			
 	return mapa, prototipos, individuals
 	
@@ -162,11 +156,8 @@ def atualiza_particao(individuals, mapa, denom, soma_dissimilaridades, adaptativ
 			point1 = Point(cluster.point.x, cluster.point.y)
 			criterio = calcula_criterio(objeto, mapa, denom, soma_dissimilaridades, point1, adaptativo)
 			criterios[ cluster ] = criterio				
-			#criterios[ point1 ] = criterio
 
 		(menor_criterio_cluster, menor_criterio) = min(criterios.items(), key=lambda x: x[1])
-		#print "Menor criterio: ", menor_criterio_cluster.point.x, menor_criterio_cluster.point.y, menor_criterio_cluster.prototipo.nome, id(menor_criterio_cluster)
-		#print "Cluster atual: ", cluster_atual.point.x, cluster_atual.point.y, cluster_atual.prototipo.nome, id(cluster_atual)
 
 		#sorted_criterios = sorted(criterios.items(), key=lambda x: x[1])
 			
@@ -178,19 +169,6 @@ def atualiza_particao(individuals, mapa, denom, soma_dissimilaridades, adaptativ
 			mapa[menor_criterio_cluster.point.x, menor_criterio_cluster.point.y].inserir_objeto(objeto)
 			objeto.set_cluster(mapa[menor_criterio_cluster.point.x, menor_criterio_cluster.point.y])
 			mapa[cluster_atual.point.x, cluster_atual.point.y].remover_objeto(objeto)
-
-			#print "### Alteracao de cluster ###"
-			#print "Novo Cluster: ", menor_criterio_cluster.point.x, menor_criterio_cluster.point.y, menor_criterio_cluster.prototipo.nome,
-			#print "Objetos: ",
-			#for obj in menor_criterio_cluster.objetos:
-			#	print obj.nome,
-
-			#print "\nAntigo Cluster: ", cluster_atual.point.x, cluster_atual.point.y, cluster_atual.prototipo.nome,
-			#print "Objetos: ",
-			#for obj in cluster_atual.objetos:
-			#	print obj.nome,
-
-			#print
 
 			#menor_criterio_cluster.inserir_objeto(objeto)
 			#cluster_atual.remover_objeto(objeto)
@@ -210,7 +188,6 @@ def atualiza_particao(individuals, mapa, denom, soma_dissimilaridades, adaptativ
 def delta(point1, point2):
 	dist = float(np.square(point1.x - point2.x) + np.square(point1.y - point2.y))
 	#dist = math.fabs(point1.x - point2.x) + math.fabs(point1.y - point2.y)
-	#print "distancia(", point1.x, point1.y, ";", point2.x, point2.y, ") = ", dist
 	return dist
 
 def atualiza_pesos(objetos, mapa, denom, matrizes):
@@ -311,10 +288,8 @@ def main():
 			soma_dissimilaridades.append(sum(matrizes[:,obj1.indice,obj2.indice]))
 
 	soma_dissimilaridades = np.array(soma_dissimilaridades).reshape(len(individuals_objects), len(individuals_objects))
-	#soma_dissimilaridades.reshape(len(individuals_objects), len(individuals_objects))
 
 	#print soma_dissimilaridades[0,1]
-
 	#print sum(matrizes[:,1,2])
 
 	criterios_energia = []
@@ -338,6 +313,7 @@ def main():
 		denom = 2. * math.pow(T,2)
 		(mapa, prototipos, individuals) = inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, soma_dissimilaridades, individuals_objects, adaptativo)	
 	
+		#Iterações
 		while T > t_min:
 		# while t < (n_iter - 1):
 			#Step 1: computation of the best prototypes
@@ -422,10 +398,7 @@ def main():
 		f_measure_matrix = calcula_f_measure(precisao_matrix, recall_matrix, len_cls_priori, no_clusters_completos)
 		#print f_measure_matrix
 
-		soma2 = 0
-		for i in range(len(classes_a_priori)):
-			soma2 += confusion_matrix[i,:].sum(axis=0)
-
+		soma2 = sum(confusion_matrix[:,:].sum(axis=0))
 		f_measure = float(soma2 / no_objetos) * f_measure_matrix.max()
 		text.append("\nF-measure(P,Q): " + str(f_measure))
 
@@ -517,8 +490,10 @@ def calcula_cr(confusion_matrix, classes_a_priori, no_clusters_completos, no_obj
 	soma1 = 0.
 	for i in range(len(classes_a_priori)):
 		for j in range(no_clusters_completos):
-			soma1 += (combinacao(confusion_matrix[i,j]) - math.pow( combinacao(no_objetos), -1))
+			soma1 += (combinacao(confusion_matrix[i,j]))
 
+	x = math.pow( combinacao(no_objetos), -1)
+	soma1 = soma1 - x
 	soma2 = 0.
 	for i in range(len(classes_a_priori)):
 		soma2 += combinacao(confusion_matrix[i,:].sum(axis=0))
@@ -530,7 +505,7 @@ def calcula_cr(confusion_matrix, classes_a_priori, no_clusters_completos, no_obj
 	numerador_cr = soma1 * soma2 * soma3
 
 	# Cálculo do denominador
-	fator1 = (((0.5) * (soma2 + soma3)) - math.pow( combinacao(no_objetos), -1))
+	fator1 = (((0.5) * (soma2 + soma3)) - x)
 
 	denominador_cr = fator1 * soma2 * soma3
 
