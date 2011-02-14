@@ -39,21 +39,6 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, soma_diss
 	# cria a matriz de pesos
 		for cluster in clusters:
 			cluster.pesos = np.ones(len(matrizes))		
-
-	# para cardinalidade q > 1
-
-	#for i in range(c+1):
-	#	cluster = Cluster(i+1)
-	#	clusters.append(cluster)
-	
-	#for i in range(c):
-	#	for j in range(q):
-	#		prot = random.choice(individuals)
-	#		novo_prototipo = Individual(prot.indice, prot.id2, prot.nome)
-	#		if not novo_prototipo in clusters[i].prototipos:
-	#			clusters[i].prototipos.append(novo_prototipo)
-	#		if not novo_prototipo in prototipos:
-	#			prototipos.append(novo_prototipo)
 	
 	#criando uma matriz com numpy
 	mapa = np.array(clusters)
@@ -68,7 +53,7 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, soma_diss
 		criterios = {}
 		for cluster in mapa.flat:
 			point1 = Point(cluster.point.x, cluster.point.y)
-			criterio = calcula_criterio(objeto, mapa, denom, soma_dissimilaridades, point1, adaptativo)
+			criterio = calcula_criterio(objeto, mapa, denom, soma_dissimilaridades, point1)
 			criterios[ cluster ] = criterio
 		
 		(menor_criterio_cluster, menor_criterio) = min(criterios.items(), key=lambda x: x[1])
@@ -79,7 +64,7 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, soma_diss
 			
 	return mapa, prototipos, individuals
 	
-def calcula_criterio(obj, mapa, denom, soma_dissimilaridades, point1, adaptativo):
+def calcula_criterio(obj, mapa, denom, soma_dissimilaridades, point1):
 	
 	sum1 = 0.0
 	for cluster in mapa.flat:

@@ -35,12 +35,7 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, soma_dissimil
 		if not novo_prototipo in prototipos:
 			prototipos.append(novo_prototipo)
 			cluster = Cluster(i, novo_prototipo)
-			clusters.append(cluster)
-
-	# cria a matriz de pesos
-	if adaptativo:
-		for cluster in clusters:
-			cluster.pesos = np.ones(len(matrizes))		
+			clusters.append(cluster)	
 
 	# para cardinalidade q > 1
 
@@ -91,12 +86,7 @@ def calcula_prototipo(objeto_alvo, objetos, mapa, denom, soma_dissimilaridades, 
 		sum2 = soma_dissimilaridades[obj.indice, objeto_alvo.indice]
 		#for matriz in matrizes:
 			#diss = matriz[int(obj.indice),int(objeto_alvo.indice)]
-		#	if adaptativo:
-				#peso = mapa[point2.x, point2.y].pesos[matrizes.index(matriz)]
-				#sum2 += peso * diss
-		#		sum2 += diss
-		#	else:
-		#		sum2 += diss
+		#	sum2 += diss
 		
 		sum1 += ( ( math.exp ( (-1.) * ( delta(point1, point2) / denom ) ) ) * sum2 )
 						
@@ -134,14 +124,7 @@ def calcula_criterio(obj, mapa, denom, soma_dissimilaridades, point1):
 		
 		#for matriz in matrizes:
 		#	diss = matriz[int(obj.indice),int(cluster.prototipo.indice)]
-		#	if adaptativo:
-				#itemindex = np.where(matrizes==matriz)
-				#print itemindex
-				#peso = cluster.pesos[matrizes.index(matriz)]
-				#sum2 += peso * diss
-		#		sum2 += diss
-		#	else:
-		#		sum2 += diss
+		#	sum2 += diss
 		
 		kernel = math.exp ( (-1.) * ( delta(point1, point2) / denom ) )
 		sum1 += ( kernel  * sum2 )
@@ -154,7 +137,7 @@ def atualiza_particao(individuals, mapa, denom, soma_dissimilaridades):
 		criterios = {}
 		for cluster in mapa.flat:
 			point1 = Point(cluster.point.x, cluster.point.y)
-			criterio = calcula_criterio(objeto, mapa, denom, soma_dissimilaridades, point1, adaptativo)
+			criterio = calcula_criterio(objeto, mapa, denom, soma_dissimilaridades, point1)
 			criterios[ cluster ] = criterio				
 
 		(menor_criterio_cluster, menor_criterio) = min(criterios.items(), key=lambda x: x[1])
@@ -320,12 +303,8 @@ def main():
 			denom = 2. * math.pow(T,2)
 
 			mapa = atualiza_prototipo(mapa, individuals, denom, soma_dissimilaridades, q)
-
-			#Step 2 (adaptativo): computation of the best weights
-			if adaptativo:
-				atualiza_pesos(individuals, mapa, denom, matrizes)
 				
-			#Step 2 (Step 3 adaptativo): definition of the best partition
+			#Step 2: definition of the best partition
 			
 			mapa, individuals = atualiza_particao(individuals, mapa, denom, soma_dissimilaridades)
 
@@ -413,12 +392,7 @@ def main():
 	text.append("\nMenor oerc: " + str(oercs.index(menor_erro)))
 
 	hoje = date.today()
-	filename_result = nome_base + "-" + str(mapa_x) + "x" + str(mapa_y) + "-" + hoje.strftime("%d%m%y")
-
-	if adaptativo:
-		filename_result = filename_result + "_adaptativo" + "_01.txt"
-	else:
-		filename_result = filename_result + "_01.txt"
+	filename_result = nome_base + "-" + str(mapa_x) + "x" + str(mapa_y) + "-" + hoje.strftime("%d%m%y") + "_01.txt"
 
 	resultado = open(filename_result, 'w')
 	resultado.writelines(text)
@@ -441,18 +415,15 @@ def main():
 
 def calcula_energia(mapa, objetos, soma_dissimilaridades, T):
 	
+	denom = (2. * math.pow(T,2))
 	energia = 0.
 	for obj in objetos:
-		point1 = Point(obj.cluster.point.x, obj.cluster.point.y)
-		denom = (2. * math.pow(T,2))
+		point1 = Point(obj.cluster.point.x, obj.cluster.point.y)		
 		sum1 = 0.0
 		
 		for cluster in mapa.flat:
 			point2 = Point(cluster.point.x, cluster.point.y)
 			sum2 = soma_dissimilaridades[obj.indice, cluster.prototipo.indice]
-			#for matriz in matrizes:
-			#	diss = matriz[int(obj.indice),int(cluster.prototipo.indice)]
-			#	sum2 += diss
 				
 			sum1 += ( ( math.exp ( (-1.) * ( delta(point1, point2) / denom ) ) ) * sum2 )
 		
@@ -493,11 +464,11 @@ def calcula_cr(confusion_matrix, classes_a_priori, no_clusters_completos, no_obj
 	soma1 = soma1 - x
 	soma2 = 0.
 	for i in range(len(classes_a_priori)):
-		soma2 += combinacao(confusion_matrix[i,:].sum(axis=0))
+		soma2 += combinacao(confusion_matrix[i,:].sum())
 
 	soma3 = 0.
 	for j in range(no_clusters_completos):
-		soma3 += combinacao(confusion_matrix[:,j].sum(axis=0))
+		soma3 += combinacao(confusion_matrix[:,j].sum())
 
 	numerador_cr = soma1 * soma2 * soma3
 
@@ -516,7 +487,7 @@ def calcula_precisao(confusion_matrix, classes_a_priori, no_clusters_completos):
 
 	for i in range(len(classes_a_priori)):
 		for j in range(no_clusters_completos):
-			precisao_matrix[i,j] = float(confusion_matrix[i,j]) / float(confusion_matrix[:,j].sum(axis=0))
+			precisao_matrix[i,j] = float(confusion_matrix[i,j]) / float(confusion_matrix[:,j].sum())
 
 	return precisao_matrix
 
@@ -526,7 +497,7 @@ def calcula_recall(confusion_matrix, classes_a_priori, no_clusters_completos):
 	
 	for i in range(len(classes_a_priori)):
 		for j in range(no_clusters_completos):
-			recall_matrix[i,j] = float(confusion_matrix[i,j]) / float(confusion_matrix[i,:].sum(axis=0))
+			recall_matrix[i,j] = float(confusion_matrix[i,j]) / float(confusion_matrix[i,:].sum())
 
 	return recall_matrix
 
@@ -537,18 +508,16 @@ def calcula_f_measure(precisao_matrix, recall_matrix, len_cls_priori, len_cluste
 
 	for i in range(len_cls_priori):
 		for j in range(len_clusters_comp):
-			result = 2. * ( (precisao_matrix[i,j]*recall_matrix[i,j]) /  (precisao_matrix[i,j]+recall_matrix[i,j]) )
-			if not math.isnan(result):
-				f_measure_matrix[i,j] = result
-			else:
+			if precisao_matrix[i,j] == 0 and recall_matrix[i,j] == 0:
 				f_measure_matrix[i,j] = -1.
-			
+			else:
+				result = 2. * ( (precisao_matrix[i,j]*recall_matrix[i,j]) /  (precisao_matrix[i,j]+recall_matrix[i,j]) )
+				f_measure_matrix[i,j] = result
 
 	return f_measure_matrix	
 
 # Cálculo do oerc (erro global) #
 def calcula_oerc(confusion_matrix, len_clusters_comp, len_objetos):
-
 
 	array_max = confusion_matrix.max(axis=0)
 	soma = float(array_max.sum())
