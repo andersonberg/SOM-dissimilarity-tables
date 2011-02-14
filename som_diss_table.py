@@ -18,7 +18,7 @@ from leitor_sodas import *
 from datetime import *
 import os.path
 
-def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, soma_dissimilaridades, individuals_objects, adaptativo):
+def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, soma_dissimilaridades, individuals_objects):
 
 	prototipos = []
 	clusters = []
@@ -70,7 +70,7 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, soma_dissimil
 		criterios = {}
 		for cluster in mapa.flat:
 			point1 = Point(cluster.point.x, cluster.point.y)
-			criterio = calcula_criterio(objeto, mapa, T, soma_dissimilaridades, point1, adaptativo)
+			criterio = calcula_criterio(objeto, mapa, T, soma_dissimilaridades, point1)
 			criterios[ cluster ] = criterio
 	
 		
@@ -83,7 +83,7 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, soma_dissimil
 			
 	return mapa, prototipos, individuals
 	
-def calcula_prototipo(objeto_alvo, objetos, mapa, denom, soma_dissimilaridades, point2, adaptativo):
+def calcula_prototipo(objeto_alvo, objetos, mapa, denom, soma_dissimilaridades, point2):
 
 	sum1 = 0.0
 	for obj in objetos:
@@ -102,13 +102,13 @@ def calcula_prototipo(objeto_alvo, objetos, mapa, denom, soma_dissimilaridades, 
 						
 	return sum1
 
-def atualiza_prototipo(mapa, individuals, denom, soma_dissimilaridades, q, adaptativo):
+def atualiza_prototipo(mapa, individuals, denom, soma_dissimilaridades, q):
 	for cluster in mapa.flat:
 		if len(cluster.objetos) > 0:
 			somas = {}
 			point2 = Point(cluster.point.x, cluster.point.y)
 			for obj in individuals:
-				menor_criterio_sum = calcula_prototipo(obj, individuals, mapa, denom, soma_dissimilaridades, point2, adaptativo)
+				menor_criterio_sum = calcula_prototipo(obj, individuals, mapa, denom, soma_dissimilaridades, point2)
 				somas[obj] = menor_criterio_sum
 			
 			#se q > 1
@@ -125,7 +125,7 @@ def atualiza_prototipo(mapa, individuals, denom, soma_dissimilaridades, q, adapt
 
 	return mapa
 	
-def calcula_criterio(obj, mapa, denom, soma_dissimilaridades, point1, adaptativo):
+def calcula_criterio(obj, mapa, denom, soma_dissimilaridades, point1):
 	
 	sum1 = 0.0
 	for cluster in mapa.flat:
@@ -148,7 +148,7 @@ def calcula_criterio(obj, mapa, denom, soma_dissimilaridades, point1, adaptativo
 
 	return sum1
 
-def atualiza_particao(individuals, mapa, denom, soma_dissimilaridades, adaptativo):
+def atualiza_particao(individuals, mapa, denom, soma_dissimilaridades):
 	for objeto in individuals:
 		cluster_atual = objeto.cluster
 		criterios = {}
@@ -214,24 +214,24 @@ def atualiza_pesos(objetos, mapa, denom, matrizes):
 	
 def main():
 	
-	if len(sys.argv) != 3:
-		print 'usage: ./som_diss_table.py {--a (adaptativo) | --n (nao-adaptativo)} configuration_file'
+	if len(sys.argv) != 2:
+		print 'usage: ./som_diss_table.py configuration_file'
 		sys.exit(1)
 	
-	option = sys.argv[1]
-	if option == '--a':
-		adaptativo = True
-	elif option == '--n':
-		adaptativo = False
-	else:
-		print 'unknown option: ' + option
-		sys.exit(1)
+#	option = sys.argv[1]
+#	if option == '--a':
+#		adaptativo = True
+#	elif option == '--n':
+#		adaptativo = False
+#	else:
+#		print 'unknown option: ' + option
+#		sys.exit(1)
 	
 	matrizes = []
 	text = []
 
 	#Lê arquivo de configuração
-	conf_file = sys.argv[2]
+	conf_file = sys.argv[1]
 	conf = open(conf_file, 'rU')
 
 	configuracao = conf.read()
@@ -268,8 +268,8 @@ def main():
 	text.append("\nCardinalidade (q): " + str(q))
 	text.append("\nTmin: " + str(t_min) + " Tmax: " + str(t_max))
 	text.append("\nNúmero de iterações: " + str(n_iter))
-	if adaptativo:
-		text.append("\n*Modelo adaptativo*")
+#	if adaptativo:
+#		text.append("\n*Modelo adaptativo*")
 
 	#Lê mais de um arquivo sodas
 	for filename in filenames:
@@ -288,9 +288,6 @@ def main():
 			soma_dissimilaridades.append(sum(matrizes[:,obj1.indice,obj2.indice]))
 
 	soma_dissimilaridades = np.array(soma_dissimilaridades).reshape(len(individuals_objects), len(individuals_objects))
-
-	#print soma_dissimilaridades[0,1]
-	#print sum(matrizes[:,1,2])
 
 	criterios_energia = []
 	oercs = []
@@ -311,7 +308,7 @@ def main():
 		T = t_max
 		t = 0.0
 		denom = 2. * math.pow(T,2)
-		(mapa, prototipos, individuals) = inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, soma_dissimilaridades, individuals_objects, adaptativo)	
+		(mapa, prototipos, individuals) = inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, soma_dissimilaridades, individuals_objects)	
 	
 		#Iterações
 		while T > t_min:
@@ -322,7 +319,7 @@ def main():
 			T = t_max * math.pow( (t_min / t_max), (t / (n_iter - 1.0)) )
 			denom = 2. * math.pow(T,2)
 
-			mapa = atualiza_prototipo(mapa, individuals, denom, soma_dissimilaridades, q, adaptativo)
+			mapa = atualiza_prototipo(mapa, individuals, denom, soma_dissimilaridades, q)
 
 			#Step 2 (adaptativo): computation of the best weights
 			if adaptativo:
@@ -330,7 +327,7 @@ def main():
 				
 			#Step 2 (Step 3 adaptativo): definition of the best partition
 			
-			mapa, individuals = atualiza_particao(individuals, mapa, denom, soma_dissimilaridades, adaptativo)
+			mapa, individuals = atualiza_particao(individuals, mapa, denom, soma_dissimilaridades)
 
 		for cluster in mapa.flat:
 			text.append("\nCluster " + str(cluster.point.x) + "," + str(cluster.point.y) + " Prototipo: " + str(cluster.prototipo.nome) +
