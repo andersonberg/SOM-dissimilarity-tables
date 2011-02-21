@@ -69,10 +69,8 @@ def calcula_criterio(obj, mapa, denom, matrizes, point1):
 	sum1 = 0.0
 	for cluster in mapa.flat:
 		point2 = Point(cluster.point.x, cluster.point.y)
-		
-		diss = []
-		for matriz in matrizes:
-			diss.append(matriz[int(obj.indice),int(cluster.prototipo.indice)])
+
+		diss = matrizes[:,int(obj.indice),int(cluster.prototipo.indice)]
 
 		dissimilaridades = np.array(diss)
 		produtos = dissimilaridades * cluster.pesos
@@ -101,12 +99,11 @@ def atualiza_particao(individuals, mapa, denom, matrizes):
 			
 	for cluster1 in mapa.flat:
 		for cluster2 in mapa.flat:
-			if cluster1.point != cluster2.point and cluster1.prototipo.nome == cluster2.prototipo.nome:
-				if cluster1.point < cluster2.point:
-					for obj in cluster2.objetos:
-						cluster1.objetos.append(obj)
-						obj.cluster = cluster1
-					cluster2.objetos = []
+			if cluster1.point < cluster2.point and cluster1.prototipo.nome == cluster2.prototipo.nome:
+				cluster1.objetos.extend(cluster2.objetos)
+				for obj in cluster2.objetos:
+					obj.cluster = cluster1
+				cluster2.objetos = []
 
 	return mapa, individuals
 
@@ -117,9 +114,7 @@ def calcula_prototipo(objeto_alvo, objetos, mapa, denom, matrizes, cluster):
 	for obj in objetos:
 		point1 = Point(obj.cluster.point.x, obj.cluster.point.y)
 
-		diss = []
-		for matriz in matrizes:
-			diss.append(matriz[int(obj.indice),int(objeto_alvo.indice)])
+		diss = matrizes[:,int(obj.indice),int(cluster.prototipo.indice)]
 
 		dissimilaridades = np.array(diss)
 		produtos = dissimilaridades * cluster.pesos
@@ -169,7 +164,6 @@ def atualiza_pesos(objetos, mapa, denom, matrizes):
 				produto *= soma
 			numerador = math.pow(produto, 1./len(matrizes))
 			matriz_atual = matrizes[i]
-			itemindex = np.where(matrizes==matriz)
 			denominador = 0.
 
 			for objeto in objetos:
@@ -276,6 +270,7 @@ def main():
 			
 			mapa, individuals = atualiza_particao(individuals, mapa, denom, matrizes)
 
+		no_clusters_completos = 0
 		for cluster in mapa.flat:
 			text.append("\nCluster " + str(cluster.point.x) + "," + str(cluster.point.y) + " Prototipo: " + str(cluster.prototipo.nome) +
 			" [" + str(len(cluster.objetos)) + " objetos]")
@@ -283,11 +278,9 @@ def main():
 			for objeto in cluster.objetos:
 				text.append(str(objeto.nome) + " ")
 
-		no_clusters_completos = 0
-		for cluster in mapa.flat:
 			if len(cluster.objetos) > 0:
 				no_clusters_completos += 1
-
+			
 		energia = calcula_energia(mapa, individuals, matrizes, T)
 		criterios_energia.append(energia)
 
