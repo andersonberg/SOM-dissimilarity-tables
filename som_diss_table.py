@@ -39,8 +39,7 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, soma_dissimil
 
 	#for i in range(c+1):
 	#	cluster = Cluster(i+1)
-	#	clusters.append(cluster)
-	
+	#	clusters.append(cluster)	
 	#for i in range(c):
 	#	for j in range(q):
 	#		prot = random.choice(individuals)
@@ -81,11 +80,7 @@ def calcula_prototipo(objeto_alvo, objetos, mapa, denom, soma_dissimilaridades, 
 	sum1 = 0.0
 	for obj in objetos:
 		point1 = Point(obj.cluster.point.x, obj.cluster.point.y)
-		sum2 = soma_dissimilaridades[obj.indice, objeto_alvo.indice]
-		#for matriz in matrizes:
-			#diss = matriz[int(obj.indice),int(objeto_alvo.indice)]
-		#	sum2 += diss
-		
+		sum2 = soma_dissimilaridades[obj.indice, objeto_alvo.indice]		
 		sum1 += ( ( math.exp ( (-1.) * ( delta(point1, point2) / denom ) ) ) * sum2 )
 						
 	return sum1
@@ -150,20 +145,14 @@ def atualiza_particao(individuals, mapa, denom, soma_dissimilaridades):
 			mapa[menor_criterio_cluster.point.x, menor_criterio_cluster.point.y].inserir_objeto(objeto)
 			objeto.set_cluster(mapa[menor_criterio_cluster.point.x, menor_criterio_cluster.point.y])
 			mapa[cluster_atual.point.x, cluster_atual.point.y].remover_objeto(objeto)
-
-			#menor_criterio_cluster.inserir_objeto(objeto)
-			#cluster_atual.remover_objeto(objeto)
-			#objeto.cluster = menor_criterio_cluster
 			
 	for cluster1 in mapa.flat:
 		for cluster2 in mapa.flat:
-			if cluster1.point != cluster2.point and cluster1.prototipo.nome == cluster2.prototipo.nome:
-				if cluster1.point < cluster2.point:
-					cluster1.objetos.extend(cluster2.objetos)
-#					for obj in cluster2.objetos:
-#						cluster1.objetos.append(obj)
-#						obj.cluster = cluster1
-					cluster2.objetos = []
+			if cluster1.point < cluster2.point and cluster1.prototipo.nome == cluster2.prototipo.nome:
+				cluster1.objetos.extend(cluster2.objetos)
+				for obj in cluster2.objetos:
+					obj.cluster = cluster1
+				cluster2.objetos = []
 
 	return mapa, individuals
 
