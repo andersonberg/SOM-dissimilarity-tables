@@ -24,9 +24,7 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, soma_dissimil
 	clusters = []
 	individuals = []
 	
-	for obj in individuals_objects:
-		individuals.append(obj)
-	#individuals_objects = np.array(individuals_objects)
+	individuals.extend(individuals_objects)
 	
 	# para cardinalidade q = 1
 	for i in range(c):
