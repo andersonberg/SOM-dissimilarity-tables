@@ -175,7 +175,7 @@ def atualiza_pesos(objetos, mapa, denom, matrizes):
 			for objeto in objetos:
 				denominador += math.exp ( (-1.) * ( delta(objeto.cluster.point, cluster.point) / denom ) ) * matriz_atual[int(objeto.indice),int(cluster.prototipo.indice)]
 			
-			if numerador != 0 and denominador != 0:
+			if denominador != 0:
 				cluster.pesos[i] = numerador/denominador
 	
 def main():
