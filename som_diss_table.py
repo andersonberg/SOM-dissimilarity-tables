@@ -161,9 +161,10 @@ def atualiza_particao(individuals, mapa, denom, soma_dissimilaridades):
 		for cluster2 in mapa.flat:
 			if cluster1.point != cluster2.point and cluster1.prototipo.nome == cluster2.prototipo.nome:
 				if cluster1.point < cluster2.point:
-					for obj in cluster2.objetos:
-						cluster1.objetos.append(obj)
-						obj.cluster = cluster1
+					cluster1.objetos.extend(cluster2.objetos)
+#					for obj in cluster2.objetos:
+#						cluster1.objetos.append(obj)
+#						obj.cluster = cluster1
 					cluster2.objetos = []
 
 	return mapa, individuals
@@ -172,28 +173,6 @@ def delta(point1, point2):
 	dist = float(np.square(point1.x - point2.x) + np.square(point1.y - point2.y))
 	#dist = math.fabs(point1.x - point2.x) + math.fabs(point1.y - point2.y)
 	return dist
-
-def atualiza_pesos(objetos, mapa, denom, matrizes):
-
-	for cluster in mapa.flat:
-		for i in range (len(cluster.pesos)):
-			produto = 1.
-			for matriz in matrizes:
-				soma = 0.
-				for objeto in objetos:
-					soma += math.exp ( (-1.) * ( delta(objeto.cluster.point, cluster.point) / denom ) ) * matriz[int(objeto.indice),int(cluster.prototipo.indice)]  
-				produto *= soma
-			numerador = math.pow(produto, 1./len(matrizes))
-			matriz_atual = matrizes[i]
-			itemindex = np.where(matrizes==matriz)
-			print itemindex
-			denominador = 0.
- 
-			for objeto in objetos:
-				denominador += math.exp ( (-1.) * ( delta(objeto.cluster.point, cluster.point) / denom ) ) * matriz_atual[int(objeto.indice),int(cluster.prototipo.indice)]
-			
-			if numerador != 0 and denominador != 0:
-				cluster.pesos[i] = numerador/denominador
 	
 def main():
 	
@@ -251,8 +230,6 @@ def main():
 	text.append("\nCardinalidade (q): " + str(q))
 	text.append("\nTmin: " + str(t_min) + " Tmax: " + str(t_max))
 	text.append("\nNúmero de iterações: " + str(n_iter))
-#	if adaptativo:
-#		text.append("\n*Modelo adaptativo*")
 
 	#Lê mais de um arquivo sodas
 	for filename in filenames:
@@ -308,6 +285,8 @@ def main():
 			
 			mapa, individuals = atualiza_particao(individuals, mapa, denom, soma_dissimilaridades)
 
+		no_clusters_completos = 0
+
 		for cluster in mapa.flat:
 			text.append("\nCluster " + str(cluster.point.x) + "," + str(cluster.point.y) + " Prototipo: " + str(cluster.prototipo.nome) +
 			" [" + str(len(cluster.objetos)) + " objetos]")
@@ -315,8 +294,6 @@ def main():
 			for objeto in cluster.objetos:
 				text.append(str(objeto.nome) + " ")
 
-		no_clusters_completos = 0
-		for cluster in mapa.flat:
 			if len(cluster.objetos) > 0:
 				no_clusters_completos += 1
 
