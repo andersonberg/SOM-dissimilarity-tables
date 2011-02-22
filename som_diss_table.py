@@ -104,20 +104,10 @@ def atualiza_prototipo(mapa, individuals, denom, soma_dissimilaridades, q):
 	return mapa
 	
 def calcula_criterio(obj, mapa, denom, soma_dissimilaridades, point1):
-	
-	sum1 = 0.0
-	for cluster in mapa.flat:
-		point2 = Point(cluster.point.x, cluster.point.y)
-		sum2 = soma_dissimilaridades[obj.indice, cluster.prototipo.indice]
-		
-		#for matriz in matrizes:
-		#	diss = matriz[int(obj.indice),int(cluster.prototipo.indice)]
-		#	sum2 += diss
-		
-		kernel = math.exp ( (-1.) * ( delta(point1, point2) / denom ) )
-		sum1 += ( kernel  * sum2 )
 
-	return sum1
+	sum_1 = sum([exp(-delta(point1, cluster.point) / denom) * soma_dissimilaridades[obj.indice, cluster.prototipo.indice] for cluster in mapa.flat])
+
+	return sum_1
 
 def atualiza_particao(individuals, mapa, denom, soma_dissimilaridades):
 	for objeto in individuals:
@@ -373,20 +363,8 @@ def main():
 	# dados.close()
 
 def calcula_energia(mapa, objetos, soma_dissimilaridades, T):
-	
 	denom = (2. * math.pow(T,2))
-	energia = 0.
-	for obj in objetos:
-		point1 = Point(obj.cluster.point.x, obj.cluster.point.y)		
-		sum1 = 0.0
-		
-		for cluster in mapa.flat:
-			point2 = Point(cluster.point.x, cluster.point.y)
-			sum2 = soma_dissimilaridades[obj.indice, cluster.prototipo.indice]
-				
-			sum1 += ( ( math.exp ( (-1.) * ( delta(point1, point2) / denom ) ) ) * sum2 )
-		
-		energia += sum1
+	energia = sum([ exp(-delta(obj.cluster.point, cluster.point) / denom) * soma_dissimilaridades[obj.indice, cluster.prototipo.indice] for cluster in mapa.flat for obj in objetos ])
 
 	return energia
 
@@ -414,20 +392,13 @@ def calcula_confusion_matrix(mapa, classes_a_priori, no_clusters_completos):
 # Cálculo do índice de Rand Corrigido #
 def calcula_cr(confusion_matrix, classes_a_priori, no_clusters_completos, no_objetos):
 	# Cálculo do numerador
-	soma1 = 0.
-	for i in range(len(classes_a_priori)):
-		for j in range(no_clusters_completos):
-			soma1 += (combinacao(confusion_matrix[i,j]))
 
-	x = math.pow( combinacao(no_objetos), -1)
+	x = pow( combinacao(no_objetos), -1)
+	soma1 = sum([ combinacao(confusion_matrix[i,j]) for i in range(len(classes_a_priori)) for j in range(no_clusters_completos) ])
+
 	soma1 = soma1 - x
-	soma2 = 0.
-	for i in range(len(classes_a_priori)):
-		soma2 += combinacao(confusion_matrix[i,:].sum())
-
-	soma3 = 0.
-	for j in range(no_clusters_completos):
-		soma3 += combinacao(confusion_matrix[:,j].sum())
+	soma2 = sum( [ combinacao(confusion_matrix[i,:].sum()) for i in range(len(classes_a_priori)) ] )
+	soma3 = sum( [ combinacao(confusion_matrix[:,j].sum()) for j in range(no_clusters_completos) ] )
 
 	numerador_cr = soma1 * soma2 * soma3
 
@@ -442,11 +413,9 @@ def calcula_cr(confusion_matrix, classes_a_priori, no_clusters_completos, no_obj
 	
 # Cálculo da precisão #
 def calcula_precisao(confusion_matrix, classes_a_priori, no_clusters_completos):
-	precisao_matrix = np.empty( (len(classes_a_priori),no_clusters_completos) )
-
-	for i in range(len(classes_a_priori)):
-		for j in range(no_clusters_completos):
-			precisao_matrix[i,j] = float(confusion_matrix[i,j]) / float(confusion_matrix[:,j].sum())
+	
+	precisao_matrix = [ float(confusion_matrix[i,j]) / float(confusion_matrix[:,j].sum()) for i in range(len(classes_a_priori)) for j in range(no_clusters_completos)]
+	precisao_matrix = np.array(precisao_matrix).reshape(len(classes_a_priori),no_clusters_completos)
 
 	return precisao_matrix
 
