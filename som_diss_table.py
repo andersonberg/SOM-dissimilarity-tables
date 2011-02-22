@@ -8,7 +8,7 @@
 import re
 import sys
 import random
-import math
+from math import *
 #from numpy import *
 import numpy as np
 import pdb
@@ -77,13 +77,8 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, soma_dissimil
 	
 def calcula_prototipo(objeto_alvo, objetos, mapa, denom, soma_dissimilaridades, point2):
 
-	sum1 = 0.0
-	for obj in objetos:
-		point1 = Point(obj.cluster.point.x, obj.cluster.point.y)
-		sum2 = soma_dissimilaridades[obj.indice, objeto_alvo.indice]		
-		sum1 += ( ( math.exp ( (-1.) * ( delta(point1, point2) / denom ) ) ) * sum2 )
-						
-	return sum1
+	sum_1 = sum([exp(-delta(obj.cluster.point,point2) / denom) * soma_dissimilaridades[obj.indice, objeto_alvo.indice] for obj in objetos])
+	return sum_1
 
 def atualiza_prototipo(mapa, individuals, denom, soma_dissimilaridades, q):
 	for cluster in mapa.flat:
