@@ -15,6 +15,7 @@ import pdb
 from operator import itemgetter, attrgetter
 from classes import *
 from leitor_sodas import *
+from indices import *
 from datetime import *
 import os.path
 
@@ -145,6 +146,12 @@ def delta(point1, point2):
 	dist = float(np.square(point1.x - point2.x) + np.square(point1.y - point2.y))
 	#dist = math.fabs(point1.x - point2.x) + math.fabs(point1.y - point2.y)
 	return dist
+
+def calcula_energia(mapa, objetos, soma_dissimilaridades, T):
+	denom = (2. * math.pow(T,2))
+	energia = sum([ exp(-delta(obj.cluster.point, cluster.point) / denom) * soma_dissimilaridades[obj.indice, cluster.prototipo.indice] for cluster in mapa.flat for obj in objetos ])
+
+	return energia
 	
 def main():
 	
@@ -333,10 +340,8 @@ def main():
 		text.append("\nOERC: " + str(oerc))
 
 	menor_criterio_energia = min(criterios_energia)
-	maior_criterio_energia = max(criterios_energia)
 	menor_erro = min(oercs)
 	text.append("\n\nMelhor repetição: " + str(criterios_energia.index(menor_criterio_energia)))
-	text.append("\nMaior critério: " + str(criterios_energia.index(maior_criterio_energia)))
 	text.append("\nMenor oerc: " + str(oercs.index(menor_erro)))
 
 	hoje = date.today()
@@ -344,10 +349,6 @@ def main():
 
 	resultado = open(filename_result, 'w')
 	resultado.writelines(text)
-
-	#txt = ' '.join(text)
-	#resultado.write(txt + '\n')
-	
 	resultado.close()
 
 	print "Fim do experimento."
@@ -360,87 +361,6 @@ def main():
 	# text = '\n'.join(dissimilaridades_txt)
 	# dados.write(text + '\n')
 	# dados.close()
-
-def calcula_energia(mapa, objetos, soma_dissimilaridades, T):
-	denom = (2. * math.pow(T,2))
-	energia = sum([ exp(-delta(obj.cluster.point, cluster.point) / denom) * soma_dissimilaridades[obj.indice, cluster.prototipo.indice] for cluster in mapa.flat for obj in objetos ])
-
-	return energia
-
-def combinacao(n):
-	resultado = (n * (n - 1.)) / 2.
-	return resultado
-
-#Calcula a matrix de confusão
-def calcula_confusion_matrix(mapa, classes_a_priori, no_clusters_completos):
-
-	confusion_matrix = np.zeros( (len(classes_a_priori),no_clusters_completos), dtype=np.int32 )
-	i = 0
-	for classe in classes_a_priori:
-		j = 0
-		for cluster in mapa.flat:
-			if len(cluster.objetos) > 0:
-				for obj in classe.objetos:
-					if obj in cluster.objetos:
-						confusion_matrix[i,j] += 1
-				j += 1
-		i += 1
-
-	return confusion_matrix
-
-# Cálculo do índice de Rand Corrigido #
-def calcula_cr(confusion_matrix, classes_a_priori, no_clusters_completos, no_objetos):
-	# Cálculo do numerador
-
-	x = pow( combinacao(no_objetos), -1)
-	somaMK = sum([ combinacao(confusion_matrix[i,j]) for i in range(len(classes_a_priori)) for j in range(no_clusters_completos) ])
-	somaMK = somaMK - x
-	soma2 = sum( [ combinacao(confusion_matrix[i,:].sum()) for i in range(len(classes_a_priori)) ] )
-	soma3 = sum( [ combinacao(confusion_matrix[:,j].sum()) for j in range(no_clusters_completos) ] )
-
-	numerador_cr = somaMK * soma2 * soma3
-
-	# Cálculo do denominador
-	fator1 = (((0.5) * (soma2 + soma3)) - x)
-	denominador_cr = fator1 * soma2 * soma3
-
-	cr = numerador_cr / denominador_cr
-
-	return cr
-	
-# Cálculo da precisão #
-def calcula_precisao(confusion_matrix, classes_a_priori, no_clusters_completos):
-	
-	precisao_matrix = [ float(confusion_matrix[i,j]) / float(confusion_matrix[:,j].sum()) for i in range(len(classes_a_priori)) for j in range(no_clusters_completos)]
-	precisao_matrix = np.array(precisao_matrix).reshape(len(classes_a_priori),no_clusters_completos)
-
-	return precisao_matrix
-
-# Cálculo do recall #
-def calcula_recall(confusion_matrix, classes_a_priori, no_clusters_completos):
-
-	recall_matrix = [ float(confusion_matrix[i,j]) / float(confusion_matrix[i,:].sum()) for i in range(len(classes_a_priori)) for j in range(no_clusters_completos) ]
-	recall_matrix = np.array(recall_matrix).reshape(len(classes_a_priori),no_clusters_completos)
-
-	return recall_matrix
-
-# Cálculo do F-measure #
-def calcula_f_measure(precisao_matrix, recall_matrix, len_cls_priori, len_clusters_comp):
-
-	f_measure_matrix = [ 2. * ( (precisao_matrix[i,j]*recall_matrix[i,j]) /  (precisao_matrix[i,j]+recall_matrix[i,j]) ) if precisao_matrix[i,j]+recall_matrix[i,j] != 0 else -1.0 for i in range(len_cls_priori) for j in range(len_clusters_comp) ]
-	f_measure_matrix = np.array(f_measure_matrix).reshape(len_cls_priori, len_clusters_comp)
-
-	return f_measure_matrix
-
-# Cálculo do oerc (erro global) #
-def calcula_oerc(confusion_matrix, len_clusters_comp, len_objetos):
-
-	array_max = confusion_matrix.max(axis=0)
-	soma = float(array_max.sum())
-
-	resultado = 1. - (float(soma) / float(len_objetos))
-
-	return resultado
 
 if __name__ == '__main__':
 	main()
