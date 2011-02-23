@@ -322,9 +322,8 @@ def main():
 		len_cls_priori = len(classes_a_priori)
 		f_measure_matrix = calcula_f_measure(precisao_matrix, recall_matrix, len_cls_priori, no_clusters_completos)
 		#print f_measure_matrix
-
-		soma2 = sum(confusion_matrix[:,:].sum(axis=0))
-		f_measure = float(soma2 / no_objetos) * f_measure_matrix.max()
+		soma2 = sum( [ confusion_matrix[i,:].sum() * f_measure_matrix[i,:].max() for i in range(len(classes_a_priori)) ] )
+		f_measure = float(soma2 / no_objetos)
 		text.append("\nF-measure(P,Q): " + str(f_measure))
 
 		###########################################################
@@ -394,17 +393,15 @@ def calcula_cr(confusion_matrix, classes_a_priori, no_clusters_completos, no_obj
 	# Cálculo do numerador
 
 	x = pow( combinacao(no_objetos), -1)
-	soma1 = sum([ combinacao(confusion_matrix[i,j]) for i in range(len(classes_a_priori)) for j in range(no_clusters_completos) ])
-
-	soma1 = soma1 - x
+	somaMK = sum([ combinacao(confusion_matrix[i,j]) for i in range(len(classes_a_priori)) for j in range(no_clusters_completos) ])
+	somaMK = somaMK - x
 	soma2 = sum( [ combinacao(confusion_matrix[i,:].sum()) for i in range(len(classes_a_priori)) ] )
 	soma3 = sum( [ combinacao(confusion_matrix[:,j].sum()) for j in range(no_clusters_completos) ] )
 
-	numerador_cr = soma1 * soma2 * soma3
+	numerador_cr = somaMK * soma2 * soma3
 
 	# Cálculo do denominador
 	fator1 = (((0.5) * (soma2 + soma3)) - x)
-
 	denominador_cr = fator1 * soma2 * soma3
 
 	cr = numerador_cr / denominador_cr
@@ -421,28 +418,19 @@ def calcula_precisao(confusion_matrix, classes_a_priori, no_clusters_completos):
 
 # Cálculo do recall #
 def calcula_recall(confusion_matrix, classes_a_priori, no_clusters_completos):
-	recall_matrix = np.empty( (len(classes_a_priori),no_clusters_completos) )
-	
-	for i in range(len(classes_a_priori)):
-		for j in range(no_clusters_completos):
-			recall_matrix[i,j] = float(confusion_matrix[i,j]) / float(confusion_matrix[i,:].sum())
+
+	recall_matrix = [ float(confusion_matrix[i,j]) / float(confusion_matrix[i,:].sum()) for i in range(len(classes_a_priori)) for j in range(no_clusters_completos) ]
+	recall_matrix = np.array(recall_matrix).reshape(len(classes_a_priori),no_clusters_completos)
 
 	return recall_matrix
 
 # Cálculo do F-measure #
 def calcula_f_measure(precisao_matrix, recall_matrix, len_cls_priori, len_clusters_comp):
 
-	f_measure_matrix = np.empty( (len_cls_priori, len_clusters_comp) )
+	f_measure_matrix = [ 2. * ( (precisao_matrix[i,j]*recall_matrix[i,j]) /  (precisao_matrix[i,j]+recall_matrix[i,j]) ) if precisao_matrix[i,j]+recall_matrix[i,j] != 0 else -1.0 for i in range(len_cls_priori) for j in range(len_clusters_comp) ]
+	f_measure_matrix = np.array(f_measure_matrix).reshape(len_cls_priori, len_clusters_comp)
 
-	for i in range(len_cls_priori):
-		for j in range(len_clusters_comp):
-			if precisao_matrix[i,j] == 0 and recall_matrix[i,j] == 0:
-				f_measure_matrix[i,j] = -1.
-			else:
-				result = 2. * ( (precisao_matrix[i,j]*recall_matrix[i,j]) /  (precisao_matrix[i,j]+recall_matrix[i,j]) )
-				f_measure_matrix[i,j] = result
-
-	return f_measure_matrix	
+	return f_measure_matrix
 
 # Cálculo do oerc (erro global) #
 def calcula_oerc(confusion_matrix, len_clusters_comp, len_objetos):
