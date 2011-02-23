@@ -134,10 +134,10 @@ def atualiza_pesos(objetos, mapa, denom, matrizes):
 
 	for cluster in mapa.flat:
 		for i in range (len(cluster.pesos)):
-			produto = 1.
+			produto = 1.0
 			for matriz in matrizes:
 				soma = sum( [ exp(-delta(objeto.cluster.point, cluster.point) / denom) * matriz[int(objeto.indice),int(cluster.prototipo.indice)] for objeto in objetos ] )
-				produto *= soma
+				produto = produto * soma
 
 			matriz_atual = matrizes[i]
 			denominador = sum( [ exp(-delta(objeto.cluster.point, cluster.point) / denom) * matriz_atual[int(objeto.indice),int(cluster.prototipo.indice)] for objeto in objetos ] )
