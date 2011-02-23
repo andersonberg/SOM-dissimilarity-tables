@@ -15,6 +15,7 @@ import pdb
 from operator import itemgetter, attrgetter
 from classes import *
 from leitor_sodas import *
+from indices import *
 from datetime import *
 import os.path
 
@@ -24,8 +25,7 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, individua
 	clusters = []
 	individuals = []
 	
-	for obj in individuals_objects:
-		individuals.append(obj)
+	individuals.extend(individuals_objects)
 	
 	# para cardinalidade q = 1
 	for i in range(c):
@@ -66,20 +66,9 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, individua
 	
 def calcula_criterio(obj, mapa, denom, matrizes, point1):
 	
-	sum1 = 0.0
-	for cluster in mapa.flat:
-		point2 = Point(cluster.point.x, cluster.point.y)
+	sum_1 = sum([exp(-delta(point1, cluster.point) / denom) * sum(np.array(matrizes[:,int(obj.indice),int(cluster.prototipo.indice)]) * cluster.pesos) for cluster in mapa.flat])
 
-		diss = matrizes[:,int(obj.indice),int(cluster.prototipo.indice)]
-
-		dissimilaridades = np.array(diss)
-		produtos = dissimilaridades * cluster.pesos
-		sum2 = sum(produtos)
-		
-		kernel = math.exp ( (-1.) * ( delta(point1, point2) / denom ) )
-		sum1 += ( kernel  * sum2 )
-
-	return sum1
+	return sum_1
 
 def atualiza_particao(individuals, mapa, denom, matrizes):
 	for objeto in individuals:
@@ -109,20 +98,9 @@ def atualiza_particao(individuals, mapa, denom, matrizes):
 
 def calcula_prototipo(objeto_alvo, objetos, mapa, denom, matrizes, cluster):
 
-	point2 = Point(cluster.point.x, cluster.point.y)
-	sum1 = 0.0
-	for obj in objetos:
-		point1 = Point(obj.cluster.point.x, obj.cluster.point.y)
-
-		diss = matrizes[:,int(obj.indice),int(cluster.prototipo.indice)]
-
-		dissimilaridades = np.array(diss)
-		produtos = dissimilaridades * cluster.pesos
-		sum2 = sum(produtos)
-		
-		sum1 += ( ( math.exp ( (-1.) * ( delta(point1, point2) / denom ) ) ) * sum2 )
-						
-	return sum1
+	sum_1 = sum([exp(-delta(obj.cluster.point, cluster.point) / denom) * sum(np.array(matrizes[:,int(obj.indice),int(objeto_alvo.indice)]) * cluster.pesos ) for obj in objetos])
+					
+	return sum_1
 
 def atualiza_prototipo(mapa, individuals, denom, matrizes, q):
 	for cluster in mapa.flat:
@@ -158,20 +136,22 @@ def atualiza_pesos(objetos, mapa, denom, matrizes):
 		for i in range (len(cluster.pesos)):
 			produto = 1.
 			for matriz in matrizes:
-				soma = 0.
-				for objeto in objetos:
-					soma += math.exp ( (-1.) * ( delta(objeto.cluster.point, cluster.point) / denom ) ) * matriz[int(objeto.indice),int(cluster.prototipo.indice)]  
+				soma = sum( [ exp(-delta(objeto.cluster.point, cluster.point) / denom) * matriz[int(objeto.indice),int(cluster.prototipo.indice)] for objeto in objetos ] )
 				produto *= soma
-			numerador = math.pow(produto, 1./len(matrizes))
-			matriz_atual = matrizes[i]
-			denominador = 0.
 
-			for objeto in objetos:
-				denominador += math.exp ( (-1.) * ( delta(objeto.cluster.point, cluster.point) / denom ) ) * matriz_atual[int(objeto.indice),int(cluster.prototipo.indice)]
+			matriz_atual = matrizes[i]
+			denominador = sum( [ exp(-delta(objeto.cluster.point, cluster.point) / denom) * matriz_atual[int(objeto.indice),int(cluster.prototipo.indice)] for objeto in objetos ] )
 			
 			if denominador != 0:
-				cluster.pesos[i] = numerador/denominador
+				cluster.pesos[i] = pow(produto, 1./len(matrizes)) / denominador
 	
+def calcula_energia(mapa, objetos, matrizes, T):
+	
+	denom = (2. * math.pow(T,2))
+	energia = sum([ exp(-delta(obj.cluster.point, cluster.point) / denom) * sum(np.array( [matriz[int(obj.indice),int(cluster.prototipo.indice)] for matriz in matrizes] ) * cluster.pesos) for cluster in mapa.flat for obj in objetos])
+
+	return energia
+
 def main():
 	
 	if len(sys.argv) != 2:
@@ -360,134 +340,10 @@ def main():
 
 	resultado = open(filename_result, 'w')
 	resultado.writelines(text)
-
-	#txt = ' '.join(text)
-	#resultado.write(txt + '\n')
 	
 	resultado.close()
 
 	print "Fim do experimento."
-
-def calcula_energia(mapa, objetos, matrizes, T):
-	
-	denom = (2. * math.pow(T,2))
-	energia = 0.
-	for obj in objetos:
-		point1 = Point(obj.cluster.point.x, obj.cluster.point.y)	
-		sum1 = 0.0
-		
-		for cluster in mapa.flat:
-			point2 = Point(cluster.point.x, cluster.point.y)
-
-			diss = []
-			for matriz in matrizes:
-				diss.append(matriz[int(obj.indice),int(cluster.prototipo.indice)])
-
-			dissimilaridades = np.array(diss)
-			produtos = dissimilaridades * cluster.pesos
-		
-			sum1 += ( ( math.exp ( (-1.) * ( delta(point1, point2) / denom ) ) ) * sum(produtos) )
-		
-		energia += sum1
-
-	return energia
-
-def combinacao(n):
-	resultado = (n * (n - 1)) / 2.
-	return resultado
-
-#Calcula a matrix de confusão
-def calcula_confusion_matrix(mapa, classes_a_priori, no_clusters_completos):
-
-	confusion_matrix = np.zeros( (len(classes_a_priori),no_clusters_completos), dtype=np.int32 )
-	i = 0
-	for classe in classes_a_priori:
-		j = 0
-		for cluster in mapa.flat:
-			if len(cluster.objetos) > 0:
-				for obj in classe.objetos:
-					if obj in cluster.objetos:
-						confusion_matrix[i,j] += 1
-				j += 1
-		i += 1
-
-	return confusion_matrix
-
-# Cálculo do índice de Rand Corrigido #
-def calcula_cr(confusion_matrix, classes_a_priori, no_clusters_completos, no_objetos):
-
-	x = math.pow( combinacao(no_objetos), -1)
-	# Cálculo do numerador
-	soma1 = 0.
-	for i in range(len(classes_a_priori)):
-		for j in range(no_clusters_completos):
-			soma1 += combinacao(confusion_matrix[i,j])
-
-	soma1 = soma1 - x
-
-	soma2 = 0.
-	for i in range(len(classes_a_priori)):
-		soma2 += combinacao(confusion_matrix[i,:].sum())
-
-	soma3 = 0.
-	for j in range(no_clusters_completos):
-		soma3 += combinacao(confusion_matrix[:,j].sum())
-
-	numerador_cr = soma1 * soma2 * soma3
-
-	# Cálculo do denominador
-	fator1 = (((0.5) * (soma2 + soma3))) - x
-
-	denominador_cr = fator1 * soma2 * soma3
-
-	cr = numerador_cr / denominador_cr
-
-	return cr
-	
-# Cálculo da precisão #
-def calcula_precisao(confusion_matrix, classes_a_priori, no_clusters_completos):
-	precisao_matrix = np.empty( (len(classes_a_priori),no_clusters_completos) )
-
-	for i in range(len(classes_a_priori)):
-		for j in range(no_clusters_completos):
-			precisao_matrix[i,j] = float(confusion_matrix[i,j]) / float(confusion_matrix[:,j].sum())
-
-	return precisao_matrix
-
-# Cálculo do recall #
-def calcula_recall(confusion_matrix, classes_a_priori, no_clusters_completos):
-	recall_matrix = np.empty( (len(classes_a_priori),no_clusters_completos) )
-	
-	for i in range(len(classes_a_priori)):
-		for j in range(no_clusters_completos):
-			recall_matrix[i,j] = float(confusion_matrix[i,j]) / float(confusion_matrix[i,:].sum())
-
-	return recall_matrix
-
-# Cálculo do F-measure #
-def calcula_f_measure(precisao_matrix, recall_matrix, len_cls_priori, len_clusters_comp):
-
-	f_measure_matrix = np.empty( (len_cls_priori, len_clusters_comp) )
-
-	for i in range(len_cls_priori):
-		for j in range(len_clusters_comp):
-			if precisao_matrix[i,j] == 0 and recall_matrix[i,j] == 0:
-				f_measure_matrix[i,j] = 0.
-			else:
-				result = 2. * ( (precisao_matrix[i,j]*recall_matrix[i,j]) /  (precisao_matrix[i,j]+recall_matrix[i,j]) )
-				f_measure_matrix[i,j] = result			
-
-	return f_measure_matrix
-
-# Cálculo do oerc (erro global) #
-def calcula_oerc(confusion_matrix, len_clusters_comp, len_objetos):
-
-	array_max = confusion_matrix.max(axis=0)
-	soma = float(array_max.sum())
-
-	resultado = 1. - (float(soma) / float(len_objetos))
-
-	return resultado
 
 if __name__ == '__main__':
 	main()
