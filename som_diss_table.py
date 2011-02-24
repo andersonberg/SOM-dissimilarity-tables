@@ -18,7 +18,7 @@ from indices import *
 from datetime import *
 import os.path
 
-def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, soma_dissimilaridades, individuals_objects):
+def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, soma_dissimilaridades, individuals_objects):
 
 	prototipos = []
 	clusters = []
@@ -46,13 +46,8 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, soma_dissimil
 	
 	# Etapa de afetação		
 	for objeto in individuals:
-		criterios = {}
-		for cluster in mapa.flat:
-			point1 = Point(cluster.point.x, cluster.point.y)
-			criterio = calcula_criterio(objeto, mapa, T, soma_dissimilaridades, point1)
-			criterios[ cluster ] = criterio
-			
-		(menor_criterio_cluster, menor_criterio) = min(criterios.items(), key=lambda x: x[1])
+		criterios = [ (calcula_criterio(objeto, mapa, denom, soma_dissimilaridades, cluster.point), cluster) for cluster in mapa.flat ]
+		(menor_criterio, menor_criterio_cluster) = min(criterios)
 
 		# Insere o objeto no cluster de menor critério
 		mapa[menor_criterio_cluster.point.x, menor_criterio_cluster.point.y].inserir_objeto(objeto)
@@ -70,14 +65,10 @@ def calcula_prototipo(objeto_alvo, objetos, mapa, denom, soma_dissimilaridades, 
 def atualiza_prototipo(mapa, individuals, denom, soma_dissimilaridades, q):
 	for cluster in mapa.flat:
 		if len(cluster.objetos) > 0:
-			somas = {}
-			point2 = Point(cluster.point.x, cluster.point.y)
-			for obj in individuals:
-				menor_criterio_sum = calcula_prototipo(obj, individuals, mapa, denom, soma_dissimilaridades, point2)
-				somas[obj] = menor_criterio_sum
+			somas = [ (calcula_prototipo(obj, individuals, mapa, denom, soma_dissimilaridades, cluster.point), obj) for obj in individuals ]
 			
 			#se q = 1
-			(menor_criterio_obj, menor_criterio) = min(somas.items(), key=lambda x: x[1])
+			(menor_criterio, menor_criterio_obj) = min(somas)
 			novo_prototipo = Individual(menor_criterio_obj.indice, menor_criterio_obj.id2, menor_criterio_obj.nome)
 			cluster.prototipo = novo_prototipo
 
@@ -94,14 +85,9 @@ def calcula_criterio(obj, mapa, denom, soma_dissimilaridades, point1):
 def atualiza_particao(individuals, mapa, denom, soma_dissimilaridades):
 	for objeto in individuals:
 		cluster_atual = objeto.cluster
-		criterios = {}
-		for cluster in mapa.flat:
-			point1 = Point(cluster.point.x, cluster.point.y)
-			criterio = calcula_criterio(objeto, mapa, denom, soma_dissimilaridades, point1)
-			criterios[ cluster ] = criterio				
+		criterios = [ (calcula_criterio(objeto, mapa, denom, soma_dissimilaridades, cluster.point), cluster) for cluster in mapa.flat ]
+		(menor_criterio, menor_criterio_cluster) = min(criterios)
 
-		(menor_criterio_cluster, menor_criterio) = min(criterios.items(), key=lambda x: x[1])
-			
 		if menor_criterio_cluster.point != cluster_atual.point:
 		#Insere o objeto no cluster de menor critério
 			mapa[menor_criterio_cluster.point.x, menor_criterio_cluster.point.y].inserir_objeto(objeto)
