@@ -9,7 +9,6 @@ import re
 import sys
 import random
 from math import *
-#from numpy import *
 import numpy as np
 import pdb
 from operator import itemgetter, attrgetter
@@ -34,23 +33,9 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, soma_dissimil
 		if not novo_prototipo in prototipos:
 			prototipos.append(novo_prototipo)
 			cluster = Cluster(i, novo_prototipo)
-			clusters.append(cluster)	
-
-	# para cardinalidade q > 1
-
-	#for i in range(c+1):
-	#	cluster = Cluster(i+1)
-	#	clusters.append(cluster)	
-	#for i in range(c):
-	#	for j in range(q):
-	#		prot = random.choice(individuals)
-	#		novo_prototipo = Individual(prot.indice, prot.id2, prot.nome)
-	#		if not novo_prototipo in clusters[i].prototipos:
-	#			clusters[i].prototipos.append(novo_prototipo)
-	#		if not novo_prototipo in prototipos:
-	#			prototipos.append(novo_prototipo)
+			clusters.append(cluster)
 	
-	#criando uma matriz com numpy
+	# criando uma matriz com numpy
 	mapa = np.array(clusters)
 	mapa.shape = (mapa_x, mapa_y)
 	
@@ -58,29 +43,30 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, T, matrizes, soma_dissimil
 	for i in range(len(mapa)):
 		for j in range(len(mapa[i])):
 			mapa[i,j].definir_ponto(i,j)
-			
+	
+	# Etapa de afetação		
 	for objeto in individuals:
 		criterios = {}
 		for cluster in mapa.flat:
 			point1 = Point(cluster.point.x, cluster.point.y)
 			criterio = calcula_criterio(objeto, mapa, T, soma_dissimilaridades, point1)
 			criterios[ cluster ] = criterio
-	
-		
+			
 		(menor_criterio_cluster, menor_criterio) = min(criterios.items(), key=lambda x: x[1])
-		#print "Menor criterio: ", menor_criterio, menor_criterio_cluster.prototipo.nome, menor_criterio_cluster.point.x, menor_criterio_cluster.point.y
 
-		#Insere o objeto no cluster de menor critério
+		# Insere o objeto no cluster de menor critério
 		mapa[menor_criterio_cluster.point.x, menor_criterio_cluster.point.y].inserir_objeto(objeto)
 		objeto.set_cluster(mapa[menor_criterio_cluster.point.x, menor_criterio_cluster.point.y])
 			
 	return mapa, prototipos, individuals
 	
+# Cálculo para seleção de melhor protótipo para cada cluster
 def calcula_prototipo(objeto_alvo, objetos, mapa, denom, soma_dissimilaridades, point2):
 
 	sum_1 = sum([exp(-delta(obj.cluster.point,point2) / denom) * soma_dissimilaridades[obj.indice, objeto_alvo.indice] for obj in objetos])
 	return sum_1
 
+# Seleciona o melhor protótipo para cada cluster
 def atualiza_prototipo(mapa, individuals, denom, soma_dissimilaridades, q):
 	for cluster in mapa.flat:
 		if len(cluster.objetos) > 0:
@@ -90,13 +76,6 @@ def atualiza_prototipo(mapa, individuals, denom, soma_dissimilaridades, q):
 				menor_criterio_sum = calcula_prototipo(obj, individuals, mapa, denom, soma_dissimilaridades, point2)
 				somas[obj] = menor_criterio_sum
 			
-			#se q > 1
-			#sorted_criterios = sorted(criterios.items(), key=lambda x: x[1])
-			#cluster.prototipos = []
-			#for i in range(q):
-			#	novo_prototipo = Individual(sorted_criterios[i].indice, sorted_criterios[i].id2, sorted_criterios[i].nome)
-			#	cluster.prototipos.append(novo_prototipo)
-			
 			#se q = 1
 			(menor_criterio_obj, menor_criterio) = min(somas.items(), key=lambda x: x[1])
 			novo_prototipo = Individual(menor_criterio_obj.indice, menor_criterio_obj.id2, menor_criterio_obj.nome)
@@ -104,12 +83,14 @@ def atualiza_prototipo(mapa, individuals, denom, soma_dissimilaridades, q):
 
 	return mapa
 	
+# Calcula o critério para escolha do cluster para cada indivíduo
 def calcula_criterio(obj, mapa, denom, soma_dissimilaridades, point1):
 
 	sum_1 = sum([exp(-delta(point1, cluster.point) / denom) * soma_dissimilaridades[obj.indice, cluster.prototipo.indice] for cluster in mapa.flat])
 
 	return sum_1
 
+# Atualiza partição afetando cada indivíduo ao cluster mais adequado
 def atualiza_particao(individuals, mapa, denom, soma_dissimilaridades):
 	for objeto in individuals:
 		cluster_atual = objeto.cluster
@@ -120,11 +101,6 @@ def atualiza_particao(individuals, mapa, denom, soma_dissimilaridades):
 			criterios[ cluster ] = criterio				
 
 		(menor_criterio_cluster, menor_criterio) = min(criterios.items(), key=lambda x: x[1])
-
-		#sorted_criterios = sorted(criterios.items(), key=lambda x: x[1])
-			
-		#sorted_criterios = sorted(criterios.items(), key=itemgetter(1,0))
-		#(menor_criterio_cluster, menor_criterio) = mapa[sorted_criterios[0][0].x, sorted_criterios[0][0].y], sorted_criterios[0][1]
 			
 		if menor_criterio_cluster.point != cluster_atual.point:
 		#Insere o objeto no cluster de menor critério
@@ -147,6 +123,7 @@ def delta(point1, point2):
 	#dist = math.fabs(point1.x - point2.x) + math.fabs(point1.y - point2.y)
 	return dist
 
+# Calcula o critério de adequação
 def calcula_energia(mapa, objetos, soma_dissimilaridades, T):
 	denom = (2. * math.pow(T,2))
 	energia = sum([ exp(-delta(obj.cluster.point, cluster.point) / denom) * soma_dissimilaridades[obj.indice, cluster.prototipo.indice] for cluster in mapa.flat for obj in objetos ])
@@ -218,6 +195,7 @@ def main():
 		dissimilaridades = np.array(dissimilaridades)
 		matrizes.append(dissimilaridades)
 
+	# Cria um array de matrizes
 	matrizes = np.array(matrizes)
 	nome_base = filename_base.group(1)
 
@@ -254,7 +232,6 @@ def main():
 		# while t < (n_iter - 1):
 			#Step 1: computation of the best prototypes
 			t += 1.0
-			#print 't', t
 			T = t_max * math.pow( (t_min / t_max), (t / (n_iter - 1.0)) )
 			denom = 2. * math.pow(T,2)
 
