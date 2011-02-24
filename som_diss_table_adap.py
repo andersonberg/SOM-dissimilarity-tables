@@ -8,8 +8,7 @@
 import re
 import sys
 import random
-import math
-#from numpy import *
+from math import *
 import numpy as np
 import pdb
 from operator import itemgetter, attrgetter
@@ -40,25 +39,21 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, individua
 	for cluster in clusters:
 		cluster.pesos = np.ones(len(matrizes))		
 	
-	#criando uma matriz com numpy
+	# criando uma matriz com numpy
 	mapa = np.array(clusters)
 	mapa.shape = (mapa_x, mapa_y)
 	
-	#define as coordenadas de cada cluster no mapa
+	# define as coordenadas de cada cluster no mapa
 	for i in range(mapa_x):
 		for j in range(mapa_y):
 			mapa[i,j].definir_ponto(i,j)
-			
+	
+	# Etapa de afetação		
 	for objeto in individuals:
-		criterios = {}
-		for cluster in mapa.flat:
-			point1 = Point(cluster.point.x, cluster.point.y)
-			criterio = calcula_criterio(objeto, mapa, denom, matrizes, point1)
-			criterios[ cluster ] = criterio
+		criterios = [ (calcula_criterio(objeto, mapa, denom, matrizes, cluster.point), cluster) for cluster in mapa.flat ]
+		(menor_criterio, menor_criterio_cluster) = min(criterios)
 		
-		(menor_criterio_cluster, menor_criterio) = min(criterios.items(), key=lambda x: x[1])
-
-		#Insere o objeto no cluster de menor critério
+		# Insere o objeto no cluster de menor critério
 		mapa[menor_criterio_cluster.point.x, menor_criterio_cluster.point.y].inserir_objeto(objeto)
 		objeto.set_cluster(mapa[menor_criterio_cluster.point.x, menor_criterio_cluster.point.y])
 			
@@ -70,6 +65,7 @@ def calcula_criterio(obj, mapa, denom, matrizes, point1):
 
 	return sum_1
 
+# Atualiza partição afetando cada indivíduo ao cluster mais adequado
 def atualiza_particao(individuals, mapa, denom, matrizes):
 	for objeto in individuals:
 		criterios = {}
@@ -147,7 +143,7 @@ def atualiza_pesos(objetos, mapa, denom, matrizes):
 	
 def calcula_energia(mapa, objetos, matrizes, T):
 	
-	denom = (2. * math.pow(T,2))
+	denom = (2. * pow(T,2))
 	energia = sum([ exp(-delta(obj.cluster.point, cluster.point) / denom) * sum(np.array( [matriz[int(obj.indice),int(cluster.prototipo.indice)] for matriz in matrizes] ) * cluster.pesos) for cluster in mapa.flat for obj in objetos])
 
 	return energia
@@ -230,7 +226,7 @@ def main():
 		#Inicialização
 		T = t_max
 		t = 0.0
-		denom = 2. * math.pow(T,2)
+		denom = 2. * pow(T,2)
 		(mapa, prototipos, individuals) = inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, individuals_objects)	
 	
 		while T > t_min:
@@ -238,8 +234,8 @@ def main():
 			#Step 1: computation of the best prototypes
 			t += 1.0
 			#print 't', t
-			T = t_max * math.pow( (t_min / t_max), (t / (n_iter - 1.0)) )
-			denom = 2. * math.pow(T,2)
+			T = t_max * pow( (t_min / t_max), (t / (n_iter - 1.0)) )
+			denom = 2. * pow(T,2)
 
 			mapa = atualiza_prototipo(mapa, individuals, denom, matrizes, q)
 
