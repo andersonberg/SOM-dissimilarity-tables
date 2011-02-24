@@ -85,6 +85,8 @@ def calcula_criterio(obj, mapa, denom, soma_dissimilaridades, point1):
 def atualiza_particao(individuals, mapa, denom, soma_dissimilaridades):
 	for objeto in individuals:
 		cluster_atual = objeto.cluster
+
+		# calcula o critério de cada cluster para o objeto em questão
 		criterios = [ (calcula_criterio(objeto, mapa, denom, soma_dissimilaridades, cluster.point), cluster) for cluster in mapa.flat ]
 		(menor_criterio, menor_criterio_cluster) = min(criterios)
 
