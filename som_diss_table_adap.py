@@ -306,10 +306,8 @@ def main():
 		text.append("\nOERC: " + str(oerc))
 
 	menor_criterio_energia = min(criterios_energia)
-	maior_criterio_energia = max(criterios_energia)
 	menor_erro = min(oercs)
 	text.append("\n\nMelhor repetição: " + str(criterios_energia.index(menor_criterio_energia)))
-	text.append("\nMaior critério: " + str(criterios_energia.index(maior_criterio_energia)))
 	text.append("\nMenor oerc: " + str(oercs.index(menor_erro)))
 
 	hoje = date.today()
