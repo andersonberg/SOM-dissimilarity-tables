@@ -281,19 +281,16 @@ def main():
 		##########################################################
 		# Cálculo da precisão #
 		precisao_matrix = calcula_precisao(confusion_matrix, classes_a_priori, no_clusters_completos)
-		#print precisao_matrix
 
 		###########################################################
 		# Cálculo do recall #
 		recall_matrix =	calcula_recall(confusion_matrix, classes_a_priori, no_clusters_completos)
-		#print recall_matrix
 
 		###########################################################
 		# Cálculo do f_measure #
 
 		len_cls_priori = len(classes_a_priori)
 		f_measure_matrix = calcula_f_measure(precisao_matrix, recall_matrix, len_cls_priori, no_clusters_completos)
-		#print f_measure_matrix
 		soma2 = sum( [ confusion_matrix[i,:].sum() * f_measure_matrix[i,:].max() for i in range(len(classes_a_priori)) ] )
 		f_measure = float(soma2 / no_objetos)
 		text.append("\nF-measure(P,Q): " + str(f_measure))

@@ -68,13 +68,10 @@ def calcula_criterio(obj, mapa, denom, matrizes, point1):
 # Atualiza partição afetando cada indivíduo ao cluster mais adequado
 def atualiza_particao(individuals, mapa, denom, matrizes):
 	for objeto in individuals:
-		criterios = {}
-		for cluster in mapa.flat:
-			point1 = Point(cluster.point.x, cluster.point.y)
-			criterio = calcula_criterio(objeto, mapa, denom, matrizes, point1)
-			criterios[ cluster ] = criterio				
 
-		(menor_criterio_cluster, menor_criterio) = min(criterios.items(), key=lambda x: x[1])
+		# calcula o critério de cada cluster para o objeto em questão
+		criterios = [ (calcula_criterio(objeto, mapa, denom, matrizes, cluster.point), cluster) for cluster in mapa.flat ]
+		(menor_criterio, menor_criterio_cluster) = min(criterios)
 			
 		if menor_criterio_cluster.point != objeto.cluster.point:
 		#Insere o objeto no cluster de menor critério
@@ -92,33 +89,25 @@ def atualiza_particao(individuals, mapa, denom, matrizes):
 
 	return mapa, individuals
 
+# Cálculo para seleção de melhor protótipo para cada cluster
 def calcula_prototipo(objeto_alvo, objetos, mapa, denom, matrizes, cluster):
 
 	sum_1 = sum([exp(-delta(obj.cluster.point, cluster.point) / denom) * sum(np.array(matrizes[:,int(obj.indice),int(objeto_alvo.indice)]) * cluster.pesos ) for obj in objetos])
 					
 	return sum_1
 
+# Seleciona o melhor protótipo para cada cluster
 def atualiza_prototipo(mapa, individuals, denom, matrizes, q):
 	for cluster in mapa.flat:
 		if len(cluster.objetos) > 0:
-			somas = {}
 
-			for obj in individuals:
-				menor_criterio_sum = calcula_prototipo(obj, individuals, mapa, denom, matrizes, cluster)
-				somas[obj] = menor_criterio_sum
-			
-			#se q > 1
-			#sorted_criterios = sorted(criterios.items(), key=lambda x: x[1])
-			#cluster.prototipos = []
-			#for i in range(q):
-			#	novo_prototipo = Individual(sorted_criterios[i].indice, sorted_criterios[i].id2, sorted_criterios[i].nome)
-			#	cluster.prototipos.append(novo_prototipo)
+			somas = [ (calcula_prototipo(obj, individuals, mapa, denom, matrizes, cluster), obj) for obj in individuals ]
 			
 			#se q = 1
-			(menor_criterio_obj, menor_criterio) = min(somas.items(), key=lambda x: x[1])
+			(menor_criterio, menor_criterio_obj) = min(somas)
 			novo_prototipo = Individual(menor_criterio_obj.indice, menor_criterio_obj.id2, menor_criterio_obj.nome)
 			cluster.prototipo = novo_prototipo
-
+			
 	return mapa
 
 def delta(point1, point2):
@@ -285,7 +274,6 @@ def main():
 			i+=1
 	
 		text.append("\nTotal" + "\t" + str(confusion_matrix.sum(axis=0)))
-	
 
 		##########################################################################################
 		# Cálculo do índice de Rand Corrigido #
@@ -297,25 +285,18 @@ def main():
 		##########################################################
 		# Cálculo da precisão #
 		precisao_matrix = calcula_precisao(confusion_matrix, classes_a_priori, no_clusters_completos)
-		#print "precisao_matrix"
-		#print precisao_matrix
 
 		###########################################################
 		# Cálculo do recall #
 		recall_matrix =	calcula_recall(confusion_matrix, classes_a_priori, no_clusters_completos)
-		#print "recall_matrix"
-		#print recall_matrix
 
 		###########################################################
 		# Cálculo do f_measure #
 
 		len_cls_priori = len(classes_a_priori)
 		f_measure_matrix = calcula_f_measure(precisao_matrix, recall_matrix, len_cls_priori, no_clusters_completos)
-
-		sum2 = sum(confusion_matrix[:,:].sum(axis=0))
-
-		f_measure = float(sum2 / no_objetos) * f_measure_matrix.max()
-		
+		soma2 = sum( [ confusion_matrix[i,:].sum() * f_measure_matrix[i,:].max() for i in range(len(classes_a_priori)) ] )
+		f_measure = float(soma2 / no_objetos)
 		text.append("\nF-measure(P,Q): " + str(f_measure))
 
 		###########################################################
