@@ -1,0 +1,145 @@
+Parâmetros iniciais
+
+Topologia: 2x3
+Cardinalidade (q): 1
+Tmin: 0.105 Tmax: 1.05
+Número de iterações: 200.0
+*Modelo adaptativo
+
+#####################################
+Repetição do experimento: 0
+
+Cluster 0,0 Prototipo: L_AM [2 objetos]Objetos: C_AM L_AM 
+Cluster 0,1 Prototipo: T_ES [5 objetos]Objetos: C_EN C_ES T_ES L_ES T_EN 
+Cluster 0,2 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [3 objetos]Objetos: L_EN P_EN C_MA 
+Cluster 1,1 Prototipo: P_AM [1 objetos]Objetos: P_AM 
+Cluster 1,2 Prototipo: P_ES [1 objetos]Objetos: P_ES 
+
+Critério de adequação (energia): 53.6431286425
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	1,2	Total
+
+1	2	 0	 0	 1	 0	 3
+2	0	 2	 2	 0	 0	 4
+3	0	 3	 0	 0	 1	 4
+4	0	 0	 1	 0	 0	 1
+Total	[2 5 3 1 1]
+Corrected Rand index: 0.413179916318
+
+F-measure(P,Q): 0.654365079365
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 1
+
+Cluster 0,0 Prototipo: T_ES [5 objetos]Objetos: T_EN L_ES T_ES C_ES C_EN 
+Cluster 0,1 Prototipo: C_AM [1 objetos]Objetos: C_AM 
+Cluster 0,2 Prototipo: P_AM [3 objetos]Objetos: P_AM P_EN P_ES 
+Cluster 1,0 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_AM [2 objetos]Objetos: L_EN L_AM 
+Cluster 1,2 Prototipo: C_MA [1 objetos]Objetos: C_MA 
+
+Critério de adequação (energia): 56.6749783178
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,1	1,2	Total
+
+1	0	 1	 1	 1	 0	 3
+2	2	 0	 1	 1	 0	 4
+3	3	 0	 1	 0	 0	 4
+4	0	 0	 0	 0	 1	 1
+Total	[5 1 3 2 1]
+Corrected Rand index: 0.27510460251
+
+F-measure(P,Q): 0.578703703704
+OERC: 0.416666666667
+
+#####################################
+Repetição do experimento: 2
+
+Cluster 0,0 Prototipo: L_AM [2 objetos]Objetos: C_AM L_AM 
+Cluster 0,1 Prototipo: C_MA [2 objetos]Objetos: C_MA L_EN 
+Cluster 0,2 Prototipo: P_EN [1 objetos]Objetos: P_EN 
+Cluster 1,0 Prototipo: T_ES [4 objetos]Objetos: T_ES C_ES C_EN T_EN 
+Cluster 1,1 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 1,2 Prototipo: P_ES [2 objetos]Objetos: P_ES P_AM 
+
+Critério de adequação (energia): 29.7629941176
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	Total
+
+1	2	 0	 0	 0	 0	 1	 3
+2	0	 1	 1	 2	 0	 0	 4
+3	0	 0	 0	 2	 1	 1	 4
+4	0	 1	 0	 0	 0	 0	 1
+Total	[2 2 1 4 1 2]
+Corrected Rand index: 0.249051833123
+
+F-measure(P,Q): 0.588888888889
+OERC: 0.333333333333
+
+#####################################
+Repetição do experimento: 3
+
+Cluster 0,0 Prototipo: T_EN [1 objetos]Objetos: T_EN 
+Cluster 0,1 Prototipo: L_AM [2 objetos]Objetos: L_AM C_AM 
+Cluster 0,2 Prototipo: C_MA [3 objetos]Objetos: C_MA P_EN L_EN 
+Cluster 1,0 Prototipo: P_ES [2 objetos]Objetos: P_ES P_AM 
+Cluster 1,1 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 1,2 Prototipo: C_EN [3 objetos]Objetos: C_ES T_ES C_EN 
+
+Critério de adequação (energia): 35.0840681965
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	Total
+
+1	0	 2	 0	 1	 0	 0	 3
+2	1	 0	 2	 0	 0	 1	 4
+3	0	 0	 0	 1	 1	 2	 4
+4	0	 0	 1	 0	 0	 0	 1
+Total	[1 2 3 2 1 3]
+Corrected Rand index: 0.259894459103
+
+F-measure(P,Q): 0.622619047619
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 4
+
+Cluster 0,0 Prototipo: P_ES [2 objetos]Objetos: P_ES P_AM 
+Cluster 0,1 Prototipo: T_EN [1 objetos]Objetos: T_EN 
+Cluster 0,2 Prototipo: C_EN [3 objetos]Objetos: C_ES T_ES C_EN 
+Cluster 1,0 Prototipo: C_MA [6 objetos]Objetos: P_EN L_EN C_AM C_MA L_AM L_ES 
+Cluster 1,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: C_MA [0 objetos]Objetos: 
+
+Critério de adequação (energia): 58.4720876155
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	Total
+
+1	1	 0	 0	 2	 3
+2	0	 1	 1	 2	 4
+3	1	 0	 2	 1	 4
+4	0	 0	 0	 1	 1
+Total	[2 1 3 6]
+Corrected Rand index: 0.175735950045
+
+F-measure(P,Q): 0.45873015873
+OERC: 0.5
+
+Melhor repetição: 2
+Menor oerc: 0
