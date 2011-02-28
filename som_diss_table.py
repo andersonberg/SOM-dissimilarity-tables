@@ -229,6 +229,9 @@ def main():
 			
 			mapa, individuals = atualiza_particao(individuals, mapa, denom, soma_dissimilaridades)
 
+#			energia = calcula_energia(mapa, individuals, soma_dissimilaridades, T)
+#			text.append("\n\nCritério de adequação (energia): " + str(energia))
+
 		no_clusters_completos = 0
 
 		for cluster in mapa.flat:
