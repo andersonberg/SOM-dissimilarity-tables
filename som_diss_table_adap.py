@@ -307,7 +307,6 @@ def main():
 		text.append("\nOERC: " + str(oerc))
 
 	criterios_ordenados = sorted(criterios_energia)
-	print criterios_ordenados
 	it = 0
 	while(criterios_ordenados[it] < 1.0):
 		it += 1
