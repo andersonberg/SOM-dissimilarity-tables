@@ -120,9 +120,9 @@ def calcula_energia(mapa, objetos, soma_dissimilaridades, T):
 	
 def main():
 	
-	if len(sys.argv) != 2:
-		print 'usage: ./som_diss_table.py configuration_file'
-		sys.exit(1)
+#	if len(sys.argv) != 2:
+#		print 'usage: ./som_diss_table.py configuration_file'
+#		sys.exit(1)
 	
 #	option = sys.argv[1]
 #	if option == '--a':
@@ -136,35 +136,36 @@ def main():
 	matrizes = []
 	text = []
 
-	#Lê arquivo de configuração
-	conf_file = sys.argv[1]
+	# Lê arquivo de configuração
+#	conf_file = sys.argv[1]
+	conf_file = raw_input("Digite o caminho do arquivo de configuração: ")
 	conf = open(conf_file, 'rU')
 
 	configuracao = conf.read()
 	
-	#número de repetições do experimento	
+	# número de repetições do experimento	
 	r = re.search(r'repeticoes = ([\d]+)', configuracao)
 	repeticoes = int(r.group(1))
-	#número de linhas no mapa
+	# número de linhas no mapa
 	x = re.search(r'mapa_x = ([\d]+)', configuracao)
 	mapa_x = int(x.group(1))
-	#número de colunas no mapa
+	# número de colunas no mapa
 	y = re.search(r'mapa_y = ([\d]+)', configuracao)
 	mapa_y = int(y.group(1))
-	#Cardinalidade
+	# Cardinalidade
 	card = re.search(r'q = ([\d]+)', configuracao)
 	q = int(card.group(1))
-	#T-min
+	# T-min
 	tm = re.search(r't_min = ([\d|\.]+)', configuracao)
 	t_min = float(tm.group(1))
-	#T-max
+	# T-max
 	tM = re.search(r't_max = ([\d|\.]+)', configuracao)
 	t_max = float(tM.group(1))
-	#Número de iterações
+	# Número de iterações
 	n = re.search(r'n_iter = ([\d]+)', configuracao)
 	n_iter = float(n.group(1))
 
-	#Arquivos de dados
+	# Arquivos de dados
 	f = re.search(r'files: ([\w|\W|\s]+)', configuracao)
 	arquivos = f.group(1)
 	filenames = arquivos.split()
@@ -175,7 +176,7 @@ def main():
 	text.append("\nTmin: " + str(t_min) + " Tmax: " + str(t_max))
 	text.append("\nNúmero de iterações: " + str(n_iter))
 
-	#Lê mais de um arquivo sodas
+	# Lê mais de um arquivo sodas
 	for filename in filenames:
 		filename_base = re.search(r'/([\w]+)[\w|\d|\W]+[\.sds]', filename)
 
@@ -201,7 +202,7 @@ def main():
 
 	for a in range(repeticoes):
 
-		#Etapa de inicialização
+		# Etapa de inicialização
 
 		text.append("\n\n#####################################")
 		text.append("\nRepetição do experimento: " + str(a) + "\n")
@@ -209,7 +210,7 @@ def main():
 		print "Repetição ", a
 		print "..."
 
-		#Inicialização
+		# Inicialização
 		T = t_max
 		t = 0.0
 		denom = 2. * math.pow(T,2)
