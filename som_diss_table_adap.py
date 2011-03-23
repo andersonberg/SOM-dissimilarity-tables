@@ -305,7 +305,14 @@ def main():
 		oercs.append(oerc)
 		text.append("\nOERC: " + str(oerc))
 
-	menor_criterio_energia = min(criterios_energia)
+	criterios_ordenados = sorted(criterios_energia)
+	print criterios_ordenados
+	it = 0
+	while(criterios_ordenados[it] < 1.0):
+		it += 1
+
+	#menor_criterio_energia = min(criterios_energia)
+	menor_criterio_energia = criterios_ordenados[it]
 	menor_erro = min(oercs)
 	text.append("\n\nMelhor repetição: " + str(criterios_energia.index(menor_criterio_energia)))
 	text.append("\nMenor oerc: " + str(oercs.index(menor_erro)))
