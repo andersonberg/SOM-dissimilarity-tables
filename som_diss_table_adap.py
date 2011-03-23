@@ -139,15 +139,16 @@ def calcula_energia(mapa, objetos, matrizes, T):
 
 def main():
 	
-	if len(sys.argv) != 2:
-		print 'usage: ./som_diss_table_adap.py configuration_file'
-		sys.exit(1)
+#	if len(sys.argv) != 2:
+#		print 'usage: ./som_diss_table_adap.py configuration_file'
+#		sys.exit(1)
 	
 	matrizes = []
 	text = []
 
 	#Lê arquivo de configuração
-	conf_file = sys.argv[1]
+#	conf_file = sys.argv[1]
+	conf_file = raw_input("Digite o caminho do arquivo de configuração: ")
 	conf = open(conf_file, 'rU')
 
 	configuracao = conf.read()
