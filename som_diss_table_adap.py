@@ -149,6 +149,7 @@ def main():
 	#Lê arquivo de configuração
 #	conf_file = sys.argv[1]
 	conf_file = raw_input("Digite o caminho do arquivo de configuração: ")
+	nome_base = raw_input("Digite o nome da base: ")
 	conf = open(conf_file, 'rU')
 
 	configuracao = conf.read()
@@ -189,14 +190,11 @@ def main():
 
 	#Lê mais de um arquivo sodas
 	for filename in filenames:
-		filename_base = re.search(r'/([\w]+)[\w|\d|\W]+[\.sds]', filename)
-
 		dissimilaridades, individuals_objects, classes_a_priori = leitor(filename)
 		dissimilaridades = np.array(dissimilaridades)
 		matrizes.append(dissimilaridades)
 
 	matrizes = np.array(matrizes)
-	nome_base = filename_base.group(1)
 
 	criterios_energia = []
 	oercs = []
