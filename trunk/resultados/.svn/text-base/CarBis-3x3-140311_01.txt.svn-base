@@ -1,0 +1,3009 @@
+Parâmetros iniciais
+
+Topologia: 3x3
+Cardinalidade (q): 1
+Tmin: 0.135 Tmax: 1.35
+Número de iterações: 400.0
+
+#####################################
+Repetição do experimento: 0
+
+Cluster 0,0 Prototipo: Skoda Fabia_U [8 objetos]Objetos: Punto_U Fiesta_U Lancia Y_U Nissan Micra_U Corsa_U Twingo_U Rover 25_U Skoda Fabia_U 
+Cluster 0,1 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Bmw serie 7_L Mercedes Classe S_L Audi A6_B Audi A8_L Bmw serie 5_L Mercedes Classe E_L 
+Cluster 0,2 Prototipo: Alfa  166_L [3 objetos]Objetos: Lancia K_L Alfa  166_L Rover 75_B 
+Cluster 1,0 Prototipo: Audi A3_U [2 objetos]Objetos: Audi A3_U Alfa  145_U 
+Cluster 1,1 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Ferrari_S Honda  NSK_S Lamborghini_S Maserati GT_S Mercedes SL_S Porsche_S 
+Cluster 1,2 Prototipo: Maserati GT_S [0 objetos]Objetos: 
+Cluster 2,0 Prototipo: Bmw serie 3_B [2 objetos]Objetos: Bmw serie 3_B Mercedes Classe C_B 
+Cluster 2,1 Prototipo: Vectra_B [4 objetos]Objetos: Vectra_B Focus_B Skoda Octavia_B Passat_L 
+Cluster 2,2 Prototipo: Alfa  156_B [1 objetos]Objetos: Alfa  156_B 
+
+Critério de adequação (energia): 103.026039821
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	2,0	2,1	2,2	Total
+
+1	8	 0	 0	 2	 0	 0	 0	 0	 10
+2	0	 1	 1	 0	 0	 2	 3	 1	 8
+3	0	 5	 2	 0	 0	 0	 1	 0	 8
+4	0	 0	 0	 0	 7	 0	 0	 0	 7
+Total	[8 6 3 2 7 2 4 1]
+Corrected Rand index: 0.659891937624
+
+F-measure(P,Q): 0.775853775854
+OERC: 0.0909090909091
+
+#####################################
+Repetição do experimento: 1
+
+Cluster 0,0 Prototipo: Maserati GT_S [4 objetos]Objetos: Honda  NSK_S Mercedes SL_S Porsche_S Maserati GT_S 
+Cluster 0,1 Prototipo: Aston Martin_S [3 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S 
+Cluster 0,2 Prototipo: Aston Martin_S [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: Alfa  145_U [2 objetos]Objetos: Alfa  145_U Focus_B 
+Cluster 1,1 Prototipo: Audi A3_U [1 objetos]Objetos: Audi A3_U 
+Cluster 1,2 Prototipo: Bmw serie 3_B [5 objetos]Objetos: Mercedes Classe C_B Bmw serie 3_B Alfa  166_L Alfa  156_B Lancia K_L 
+Cluster 2,0 Prototipo: Skoda Fabia_U [8 objetos]Objetos: Punto_U Fiesta_U Lancia Y_U Nissan Micra_U Corsa_U Twingo_U Rover 25_U Skoda Fabia_U 
+Cluster 2,1 Prototipo: Vectra_B [4 objetos]Objetos: Vectra_B Passat_L Rover 75_B Skoda Octavia_B 
+Cluster 2,2 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+
+Critério de adequação (energia): 93.3284097899
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	0	 0	 1	 1	 0	 8	 0	 0	 10
+2	0	 0	 1	 0	 3	 0	 3	 1	 8
+3	0	 0	 0	 0	 2	 0	 1	 5	 8
+4	4	 3	 0	 0	 0	 0	 0	 0	 7
+Total	[4 3 2 1 5 8 4 6]
+Corrected Rand index: 0.565436407988
+
+F-measure(P,Q): 0.718002536184
+OERC: 0.151515151515
+
+#####################################
+Repetição do experimento: 2
+
+Cluster 0,0 Prototipo: Skoda Fabia_U [8 objetos]Objetos: Nissan Micra_U Punto_U Fiesta_U Lancia Y_U Corsa_U Twingo_U Rover 25_U Skoda Fabia_U 
+Cluster 0,1 Prototipo: Alfa  156_B [12 objetos]Objetos: Alfa  145_U Focus_B Skoda Octavia_B Alfa  156_B Alfa  166_L Audi A3_U Bmw serie 3_B Lancia K_L Mercedes Classe C_B Vectra_B Rover 75_B Passat_L 
+Cluster 0,2 Prototipo: Alfa  156_B [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: Alfa  156_B [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Alfa  156_B [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Maserati GT_S [7 objetos]Objetos: Lamborghini_S Aston Martin_S Ferrari_S Porsche_S Maserati GT_S Mercedes SL_S Honda  NSK_S 
+Cluster 2,0 Prototipo: Alfa  156_B [0 objetos]Objetos: 
+Cluster 2,1 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Mercedes Classe E_L Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe S_L 
+Cluster 2,2 Prototipo: Alfa  156_B [0 objetos]Objetos: 
+
+Critério de adequação (energia): 125.438204085
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,2	2,1	Total
+
+1	8	 2	 0	 0	 10
+2	0	 7	 0	 1	 8
+3	0	 3	 0	 5	 8
+4	0	 0	 7	 0	 7
+Total	[ 8 12  7  6]
+Corrected Rand index: 0.66666165617
+
+F-measure(P,Q): 0.824338624339
+OERC: 0.181818181818
+
+#####################################
+Repetição do experimento: 3
+
+Cluster 0,0 Prototipo: Skoda Fabia_U [8 objetos]Objetos: Punto_U Lancia Y_U Nissan Micra_U Corsa_U Twingo_U Rover 25_U Skoda Fabia_U Fiesta_U 
+Cluster 0,1 Prototipo: Alfa  145_U [3 objetos]Objetos: Alfa  145_U Focus_B Audi A3_U 
+Cluster 0,2 Prototipo: Alfa  166_L [3 objetos]Objetos: Alfa  166_L Lancia K_L Rover 75_B 
+Cluster 1,0 Prototipo: Skoda Fabia_U [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Maserati GT_S [7 objetos]Objetos: Ferrari_S Aston Martin_S Lamborghini_S Porsche_S Maserati GT_S Honda  NSK_S Mercedes SL_S 
+Cluster 1,2 Prototipo: Skoda Fabia_U [0 objetos]Objetos: 
+Cluster 2,0 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Alfa  156_B Bmw serie 3_B Mercedes Classe C_B 
+Cluster 2,1 Prototipo: Vectra_B [3 objetos]Objetos: Vectra_B Skoda Octavia_B Passat_L 
+Cluster 2,2 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+
+Critério de adequação (energia): 105.02067675
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,1	2,0	2,1	2,2	Total
+
+1	8	 2	 0	 0	 0	 0	 0	 10
+2	0	 1	 1	 0	 3	 2	 1	 8
+3	0	 0	 2	 0	 0	 1	 5	 8
+4	0	 0	 0	 7	 0	 0	 0	 7
+Total	[8 3 3 7 3 3 6]
+Corrected Rand index: 0.6565590863
+
+F-measure(P,Q): 0.7868730596
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 4
+
+Cluster 0,0 Prototipo: Mercedes SL_S [1 objetos]Objetos: Mercedes SL_S 
+Cluster 0,1 Prototipo: Alfa  145_U [3 objetos]Objetos: Alfa  145_U Audi A3_U Focus_B 
+Cluster 0,2 Prototipo: Skoda Fabia_U [8 objetos]Objetos: Punto_U Fiesta_U Lancia Y_U Nissan Micra_U Corsa_U Twingo_U Rover 25_U Skoda Fabia_U 
+Cluster 1,0 Prototipo: Aston Martin_S [3 objetos]Objetos: Ferrari_S Aston Martin_S Lamborghini_S 
+Cluster 1,1 Prototipo: Bmw serie 7_L [3 objetos]Objetos: Mercedes Classe S_L Bmw serie 7_L Audi A8_L 
+Cluster 1,2 Prototipo: Vectra_B [4 objetos]Objetos: Vectra_B Passat_L Rover 75_B Skoda Octavia_B 
+Cluster 2,0 Prototipo: Maserati GT_S [3 objetos]Objetos: Honda  NSK_S Maserati GT_S Porsche_S 
+Cluster 2,1 Prototipo: Bmw serie 3_B [4 objetos]Objetos: Bmw serie 3_B Mercedes Classe C_B Alfa  156_B Alfa  166_L 
+Cluster 2,2 Prototipo: Audi A6_B [4 objetos]Objetos: Audi A6_B Bmw serie 5_L Lancia K_L Mercedes Classe E_L 
+
+Critério de adequação (energia): 80.35546859
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	0	 2	 8	 0	 0	 0	 0	 0	 0	 10
+2	0	 1	 0	 0	 0	 3	 0	 3	 1	 8
+3	0	 0	 0	 0	 3	 1	 0	 1	 3	 8
+4	1	 0	 0	 3	 0	 0	 3	 0	 0	 7
+Total	[1 3 8 3 3 4 3 4 4]
+Corrected Rand index: 0.522212167764
+
+F-measure(P,Q): 0.650076522804
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 5
+
+Cluster 0,0 Prototipo: Maserati GT_S [7 objetos]Objetos: Honda  NSK_S Maserati GT_S Porsche_S Aston Martin_S Ferrari_S Lamborghini_S Mercedes SL_S 
+Cluster 0,1 Prototipo: Mercedes Classe C_B [2 objetos]Objetos: Mercedes Classe C_B Bmw serie 3_B 
+Cluster 0,2 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L Audi A6_B 
+Cluster 1,0 Prototipo: Audi A3_U [2 objetos]Objetos: Audi A3_U Alfa  145_U 
+Cluster 1,1 Prototipo: Alfa  156_B [1 objetos]Objetos: Alfa  156_B 
+Cluster 1,2 Prototipo: Alfa  166_L [3 objetos]Objetos: Alfa  166_L Lancia K_L Rover 75_B 
+Cluster 2,0 Prototipo: Nissan Micra_U [4 objetos]Objetos: Fiesta_U Lancia Y_U Nissan Micra_U Twingo_U 
+Cluster 2,1 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Rover 25_U Skoda Fabia_U Corsa_U Punto_U 
+Cluster 2,2 Prototipo: Vectra_B [4 objetos]Objetos: Vectra_B Skoda Octavia_B Focus_B Passat_L 
+
+Critério de adequação (energia): 96.7547917457
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	0	 0	 0	 2	 0	 0	 4	 4	 0	 10
+2	0	 2	 1	 0	 1	 1	 0	 0	 3	 8
+3	0	 0	 5	 0	 0	 2	 0	 0	 1	 8
+4	7	 0	 0	 0	 0	 0	 0	 0	 0	 7
+Total	[7 2 6 2 1 3 4 4 4]
+Corrected Rand index: 0.541426867296
+
+F-measure(P,Q): 0.679653679654
+OERC: 0.0909090909091
+
+#####################################
+Repetição do experimento: 6
+
+Cluster 0,0 Prototipo: Nissan Micra_U [3 objetos]Objetos: Lancia Y_U Twingo_U Nissan Micra_U 
+Cluster 0,1 Prototipo: Punto_U [2 objetos]Objetos: Punto_U Fiesta_U 
+Cluster 0,2 Prototipo: Skoda Fabia_U [3 objetos]Objetos: Corsa_U Skoda Fabia_U Rover 25_U 
+Cluster 1,0 Prototipo: Maserati GT_S [7 objetos]Objetos: Maserati GT_S Porsche_S Honda  NSK_S Ferrari_S Aston Martin_S Lamborghini_S Mercedes SL_S 
+Cluster 1,1 Prototipo: Alfa  166_L [3 objetos]Objetos: Alfa  166_L Lancia K_L Rover 75_B 
+Cluster 1,2 Prototipo: Alfa  145_U [3 objetos]Objetos: Alfa  145_U Audi A3_U Focus_B 
+Cluster 2,0 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+Cluster 2,1 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Mercedes Classe C_B Bmw serie 3_B Alfa  156_B 
+Cluster 2,2 Prototipo: Vectra_B [3 objetos]Objetos: Vectra_B Passat_L Skoda Octavia_B 
+
+Critério de adequação (energia): 96.34379566
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	3	 2	 3	 0	 0	 2	 0	 0	 0	 10
+2	0	 0	 0	 0	 1	 1	 1	 3	 2	 8
+3	0	 0	 0	 0	 2	 0	 5	 0	 1	 8
+4	0	 0	 0	 7	 0	 0	 0	 0	 0	 7
+Total	[3 2 3 7 3 3 6 3 3]
+Corrected Rand index: 0.497164380337
+
+F-measure(P,Q): 0.6573729301
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 7
+
+Cluster 0,0 Prototipo: Skoda Fabia_U [8 objetos]Objetos: Punto_U Fiesta_U Lancia Y_U Nissan Micra_U Twingo_U Rover 25_U Skoda Fabia_U Corsa_U 
+Cluster 0,1 Prototipo: Alfa  166_L [3 objetos]Objetos: Lancia K_L Rover 75_B Alfa  166_L 
+Cluster 0,2 Prototipo: Bmw serie 3_B [2 objetos]Objetos: Bmw serie 3_B Mercedes Classe C_B 
+Cluster 1,0 Prototipo: Focus_B [4 objetos]Objetos: Focus_B Alfa  145_U Skoda Octavia_B Vectra_B 
+Cluster 1,1 Prototipo: Alfa  156_B [2 objetos]Objetos: Alfa  156_B Passat_L 
+Cluster 1,2 Prototipo: Audi A3_U [1 objetos]Objetos: Audi A3_U 
+Cluster 2,0 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S Mercedes SL_S Honda  NSK_S Maserati GT_S Porsche_S 
+Cluster 2,1 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Bmw serie 5_L Audi A6_B Audi A8_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+Cluster 2,2 Prototipo: Alfa  156_B [0 objetos]Objetos: 
+
+Critério de adequação (energia): 103.718143244
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	Total
+
+1	8	 0	 0	 1	 0	 1	 0	 0	 10
+2	0	 1	 2	 3	 1	 0	 0	 1	 8
+3	0	 2	 0	 0	 1	 0	 0	 5	 8
+4	0	 0	 0	 0	 0	 0	 7	 0	 7
+Total	[8 3 2 4 2 1 7 6]
+Corrected Rand index: 0.64973945815
+
+F-measure(P,Q): 0.775853775854
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 8
+
+Cluster 0,0 Prototipo: Skoda Fabia_U [8 objetos]Objetos: Punto_U Lancia Y_U Nissan Micra_U Corsa_U Twingo_U Skoda Fabia_U Fiesta_U Rover 25_U 
+Cluster 0,1 Prototipo: Focus_B [5 objetos]Objetos: Alfa  145_U Audi A3_U Focus_B Skoda Octavia_B Vectra_B 
+Cluster 0,2 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Bmw serie 5_L Mercedes Classe E_L Bmw serie 7_L Mercedes Classe S_L Audi A8_L Audi A6_B 
+Cluster 1,0 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Alfa  156_B Bmw serie 3_B Mercedes Classe C_B 
+Cluster 1,1 Prototipo: Lamborghini_S [1 objetos]Objetos: Lamborghini_S 
+Cluster 1,2 Prototipo: Alfa  166_L [4 objetos]Objetos: Alfa  166_L Lancia K_L Passat_L Rover 75_B 
+Cluster 2,0 Prototipo: Maserati GT_S [4 objetos]Objetos: Mercedes SL_S Honda  NSK_S Porsche_S Maserati GT_S 
+Cluster 2,1 Prototipo: Aston Martin_S [1 objetos]Objetos: Aston Martin_S 
+Cluster 2,2 Prototipo: Ferrari_S [1 objetos]Objetos: Ferrari_S 
+
+Critério de adequação (energia): 79.3903993502
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	8	 2	 0	 0	 0	 0	 0	 0	 0	 10
+2	0	 3	 1	 3	 0	 1	 0	 0	 0	 8
+3	0	 0	 5	 0	 0	 3	 0	 0	 0	 8
+4	0	 0	 0	 0	 1	 0	 4	 1	 1	 7
+Total	[8 5 6 3 1 4 4 1 1]
+Corrected Rand index: 0.568412448414
+
+F-measure(P,Q): 0.729021819931
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 9
+
+Cluster 0,0 Prototipo: Aston Martin_S [3 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S 
+Cluster 0,1 Prototipo: Nissan Micra_U [4 objetos]Objetos: Nissan Micra_U Twingo_U Lancia Y_U Fiesta_U 
+Cluster 0,2 Prototipo: Rover 25_U [6 objetos]Objetos: Corsa_U Rover 25_U Skoda Fabia_U Alfa  145_U Focus_B Punto_U 
+Cluster 1,0 Prototipo: Mercedes SL_S [1 objetos]Objetos: Mercedes SL_S 
+Cluster 1,1 Prototipo: Porsche_S [1 objetos]Objetos: Porsche_S 
+Cluster 1,2 Prototipo: Alfa  156_B [7 objetos]Objetos: Alfa  156_B Audi A3_U Vectra_B Bmw serie 3_B Passat_L Mercedes Classe C_B Skoda Octavia_B 
+Cluster 2,0 Prototipo: Maserati GT_S [2 objetos]Objetos: Maserati GT_S Honda  NSK_S 
+Cluster 2,1 Prototipo: Alfa  166_L [3 objetos]Objetos: Rover 75_B Alfa  166_L Lancia K_L 
+Cluster 2,2 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Bmw serie 5_L Mercedes Classe S_L Audi A8_L Bmw serie 7_L Mercedes Classe E_L 
+
+Critério de adequação (energia): 85.0885542501
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	0	 4	 5	 0	 0	 1	 0	 0	 0	 10
+2	0	 0	 1	 0	 0	 5	 0	 1	 1	 8
+3	0	 0	 0	 0	 0	 1	 0	 2	 5	 8
+4	3	 0	 0	 1	 1	 0	 2	 0	 0	 7
+Total	[3 4 6 1 1 7 2 3 6]
+Corrected Rand index: 0.440848827974
+
+F-measure(P,Q): 0.651443001443
+OERC: 0.151515151515
+
+#####################################
+Repetição do experimento: 10
+
+Cluster 0,0 Prototipo: Nissan Micra_U [4 objetos]Objetos: Fiesta_U Lancia Y_U Twingo_U Nissan Micra_U 
+Cluster 0,1 Prototipo: Bmw serie 3_B [2 objetos]Objetos: Bmw serie 3_B Mercedes Classe C_B 
+Cluster 0,2 Prototipo: Alfa  166_L [4 objetos]Objetos: Alfa  166_L Lancia K_L Maserati GT_S Rover 75_B 
+Cluster 1,0 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Skoda Fabia_U Punto_U Corsa_U Rover 25_U 
+Cluster 1,1 Prototipo: Audi A3_U [3 objetos]Objetos: Audi A3_U Honda  NSK_S Alfa  145_U 
+Cluster 1,2 Prototipo: Mercedes Classe E_L [10 objetos]Objetos: Aston Martin_S Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Ferrari_S Lamborghini_S Mercedes SL_S Mercedes Classe E_L Mercedes Classe S_L 
+Cluster 2,0 Prototipo: Alfa  156_B [2 objetos]Objetos: Alfa  156_B Porsche_S 
+Cluster 2,1 Prototipo: Vectra_B [4 objetos]Objetos: Vectra_B Skoda Octavia_B Focus_B Passat_L 
+Cluster 2,2 Prototipo: Mercedes Classe E_L [0 objetos]Objetos: 
+
+Critério de adequação (energia): 137.469014236
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	Total
+
+1	4	 0	 0	 4	 2	 0	 0	 0	 10
+2	0	 2	 1	 0	 0	 1	 1	 3	 8
+3	0	 0	 2	 0	 0	 5	 0	 1	 8
+4	0	 0	 1	 0	 1	 4	 1	 0	 7
+Total	[ 4  2  4  4  3 10  2  4]
+Corrected Rand index: 0.346926154262
+
+F-measure(P,Q): 0.528874175933
+OERC: 0.30303030303
+
+#####################################
+Repetição do experimento: 11
+
+Cluster 0,0 Prototipo: Maserati GT_S [7 objetos]Objetos: Ferrari_S Honda  NSK_S Lamborghini_S Porsche_S Maserati GT_S Mercedes SL_S Aston Martin_S 
+Cluster 0,1 Prototipo: Audi A3_U [3 objetos]Objetos: Audi A3_U Alfa  145_U Bmw serie 3_B 
+Cluster 0,2 Prototipo: Nissan Micra_U [4 objetos]Objetos: Fiesta_U Nissan Micra_U Twingo_U Lancia Y_U 
+Cluster 1,0 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+Cluster 1,1 Prototipo: Vectra_B [5 objetos]Objetos: Focus_B Skoda Octavia_B Vectra_B Alfa  156_B Passat_L 
+Cluster 1,2 Prototipo: Skoda Fabia_U [3 objetos]Objetos: Corsa_U Skoda Fabia_U Punto_U 
+Cluster 2,0 Prototipo: Bmw serie 5_L [0 objetos]Objetos: 
+Cluster 2,1 Prototipo: Alfa  166_L [4 objetos]Objetos: Rover 75_B Alfa  166_L Lancia K_L Mercedes Classe C_B 
+Cluster 2,2 Prototipo: Rover 25_U [1 objetos]Objetos: Rover 25_U 
+
+Critério de adequação (energia): 103.370650216
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,1	2,2	Total
+
+1	0	 2	 4	 0	 0	 3	 0	 1	 10
+2	0	 1	 0	 1	 4	 0	 2	 0	 8
+3	0	 0	 0	 5	 1	 0	 2	 0	 8
+4	7	 0	 0	 0	 0	 0	 0	 0	 7
+Total	[7 3 4 6 5 3 4 1]
+Corrected Rand index: 0.526872085209
+
+F-measure(P,Q): 0.707625707626
+OERC: 0.151515151515
+
+#####################################
+Repetição do experimento: 12
+
+Cluster 0,0 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Ferrari_S Honda  NSK_S Lamborghini_S Maserati GT_S Mercedes SL_S Porsche_S 
+Cluster 0,1 Prototipo: Rover 25_U [11 objetos]Objetos: Alfa  145_U Punto_U Fiesta_U Focus_B Lancia Y_U Nissan Micra_U Corsa_U Twingo_U Rover 25_U Skoda Fabia_U Skoda Octavia_B 
+Cluster 0,2 Prototipo: Rover 25_U [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: Maserati GT_S [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Rover 25_U [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Bmw serie 3_B [5 objetos]Objetos: Vectra_B Alfa  156_B Bmw serie 3_B Audi A3_U Mercedes Classe C_B 
+Cluster 2,0 Prototipo: Maserati GT_S [0 objetos]Objetos: 
+Cluster 2,1 Prototipo: Alfa  166_L [4 objetos]Objetos: Alfa  166_L Lancia K_L Passat_L Rover 75_B 
+Cluster 2,2 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+
+Critério de adequação (energia): 120.842225211
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,2	2,1	2,2	Total
+
+1	0	 9	 1	 0	 0	 10
+2	0	 2	 4	 1	 1	 8
+3	0	 0	 0	 3	 5	 8
+4	7	 0	 0	 0	 0	 7
+Total	[ 7 11  5  4  6]
+Corrected Rand index: 0.672483665536
+
+F-measure(P,Q): 0.794205794206
+OERC: 0.151515151515
+
+#####################################
+Repetição do experimento: 13
+
+Cluster 0,0 Prototipo: Skoda Fabia_U [3 objetos]Objetos: Punto_U Corsa_U Skoda Fabia_U 
+Cluster 0,1 Prototipo: Focus_B [5 objetos]Objetos: Alfa  145_U Audi A3_U Focus_B Skoda Octavia_B Vectra_B 
+Cluster 0,2 Prototipo: Bmw serie 7_L [2 objetos]Objetos: Mercedes Classe S_L Bmw serie 7_L 
+Cluster 1,0 Prototipo: Bmw serie 3_B [6 objetos]Objetos: Alfa  156_B Bmw serie 3_B Passat_L Rover 75_B Mercedes Classe C_B Alfa  166_L 
+Cluster 1,1 Prototipo: Nissan Micra_U [4 objetos]Objetos: Twingo_U Nissan Micra_U Lancia Y_U Fiesta_U 
+Cluster 1,2 Prototipo: Rover 25_U [1 objetos]Objetos: Rover 25_U 
+Cluster 2,0 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S Maserati GT_S Mercedes SL_S Porsche_S Honda  NSK_S 
+Cluster 2,1 Prototipo: Audi A8_L [1 objetos]Objetos: Audi A8_L 
+Cluster 2,2 Prototipo: Audi A6_B [4 objetos]Objetos: Audi A6_B Bmw serie 5_L Lancia K_L Mercedes Classe E_L 
+
+Critério de adequação (energia): 96.2286247052
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	3	 2	 0	 0	 4	 1	 0	 0	 0	 10
+2	0	 3	 0	 4	 0	 0	 0	 0	 1	 8
+3	0	 0	 2	 2	 0	 0	 0	 1	 3	 8
+4	0	 0	 0	 0	 0	 0	 7	 0	 0	 7
+Total	[3 5 2 6 4 1 7 1 4]
+Corrected Rand index: 0.489119917653
+
+F-measure(P,Q): 0.645021645022
+OERC: 0.151515151515
+
+#####################################
+Repetição do experimento: 14
+
+Cluster 0,0 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Punto_U Corsa_U Rover 25_U Skoda Fabia_U 
+Cluster 0,1 Prototipo: Vectra_B [3 objetos]Objetos: Vectra_B Skoda Octavia_B Passat_L 
+Cluster 0,2 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Bmw serie 3_B Mercedes Classe C_B Alfa  156_B 
+Cluster 1,0 Prototipo: Nissan Micra_U [4 objetos]Objetos: Lancia Y_U Twingo_U Nissan Micra_U Fiesta_U 
+Cluster 1,1 Prototipo: Maserati GT_S [7 objetos]Objetos: Maserati GT_S Porsche_S Honda  NSK_S Ferrari_S Aston Martin_S Lamborghini_S Mercedes SL_S 
+Cluster 1,2 Prototipo: Alfa  166_L [3 objetos]Objetos: Alfa  166_L Lancia K_L Rover 75_B 
+Cluster 2,0 Prototipo: Alfa  145_U [3 objetos]Objetos: Alfa  145_U Focus_B Audi A3_U 
+Cluster 2,1 Prototipo: Bmw serie 7_L [3 objetos]Objetos: Mercedes Classe S_L Bmw serie 7_L Audi A8_L 
+Cluster 2,2 Prototipo: Bmw serie 5_L [3 objetos]Objetos: Audi A6_B Bmw serie 5_L Mercedes Classe E_L 
+
+Critério de adequação (energia): 89.5368258252
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	4	 0	 0	 4	 0	 0	 2	 0	 0	 10
+2	0	 2	 3	 0	 0	 1	 1	 0	 1	 8
+3	0	 1	 0	 0	 0	 2	 0	 3	 2	 8
+4	0	 0	 0	 0	 7	 0	 0	 0	 0	 7
+Total	[4 3 3 4 7 3 3 3 3]
+Corrected Rand index: 0.497098815441
+
+F-measure(P,Q): 0.649744195199
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 15
+
+Cluster 0,0 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Punto_U Rover 25_U Skoda Fabia_U Corsa_U 
+Cluster 0,1 Prototipo: Nissan Micra_U [3 objetos]Objetos: Twingo_U Nissan Micra_U Fiesta_U 
+Cluster 0,2 Prototipo: Skoda Fabia_U [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: Focus_B [5 objetos]Objetos: Alfa  145_U Focus_B Skoda Octavia_B Vectra_B Audi A3_U 
+Cluster 1,1 Prototipo: Lancia Y_U [1 objetos]Objetos: Lancia Y_U 
+Cluster 1,2 Prototipo: Bmw serie 7_L [4 objetos]Objetos: Bmw serie 7_L Audi A8_L Mercedes Classe S_L Mercedes Classe E_L 
+Cluster 2,0 Prototipo: Lancia K_L [6 objetos]Objetos: Rover 75_B Passat_L Alfa  166_L Lancia K_L Audi A6_B Bmw serie 5_L 
+Cluster 2,1 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Alfa  156_B Bmw serie 3_B Mercedes Classe C_B 
+Cluster 2,2 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S Maserati GT_S Mercedes SL_S Porsche_S Honda  NSK_S 
+
+Critério de adequação (energia): 101.190204185
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	4	 3	 2	 1	 0	 0	 0	 0	 10
+2	0	 0	 3	 0	 0	 2	 3	 0	 8
+3	0	 0	 0	 0	 4	 4	 0	 0	 8
+4	0	 0	 0	 0	 0	 0	 0	 7	 7
+Total	[4 3 5 1 4 6 3 7]
+Corrected Rand index: 0.537624992363
+
+F-measure(P,Q): 0.679128951856
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 16
+
+Cluster 0,0 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+Cluster 0,1 Prototipo: Mercedes Classe C_B [2 objetos]Objetos: Bmw serie 3_B Mercedes Classe C_B 
+Cluster 0,2 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S Porsche_S Honda  NSK_S Maserati GT_S Mercedes SL_S 
+Cluster 1,0 Prototipo: Alfa  156_B [3 objetos]Objetos: Alfa  156_B Audi A3_U Passat_L 
+Cluster 1,1 Prototipo: Alfa  166_L [3 objetos]Objetos: Lancia K_L Alfa  166_L Rover 75_B 
+Cluster 1,2 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Skoda Fabia_U Corsa_U Rover 25_U Punto_U 
+Cluster 2,0 Prototipo: Alfa  156_B [0 objetos]Objetos: 
+Cluster 2,1 Prototipo: Focus_B [4 objetos]Objetos: Focus_B Alfa  145_U Skoda Octavia_B Vectra_B 
+Cluster 2,2 Prototipo: Nissan Micra_U [4 objetos]Objetos: Fiesta_U Lancia Y_U Nissan Micra_U Twingo_U 
+
+Critério de adequação (energia): 100.194587619
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,1	2,2	Total
+
+1	0	 0	 0	 1	 0	 4	 1	 4	 10
+2	1	 2	 0	 1	 1	 0	 3	 0	 8
+3	5	 0	 0	 1	 2	 0	 0	 0	 8
+4	0	 0	 7	 0	 0	 0	 0	 0	 7
+Total	[6 2 7 3 3 4 4 4]
+Corrected Rand index: 0.524580323322
+
+F-measure(P,Q): 0.679653679654
+OERC: 0.151515151515
+
+#####################################
+Repetição do experimento: 17
+
+Cluster 0,0 Prototipo: Audi A6_B [6 objetos]Objetos: Audi A6_B Alfa  166_L Lancia K_L Mercedes Classe C_B Bmw serie 5_L Mercedes Classe E_L 
+Cluster 0,1 Prototipo: Vectra_B [6 objetos]Objetos: Alfa  156_B Vectra_B Passat_L Skoda Octavia_B Rover 75_B Focus_B 
+Cluster 0,2 Prototipo: Nissan Micra_U [4 objetos]Objetos: Fiesta_U Lancia Y_U Nissan Micra_U Twingo_U 
+Cluster 1,0 Prototipo: Bmw serie 7_L [3 objetos]Objetos: Bmw serie 7_L Mercedes Classe S_L Audi A8_L 
+Cluster 1,1 Prototipo: Audi A3_U [3 objetos]Objetos: Alfa  145_U Audi A3_U Bmw serie 3_B 
+Cluster 1,2 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Corsa_U Rover 25_U Skoda Fabia_U Punto_U 
+Cluster 2,0 Prototipo: Aston Martin_S [3 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S 
+Cluster 2,1 Prototipo: Maserati GT_S [4 objetos]Objetos: Honda  NSK_S Mercedes SL_S Porsche_S Maserati GT_S 
+Cluster 2,2 Prototipo: Audi A6_B [0 objetos]Objetos: 
+
+Critério de adequação (energia): 87.2459822459
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	Total
+
+1	0	 0	 4	 0	 2	 4	 0	 0	 10
+2	2	 5	 0	 0	 1	 0	 0	 0	 8
+3	4	 1	 0	 3	 0	 0	 0	 0	 8
+4	0	 0	 0	 0	 0	 0	 3	 4	 7
+Total	[6 6 4 3 3 4 3 4]
+Corrected Rand index: 0.469262511904
+
+F-measure(P,Q): 0.6391184573
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 18
+
+Cluster 0,0 Prototipo: Vectra_B [5 objetos]Objetos: Vectra_B Skoda Octavia_B Focus_B Alfa  156_B Passat_L 
+Cluster 0,1 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Skoda Fabia_U Corsa_U Rover 25_U Punto_U 
+Cluster 0,2 Prototipo: Nissan Micra_U [4 objetos]Objetos: Fiesta_U Lancia Y_U Nissan Micra_U Twingo_U 
+Cluster 1,0 Prototipo: Mercedes Classe C_B [2 objetos]Objetos: Bmw serie 3_B Mercedes Classe C_B 
+Cluster 1,1 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+Cluster 1,2 Prototipo: Audi A3_U [2 objetos]Objetos: Alfa  145_U Audi A3_U 
+Cluster 2,0 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Ferrari_S Honda  NSK_S Lamborghini_S Maserati GT_S Mercedes SL_S Porsche_S 
+Cluster 2,1 Prototipo: Bmw serie 5_L [0 objetos]Objetos: 
+Cluster 2,2 Prototipo: Alfa  166_L [3 objetos]Objetos: Alfa  166_L Lancia K_L Rover 75_B 
+
+Critério de adequação (energia): 99.4438216459
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,2	Total
+
+1	0	 4	 4	 0	 0	 2	 0	 0	 10
+2	4	 0	 0	 2	 1	 0	 0	 1	 8
+3	1	 0	 0	 0	 5	 0	 0	 2	 8
+4	0	 0	 0	 0	 0	 0	 7	 0	 7
+Total	[5 4 4 2 6 2 7 3]
+Corrected Rand index: 0.56215319724
+
+F-measure(P,Q): 0.707625707626
+OERC: 0.0909090909091
+
+#####################################
+Repetição do experimento: 19
+
+Cluster 0,0 Prototipo: Aston Martin_S [3 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S 
+Cluster 0,1 Prototipo: Alfa  166_L [3 objetos]Objetos: Lancia K_L Alfa  166_L Rover 75_B 
+Cluster 0,2 Prototipo: Bmw serie 7_L [3 objetos]Objetos: Audi A8_L Bmw serie 7_L Mercedes Classe S_L 
+Cluster 1,0 Prototipo: Maserati GT_S [4 objetos]Objetos: Mercedes SL_S Honda  NSK_S Porsche_S Maserati GT_S 
+Cluster 1,1 Prototipo: Alfa  166_L [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Bmw serie 5_L [3 objetos]Objetos: Bmw serie 5_L Mercedes Classe E_L Audi A6_B 
+Cluster 2,0 Prototipo: Alfa  156_B [7 objetos]Objetos: Mercedes Classe C_B Alfa  156_B Bmw serie 3_B Vectra_B Audi A3_U Passat_L Skoda Octavia_B 
+Cluster 2,1 Prototipo: Skoda Fabia_U [6 objetos]Objetos: Punto_U Nissan Micra_U Corsa_U Skoda Fabia_U Fiesta_U Twingo_U 
+Cluster 2,2 Prototipo: Rover 25_U [4 objetos]Objetos: Alfa  145_U Focus_B Lancia Y_U Rover 25_U 
+
+Critério de adequação (energia): 88.0740227249
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,2	2,0	2,1	2,2	Total
+
+1	0	 0	 0	 0	 0	 1	 6	 3	 10
+2	0	 1	 0	 0	 1	 5	 0	 1	 8
+3	0	 2	 3	 0	 2	 1	 0	 0	 8
+4	3	 0	 0	 4	 0	 0	 0	 0	 7
+Total	[3 3 3 4 3 7 6 4]
+Corrected Rand index: 0.461527254563
+
+F-measure(P,Q): 0.675390266299
+OERC: 0.151515151515
+
+#####################################
+Repetição do experimento: 20
+
+Cluster 0,0 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Punto_U Corsa_U Skoda Fabia_U Rover 25_U 
+Cluster 0,1 Prototipo: Alfa  166_L [4 objetos]Objetos: Lancia K_L Alfa  166_L Rover 75_B Passat_L 
+Cluster 0,2 Prototipo: Maserati GT_S [7 objetos]Objetos: Maserati GT_S Honda  NSK_S Porsche_S Aston Martin_S Ferrari_S Lamborghini_S Mercedes SL_S 
+Cluster 1,0 Prototipo: Nissan Micra_U [4 objetos]Objetos: Lancia Y_U Twingo_U Nissan Micra_U Fiesta_U 
+Cluster 1,1 Prototipo: Mercedes Classe E_L [2 objetos]Objetos: Mercedes Classe E_L Mercedes Classe S_L 
+Cluster 1,2 Prototipo: Mercedes Classe E_L [0 objetos]Objetos: 
+Cluster 2,0 Prototipo: Focus_B [5 objetos]Objetos: Audi A3_U Vectra_B Skoda Octavia_B Focus_B Alfa  145_U 
+Cluster 2,1 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Bmw serie 3_B Mercedes Classe C_B Alfa  156_B 
+Cluster 2,2 Prototipo: Bmw serie 5_L [4 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L 
+
+Critério de adequação (energia): 99.6739253549
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	2,0	2,1	2,2	Total
+
+1	4	 0	 0	 4	 0	 2	 0	 0	 10
+2	0	 1	 0	 0	 0	 3	 3	 1	 8
+3	0	 3	 0	 0	 2	 0	 0	 3	 8
+4	0	 0	 7	 0	 0	 0	 0	 0	 7
+Total	[4 4 7 4 2 5 3 4]
+Corrected Rand index: 0.519326957286
+
+F-measure(P,Q): 0.638724911452
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 21
+
+Cluster 0,0 Prototipo: Maserati GT_S [7 objetos]Objetos: Mercedes SL_S Aston Martin_S Ferrari_S Lamborghini_S Honda  NSK_S Maserati GT_S Porsche_S 
+Cluster 0,1 Prototipo: Bmw serie 5_L [3 objetos]Objetos: Audi A6_B Bmw serie 5_L Mercedes Classe E_L 
+Cluster 0,2 Prototipo: Vectra_B [5 objetos]Objetos: Vectra_B Focus_B Skoda Octavia_B Passat_L Alfa  145_U 
+Cluster 1,0 Prototipo: Alfa  166_L [3 objetos]Objetos: Lancia K_L Alfa  166_L Rover 75_B 
+Cluster 1,1 Prototipo: Bmw serie 7_L [3 objetos]Objetos: Mercedes Classe S_L Bmw serie 7_L Audi A8_L 
+Cluster 1,2 Prototipo: Lancia Y_U [1 objetos]Objetos: Lancia Y_U 
+Cluster 2,0 Prototipo: Bmw serie 3_B [4 objetos]Objetos: Alfa  156_B Audi A3_U Bmw serie 3_B Mercedes Classe C_B 
+Cluster 2,1 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Corsa_U Skoda Fabia_U Rover 25_U Punto_U 
+Cluster 2,2 Prototipo: Nissan Micra_U [3 objetos]Objetos: Fiesta_U Twingo_U Nissan Micra_U 
+
+Critério de adequação (energia): 91.944110786
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	0	 0	 1	 0	 0	 1	 1	 4	 3	 10
+2	0	 1	 3	 1	 0	 0	 3	 0	 0	 8
+3	0	 2	 1	 2	 3	 0	 0	 0	 0	 8
+4	7	 0	 0	 0	 0	 0	 0	 0	 0	 7
+Total	[7 3 5 3 3 1 4 4 3]
+Corrected Rand index: 0.463265349798
+
+F-measure(P,Q): 0.638724911452
+OERC: 0.151515151515
+
+#####################################
+Repetição do experimento: 22
+
+Cluster 0,0 Prototipo: Skoda Fabia_U [8 objetos]Objetos: Punto_U Lancia Y_U Nissan Micra_U Corsa_U Twingo_U Rover 25_U Skoda Fabia_U Fiesta_U 
+Cluster 0,1 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+Cluster 0,2 Prototipo: Alfa  156_B [12 objetos]Objetos: Alfa  166_L Bmw serie 3_B Mercedes Classe C_B Rover 75_B Lancia K_L Alfa  145_U Alfa  156_B Audi A3_U Focus_B Vectra_B Skoda Octavia_B Passat_L 
+Cluster 1,0 Prototipo: Alfa  156_B [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Alfa  156_B [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Maserati GT_S [6 objetos]Objetos: Aston Martin_S Ferrari_S Porsche_S Maserati GT_S Mercedes SL_S Honda  NSK_S 
+Cluster 2,0 Prototipo: Alfa  156_B [0 objetos]Objetos: 
+Cluster 2,1 Prototipo: Lamborghini_S [1 objetos]Objetos: Lamborghini_S 
+Cluster 2,2 Prototipo: Alfa  156_B [0 objetos]Objetos: 
+
+Critério de adequação (energia): 109.953281155
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,2	2,1	Total
+
+1	8	 0	 2	 0	 0	 10
+2	0	 1	 7	 0	 0	 8
+3	0	 5	 3	 0	 0	 8
+4	0	 0	 0	 6	 1	 7
+Total	[ 8  6 12  6  1]
+Corrected Rand index: 0.634140708005
+
+F-measure(P,Q): 0.808021608022
+OERC: 0.181818181818
+
+#####################################
+Repetição do experimento: 23
+
+Cluster 0,0 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Bmw serie 5_L Mercedes Classe E_L Audi A8_L Bmw serie 7_L Mercedes Classe S_L 
+Cluster 0,1 Prototipo: Bmw serie 3_B [6 objetos]Objetos: Mercedes Classe C_B Bmw serie 3_B Alfa  166_L Alfa  156_B Audi A3_U Lancia K_L 
+Cluster 0,2 Prototipo: Maserati GT_S [4 objetos]Objetos: Porsche_S Honda  NSK_S Maserati GT_S Mercedes SL_S 
+Cluster 1,0 Prototipo: Vectra_B [5 objetos]Objetos: Vectra_B Passat_L Skoda Octavia_B Rover 75_B Focus_B 
+Cluster 1,1 Prototipo: Nissan Micra_U [3 objetos]Objetos: Twingo_U Nissan Micra_U Lancia Y_U 
+Cluster 1,2 Prototipo: Aston Martin_S [3 objetos]Objetos: Aston Martin_S Lamborghini_S Ferrari_S 
+Cluster 2,0 Prototipo: Skoda Fabia_U [3 objetos]Objetos: Punto_U Corsa_U Skoda Fabia_U 
+Cluster 2,1 Prototipo: Rover 25_U [2 objetos]Objetos: Alfa  145_U Rover 25_U 
+Cluster 2,2 Prototipo: Fiesta_U [1 objetos]Objetos: Fiesta_U 
+
+Critério de adequação (energia): 86.8225781511
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	0	 1	 0	 0	 3	 0	 3	 2	 1	 10
+2	1	 3	 0	 4	 0	 0	 0	 0	 0	 8
+3	5	 2	 0	 1	 0	 0	 0	 0	 0	 8
+4	0	 0	 4	 0	 0	 3	 0	 0	 0	 7
+Total	[6 6 4 5 3 3 3 2 1]
+Corrected Rand index: 0.404481709263
+
+F-measure(P,Q): 0.616474434656
+OERC: 0.151515151515
+
+#####################################
+Repetição do experimento: 24
+
+Cluster 0,0 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S Mercedes SL_S Honda  NSK_S Maserati GT_S Porsche_S 
+Cluster 0,1 Prototipo: Alfa  166_L [3 objetos]Objetos: Lancia K_L Alfa  166_L Rover 75_B 
+Cluster 0,2 Prototipo: Alfa  156_B [7 objetos]Objetos: Bmw serie 3_B Mercedes Classe C_B Passat_L Alfa  156_B Audi A3_U Vectra_B Skoda Octavia_B 
+Cluster 1,0 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+Cluster 1,1 Prototipo: Skoda Fabia_U [6 objetos]Objetos: Skoda Fabia_U Punto_U Nissan Micra_U Corsa_U Fiesta_U Twingo_U 
+Cluster 1,2 Prototipo: Rover 25_U [4 objetos]Objetos: Alfa  145_U Focus_B Lancia Y_U Rover 25_U 
+Cluster 2,0 Prototipo: Rover 25_U [0 objetos]Objetos: 
+Cluster 2,1 Prototipo: Rover 25_U [0 objetos]Objetos: 
+Cluster 2,2 Prototipo: Rover 25_U [0 objetos]Objetos: 
+
+Critério de adequação (energia): 113.930124945
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	Total
+
+1	0	 0	 1	 0	 6	 3	 10
+2	0	 1	 5	 1	 0	 1	 8
+3	0	 2	 1	 5	 0	 0	 8
+4	7	 0	 0	 0	 0	 0	 7
+Total	[7 3 7 6 6 4]
+Corrected Rand index: 0.591125375529
+
+F-measure(P,Q): 0.77417027417
+OERC: 0.151515151515
+
+#####################################
+Repetição do experimento: 25
+
+Cluster 0,0 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S Maserati GT_S Mercedes SL_S Honda  NSK_S Porsche_S 
+Cluster 0,1 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L Audi A8_L Audi A6_B 
+Cluster 0,2 Prototipo: Alfa  166_L [4 objetos]Objetos: Alfa  166_L Lancia K_L Rover 75_B Passat_L 
+Cluster 1,0 Prototipo: Maserati GT_S [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Maserati GT_S [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Alfa  156_B Bmw serie 3_B Mercedes Classe C_B 
+Cluster 2,0 Prototipo: Focus_B [5 objetos]Objetos: Alfa  145_U Audi A3_U Vectra_B Focus_B Skoda Octavia_B 
+Cluster 2,1 Prototipo: Skoda Fabia_U [8 objetos]Objetos: Punto_U Fiesta_U Lancia Y_U Nissan Micra_U Corsa_U Twingo_U Rover 25_U Skoda Fabia_U 
+Cluster 2,2 Prototipo: Skoda Fabia_U [0 objetos]Objetos: 
+
+Critério de adequação (energia): 109.70432658
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,2	2,0	2,1	Total
+
+1	0	 0	 0	 0	 2	 8	 10
+2	0	 1	 1	 3	 3	 0	 8
+3	0	 5	 3	 0	 0	 0	 8
+4	7	 0	 0	 0	 0	 0	 7
+Total	[7 6 4 3 5 8]
+Corrected Rand index: 0.673164692622
+
+F-measure(P,Q): 0.7868730596
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 26
+
+Cluster 0,0 Prototipo: Audi A6_B [2 objetos]Objetos: Audi A6_B Lancia K_L 
+Cluster 0,1 Prototipo: Fiesta_U [1 objetos]Objetos: Fiesta_U 
+Cluster 0,2 Prototipo: Lancia Y_U [7 objetos]Objetos: Lancia Y_U Nissan Micra_U Corsa_U Twingo_U Skoda Fabia_U Punto_U Rover 25_U 
+Cluster 1,0 Prototipo: Maserati GT_S [7 objetos]Objetos: Maserati GT_S Porsche_S Honda  NSK_S Ferrari_S Aston Martin_S Lamborghini_S Mercedes SL_S 
+Cluster 1,1 Prototipo: Audi A3_U [2 objetos]Objetos: Audi A3_U Alfa  145_U 
+Cluster 1,2 Prototipo: Vectra_B [5 objetos]Objetos: Focus_B Vectra_B Skoda Octavia_B Passat_L Rover 75_B 
+Cluster 2,0 Prototipo: Bmw serie 7_L [3 objetos]Objetos: Audi A8_L Bmw serie 7_L Mercedes Classe S_L 
+Cluster 2,1 Prototipo: Bmw serie 5_L [2 objetos]Objetos: Bmw serie 5_L Mercedes Classe E_L 
+Cluster 2,2 Prototipo: Bmw serie 3_B [4 objetos]Objetos: Alfa  156_B Bmw serie 3_B Alfa  166_L Mercedes Classe C_B 
+
+Critério de adequação (energia): 95.5892606909
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	0	 1	 7	 0	 2	 0	 0	 0	 0	 10
+2	1	 0	 0	 0	 0	 4	 0	 0	 3	 8
+3	1	 0	 0	 0	 0	 1	 3	 2	 1	 8
+4	0	 0	 0	 7	 0	 0	 0	 0	 0	 7
+Total	[2 1 7 7 2 5 3 2 4]
+Corrected Rand index: 0.602142435289
+
+F-measure(P,Q): 0.743091133465
+OERC: 0.0909090909091
+
+#####################################
+Repetição do experimento: 27
+
+Cluster 0,0 Prototipo: Bmw serie 7_L [3 objetos]Objetos: Bmw serie 7_L Mercedes Classe S_L Audi A8_L 
+Cluster 0,1 Prototipo: Alfa  166_L [3 objetos]Objetos: Alfa  166_L Lancia K_L Rover 75_B 
+Cluster 0,2 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Bmw serie 3_B Mercedes Classe C_B Alfa  156_B 
+Cluster 1,0 Prototipo: Bmw serie 5_L [3 objetos]Objetos: Bmw serie 5_L Audi A6_B Mercedes Classe E_L 
+Cluster 1,1 Prototipo: Maserati GT_S [7 objetos]Objetos: Porsche_S Honda  NSK_S Maserati GT_S Ferrari_S Aston Martin_S Lamborghini_S Mercedes SL_S 
+Cluster 1,2 Prototipo: Alfa  145_U [3 objetos]Objetos: Focus_B Alfa  145_U Audi A3_U 
+Cluster 2,0 Prototipo: Vectra_B [3 objetos]Objetos: Vectra_B Passat_L Skoda Octavia_B 
+Cluster 2,1 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Corsa_U Skoda Fabia_U Rover 25_U Punto_U 
+Cluster 2,2 Prototipo: Nissan Micra_U [4 objetos]Objetos: Fiesta_U Lancia Y_U Nissan Micra_U Twingo_U 
+
+Critério de adequação (energia): 89.5368258252
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	0	 0	 0	 0	 0	 2	 0	 4	 4	 10
+2	0	 1	 3	 1	 0	 1	 2	 0	 0	 8
+3	3	 2	 0	 2	 0	 0	 1	 0	 0	 8
+4	0	 0	 0	 0	 7	 0	 0	 0	 0	 7
+Total	[3 3 3 3 7 3 3 4 4]
+Corrected Rand index: 0.497098815441
+
+F-measure(P,Q): 0.649744195199
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 28
+
+Cluster 0,0 Prototipo: Nissan Micra_U [4 objetos]Objetos: Fiesta_U Lancia Y_U Nissan Micra_U Twingo_U 
+Cluster 0,1 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Rover 25_U Skoda Fabia_U Corsa_U Punto_U 
+Cluster 0,2 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Bmw serie 5_L Bmw serie 7_L Mercedes Classe S_L Mercedes Classe E_L Audi A8_L Audi A6_B 
+Cluster 1,0 Prototipo: Vectra_B [3 objetos]Objetos: Skoda Octavia_B Vectra_B Passat_L 
+Cluster 1,1 Prototipo: Alfa  166_L [3 objetos]Objetos: Lancia K_L Alfa  166_L Rover 75_B 
+Cluster 1,2 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Ferrari_S Honda  NSK_S Lamborghini_S Maserati GT_S Mercedes SL_S Porsche_S 
+Cluster 2,0 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Alfa  156_B Bmw serie 3_B Mercedes Classe C_B 
+Cluster 2,1 Prototipo: Alfa  145_U [3 objetos]Objetos: Focus_B Alfa  145_U Audi A3_U 
+Cluster 2,2 Prototipo: Maserati GT_S [0 objetos]Objetos: 
+
+Critério de adequação (energia): 98.749428675
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	Total
+
+1	4	 4	 0	 0	 0	 0	 0	 2	 10
+2	0	 0	 1	 2	 1	 0	 3	 1	 8
+3	0	 0	 5	 1	 2	 0	 0	 0	 8
+4	0	 0	 0	 0	 0	 7	 0	 0	 7
+Total	[4 4 6 3 3 7 3 3]
+Corrected Rand index: 0.538451932483
+
+F-measure(P,Q): 0.6906729634
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 29
+
+Cluster 0,0 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S Mercedes SL_S Honda  NSK_S Maserati GT_S Porsche_S 
+Cluster 0,1 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Mercedes Classe C_B Bmw serie 3_B Alfa  156_B 
+Cluster 0,2 Prototipo: Vectra_B [3 objetos]Objetos: Vectra_B Passat_L Skoda Octavia_B 
+Cluster 1,0 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+Cluster 1,1 Prototipo: Alfa  145_U [3 objetos]Objetos: Alfa  145_U Focus_B Audi A3_U 
+Cluster 1,2 Prototipo: Rover 25_U [1 objetos]Objetos: Rover 25_U 
+Cluster 2,0 Prototipo: Alfa  166_L [3 objetos]Objetos: Alfa  166_L Rover 75_B Lancia K_L 
+Cluster 2,1 Prototipo: Skoda Fabia_U [3 objetos]Objetos: Corsa_U Skoda Fabia_U Punto_U 
+Cluster 2,2 Prototipo: Nissan Micra_U [4 objetos]Objetos: Fiesta_U Lancia Y_U Nissan Micra_U Twingo_U 
+
+Critério de adequação (energia): 96.3907322548
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	0	 0	 0	 0	 2	 1	 0	 3	 4	 10
+2	0	 3	 2	 1	 1	 0	 1	 0	 0	 8
+3	0	 0	 1	 5	 0	 0	 2	 0	 0	 8
+4	7	 0	 0	 0	 0	 0	 0	 0	 0	 7
+Total	[7 3 3 6 3 1 3 3 4]
+Corrected Rand index: 0.513956195112
+
+F-measure(P,Q): 0.6906729634
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 30
+
+Cluster 0,0 Prototipo: Skoda Fabia_U [3 objetos]Objetos: Punto_U Corsa_U Skoda Fabia_U 
+Cluster 0,1 Prototipo: Nissan Micra_U [4 objetos]Objetos: Lancia Y_U Twingo_U Nissan Micra_U Fiesta_U 
+Cluster 0,2 Prototipo: Alfa  145_U [3 objetos]Objetos: Alfa  145_U Focus_B Audi A3_U 
+Cluster 1,0 Prototipo: Skoda Octavia_B [2 objetos]Objetos: Skoda Octavia_B Vectra_B 
+Cluster 1,1 Prototipo: Rover 25_U [1 objetos]Objetos: Rover 25_U 
+Cluster 1,2 Prototipo: Alfa  166_L [4 objetos]Objetos: Alfa  166_L Lancia K_L Rover 75_B Passat_L 
+Cluster 2,0 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Alfa  156_B Bmw serie 3_B Mercedes Classe C_B 
+Cluster 2,1 Prototipo: Maserati GT_S [7 objetos]Objetos: Maserati GT_S Porsche_S Honda  NSK_S Aston Martin_S Ferrari_S Lamborghini_S Mercedes SL_S 
+Cluster 2,2 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+
+Critério de adequação (energia): 96.9883024849
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	3	 4	 2	 0	 1	 0	 0	 0	 0	 10
+2	0	 0	 1	 2	 0	 1	 3	 0	 1	 8
+3	0	 0	 0	 0	 0	 3	 0	 0	 5	 8
+4	0	 0	 0	 0	 0	 0	 0	 7	 0	 7
+Total	[3 4 3 2 1 4 3 7 6]
+Corrected Rand index: 0.5333235127
+
+F-measure(P,Q): 0.6906729634
+OERC: 0.0909090909091
+
+#####################################
+Repetição do experimento: 31
+
+Cluster 0,0 Prototipo: Nissan Micra_U [4 objetos]Objetos: Lancia Y_U Nissan Micra_U Twingo_U Fiesta_U 
+Cluster 0,1 Prototipo: Alfa  156_B [3 objetos]Objetos: Alfa  156_B Audi A3_U Passat_L 
+Cluster 0,2 Prototipo: Alfa  166_L [3 objetos]Objetos: Rover 75_B Alfa  166_L Lancia K_L 
+Cluster 1,0 Prototipo: Skoda Fabia_U [3 objetos]Objetos: Skoda Fabia_U Corsa_U Punto_U 
+Cluster 1,1 Prototipo: Rover 25_U [1 objetos]Objetos: Rover 25_U 
+Cluster 1,2 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+Cluster 2,0 Prototipo: Focus_B [4 objetos]Objetos: Alfa  145_U Focus_B Skoda Octavia_B Vectra_B 
+Cluster 2,1 Prototipo: Mercedes Classe C_B [2 objetos]Objetos: Mercedes Classe C_B Bmw serie 3_B 
+Cluster 2,2 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Mercedes SL_S Lamborghini_S Ferrari_S Honda  NSK_S Maserati GT_S Porsche_S 
+
+Critério de adequação (energia): 97.8358911988
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	4	 1	 0	 3	 1	 0	 1	 0	 0	 10
+2	0	 1	 1	 0	 0	 1	 3	 2	 0	 8
+3	0	 1	 2	 0	 0	 5	 0	 0	 0	 8
+4	0	 0	 0	 0	 0	 0	 0	 0	 7	 7
+Total	[4 3 3 3 1 6 4 2 7]
+Corrected Rand index: 0.499989477893
+
+F-measure(P,Q): 0.679653679654
+OERC: 0.151515151515
+
+#####################################
+Repetição do experimento: 32
+
+Cluster 0,0 Prototipo: Skoda Fabia_U [8 objetos]Objetos: Punto_U Fiesta_U Lancia Y_U Nissan Micra_U Corsa_U Twingo_U Rover 25_U Skoda Fabia_U 
+Cluster 0,1 Prototipo: Skoda Octavia_B [2 objetos]Objetos: Vectra_B Skoda Octavia_B 
+Cluster 0,2 Prototipo: Alfa  166_L [2 objetos]Objetos: Alfa  166_L Lancia K_L 
+Cluster 1,0 Prototipo: Alfa  145_U [3 objetos]Objetos: Alfa  145_U Focus_B Audi A3_U 
+Cluster 1,1 Prototipo: Maserati GT_S [4 objetos]Objetos: Honda  NSK_S Maserati GT_S Porsche_S Mercedes SL_S 
+Cluster 1,2 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Bmw serie 5_L Audi A8_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L Audi A6_B 
+Cluster 2,0 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Alfa  156_B Bmw serie 3_B Mercedes Classe C_B 
+Cluster 2,1 Prototipo: Rover 75_B [2 objetos]Objetos: Passat_L Rover 75_B 
+Cluster 2,2 Prototipo: Aston Martin_S [3 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S 
+
+Critério de adequação (energia): 85.44641006
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	8	 0	 0	 2	 0	 0	 0	 0	 0	 10
+2	0	 2	 0	 1	 0	 1	 3	 1	 0	 8
+3	0	 0	 2	 0	 0	 5	 0	 1	 0	 8
+4	0	 0	 0	 0	 4	 0	 0	 0	 3	 7
+Total	[8 2 2 3 4 6 3 2 3]
+Corrected Rand index: 0.57922626317
+
+F-measure(P,Q): 0.729021819931
+OERC: 0.0909090909091
+
+#####################################
+Repetição do experimento: 33
+
+Cluster 0,0 Prototipo: Alfa  166_L [3 objetos]Objetos: Rover 75_B Alfa  166_L Lancia K_L 
+Cluster 0,1 Prototipo: Bmw serie 5_L [3 objetos]Objetos: Audi A6_B Bmw serie 5_L Mercedes Classe E_L 
+Cluster 0,2 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Ferrari_S Mercedes SL_S Lamborghini_S Honda  NSK_S Maserati GT_S Porsche_S 
+Cluster 1,0 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Rover 25_U Skoda Fabia_U Corsa_U Punto_U 
+Cluster 1,1 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Bmw serie 3_B Mercedes Classe C_B Alfa  156_B 
+Cluster 1,2 Prototipo: Bmw serie 7_L [3 objetos]Objetos: Bmw serie 7_L Mercedes Classe S_L Audi A8_L 
+Cluster 2,0 Prototipo: Nissan Micra_U [4 objetos]Objetos: Fiesta_U Lancia Y_U Nissan Micra_U Twingo_U 
+Cluster 2,1 Prototipo: Alfa  145_U [3 objetos]Objetos: Alfa  145_U Focus_B Audi A3_U 
+Cluster 2,2 Prototipo: Vectra_B [3 objetos]Objetos: Vectra_B Passat_L Skoda Octavia_B 
+
+Critério de adequação (energia): 89.5368258249
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	0	 0	 0	 4	 0	 0	 4	 2	 0	 10
+2	1	 1	 0	 0	 3	 0	 0	 1	 2	 8
+3	2	 2	 0	 0	 0	 3	 0	 0	 1	 8
+4	0	 0	 7	 0	 0	 0	 0	 0	 0	 7
+Total	[3 3 7 4 3 3 4 3 3]
+Corrected Rand index: 0.497098815441
+
+F-measure(P,Q): 0.649744195199
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 34
+
+Cluster 0,0 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S Mercedes SL_S Honda  NSK_S Maserati GT_S Porsche_S 
+Cluster 0,1 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+Cluster 0,2 Prototipo: Alfa  166_L [3 objetos]Objetos: Alfa  166_L Lancia K_L Rover 75_B 
+Cluster 1,0 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Bmw serie 3_B Mercedes Classe C_B Alfa  156_B 
+Cluster 1,1 Prototipo: Alfa  145_U [3 objetos]Objetos: Alfa  145_U Focus_B Audi A3_U 
+Cluster 1,2 Prototipo: Skoda Fabia_U [3 objetos]Objetos: Skoda Fabia_U Corsa_U Punto_U 
+Cluster 2,0 Prototipo: Vectra_B [3 objetos]Objetos: Vectra_B Passat_L Skoda Octavia_B 
+Cluster 2,1 Prototipo: Rover 25_U [1 objetos]Objetos: Rover 25_U 
+Cluster 2,2 Prototipo: Nissan Micra_U [4 objetos]Objetos: Lancia Y_U Nissan Micra_U Twingo_U Fiesta_U 
+
+Critério de adequação (energia): 96.3907322548
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	0	 0	 0	 0	 2	 3	 0	 1	 4	 10
+2	0	 1	 1	 3	 1	 0	 2	 0	 0	 8
+3	0	 5	 2	 0	 0	 0	 1	 0	 0	 8
+4	7	 0	 0	 0	 0	 0	 0	 0	 0	 7
+Total	[7 6 3 3 3 3 3 1 4]
+Corrected Rand index: 0.513956195112
+
+F-measure(P,Q): 0.6906729634
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 35
+
+Cluster 0,0 Prototipo: Maserati GT_S [4 objetos]Objetos: Maserati GT_S Porsche_S Honda  NSK_S Mercedes SL_S 
+Cluster 0,1 Prototipo: Bmw serie 3_B [5 objetos]Objetos: Mercedes Classe C_B Bmw serie 3_B Alfa  166_L Alfa  156_B Lancia K_L 
+Cluster 0,2 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+Cluster 1,0 Prototipo: Aston Martin_S [3 objetos]Objetos: Aston Martin_S Lamborghini_S Ferrari_S 
+Cluster 1,1 Prototipo: Audi A3_U [1 objetos]Objetos: Audi A3_U 
+Cluster 1,2 Prototipo: Vectra_B [4 objetos]Objetos: Vectra_B Skoda Octavia_B Passat_L Rover 75_B 
+Cluster 2,0 Prototipo: Nissan Micra_U [4 objetos]Objetos: Lancia Y_U Twingo_U Nissan Micra_U Fiesta_U 
+Cluster 2,1 Prototipo: Alfa  145_U [2 objetos]Objetos: Alfa  145_U Focus_B 
+Cluster 2,2 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Punto_U Corsa_U Rover 25_U Skoda Fabia_U 
+
+Critério de adequação (energia): 87.057161715
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	0	 0	 0	 0	 1	 0	 4	 1	 4	 10
+2	0	 3	 1	 0	 0	 3	 0	 1	 0	 8
+3	0	 2	 5	 0	 0	 1	 0	 0	 0	 8
+4	4	 0	 0	 3	 0	 0	 0	 0	 0	 7
+Total	[4 5 6 3 1 4 4 2 4]
+Corrected Rand index: 0.434273469123
+
+F-measure(P,Q): 0.621802439984
+OERC: 0.151515151515
+
+#####################################
+Repetição do experimento: 36
+
+Cluster 0,0 Prototipo: Alfa  166_L [3 objetos]Objetos: Alfa  166_L Lancia K_L Rover 75_B 
+Cluster 0,1 Prototipo: Bmw serie 7_L [3 objetos]Objetos: Bmw serie 7_L Mercedes Classe S_L Audi A8_L 
+Cluster 0,2 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S Mercedes SL_S Porsche_S Honda  NSK_S Maserati GT_S 
+Cluster 1,0 Prototipo: Vectra_B [3 objetos]Objetos: Passat_L Vectra_B Skoda Octavia_B 
+Cluster 1,1 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Mercedes Classe C_B Bmw serie 3_B Alfa  156_B 
+Cluster 1,2 Prototipo: Bmw serie 5_L [3 objetos]Objetos: Bmw serie 5_L Mercedes Classe E_L Audi A6_B 
+Cluster 2,0 Prototipo: Skoda Fabia_U [8 objetos]Objetos: Punto_U Nissan Micra_U Twingo_U Rover 25_U Skoda Fabia_U Fiesta_U Lancia Y_U Corsa_U 
+Cluster 2,1 Prototipo: Alfa  145_U [3 objetos]Objetos: Alfa  145_U Focus_B Audi A3_U 
+Cluster 2,2 Prototipo: Alfa  145_U [0 objetos]Objetos: 
+
+Critério de adequação (energia): 95.8080738998
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	Total
+
+1	0	 0	 0	 0	 0	 0	 8	 2	 10
+2	1	 0	 0	 2	 3	 1	 0	 1	 8
+3	2	 3	 0	 1	 0	 2	 0	 0	 8
+4	0	 0	 7	 0	 0	 0	 0	 0	 7
+Total	[3 3 7 3 3 3 8 3]
+Corrected Rand index: 0.6243310953
+
+F-measure(P,Q): 0.745944291399
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 37
+
+Cluster 0,0 Prototipo: Bmw serie 3_B [6 objetos]Objetos: Passat_L Alfa  156_B Alfa  166_L Bmw serie 3_B Mercedes Classe C_B Rover 75_B 
+Cluster 0,1 Prototipo: Audi A6_B [2 objetos]Objetos: Audi A6_B Lancia K_L 
+Cluster 0,2 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S Mercedes SL_S Honda  NSK_S Maserati GT_S Porsche_S 
+Cluster 1,0 Prototipo: Focus_B [5 objetos]Objetos: Vectra_B Skoda Octavia_B Focus_B Alfa  145_U Audi A3_U 
+Cluster 1,1 Prototipo: Bmw serie 7_L [3 objetos]Objetos: Mercedes Classe S_L Bmw serie 7_L Audi A8_L 
+Cluster 1,2 Prototipo: Bmw serie 5_L [2 objetos]Objetos: Bmw serie 5_L Mercedes Classe E_L 
+Cluster 2,0 Prototipo: Skoda Fabia_U [8 objetos]Objetos: Punto_U Fiesta_U Lancia Y_U Nissan Micra_U Corsa_U Skoda Fabia_U Twingo_U Rover 25_U 
+Cluster 2,1 Prototipo: Bmw serie 3_B [0 objetos]Objetos: 
+Cluster 2,2 Prototipo: Bmw serie 3_B [0 objetos]Objetos: 
+
+Critério de adequação (energia): 105.48222452
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	Total
+
+1	0	 0	 0	 2	 0	 0	 8	 10
+2	4	 1	 0	 3	 0	 0	 0	 8
+3	2	 1	 0	 0	 3	 2	 0	 8
+4	0	 0	 7	 0	 0	 0	 0	 7
+Total	[6 2 7 5 3 2 8]
+Corrected Rand index: 0.636809076004
+
+F-measure(P,Q): 0.752241024968
+OERC: 0.151515151515
+
+#####################################
+Repetição do experimento: 38
+
+Cluster 0,0 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+Cluster 0,1 Prototipo: Maserati GT_S [7 objetos]Objetos: Maserati GT_S Porsche_S Aston Martin_S Ferrari_S Honda  NSK_S Lamborghini_S Mercedes SL_S 
+Cluster 0,2 Prototipo: Alfa  166_L [3 objetos]Objetos: Rover 75_B Alfa  166_L Lancia K_L 
+Cluster 1,0 Prototipo: Mercedes Classe C_B [2 objetos]Objetos: Bmw serie 3_B Mercedes Classe C_B 
+Cluster 1,1 Prototipo: Audi A3_U [1 objetos]Objetos: Audi A3_U 
+Cluster 1,2 Prototipo: Focus_B [4 objetos]Objetos: Alfa  145_U Focus_B Skoda Octavia_B Vectra_B 
+Cluster 2,0 Prototipo: Alfa  156_B [2 objetos]Objetos: Alfa  156_B Passat_L 
+Cluster 2,1 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Rover 25_U Skoda Fabia_U Corsa_U Punto_U 
+Cluster 2,2 Prototipo: Nissan Micra_U [4 objetos]Objetos: Fiesta_U Nissan Micra_U Lancia Y_U Twingo_U 
+
+Critério de adequação (energia): 97.4468951689
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	0	 0	 0	 0	 1	 1	 0	 4	 4	 10
+2	1	 0	 1	 2	 0	 3	 1	 0	 0	 8
+3	5	 0	 2	 0	 0	 0	 1	 0	 0	 8
+4	0	 7	 0	 0	 0	 0	 0	 0	 0	 7
+Total	[6 7 3 2 1 4 2 4 4]
+Corrected Rand index: 0.530376912291
+
+F-measure(P,Q): 0.679653679654
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 39
+
+Cluster 0,0 Prototipo: Nissan Micra_U [4 objetos]Objetos: Fiesta_U Lancia Y_U Twingo_U Nissan Micra_U 
+Cluster 0,1 Prototipo: Alfa  145_U [3 objetos]Objetos: Alfa  145_U Audi A3_U Focus_B 
+Cluster 0,2 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S Honda  NSK_S Maserati GT_S Mercedes SL_S Porsche_S 
+Cluster 1,0 Prototipo: Alfa  145_U [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Skoda Fabia_U Corsa_U Rover 25_U Punto_U 
+Cluster 1,2 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+Cluster 2,0 Prototipo: Bmw serie 3_B [5 objetos]Objetos: Alfa  156_B Bmw serie 3_B Mercedes Classe C_B Alfa  166_L Lancia K_L 
+Cluster 2,1 Prototipo: Vectra_B [4 objetos]Objetos: Vectra_B Skoda Octavia_B Passat_L Rover 75_B 
+Cluster 2,2 Prototipo: Bmw serie 5_L [0 objetos]Objetos: 
+
+Critério de adequação (energia): 106.098892785
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,1	1,2	2,0	2,1	Total
+
+1	4	 2	 0	 4	 0	 0	 0	 10
+2	0	 1	 0	 0	 1	 3	 3	 8
+3	0	 0	 0	 0	 5	 2	 1	 8
+4	0	 0	 7	 0	 0	 0	 0	 7
+Total	[4 3 7 4 6 5 4]
+Corrected Rand index: 0.539673313959
+
+F-measure(P,Q): 0.679653679654
+OERC: 0.151515151515
+
+#####################################
+Repetição do experimento: 40
+
+Cluster 0,0 Prototipo: Nissan Micra_U [4 objetos]Objetos: Lancia Y_U Nissan Micra_U Twingo_U Fiesta_U 
+Cluster 0,1 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+Cluster 0,2 Prototipo: Bmw serie 5_L [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Rover 25_U Corsa_U Skoda Fabia_U Punto_U 
+Cluster 1,1 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Bmw serie 3_B Mercedes Classe C_B Alfa  156_B 
+Cluster 1,2 Prototipo: Alfa  166_L [4 objetos]Objetos: Lancia K_L Alfa  166_L Passat_L Rover 75_B 
+Cluster 2,0 Prototipo: Focus_B [5 objetos]Objetos: Alfa  145_U Audi A3_U Focus_B Vectra_B Skoda Octavia_B 
+Cluster 2,1 Prototipo: Maserati GT_S [4 objetos]Objetos: Honda  NSK_S Mercedes SL_S Porsche_S Maserati GT_S 
+Cluster 2,2 Prototipo: Aston Martin_S [3 objetos]Objetos: Aston Martin_S Lamborghini_S Ferrari_S 
+
+Critério de adequação (energia): 86.789579135
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	4	 0	 4	 0	 0	 2	 0	 0	 10
+2	0	 1	 0	 3	 1	 3	 0	 0	 8
+3	0	 5	 0	 0	 3	 0	 0	 0	 8
+4	0	 0	 0	 0	 0	 0	 4	 3	 7
+Total	[4 6 4 3 4 5 4 3]
+Corrected Rand index: 0.463265349798
+
+F-measure(P,Q): 0.632821723731
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 41
+
+Cluster 0,0 Prototipo: Bmw serie 7_L [3 objetos]Objetos: Audi A8_L Bmw serie 7_L Mercedes Classe S_L 
+Cluster 0,1 Prototipo: Alfa  166_L [4 objetos]Objetos: Rover 75_B Alfa  166_L Lancia K_L Passat_L 
+Cluster 0,2 Prototipo: Skoda Fabia_U [8 objetos]Objetos: Punto_U Lancia Y_U Nissan Micra_U Corsa_U Twingo_U Rover 25_U Skoda Fabia_U Fiesta_U 
+Cluster 1,0 Prototipo: Bmw serie 5_L [3 objetos]Objetos: Audi A6_B Bmw serie 5_L Mercedes Classe E_L 
+Cluster 1,1 Prototipo: Mercedes SL_S [1 objetos]Objetos: Mercedes SL_S 
+Cluster 1,2 Prototipo: Focus_B [5 objetos]Objetos: Alfa  145_U Focus_B Skoda Octavia_B Vectra_B Audi A3_U 
+Cluster 2,0 Prototipo: Aston Martin_S [3 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S 
+Cluster 2,1 Prototipo: Maserati GT_S [3 objetos]Objetos: Honda  NSK_S Maserati GT_S Porsche_S 
+Cluster 2,2 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Alfa  156_B Bmw serie 3_B Mercedes Classe C_B 
+
+Critério de adequação (energia): 77.6101595599
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	0	 0	 8	 0	 0	 2	 0	 0	 0	 10
+2	0	 1	 0	 1	 0	 3	 0	 0	 3	 8
+3	3	 3	 0	 2	 0	 0	 0	 0	 0	 8
+4	0	 0	 0	 0	 1	 0	 3	 3	 0	 7
+Total	[3 4 8 3 1 5 3 3 3]
+Corrected Rand index: 0.530376912291
+
+F-measure(P,Q): 0.66109580655
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 42
+
+Cluster 0,0 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S Honda  NSK_S Maserati GT_S Mercedes SL_S Porsche_S 
+Cluster 0,1 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+Cluster 0,2 Prototipo: Bmw serie 5_L [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: Audi A3_U [2 objetos]Objetos: Audi A3_U Alfa  145_U 
+Cluster 1,1 Prototipo: Skoda Octavia_B [1 objetos]Objetos: Skoda Octavia_B 
+Cluster 1,2 Prototipo: Bmw serie 3_B [5 objetos]Objetos: Bmw serie 3_B Mercedes Classe C_B Alfa  166_L Alfa  156_B Lancia K_L 
+Cluster 2,0 Prototipo: Nissan Micra_U [4 objetos]Objetos: Fiesta_U Lancia Y_U Nissan Micra_U Twingo_U 
+Cluster 2,1 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Rover 25_U Skoda Fabia_U Corsa_U Punto_U 
+Cluster 2,2 Prototipo: Vectra_B [4 objetos]Objetos: Focus_B Vectra_B Passat_L Rover 75_B 
+
+Critério de adequação (energia): 104.498969366
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	0	 0	 2	 0	 0	 4	 4	 0	 10
+2	0	 1	 0	 1	 3	 0	 0	 3	 8
+3	0	 5	 0	 0	 2	 0	 0	 1	 8
+4	7	 0	 0	 0	 0	 0	 0	 0	 7
+Total	[7 6 2 1 5 4 4 4]
+Corrected Rand index: 0.545445337979
+
+F-measure(P,Q): 0.679653679654
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 43
+
+Cluster 0,0 Prototipo: Skoda Fabia_U [8 objetos]Objetos: Punto_U Fiesta_U Lancia Y_U Nissan Micra_U Corsa_U Twingo_U Rover 25_U Skoda Fabia_U 
+Cluster 0,1 Prototipo: Alfa  166_L [3 objetos]Objetos: Rover 75_B Alfa  166_L Lancia K_L 
+Cluster 0,2 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Mercedes Classe S_L Audi A8_L Bmw serie 5_L Mercedes Classe E_L Audi A6_B Bmw serie 7_L 
+Cluster 1,0 Prototipo: Focus_B [4 objetos]Objetos: Vectra_B Skoda Octavia_B Alfa  145_U Focus_B 
+Cluster 1,1 Prototipo: Mercedes Classe C_B [2 objetos]Objetos: Bmw serie 3_B Mercedes Classe C_B 
+Cluster 1,2 Prototipo: Bmw serie 5_L [0 objetos]Objetos: 
+Cluster 2,0 Prototipo: Alfa  156_B [3 objetos]Objetos: Alfa  156_B Audi A3_U Passat_L 
+Cluster 2,1 Prototipo: Maserati GT_S [7 objetos]Objetos: Porsche_S Maserati GT_S Ferrari_S Aston Martin_S Honda  NSK_S Lamborghini_S Mercedes SL_S 
+Cluster 2,2 Prototipo: Alfa  156_B [0 objetos]Objetos: 
+
+Critério de adequação (energia): 106.465835694
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	2,0	2,1	Total
+
+1	8	 0	 0	 1	 0	 1	 0	 10
+2	0	 1	 1	 3	 2	 1	 0	 8
+3	0	 2	 5	 0	 0	 1	 0	 8
+4	0	 0	 0	 0	 0	 0	 7	 7
+Total	[8 3 6 4 2 3 7]
+Corrected Rand index: 0.643209289045
+
+F-measure(P,Q): 0.775853775854
+OERC: 0.151515151515
+
+#####################################
+Repetição do experimento: 44
+
+Cluster 0,0 Prototipo: Lancia Y_U [7 objetos]Objetos: Lancia Y_U Nissan Micra_U Twingo_U Punto_U Fiesta_U Skoda Fabia_U Corsa_U 
+Cluster 0,1 Prototipo: Lancia Y_U [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: Alfa  145_U [7 objetos]Objetos: Alfa  145_U Alfa  156_B Audi A3_U Focus_B Rover 25_U Skoda Octavia_B Vectra_B 
+Cluster 1,0 Prototipo: Ferrari_S [1 objetos]Objetos: Ferrari_S 
+Cluster 1,1 Prototipo: Aston Martin_S [2 objetos]Objetos: Aston Martin_S Lamborghini_S 
+Cluster 1,2 Prototipo: Alfa  166_L [6 objetos]Objetos: Passat_L Rover 75_B Alfa  166_L Bmw serie 3_B Lancia K_L Mercedes Classe C_B 
+Cluster 2,0 Prototipo: Maserati GT_S [4 objetos]Objetos: Honda  NSK_S Maserati GT_S Mercedes SL_S Porsche_S 
+Cluster 2,1 Prototipo: Maserati GT_S [0 objetos]Objetos: 
+Cluster 2,2 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+
+Critério de adequação (energia): 96.7332553499
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	1,0	1,1	1,2	2,0	2,2	Total
+
+1	7	 3	 0	 0	 0	 0	 0	 10
+2	0	 4	 0	 0	 3	 0	 1	 8
+3	0	 0	 0	 0	 3	 0	 5	 8
+4	0	 0	 1	 2	 0	 4	 0	 7
+Total	[7 7 1 2 6 4 6]
+Corrected Rand index: 0.527354276992
+
+F-measure(P,Q): 0.706277442106
+OERC: 0.212121212121
+
+#####################################
+Repetição do experimento: 45
+
+Cluster 0,0 Prototipo: Aston Martin_S [3 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S 
+Cluster 0,1 Prototipo: Bmw serie 7_L [3 objetos]Objetos: Bmw serie 7_L Mercedes Classe S_L Audi A8_L 
+Cluster 0,2 Prototipo: Bmw serie 5_L [3 objetos]Objetos: Mercedes Classe E_L Audi A6_B Bmw serie 5_L 
+Cluster 1,0 Prototipo: Maserati GT_S [4 objetos]Objetos: Honda  NSK_S Maserati GT_S Porsche_S Mercedes SL_S 
+Cluster 1,1 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Skoda Fabia_U Corsa_U Rover 25_U Punto_U 
+Cluster 1,2 Prototipo: Vectra_B [4 objetos]Objetos: Vectra_B Skoda Octavia_B Alfa  156_B Passat_L 
+Cluster 2,0 Prototipo: Alfa  166_L [5 objetos]Objetos: Bmw serie 3_B Mercedes Classe C_B Rover 75_B Alfa  166_L Lancia K_L 
+Cluster 2,1 Prototipo: Alfa  145_U [3 objetos]Objetos: Focus_B Alfa  145_U Audi A3_U 
+Cluster 2,2 Prototipo: Nissan Micra_U [4 objetos]Objetos: Lancia Y_U Nissan Micra_U Twingo_U Fiesta_U 
+
+Critério de adequação (energia): 79.5702722251
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	0	 0	 0	 0	 4	 0	 0	 2	 4	 10
+2	0	 0	 1	 0	 0	 3	 3	 1	 0	 8
+3	0	 3	 2	 0	 0	 1	 2	 0	 0	 8
+4	3	 0	 0	 4	 0	 0	 0	 0	 0	 7
+Total	[3 3 3 4 4 4 5 3 4]
+Corrected Rand index: 0.392843453361
+
+F-measure(P,Q): 0.580873671783
+OERC: 0.151515151515
+
+#####################################
+Repetição do experimento: 46
+
+Cluster 0,0 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Punto_U Corsa_U Rover 25_U Skoda Fabia_U 
+Cluster 0,1 Prototipo: Vectra_B [5 objetos]Objetos: Vectra_B Focus_B Skoda Octavia_B Passat_L Alfa  145_U 
+Cluster 0,2 Prototipo: Bmw serie 3_B [4 objetos]Objetos: Alfa  156_B Audi A3_U Bmw serie 3_B Mercedes Classe C_B 
+Cluster 1,0 Prototipo: Nissan Micra_U [4 objetos]Objetos: Nissan Micra_U Twingo_U Lancia Y_U Fiesta_U 
+Cluster 1,1 Prototipo: Alfa  166_L [3 objetos]Objetos: Alfa  166_L Lancia K_L Rover 75_B 
+Cluster 1,2 Prototipo: Skoda Fabia_U [0 objetos]Objetos: 
+Cluster 2,0 Prototipo: Maserati GT_S [4 objetos]Objetos: Porsche_S Honda  NSK_S Maserati GT_S Mercedes SL_S 
+Cluster 2,1 Prototipo: Aston Martin_S [3 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S 
+Cluster 2,2 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L Audi A6_B Audi A8_L Bmw serie 5_L 
+
+Critério de adequação (energia): 86.9537060961
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	2,0	2,1	2,2	Total
+
+1	4	 1	 1	 4	 0	 0	 0	 0	 10
+2	0	 3	 3	 0	 1	 0	 0	 1	 8
+3	0	 1	 0	 0	 2	 0	 0	 5	 8
+4	0	 0	 0	 0	 0	 4	 3	 0	 7
+Total	[4 5 4 4 3 4 3 6]
+Corrected Rand index: 0.429366319259
+
+F-measure(P,Q): 0.621802439984
+OERC: 0.151515151515
+
+#####################################
+Repetição do experimento: 47
+
+Cluster 0,0 Prototipo: Nissan Micra_U [4 objetos]Objetos: Fiesta_U Twingo_U Lancia Y_U Nissan Micra_U 
+Cluster 0,1 Prototipo: Focus_B [5 objetos]Objetos: Alfa  145_U Focus_B Skoda Octavia_B Vectra_B Audi A3_U 
+Cluster 0,2 Prototipo: Alfa  166_L [4 objetos]Objetos: Rover 75_B Passat_L Alfa  166_L Lancia K_L 
+Cluster 1,0 Prototipo: Skoda Fabia_U [3 objetos]Objetos: Skoda Fabia_U Corsa_U Punto_U 
+Cluster 1,1 Prototipo: Skoda Fabia_U [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Mercedes Classe C_B Bmw serie 3_B Alfa  156_B 
+Cluster 2,0 Prototipo: Rover 25_U [1 objetos]Objetos: Rover 25_U 
+Cluster 2,1 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+Cluster 2,2 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S Mercedes SL_S Honda  NSK_S Maserati GT_S Porsche_S 
+
+Critério de adequação (energia): 101.074382085
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,2	2,0	2,1	2,2	Total
+
+1	4	 2	 0	 3	 0	 1	 0	 0	 10
+2	0	 3	 1	 0	 3	 0	 1	 0	 8
+3	0	 0	 3	 0	 0	 0	 5	 0	 8
+4	0	 0	 0	 0	 0	 0	 0	 7	 7
+Total	[4 5 4 3 3 1 6 7]
+Corrected Rand index: 0.537624992363
+
+F-measure(P,Q): 0.6906729634
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 48
+
+Cluster 0,0 Prototipo: Skoda Fabia_U [8 objetos]Objetos: Punto_U Lancia Y_U Nissan Micra_U Corsa_U Rover 25_U Skoda Fabia_U Fiesta_U Twingo_U 
+Cluster 0,1 Prototipo: Focus_B [4 objetos]Objetos: Alfa  145_U Focus_B Skoda Octavia_B Vectra_B 
+Cluster 0,2 Prototipo: Alfa  166_L [2 objetos]Objetos: Alfa  166_L Lancia K_L 
+Cluster 1,0 Prototipo: Skoda Fabia_U [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Alfa  156_B [2 objetos]Objetos: Audi A3_U Alfa  156_B 
+Cluster 1,2 Prototipo: Mercedes Classe C_B [2 objetos]Objetos: Bmw serie 3_B Mercedes Classe C_B 
+Cluster 2,0 Prototipo: Rover 75_B [2 objetos]Objetos: Passat_L Rover 75_B 
+Cluster 2,1 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Bmw serie 5_L Audi A8_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+Cluster 2,2 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S Mercedes SL_S Honda  NSK_S Maserati GT_S Porsche_S 
+
+Critério de adequação (energia): 103.1644271
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,1	1,2	2,0	2,1	2,2	Total
+
+1	8	 1	 0	 1	 0	 0	 0	 0	 10
+2	0	 3	 0	 1	 2	 1	 1	 0	 8
+3	0	 0	 2	 0	 0	 1	 5	 0	 8
+4	0	 0	 0	 0	 0	 0	 0	 7	 7
+Total	[8 4 2 2 2 2 6 7]
+Corrected Rand index: 0.653054519452
+
+F-measure(P,Q): 0.775853775854
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 49
+
+Cluster 0,0 Prototipo: Maserati GT_S [7 objetos]Objetos: Maserati GT_S Honda  NSK_S Porsche_S Aston Martin_S Ferrari_S Lamborghini_S Mercedes SL_S 
+Cluster 0,1 Prototipo: Focus_B [5 objetos]Objetos: Alfa  145_U Focus_B Audi A3_U Skoda Octavia_B Vectra_B 
+Cluster 0,2 Prototipo: Nissan Micra_U [3 objetos]Objetos: Nissan Micra_U Lancia Y_U Twingo_U 
+Cluster 1,0 Prototipo: Alfa  166_L [4 objetos]Objetos: Alfa  166_L Lancia K_L Rover 75_B Passat_L 
+Cluster 1,1 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Corsa_U Skoda Fabia_U Rover 25_U Punto_U 
+Cluster 1,2 Prototipo: Fiesta_U [1 objetos]Objetos: Fiesta_U 
+Cluster 2,0 Prototipo: Bmw serie 7_L [3 objetos]Objetos: Bmw serie 7_L Mercedes Classe S_L Audi A8_L 
+Cluster 2,1 Prototipo: Bmw serie 5_L [3 objetos]Objetos: Audi A6_B Bmw serie 5_L Mercedes Classe E_L 
+Cluster 2,2 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Alfa  156_B Bmw serie 3_B Mercedes Classe C_B 
+
+Critério de adequação (energia): 89.29019466
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	0	 2	 3	 0	 4	 1	 0	 0	 0	 10
+2	0	 3	 0	 1	 0	 0	 0	 1	 3	 8
+3	0	 0	 0	 3	 0	 0	 3	 2	 0	 8
+4	7	 0	 0	 0	 0	 0	 0	 0	 0	 7
+Total	[7 5 3 4 4 1 3 3 3]
+Corrected Rand index: 0.497164380337
+
+F-measure(P,Q): 0.649744195199
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 50
+
+Cluster 0,0 Prototipo: Maserati GT_S [7 objetos]Objetos: Ferrari_S Mercedes SL_S Aston Martin_S Lamborghini_S Maserati GT_S Porsche_S Honda  NSK_S 
+Cluster 0,1 Prototipo: Bmw serie 3_B [5 objetos]Objetos: Mercedes Classe C_B Bmw serie 3_B Alfa  166_L Lancia K_L Alfa  156_B 
+Cluster 0,2 Prototipo: Vectra_B [5 objetos]Objetos: Vectra_B Skoda Octavia_B Passat_L Rover 75_B Focus_B 
+Cluster 1,0 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Mercedes Classe E_L Mercedes Classe S_L Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L 
+Cluster 1,1 Prototipo: Vectra_B [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Rover 25_U Skoda Fabia_U Corsa_U Punto_U 
+Cluster 2,0 Prototipo: Audi A3_U [2 objetos]Objetos: Audi A3_U Alfa  145_U 
+Cluster 2,1 Prototipo: Lancia Y_U [1 objetos]Objetos: Lancia Y_U 
+Cluster 2,2 Prototipo: Nissan Micra_U [3 objetos]Objetos: Fiesta_U Twingo_U Nissan Micra_U 
+
+Critério de adequação (energia): 104.033753126
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,2	2,0	2,1	2,2	Total
+
+1	0	 0	 0	 0	 4	 2	 1	 3	 10
+2	0	 3	 4	 1	 0	 0	 0	 0	 8
+3	0	 2	 1	 5	 0	 0	 0	 0	 8
+4	7	 0	 0	 0	 0	 0	 0	 0	 7
+Total	[7 5 5 6 4 2 1 3]
+Corrected Rand index: 0.542543974532
+
+F-measure(P,Q): 0.707625707626
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 51
+
+Cluster 0,0 Prototipo: Mercedes Classe E_L [10 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Ferrari_S Mercedes Classe E_L Mercedes Classe S_L Aston Martin_S Lamborghini_S Mercedes SL_S 
+Cluster 0,1 Prototipo: Alfa  156_B [11 objetos]Objetos: Bmw serie 3_B Mercedes Classe C_B Alfa  145_U Alfa  156_B Audi A3_U Focus_B Honda  NSK_S Vectra_B Porsche_S Skoda Octavia_B Passat_L 
+Cluster 0,2 Prototipo: Alfa  156_B [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: Alfa  156_B [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Alfa  166_L [4 objetos]Objetos: Rover 75_B Lancia K_L Alfa  166_L Maserati GT_S 
+Cluster 1,2 Prototipo: Fiesta_U [1 objetos]Objetos: Fiesta_U 
+Cluster 2,0 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Punto_U Corsa_U Rover 25_U Skoda Fabia_U 
+Cluster 2,1 Prototipo: Nissan Micra_U [3 objetos]Objetos: Lancia Y_U Twingo_U Nissan Micra_U 
+Cluster 2,2 Prototipo: Alfa  156_B [0 objetos]Objetos: 
+
+Critério de adequação (energia): 147.736239175
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,1	1,2	2,0	2,1	Total
+
+1	0	 2	 0	 1	 4	 3	 10
+2	1	 6	 1	 0	 0	 0	 8
+3	5	 1	 2	 0	 0	 0	 8
+4	4	 2	 1	 0	 0	 0	 7
+Total	[10 11  4  1  4  3]
+Corrected Rand index: 0.362859015136
+
+F-measure(P,Q): 0.560772102568
+OERC: 0.363636363636
+
+#####################################
+Repetição do experimento: 52
+
+Cluster 0,0 Prototipo: Bmw serie 3_B [4 objetos]Objetos: Bmw serie 3_B Mercedes Classe C_B Alfa  166_L Alfa  156_B 
+Cluster 0,1 Prototipo: Bmw serie 3_B [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: Skoda Fabia_U [8 objetos]Objetos: Fiesta_U Twingo_U Punto_U Lancia Y_U Nissan Micra_U Corsa_U Rover 25_U Skoda Fabia_U 
+Cluster 1,0 Prototipo: Bmw serie 3_B [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Bmw serie 7_L [3 objetos]Objetos: Audi A8_L Bmw serie 7_L Mercedes Classe S_L 
+Cluster 1,2 Prototipo: Alfa  145_U [3 objetos]Objetos: Alfa  145_U Audi A3_U Focus_B 
+Cluster 2,0 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S Mercedes SL_S Honda  NSK_S Maserati GT_S Porsche_S 
+Cluster 2,1 Prototipo: Audi A6_B [4 objetos]Objetos: Audi A6_B Lancia K_L Bmw serie 5_L Mercedes Classe E_L 
+Cluster 2,2 Prototipo: Vectra_B [4 objetos]Objetos: Vectra_B Passat_L Rover 75_B Skoda Octavia_B 
+
+Critério de adequação (energia): 103.23703276
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	1,1	1,2	2,0	2,1	2,2	Total
+
+1	0	 8	 0	 2	 0	 0	 0	 10
+2	3	 0	 0	 1	 0	 1	 3	 8
+3	1	 0	 3	 0	 0	 3	 1	 8
+4	0	 0	 0	 0	 7	 0	 0	 7
+Total	[4 8 3 3 7 4 4]
+Corrected Rand index: 0.635890363061
+
+F-measure(P,Q): 0.734925007652
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 53
+
+Cluster 0,0 Prototipo: Focus_B [5 objetos]Objetos: Focus_B Skoda Octavia_B Vectra_B Alfa  145_U Audi A3_U 
+Cluster 0,1 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Rover 25_U Skoda Fabia_U Corsa_U Punto_U 
+Cluster 0,2 Prototipo: Nissan Micra_U [3 objetos]Objetos: Nissan Micra_U Twingo_U Fiesta_U 
+Cluster 1,0 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Bmw serie 3_B Mercedes Classe C_B Alfa  156_B 
+Cluster 1,1 Prototipo: Lancia Y_U [1 objetos]Objetos: Lancia Y_U 
+Cluster 1,2 Prototipo: Alfa  166_L [4 objetos]Objetos: Rover 75_B Passat_L Alfa  166_L Lancia K_L 
+Cluster 2,0 Prototipo: Bmw serie 7_L [3 objetos]Objetos: Audi A8_L Bmw serie 7_L Mercedes Classe S_L 
+Cluster 2,1 Prototipo: Bmw serie 5_L [3 objetos]Objetos: Audi A6_B Bmw serie 5_L Mercedes Classe E_L 
+Cluster 2,2 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Ferrari_S Honda  NSK_S Lamborghini_S Maserati GT_S Mercedes SL_S Porsche_S 
+
+Critério de adequação (energia): 91.7799838249
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	2	 4	 3	 0	 1	 0	 0	 0	 0	 10
+2	3	 0	 0	 3	 0	 1	 0	 1	 0	 8
+3	0	 0	 0	 0	 0	 3	 3	 2	 0	 8
+4	0	 0	 0	 0	 0	 0	 0	 0	 7	 7
+Total	[5 4 3 3 1 4 3 3 7]
+Corrected Rand index: 0.497164380337
+
+F-measure(P,Q): 0.649744195199
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 54
+
+Cluster 0,0 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S Honda  NSK_S Maserati GT_S Mercedes SL_S Porsche_S 
+Cluster 0,1 Prototipo: Skoda Octavia_B [2 objetos]Objetos: Vectra_B Skoda Octavia_B 
+Cluster 0,2 Prototipo: Skoda Fabia_U [8 objetos]Objetos: Punto_U Fiesta_U Lancia Y_U Nissan Micra_U Corsa_U Rover 25_U Skoda Fabia_U Twingo_U 
+Cluster 1,0 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+Cluster 1,1 Prototipo: Rover 75_B [2 objetos]Objetos: Passat_L Rover 75_B 
+Cluster 1,2 Prototipo: Alfa  145_U [3 objetos]Objetos: Alfa  145_U Audi A3_U Focus_B 
+Cluster 2,0 Prototipo: Bmw serie 5_L [0 objetos]Objetos: 
+Cluster 2,1 Prototipo: Alfa  166_L [2 objetos]Objetos: Alfa  166_L Lancia K_L 
+Cluster 2,2 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Alfa  156_B Bmw serie 3_B Mercedes Classe C_B 
+
+Critério de adequação (energia): 102.08990943
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,1	2,2	Total
+
+1	0	 0	 8	 0	 0	 2	 0	 0	 10
+2	0	 2	 0	 1	 1	 1	 0	 3	 8
+3	0	 0	 0	 5	 1	 0	 2	 0	 8
+4	7	 0	 0	 0	 0	 0	 0	 0	 7
+Total	[7 2 8 6 2 3 2 3]
+Corrected Rand index: 0.666660191534
+
+F-measure(P,Q): 0.7868730596
+OERC: 0.0909090909091
+
+#####################################
+Repetição do experimento: 55
+
+Cluster 0,0 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L Audi A6_B 
+Cluster 0,1 Prototipo: Audi A3_U [2 objetos]Objetos: Audi A3_U Bmw serie 3_B 
+Cluster 0,2 Prototipo: Skoda Fabia_U [8 objetos]Objetos: Punto_U Fiesta_U Lancia Y_U Nissan Micra_U Corsa_U Twingo_U Rover 25_U Skoda Fabia_U 
+Cluster 1,0 Prototipo: Maserati GT_S [4 objetos]Objetos: Maserati GT_S Honda  NSK_S Porsche_S Mercedes SL_S 
+Cluster 1,1 Prototipo: Alfa  145_U [1 objetos]Objetos: Alfa  145_U 
+Cluster 1,2 Prototipo: Vectra_B [4 objetos]Objetos: Skoda Octavia_B Vectra_B Alfa  156_B Passat_L 
+Cluster 2,0 Prototipo: Aston Martin_S [3 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S 
+Cluster 2,1 Prototipo: Focus_B [1 objetos]Objetos: Focus_B 
+Cluster 2,2 Prototipo: Alfa  166_L [4 objetos]Objetos: Alfa  166_L Lancia K_L Mercedes Classe C_B Rover 75_B 
+
+Critério de adequação (energia): 90.6392491408
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	0	 1	 8	 0	 1	 0	 0	 0	 0	 10
+2	1	 1	 0	 0	 0	 3	 0	 1	 2	 8
+3	5	 0	 0	 0	 0	 1	 0	 0	 2	 8
+4	0	 0	 0	 4	 0	 0	 3	 0	 0	 7
+Total	[6 2 8 4 1 4 3 1 4]
+Corrected Rand index: 0.556140741791
+
+F-measure(P,Q): 0.718002536184
+OERC: 0.151515151515
+
+#####################################
+Repetição do experimento: 56
+
+Cluster 0,0 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Lamborghini_S Maserati GT_S Ferrari_S Mercedes SL_S Porsche_S Honda  NSK_S 
+Cluster 0,1 Prototipo: Bmw serie 3_B [2 objetos]Objetos: Mercedes Classe C_B Bmw serie 3_B 
+Cluster 0,2 Prototipo: Skoda Fabia_U [8 objetos]Objetos: Punto_U Fiesta_U Lancia Y_U Nissan Micra_U Corsa_U Rover 25_U Skoda Fabia_U Twingo_U 
+Cluster 1,0 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Mercedes Classe E_L Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe S_L 
+Cluster 1,1 Prototipo: Vectra_B [2 objetos]Objetos: Vectra_B Skoda Octavia_B 
+Cluster 1,2 Prototipo: Alfa  145_U [3 objetos]Objetos: Alfa  145_U Focus_B Audi A3_U 
+Cluster 2,0 Prototipo: Rover 75_B [2 objetos]Objetos: Passat_L Rover 75_B 
+Cluster 2,1 Prototipo: Alfa  166_L [2 objetos]Objetos: Lancia K_L Alfa  166_L 
+Cluster 2,2 Prototipo: Alfa  156_B [1 objetos]Objetos: Alfa  156_B 
+
+Critério de adequação (energia): 99.7199203298
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	0	 0	 8	 0	 0	 2	 0	 0	 0	 10
+2	0	 2	 0	 1	 2	 1	 1	 0	 1	 8
+3	0	 0	 0	 5	 0	 0	 1	 2	 0	 8
+4	7	 0	 0	 0	 0	 0	 0	 0	 0	 7
+Total	[7 2 8 6 2 3 2 2 1]
+Corrected Rand index: 0.652842927519
+
+F-measure(P,Q): 0.751611351611
+OERC: 0.0909090909091
+
+#####################################
+Repetição do experimento: 57
+
+Cluster 0,0 Prototipo: Nissan Micra_U [4 objetos]Objetos: Lancia Y_U Nissan Micra_U Twingo_U Fiesta_U 
+Cluster 0,1 Prototipo: Alfa  166_L [5 objetos]Objetos: Bmw serie 3_B Rover 75_B Alfa  166_L Mercedes Classe C_B Lancia K_L 
+Cluster 0,2 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+Cluster 1,0 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Rover 25_U Corsa_U Skoda Fabia_U Punto_U 
+Cluster 1,1 Prototipo: Alfa  145_U [3 objetos]Objetos: Focus_B Alfa  145_U Audi A3_U 
+Cluster 1,2 Prototipo: Maserati GT_S [6 objetos]Objetos: Aston Martin_S Ferrari_S Honda  NSK_S Maserati GT_S Mercedes SL_S Porsche_S 
+Cluster 2,0 Prototipo: Vectra_B [4 objetos]Objetos: Alfa  156_B Vectra_B Passat_L Skoda Octavia_B 
+Cluster 2,1 Prototipo: Lamborghini_S [1 objetos]Objetos: Lamborghini_S 
+Cluster 2,2 Prototipo: Maserati GT_S [0 objetos]Objetos: 
+
+Critério de adequação (energia): 89.9414515151
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	Total
+
+1	4	 0	 0	 4	 2	 0	 0	 0	 10
+2	0	 3	 1	 0	 1	 0	 3	 0	 8
+3	0	 2	 5	 0	 0	 0	 1	 0	 8
+4	0	 0	 0	 0	 0	 6	 0	 1	 7
+Total	[4 5 6 4 3 6 4 1]
+Corrected Rand index: 0.491792759413
+
+F-measure(P,Q): 0.663336663337
+OERC: 0.151515151515
+
+#####################################
+Repetição do experimento: 58
+
+Cluster 0,0 Prototipo: Vectra_B [3 objetos]Objetos: Vectra_B Passat_L Skoda Octavia_B 
+Cluster 0,1 Prototipo: Maserati GT_S [7 objetos]Objetos: Maserati GT_S Porsche_S Honda  NSK_S Aston Martin_S Ferrari_S Lamborghini_S Mercedes SL_S 
+Cluster 0,2 Prototipo: Mercedes Classe C_B [2 objetos]Objetos: Bmw serie 3_B Mercedes Classe C_B 
+Cluster 1,0 Prototipo: Alfa  145_U [3 objetos]Objetos: Alfa  145_U Focus_B Audi A3_U 
+Cluster 1,1 Prototipo: Nissan Micra_U [4 objetos]Objetos: Twingo_U Nissan Micra_U Lancia Y_U Fiesta_U 
+Cluster 1,2 Prototipo: Alfa  156_B [1 objetos]Objetos: Alfa  156_B 
+Cluster 2,0 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Punto_U Corsa_U Rover 25_U Skoda Fabia_U 
+Cluster 2,1 Prototipo: Alfa  166_L [3 objetos]Objetos: Lancia K_L Alfa  166_L Rover 75_B 
+Cluster 2,2 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+
+Critério de adequação (energia): 96.3794395752
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	0	 0	 0	 2	 4	 0	 4	 0	 0	 10
+2	2	 0	 2	 1	 0	 1	 0	 1	 1	 8
+3	1	 0	 0	 0	 0	 0	 0	 2	 5	 8
+4	0	 7	 0	 0	 0	 0	 0	 0	 0	 7
+Total	[3 7 2 3 4 1 4 3 6]
+Corrected Rand index: 0.522212167764
+
+F-measure(P,Q): 0.655411255411
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 59
+
+Cluster 0,0 Prototipo: Skoda Fabia_U [3 objetos]Objetos: Punto_U Corsa_U Skoda Fabia_U 
+Cluster 0,1 Prototipo: Rover 25_U [1 objetos]Objetos: Rover 25_U 
+Cluster 0,2 Prototipo: Vectra_B [5 objetos]Objetos: Vectra_B Rover 75_B Focus_B Passat_L Skoda Octavia_B 
+Cluster 1,0 Prototipo: Skoda Fabia_U [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Audi A3_U [2 objetos]Objetos: Audi A3_U Alfa  145_U 
+Cluster 1,2 Prototipo: Bmw serie 3_B [5 objetos]Objetos: Bmw serie 3_B Mercedes Classe C_B Alfa  166_L Alfa  156_B Lancia K_L 
+Cluster 2,0 Prototipo: Nissan Micra_U [4 objetos]Objetos: Twingo_U Nissan Micra_U Lancia Y_U Fiesta_U 
+Cluster 2,1 Prototipo: Maserati GT_S [7 objetos]Objetos: Maserati GT_S Porsche_S Honda  NSK_S Ferrari_S Aston Martin_S Lamborghini_S Mercedes SL_S 
+Cluster 2,2 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+
+Critério de adequação (energia): 104.115548536
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,1	1,2	2,0	2,1	2,2	Total
+
+1	3	 1	 0	 2	 0	 4	 0	 0	 10
+2	0	 0	 4	 0	 3	 0	 0	 1	 8
+3	0	 0	 1	 0	 2	 0	 0	 5	 8
+4	0	 0	 0	 0	 0	 0	 7	 0	 7
+Total	[3 1 5 2 5 4 7 6]
+Corrected Rand index: 0.542543974532
+
+F-measure(P,Q): 0.707625707626
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 60
+
+Cluster 0,0 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Bmw serie 7_L Mercedes Classe S_L Audi A8_L Bmw serie 5_L Mercedes Classe E_L Audi A6_B 
+Cluster 0,1 Prototipo: Alfa  166_L [4 objetos]Objetos: Alfa  166_L Lancia K_L Rover 75_B Passat_L 
+Cluster 0,2 Prototipo: Maserati GT_S [7 objetos]Objetos: Lamborghini_S Aston Martin_S Ferrari_S Honda  NSK_S Porsche_S Maserati GT_S Mercedes SL_S 
+Cluster 1,0 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Mercedes Classe C_B Bmw serie 3_B Alfa  156_B 
+Cluster 1,1 Prototipo: Skoda Fabia_U [3 objetos]Objetos: Skoda Fabia_U Punto_U Corsa_U 
+Cluster 1,2 Prototipo: Nissan Micra_U [4 objetos]Objetos: Lancia Y_U Nissan Micra_U Twingo_U Fiesta_U 
+Cluster 2,0 Prototipo: Alfa  166_L [0 objetos]Objetos: 
+Cluster 2,1 Prototipo: Focus_B [5 objetos]Objetos: Vectra_B Skoda Octavia_B Audi A3_U Focus_B Alfa  145_U 
+Cluster 2,2 Prototipo: Rover 25_U [1 objetos]Objetos: Rover 25_U 
+
+Critério de adequação (energia): 101.074382085
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,1	2,2	Total
+
+1	0	 0	 0	 0	 3	 4	 2	 1	 10
+2	1	 1	 0	 3	 0	 0	 3	 0	 8
+3	5	 3	 0	 0	 0	 0	 0	 0	 8
+4	0	 0	 7	 0	 0	 0	 0	 0	 7
+Total	[6 4 7 3 3 4 5 1]
+Corrected Rand index: 0.537624992363
+
+F-measure(P,Q): 0.6906729634
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 61
+
+Cluster 0,0 Prototipo: Nissan Micra_U [4 objetos]Objetos: Fiesta_U Lancia Y_U Nissan Micra_U Twingo_U 
+Cluster 0,1 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Corsa_U Skoda Fabia_U Rover 25_U Punto_U 
+Cluster 0,2 Prototipo: Bmw serie 3_B [6 objetos]Objetos: Bmw serie 3_B Mercedes Classe C_B Alfa  166_L Audi A3_U Alfa  156_B Lancia K_L 
+Cluster 1,0 Prototipo: Vectra_B [6 objetos]Objetos: Vectra_B Skoda Octavia_B Passat_L Alfa  145_U Focus_B Rover 75_B 
+Cluster 1,1 Prototipo: Aston Martin_S [2 objetos]Objetos: Aston Martin_S Lamborghini_S 
+Cluster 1,2 Prototipo: Mercedes SL_S [1 objetos]Objetos: Mercedes SL_S 
+Cluster 2,0 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A8_L Mercedes Classe E_L Mercedes Classe S_L Audi A6_B Bmw serie 5_L Bmw serie 7_L 
+Cluster 2,1 Prototipo: Ferrari_S [1 objetos]Objetos: Ferrari_S 
+Cluster 2,2 Prototipo: Maserati GT_S [3 objetos]Objetos: Maserati GT_S Porsche_S Honda  NSK_S 
+
+Critério de adequação (energia): 83.7899091861
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	4	 4	 1	 1	 0	 0	 0	 0	 0	 10
+2	0	 0	 3	 4	 0	 0	 1	 0	 0	 8
+3	0	 0	 2	 1	 0	 0	 5	 0	 0	 8
+4	0	 0	 0	 0	 2	 1	 0	 1	 3	 7
+Total	[4 4 6 6 2 1 6 1 3]
+Corrected Rand index: 0.393430067686
+
+F-measure(P,Q): 0.612121212121
+OERC: 0.181818181818
+
+#####################################
+Repetição do experimento: 62
+
+Cluster 0,0 Prototipo: Skoda Fabia_U [8 objetos]Objetos: Fiesta_U Punto_U Lancia Y_U Nissan Micra_U Corsa_U Twingo_U Rover 25_U Skoda Fabia_U 
+Cluster 0,1 Prototipo: Bmw serie 3_B [2 objetos]Objetos: Bmw serie 3_B Mercedes Classe C_B 
+Cluster 0,2 Prototipo: Alfa  156_B [5 objetos]Objetos: Alfa  156_B Audi A3_U Honda  NSK_S Porsche_S Passat_L 
+Cluster 1,0 Prototipo: Focus_B [4 objetos]Objetos: Alfa  145_U Focus_B Skoda Octavia_B Vectra_B 
+Cluster 1,1 Prototipo: Alfa  156_B [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Alfa  166_L [4 objetos]Objetos: Lancia K_L Alfa  166_L Rover 75_B Maserati GT_S 
+Cluster 2,0 Prototipo: Alfa  156_B [0 objetos]Objetos: 
+Cluster 2,1 Prototipo: Mercedes Classe E_L [10 objetos]Objetos: Aston Martin_S Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Ferrari_S Lamborghini_S Mercedes SL_S Mercedes Classe E_L Mercedes Classe S_L 
+Cluster 2,2 Prototipo: Mercedes Classe E_L [0 objetos]Objetos: 
+
+Critério de adequação (energia): 148.128773514
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,2	2,1	Total
+
+1	8	 0	 1	 1	 0	 0	 10
+2	0	 2	 1	 3	 1	 1	 8
+3	0	 0	 1	 0	 2	 5	 8
+4	0	 0	 2	 0	 1	 4	 7
+Total	[ 8  2  5  4  4 10]
+Corrected Rand index: 0.458706191031
+
+F-measure(P,Q): 0.625074272133
+OERC: 0.333333333333
+
+#####################################
+Repetição do experimento: 63
+
+Cluster 0,0 Prototipo: Skoda Fabia_U [8 objetos]Objetos: Punto_U Fiesta_U Nissan Micra_U Corsa_U Twingo_U Rover 25_U Skoda Fabia_U Lancia Y_U 
+Cluster 0,1 Prototipo: Audi A3_U [1 objetos]Objetos: Audi A3_U 
+Cluster 0,2 Prototipo: Maserati GT_S [7 objetos]Objetos: Porsche_S Aston Martin_S Ferrari_S Lamborghini_S Maserati GT_S Mercedes SL_S Honda  NSK_S 
+Cluster 1,0 Prototipo: Focus_B [4 objetos]Objetos: Focus_B Skoda Octavia_B Vectra_B Alfa  145_U 
+Cluster 1,1 Prototipo: Alfa  166_L [4 objetos]Objetos: Lancia K_L Alfa  166_L Rover 75_B Passat_L 
+Cluster 1,2 Prototipo: Bmw serie 5_L [4 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L 
+Cluster 2,0 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Alfa  156_B Bmw serie 3_B Mercedes Classe C_B 
+Cluster 2,1 Prototipo: Mercedes Classe E_L [2 objetos]Objetos: Mercedes Classe E_L Mercedes Classe S_L 
+Cluster 2,2 Prototipo: Bmw serie 5_L [0 objetos]Objetos: 
+
+Critério de adequação (energia): 102.55590815
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	Total
+
+1	8	 1	 0	 1	 0	 0	 0	 0	 10
+2	0	 0	 0	 3	 1	 1	 3	 0	 8
+3	0	 0	 0	 0	 3	 3	 0	 2	 8
+4	0	 0	 7	 0	 0	 0	 0	 0	 7
+Total	[8 1 7 4 4 4 3 2]
+Corrected Rand index: 0.642480029833
+
+F-measure(P,Q): 0.734925007652
+OERC: 0.0909090909091
+
+#####################################
+Repetição do experimento: 64
+
+Cluster 0,0 Prototipo: Alfa  166_L [3 objetos]Objetos: Alfa  166_L Rover 75_B Lancia K_L 
+Cluster 0,1 Prototipo: Vectra_B [4 objetos]Objetos: Focus_B Skoda Octavia_B Vectra_B Passat_L 
+Cluster 0,2 Prototipo: Nissan Micra_U [3 objetos]Objetos: Nissan Micra_U Lancia Y_U Twingo_U 
+Cluster 1,0 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Punto_U Corsa_U Rover 25_U Skoda Fabia_U 
+Cluster 1,1 Prototipo: Audi A3_U [2 objetos]Objetos: Audi A3_U Alfa  145_U 
+Cluster 1,2 Prototipo: Fiesta_U [1 objetos]Objetos: Fiesta_U 
+Cluster 2,0 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+Cluster 2,1 Prototipo: Maserati GT_S [7 objetos]Objetos: Porsche_S Honda  NSK_S Maserati GT_S Ferrari_S Aston Martin_S Lamborghini_S Mercedes SL_S 
+Cluster 2,2 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Alfa  156_B Bmw serie 3_B Mercedes Classe C_B 
+
+Critério de adequação (energia): 94.1944998511
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	0	 0	 3	 4	 2	 1	 0	 0	 0	 10
+2	1	 3	 0	 0	 0	 0	 1	 0	 3	 8
+3	2	 1	 0	 0	 0	 0	 5	 0	 0	 8
+4	0	 0	 0	 0	 0	 0	 0	 7	 0	 7
+Total	[3 4 3 4 2 1 6 7 3]
+Corrected Rand index: 0.5333235127
+
+F-measure(P,Q): 0.6906729634
+OERC: 0.0909090909091
+
+#####################################
+Repetição do experimento: 65
+
+Cluster 0,0 Prototipo: Skoda Fabia_U [8 objetos]Objetos: Twingo_U Fiesta_U Lancia Y_U Skoda Fabia_U Corsa_U Punto_U Nissan Micra_U Rover 25_U 
+Cluster 0,1 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L Audi A8_L 
+Cluster 0,2 Prototipo: Alfa  156_B [12 objetos]Objetos: Alfa  145_U Alfa  156_B Alfa  166_L Audi A3_U Bmw serie 3_B Focus_B Lancia K_L Mercedes Classe C_B Vectra_B Rover 75_B Skoda Octavia_B Passat_L 
+Cluster 1,0 Prototipo: Alfa  156_B [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Alfa  156_B [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Maserati GT_S [7 objetos]Objetos: Lamborghini_S Aston Martin_S Ferrari_S Porsche_S Maserati GT_S Mercedes SL_S Honda  NSK_S 
+Cluster 2,0 Prototipo: Alfa  156_B [0 objetos]Objetos: 
+Cluster 2,1 Prototipo: Alfa  156_B [0 objetos]Objetos: 
+Cluster 2,2 Prototipo: Alfa  156_B [0 objetos]Objetos: 
+
+Critério de adequação (energia): 125.438204085
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,2	Total
+
+1	8	 0	 2	 0	 10
+2	0	 1	 7	 0	 8
+3	0	 5	 3	 0	 8
+4	0	 0	 0	 7	 7
+Total	[ 8  6 12  7]
+Corrected Rand index: 0.66666165617
+
+F-measure(P,Q): 0.824338624339
+OERC: 0.181818181818
+
+#####################################
+Repetição do experimento: 66
+
+Cluster 0,0 Prototipo: Bmw serie 7_L [3 objetos]Objetos: Audi A8_L Bmw serie 7_L Mercedes Classe S_L 
+Cluster 0,1 Prototipo: Bmw serie 5_L [3 objetos]Objetos: Audi A6_B Bmw serie 5_L Mercedes Classe E_L 
+Cluster 0,2 Prototipo: Alfa  166_L [4 objetos]Objetos: Alfa  166_L Lancia K_L Rover 75_B Passat_L 
+Cluster 1,0 Prototipo: Mercedes SL_S [1 objetos]Objetos: Mercedes SL_S 
+Cluster 1,1 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Alfa  156_B Bmw serie 3_B Mercedes Classe C_B 
+Cluster 1,2 Prototipo: Focus_B [5 objetos]Objetos: Focus_B Alfa  145_U Skoda Octavia_B Vectra_B Audi A3_U 
+Cluster 2,0 Prototipo: Aston Martin_S [3 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S 
+Cluster 2,1 Prototipo: Maserati GT_S [3 objetos]Objetos: Honda  NSK_S Porsche_S Maserati GT_S 
+Cluster 2,2 Prototipo: Skoda Fabia_U [8 objetos]Objetos: Fiesta_U Punto_U Lancia Y_U Nissan Micra_U Corsa_U Twingo_U Rover 25_U Skoda Fabia_U 
+
+Critério de adequação (energia): 77.6101595599
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	0	 0	 0	 0	 0	 2	 0	 0	 8	 10
+2	0	 1	 1	 0	 3	 3	 0	 0	 0	 8
+3	3	 2	 3	 0	 0	 0	 0	 0	 0	 8
+4	0	 0	 0	 1	 0	 0	 3	 3	 0	 7
+Total	[3 3 4 1 3 5 3 3 8]
+Corrected Rand index: 0.530376912291
+
+F-measure(P,Q): 0.66109580655
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 67
+
+Cluster 0,0 Prototipo: Alfa  166_L [3 objetos]Objetos: Alfa  166_L Rover 75_B Lancia K_L 
+Cluster 0,1 Prototipo: Vectra_B [4 objetos]Objetos: Alfa  156_B Vectra_B Skoda Octavia_B Passat_L 
+Cluster 0,2 Prototipo: Nissan Micra_U [4 objetos]Objetos: Fiesta_U Lancia Y_U Nissan Micra_U Twingo_U 
+Cluster 1,0 Prototipo: Mercedes Classe C_B [2 objetos]Objetos: Mercedes Classe C_B Bmw serie 3_B 
+Cluster 1,1 Prototipo: Rover 25_U [1 objetos]Objetos: Rover 25_U 
+Cluster 1,2 Prototipo: Skoda Fabia_U [3 objetos]Objetos: Corsa_U Skoda Fabia_U Punto_U 
+Cluster 2,0 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S Mercedes SL_S Honda  NSK_S Maserati GT_S Porsche_S 
+Cluster 2,1 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+Cluster 2,2 Prototipo: Alfa  145_U [3 objetos]Objetos: Alfa  145_U Focus_B Audi A3_U 
+
+Critério de adequação (energia): 96.7097730549
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	0	 0	 4	 0	 1	 3	 0	 0	 2	 10
+2	1	 3	 0	 2	 0	 0	 0	 1	 1	 8
+3	2	 1	 0	 0	 0	 0	 0	 5	 0	 8
+4	0	 0	 0	 0	 0	 0	 7	 0	 0	 7
+Total	[3 4 4 2 1 3 7 6 3]
+Corrected Rand index: 0.511100822829
+
+F-measure(P,Q): 0.679653679654
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 68
+
+Cluster 0,0 Prototipo: Skoda Fabia_U [8 objetos]Objetos: Punto_U Fiesta_U Lancia Y_U Nissan Micra_U Corsa_U Twingo_U Rover 25_U Skoda Fabia_U 
+Cluster 0,1 Prototipo: Alfa  166_L [3 objetos]Objetos: Alfa  166_L Lancia K_L Rover 75_B 
+Cluster 0,2 Prototipo: Alfa  156_B [1 objetos]Objetos: Alfa  156_B 
+Cluster 1,0 Prototipo: Alfa  145_U [3 objetos]Objetos: Alfa  145_U Focus_B Audi A3_U 
+Cluster 1,1 Prototipo: Maserati GT_S [7 objetos]Objetos: Honda  NSK_S Porsche_S Maserati GT_S Ferrari_S Aston Martin_S Lamborghini_S Mercedes SL_S 
+Cluster 1,2 Prototipo: Mercedes Classe C_B [2 objetos]Objetos: Mercedes Classe C_B Bmw serie 3_B 
+Cluster 2,0 Prototipo: Vectra_B [3 objetos]Objetos: Vectra_B Skoda Octavia_B Passat_L 
+Cluster 2,1 Prototipo: Bmw serie 5_L [3 objetos]Objetos: Audi A6_B Bmw serie 5_L Mercedes Classe E_L 
+Cluster 2,2 Prototipo: Bmw serie 7_L [3 objetos]Objetos: Audi A8_L Bmw serie 7_L Mercedes Classe S_L 
+
+Critério de adequação (energia): 93.4380848001
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	8	 0	 0	 2	 0	 0	 0	 0	 0	 10
+2	0	 1	 1	 1	 0	 2	 2	 1	 0	 8
+3	0	 2	 0	 0	 0	 0	 1	 2	 3	 8
+4	0	 0	 0	 0	 7	 0	 0	 0	 0	 7
+Total	[8 3 1 3 7 2 3 3 3]
+Corrected Rand index: 0.609617760852
+
+F-measure(P,Q): 0.71068258341
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 69
+
+Cluster 0,0 Prototipo: Skoda Fabia_U [8 objetos]Objetos: Punto_U Fiesta_U Lancia Y_U Nissan Micra_U Corsa_U Twingo_U Rover 25_U Skoda Fabia_U 
+Cluster 0,1 Prototipo: Skoda Fabia_U [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: Alfa  166_L [6 objetos]Objetos: Bmw serie 3_B Passat_L Rover 75_B Alfa  166_L Mercedes Classe C_B Lancia K_L 
+Cluster 1,0 Prototipo: Focus_B [6 objetos]Objetos: Alfa  145_U Focus_B Audi A3_U Skoda Octavia_B Vectra_B Alfa  156_B 
+Cluster 1,1 Prototipo: Mercedes SL_S [1 objetos]Objetos: Mercedes SL_S 
+Cluster 1,2 Prototipo: Maserati GT_S [3 objetos]Objetos: Honda  NSK_S Porsche_S Maserati GT_S 
+Cluster 2,0 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A8_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L Audi A6_B Bmw serie 5_L 
+Cluster 2,1 Prototipo: Bmw serie 5_L [0 objetos]Objetos: 
+Cluster 2,2 Prototipo: Aston Martin_S [3 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S 
+
+Critério de adequação (energia): 94.5311640798
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	1,0	1,1	1,2	2,0	2,2	Total
+
+1	8	 0	 2	 0	 0	 0	 0	 10
+2	0	 3	 4	 0	 0	 1	 0	 8
+3	0	 3	 0	 0	 0	 5	 0	 8
+4	0	 0	 0	 1	 3	 0	 3	 7
+Total	[8 6 6 1 3 6 3]
+Corrected Rand index: 0.567156022087
+
+F-measure(P,Q): 0.708321308321
+OERC: 0.181818181818
+
+#####################################
+Repetição do experimento: 70
+
+Cluster 0,0 Prototipo: Focus_B [5 objetos]Objetos: Alfa  145_U Audi A3_U Focus_B Skoda Octavia_B Vectra_B 
+Cluster 0,1 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Punto_U Corsa_U Skoda Fabia_U Rover 25_U 
+Cluster 0,2 Prototipo: Nissan Micra_U [4 objetos]Objetos: Lancia Y_U Twingo_U Nissan Micra_U Fiesta_U 
+Cluster 1,0 Prototipo: Aston Martin_S [3 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S 
+Cluster 1,1 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Alfa  156_B Bmw serie 3_B Mercedes Classe C_B 
+Cluster 1,2 Prototipo: Alfa  166_L [4 objetos]Objetos: Passat_L Rover 75_B Alfa  166_L Lancia K_L 
+Cluster 2,0 Prototipo: Aston Martin_S [0 objetos]Objetos: 
+Cluster 2,1 Prototipo: Maserati GT_S [4 objetos]Objetos: Honda  NSK_S Maserati GT_S Porsche_S Mercedes SL_S 
+Cluster 2,2 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Bmw serie 5_L Audi A8_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+
+Critério de adequação (energia): 86.789579135
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,1	2,2	Total
+
+1	2	 4	 4	 0	 0	 0	 0	 0	 10
+2	3	 0	 0	 0	 3	 1	 0	 1	 8
+3	0	 0	 0	 0	 0	 3	 0	 5	 8
+4	0	 0	 0	 3	 0	 0	 4	 0	 7
+Total	[5 4 4 3 3 4 4 6]
+Corrected Rand index: 0.463265349798
+
+F-measure(P,Q): 0.632821723731
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 71
+
+Cluster 0,0 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L Audi A6_B 
+Cluster 0,1 Prototipo: Mercedes Classe C_B [2 objetos]Objetos: Bmw serie 3_B Mercedes Classe C_B 
+Cluster 0,2 Prototipo: Vectra_B [3 objetos]Objetos: Vectra_B Passat_L Skoda Octavia_B 
+Cluster 1,0 Prototipo: Alfa  156_B [1 objetos]Objetos: Alfa  156_B 
+Cluster 1,1 Prototipo: Alfa  166_L [3 objetos]Objetos: Lancia K_L Alfa  166_L Rover 75_B 
+Cluster 1,2 Prototipo: Alfa  145_U [3 objetos]Objetos: Focus_B Alfa  145_U Audi A3_U 
+Cluster 2,0 Prototipo: Alfa  156_B [0 objetos]Objetos: 
+Cluster 2,1 Prototipo: Maserati GT_S [7 objetos]Objetos: Lamborghini_S Aston Martin_S Ferrari_S Porsche_S Maserati GT_S Honda  NSK_S Mercedes SL_S 
+Cluster 2,2 Prototipo: Skoda Fabia_U [8 objetos]Objetos: Skoda Fabia_U Nissan Micra_U Punto_U Fiesta_U Lancia Y_U Corsa_U Twingo_U Rover 25_U 
+
+Critério de adequação (energia): 102.65068765
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,1	2,2	Total
+
+1	0	 0	 0	 0	 0	 2	 0	 8	 10
+2	1	 2	 2	 1	 1	 1	 0	 0	 8
+3	5	 0	 1	 0	 2	 0	 0	 0	 8
+4	0	 0	 0	 0	 0	 0	 7	 0	 7
+Total	[6 2 3 1 3 3 7 8]
+Corrected Rand index: 0.642850240612
+
+F-measure(P,Q): 0.751611351611
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 72
+
+Cluster 0,0 Prototipo: Audi A6_B [4 objetos]Objetos: Audi A6_B Lancia K_L Bmw serie 5_L Mercedes Classe E_L 
+Cluster 0,1 Prototipo: Bmw serie 7_L [3 objetos]Objetos: Bmw serie 7_L Mercedes Classe S_L Audi A8_L 
+Cluster 0,2 Prototipo: Vectra_B [4 objetos]Objetos: Skoda Octavia_B Vectra_B Passat_L Rover 75_B 
+Cluster 1,0 Prototipo: Bmw serie 3_B [4 objetos]Objetos: Alfa  156_B Bmw serie 3_B Mercedes Classe C_B Alfa  166_L 
+Cluster 1,1 Prototipo: Maserati GT_S [2 objetos]Objetos: Porsche_S Maserati GT_S 
+Cluster 1,2 Prototipo: Aston Martin_S [3 objetos]Objetos: Aston Martin_S Lamborghini_S Ferrari_S 
+Cluster 2,0 Prototipo: Skoda Fabia_U [8 objetos]Objetos: Punto_U Fiesta_U Lancia Y_U Nissan Micra_U Corsa_U Twingo_U Rover 25_U Skoda Fabia_U 
+Cluster 2,1 Prototipo: Alfa  145_U [3 objetos]Objetos: Audi A3_U Alfa  145_U Focus_B 
+Cluster 2,2 Prototipo: Honda  NSK_S [2 objetos]Objetos: Mercedes SL_S Honda  NSK_S 
+
+Critério de adequação (energia): 80.75775092
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	0	 0	 0	 0	 0	 0	 8	 2	 0	 10
+2	1	 0	 3	 3	 0	 0	 0	 1	 0	 8
+3	3	 3	 1	 1	 0	 0	 0	 0	 0	 8
+4	0	 0	 0	 0	 2	 3	 0	 0	 2	 7
+Total	[4 3 4 4 2 3 8 3 2]
+Corrected Rand index: 0.513956195112
+
+F-measure(P,Q): 0.650076522804
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 73
+
+Cluster 0,0 Prototipo: Nissan Micra_U [3 objetos]Objetos: Nissan Micra_U Twingo_U Fiesta_U 
+Cluster 0,1 Prototipo: Skoda Fabia_U [3 objetos]Objetos: Corsa_U Skoda Fabia_U Punto_U 
+Cluster 0,2 Prototipo: Lancia K_L [6 objetos]Objetos: Passat_L Rover 75_B Alfa  166_L Lancia K_L Audi A6_B Bmw serie 5_L 
+Cluster 1,0 Prototipo: Rover 25_U [1 objetos]Objetos: Rover 25_U 
+Cluster 1,1 Prototipo: Lancia Y_U [1 objetos]Objetos: Lancia Y_U 
+Cluster 1,2 Prototipo: Mercedes Classe C_B [2 objetos]Objetos: Mercedes Classe C_B Bmw serie 3_B 
+Cluster 2,0 Prototipo: Focus_B [6 objetos]Objetos: Alfa  145_U Focus_B Skoda Octavia_B Vectra_B Audi A3_U Alfa  156_B 
+Cluster 2,1 Prototipo: Bmw serie 7_L [4 objetos]Objetos: Audi A8_L Mercedes Classe S_L Bmw serie 7_L Mercedes Classe E_L 
+Cluster 2,2 Prototipo: Maserati GT_S [7 objetos]Objetos: Maserati GT_S Mercedes SL_S Aston Martin_S Ferrari_S Lamborghini_S Porsche_S Honda  NSK_S 
+
+Critério de adequação (energia): 100.182004465
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	3	 3	 0	 1	 1	 0	 2	 0	 0	 10
+2	0	 0	 2	 0	 0	 2	 4	 0	 0	 8
+3	0	 0	 4	 0	 0	 0	 0	 4	 0	 8
+4	0	 0	 0	 0	 0	 0	 0	 0	 7	 7
+Total	[3 3 6 1 1 2 6 4 7]
+Corrected Rand index: 0.516119178054
+
+F-measure(P,Q): 0.652125652126
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 74
+
+Cluster 0,0 Prototipo: Nissan Micra_U [4 objetos]Objetos: Fiesta_U Nissan Micra_U Twingo_U Lancia Y_U 
+Cluster 0,1 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Rover 25_U Skoda Fabia_U Corsa_U Punto_U 
+Cluster 0,2 Prototipo: Focus_B [4 objetos]Objetos: Focus_B Vectra_B Skoda Octavia_B Alfa  145_U 
+Cluster 1,0 Prototipo: Bmw serie 3_B [2 objetos]Objetos: Mercedes Classe C_B Bmw serie 3_B 
+Cluster 1,1 Prototipo: Alfa  166_L [2 objetos]Objetos: Alfa  166_L Lancia K_L 
+Cluster 1,2 Prototipo: Alfa  156_B [2 objetos]Objetos: Alfa  156_B Audi A3_U 
+Cluster 2,0 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S Mercedes SL_S Honda  NSK_S Maserati GT_S Porsche_S 
+Cluster 2,1 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+Cluster 2,2 Prototipo: Rover 75_B [2 objetos]Objetos: Rover 75_B Passat_L 
+
+Critério de adequação (energia): 96.8931790248
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	4	 4	 1	 0	 0	 1	 0	 0	 0	 10
+2	0	 0	 3	 2	 0	 1	 0	 1	 1	 8
+3	0	 0	 0	 0	 2	 0	 0	 5	 1	 8
+4	0	 0	 0	 0	 0	 0	 7	 0	 0	 7
+Total	[4 4 4 2 2 2 7 6 2]
+Corrected Rand index: 0.5333235127
+
+F-measure(P,Q): 0.679653679654
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 75
+
+Cluster 0,0 Prototipo: Bmw serie 7_L [3 objetos]Objetos: Mercedes Classe S_L Bmw serie 7_L Audi A8_L 
+Cluster 0,1 Prototipo: Aston Martin_S [3 objetos]Objetos: Aston Martin_S Lamborghini_S Ferrari_S 
+Cluster 0,2 Prototipo: Maserati GT_S [4 objetos]Objetos: Honda  NSK_S Maserati GT_S Mercedes SL_S Porsche_S 
+Cluster 1,0 Prototipo: Fiesta_U [1 objetos]Objetos: Fiesta_U 
+Cluster 1,1 Prototipo: Nissan Micra_U [3 objetos]Objetos: Twingo_U Nissan Micra_U Lancia Y_U 
+Cluster 1,2 Prototipo: Bmw serie 5_L [3 objetos]Objetos: Bmw serie 5_L Mercedes Classe E_L Audi A6_B 
+Cluster 2,0 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Punto_U Skoda Fabia_U Rover 25_U Corsa_U 
+Cluster 2,1 Prototipo: Focus_B [6 objetos]Objetos: Alfa  145_U Focus_B Skoda Octavia_B Vectra_B Audi A3_U Alfa  156_B 
+Cluster 2,2 Prototipo: Alfa  166_L [6 objetos]Objetos: Alfa  166_L Bmw serie 3_B Lancia K_L Mercedes Classe C_B Rover 75_B Passat_L 
+
+Critério de adequação (energia): 80.3550969601
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	0	 0	 0	 1	 3	 0	 4	 2	 0	 10
+2	0	 0	 0	 0	 0	 1	 0	 4	 3	 8
+3	3	 0	 0	 0	 0	 2	 0	 0	 3	 8
+4	0	 3	 4	 0	 0	 0	 0	 0	 0	 7
+Total	[3 3 4 1 3 3 4 6 6]
+Corrected Rand index: 0.397714310311
+
+F-measure(P,Q): 0.598189689099
+OERC: 0.181818181818
+
+#####################################
+Repetição do experimento: 76
+
+Cluster 0,0 Prototipo: Lancia Y_U [5 objetos]Objetos: Punto_U Fiesta_U Lancia Y_U Twingo_U Nissan Micra_U 
+Cluster 0,1 Prototipo: Rover 25_U [4 objetos]Objetos: Alfa  145_U Rover 25_U Corsa_U Skoda Fabia_U 
+Cluster 0,2 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Bmw serie 3_B Mercedes Classe C_B Alfa  156_B 
+Cluster 1,0 Prototipo: Skoda Octavia_B [4 objetos]Objetos: Vectra_B Skoda Octavia_B Focus_B Audi A3_U 
+Cluster 1,1 Prototipo: Rover 25_U [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Aston Martin_S [3 objetos]Objetos: Aston Martin_S Lamborghini_S Ferrari_S 
+Cluster 2,0 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+Cluster 2,1 Prototipo: Alfa  166_L [4 objetos]Objetos: Alfa  166_L Lancia K_L Rover 75_B Passat_L 
+Cluster 2,2 Prototipo: Maserati GT_S [4 objetos]Objetos: Honda  NSK_S Maserati GT_S Mercedes SL_S Porsche_S 
+
+Critério de adequação (energia): 89.6229576009
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,2	2,0	2,1	2,2	Total
+
+1	5	 4	 0	 1	 0	 0	 0	 0	 10
+2	0	 0	 3	 3	 0	 1	 1	 0	 8
+3	0	 0	 0	 0	 0	 5	 3	 0	 8
+4	0	 0	 0	 0	 3	 0	 0	 4	 7
+Total	[5 4 3 4 3 6 4 4]
+Corrected Rand index: 0.497164380337
+
+F-measure(P,Q): 0.661681752591
+OERC: 0.0909090909091
+
+#####################################
+Repetição do experimento: 77
+
+Cluster 0,0 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Lamborghini_S Mercedes SL_S Ferrari_S Honda  NSK_S Maserati GT_S Porsche_S 
+Cluster 0,1 Prototipo: Mercedes Classe C_B [1 objetos]Objetos: Mercedes Classe C_B 
+Cluster 0,2 Prototipo: Alfa  166_L [4 objetos]Objetos: Rover 75_B Alfa  166_L Passat_L Lancia K_L 
+Cluster 1,0 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+Cluster 1,1 Prototipo: Mercedes Classe C_B [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Focus_B [5 objetos]Objetos: Alfa  145_U Focus_B Skoda Octavia_B Audi A3_U Vectra_B 
+Cluster 2,0 Prototipo: Bmw serie 3_B [2 objetos]Objetos: Bmw serie 3_B Alfa  156_B 
+Cluster 2,1 Prototipo: Fiesta_U [1 objetos]Objetos: Fiesta_U 
+Cluster 2,2 Prototipo: Lancia Y_U [7 objetos]Objetos: Punto_U Lancia Y_U Nissan Micra_U Corsa_U Twingo_U Rover 25_U Skoda Fabia_U 
+
+Critério de adequação (energia): 103.14941639
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,2	2,0	2,1	2,2	Total
+
+1	0	 0	 0	 0	 2	 0	 1	 7	 10
+2	0	 1	 1	 1	 3	 2	 0	 0	 8
+3	0	 0	 3	 5	 0	 0	 0	 0	 8
+4	7	 0	 0	 0	 0	 0	 0	 0	 7
+Total	[7 1 4 6 5 2 1 7]
+Corrected Rand index: 0.612237404093
+
+F-measure(P,Q): 0.746723864371
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 78
+
+Cluster 0,0 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L Audi A6_B 
+Cluster 0,1 Prototipo: Alfa  166_L [3 objetos]Objetos: Lancia K_L Alfa  166_L Rover 75_B 
+Cluster 0,2 Prototipo: Maserati GT_S [7 objetos]Objetos: Maserati GT_S Honda  NSK_S Porsche_S Aston Martin_S Ferrari_S Lamborghini_S Mercedes SL_S 
+Cluster 1,0 Prototipo: Vectra_B [3 objetos]Objetos: Vectra_B Skoda Octavia_B Passat_L 
+Cluster 1,1 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Rover 25_U Skoda Fabia_U Corsa_U Punto_U 
+Cluster 1,2 Prototipo: Alfa  145_U [3 objetos]Objetos: Focus_B Alfa  145_U Audi A3_U 
+Cluster 2,0 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Alfa  156_B Bmw serie 3_B Mercedes Classe C_B 
+Cluster 2,1 Prototipo: Alfa  166_L [0 objetos]Objetos: 
+Cluster 2,2 Prototipo: Nissan Micra_U [4 objetos]Objetos: Fiesta_U Lancia Y_U Nissan Micra_U Twingo_U 
+
+Critério de adequação (energia): 98.7494286749
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,2	Total
+
+1	0	 0	 0	 0	 4	 2	 0	 4	 10
+2	1	 1	 0	 2	 0	 1	 3	 0	 8
+3	5	 2	 0	 1	 0	 0	 0	 0	 8
+4	0	 0	 7	 0	 0	 0	 0	 0	 7
+Total	[6 3 7 3 4 3 3 4]
+Corrected Rand index: 0.538451932483
+
+F-measure(P,Q): 0.6906729634
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 79
+
+Cluster 0,0 Prototipo: Alfa  166_L [3 objetos]Objetos: Alfa  166_L Rover 75_B Lancia K_L 
+Cluster 0,1 Prototipo: Alfa  156_B [3 objetos]Objetos: Alfa  156_B Audi A3_U Passat_L 
+Cluster 0,2 Prototipo: Nissan Micra_U [4 objetos]Objetos: Lancia Y_U Twingo_U Nissan Micra_U Fiesta_U 
+Cluster 1,0 Prototipo: Mercedes Classe C_B [2 objetos]Objetos: Mercedes Classe C_B Bmw serie 3_B 
+Cluster 1,1 Prototipo: Corsa_U [1 objetos]Objetos: Corsa_U 
+Cluster 1,2 Prototipo: Skoda Fabia_U [3 objetos]Objetos: Rover 25_U Skoda Fabia_U Punto_U 
+Cluster 2,0 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S Mercedes SL_S Honda  NSK_S Maserati GT_S Porsche_S 
+Cluster 2,1 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Bmw serie 5_L Audi A6_B Audi A8_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+Cluster 2,2 Prototipo: Focus_B [4 objetos]Objetos: Skoda Octavia_B Alfa  145_U Focus_B Vectra_B 
+
+Critério de adequação (energia): 98.1970418689
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	0	 1	 4	 0	 1	 3	 0	 0	 1	 10
+2	1	 1	 0	 2	 0	 0	 0	 1	 3	 8
+3	2	 1	 0	 0	 0	 0	 0	 5	 0	 8
+4	0	 0	 0	 0	 0	 0	 7	 0	 0	 7
+Total	[3 3 4 2 1 3 7 6 4]
+Corrected Rand index: 0.499989477893
+
+F-measure(P,Q): 0.679653679654
+OERC: 0.151515151515
+
+#####################################
+Repetição do experimento: 80
+
+Cluster 0,0 Prototipo: Alfa  166_L [3 objetos]Objetos: Rover 75_B Alfa  166_L Lancia K_L 
+Cluster 0,1 Prototipo: Bmw serie 5_L [3 objetos]Objetos: Audi A6_B Bmw serie 5_L Mercedes Classe E_L 
+Cluster 0,2 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S Mercedes SL_S Honda  NSK_S Maserati GT_S Porsche_S 
+Cluster 1,0 Prototipo: Nissan Micra_U [4 objetos]Objetos: Lancia Y_U Twingo_U Nissan Micra_U Fiesta_U 
+Cluster 1,1 Prototipo: Bmw serie 7_L [3 objetos]Objetos: Bmw serie 7_L Mercedes Classe S_L Audi A8_L 
+Cluster 1,2 Prototipo: Mercedes Classe C_B [2 objetos]Objetos: Mercedes Classe C_B Bmw serie 3_B 
+Cluster 2,0 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Punto_U Corsa_U Rover 25_U Skoda Fabia_U 
+Cluster 2,1 Prototipo: Alfa  145_U [3 objetos]Objetos: Audi A3_U Alfa  145_U Focus_B 
+Cluster 2,2 Prototipo: Vectra_B [4 objetos]Objetos: Alfa  156_B Vectra_B Skoda Octavia_B Passat_L 
+
+Critério de adequação (energia): 89.855866625
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	0	 0	 0	 4	 0	 0	 4	 2	 0	 10
+2	1	 1	 0	 0	 0	 2	 0	 1	 3	 8
+3	2	 2	 0	 0	 3	 0	 0	 0	 1	 8
+4	0	 0	 7	 0	 0	 0	 0	 0	 0	 7
+Total	[3 3 7 4 3 2 4 3 4]
+Corrected Rand index: 0.494241863503
+
+F-measure(P,Q): 0.638724911452
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 81
+
+Cluster 0,0 Prototipo: Bmw serie 7_L [3 objetos]Objetos: Audi A8_L Bmw serie 7_L Mercedes Classe S_L 
+Cluster 0,1 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Ferrari_S Honda  NSK_S Lamborghini_S Maserati GT_S Mercedes SL_S Porsche_S 
+Cluster 0,2 Prototipo: Maserati GT_S [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: Audi A6_B [3 objetos]Objetos: Audi A6_B Lancia K_L Bmw serie 5_L 
+Cluster 1,1 Prototipo: Mercedes Classe E_L [1 objetos]Objetos: Mercedes Classe E_L 
+Cluster 1,2 Prototipo: Maserati GT_S [0 objetos]Objetos: 
+Cluster 2,0 Prototipo: Bmw serie 3_B [6 objetos]Objetos: Rover 75_B Passat_L Alfa  166_L Alfa  156_B Bmw serie 3_B Mercedes Classe C_B 
+Cluster 2,1 Prototipo: Focus_B [5 objetos]Objetos: Focus_B Alfa  145_U Skoda Octavia_B Vectra_B Audi A3_U 
+Cluster 2,2 Prototipo: Skoda Fabia_U [8 objetos]Objetos: Punto_U Fiesta_U Nissan Micra_U Corsa_U Twingo_U Rover 25_U Skoda Fabia_U Lancia Y_U 
+
+Critério de adequação (energia): 105.0432047
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	2,2	Total
+
+1	0	 0	 0	 0	 0	 2	 8	 10
+2	0	 0	 1	 0	 4	 3	 0	 8
+3	3	 0	 2	 1	 2	 0	 0	 8
+4	0	 7	 0	 0	 0	 0	 0	 7
+Total	[3 7 3 1 6 5 8]
+Corrected Rand index: 0.633656496709
+
+F-measure(P,Q): 0.752241024968
+OERC: 0.151515151515
+
+#####################################
+Repetição do experimento: 82
+
+Cluster 0,0 Prototipo: Audi A6_B [5 objetos]Objetos: Alfa  166_L Audi A6_B Bmw serie 5_L Lancia K_L Mercedes Classe E_L 
+Cluster 0,1 Prototipo: Alfa  156_B [8 objetos]Objetos: Alfa  156_B Audi A3_U Vectra_B Bmw serie 3_B Passat_L Skoda Octavia_B Rover 75_B Mercedes Classe C_B 
+Cluster 0,2 Prototipo: Rover 25_U [5 objetos]Objetos: Alfa  145_U Focus_B Corsa_U Rover 25_U Skoda Fabia_U 
+Cluster 1,0 Prototipo: Alfa  156_B [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Mercedes SL_S [1 objetos]Objetos: Mercedes SL_S 
+Cluster 1,2 Prototipo: Lancia Y_U [5 objetos]Objetos: Lancia Y_U Nissan Micra_U Twingo_U Punto_U Fiesta_U 
+Cluster 2,0 Prototipo: Maserati GT_S [3 objetos]Objetos: Maserati GT_S Porsche_S Honda  NSK_S 
+Cluster 2,1 Prototipo: Aston Martin_S [3 objetos]Objetos: Ferrari_S Aston Martin_S Lamborghini_S 
+Cluster 2,2 Prototipo: Bmw serie 7_L [3 objetos]Objetos: Mercedes Classe S_L Bmw serie 7_L Audi A8_L 
+
+Critério de adequação (energia): 88.017814085
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,1	1,2	2,0	2,1	2,2	Total
+
+1	0	 1	 4	 0	 5	 0	 0	 0	 10
+2	1	 6	 1	 0	 0	 0	 0	 0	 8
+3	4	 1	 0	 0	 0	 0	 0	 3	 8
+4	0	 0	 0	 1	 0	 3	 3	 0	 7
+Total	[5 8 5 1 5 3 3 3]
+Corrected Rand index: 0.486762200621
+
+F-measure(P,Q): 0.660295260295
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 83
+
+Cluster 0,0 Prototipo: Vectra_B [4 objetos]Objetos: Vectra_B Skoda Octavia_B Passat_L Rover 75_B 
+Cluster 0,1 Prototipo: Bmw serie 3_B [5 objetos]Objetos: Mercedes Classe C_B Bmw serie 3_B Alfa  166_L Lancia K_L Alfa  156_B 
+Cluster 0,2 Prototipo: Bmw serie 7_L [3 objetos]Objetos: Audi A8_L Bmw serie 7_L Mercedes Classe S_L 
+Cluster 1,0 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Corsa_U Skoda Fabia_U Punto_U Rover 25_U 
+Cluster 1,1 Prototipo: Vectra_B [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Bmw serie 5_L [3 objetos]Objetos: Audi A6_B Bmw serie 5_L Mercedes Classe E_L 
+Cluster 2,0 Prototipo: Nissan Micra_U [4 objetos]Objetos: Fiesta_U Lancia Y_U Nissan Micra_U Twingo_U 
+Cluster 2,1 Prototipo: Alfa  145_U [3 objetos]Objetos: Alfa  145_U Audi A3_U Focus_B 
+Cluster 2,2 Prototipo: Maserati GT_S [7 objetos]Objetos: Ferrari_S Honda  NSK_S Lamborghini_S Maserati GT_S Porsche_S Aston Martin_S Mercedes SL_S 
+
+Critério de adequação (energia): 96.8862899348
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,2	2,0	2,1	2,2	Total
+
+1	0	 0	 0	 4	 0	 4	 2	 0	 10
+2	3	 3	 0	 0	 1	 0	 1	 0	 8
+3	1	 2	 3	 0	 2	 0	 0	 0	 8
+4	0	 0	 0	 0	 0	 0	 0	 7	 7
+Total	[4 5 3 4 3 4 3 7]
+Corrected Rand index: 0.499989477893
+
+F-measure(P,Q): 0.638724911452
+OERC: 0.151515151515
+
+#####################################
+Repetição do experimento: 84
+
+Cluster 0,0 Prototipo: Alfa  145_U [4 objetos]Objetos: Alfa  145_U Focus_B Audi A3_U Skoda Octavia_B 
+Cluster 0,1 Prototipo: Nissan Micra_U [4 objetos]Objetos: Lancia Y_U Nissan Micra_U Twingo_U Fiesta_U 
+Cluster 0,2 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Corsa_U Skoda Fabia_U Punto_U Rover 25_U 
+Cluster 1,0 Prototipo: Bmw serie 7_L [3 objetos]Objetos: Bmw serie 7_L Mercedes Classe S_L Audi A8_L 
+Cluster 1,1 Prototipo: Skoda Fabia_U [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Bmw serie 5_L [3 objetos]Objetos: Bmw serie 5_L Audi A6_B Mercedes Classe E_L 
+Cluster 2,0 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S Mercedes SL_S Honda  NSK_S Maserati GT_S Porsche_S 
+Cluster 2,1 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Mercedes Classe C_B Bmw serie 3_B Alfa  156_B 
+Cluster 2,2 Prototipo: Rover 75_B [5 objetos]Objetos: Alfa  166_L Lancia K_L Vectra_B Rover 75_B Passat_L 
+
+Critério de adequação (energia): 94.8993439549
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,2	2,0	2,1	2,2	Total
+
+1	2	 4	 4	 0	 0	 0	 0	 0	 10
+2	2	 0	 0	 0	 1	 0	 3	 2	 8
+3	0	 0	 0	 3	 2	 0	 0	 3	 8
+4	0	 0	 0	 0	 0	 7	 0	 0	 7
+Total	[4 4 4 3 3 7 3 5]
+Corrected Rand index: 0.511100822829
+
+F-measure(P,Q): 0.649744195199
+OERC: 0.151515151515
+
+#####################################
+Repetição do experimento: 85
+
+Cluster 0,0 Prototipo: Skoda Fabia_U [8 objetos]Objetos: Punto_U Lancia Y_U Corsa_U Twingo_U Skoda Fabia_U Fiesta_U Nissan Micra_U Rover 25_U 
+Cluster 0,1 Prototipo: Focus_B [4 objetos]Objetos: Alfa  145_U Focus_B Skoda Octavia_B Vectra_B 
+Cluster 0,2 Prototipo: Alfa  166_L [3 objetos]Objetos: Rover 75_B Alfa  166_L Lancia K_L 
+Cluster 1,0 Prototipo: Audi A3_U [1 objetos]Objetos: Audi A3_U 
+Cluster 1,1 Prototipo: Bmw serie 5_L [3 objetos]Objetos: Audi A6_B Bmw serie 5_L Mercedes Classe E_L 
+Cluster 1,2 Prototipo: Mercedes Classe C_B [2 objetos]Objetos: Mercedes Classe C_B Bmw serie 3_B 
+Cluster 2,0 Prototipo: Alfa  156_B [2 objetos]Objetos: Alfa  156_B Passat_L 
+Cluster 2,1 Prototipo: Bmw serie 7_L [3 objetos]Objetos: Audi A8_L Bmw serie 7_L Mercedes Classe S_L 
+Cluster 2,2 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S Maserati GT_S Mercedes SL_S Porsche_S Honda  NSK_S 
+
+Critério de adequação (energia): 94.5055403938
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	8	 1	 0	 1	 0	 0	 0	 0	 0	 10
+2	0	 3	 1	 0	 1	 2	 1	 0	 0	 8
+3	0	 0	 2	 0	 2	 0	 1	 3	 0	 8
+4	0	 0	 0	 0	 0	 0	 0	 0	 7	 7
+Total	[8 4 3 1 3 2 2 3 7]
+Corrected Rand index: 0.617013560073
+
+F-measure(P,Q): 0.734925007652
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 86
+
+Cluster 0,0 Prototipo: Skoda Fabia_U [8 objetos]Objetos: Punto_U Fiesta_U Nissan Micra_U Corsa_U Twingo_U Rover 25_U Skoda Fabia_U Lancia Y_U 
+Cluster 0,1 Prototipo: Alfa  156_B [12 objetos]Objetos: Alfa  145_U Focus_B Skoda Octavia_B Alfa  156_B Alfa  166_L Audi A3_U Bmw serie 3_B Lancia K_L Mercedes Classe C_B Vectra_B Rover 75_B Passat_L 
+Cluster 0,2 Prototipo: Alfa  156_B [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: Alfa  156_B [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Alfa  156_B [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Bmw serie 5_L Audi A8_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+Cluster 2,0 Prototipo: Alfa  156_B [0 objetos]Objetos: 
+Cluster 2,1 Prototipo: Maserati GT_S [7 objetos]Objetos: Lamborghini_S Aston Martin_S Ferrari_S Porsche_S Maserati GT_S Mercedes SL_S Honda  NSK_S 
+Cluster 2,2 Prototipo: Alfa  156_B [0 objetos]Objetos: 
+
+Critério de adequação (energia): 125.438204085
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,2	2,1	Total
+
+1	8	 2	 0	 0	 10
+2	0	 7	 1	 0	 8
+3	0	 3	 5	 0	 8
+4	0	 0	 0	 7	 7
+Total	[ 8 12  6  7]
+Corrected Rand index: 0.66666165617
+
+F-measure(P,Q): 0.824338624339
+OERC: 0.181818181818
+
+#####################################
+Repetição do experimento: 87
+
+Cluster 0,0 Prototipo: Alfa  156_B [6 objetos]Objetos: Alfa  156_B Audi A3_U Vectra_B Bmw serie 3_B Mercedes Classe C_B Skoda Octavia_B 
+Cluster 0,1 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Ferrari_S Honda  NSK_S Lamborghini_S Maserati GT_S Mercedes SL_S Porsche_S 
+Cluster 0,2 Prototipo: Maserati GT_S [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: Rover 25_U [5 objetos]Objetos: Alfa  145_U Focus_B Corsa_U Rover 25_U Skoda Fabia_U 
+Cluster 1,1 Prototipo: Rover 75_B [2 objetos]Objetos: Rover 75_B Passat_L 
+Cluster 1,2 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Bmw serie 5_L Mercedes Classe E_L Audi A8_L Audi A6_B Bmw serie 7_L Mercedes Classe S_L 
+Cluster 2,0 Prototipo: Rover 25_U [0 objetos]Objetos: 
+Cluster 2,1 Prototipo: Lancia Y_U [5 objetos]Objetos: Nissan Micra_U Twingo_U Lancia Y_U Punto_U Fiesta_U 
+Cluster 2,2 Prototipo: Alfa  166_L [2 objetos]Objetos: Alfa  166_L Lancia K_L 
+
+Critério de adequação (energia): 108.781492701
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	1,2	2,1	2,2	Total
+
+1	1	 0	 4	 0	 0	 5	 0	 10
+2	5	 0	 1	 1	 1	 0	 0	 8
+3	0	 0	 0	 1	 5	 0	 2	 8
+4	0	 7	 0	 0	 0	 0	 0	 7
+Total	[6 7 5 2 6 5 2]
+Corrected Rand index: 0.594863925096
+
+F-measure(P,Q): 0.760461760462
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 88
+
+Cluster 0,0 Prototipo: Vectra_B [5 objetos]Objetos: Vectra_B Focus_B Passat_L Alfa  156_B Skoda Octavia_B 
+Cluster 0,1 Prototipo: Twingo_U [1 objetos]Objetos: Twingo_U 
+Cluster 0,2 Prototipo: Nissan Micra_U [3 objetos]Objetos: Fiesta_U Lancia Y_U Nissan Micra_U 
+Cluster 1,0 Prototipo: Mercedes Classe C_B [2 objetos]Objetos: Bmw serie 3_B Mercedes Classe C_B 
+Cluster 1,1 Prototipo: Maserati GT_S [7 objetos]Objetos: Ferrari_S Aston Martin_S Lamborghini_S Porsche_S Maserati GT_S Mercedes SL_S Honda  NSK_S 
+Cluster 1,2 Prototipo: Audi A3_U [2 objetos]Objetos: Audi A3_U Alfa  145_U 
+Cluster 2,0 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L Audi A6_B 
+Cluster 2,1 Prototipo: Alfa  166_L [3 objetos]Objetos: Lancia K_L Alfa  166_L Rover 75_B 
+Cluster 2,2 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Corsa_U Skoda Fabia_U Rover 25_U Punto_U 
+
+Critério de adequação (energia): 96.7691893961
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	0	 1	 3	 0	 0	 2	 0	 0	 4	 10
+2	4	 0	 0	 2	 0	 0	 1	 1	 0	 8
+3	1	 0	 0	 0	 0	 0	 5	 2	 0	 8
+4	0	 0	 0	 0	 7	 0	 0	 0	 0	 7
+Total	[5 1 3 2 7 2 6 3 4]
+Corrected Rand index: 0.538451932483
+
+F-measure(P,Q): 0.707625707626
+OERC: 0.0909090909091
+
+#####################################
+Repetição do experimento: 89
+
+Cluster 0,0 Prototipo: Maserati GT_S [4 objetos]Objetos: Honda  NSK_S Maserati GT_S Porsche_S Mercedes SL_S 
+Cluster 0,1 Prototipo: Alfa  156_B [6 objetos]Objetos: Alfa  156_B Bmw serie 3_B Audi A3_U Vectra_B Skoda Octavia_B Mercedes Classe C_B 
+Cluster 0,2 Prototipo: Rover 25_U [6 objetos]Objetos: Alfa  145_U Punto_U Focus_B Corsa_U Rover 25_U Skoda Fabia_U 
+Cluster 1,0 Prototipo: Aston Martin_S [3 objetos]Objetos: Aston Martin_S Lamborghini_S Ferrari_S 
+Cluster 1,1 Prototipo: Bmw serie 7_L [3 objetos]Objetos: Bmw serie 7_L Mercedes Classe S_L Audi A8_L 
+Cluster 1,2 Prototipo: Rover 75_B [3 objetos]Objetos: Passat_L Rover 75_B Alfa  166_L 
+Cluster 2,0 Prototipo: Nissan Micra_U [4 objetos]Objetos: Twingo_U Nissan Micra_U Lancia Y_U Fiesta_U 
+Cluster 2,1 Prototipo: Bmw serie 5_L [2 objetos]Objetos: Bmw serie 5_L Mercedes Classe E_L 
+Cluster 2,2 Prototipo: Audi A6_B [2 objetos]Objetos: Audi A6_B Lancia K_L 
+
+Critério de adequação (energia): 85.1741961261
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	0	 1	 5	 0	 0	 0	 4	 0	 0	 10
+2	0	 5	 1	 0	 0	 1	 0	 0	 1	 8
+3	0	 0	 0	 0	 3	 2	 0	 2	 1	 8
+4	4	 0	 0	 3	 0	 0	 0	 0	 0	 7
+Total	[4 6 6 3 3 3 4 2 2]
+Corrected Rand index: 0.457131106734
+
+F-measure(P,Q): 0.649055489965
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 90
+
+Cluster 0,0 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S Honda  NSK_S Maserati GT_S Mercedes SL_S Porsche_S 
+Cluster 0,1 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+Cluster 0,2 Prototipo: Bmw serie 5_L [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: Alfa  145_U [3 objetos]Objetos: Alfa  145_U Audi A3_U Focus_B 
+Cluster 1,1 Prototipo: Bmw serie 5_L [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Alfa  166_L [3 objetos]Objetos: Lancia K_L Rover 75_B Alfa  166_L 
+Cluster 2,0 Prototipo: Skoda Fabia_U [8 objetos]Objetos: Punto_U Fiesta_U Lancia Y_U Nissan Micra_U Corsa_U Rover 25_U Skoda Fabia_U Twingo_U 
+Cluster 2,1 Prototipo: Vectra_B [3 objetos]Objetos: Skoda Octavia_B Vectra_B Passat_L 
+Cluster 2,2 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Alfa  156_B Bmw serie 3_B Mercedes Classe C_B 
+
+Critério de adequação (energia): 105.02067675
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,2	2,0	2,1	2,2	Total
+
+1	0	 0	 2	 0	 8	 0	 0	 10
+2	0	 1	 1	 1	 0	 2	 3	 8
+3	0	 5	 0	 2	 0	 1	 0	 8
+4	7	 0	 0	 0	 0	 0	 0	 7
+Total	[7 6 3 3 8 3 3]
+Corrected Rand index: 0.6565590863
+
+F-measure(P,Q): 0.7868730596
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 91
+
+Cluster 0,0 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A8_L Bmw serie 7_L Mercedes Classe S_L Audi A6_B Bmw serie 5_L Mercedes Classe E_L 
+Cluster 0,1 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Ferrari_S Honda  NSK_S Lamborghini_S Maserati GT_S Mercedes SL_S Porsche_S 
+Cluster 0,2 Prototipo: Maserati GT_S [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: Alfa  166_L [3 objetos]Objetos: Lancia K_L Alfa  166_L Rover 75_B 
+Cluster 1,1 Prototipo: Audi A3_U [1 objetos]Objetos: Audi A3_U 
+Cluster 1,2 Prototipo: Alfa  145_U [2 objetos]Objetos: Alfa  145_U Focus_B 
+Cluster 2,0 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Bmw serie 3_B Mercedes Classe C_B Alfa  156_B 
+Cluster 2,1 Prototipo: Vectra_B [3 objetos]Objetos: Vectra_B Skoda Octavia_B Passat_L 
+Cluster 2,2 Prototipo: Skoda Fabia_U [8 objetos]Objetos: Punto_U Fiesta_U Lancia Y_U Nissan Micra_U Corsa_U Twingo_U Rover 25_U Skoda Fabia_U 
+
+Critério de adequação (energia): 102.62244505
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	0	 0	 0	 1	 1	 0	 0	 8	 10
+2	1	 0	 1	 0	 1	 3	 2	 0	 8
+3	5	 0	 2	 0	 0	 0	 1	 0	 8
+4	0	 7	 0	 0	 0	 0	 0	 0	 7
+Total	[6 7 3 1 2 3 3 8]
+Corrected Rand index: 0.653054519452
+
+F-measure(P,Q): 0.7868730596
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 92
+
+Cluster 0,0 Prototipo: Bmw serie 7_L [3 objetos]Objetos: Bmw serie 7_L Mercedes Classe S_L Audi A8_L 
+Cluster 0,1 Prototipo: Bmw serie 5_L [2 objetos]Objetos: Bmw serie 5_L Mercedes Classe E_L 
+Cluster 0,2 Prototipo: Skoda Fabia_U [8 objetos]Objetos: Punto_U Fiesta_U Nissan Micra_U Corsa_U Twingo_U Skoda Fabia_U Lancia Y_U Rover 25_U 
+Cluster 1,0 Prototipo: Audi A6_B [1 objetos]Objetos: Audi A6_B 
+Cluster 1,1 Prototipo: Alfa  166_L [4 objetos]Objetos: Passat_L Lancia K_L Rover 75_B Alfa  166_L 
+Cluster 1,2 Prototipo: Focus_B [5 objetos]Objetos: Alfa  145_U Focus_B Skoda Octavia_B Vectra_B Audi A3_U 
+Cluster 2,0 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Ferrari_S Honda  NSK_S Lamborghini_S Maserati GT_S Mercedes SL_S Porsche_S 
+Cluster 2,1 Prototipo: Audi A6_B [0 objetos]Objetos: 
+Cluster 2,2 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Alfa  156_B Bmw serie 3_B Mercedes Classe C_B 
+
+Critério de adequação (energia): 98.6437285998
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,2	Total
+
+1	0	 0	 8	 0	 0	 2	 0	 0	 10
+2	0	 0	 0	 1	 1	 3	 0	 3	 8
+3	3	 2	 0	 0	 3	 0	 0	 0	 8
+4	0	 0	 0	 0	 0	 0	 7	 0	 7
+Total	[3 2 8 1 4 5 7 3]
+Corrected Rand index: 0.649477692082
+
+F-measure(P,Q): 0.745944291399
+OERC: 0.0909090909091
+
+#####################################
+Repetição do experimento: 93
+
+Cluster 0,0 Prototipo: Maserati GT_S [7 objetos]Objetos: Maserati GT_S Porsche_S Honda  NSK_S Aston Martin_S Ferrari_S Lamborghini_S Mercedes SL_S 
+Cluster 0,1 Prototipo: Alfa  166_L [3 objetos]Objetos: Alfa  166_L Rover 75_B Lancia K_L 
+Cluster 0,2 Prototipo: Bmw serie 5_L [4 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L 
+Cluster 1,0 Prototipo: Alfa  145_U [3 objetos]Objetos: Alfa  145_U Focus_B Audi A3_U 
+Cluster 1,1 Prototipo: Vectra_B [3 objetos]Objetos: Skoda Octavia_B Vectra_B Passat_L 
+Cluster 1,2 Prototipo: Mercedes Classe E_L [2 objetos]Objetos: Mercedes Classe E_L Mercedes Classe S_L 
+Cluster 2,0 Prototipo: Nissan Micra_U [4 objetos]Objetos: Fiesta_U Lancia Y_U Nissan Micra_U Twingo_U 
+Cluster 2,1 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Rover 25_U Skoda Fabia_U Punto_U Corsa_U 
+Cluster 2,2 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Alfa  156_B Bmw serie 3_B Mercedes Classe C_B 
+
+Critério de adequação (energia): 94.9902755248
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	0	 0	 0	 2	 0	 0	 4	 4	 0	 10
+2	0	 1	 1	 1	 2	 0	 0	 0	 3	 8
+3	0	 2	 3	 0	 1	 2	 0	 0	 0	 8
+4	7	 0	 0	 0	 0	 0	 0	 0	 0	 7
+Total	[7 3 4 3 3 2 4 4 3]
+Corrected Rand index: 0.494241863503
+
+F-measure(P,Q): 0.638724911452
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 94
+
+Cluster 0,0 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Alfa  156_B Bmw serie 3_B Mercedes Classe C_B 
+Cluster 0,1 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Skoda Fabia_U Corsa_U Rover 25_U Punto_U 
+Cluster 0,2 Prototipo: Nissan Micra_U [4 objetos]Objetos: Fiesta_U Lancia Y_U Nissan Micra_U Twingo_U 
+Cluster 1,0 Prototipo: Aston Martin_S [3 objetos]Objetos: Aston Martin_S Lamborghini_S Ferrari_S 
+Cluster 1,1 Prototipo: Vectra_B [3 objetos]Objetos: Vectra_B Skoda Octavia_B Passat_L 
+Cluster 1,2 Prototipo: Alfa  145_U [3 objetos]Objetos: Focus_B Alfa  145_U Audi A3_U 
+Cluster 2,0 Prototipo: Maserati GT_S [4 objetos]Objetos: Mercedes SL_S Porsche_S Honda  NSK_S Maserati GT_S 
+Cluster 2,1 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Audi A6_B Audi A8_L Mercedes Classe S_L 
+Cluster 2,2 Prototipo: Alfa  166_L [3 objetos]Objetos: Lancia K_L Alfa  166_L Rover 75_B 
+
+Critério de adequação (energia): 82.105929305
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	0	 4	 4	 0	 0	 2	 0	 0	 0	 10
+2	3	 0	 0	 0	 2	 1	 0	 1	 1	 8
+3	0	 0	 0	 0	 1	 0	 0	 5	 2	 8
+4	0	 0	 0	 3	 0	 0	 4	 0	 0	 7
+Total	[3 4 4 3 3 3 4 6 3]
+Corrected Rand index: 0.435281534794
+
+F-measure(P,Q): 0.632821723731
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 95
+
+Cluster 0,0 Prototipo: Alfa  145_U [3 objetos]Objetos: Alfa  145_U Audi A3_U Focus_B 
+Cluster 0,1 Prototipo: Rover 25_U [1 objetos]Objetos: Rover 25_U 
+Cluster 0,2 Prototipo: Nissan Micra_U [4 objetos]Objetos: Nissan Micra_U Twingo_U Lancia Y_U Fiesta_U 
+Cluster 1,0 Prototipo: Vectra_B [4 objetos]Objetos: Vectra_B Passat_L Skoda Octavia_B Rover 75_B 
+Cluster 1,1 Prototipo: Skoda Fabia_U [3 objetos]Objetos: Corsa_U Skoda Fabia_U Punto_U 
+Cluster 1,2 Prototipo: Lamborghini_S [1 objetos]Objetos: Lamborghini_S 
+Cluster 2,0 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Mercedes Classe E_L Mercedes Classe S_L Bmw serie 7_L 
+Cluster 2,1 Prototipo: Bmw serie 3_B [5 objetos]Objetos: Mercedes Classe C_B Bmw serie 3_B Alfa  166_L Alfa  156_B Lancia K_L 
+Cluster 2,2 Prototipo: Maserati GT_S [6 objetos]Objetos: Aston Martin_S Ferrari_S Honda  NSK_S Maserati GT_S Porsche_S Mercedes SL_S 
+
+Critério de adequação (energia): 88.2552734351
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	2	 1	 4	 0	 3	 0	 0	 0	 0	 10
+2	1	 0	 0	 3	 0	 0	 1	 3	 0	 8
+3	0	 0	 0	 1	 0	 0	 5	 2	 0	 8
+4	0	 0	 0	 0	 0	 1	 0	 0	 6	 7
+Total	[3 1 4 4 3 1 6 5 6]
+Corrected Rand index: 0.466655443086
+
+F-measure(P,Q): 0.663336663337
+OERC: 0.151515151515
+
+#####################################
+Repetição do experimento: 96
+
+Cluster 0,0 Prototipo: Bmw serie 7_L [5 objetos]Objetos: Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+Cluster 0,1 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Mercedes Classe C_B Bmw serie 3_B Alfa  156_B 
+Cluster 0,2 Prototipo: Maserati GT_S [7 objetos]Objetos: Aston Martin_S Ferrari_S Honda  NSK_S Lamborghini_S Maserati GT_S Mercedes SL_S Porsche_S 
+Cluster 1,0 Prototipo: Alfa  166_L [5 objetos]Objetos: Audi A6_B Lancia K_L Alfa  166_L Rover 75_B Passat_L 
+Cluster 1,1 Prototipo: Twingo_U [1 objetos]Objetos: Twingo_U 
+Cluster 1,2 Prototipo: Maserati GT_S [0 objetos]Objetos: 
+Cluster 2,0 Prototipo: Skoda Fabia_U [5 objetos]Objetos: Punto_U Fiesta_U Corsa_U Rover 25_U Skoda Fabia_U 
+Cluster 2,1 Prototipo: Lancia Y_U [2 objetos]Objetos: Lancia Y_U Nissan Micra_U 
+Cluster 2,2 Prototipo: Focus_B [5 objetos]Objetos: Audi A3_U Alfa  145_U Focus_B Vectra_B Skoda Octavia_B 
+
+Critério de adequação (energia): 101.06392172
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	2,0	2,1	2,2	Total
+
+1	0	 0	 0	 0	 1	 5	 2	 2	 10
+2	0	 3	 0	 2	 0	 0	 0	 3	 8
+3	5	 0	 0	 3	 0	 0	 0	 0	 8
+4	0	 0	 7	 0	 0	 0	 0	 0	 7
+Total	[5 3 7 5 1 5 2 5]
+Corrected Rand index: 0.566836145603
+
+F-measure(P,Q): 0.73285300558
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 97
+
+Cluster 0,0 Prototipo: Maserati GT_S [7 objetos]Objetos: Honda  NSK_S Maserati GT_S Porsche_S Aston Martin_S Ferrari_S Lamborghini_S Mercedes SL_S 
+Cluster 0,1 Prototipo: Audi A3_U [1 objetos]Objetos: Audi A3_U 
+Cluster 0,2 Prototipo: Nissan Micra_U [4 objetos]Objetos: Lancia Y_U Nissan Micra_U Twingo_U Fiesta_U 
+Cluster 1,0 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+Cluster 1,1 Prototipo: Alfa  145_U [2 objetos]Objetos: Alfa  145_U Focus_B 
+Cluster 1,2 Prototipo: Skoda Fabia_U [4 objetos]Objetos: Skoda Fabia_U Corsa_U Rover 25_U Punto_U 
+Cluster 2,0 Prototipo: Bmw serie 5_L [0 objetos]Objetos: 
+Cluster 2,1 Prototipo: Bmw serie 3_B [5 objetos]Objetos: Alfa  156_B Alfa  166_L Bmw serie 3_B Mercedes Classe C_B Lancia K_L 
+Cluster 2,2 Prototipo: Vectra_B [4 objetos]Objetos: Vectra_B Rover 75_B Skoda Octavia_B Passat_L 
+
+Critério de adequação (energia): 103.700661085
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,1	2,2	Total
+
+1	0	 1	 4	 0	 1	 4	 0	 0	 10
+2	0	 0	 0	 1	 1	 0	 3	 3	 8
+3	0	 0	 0	 5	 0	 0	 2	 1	 8
+4	7	 0	 0	 0	 0	 0	 0	 0	 7
+Total	[7 1 4 6 2 4 5 4]
+Corrected Rand index: 0.534749934167
+
+F-measure(P,Q): 0.679653679654
+OERC: 0.151515151515
+
+#####################################
+Repetição do experimento: 98
+
+Cluster 0,0 Prototipo: Skoda Fabia_U [8 objetos]Objetos: Fiesta_U Lancia Y_U Corsa_U Twingo_U Rover 25_U Punto_U Nissan Micra_U Skoda Fabia_U 
+Cluster 0,1 Prototipo: Alfa  166_L [3 objetos]Objetos: Alfa  166_L Rover 75_B Lancia K_L 
+Cluster 0,2 Prototipo: Vectra_B [3 objetos]Objetos: Vectra_B Passat_L Skoda Octavia_B 
+Cluster 1,0 Prototipo: Alfa  145_U [3 objetos]Objetos: Alfa  145_U Audi A3_U Focus_B 
+Cluster 1,1 Prototipo: Maserati GT_S [7 objetos]Objetos: Maserati GT_S Porsche_S Honda  NSK_S Aston Martin_S Ferrari_S Lamborghini_S Mercedes SL_S 
+Cluster 1,2 Prototipo: Bmw serie 7_L [3 objetos]Objetos: Bmw serie 7_L Mercedes Classe S_L Audi A8_L 
+Cluster 2,0 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Alfa  156_B Bmw serie 3_B Mercedes Classe C_B 
+Cluster 2,1 Prototipo: Bmw serie 5_L [2 objetos]Objetos: Audi A6_B Bmw serie 5_L 
+Cluster 2,2 Prototipo: Mercedes Classe E_L [1 objetos]Objetos: Mercedes Classe E_L 
+
+Critério de adequação (energia): 93.5210589501
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	8	 0	 0	 2	 0	 0	 0	 0	 0	 10
+2	0	 1	 2	 1	 0	 0	 3	 1	 0	 8
+3	0	 2	 1	 0	 0	 3	 0	 1	 1	 8
+4	0	 0	 0	 0	 7	 0	 0	 0	 0	 7
+Total	[8 3 3 3 7 3 3 2 1]
+Corrected Rand index: 0.620313164665
+
+F-measure(P,Q): 0.745944291399
+OERC: 0.121212121212
+
+#####################################
+Repetição do experimento: 99
+
+Cluster 0,0 Prototipo: Bmw serie 5_L [6 objetos]Objetos: Audi A6_B Audi A8_L Bmw serie 5_L Bmw serie 7_L Mercedes Classe E_L Mercedes Classe S_L 
+Cluster 0,1 Prototipo: Bmw serie 3_B [3 objetos]Objetos: Bmw serie 3_B Mercedes Classe C_B Alfa  156_B 
+Cluster 0,2 Prototipo: Skoda Fabia_U [8 objetos]Objetos: Punto_U Fiesta_U Lancia Y_U Nissan Micra_U Corsa_U Twingo_U Rover 25_U Skoda Fabia_U 
+Cluster 1,0 Prototipo: Alfa  166_L [3 objetos]Objetos: Alfa  166_L Lancia K_L Rover 75_B 
+Cluster 1,1 Prototipo: Maserati GT_S [3 objetos]Objetos: Porsche_S Maserati GT_S Honda  NSK_S 
+Cluster 1,2 Prototipo: Alfa  145_U [3 objetos]Objetos: Alfa  145_U Audi A3_U Focus_B 
+Cluster 2,0 Prototipo: Aston Martin_S [3 objetos]Objetos: Aston Martin_S Ferrari_S Lamborghini_S 
+Cluster 2,1 Prototipo: Mercedes SL_S [1 objetos]Objetos: Mercedes SL_S 
+Cluster 2,2 Prototipo: Vectra_B [3 objetos]Objetos: Vectra_B Passat_L Skoda Octavia_B 
+
+Critério de adequação (energia): 82.1391125799
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	2,0	2,1	2,2	Total
+
+1	0	 0	 8	 0	 0	 2	 0	 0	 0	 10
+2	1	 3	 0	 1	 0	 1	 0	 0	 2	 8
+3	5	 0	 0	 2	 0	 0	 0	 0	 1	 8
+4	0	 0	 0	 0	 3	 0	 3	 1	 0	 7
+Total	[6 3 8 3 3 3 3 1 3]
+Corrected Rand index: 0.546438699261
+
+F-measure(P,Q): 0.702024574752
+OERC: 0.121212121212
+
+Melhor repetição: 66
+Menor oerc: 0

@@ -1,0 +1,2909 @@
+Parâmetros iniciais
+
+Topologia: 2x4
+Cardinalidade (q): 1
+Tmin: 0.003Tmax: 1.5
+Número de iterações: 500.0
+
+#####################################
+Repetição do experimento: 0
+
+Cluster 0,0 Prototipo: Dorasmicropoeus [2 objetos]Objetos: Cynodongibbus Dorasmicropoeus 
+Cluster 0,1 Prototipo: Leporinusfrederici [1 objetos]Objetos: Leporinusfrederici 
+Cluster 0,2 Prototipo: Myleusrubripinis [2 objetos]Objetos: Acnodonoligacanthus Myleusrubripinis 
+Cluster 0,3 Prototipo: Platydorascostatus [4 objetos]Objetos: Ageneiosusbrevifili Potamotrygonhystrix Platydorascostatus Semaprochilodusvari 
+Cluster 1,0 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Hopliasa�mara [1 objetos]Objetos: Hopliasa�mara 
+Cluster 1,2 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 1,3 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+
+Critério de adequação (energia): 59405.045
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,1	1,2	1,3	Total
+
+1	1	 0	 0	 2	 1	 0	 0	 4
+2	1	 0	 0	 2	 0	 1	 0	 4
+3	0	 1	 0	 0	 0	 0	 1	 2
+4	0	 0	 2	 0	 0	 0	 0	 2
+Total	[2 1 2 4 1 1 1]
+Corrected Rand index: 0.234482758621
+
+F-measure(P,Q): 1.0
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 1
+
+Cluster 0,0 Prototipo: Leporinusfrederici [1 objetos]Objetos: Leporinusfrederici 
+Cluster 0,1 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 0,2 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 0,3 Prototipo: Semaprochilodusvari [1 objetos]Objetos: Semaprochilodusvari 
+Cluster 1,0 Prototipo: Platydorascostatus [5 objetos]Objetos: Hopliasa�mara Dorasmicropoeus Platydorascostatus Potamotrygonhystrix Ageneiosusbrevifili 
+Cluster 1,1 Prototipo: Myleusrubripinis [2 objetos]Objetos: Acnodonoligacanthus Myleusrubripinis 
+Cluster 1,2 Prototipo: Cynodongibbus [1 objetos]Objetos: Cynodongibbus 
+Cluster 1,3 Prototipo: Semaprochilodusvari [0 objetos]Objetos: 
+
+Critério de adequação (energia): 40164.14
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	Total
+
+1	0	 0	 0	 0	 3	 0	 1	 4
+2	0	 0	 1	 1	 2	 0	 0	 4
+3	1	 1	 0	 0	 0	 0	 0	 2
+4	0	 0	 0	 0	 0	 2	 0	 2
+Total	[1 1 1 1 5 2 1]
+Corrected Rand index: 0.366504854369
+
+F-measure(P,Q): 1.0
+OERC: 0.166666666667
+
+#####################################
+Repetição do experimento: 2
+
+Cluster 0,0 Prototipo: Myleusrubripinis [2 objetos]Objetos: Acnodonoligacanthus Myleusrubripinis 
+Cluster 0,1 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 0,2 Prototipo: Dorasmicropoeus [2 objetos]Objetos: Dorasmicropoeus Cynodongibbus 
+Cluster 0,3 Prototipo: Hopliasa�mara [1 objetos]Objetos: Hopliasa�mara 
+Cluster 1,0 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfrederici Leporinusfasciatus 
+Cluster 1,1 Prototipo: Potamotrygonhystrix [1 objetos]Objetos: Potamotrygonhystrix 
+Cluster 1,2 Prototipo: Platydorascostatus [3 objetos]Objetos: Semaprochilodusvari Ageneiosusbrevifili Platydorascostatus 
+Cluster 1,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 57828.64
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	Total
+
+1	0	 0	 1	 1	 0	 1	 1	 4
+2	0	 1	 1	 0	 0	 0	 2	 4
+3	0	 0	 0	 0	 2	 0	 0	 2
+4	2	 0	 0	 0	 0	 0	 0	 2
+Total	[2 1 2 1 2 1 3]
+Corrected Rand index: 0.257966616085
+
+F-measure(P,Q): 1.0
+OERC: 0.166666666667
+
+#####################################
+Repetição do experimento: 3
+
+Cluster 0,0 Prototipo: Dorasmicropoeus [2 objetos]Objetos: Hopliasa�mara Dorasmicropoeus 
+Cluster 0,1 Prototipo: Cynodongibbus [1 objetos]Objetos: Cynodongibbus 
+Cluster 0,2 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: Platydorascostatus [4 objetos]Objetos: Potamotrygonhystrix Ageneiosusbrevifili Platydorascostatus Semaprochilodusvari 
+Cluster 1,0 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 1,3 Prototipo: Acnodonoligacanthus [4 objetos]Objetos: Leporinusfasciatus Leporinusfrederici Acnodonoligacanthus Myleusrubripinis 
+
+Critério de adequação (energia): 43291.17
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,3	1,2	1,3	Total
+
+1	1	 1	 2	 0	 0	 4
+2	1	 0	 2	 1	 0	 4
+3	0	 0	 0	 0	 2	 2
+4	0	 0	 0	 0	 2	 2
+Total	[2 1 4 1 4]
+Corrected Rand index: 0.274157303371
+
+F-measure(P,Q): 0.666666666667
+OERC: 0.416666666667
+
+#####################################
+Repetição do experimento: 4
+
+Cluster 0,0 Prototipo: Leporinusfrederici [1 objetos]Objetos: Leporinusfrederici 
+Cluster 0,1 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 0,2 Prototipo: Platydorascostatus [4 objetos]Objetos: Semaprochilodusvari Ageneiosusbrevifili Potamotrygonhystrix Platydorascostatus 
+Cluster 0,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: Myleusrubripinis [2 objetos]Objetos: Myleusrubripinis Acnodonoligacanthus 
+Cluster 1,1 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 1,2 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Dorasmicropoeus Cynodongibbus Hopliasa�mara 
+Cluster 1,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 70095.475
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	Total
+
+1	0	 0	 2	 0	 0	 2	 4
+2	0	 0	 2	 0	 1	 1	 4
+3	1	 1	 0	 0	 0	 0	 2
+4	0	 0	 0	 2	 0	 0	 2
+Total	[1 1 4 2 1 3]
+Corrected Rand index: 0.303413400759
+
+F-measure(P,Q): 1.0
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 5
+
+Cluster 0,0 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Cynodongibbus Hopliasa�mara Dorasmicropoeus 
+Cluster 0,1 Prototipo: Ageneiosusbrevifili [1 objetos]Objetos: Ageneiosusbrevifili 
+Cluster 0,2 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 0,3 Prototipo: Leporinusfrederici [1 objetos]Objetos: Leporinusfrederici 
+Cluster 1,0 Prototipo: Platydorascostatus [3 objetos]Objetos: Potamotrygonhystrix Platydorascostatus Semaprochilodusvari 
+Cluster 1,1 Prototipo: Ageneiosusbrevifili [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 1,3 Prototipo: Myleusrubripinis [2 objetos]Objetos: Acnodonoligacanthus Myleusrubripinis 
+
+Critério de adequação (energia): 62037.5
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,2	1,3	Total
+
+1	2	 1	 0	 0	 1	 0	 0	 4
+2	1	 0	 0	 0	 2	 1	 0	 4
+3	0	 0	 1	 1	 0	 0	 0	 2
+4	0	 0	 0	 0	 0	 0	 2	 2
+Total	[3 1 1 1 3 1 2]
+Corrected Rand index: 0.245664739884
+
+F-measure(P,Q): 1.0
+OERC: 0.166666666667
+
+#####################################
+Repetição do experimento: 6
+
+Cluster 0,0 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 0,1 Prototipo: Myleusrubripinis [2 objetos]Objetos: Acnodonoligacanthus Myleusrubripinis 
+Cluster 0,2 Prototipo: Hopliasa�mara [1 objetos]Objetos: Hopliasa�mara 
+Cluster 0,3 Prototipo: Dorasmicropoeus [2 objetos]Objetos: Cynodongibbus Dorasmicropoeus 
+Cluster 1,0 Prototipo: Leporinusfrederici [1 objetos]Objetos: Leporinusfrederici 
+Cluster 1,1 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 1,2 Prototipo: Platydorascostatus [4 objetos]Objetos: Potamotrygonhystrix Platydorascostatus Ageneiosusbrevifili Semaprochilodusvari 
+Cluster 1,3 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 59405.045
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	Total
+
+1	0	 0	 1	 1	 0	 0	 2	 4
+2	0	 0	 0	 1	 0	 1	 2	 4
+3	1	 0	 0	 0	 1	 0	 0	 2
+4	0	 2	 0	 0	 0	 0	 0	 2
+Total	[1 2 1 2 1 1 4]
+Corrected Rand index: 0.234482758621
+
+F-measure(P,Q): 1.0
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 7
+
+Cluster 0,0 Prototipo: Platydorascostatus [4 objetos]Objetos: Ageneiosusbrevifili Potamotrygonhystrix Platydorascostatus Semaprochilodusvari 
+Cluster 0,1 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Hopliasa�mara Cynodongibbus Dorasmicropoeus 
+Cluster 0,2 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfasciatus Leporinusfrederici 
+Cluster 1,0 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 1,3 Prototipo: Myleusrubripinis [2 objetos]Objetos: Acnodonoligacanthus Myleusrubripinis 
+
+Critério de adequação (energia): 73410.735
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,3	1,2	1,3	Total
+
+1	2	 2	 0	 0	 0	 4
+2	2	 1	 0	 1	 0	 4
+3	0	 0	 2	 0	 0	 2
+4	0	 0	 0	 0	 2	 2
+Total	[4 3 2 1 2]
+Corrected Rand index: 0.376213592233
+
+F-measure(P,Q): 1.0
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 8
+
+Cluster 0,0 Prototipo: Platydorascostatus [7 objetos]Objetos: Platydorascostatus Hopliasa�mara Potamotrygonhystrix Dorasmicropoeus Ageneiosusbrevifili Semaprochilodusvari Cynodongibbus 
+Cluster 0,1 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Acnodonoligacanthus [5 objetos]Objetos: Myleusrubripinis Acnodonoligacanthus Pseudoancistrusbarbatus Leporinusfasciatus Leporinusfrederici 
+Cluster 1,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 102387.18
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	1,2	Total
+
+1	4	 0	 4
+2	3	 1	 4
+3	0	 2	 2
+4	0	 2	 2
+Total	[7 5]
+Corrected Rand index: 0.483827493261
+
+F-measure(P,Q): 0.727272727273
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 9
+
+Cluster 0,0 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Cynodongibbus Dorasmicropoeus Hopliasa�mara 
+Cluster 0,1 Prototipo: Platydorascostatus [3 objetos]Objetos: Platydorascostatus Potamotrygonhystrix Semaprochilodusvari 
+Cluster 0,2 Prototipo: Acnodonoligacanthus [4 objetos]Objetos: Leporinusfrederici Pseudoancistrusbarbatus Acnodonoligacanthus Myleusrubripinis 
+Cluster 0,3 Prototipo: Acnodonoligacanthus [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: Ageneiosusbrevifili [1 objetos]Objetos: Ageneiosusbrevifili 
+Cluster 1,1 Prototipo: Ageneiosusbrevifili [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Acnodonoligacanthus [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+
+Critério de adequação (energia): 64832.13
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,3	Total
+
+1	2	 1	 0	 1	 0	 4
+2	1	 2	 1	 0	 0	 4
+3	0	 0	 1	 0	 1	 2
+4	0	 0	 2	 0	 0	 2
+Total	[3 3 4 1 1]
+Corrected Rand index: 0.207701283547
+
+F-measure(P,Q): 0.666666666667
+OERC: 0.333333333333
+
+#####################################
+Repetição do experimento: 10
+
+Cluster 0,0 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Cynodongibbus Hopliasa�mara Dorasmicropoeus 
+Cluster 0,1 Prototipo: Platydorascostatus [4 objetos]Objetos: Potamotrygonhystrix Platydorascostatus Ageneiosusbrevifili Semaprochilodusvari 
+Cluster 0,2 Prototipo: Myleusrubripinis [2 objetos]Objetos: Acnodonoligacanthus Myleusrubripinis 
+Cluster 0,3 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 1,0 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 1,2 Prototipo: Leporinusfrederici [1 objetos]Objetos: Leporinusfrederici 
+Cluster 1,3 Prototipo: Leporinusfrederici [0 objetos]Objetos: 
+
+Critério de adequação (energia): 70095.475
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,1	1,2	Total
+
+1	2	 2	 0	 0	 0	 0	 4
+2	1	 2	 0	 1	 0	 0	 4
+3	0	 0	 0	 0	 1	 1	 2
+4	0	 0	 2	 0	 0	 0	 2
+Total	[3 4 2 1 1 1]
+Corrected Rand index: 0.303413400759
+
+F-measure(P,Q): 1.0
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 11
+
+Cluster 0,0 Prototipo: Leporinusfrederici [1 objetos]Objetos: Leporinusfrederici 
+Cluster 0,1 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Hopliasa�mara Cynodongibbus Dorasmicropoeus 
+Cluster 0,2 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 0,3 Prototipo: Platydorascostatus [4 objetos]Objetos: Ageneiosusbrevifili Potamotrygonhystrix Platydorascostatus Semaprochilodusvari 
+Cluster 1,0 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 1,1 Prototipo: Myleusrubripinis [1 objetos]Objetos: Myleusrubripinis 
+Cluster 1,2 Prototipo: Acnodonoligacanthus [1 objetos]Objetos: Acnodonoligacanthus 
+Cluster 1,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 69231.465
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	Total
+
+1	0	 2	 0	 2	 0	 0	 0	 4
+2	0	 1	 0	 2	 1	 0	 0	 4
+3	1	 0	 1	 0	 0	 0	 0	 2
+4	0	 0	 0	 0	 0	 1	 1	 2
+Total	[1 3 1 4 1 1 1]
+Corrected Rand index: 0.224274406332
+
+F-measure(P,Q): 0.666666666667
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 12
+
+Cluster 0,0 Prototipo: Platydorascostatus [3 objetos]Objetos: Ageneiosusbrevifili Potamotrygonhystrix Platydorascostatus 
+Cluster 0,1 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 0,2 Prototipo: Semaprochilodusvari [1 objetos]Objetos: Semaprochilodusvari 
+Cluster 0,3 Prototipo: Dorasmicropoeus [2 objetos]Objetos: Hopliasa�mara Dorasmicropoeus 
+Cluster 1,0 Prototipo: Acnodonoligacanthus [3 objetos]Objetos: Leporinusfrederici Acnodonoligacanthus Myleusrubripinis 
+Cluster 1,1 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 1,2 Prototipo: Cynodongibbus [1 objetos]Objetos: Cynodongibbus 
+Cluster 1,3 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 26115.03
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	Total
+
+1	2	 0	 0	 1	 0	 0	 1	 4
+2	1	 1	 1	 1	 0	 0	 0	 4
+3	0	 0	 0	 0	 1	 1	 0	 2
+4	0	 0	 0	 0	 2	 0	 0	 2
+Total	[3 1 1 2 3 1 1]
+Corrected Rand index: 0.150289017341
+
+F-measure(P,Q): 0.8
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 13
+
+Cluster 0,0 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Hopliasa�mara Dorasmicropoeus Cynodongibbus 
+Cluster 0,1 Prototipo: Platydorascostatus [4 objetos]Objetos: Semaprochilodusvari Ageneiosusbrevifili Potamotrygonhystrix Platydorascostatus 
+Cluster 0,2 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 0,3 Prototipo: Myleusrubripinis [1 objetos]Objetos: Myleusrubripinis 
+Cluster 1,0 Prototipo: Acnodonoligacanthus [1 objetos]Objetos: Acnodonoligacanthus 
+Cluster 1,1 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfrederici Leporinusfasciatus 
+Cluster 1,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 72546.725
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,2	Total
+
+1	2	 2	 0	 0	 0	 0	 4
+2	1	 2	 1	 0	 0	 0	 4
+3	0	 0	 0	 0	 0	 2	 2
+4	0	 0	 0	 1	 1	 0	 2
+Total	[3 4 1 1 1 2]
+Corrected Rand index: 0.303413400759
+
+F-measure(P,Q): 1.0
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 14
+
+Cluster 0,0 Prototipo: Dorasmicropoeus [2 objetos]Objetos: Hopliasa�mara Dorasmicropoeus 
+Cluster 0,1 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 0,2 Prototipo: Myleusrubripinis [3 objetos]Objetos: Myleusrubripinis Pseudoancistrusbarbatus Acnodonoligacanthus 
+Cluster 0,3 Prototipo: Leporinusfrederici [1 objetos]Objetos: Leporinusfrederici 
+Cluster 1,0 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Cynodongibbus [1 objetos]Objetos: Cynodongibbus 
+Cluster 1,2 Prototipo: Cynodongibbus [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: Platydorascostatus [4 objetos]Objetos: Potamotrygonhystrix Platydorascostatus Semaprochilodusvari Ageneiosusbrevifili 
+
+Critério de adequação (energia): 39079.36
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,1	1,3	Total
+
+1	1	 0	 0	 0	 1	 2	 4
+2	1	 0	 1	 0	 0	 2	 4
+3	0	 1	 0	 1	 0	 0	 2
+4	0	 0	 2	 0	 0	 0	 2
+Total	[2 1 3 1 1 4]
+Corrected Rand index: 0.21997471555
+
+F-measure(P,Q): 0.8
+OERC: 0.333333333333
+
+#####################################
+Repetição do experimento: 15
+
+Cluster 0,0 Prototipo: Platydorascostatus [4 objetos]Objetos: Ageneiosusbrevifili Potamotrygonhystrix Platydorascostatus Semaprochilodusvari 
+Cluster 0,1 Prototipo: Leporinusfrederici [1 objetos]Objetos: Leporinusfrederici 
+Cluster 0,2 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 0,3 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Cynodongibbus Hopliasa�mara Dorasmicropoeus 
+Cluster 1,0 Prototipo: Leporinusfrederici [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Myleusrubripinis [2 objetos]Objetos: Acnodonoligacanthus Myleusrubripinis 
+Cluster 1,2 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 1,3 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 70095.475
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,1	1,2	Total
+
+1	2	 0	 0	 2	 0	 0	 4
+2	2	 0	 1	 1	 0	 0	 4
+3	0	 1	 0	 0	 0	 1	 2
+4	0	 0	 0	 0	 2	 0	 2
+Total	[4 1 1 3 2 1]
+Corrected Rand index: 0.303413400759
+
+F-measure(P,Q): 1.0
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 16
+
+Cluster 0,0 Prototipo: Dorasmicropoeus [2 objetos]Objetos: Hopliasa�mara Dorasmicropoeus 
+Cluster 0,1 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 0,2 Prototipo: Platydorascostatus [4 objetos]Objetos: Ageneiosusbrevifili Platydorascostatus Potamotrygonhystrix Semaprochilodusvari 
+Cluster 0,3 Prototipo: Myleusrubripinis [1 objetos]Objetos: Myleusrubripinis 
+Cluster 1,0 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Cynodongibbus [1 objetos]Objetos: Cynodongibbus 
+Cluster 1,2 Prototipo: Acnodonoligacanthus [1 objetos]Objetos: Acnodonoligacanthus 
+Cluster 1,3 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfasciatus Leporinusfrederici 
+
+Critério de adequação (energia): 40396.92
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,1	1,2	1,3	Total
+
+1	1	 0	 2	 0	 1	 0	 0	 4
+2	1	 1	 2	 0	 0	 0	 0	 4
+3	0	 0	 0	 0	 0	 0	 2	 2
+4	0	 0	 0	 1	 0	 1	 0	 2
+Total	[2 1 4 1 1 1 2]
+Corrected Rand index: 0.234482758621
+
+F-measure(P,Q): 1.0
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 17
+
+Cluster 0,0 Prototipo: Myleusrubripinis [2 objetos]Objetos: Myleusrubripinis Acnodonoligacanthus 
+Cluster 0,1 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfrederici Leporinusfasciatus 
+Cluster 0,2 Prototipo: Dorasmicropoeus [2 objetos]Objetos: Hopliasa�mara Dorasmicropoeus 
+Cluster 0,3 Prototipo: Platydorascostatus [4 objetos]Objetos: Ageneiosusbrevifili Potamotrygonhystrix Platydorascostatus Semaprochilodusvari 
+Cluster 1,0 Prototipo: Cynodongibbus [1 objetos]Objetos: Cynodongibbus 
+Cluster 1,1 Prototipo: Cynodongibbus [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 1,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 41260.93
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,2	Total
+
+1	0	 0	 1	 2	 1	 0	 4
+2	0	 0	 1	 2	 0	 1	 4
+3	0	 2	 0	 0	 0	 0	 2
+4	2	 0	 0	 0	 0	 0	 2
+Total	[2 2 2 4 1 1]
+Corrected Rand index: 0.316622691293
+
+F-measure(P,Q): 1.0
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 18
+
+Cluster 0,0 Prototipo: Acnodonoligacanthus [5 objetos]Objetos: Leporinusfasciatus Leporinusfrederici Pseudoancistrusbarbatus Acnodonoligacanthus Myleusrubripinis 
+Cluster 0,1 Prototipo: Acnodonoligacanthus [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: Acnodonoligacanthus [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Cynodongibbus Hopliasa�mara Dorasmicropoeus 
+Cluster 1,0 Prototipo: Acnodonoligacanthus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Acnodonoligacanthus [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Potamotrygonhystrix [1 objetos]Objetos: Potamotrygonhystrix 
+Cluster 1,3 Prototipo: Platydorascostatus [3 objetos]Objetos: Ageneiosusbrevifili Platydorascostatus Semaprochilodusvari 
+
+Critério de adequação (energia): 71732.99
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,3	1,2	1,3	Total
+
+1	0	 2	 1	 1	 4
+2	1	 1	 0	 2	 4
+3	2	 0	 0	 0	 2
+4	2	 0	 0	 0	 2
+Total	[5 3 1 3]
+Corrected Rand index: 0.250758341759
+
+F-measure(P,Q): 0.571428571429
+OERC: 0.416666666667
+
+#####################################
+Repetição do experimento: 19
+
+Cluster 0,0 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 0,1 Prototipo: Platydorascostatus [3 objetos]Objetos: Ageneiosusbrevifili Platydorascostatus Semaprochilodusvari 
+Cluster 0,2 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: Acnodonoligacanthus [4 objetos]Objetos: Myleusrubripinis Pseudoancistrusbarbatus Acnodonoligacanthus Leporinusfrederici 
+Cluster 1,0 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Potamotrygonhystrix [1 objetos]Objetos: Potamotrygonhystrix 
+Cluster 1,3 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Cynodongibbus Hopliasa�mara Dorasmicropoeus 
+
+Critério de adequação (energia): 67998.44
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,3	1,2	1,3	Total
+
+1	0	 1	 0	 1	 2	 4
+2	0	 2	 1	 0	 1	 4
+3	1	 0	 1	 0	 0	 2
+4	0	 0	 2	 0	 0	 2
+Total	[1 3 4 1 3]
+Corrected Rand index: 0.207701283547
+
+F-measure(P,Q): 0.666666666667
+OERC: 0.333333333333
+
+#####################################
+Repetição do experimento: 20
+
+Cluster 0,0 Prototipo: Platydorascostatus [5 objetos]Objetos: Ageneiosusbrevifili Hopliasa�mara Dorasmicropoeus Platydorascostatus Potamotrygonhystrix 
+Cluster 0,1 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: Acnodonoligacanthus [4 objetos]Objetos: Leporinusfrederici Pseudoancistrusbarbatus Acnodonoligacanthus Myleusrubripinis 
+Cluster 0,3 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 1,0 Prototipo: Acnodonoligacanthus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Acnodonoligacanthus [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: Semaprochilodusvari [2 objetos]Objetos: Cynodongibbus Semaprochilodusvari 
+
+Critério de adequação (energia): 80006.75
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	0,3	1,3	Total
+
+1	3	 0	 0	 1	 4
+2	2	 1	 0	 1	 4
+3	0	 1	 1	 0	 2
+4	0	 2	 0	 0	 2
+Total	[5 4 1 2]
+Corrected Rand index: 0.307240704501
+
+F-measure(P,Q): 0.666666666667
+OERC: 0.416666666667
+
+#####################################
+Repetição do experimento: 21
+
+Cluster 0,0 Prototipo: Myleusrubripinis [3 objetos]Objetos: Pseudoancistrusbarbatus Acnodonoligacanthus Myleusrubripinis 
+Cluster 0,1 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 0,2 Prototipo: Hopliasa�mara [1 objetos]Objetos: Hopliasa�mara 
+Cluster 0,3 Prototipo: Dorasmicropoeus [2 objetos]Objetos: Cynodongibbus Dorasmicropoeus 
+Cluster 1,0 Prototipo: Platydorascostatus [4 objetos]Objetos: Platydorascostatus Semaprochilodusvari Ageneiosusbrevifili Potamotrygonhystrix 
+Cluster 1,1 Prototipo: Hopliasa�mara [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Leporinusfrederici [1 objetos]Objetos: Leporinusfrederici 
+Cluster 1,3 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 60538.735
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,2	Total
+
+1	0	 0	 1	 1	 2	 0	 4
+2	1	 0	 0	 1	 2	 0	 4
+3	0	 1	 0	 0	 0	 1	 2
+4	2	 0	 0	 0	 0	 0	 2
+Total	[3 1 1 2 4 1]
+Corrected Rand index: 0.21997471555
+
+F-measure(P,Q): 0.8
+OERC: 0.333333333333
+
+#####################################
+Repetição do experimento: 22
+
+Cluster 0,0 Prototipo: Dorasmicropoeus [2 objetos]Objetos: Hopliasa�mara Dorasmicropoeus 
+Cluster 0,1 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 0,2 Prototipo: Acnodonoligacanthus [4 objetos]Objetos: Leporinusfrederici Acnodonoligacanthus Myleusrubripinis Leporinusfasciatus 
+Cluster 0,3 Prototipo: Platydorascostatus [4 objetos]Objetos: Semaprochilodusvari Ageneiosusbrevifili Potamotrygonhystrix Platydorascostatus 
+Cluster 1,0 Prototipo: Cynodongibbus [1 objetos]Objetos: Cynodongibbus 
+Cluster 1,1 Prototipo: Cynodongibbus [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 43291.17
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	Total
+
+1	1	 0	 0	 2	 1	 4
+2	1	 1	 0	 2	 0	 4
+3	0	 0	 2	 0	 0	 2
+4	0	 0	 2	 0	 0	 2
+Total	[2 1 4 4 1]
+Corrected Rand index: 0.274157303371
+
+F-measure(P,Q): 0.666666666667
+OERC: 0.416666666667
+
+#####################################
+Repetição do experimento: 23
+
+Cluster 0,0 Prototipo: Dorasmicropoeus [2 objetos]Objetos: Dorasmicropoeus Cynodongibbus 
+Cluster 0,1 Prototipo: Hopliasa�mara [1 objetos]Objetos: Hopliasa�mara 
+Cluster 0,2 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 0,3 Prototipo: Platydorascostatus [3 objetos]Objetos: Ageneiosusbrevifili Potamotrygonhystrix Platydorascostatus 
+Cluster 1,0 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Semaprochilodusvari [1 objetos]Objetos: Semaprochilodusvari 
+Cluster 1,2 Prototipo: Myleusrubripinis [2 objetos]Objetos: Acnodonoligacanthus Myleusrubripinis 
+Cluster 1,3 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfrederici Leporinusfasciatus 
+
+Critério de adequação (energia): 49278.715
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,1	1,2	1,3	Total
+
+1	1	 1	 0	 2	 0	 0	 0	 4
+2	1	 0	 1	 1	 1	 0	 0	 4
+3	0	 0	 0	 0	 0	 0	 2	 2
+4	0	 0	 0	 0	 0	 2	 0	 2
+Total	[2 1 1 3 1 2 2]
+Corrected Rand index: 0.257966616085
+
+F-measure(P,Q): 1.0
+OERC: 0.166666666667
+
+#####################################
+Repetição do experimento: 24
+
+Cluster 0,0 Prototipo: Dorasmicropoeus [2 objetos]Objetos: Hopliasa�mara Dorasmicropoeus 
+Cluster 0,1 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: Platydorascostatus [3 objetos]Objetos: Platydorascostatus Ageneiosusbrevifili Semaprochilodusvari 
+Cluster 0,3 Prototipo: Myleusrubripinis [3 objetos]Objetos: Pseudoancistrusbarbatus Acnodonoligacanthus Myleusrubripinis 
+Cluster 1,0 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Cynodongibbus [1 objetos]Objetos: Cynodongibbus 
+Cluster 1,2 Prototipo: Potamotrygonhystrix [1 objetos]Objetos: Potamotrygonhystrix 
+Cluster 1,3 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfasciatus Leporinusfrederici 
+
+Critério de adequação (energia): 37502.955
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	0,3	1,1	1,2	1,3	Total
+
+1	1	 1	 0	 1	 1	 0	 4
+2	1	 2	 1	 0	 0	 0	 4
+3	0	 0	 0	 0	 0	 2	 2
+4	0	 0	 2	 0	 0	 0	 2
+Total	[2 3 3 1 1 2]
+Corrected Rand index: 0.24
+
+F-measure(P,Q): 1.0
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 25
+
+Cluster 0,0 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 0,1 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfrederici Leporinusfasciatus 
+Cluster 0,2 Prototipo: Leporinusfrederici [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: Platydorascostatus [7 objetos]Objetos: Ageneiosusbrevifili Cynodongibbus Hopliasa�mara Potamotrygonhystrix Dorasmicropoeus Platydorascostatus Semaprochilodusvari 
+Cluster 1,0 Prototipo: Leporinusfrederici [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Myleusrubripinis [2 objetos]Objetos: Acnodonoligacanthus Myleusrubripinis 
+Cluster 1,2 Prototipo: Leporinusfrederici [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 99173.26
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,3	1,1	Total
+
+1	0	 0	 4	 0	 4
+2	1	 0	 3	 0	 4
+3	0	 2	 0	 0	 2
+4	0	 0	 0	 2	 2
+Total	[1 2 7 2]
+Corrected Rand index: 0.581967213115
+
+F-measure(P,Q): 1.0
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 26
+
+Cluster 0,0 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 0,1 Prototipo: Acnodonoligacanthus [1 objetos]Objetos: Acnodonoligacanthus 
+Cluster 0,2 Prototipo: Myleusrubripinis [1 objetos]Objetos: Myleusrubripinis 
+Cluster 0,3 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Cynodongibbus Hopliasa�mara Dorasmicropoeus 
+Cluster 1,0 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfrederici Leporinusfasciatus 
+Cluster 1,1 Prototipo: Semaprochilodusvari [1 objetos]Objetos: Semaprochilodusvari 
+Cluster 1,2 Prototipo: Platydorascostatus [3 objetos]Objetos: Potamotrygonhystrix Platydorascostatus Ageneiosusbrevifili 
+Cluster 1,3 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 59105.135
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	Total
+
+1	0	 0	 0	 2	 0	 0	 2	 4
+2	1	 0	 0	 1	 0	 1	 1	 4
+3	0	 0	 0	 0	 2	 0	 0	 2
+4	0	 1	 1	 0	 0	 0	 0	 2
+Total	[1 1 1 3 2 1 3]
+Corrected Rand index: 0.245664739884
+
+F-measure(P,Q): 1.0
+OERC: 0.166666666667
+
+#####################################
+Repetição do experimento: 27
+
+Cluster 0,0 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 0,1 Prototipo: Platydorascostatus [4 objetos]Objetos: Platydorascostatus Potamotrygonhystrix Semaprochilodusvari Ageneiosusbrevifili 
+Cluster 0,2 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 0,3 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Cynodongibbus Hopliasa�mara Dorasmicropoeus 
+Cluster 1,0 Prototipo: Leporinusfrederici [1 objetos]Objetos: Leporinusfrederici 
+Cluster 1,1 Prototipo: Acnodonoligacanthus [1 objetos]Objetos: Acnodonoligacanthus 
+Cluster 1,2 Prototipo: Myleusrubripinis [1 objetos]Objetos: Myleusrubripinis 
+Cluster 1,3 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 69231.465
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	Total
+
+1	0	 2	 0	 2	 0	 0	 0	 4
+2	0	 2	 1	 1	 0	 0	 0	 4
+3	1	 0	 0	 0	 1	 0	 0	 2
+4	0	 0	 0	 0	 0	 1	 1	 2
+Total	[1 4 1 3 1 1 1]
+Corrected Rand index: 0.224274406332
+
+F-measure(P,Q): 0.666666666667
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 28
+
+Cluster 0,0 Prototipo: Platydorascostatus [4 objetos]Objetos: Potamotrygonhystrix Platydorascostatus Semaprochilodusvari Ageneiosusbrevifili 
+Cluster 0,1 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 0,2 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 0,3 Prototipo: Dorasmicropoeus [2 objetos]Objetos: Cynodongibbus Dorasmicropoeus 
+Cluster 1,0 Prototipo: Leporinusfrederici [1 objetos]Objetos: Leporinusfrederici 
+Cluster 1,1 Prototipo: Myleusrubripinis [2 objetos]Objetos: Acnodonoligacanthus Myleusrubripinis 
+Cluster 1,2 Prototipo: Hopliasa�mara [1 objetos]Objetos: Hopliasa�mara 
+Cluster 1,3 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 59405.045
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	Total
+
+1	2	 0	 0	 1	 0	 0	 1	 4
+2	2	 1	 0	 1	 0	 0	 0	 4
+3	0	 0	 1	 0	 1	 0	 0	 2
+4	0	 0	 0	 0	 0	 2	 0	 2
+Total	[4 1 1 2 1 2 1]
+Corrected Rand index: 0.234482758621
+
+F-measure(P,Q): 1.0
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 29
+
+Cluster 0,0 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Cynodongibbus Hopliasa�mara Dorasmicropoeus 
+Cluster 0,1 Prototipo: Platydorascostatus [4 objetos]Objetos: Platydorascostatus Potamotrygonhystrix Ageneiosusbrevifili Semaprochilodusvari 
+Cluster 0,2 Prototipo: Acnodonoligacanthus [1 objetos]Objetos: Acnodonoligacanthus 
+Cluster 0,3 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfasciatus Leporinusfrederici 
+Cluster 1,0 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 1,1 Prototipo: Leporinusfrederici [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Myleusrubripinis [1 objetos]Objetos: Myleusrubripinis 
+Cluster 1,3 Prototipo: Leporinusfrederici [0 objetos]Objetos: 
+
+Critério de adequação (energia): 72546.725
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,2	Total
+
+1	2	 2	 0	 0	 0	 0	 4
+2	1	 2	 0	 0	 1	 0	 4
+3	0	 0	 0	 2	 0	 0	 2
+4	0	 0	 1	 0	 0	 1	 2
+Total	[3 4 1 2 1 1]
+Corrected Rand index: 0.303413400759
+
+F-measure(P,Q): 1.0
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 30
+
+Cluster 0,0 Prototipo: Acnodonoligacanthus [1 objetos]Objetos: Acnodonoligacanthus 
+Cluster 0,1 Prototipo: Myleusrubripinis [1 objetos]Objetos: Myleusrubripinis 
+Cluster 0,2 Prototipo: Ageneiosusbrevifili [1 objetos]Objetos: Ageneiosusbrevifili 
+Cluster 0,3 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Cynodongibbus Hopliasa�mara Dorasmicropoeus 
+Cluster 1,0 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfasciatus Leporinusfrederici 
+Cluster 1,1 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 1,2 Prototipo: Platydorascostatus [3 objetos]Objetos: Platydorascostatus Potamotrygonhystrix Semaprochilodusvari 
+Cluster 1,3 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 64488.75
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	Total
+
+1	0	 0	 1	 2	 0	 0	 1	 4
+2	0	 0	 0	 1	 0	 1	 2	 4
+3	0	 0	 0	 0	 2	 0	 0	 2
+4	1	 1	 0	 0	 0	 0	 0	 2
+Total	[1 1 1 3 2 1 3]
+Corrected Rand index: 0.245664739884
+
+F-measure(P,Q): 1.0
+OERC: 0.166666666667
+
+#####################################
+Repetição do experimento: 31
+
+Cluster 0,0 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Hopliasa�mara Cynodongibbus Dorasmicropoeus 
+Cluster 0,1 Prototipo: Platydorascostatus [4 objetos]Objetos: Ageneiosusbrevifili Potamotrygonhystrix Platydorascostatus Semaprochilodusvari 
+Cluster 0,2 Prototipo: Acnodonoligacanthus [4 objetos]Objetos: Leporinusfrederici Pseudoancistrusbarbatus Acnodonoligacanthus Myleusrubripinis 
+Cluster 0,3 Prototipo: Acnodonoligacanthus [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+
+Critério de adequação (energia): 72890.105
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,3	Total
+
+1	2	 2	 0	 0	 4
+2	1	 2	 1	 0	 4
+3	0	 0	 1	 1	 2
+4	0	 0	 2	 0	 2
+Total	[3 4 4 1]
+Corrected Rand index: 0.259414225941
+
+F-measure(P,Q): 0.666666666667
+OERC: 0.416666666667
+
+#####################################
+Repetição do experimento: 32
+
+Cluster 0,0 Prototipo: Dorasmicropoeus [2 objetos]Objetos: Hopliasa�mara Dorasmicropoeus 
+Cluster 0,1 Prototipo: Cynodongibbus [1 objetos]Objetos: Cynodongibbus 
+Cluster 0,2 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 0,3 Prototipo: Acnodonoligacanthus [3 objetos]Objetos: Acnodonoligacanthus Leporinusfrederici Myleusrubripinis 
+Cluster 1,0 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Semaprochilodusvari [1 objetos]Objetos: Semaprochilodusvari 
+Cluster 1,2 Prototipo: Platydorascostatus [3 objetos]Objetos: Platydorascostatus Potamotrygonhystrix Ageneiosusbrevifili 
+Cluster 1,3 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+
+Critério de adequação (energia): 26115.03
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,1	1,2	1,3	Total
+
+1	1	 1	 0	 0	 0	 2	 0	 4
+2	1	 0	 1	 0	 1	 1	 0	 4
+3	0	 0	 0	 1	 0	 0	 1	 2
+4	0	 0	 0	 2	 0	 0	 0	 2
+Total	[2 1 1 3 1 3 1]
+Corrected Rand index: 0.150289017341
+
+F-measure(P,Q): 0.8
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 33
+
+Cluster 0,0 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Cynodongibbus Hopliasa�mara Dorasmicropoeus 
+Cluster 0,1 Prototipo: Platydorascostatus [4 objetos]Objetos: Ageneiosusbrevifili Potamotrygonhystrix Platydorascostatus Semaprochilodusvari 
+Cluster 0,2 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfrederici Leporinusfasciatus 
+Cluster 0,3 Prototipo: Myleusrubripinis [3 objetos]Objetos: Pseudoancistrusbarbatus Acnodonoligacanthus Myleusrubripinis 
+Cluster 1,0 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 74544.425
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	Total
+
+1	2	 2	 0	 0	 4
+2	1	 2	 0	 1	 4
+3	0	 0	 2	 0	 2
+4	0	 0	 0	 2	 2
+Total	[3 4 2 3]
+Corrected Rand index: 0.352808988764
+
+F-measure(P,Q): 1.0
+OERC: 0.333333333333
+
+#####################################
+Repetição do experimento: 34
+
+Cluster 0,0 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 0,1 Prototipo: Platydorascostatus [4 objetos]Objetos: Ageneiosusbrevifili Potamotrygonhystrix Platydorascostatus Semaprochilodusvari 
+Cluster 0,2 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: Dorasmicropoeus [2 objetos]Objetos: Hopliasa�mara Dorasmicropoeus 
+Cluster 1,0 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfasciatus Leporinusfrederici 
+Cluster 1,1 Prototipo: Myleusrubripinis [2 objetos]Objetos: Myleusrubripinis Acnodonoligacanthus 
+Cluster 1,2 Prototipo: Cynodongibbus [1 objetos]Objetos: Cynodongibbus 
+Cluster 1,3 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 41260.93
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,3	1,0	1,1	1,2	Total
+
+1	0	 2	 1	 0	 0	 1	 4
+2	1	 2	 1	 0	 0	 0	 4
+3	0	 0	 0	 2	 0	 0	 2
+4	0	 0	 0	 0	 2	 0	 2
+Total	[1 4 2 2 2 1]
+Corrected Rand index: 0.316622691293
+
+F-measure(P,Q): 1.0
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 35
+
+Cluster 0,0 Prototipo: Acnodonoligacanthus [1 objetos]Objetos: Acnodonoligacanthus 
+Cluster 0,1 Prototipo: Leporinusfrederici [1 objetos]Objetos: Leporinusfrederici 
+Cluster 0,2 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 0,3 Prototipo: Myleusrubripinis [1 objetos]Objetos: Myleusrubripinis 
+Cluster 1,0 Prototipo: Leporinusfrederici [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 1,2 Prototipo: Platydorascostatus [4 objetos]Objetos: Potamotrygonhystrix Platydorascostatus Ageneiosusbrevifili Semaprochilodusvari 
+Cluster 1,3 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Cynodongibbus Hopliasa�mara Dorasmicropoeus 
+
+Critério de adequação (energia): 69231.465
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,1	1,2	1,3	Total
+
+1	0	 0	 0	 0	 0	 2	 2	 4
+2	0	 0	 1	 0	 0	 2	 1	 4
+3	0	 1	 0	 0	 1	 0	 0	 2
+4	1	 0	 0	 1	 0	 0	 0	 2
+Total	[1 1 1 1 1 4 3]
+Corrected Rand index: 0.224274406332
+
+F-measure(P,Q): 0.666666666667
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 36
+
+Cluster 0,0 Prototipo: Acnodonoligacanthus [5 objetos]Objetos: Leporinusfasciatus Leporinusfrederici Pseudoancistrusbarbatus Myleusrubripinis Acnodonoligacanthus 
+Cluster 0,1 Prototipo: Acnodonoligacanthus [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: Acnodonoligacanthus [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: Platydorascostatus [4 objetos]Objetos: Ageneiosusbrevifili Potamotrygonhystrix Platydorascostatus Semaprochilodusvari 
+Cluster 1,0 Prototipo: Cynodongibbus [1 objetos]Objetos: Cynodongibbus 
+Cluster 1,1 Prototipo: Cynodongibbus [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Dorasmicropoeus [2 objetos]Objetos: Hopliasa�mara Dorasmicropoeus 
+Cluster 1,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 44474.85
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,3	1,0	1,2	Total
+
+1	0	 2	 1	 1	 4
+2	1	 2	 0	 1	 4
+3	2	 0	 0	 0	 2
+4	2	 0	 0	 0	 2
+Total	[5 4 1 2]
+Corrected Rand index: 0.242661448141
+
+F-measure(P,Q): 0.571428571429
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 37
+
+Cluster 0,0 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Cynodongibbus Hopliasa�mara Dorasmicropoeus 
+Cluster 0,1 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 0,2 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 0,3 Prototipo: Leporinusfrederici [1 objetos]Objetos: Leporinusfrederici 
+Cluster 1,0 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Semaprochilodusvari [1 objetos]Objetos: Semaprochilodusvari 
+Cluster 1,2 Prototipo: Myleusrubripinis [2 objetos]Objetos: Myleusrubripinis Acnodonoligacanthus 
+Cluster 1,3 Prototipo: Platydorascostatus [3 objetos]Objetos: Potamotrygonhystrix Platydorascostatus Ageneiosusbrevifili 
+
+Critério de adequação (energia): 56653.885
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,1	1,2	1,3	Total
+
+1	2	 0	 0	 0	 0	 0	 2	 4
+2	1	 1	 0	 0	 1	 0	 1	 4
+3	0	 0	 1	 1	 0	 0	 0	 2
+4	0	 0	 0	 0	 0	 2	 0	 2
+Total	[3 1 1 1 1 2 3]
+Corrected Rand index: 0.245664739884
+
+F-measure(P,Q): 1.0
+OERC: 0.166666666667
+
+#####################################
+Repetição do experimento: 38
+
+Cluster 0,0 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Cynodongibbus Hopliasa�mara Dorasmicropoeus 
+Cluster 0,1 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: Platydorascostatus [4 objetos]Objetos: Ageneiosusbrevifili Potamotrygonhystrix Platydorascostatus Semaprochilodusvari 
+Cluster 0,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Acnodonoligacanthus [4 objetos]Objetos: Myleusrubripinis Pseudoancistrusbarbatus Acnodonoligacanthus Leporinusfrederici 
+Cluster 1,2 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+
+Critério de adequação (energia): 72890.105
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	1,1	1,3	Total
+
+1	2	 2	 0	 0	 4
+2	1	 2	 1	 0	 4
+3	0	 0	 1	 1	 2
+4	0	 0	 2	 0	 2
+Total	[3 4 4 1]
+Corrected Rand index: 0.259414225941
+
+F-measure(P,Q): 0.666666666667
+OERC: 0.416666666667
+
+#####################################
+Repetição do experimento: 39
+
+Cluster 0,0 Prototipo: Myleusrubripinis [1 objetos]Objetos: Myleusrubripinis 
+Cluster 0,1 Prototipo: Platydorascostatus [4 objetos]Objetos: Potamotrygonhystrix Platydorascostatus Ageneiosusbrevifili Semaprochilodusvari 
+Cluster 0,2 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 0,3 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Dorasmicropoeus Cynodongibbus Hopliasa�mara 
+Cluster 1,0 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfasciatus Leporinusfrederici 
+Cluster 1,1 Prototipo: Pseudoancistrusbarbatus [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Acnodonoligacanthus [1 objetos]Objetos: Acnodonoligacanthus 
+Cluster 1,3 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 72546.725
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,2	Total
+
+1	0	 2	 0	 2	 0	 0	 4
+2	0	 2	 1	 1	 0	 0	 4
+3	0	 0	 0	 0	 2	 0	 2
+4	1	 0	 0	 0	 0	 1	 2
+Total	[1 4 1 3 2 1]
+Corrected Rand index: 0.303413400759
+
+F-measure(P,Q): 1.0
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 40
+
+Cluster 0,0 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 0,1 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfasciatus Leporinusfrederici 
+Cluster 0,2 Prototipo: Myleusrubripinis [1 objetos]Objetos: Myleusrubripinis 
+Cluster 0,3 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Cynodongibbus Hopliasa�mara Dorasmicropoeus 
+Cluster 1,0 Prototipo: Leporinusfrederici [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Platydorascostatus [4 objetos]Objetos: Platydorascostatus Potamotrygonhystrix Ageneiosusbrevifili Semaprochilodusvari 
+Cluster 1,2 Prototipo: Acnodonoligacanthus [1 objetos]Objetos: Acnodonoligacanthus 
+Cluster 1,3 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 72546.725
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,1	1,2	Total
+
+1	0	 0	 0	 2	 2	 0	 4
+2	1	 0	 0	 1	 2	 0	 4
+3	0	 2	 0	 0	 0	 0	 2
+4	0	 0	 1	 0	 0	 1	 2
+Total	[1 2 1 3 4 1]
+Corrected Rand index: 0.303413400759
+
+F-measure(P,Q): 1.0
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 41
+
+Cluster 0,0 Prototipo: Dorasmicropoeus [2 objetos]Objetos: Hopliasa�mara Dorasmicropoeus 
+Cluster 0,1 Prototipo: Platydorascostatus [4 objetos]Objetos: Platydorascostatus Potamotrygonhystrix Semaprochilodusvari Ageneiosusbrevifili 
+Cluster 0,2 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 0,3 Prototipo: Myleusrubripinis [3 objetos]Objetos: Pseudoancistrusbarbatus Acnodonoligacanthus Myleusrubripinis 
+Cluster 1,0 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Cynodongibbus [1 objetos]Objetos: Cynodongibbus 
+Cluster 1,2 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: Leporinusfrederici [1 objetos]Objetos: Leporinusfrederici 
+
+Critério de adequação (energia): 39079.36
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,1	1,3	Total
+
+1	1	 2	 0	 0	 1	 0	 4
+2	1	 2	 0	 1	 0	 0	 4
+3	0	 0	 1	 0	 0	 1	 2
+4	0	 0	 0	 2	 0	 0	 2
+Total	[2 4 1 3 1 1]
+Corrected Rand index: 0.21997471555
+
+F-measure(P,Q): 0.8
+OERC: 0.333333333333
+
+#####################################
+Repetição do experimento: 42
+
+Cluster 0,0 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 0,1 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfrederici Leporinusfasciatus 
+Cluster 0,2 Prototipo: Myleusrubripinis [2 objetos]Objetos: Acnodonoligacanthus Myleusrubripinis 
+Cluster 0,3 Prototipo: Semaprochilodusvari [1 objetos]Objetos: Semaprochilodusvari 
+Cluster 1,0 Prototipo: Platydorascostatus [3 objetos]Objetos: Potamotrygonhystrix Platydorascostatus Ageneiosusbrevifili 
+Cluster 1,1 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Dorasmicropoeus Hopliasa�mara Cynodongibbus 
+Cluster 1,3 Prototipo: Semaprochilodusvari [0 objetos]Objetos: 
+
+Critério de adequação (energia): 59969.145
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,2	Total
+
+1	0	 0	 0	 0	 2	 2	 4
+2	1	 0	 0	 1	 1	 1	 4
+3	0	 2	 0	 0	 0	 0	 2
+4	0	 0	 2	 0	 0	 0	 2
+Total	[1 2 2 1 3 3]
+Corrected Rand index: 0.331034482759
+
+F-measure(P,Q): 1.0
+OERC: 0.166666666667
+
+#####################################
+Repetição do experimento: 43
+
+Cluster 0,0 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 0,1 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Cynodongibbus Hopliasa�mara Dorasmicropoeus 
+Cluster 0,2 Prototipo: Platydorascostatus [4 objetos]Objetos: Semaprochilodusvari Ageneiosusbrevifili Potamotrygonhystrix Platydorascostatus 
+Cluster 0,3 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: Acnodonoligacanthus [4 objetos]Objetos: Leporinusfrederici Pseudoancistrusbarbatus Acnodonoligacanthus Myleusrubripinis 
+Cluster 1,1 Prototipo: Acnodonoligacanthus [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Acnodonoligacanthus [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 72890.105
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	Total
+
+1	0	 2	 2	 0	 4
+2	0	 1	 2	 1	 4
+3	1	 0	 0	 1	 2
+4	0	 0	 0	 2	 2
+Total	[1 3 4 4]
+Corrected Rand index: 0.259414225941
+
+F-measure(P,Q): 0.666666666667
+OERC: 0.416666666667
+
+#####################################
+Repetição do experimento: 44
+
+Cluster 0,0 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Cynodongibbus Hopliasa�mara Dorasmicropoeus 
+Cluster 0,1 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 0,2 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 0,3 Prototipo: Myleusrubripinis [2 objetos]Objetos: Acnodonoligacanthus Myleusrubripinis 
+Cluster 1,0 Prototipo: Platydorascostatus [4 objetos]Objetos: Ageneiosusbrevifili Platydorascostatus Semaprochilodusvari Potamotrygonhystrix 
+Cluster 1,1 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Leporinusfrederici [1 objetos]Objetos: Leporinusfrederici 
+Cluster 1,3 Prototipo: Leporinusfrederici [0 objetos]Objetos: 
+
+Critério de adequação (energia): 70095.475
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,2	Total
+
+1	2	 0	 0	 0	 2	 0	 4
+2	1	 0	 1	 0	 2	 0	 4
+3	0	 1	 0	 0	 0	 1	 2
+4	0	 0	 0	 2	 0	 0	 2
+Total	[3 1 1 2 4 1]
+Corrected Rand index: 0.303413400759
+
+F-measure(P,Q): 1.0
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 45
+
+Cluster 0,0 Prototipo: Acnodonoligacanthus [3 objetos]Objetos: Acnodonoligacanthus Myleusrubripinis Leporinusfrederici 
+Cluster 0,1 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 0,2 Prototipo: Ageneiosusbrevifili [1 objetos]Objetos: Ageneiosusbrevifili 
+Cluster 0,3 Prototipo: Platydorascostatus [3 objetos]Objetos: Semaprochilodusvari Potamotrygonhystrix Platydorascostatus 
+Cluster 1,0 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 1,1 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Hopliasa�mara Cynodongibbus Dorasmicropoeus 
+Cluster 1,2 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 63648.45
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	Total
+
+1	0	 0	 1	 1	 0	 2	 4
+2	0	 0	 0	 2	 1	 1	 4
+3	1	 1	 0	 0	 0	 0	 2
+4	2	 0	 0	 0	 0	 0	 2
+Total	[3 1 1 3 1 3]
+Corrected Rand index: 0.229551451187
+
+F-measure(P,Q): 0.8
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 46
+
+Cluster 0,0 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfrederici Leporinusfasciatus 
+Cluster 0,1 Prototipo: Ageneiosusbrevifili [1 objetos]Objetos: Ageneiosusbrevifili 
+Cluster 0,2 Prototipo: Hopliasa�mara [1 objetos]Objetos: Hopliasa�mara 
+Cluster 0,3 Prototipo: Dorasmicropoeus [2 objetos]Objetos: Cynodongibbus Dorasmicropoeus 
+Cluster 1,0 Prototipo: Myleusrubripinis [3 objetos]Objetos: Pseudoancistrusbarbatus Acnodonoligacanthus Myleusrubripinis 
+Cluster 1,1 Prototipo: Myleusrubripinis [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Platydorascostatus [3 objetos]Objetos: Semaprochilodusvari Potamotrygonhystrix Platydorascostatus 
+Cluster 1,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 55796.02
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,2	Total
+
+1	0	 1	 1	 1	 0	 1	 4
+2	0	 0	 0	 1	 1	 2	 4
+3	2	 0	 0	 0	 0	 0	 2
+4	0	 0	 0	 0	 2	 0	 2
+Total	[2 1 1 2 3 3]
+Corrected Rand index: 0.24
+
+F-measure(P,Q): 1.0
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 47
+
+Cluster 0,0 Prototipo: Myleusrubripinis [1 objetos]Objetos: Myleusrubripinis 
+Cluster 0,1 Prototipo: Leporinusfrederici [1 objetos]Objetos: Leporinusfrederici 
+Cluster 0,2 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 0,3 Prototipo: Platydorascostatus [7 objetos]Objetos: Ageneiosusbrevifili Cynodongibbus Hopliasa�mara Potamotrygonhystrix Dorasmicropoeus Platydorascostatus Semaprochilodusvari 
+Cluster 1,0 Prototipo: Acnodonoligacanthus [1 objetos]Objetos: Acnodonoligacanthus 
+Cluster 1,1 Prototipo: Myleusrubripinis [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 1,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 94993.99
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,2	Total
+
+1	0	 0	 0	 4	 0	 0	 4
+2	0	 0	 1	 3	 0	 0	 4
+3	0	 1	 0	 0	 0	 1	 2
+4	1	 0	 0	 0	 1	 0	 2
+Total	[1 1 1 7 1 1]
+Corrected Rand index: 0.493934142114
+
+F-measure(P,Q): 0.727272727273
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 48
+
+Cluster 0,0 Prototipo: Dorasmicropoeus [1 objetos]Objetos: Dorasmicropoeus 
+Cluster 0,1 Prototipo: Cynodongibbus [1 objetos]Objetos: Cynodongibbus 
+Cluster 0,2 Prototipo: Semaprochilodusvari [1 objetos]Objetos: Semaprochilodusvari 
+Cluster 0,3 Prototipo: Platydorascostatus [3 objetos]Objetos: Ageneiosusbrevifili Potamotrygonhystrix Platydorascostatus 
+Cluster 1,0 Prototipo: Hopliasa�mara [1 objetos]Objetos: Hopliasa�mara 
+Cluster 1,1 Prototipo: Cynodongibbus [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Semaprochilodusvari [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: Acnodonoligacanthus [5 objetos]Objetos: Leporinusfasciatus Leporinusfrederici Pseudoancistrusbarbatus Acnodonoligacanthus Myleusrubripinis 
+
+Critério de adequação (energia): 20342.83
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,3	Total
+
+1	0	 1	 0	 2	 1	 0	 4
+2	1	 0	 1	 1	 0	 1	 4
+3	0	 0	 0	 0	 0	 2	 2
+4	0	 0	 0	 0	 0	 2	 2
+Total	[1 1 1 3 1 5]
+Corrected Rand index: 0.195505617978
+
+F-measure(P,Q): 0.571428571429
+OERC: 0.333333333333
+
+#####################################
+Repetição do experimento: 49
+
+Cluster 0,0 Prototipo: Myleusrubripinis [3 objetos]Objetos: Pseudoancistrusbarbatus Acnodonoligacanthus Myleusrubripinis 
+Cluster 0,1 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfasciatus Leporinusfrederici 
+Cluster 0,2 Prototipo: Platydorascostatus [4 objetos]Objetos: Ageneiosusbrevifili Potamotrygonhystrix Semaprochilodusvari Platydorascostatus 
+Cluster 0,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: Leporinusfrederici [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Hopliasa�mara [1 objetos]Objetos: Hopliasa�mara 
+Cluster 1,3 Prototipo: Dorasmicropoeus [2 objetos]Objetos: Cynodongibbus Dorasmicropoeus 
+
+Critério de adequação (energia): 63853.995
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,2	1,3	Total
+
+1	0	 0	 2	 1	 1	 4
+2	1	 0	 2	 0	 1	 4
+3	0	 2	 0	 0	 0	 2
+4	2	 0	 0	 0	 0	 2
+Total	[3 2 4 1 2]
+Corrected Rand index: 0.296116504854
+
+F-measure(P,Q): 1.0
+OERC: 0.333333333333
+
+#####################################
+Repetição do experimento: 50
+
+Cluster 0,0 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Cynodongibbus Dorasmicropoeus Hopliasa�mara 
+Cluster 0,1 Prototipo: Potamotrygonhystrix [1 objetos]Objetos: Potamotrygonhystrix 
+Cluster 0,2 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 0,3 Prototipo: Acnodonoligacanthus [4 objetos]Objetos: Leporinusfrederici Pseudoancistrusbarbatus Myleusrubripinis Acnodonoligacanthus 
+Cluster 1,0 Prototipo: Platydorascostatus [3 objetos]Objetos: Ageneiosusbrevifili Platydorascostatus Semaprochilodusvari 
+Cluster 1,1 Prototipo: Potamotrygonhystrix [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Acnodonoligacanthus [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: Acnodonoligacanthus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 67998.44
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	Total
+
+1	2	 1	 0	 0	 1	 4
+2	1	 0	 0	 1	 2	 4
+3	0	 0	 1	 1	 0	 2
+4	0	 0	 0	 2	 0	 2
+Total	[3 1 1 4 3]
+Corrected Rand index: 0.207701283547
+
+F-measure(P,Q): 0.666666666667
+OERC: 0.333333333333
+
+#####################################
+Repetição do experimento: 51
+
+Cluster 0,0 Prototipo: Cynodongibbus [1 objetos]Objetos: Cynodongibbus 
+Cluster 0,1 Prototipo: Cynodongibbus [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 0,3 Prototipo: Platydorascostatus [4 objetos]Objetos: Potamotrygonhystrix Platydorascostatus Dorasmicropoeus Semaprochilodusvari 
+Cluster 1,0 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Ageneiosusbrevifili [2 objetos]Objetos: Ageneiosusbrevifili Hopliasa�mara 
+Cluster 1,2 Prototipo: Acnodonoligacanthus [4 objetos]Objetos: Leporinusfrederici Pseudoancistrusbarbatus Acnodonoligacanthus Myleusrubripinis 
+Cluster 1,3 Prototipo: Acnodonoligacanthus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 47157.13
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	0,3	1,1	1,2	Total
+
+1	1	 0	 1	 2	 0	 4
+2	0	 0	 3	 0	 1	 4
+3	0	 1	 0	 0	 1	 2
+4	0	 0	 0	 0	 2	 2
+Total	[1 1 4 2 4]
+Corrected Rand index: 0.348314606742
+
+F-measure(P,Q): 0.75
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 52
+
+Cluster 0,0 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Hopliasa�mara Dorasmicropoeus Cynodongibbus 
+Cluster 0,1 Prototipo: Ageneiosusbrevifili [1 objetos]Objetos: Ageneiosusbrevifili 
+Cluster 0,2 Prototipo: Myleusrubripinis [3 objetos]Objetos: Myleusrubripinis Pseudoancistrusbarbatus Acnodonoligacanthus 
+Cluster 0,3 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfasciatus Leporinusfrederici 
+Cluster 1,0 Prototipo: Platydorascostatus [3 objetos]Objetos: Potamotrygonhystrix Platydorascostatus Semaprochilodusvari 
+Cluster 1,1 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 66486.45
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	Total
+
+1	2	 1	 0	 0	 1	 4
+2	1	 0	 1	 0	 2	 4
+3	0	 0	 0	 2	 0	 2
+4	0	 0	 2	 0	 0	 2
+Total	[3 1 3 2 3]
+Corrected Rand index: 0.308470290771
+
+F-measure(P,Q): 1.0
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 53
+
+Cluster 0,0 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 0,1 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfrederici Leporinusfasciatus 
+Cluster 0,2 Prototipo: Semaprochilodusvari [1 objetos]Objetos: Semaprochilodusvari 
+Cluster 0,3 Prototipo: Dorasmicropoeus [2 objetos]Objetos: Cynodongibbus Dorasmicropoeus 
+Cluster 1,0 Prototipo: Myleusrubripinis [2 objetos]Objetos: Acnodonoligacanthus Myleusrubripinis 
+Cluster 1,1 Prototipo: Hopliasa�mara [1 objetos]Objetos: Hopliasa�mara 
+Cluster 1,2 Prototipo: Potamotrygonhystrix [2 objetos]Objetos: Potamotrygonhystrix Platydorascostatus 
+Cluster 1,3 Prototipo: Ageneiosusbrevifili [1 objetos]Objetos: Ageneiosusbrevifili 
+
+Critério de adequação (energia): 41220.74
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	1,3	Total
+
+1	0	 0	 0	 1	 0	 1	 1	 1	 4
+2	1	 0	 1	 1	 0	 0	 1	 0	 4
+3	0	 2	 0	 0	 0	 0	 0	 0	 2
+4	0	 0	 0	 0	 2	 0	 0	 0	 2
+Total	[1 2 1 2 2 1 2 1]
+Corrected Rand index: 0.168634064081
+
+F-measure(P,Q): 1.0
+OERC: 0.166666666667
+
+#####################################
+Repetição do experimento: 54
+
+Cluster 0,0 Prototipo: Platydorascostatus [3 objetos]Objetos: Platydorascostatus Semaprochilodusvari Potamotrygonhystrix 
+Cluster 0,1 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfasciatus Leporinusfrederici 
+Cluster 0,2 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 0,3 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Cynodongibbus Hopliasa�mara Dorasmicropoeus 
+Cluster 1,0 Prototipo: Leporinusfrederici [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Myleusrubripinis [2 objetos]Objetos: Acnodonoligacanthus Myleusrubripinis 
+Cluster 1,2 Prototipo: Ageneiosusbrevifili [1 objetos]Objetos: Ageneiosusbrevifili 
+Cluster 1,3 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 65352.76
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,1	1,2	Total
+
+1	1	 0	 0	 2	 0	 1	 4
+2	2	 0	 1	 1	 0	 0	 4
+3	0	 2	 0	 0	 0	 0	 2
+4	0	 0	 0	 0	 2	 0	 2
+Total	[3 2 1 3 2 1]
+Corrected Rand index: 0.331034482759
+
+F-measure(P,Q): 1.0
+OERC: 0.166666666667
+
+#####################################
+Repetição do experimento: 55
+
+Cluster 0,0 Prototipo: Acnodonoligacanthus [4 objetos]Objetos: Pseudoancistrusbarbatus Acnodonoligacanthus Myleusrubripinis Leporinusfrederici 
+Cluster 0,1 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Dorasmicropoeus Hopliasa�mara Cynodongibbus 
+Cluster 0,2 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 0,3 Prototipo: Ageneiosusbrevifili [1 objetos]Objetos: Ageneiosusbrevifili 
+Cluster 1,0 Prototipo: Platydorascostatus [1 objetos]Objetos: Platydorascostatus 
+Cluster 1,1 Prototipo: Potamotrygonhystrix [1 objetos]Objetos: Potamotrygonhystrix 
+Cluster 1,2 Prototipo: Semaprochilodusvari [1 objetos]Objetos: Semaprochilodusvari 
+Cluster 1,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 46498.875
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	Total
+
+1	0	 2	 0	 1	 0	 1	 0	 4
+2	1	 1	 0	 0	 1	 0	 1	 4
+3	1	 0	 1	 0	 0	 0	 0	 2
+4	2	 0	 0	 0	 0	 0	 0	 2
+Total	[4 3 1 1 1 1 1]
+Corrected Rand index: 0.137203166227
+
+F-measure(P,Q): 0.666666666667
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 56
+
+Cluster 0,0 Prototipo: Acnodonoligacanthus [4 objetos]Objetos: Leporinusfasciatus Leporinusfrederici Acnodonoligacanthus Myleusrubripinis 
+Cluster 0,1 Prototipo: Acnodonoligacanthus [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 0,3 Prototipo: Platydorascostatus [4 objetos]Objetos: Ageneiosusbrevifili Potamotrygonhystrix Platydorascostatus Semaprochilodusvari 
+Cluster 1,0 Prototipo: Acnodonoligacanthus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Pseudoancistrusbarbatus [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Dorasmicropoeus Cynodongibbus Hopliasa�mara 
+Cluster 1,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 75440.975
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	0,3	1,2	Total
+
+1	0	 0	 2	 2	 4
+2	0	 1	 2	 1	 4
+3	2	 0	 0	 0	 2
+4	2	 0	 0	 0	 2
+Total	[4 1 4 3]
+Corrected Rand index: 0.328451882845
+
+F-measure(P,Q): 0.666666666667
+OERC: 0.416666666667
+
+#####################################
+Repetição do experimento: 57
+
+Cluster 0,0 Prototipo: Semaprochilodusvari [1 objetos]Objetos: Semaprochilodusvari 
+Cluster 0,1 Prototipo: Potamotrygonhystrix [2 objetos]Objetos: Potamotrygonhystrix Platydorascostatus 
+Cluster 0,2 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 0,3 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 1,0 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Cynodongibbus Hopliasa�mara Dorasmicropoeus 
+Cluster 1,1 Prototipo: Myleusrubripinis [2 objetos]Objetos: Acnodonoligacanthus Myleusrubripinis 
+Cluster 1,2 Prototipo: Ageneiosusbrevifili [1 objetos]Objetos: Ageneiosusbrevifili 
+Cluster 1,3 Prototipo: Leporinusfrederici [1 objetos]Objetos: Leporinusfrederici 
+
+Critério de adequação (energia): 48595.91
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	1,3	Total
+
+1	0	 1	 0	 0	 2	 0	 1	 0	 4
+2	1	 1	 0	 1	 1	 0	 0	 0	 4
+3	0	 0	 1	 0	 0	 0	 0	 1	 2
+4	0	 0	 0	 0	 0	 2	 0	 0	 2
+Total	[1 2 1 1 3 2 1 1]
+Corrected Rand index: 0.159744408946
+
+F-measure(P,Q): 1.0
+OERC: 0.166666666667
+
+#####################################
+Repetição do experimento: 58
+
+Cluster 0,0 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 0,1 Prototipo: Myleusrubripinis [1 objetos]Objetos: Myleusrubripinis 
+Cluster 0,2 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Dorasmicropoeus Hopliasa�mara Cynodongibbus 
+Cluster 0,3 Prototipo: Platydorascostatus [4 objetos]Objetos: Ageneiosusbrevifili Potamotrygonhystrix Platydorascostatus Semaprochilodusvari 
+Cluster 1,0 Prototipo: Acnodonoligacanthus [1 objetos]Objetos: Acnodonoligacanthus 
+Cluster 1,1 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 1,2 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: Leporinusfrederici [1 objetos]Objetos: Leporinusfrederici 
+
+Critério de adequação (energia): 69231.465
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,3	Total
+
+1	0	 0	 2	 2	 0	 0	 0	 4
+2	1	 0	 1	 2	 0	 0	 0	 4
+3	0	 0	 0	 0	 0	 1	 1	 2
+4	0	 1	 0	 0	 1	 0	 0	 2
+Total	[1 1 3 4 1 1 1]
+Corrected Rand index: 0.224274406332
+
+F-measure(P,Q): 0.666666666667
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 59
+
+Cluster 0,0 Prototipo: Dorasmicropoeus [2 objetos]Objetos: Hopliasa�mara Dorasmicropoeus 
+Cluster 0,1 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: Acnodonoligacanthus [4 objetos]Objetos: Myleusrubripinis Pseudoancistrusbarbatus Acnodonoligacanthus Leporinusfrederici 
+Cluster 0,3 Prototipo: Platydorascostatus [4 objetos]Objetos: Ageneiosusbrevifili Semaprochilodusvari Platydorascostatus Potamotrygonhystrix 
+Cluster 1,0 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Cynodongibbus [1 objetos]Objetos: Cynodongibbus 
+Cluster 1,2 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+
+Critério de adequação (energia): 40740.3
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	0,3	1,1	1,3	Total
+
+1	1	 0	 2	 1	 0	 4
+2	1	 1	 2	 0	 0	 4
+3	0	 1	 0	 0	 1	 2
+4	0	 2	 0	 0	 0	 2
+Total	[2 4 4 1 1]
+Corrected Rand index: 0.2
+
+F-measure(P,Q): 0.666666666667
+OERC: 0.416666666667
+
+#####################################
+Repetição do experimento: 60
+
+Cluster 0,0 Prototipo: Dorasmicropoeus [2 objetos]Objetos: Cynodongibbus Dorasmicropoeus 
+Cluster 0,1 Prototipo: Hopliasa�mara [1 objetos]Objetos: Hopliasa�mara 
+Cluster 0,2 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 0,3 Prototipo: Myleusrubripinis [1 objetos]Objetos: Myleusrubripinis 
+Cluster 1,0 Prototipo: Acnodonoligacanthus [1 objetos]Objetos: Acnodonoligacanthus 
+Cluster 1,1 Prototipo: Ageneiosusbrevifili [1 objetos]Objetos: Ageneiosusbrevifili 
+Cluster 1,2 Prototipo: Platydorascostatus [3 objetos]Objetos: Potamotrygonhystrix Platydorascostatus Semaprochilodusvari 
+Cluster 1,3 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfasciatus Leporinusfrederici 
+
+Critério de adequação (energia): 53798.32
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	1,3	Total
+
+1	1	 1	 0	 0	 0	 1	 1	 0	 4
+2	1	 0	 1	 0	 0	 0	 2	 0	 4
+3	0	 0	 0	 0	 0	 0	 0	 2	 2
+4	0	 0	 0	 1	 1	 0	 0	 0	 2
+Total	[2 1 1 1 1 1 3 2]
+Corrected Rand index: 0.159744408946
+
+F-measure(P,Q): 1.0
+OERC: 0.166666666667
+
+#####################################
+Repetição do experimento: 61
+
+Cluster 0,0 Prototipo: Platydorascostatus [4 objetos]Objetos: Semaprochilodusvari Ageneiosusbrevifili Platydorascostatus Potamotrygonhystrix 
+Cluster 0,1 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: Hopliasa�mara [1 objetos]Objetos: Hopliasa�mara 
+Cluster 0,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: Acnodonoligacanthus [5 objetos]Objetos: Leporinusfasciatus Leporinusfrederici Pseudoancistrusbarbatus Acnodonoligacanthus Myleusrubripinis 
+Cluster 1,1 Prototipo: Acnodonoligacanthus [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Dorasmicropoeus [2 objetos]Objetos: Dorasmicropoeus Cynodongibbus 
+Cluster 1,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 65934.225
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	1,0	1,2	Total
+
+1	2	 1	 0	 1	 4
+2	2	 0	 1	 1	 4
+3	0	 0	 2	 0	 2
+4	0	 0	 2	 0	 2
+Total	[4 1 5 2]
+Corrected Rand index: 0.242661448141
+
+F-measure(P,Q): 0.571428571429
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 62
+
+Cluster 0,0 Prototipo: Platydorascostatus [4 objetos]Objetos: Ageneiosusbrevifili Potamotrygonhystrix Platydorascostatus Semaprochilodusvari 
+Cluster 0,1 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: Myleusrubripinis [3 objetos]Objetos: Pseudoancistrusbarbatus Acnodonoligacanthus Myleusrubripinis 
+Cluster 1,0 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Dorasmicropoeus Hopliasa�mara Cynodongibbus 
+Cluster 1,3 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfrederici Leporinusfasciatus 
+
+Critério de adequação (energia): 74544.425
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,3	1,2	1,3	Total
+
+1	2	 0	 2	 0	 4
+2	2	 1	 1	 0	 4
+3	0	 0	 0	 2	 2
+4	0	 2	 0	 0	 2
+Total	[4 3 3 2]
+Corrected Rand index: 0.352808988764
+
+F-measure(P,Q): 1.0
+OERC: 0.333333333333
+
+#####################################
+Repetição do experimento: 63
+
+Cluster 0,0 Prototipo: Myleusrubripinis [3 objetos]Objetos: Pseudoancistrusbarbatus Acnodonoligacanthus Myleusrubripinis 
+Cluster 0,1 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 0,2 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Hopliasa�mara Cynodongibbus Dorasmicropoeus 
+Cluster 0,3 Prototipo: Platydorascostatus [4 objetos]Objetos: Ageneiosusbrevifili Potamotrygonhystrix Platydorascostatus Semaprochilodusvari 
+Cluster 1,0 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Leporinusfasciatus [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: Leporinusfrederici [1 objetos]Objetos: Leporinusfrederici 
+
+Critério de adequação (energia): 71229.165
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,3	Total
+
+1	0	 0	 2	 2	 0	 4
+2	1	 0	 1	 2	 0	 4
+3	0	 1	 0	 0	 1	 2
+4	2	 0	 0	 0	 0	 2
+Total	[3 1 3 4 1]
+Corrected Rand index: 0.28471411902
+
+F-measure(P,Q): 0.8
+OERC: 0.333333333333
+
+#####################################
+Repetição do experimento: 64
+
+Cluster 0,0 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Dorasmicropoeus Cynodongibbus Hopliasa�mara 
+Cluster 0,1 Prototipo: Platydorascostatus [3 objetos]Objetos: Potamotrygonhystrix Platydorascostatus Semaprochilodusvari 
+Cluster 0,2 Prototipo: Myleusrubripinis [2 objetos]Objetos: Acnodonoligacanthus Myleusrubripinis 
+Cluster 0,3 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 1,0 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Ageneiosusbrevifili [1 objetos]Objetos: Ageneiosusbrevifili 
+Cluster 1,2 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 1,3 Prototipo: Leporinusfrederici [1 objetos]Objetos: Leporinusfrederici 
+
+Critério de adequação (energia): 62037.5
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,1	1,2	1,3	Total
+
+1	2	 1	 0	 0	 1	 0	 0	 4
+2	1	 2	 0	 1	 0	 0	 0	 4
+3	0	 0	 0	 0	 0	 1	 1	 2
+4	0	 0	 2	 0	 0	 0	 0	 2
+Total	[3 3 2 1 1 1 1]
+Corrected Rand index: 0.245664739884
+
+F-measure(P,Q): 1.0
+OERC: 0.166666666667
+
+#####################################
+Repetição do experimento: 65
+
+Cluster 0,0 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Dorasmicropoeus Hopliasa�mara Cynodongibbus 
+Cluster 0,1 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: Platydorascostatus [4 objetos]Objetos: Platydorascostatus Potamotrygonhystrix Ageneiosusbrevifili Semaprochilodusvari 
+Cluster 0,3 Prototipo: Myleusrubripinis [3 objetos]Objetos: Pseudoancistrusbarbatus Acnodonoligacanthus Myleusrubripinis 
+Cluster 1,0 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 1,3 Prototipo: Leporinusfrederici [1 objetos]Objetos: Leporinusfrederici 
+
+Critério de adequação (energia): 71229.165
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	0,3	1,2	1,3	Total
+
+1	2	 2	 0	 0	 0	 4
+2	1	 2	 1	 0	 0	 4
+3	0	 0	 0	 1	 1	 2
+4	0	 0	 2	 0	 0	 2
+Total	[3 4 3 1 1]
+Corrected Rand index: 0.28471411902
+
+F-measure(P,Q): 0.8
+OERC: 0.333333333333
+
+#####################################
+Repetição do experimento: 66
+
+Cluster 0,0 Prototipo: Dorasmicropoeus [2 objetos]Objetos: Cynodongibbus Dorasmicropoeus 
+Cluster 0,1 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: Platydorascostatus [3 objetos]Objetos: Ageneiosusbrevifili Potamotrygonhystrix Platydorascostatus 
+Cluster 0,3 Prototipo: Myleusrubripinis [3 objetos]Objetos: Pseudoancistrusbarbatus Acnodonoligacanthus Myleusrubripinis 
+Cluster 1,0 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Semaprochilodusvari [1 objetos]Objetos: Semaprochilodusvari 
+Cluster 1,2 Prototipo: Hopliasa�mara [1 objetos]Objetos: Hopliasa�mara 
+Cluster 1,3 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfrederici Leporinusfasciatus 
+
+Critério de adequação (energia): 50412.405
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	0,3	1,1	1,2	1,3	Total
+
+1	1	 2	 0	 0	 1	 0	 4
+2	1	 1	 1	 1	 0	 0	 4
+3	0	 0	 0	 0	 0	 2	 2
+4	0	 0	 2	 0	 0	 0	 2
+Total	[2 3 3 1 1 2]
+Corrected Rand index: 0.24
+
+F-measure(P,Q): 1.0
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 67
+
+Cluster 0,0 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Cynodongibbus Hopliasa�mara Dorasmicropoeus 
+Cluster 0,1 Prototipo: Platydorascostatus [4 objetos]Objetos: Platydorascostatus Potamotrygonhystrix Ageneiosusbrevifili Semaprochilodusvari 
+Cluster 0,2 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 0,3 Prototipo: Myleusrubripinis [2 objetos]Objetos: Acnodonoligacanthus Myleusrubripinis 
+Cluster 1,0 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 1,2 Prototipo: Leporinusfasciatus [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: Leporinusfrederici [1 objetos]Objetos: Leporinusfrederici 
+
+Critério de adequação (energia): 70095.475
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,1	1,3	Total
+
+1	2	 2	 0	 0	 0	 0	 4
+2	1	 2	 1	 0	 0	 0	 4
+3	0	 0	 0	 0	 1	 1	 2
+4	0	 0	 0	 2	 0	 0	 2
+Total	[3 4 1 2 1 1]
+Corrected Rand index: 0.303413400759
+
+F-measure(P,Q): 1.0
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 68
+
+Cluster 0,0 Prototipo: Dorasmicropoeus [2 objetos]Objetos: Hopliasa�mara Dorasmicropoeus 
+Cluster 0,1 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: Platydorascostatus [4 objetos]Objetos: Platydorascostatus Potamotrygonhystrix Ageneiosusbrevifili Semaprochilodusvari 
+Cluster 0,3 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 1,0 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Cynodongibbus [1 objetos]Objetos: Cynodongibbus 
+Cluster 1,2 Prototipo: Myleusrubripinis [2 objetos]Objetos: Acnodonoligacanthus Myleusrubripinis 
+Cluster 1,3 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfasciatus Leporinusfrederici 
+
+Critério de adequação (energia): 41260.93
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	0,3	1,1	1,2	1,3	Total
+
+1	1	 2	 0	 1	 0	 0	 4
+2	1	 2	 1	 0	 0	 0	 4
+3	0	 0	 0	 0	 0	 2	 2
+4	0	 0	 0	 0	 2	 0	 2
+Total	[2 4 1 1 2 2]
+Corrected Rand index: 0.316622691293
+
+F-measure(P,Q): 1.0
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 69
+
+Cluster 0,0 Prototipo: Myleusrubripinis [3 objetos]Objetos: Pseudoancistrusbarbatus Acnodonoligacanthus Myleusrubripinis 
+Cluster 0,1 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfasciatus Leporinusfrederici 
+Cluster 0,2 Prototipo: Potamotrygonhystrix [1 objetos]Objetos: Potamotrygonhystrix 
+Cluster 0,3 Prototipo: Hopliasa�mara [1 objetos]Objetos: Hopliasa�mara 
+Cluster 1,0 Prototipo: Leporinusfrederici [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Platydorascostatus [3 objetos]Objetos: Platydorascostatus Ageneiosusbrevifili Semaprochilodusvari 
+Cluster 1,2 Prototipo: Cynodongibbus [1 objetos]Objetos: Cynodongibbus 
+Cluster 1,3 Prototipo: Dorasmicropoeus [1 objetos]Objetos: Dorasmicropoeus 
+
+Critério de adequação (energia): 26812.525
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,1	1,2	1,3	Total
+
+1	0	 0	 1	 1	 1	 1	 0	 4
+2	1	 0	 0	 0	 2	 0	 1	 4
+3	0	 2	 0	 0	 0	 0	 0	 2
+4	2	 0	 0	 0	 0	 0	 0	 2
+Total	[3 2 1 1 3 1 1]
+Corrected Rand index: 0.245664739884
+
+F-measure(P,Q): 1.0
+OERC: 0.166666666667
+
+#####################################
+Repetição do experimento: 70
+
+Cluster 0,0 Prototipo: Acnodonoligacanthus [4 objetos]Objetos: Leporinusfrederici Pseudoancistrusbarbatus Acnodonoligacanthus Myleusrubripinis 
+Cluster 0,1 Prototipo: Platydorascostatus [4 objetos]Objetos: Ageneiosusbrevifili Potamotrygonhystrix Platydorascostatus Semaprochilodusvari 
+Cluster 0,2 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Dorasmicropoeus Hopliasa�mara Cynodongibbus 
+Cluster 0,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: Acnodonoligacanthus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 1,2 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 72890.105
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,1	Total
+
+1	0	 2	 2	 0	 4
+2	1	 2	 1	 0	 4
+3	1	 0	 0	 1	 2
+4	2	 0	 0	 0	 2
+Total	[4 4 3 1]
+Corrected Rand index: 0.259414225941
+
+F-measure(P,Q): 0.666666666667
+OERC: 0.416666666667
+
+#####################################
+Repetição do experimento: 71
+
+Cluster 0,0 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 0,1 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfasciatus Leporinusfrederici 
+Cluster 0,2 Prototipo: Hopliasa�mara [1 objetos]Objetos: Hopliasa�mara 
+Cluster 0,3 Prototipo: Dorasmicropoeus [2 objetos]Objetos: Cynodongibbus Dorasmicropoeus 
+Cluster 1,0 Prototipo: Myleusrubripinis [2 objetos]Objetos: Acnodonoligacanthus Myleusrubripinis 
+Cluster 1,1 Prototipo: Leporinusfrederici [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Hopliasa�mara [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: Platydorascostatus [4 objetos]Objetos: Ageneiosusbrevifili Potamotrygonhystrix Platydorascostatus Semaprochilodusvari 
+
+Critério de adequação (energia): 62720.305
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,3	Total
+
+1	0	 0	 1	 1	 0	 2	 4
+2	1	 0	 0	 1	 0	 2	 4
+3	0	 2	 0	 0	 0	 0	 2
+4	0	 0	 0	 0	 2	 0	 2
+Total	[1 2 1 2 2 4]
+Corrected Rand index: 0.316622691293
+
+F-measure(P,Q): 1.0
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 72
+
+Cluster 0,0 Prototipo: Hopliasa�mara [1 objetos]Objetos: Hopliasa�mara 
+Cluster 0,1 Prototipo: Potamotrygonhystrix [2 objetos]Objetos: Potamotrygonhystrix Platydorascostatus 
+Cluster 0,2 Prototipo: Ageneiosusbrevifili [1 objetos]Objetos: Ageneiosusbrevifili 
+Cluster 0,3 Prototipo: Myleusrubripinis [3 objetos]Objetos: Pseudoancistrusbarbatus Acnodonoligacanthus Myleusrubripinis 
+Cluster 1,0 Prototipo: Dorasmicropoeus [1 objetos]Objetos: Dorasmicropoeus 
+Cluster 1,1 Prototipo: Cynodongibbus [1 objetos]Objetos: Cynodongibbus 
+Cluster 1,2 Prototipo: Semaprochilodusvari [1 objetos]Objetos: Semaprochilodusvari 
+Cluster 1,3 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfrederici Leporinusfasciatus 
+
+Critério de adequação (energia): 10204.625
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	1,3	Total
+
+1	1	 1	 1	 0	 0	 1	 0	 0	 4
+2	0	 1	 0	 1	 1	 0	 1	 0	 4
+3	0	 0	 0	 0	 0	 0	 0	 2	 2
+4	0	 0	 0	 2	 0	 0	 0	 0	 2
+Total	[1 2 1 3 1 1 1 2]
+Corrected Rand index: 0.159744408946
+
+F-measure(P,Q): 1.0
+OERC: 0.166666666667
+
+#####################################
+Repetição do experimento: 73
+
+Cluster 0,0 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Cynodongibbus Hopliasa�mara Dorasmicropoeus 
+Cluster 0,1 Prototipo: Ageneiosusbrevifili [1 objetos]Objetos: Ageneiosusbrevifili 
+Cluster 0,2 Prototipo: Leporinusfrederici [1 objetos]Objetos: Leporinusfrederici 
+Cluster 0,3 Prototipo: Myleusrubripinis [1 objetos]Objetos: Myleusrubripinis 
+Cluster 1,0 Prototipo: Acnodonoligacanthus [1 objetos]Objetos: Acnodonoligacanthus 
+Cluster 1,1 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 1,2 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 1,3 Prototipo: Platydorascostatus [3 objetos]Objetos: Potamotrygonhystrix Platydorascostatus Semaprochilodusvari 
+
+Critério de adequação (energia): 61173.49
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	1,3	Total
+
+1	2	 1	 0	 0	 0	 0	 0	 1	 4
+2	1	 0	 0	 0	 0	 1	 0	 2	 4
+3	0	 0	 1	 0	 0	 0	 1	 0	 2
+4	0	 0	 0	 1	 1	 0	 0	 0	 2
+Total	[3 1 1 1 1 1 1 3]
+Corrected Rand index: 0.151745068285
+
+F-measure(P,Q): 0.666666666667
+OERC: 0.166666666667
+
+#####################################
+Repetição do experimento: 74
+
+Cluster 0,0 Prototipo: Myleusrubripinis [2 objetos]Objetos: Acnodonoligacanthus Myleusrubripinis 
+Cluster 0,1 Prototipo: Platydorascostatus [4 objetos]Objetos: Platydorascostatus Potamotrygonhystrix Semaprochilodusvari Ageneiosusbrevifili 
+Cluster 0,2 Prototipo: Cynodongibbus [1 objetos]Objetos: Cynodongibbus 
+Cluster 0,3 Prototipo: Dorasmicropoeus [2 objetos]Objetos: Hopliasa�mara Dorasmicropoeus 
+Cluster 1,0 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfasciatus Leporinusfrederici 
+Cluster 1,1 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 1,2 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 41260.93
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	Total
+
+1	0	 2	 1	 1	 0	 0	 4
+2	0	 2	 0	 1	 0	 1	 4
+3	0	 0	 0	 0	 2	 0	 2
+4	2	 0	 0	 0	 0	 0	 2
+Total	[2 4 1 2 2 1]
+Corrected Rand index: 0.316622691293
+
+F-measure(P,Q): 1.0
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 75
+
+Cluster 0,0 Prototipo: Myleusrubripinis [3 objetos]Objetos: Pseudoancistrusbarbatus Acnodonoligacanthus Myleusrubripinis 
+Cluster 0,1 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfrederici Leporinusfasciatus 
+Cluster 0,2 Prototipo: Dorasmicropoeus [2 objetos]Objetos: Cynodongibbus Dorasmicropoeus 
+Cluster 0,3 Prototipo: Platydorascostatus [3 objetos]Objetos: Semaprochilodusvari Potamotrygonhystrix Platydorascostatus 
+Cluster 1,0 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Hopliasa�mara [1 objetos]Objetos: Hopliasa�mara 
+Cluster 1,2 Prototipo: Ageneiosusbrevifili [1 objetos]Objetos: Ageneiosusbrevifili 
+Cluster 1,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 55796.02
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,1	1,2	Total
+
+1	0	 0	 1	 1	 1	 1	 4
+2	1	 0	 1	 2	 0	 0	 4
+3	0	 2	 0	 0	 0	 0	 2
+4	2	 0	 0	 0	 0	 0	 2
+Total	[3 2 2 3 1 1]
+Corrected Rand index: 0.24
+
+F-measure(P,Q): 1.0
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 76
+
+Cluster 0,0 Prototipo: Myleusrubripinis [3 objetos]Objetos: Pseudoancistrusbarbatus Acnodonoligacanthus Myleusrubripinis 
+Cluster 0,1 Prototipo: Platydorascostatus [4 objetos]Objetos: Semaprochilodusvari Ageneiosusbrevifili Potamotrygonhystrix Platydorascostatus 
+Cluster 0,2 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Cynodongibbus Hopliasa�mara Dorasmicropoeus 
+Cluster 0,3 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfasciatus Leporinusfrederici 
+Cluster 1,1 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Leporinusfrederici [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 74544.425
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	Total
+
+1	0	 2	 2	 0	 4
+2	1	 2	 1	 0	 4
+3	0	 0	 0	 2	 2
+4	2	 0	 0	 0	 2
+Total	[3 4 3 2]
+Corrected Rand index: 0.352808988764
+
+F-measure(P,Q): 1.0
+OERC: 0.333333333333
+
+#####################################
+Repetição do experimento: 77
+
+Cluster 0,0 Prototipo: Cynodongibbus [1 objetos]Objetos: Cynodongibbus 
+Cluster 0,1 Prototipo: Cynodongibbus [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: Acnodonoligacanthus [4 objetos]Objetos: Leporinusfrederici Acnodonoligacanthus Myleusrubripinis Leporinusfasciatus 
+Cluster 0,3 Prototipo: Platydorascostatus [6 objetos]Objetos: Ageneiosusbrevifili Hopliasa�mara Potamotrygonhystrix Dorasmicropoeus Platydorascostatus Semaprochilodusvari 
+Cluster 1,0 Prototipo: Cynodongibbus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 1,2 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 58951.23
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	0,3	1,1	Total
+
+1	1	 0	 3	 0	 4
+2	0	 0	 3	 1	 4
+3	0	 2	 0	 0	 2
+4	0	 2	 0	 0	 2
+Total	[1 4 6 1]
+Corrected Rand index: 0.443674176776
+
+F-measure(P,Q): 0.666666666667
+OERC: 0.416666666667
+
+#####################################
+Repetição do experimento: 78
+
+Cluster 0,0 Prototipo: Myleusrubripinis [2 objetos]Objetos: Acnodonoligacanthus Myleusrubripinis 
+Cluster 0,1 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 0,2 Prototipo: Potamotrygonhystrix [2 objetos]Objetos: Potamotrygonhystrix Platydorascostatus 
+Cluster 0,3 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Cynodongibbus Hopliasa�mara Dorasmicropoeus 
+Cluster 1,0 Prototipo: Semaprochilodusvari [1 objetos]Objetos: Semaprochilodusvari 
+Cluster 1,1 Prototipo: Ageneiosusbrevifili [1 objetos]Objetos: Ageneiosusbrevifili 
+Cluster 1,2 Prototipo: Leporinusfrederici [1 objetos]Objetos: Leporinusfrederici 
+Cluster 1,3 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+
+Critério de adequação (energia): 48595.91
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	1,3	Total
+
+1	0	 0	 1	 2	 0	 1	 0	 0	 4
+2	0	 0	 1	 1	 1	 0	 0	 1	 4
+3	0	 1	 0	 0	 0	 0	 1	 0	 2
+4	2	 0	 0	 0	 0	 0	 0	 0	 2
+Total	[2 1 2 3 1 1 1 1]
+Corrected Rand index: 0.159744408946
+
+F-measure(P,Q): 1.0
+OERC: 0.166666666667
+
+#####################################
+Repetição do experimento: 79
+
+Cluster 0,0 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfrederici Leporinusfasciatus 
+Cluster 0,1 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 0,2 Prototipo: Potamotrygonhystrix [1 objetos]Objetos: Potamotrygonhystrix 
+Cluster 0,3 Prototipo: Semaprochilodusvari [1 objetos]Objetos: Semaprochilodusvari 
+Cluster 1,0 Prototipo: Myleusrubripinis [2 objetos]Objetos: Acnodonoligacanthus Myleusrubripinis 
+Cluster 1,1 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Dorasmicropoeus Cynodongibbus Hopliasa�mara 
+Cluster 1,2 Prototipo: Ageneiosusbrevifili [1 objetos]Objetos: Ageneiosusbrevifili 
+Cluster 1,3 Prototipo: Platydorascostatus [1 objetos]Objetos: Platydorascostatus 
+
+Critério de adequação (energia): 47019.505
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	1,3	Total
+
+1	0	 0	 1	 0	 0	 2	 1	 0	 4
+2	0	 1	 0	 1	 0	 1	 0	 1	 4
+3	2	 0	 0	 0	 0	 0	 0	 0	 2
+4	0	 0	 0	 0	 2	 0	 0	 0	 2
+Total	[2 1 1 1 2 3 1 1]
+Corrected Rand index: 0.26517571885
+
+F-measure(P,Q): 1.0
+OERC: 0.0833333333333
+
+#####################################
+Repetição do experimento: 80
+
+Cluster 0,0 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfasciatus Leporinusfrederici 
+Cluster 0,1 Prototipo: Myleusrubripinis [3 objetos]Objetos: Myleusrubripinis Pseudoancistrusbarbatus Acnodonoligacanthus 
+Cluster 0,2 Prototipo: Platydorascostatus [7 objetos]Objetos: Ageneiosusbrevifili Cynodongibbus Hopliasa�mara Potamotrygonhystrix Dorasmicropoeus Platydorascostatus Semaprochilodusvari 
+Cluster 0,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 100306.95
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	Total
+
+1	0	 0	 4	 4
+2	0	 1	 3	 4
+3	2	 0	 0	 2
+4	0	 2	 0	 2
+Total	[2 3 7]
+Corrected Rand index: 0.555209953344
+
+F-measure(P,Q): 1.0
+OERC: 0.333333333333
+
+#####################################
+Repetição do experimento: 81
+
+Cluster 0,0 Prototipo: Myleusrubripinis [3 objetos]Objetos: Pseudoancistrusbarbatus Acnodonoligacanthus Myleusrubripinis 
+Cluster 0,1 Prototipo: Platydorascostatus [3 objetos]Objetos: Potamotrygonhystrix Semaprochilodusvari Platydorascostatus 
+Cluster 0,2 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfasciatus Leporinusfrederici 
+Cluster 1,1 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Ageneiosusbrevifili [1 objetos]Objetos: Ageneiosusbrevifili 
+Cluster 1,3 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Hopliasa�mara Dorasmicropoeus Cynodongibbus 
+
+Critério de adequação (energia): 66486.45
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,2	1,3	Total
+
+1	0	 1	 0	 1	 2	 4
+2	1	 2	 0	 0	 1	 4
+3	0	 0	 2	 0	 0	 2
+4	2	 0	 0	 0	 0	 2
+Total	[3 3 2 1 3]
+Corrected Rand index: 0.308470290771
+
+F-measure(P,Q): 1.0
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 82
+
+Cluster 0,0 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Dorasmicropoeus Cynodongibbus Hopliasa�mara 
+Cluster 0,1 Prototipo: Platydorascostatus [4 objetos]Objetos: Ageneiosusbrevifili Potamotrygonhystrix Platydorascostatus Semaprochilodusvari 
+Cluster 0,2 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfrederici Leporinusfasciatus 
+Cluster 1,3 Prototipo: Myleusrubripinis [3 objetos]Objetos: Pseudoancistrusbarbatus Acnodonoligacanthus Myleusrubripinis 
+
+Critério de adequação (energia): 74544.425
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,2	1,3	Total
+
+1	2	 2	 0	 0	 4
+2	1	 2	 0	 1	 4
+3	0	 0	 2	 0	 2
+4	0	 0	 0	 2	 2
+Total	[3 4 2 3]
+Corrected Rand index: 0.352808988764
+
+F-measure(P,Q): 1.0
+OERC: 0.333333333333
+
+#####################################
+Repetição do experimento: 83
+
+Cluster 0,0 Prototipo: Myleusrubripinis [3 objetos]Objetos: Pseudoancistrusbarbatus Acnodonoligacanthus Myleusrubripinis 
+Cluster 0,1 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 0,2 Prototipo: Myleusrubripinis [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Cynodongibbus Hopliasa�mara Dorasmicropoeus 
+Cluster 1,0 Prototipo: Leporinusfrederici [1 objetos]Objetos: Leporinusfrederici 
+Cluster 1,1 Prototipo: Leporinusfasciatus [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Platydorascostatus [4 objetos]Objetos: Platydorascostatus Potamotrygonhystrix Ageneiosusbrevifili Semaprochilodusvari 
+Cluster 1,3 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 71229.165
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,3	1,0	1,2	Total
+
+1	0	 0	 2	 0	 2	 4
+2	1	 0	 1	 0	 2	 4
+3	0	 1	 0	 1	 0	 2
+4	2	 0	 0	 0	 0	 2
+Total	[3 1 3 1 4]
+Corrected Rand index: 0.28471411902
+
+F-measure(P,Q): 0.8
+OERC: 0.333333333333
+
+#####################################
+Repetição do experimento: 84
+
+Cluster 0,0 Prototipo: Acnodonoligacanthus [5 objetos]Objetos: Leporinusfasciatus Leporinusfrederici Pseudoancistrusbarbatus Acnodonoligacanthus Myleusrubripinis 
+Cluster 0,1 Prototipo: Acnodonoligacanthus [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Hopliasa�mara Cynodongibbus Dorasmicropoeus 
+Cluster 0,3 Prototipo: Platydorascostatus [4 objetos]Objetos: Ageneiosusbrevifili Potamotrygonhystrix Platydorascostatus Semaprochilodusvari 
+Cluster 1,0 Prototipo: Acnodonoligacanthus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 76624.655
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	0,3	Total
+
+1	0	 2	 2	 4
+2	1	 1	 2	 4
+3	2	 0	 0	 2
+4	2	 0	 0	 2
+Total	[5 3 4]
+Corrected Rand index: 0.292279411765
+
+F-measure(P,Q): 0.571428571429
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 85
+
+Cluster 0,0 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 0,1 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 0,2 Prototipo: Ageneiosusbrevifili [1 objetos]Objetos: Ageneiosusbrevifili 
+Cluster 0,3 Prototipo: Acnodonoligacanthus [3 objetos]Objetos: Acnodonoligacanthus Myleusrubripinis Leporinusfrederici 
+Cluster 1,0 Prototipo: Platydorascostatus [3 objetos]Objetos: Platydorascostatus Semaprochilodusvari Potamotrygonhystrix 
+Cluster 1,1 Prototipo: Ageneiosusbrevifili [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Ageneiosusbrevifili [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Cynodongibbus Hopliasa�mara Dorasmicropoeus 
+
+Critério de adequação (energia): 63648.45
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,3	Total
+
+1	0	 0	 1	 0	 1	 2	 4
+2	1	 0	 0	 0	 2	 1	 4
+3	0	 1	 0	 1	 0	 0	 2
+4	0	 0	 0	 2	 0	 0	 2
+Total	[1 1 1 3 3 3]
+Corrected Rand index: 0.229551451187
+
+F-measure(P,Q): 0.8
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 86
+
+Cluster 0,0 Prototipo: Myleusrubripinis [3 objetos]Objetos: Pseudoancistrusbarbatus Acnodonoligacanthus Myleusrubripinis 
+Cluster 0,1 Prototipo: Leporinusfrederici [1 objetos]Objetos: Leporinusfrederici 
+Cluster 0,2 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 0,3 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Cynodongibbus Hopliasa�mara Dorasmicropoeus 
+Cluster 1,0 Prototipo: Leporinusfrederici [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Leporinusfrederici [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Platydorascostatus [4 objetos]Objetos: Platydorascostatus Potamotrygonhystrix Ageneiosusbrevifili Semaprochilodusvari 
+Cluster 1,3 Prototipo: Leporinusfrederici [0 objetos]Objetos: 
+
+Critério de adequação (energia): 71229.165
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,2	Total
+
+1	0	 0	 0	 2	 2	 4
+2	1	 0	 0	 1	 2	 4
+3	0	 1	 1	 0	 0	 2
+4	2	 0	 0	 0	 0	 2
+Total	[3 1 1 3 4]
+Corrected Rand index: 0.28471411902
+
+F-measure(P,Q): 0.8
+OERC: 0.333333333333
+
+#####################################
+Repetição do experimento: 87
+
+Cluster 0,0 Prototipo: Myleusrubripinis [3 objetos]Objetos: Pseudoancistrusbarbatus Acnodonoligacanthus Myleusrubripinis 
+Cluster 0,1 Prototipo: Platydorascostatus [4 objetos]Objetos: Platydorascostatus Potamotrygonhystrix Ageneiosusbrevifili Semaprochilodusvari 
+Cluster 0,2 Prototipo: Hopliasa�mara [1 objetos]Objetos: Hopliasa�mara 
+Cluster 0,3 Prototipo: Dorasmicropoeus [1 objetos]Objetos: Dorasmicropoeus 
+Cluster 1,0 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfasciatus Leporinusfrederici 
+Cluster 1,1 Prototipo: Myleusrubripinis [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Cynodongibbus [1 objetos]Objetos: Cynodongibbus 
+Cluster 1,3 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 31704.19
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,2	Total
+
+1	0	 2	 1	 0	 0	 1	 4
+2	1	 2	 0	 1	 0	 0	 4
+3	0	 0	 0	 0	 2	 0	 2
+4	2	 0	 0	 0	 0	 0	 2
+Total	[3 4 1 1 2 1]
+Corrected Rand index: 0.303413400759
+
+F-measure(P,Q): 1.0
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 88
+
+Cluster 0,0 Prototipo: Myleusrubripinis [3 objetos]Objetos: Pseudoancistrusbarbatus Acnodonoligacanthus Myleusrubripinis 
+Cluster 0,1 Prototipo: Platydorascostatus [4 objetos]Objetos: Semaprochilodusvari Ageneiosusbrevifili Potamotrygonhystrix Platydorascostatus 
+Cluster 0,2 Prototipo: Dorasmicropoeus [2 objetos]Objetos: Dorasmicropoeus Hopliasa�mara 
+Cluster 0,3 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 1,0 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Cynodongibbus [1 objetos]Objetos: Cynodongibbus 
+Cluster 1,2 Prototipo: Leporinusfrederici [1 objetos]Objetos: Leporinusfrederici 
+Cluster 1,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 39079.36
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,1	1,2	Total
+
+1	0	 2	 1	 0	 1	 0	 4
+2	1	 2	 1	 0	 0	 0	 4
+3	0	 0	 0	 1	 0	 1	 2
+4	2	 0	 0	 0	 0	 0	 2
+Total	[3 4 2 1 1 1]
+Corrected Rand index: 0.21997471555
+
+F-measure(P,Q): 0.8
+OERC: 0.333333333333
+
+#####################################
+Repetição do experimento: 89
+
+Cluster 0,0 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 0,1 Prototipo: Acnodonoligacanthus [3 objetos]Objetos: Acnodonoligacanthus Myleusrubripinis Leporinusfrederici 
+Cluster 0,2 Prototipo: Acnodonoligacanthus [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: Platydorascostatus [3 objetos]Objetos: Ageneiosusbrevifili Platydorascostatus Semaprochilodusvari 
+Cluster 1,0 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Cynodongibbus Dorasmicropoeus Hopliasa�mara 
+Cluster 1,1 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 1,2 Prototipo: Potamotrygonhystrix [1 objetos]Objetos: Potamotrygonhystrix 
+Cluster 1,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 66814.76
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,3	1,0	1,1	1,2	Total
+
+1	0	 0	 1	 2	 0	 1	 4
+2	0	 0	 2	 1	 1	 0	 4
+3	1	 1	 0	 0	 0	 0	 2
+4	0	 2	 0	 0	 0	 0	 2
+Total	[1 3 3 3 1 1]
+Corrected Rand index: 0.229551451187
+
+F-measure(P,Q): 0.8
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 90
+
+Cluster 0,0 Prototipo: Leporinusfrederici [1 objetos]Objetos: Leporinusfrederici 
+Cluster 0,1 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 0,2 Prototipo: Platydorascostatus [7 objetos]Objetos: Cynodongibbus Dorasmicropoeus Semaprochilodusvari Ageneiosusbrevifili Hopliasa�mara Potamotrygonhystrix Platydorascostatus 
+Cluster 0,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: Myleusrubripinis [2 objetos]Objetos: Acnodonoligacanthus Myleusrubripinis 
+Cluster 1,1 Prototipo: Leporinusfasciatus [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 1,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 95858.0
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,2	Total
+
+1	0	 0	 4	 0	 0	 4
+2	0	 0	 3	 0	 1	 4
+3	1	 1	 0	 0	 0	 2
+4	0	 0	 0	 2	 0	 2
+Total	[1 1 7 2 1]
+Corrected Rand index: 0.539174389217
+
+F-measure(P,Q): 1.0
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 91
+
+Cluster 0,0 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Hopliasa�mara Dorasmicropoeus Cynodongibbus 
+Cluster 0,1 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 0,2 Prototipo: Myleusrubripinis [2 objetos]Objetos: Acnodonoligacanthus Myleusrubripinis 
+Cluster 0,3 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 1,0 Prototipo: Ageneiosusbrevifili [1 objetos]Objetos: Ageneiosusbrevifili 
+Cluster 1,1 Prototipo: Semaprochilodusvari [1 objetos]Objetos: Semaprochilodusvari 
+Cluster 1,2 Prototipo: Potamotrygonhystrix [2 objetos]Objetos: Potamotrygonhystrix Platydorascostatus 
+Cluster 1,3 Prototipo: Leporinusfrederici [1 objetos]Objetos: Leporinusfrederici 
+
+Critério de adequação (energia): 48595.91
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	1,3	Total
+
+1	2	 0	 0	 0	 1	 0	 1	 0	 4
+2	1	 0	 0	 1	 0	 1	 1	 0	 4
+3	0	 1	 0	 0	 0	 0	 0	 1	 2
+4	0	 0	 2	 0	 0	 0	 0	 0	 2
+Total	[3 1 2 1 1 1 2 1]
+Corrected Rand index: 0.159744408946
+
+F-measure(P,Q): 1.0
+OERC: 0.166666666667
+
+#####################################
+Repetição do experimento: 92
+
+Cluster 0,0 Prototipo: Platydorascostatus [3 objetos]Objetos: Potamotrygonhystrix Platydorascostatus Semaprochilodusvari 
+Cluster 0,1 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: Ageneiosusbrevifili [1 objetos]Objetos: Ageneiosusbrevifili 
+Cluster 0,3 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfrederici Leporinusfasciatus 
+Cluster 1,0 Prototipo: Dorasmicropoeus [2 objetos]Objetos: Cynodongibbus Dorasmicropoeus 
+Cluster 1,1 Prototipo: Hopliasa�mara [1 objetos]Objetos: Hopliasa�mara 
+Cluster 1,2 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 1,3 Prototipo: Myleusrubripinis [2 objetos]Objetos: Acnodonoligacanthus Myleusrubripinis 
+
+Critério de adequação (energia): 54662.33
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	0,3	1,0	1,1	1,2	1,3	Total
+
+1	1	 1	 0	 1	 1	 0	 0	 4
+2	2	 0	 0	 1	 0	 1	 0	 4
+3	0	 0	 2	 0	 0	 0	 0	 2
+4	0	 0	 0	 0	 0	 0	 2	 2
+Total	[3 1 2 2 1 1 2]
+Corrected Rand index: 0.257966616085
+
+F-measure(P,Q): 1.0
+OERC: 0.166666666667
+
+#####################################
+Repetição do experimento: 93
+
+Cluster 0,0 Prototipo: Acnodonoligacanthus [5 objetos]Objetos: Leporinusfasciatus Leporinusfrederici Pseudoancistrusbarbatus Acnodonoligacanthus Myleusrubripinis 
+Cluster 0,1 Prototipo: Platydorascostatus [5 objetos]Objetos: Ageneiosusbrevifili Hopliasa�mara Potamotrygonhystrix Dorasmicropoeus Platydorascostatus 
+Cluster 0,2 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: Cynodongibbus [1 objetos]Objetos: Cynodongibbus 
+Cluster 1,0 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Semaprochilodusvari [1 objetos]Objetos: Semaprochilodusvari 
+Cluster 1,3 Prototipo: Acnodonoligacanthus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 46693.32
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,3	1,2	Total
+
+1	0	 3	 1	 0	 4
+2	1	 2	 0	 1	 4
+3	2	 0	 0	 0	 2
+4	2	 0	 0	 0	 2
+Total	[5 5 1 1]
+Corrected Rand index: 0.338983050847
+
+F-measure(P,Q): 0.666666666667
+OERC: 0.416666666667
+
+#####################################
+Repetição do experimento: 94
+
+Cluster 0,0 Prototipo: Platydorascostatus [4 objetos]Objetos: Ageneiosusbrevifili Potamotrygonhystrix Platydorascostatus Semaprochilodusvari 
+Cluster 0,1 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfrederici Leporinusfasciatus 
+Cluster 0,3 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 1,0 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Hopliasa�mara Cynodongibbus Dorasmicropoeus 
+Cluster 1,2 Prototipo: Myleusrubripinis [1 objetos]Objetos: Myleusrubripinis 
+Cluster 1,3 Prototipo: Acnodonoligacanthus [1 objetos]Objetos: Acnodonoligacanthus 
+
+Critério de adequação (energia): 72546.725
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	0,3	1,1	1,2	1,3	Total
+
+1	2	 0	 0	 2	 0	 0	 4
+2	2	 0	 1	 1	 0	 0	 4
+3	0	 2	 0	 0	 0	 0	 2
+4	0	 0	 0	 0	 1	 1	 2
+Total	[4 2 1 3 1 1]
+Corrected Rand index: 0.303413400759
+
+F-measure(P,Q): 1.0
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 95
+
+Cluster 0,0 Prototipo: Acnodonoligacanthus [5 objetos]Objetos: Leporinusfasciatus Leporinusfrederici Pseudoancistrusbarbatus Acnodonoligacanthus Myleusrubripinis 
+Cluster 0,1 Prototipo: Acnodonoligacanthus [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: Dorasmicropoeus [2 objetos]Objetos: Dorasmicropoeus Cynodongibbus 
+Cluster 0,3 Prototipo: Hopliasa�mara [1 objetos]Objetos: Hopliasa�mara 
+Cluster 1,0 Prototipo: Acnodonoligacanthus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Potamotrygonhystrix [1 objetos]Objetos: Potamotrygonhystrix 
+Cluster 1,2 Prototipo: Acnodonoligacanthus [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: Platydorascostatus [3 objetos]Objetos: Platydorascostatus Semaprochilodusvari Ageneiosusbrevifili 
+
+Critério de adequação (energia): 61042.56
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	0,3	1,1	1,3	Total
+
+1	0	 1	 1	 1	 1	 4
+2	1	 1	 0	 0	 2	 4
+3	2	 0	 0	 0	 0	 2
+4	2	 0	 0	 0	 0	 2
+Total	[5 2 1 1 3]
+Corrected Rand index: 0.192849404117
+
+F-measure(P,Q): 0.571428571429
+OERC: 0.416666666667
+
+#####################################
+Repetição do experimento: 96
+
+Cluster 0,0 Prototipo: Myleusrubripinis [2 objetos]Objetos: Acnodonoligacanthus Myleusrubripinis 
+Cluster 0,1 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 0,2 Prototipo: Platydorascostatus [7 objetos]Objetos: Ageneiosusbrevifili Cynodongibbus Hopliasa�mara Potamotrygonhystrix Dorasmicropoeus Platydorascostatus Semaprochilodusvari 
+Cluster 0,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfrederici Leporinusfasciatus 
+Cluster 1,1 Prototipo: Pseudoancistrusbarbatus [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: Platydorascostatus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 99173.26
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	Total
+
+1	0	 0	 4	 0	 4
+2	0	 1	 3	 0	 4
+3	0	 0	 0	 2	 2
+4	2	 0	 0	 0	 2
+Total	[2 1 7 2]
+Corrected Rand index: 0.581967213115
+
+F-measure(P,Q): 1.0
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 97
+
+Cluster 0,0 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Cynodongibbus Hopliasa�mara Dorasmicropoeus 
+Cluster 0,1 Prototipo: Semaprochilodusvari [1 objetos]Objetos: Semaprochilodusvari 
+Cluster 0,2 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 0,3 Prototipo: Myleusrubripinis [3 objetos]Objetos: Pseudoancistrusbarbatus Acnodonoligacanthus Myleusrubripinis 
+Cluster 1,0 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: Myleusrubripinis [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Platydorascostatus [3 objetos]Objetos: Platydorascostatus Potamotrygonhystrix Ageneiosusbrevifili 
+Cluster 1,3 Prototipo: Leporinusfrederici [1 objetos]Objetos: Leporinusfrederici 
+
+Critério de adequação (energia): 57787.575
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,2	1,3	Total
+
+1	2	 0	 0	 0	 2	 0	 4
+2	1	 1	 0	 1	 1	 0	 4
+3	0	 0	 1	 0	 0	 1	 2
+4	0	 0	 0	 2	 0	 0	 2
+Total	[3 1 1 3 3 1]
+Corrected Rand index: 0.229551451187
+
+F-measure(P,Q): 0.8
+OERC: 0.25
+
+#####################################
+Repetição do experimento: 98
+
+Cluster 0,0 Prototipo: Leporinusfrederici [1 objetos]Objetos: Leporinusfrederici 
+Cluster 0,1 Prototipo: Leporinusfasciatus [1 objetos]Objetos: Leporinusfasciatus 
+Cluster 0,2 Prototipo: Hopliasa�mara [1 objetos]Objetos: Hopliasa�mara 
+Cluster 0,3 Prototipo: Dorasmicropoeus [2 objetos]Objetos: Cynodongibbus Dorasmicropoeus 
+Cluster 1,0 Prototipo: Platydorascostatus [4 objetos]Objetos: Platydorascostatus Semaprochilodusvari Ageneiosusbrevifili Potamotrygonhystrix 
+Cluster 1,1 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: Myleusrubripinis [3 objetos]Objetos: Myleusrubripinis Pseudoancistrusbarbatus Acnodonoligacanthus 
+Cluster 1,3 Prototipo: Dorasmicropoeus [0 objetos]Objetos: 
+
+Critério de adequação (energia): 60538.735
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,2	Total
+
+1	0	 0	 1	 1	 2	 0	 4
+2	0	 0	 0	 1	 2	 1	 4
+3	1	 1	 0	 0	 0	 0	 2
+4	0	 0	 0	 0	 0	 2	 2
+Total	[1 1 1 2 4 3]
+Corrected Rand index: 0.21997471555
+
+F-measure(P,Q): 0.8
+OERC: 0.333333333333
+
+#####################################
+Repetição do experimento: 99
+
+Cluster 0,0 Prototipo: Dorasmicropoeus [3 objetos]Objetos: Hopliasa�mara Dorasmicropoeus Cynodongibbus 
+Cluster 0,1 Prototipo: Potamotrygonhystrix [2 objetos]Objetos: Potamotrygonhystrix Platydorascostatus 
+Cluster 0,2 Prototipo: Leporinusfrederici [2 objetos]Objetos: Leporinusfrederici Leporinusfasciatus 
+Cluster 0,3 Prototipo: Pseudoancistrusbarbatus [1 objetos]Objetos: Pseudoancistrusbarbatus 
+Cluster 1,0 Prototipo: Ageneiosusbrevifili [1 objetos]Objetos: Ageneiosusbrevifili 
+Cluster 1,1 Prototipo: Semaprochilodusvari [1 objetos]Objetos: Semaprochilodusvari 
+Cluster 1,2 Prototipo: Leporinusfrederici [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: Myleusrubripinis [2 objetos]Objetos: Acnodonoligacanthus Myleusrubripinis 
+
+Critério de adequação (energia): 51911.17
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,3	Total
+
+1	2	 1	 0	 0	 1	 0	 0	 4
+2	1	 1	 0	 1	 0	 1	 0	 4
+3	0	 0	 2	 0	 0	 0	 0	 2
+4	0	 0	 0	 0	 0	 0	 2	 2
+Total	[3 2 2 1 1 1 2]
+Corrected Rand index: 0.257966616085
+
+F-measure(P,Q): 1.0
+OERC: 0.166666666667
+
+Melhor repetição: 72
+Menor oerc: 79

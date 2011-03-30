@@ -1,0 +1,2910 @@
+Parâmetros iniciais
+
+Topologia: 2x4
+Cardinalidade (q): 1
+Tmin: 0.015 Tmax: 1.5
+Número de iterações: 400.0
+*Modelo adaptativo
+
+#####################################
+Repetição do experimento: 0
+
+Cluster 0,0 Prototipo: C_MA [1 objetos]Objetos: C_MA 
+Cluster 0,1 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 0,2 Prototipo: L_EN [1 objetos]Objetos: L_EN 
+Cluster 0,3 Prototipo: L_ES [9 objetos]Objetos: L_ES C_ES P_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 1,0 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_AM [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 110.419789445
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	Total
+
+1	0	 0	 0	 3	 3
+2	0	 0	 1	 3	 4
+3	0	 1	 0	 3	 4
+4	1	 0	 0	 0	 1
+Total	[1 1 1 9]
+Corrected Rand index: 0.35255648038
+
+F-measure(P,Q): 0.516025641026
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 1
+
+Cluster 0,0 Prototipo: C_MA [12 objetos]Objetos: C_MA C_ES P_EN T_ES L_EN C_EN C_AM L_AM L_ES T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 129.252373854
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	Total
+
+1	3	 3
+2	4	 4
+3	4	 4
+4	1	 1
+Total	[12]
+Corrected Rand index: 0.370134730539
+
+F-measure(P,Q): 0.446153846154
+OERC: 0.666666666667
+
+#####################################
+Repetição do experimento: 2
+
+Cluster 0,0 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 0,1 Prototipo: C_MA [11 objetos]Objetos: C_ES C_MA P_EN T_ES L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 119.728627532
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	Total
+
+1	0	 3	 3
+2	0	 4	 4
+3	1	 3	 4
+4	0	 1	 1
+Total	[ 1 11]
+Corrected Rand index: 0.342572542226
+
+F-measure(P,Q): 0.432142857143
+OERC: 0.583333333333
+
+#####################################
+Repetição do experimento: 3
+
+Cluster 0,0 Prototipo: C_MA [1 objetos]Objetos: C_MA 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 0,3 Prototipo: L_EN [1 objetos]Objetos: L_EN 
+Cluster 1,0 Prototipo: L_ES [9 objetos]Objetos: C_ES P_EN C_EN C_AM L_AM L_ES T_EN P_ES P_AM 
+Cluster 1,1 Prototipo: L_EN [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_EN [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 110.419789445
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	0,3	1,0	Total
+
+1	0	 0	 0	 3	 3
+2	0	 0	 1	 3	 4
+3	0	 1	 0	 3	 4
+4	1	 0	 0	 0	 1
+Total	[1 1 1 9]
+Corrected Rand index: 0.35255648038
+
+F-measure(P,Q): 0.516025641026
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 4
+
+Cluster 0,0 Prototipo: C_MA [12 objetos]Objetos: C_ES C_MA P_EN T_ES L_EN C_EN C_AM L_AM L_ES T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: T_EN [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 129.252373854
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	Total
+
+1	3	 3
+2	4	 4
+3	4	 4
+4	1	 1
+Total	[12]
+Corrected Rand index: 0.370134730539
+
+F-measure(P,Q): 0.446153846154
+OERC: 0.666666666667
+
+#####################################
+Repetição do experimento: 5
+
+Cluster 0,0 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 0,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [12 objetos]Objetos: C_ES C_MA P_EN T_ES L_EN C_EN C_AM L_AM L_ES T_EN P_ES P_AM 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 129.252373854
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,3	Total
+
+1	3	 3
+2	4	 4
+3	4	 4
+4	1	 1
+Total	[12]
+Corrected Rand index: 0.370134730539
+
+F-measure(P,Q): 0.446153846154
+OERC: 0.666666666667
+
+#####################################
+Repetição do experimento: 6
+
+Cluster 0,0 Prototipo: L_EN [0 objetos]Objetos: 
+Cluster 0,1 Prototipo: L_EN [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [12 objetos]Objetos: C_ES C_MA P_EN T_ES L_EN C_EN C_AM L_AM L_ES T_EN P_ES P_AM 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 129.252373854
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,3	Total
+
+1	3	 3
+2	4	 4
+3	4	 4
+4	1	 1
+Total	[12]
+Corrected Rand index: 0.370134730539
+
+F-measure(P,Q): 0.446153846154
+OERC: 0.666666666667
+
+#####################################
+Repetição do experimento: 7
+
+Cluster 0,0 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 0,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: C_MA [11 objetos]Objetos: C_ES C_MA P_EN T_ES L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_EN [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 119.728627532
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	Total
+
+1	0	 3	 3
+2	0	 4	 4
+3	1	 3	 4
+4	0	 1	 1
+Total	[ 1 11]
+Corrected Rand index: 0.342572542226
+
+F-measure(P,Q): 0.432142857143
+OERC: 0.583333333333
+
+#####################################
+Repetição do experimento: 8
+
+Cluster 0,0 Prototipo: L_EN [1 objetos]Objetos: L_EN 
+Cluster 0,1 Prototipo: C_MA [1 objetos]Objetos: C_MA 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 1,0 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_ES [9 objetos]Objetos: L_ES C_ES P_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 1,2 Prototipo: P_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 110.419789445
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,3	1,1	Total
+
+1	0	 0	 0	 3	 3
+2	1	 0	 0	 3	 4
+3	0	 0	 1	 3	 4
+4	0	 1	 0	 0	 1
+Total	[1 1 1 9]
+Corrected Rand index: 0.35255648038
+
+F-measure(P,Q): 0.516025641026
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 9
+
+Cluster 0,0 Prototipo: C_MA [11 objetos]Objetos: C_ES C_MA P_EN T_ES L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 119.728627532
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	Total
+
+1	3	 0	 3
+2	4	 0	 4
+3	3	 1	 4
+4	1	 0	 1
+Total	[11  1]
+Corrected Rand index: 0.342572542226
+
+F-measure(P,Q): 0.432142857143
+OERC: 0.583333333333
+
+#####################################
+Repetição do experimento: 10
+
+Cluster 0,0 Prototipo: C_MA [1 objetos]Objetos: C_MA 
+Cluster 0,1 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 0,2 Prototipo: L_EN [1 objetos]Objetos: L_EN 
+Cluster 0,3 Prototipo: L_ES [9 objetos]Objetos: L_ES C_ES P_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 110.419789445
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	Total
+
+1	0	 0	 0	 3	 3
+2	0	 0	 1	 3	 4
+3	0	 1	 0	 3	 4
+4	1	 0	 0	 0	 1
+Total	[1 1 1 9]
+Corrected Rand index: 0.35255648038
+
+F-measure(P,Q): 0.516025641026
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 11
+
+Cluster 0,0 Prototipo: L_EN [0 objetos]Objetos: 
+Cluster 0,1 Prototipo: C_MA [12 objetos]Objetos: C_ES P_EN T_ES L_EN C_EN C_AM L_AM L_ES T_EN P_ES P_AM C_MA 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 129.252373854
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,1	Total
+
+1	3	 3
+2	4	 4
+3	4	 4
+4	1	 1
+Total	[12]
+Corrected Rand index: 0.370134730539
+
+F-measure(P,Q): 0.446153846154
+OERC: 0.666666666667
+
+#####################################
+Repetição do experimento: 12
+
+Cluster 0,0 Prototipo: C_MA [1 objetos]Objetos: C_MA 
+Cluster 0,1 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 0,2 Prototipo: L_EN [1 objetos]Objetos: L_EN 
+Cluster 0,3 Prototipo: L_EN [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: L_ES [9 objetos]Objetos: C_ES P_EN C_EN C_AM L_AM L_ES T_EN P_ES P_AM 
+Cluster 1,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 110.419789445
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	Total
+
+1	0	 0	 0	 3	 3
+2	0	 0	 1	 3	 4
+3	0	 1	 0	 3	 4
+4	1	 0	 0	 0	 1
+Total	[1 1 1 9]
+Corrected Rand index: 0.35255648038
+
+F-measure(P,Q): 0.516025641026
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 13
+
+Cluster 0,0 Prototipo: L_EN [0 objetos]Objetos: 
+Cluster 0,1 Prototipo: C_MA [10 objetos]Objetos: C_MA C_ES P_EN L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 1,3 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+
+Critério de adequação (energia): 109.891466442
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,1	1,2	1,3	Total
+
+1	3	 0	 0	 3
+2	4	 0	 0	 4
+3	2	 1	 1	 4
+4	1	 0	 0	 1
+Total	[10  1  1]
+Corrected Rand index: 0.33299646286
+
+F-measure(P,Q): 0.454345654346
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 14
+
+Cluster 0,0 Prototipo: P_AM [0 objetos]Objetos: 
+Cluster 0,1 Prototipo: C_MA [11 objetos]Objetos: C_MA C_ES P_EN T_ES L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,2 Prototipo: C_EN [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+
+Critério de adequação (energia): 119.728627532
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,1	1,3	Total
+
+1	3	 0	 3
+2	4	 0	 4
+3	3	 1	 4
+4	1	 0	 1
+Total	[11  1]
+Corrected Rand index: 0.342572542226
+
+F-measure(P,Q): 0.432142857143
+OERC: 0.583333333333
+
+#####################################
+Repetição do experimento: 15
+
+Cluster 0,0 Prototipo: P_AM [0 objetos]Objetos: 
+Cluster 0,1 Prototipo: C_MA [11 objetos]Objetos: C_ES P_EN T_ES L_EN C_EN C_AM L_AM T_EN P_ES P_AM C_MA 
+Cluster 0,2 Prototipo: C_EN [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+
+Critério de adequação (energia): 119.728627532
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,1	1,3	Total
+
+1	3	 0	 3
+2	4	 0	 4
+3	3	 1	 4
+4	1	 0	 1
+Total	[11  1]
+Corrected Rand index: 0.342572542226
+
+F-measure(P,Q): 0.432142857143
+OERC: 0.583333333333
+
+#####################################
+Repetição do experimento: 16
+
+Cluster 0,0 Prototipo: C_MA [11 objetos]Objetos: C_ES C_MA P_EN T_ES L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 119.728627532
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	1,1	Total
+
+1	3	 0	 3
+2	4	 0	 4
+3	3	 1	 4
+4	1	 0	 1
+Total	[11  1]
+Corrected Rand index: 0.342572542226
+
+F-measure(P,Q): 0.432142857143
+OERC: 0.583333333333
+
+#####################################
+Repetição do experimento: 17
+
+Cluster 0,0 Prototipo: C_MA [11 objetos]Objetos: C_ES C_MA P_EN T_ES L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 119.728627532
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	Total
+
+1	3	 0	 3
+2	4	 0	 4
+3	3	 1	 4
+4	1	 0	 1
+Total	[11  1]
+Corrected Rand index: 0.342572542226
+
+F-measure(P,Q): 0.432142857143
+OERC: 0.583333333333
+
+#####################################
+Repetição do experimento: 18
+
+Cluster 0,0 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 0,1 Prototipo: C_MA [12 objetos]Objetos: C_ES C_MA P_EN T_ES L_EN C_EN C_AM L_AM L_ES T_EN P_ES P_AM 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 129.252373854
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,1	Total
+
+1	3	 3
+2	4	 4
+3	4	 4
+4	1	 1
+Total	[12]
+Corrected Rand index: 0.370134730539
+
+F-measure(P,Q): 0.446153846154
+OERC: 0.666666666667
+
+#####################################
+Repetição do experimento: 19
+
+Cluster 0,0 Prototipo: C_MA [11 objetos]Objetos: C_ES C_MA P_EN T_ES L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: L_AM [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: P_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+
+Critério de adequação (energia): 119.728627532
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	1,3	Total
+
+1	3	 0	 3
+2	4	 0	 4
+3	3	 1	 4
+4	1	 0	 1
+Total	[11  1]
+Corrected Rand index: 0.342572542226
+
+F-measure(P,Q): 0.432142857143
+OERC: 0.583333333333
+
+#####################################
+Repetição do experimento: 20
+
+Cluster 0,0 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 0,1 Prototipo: C_MA [12 objetos]Objetos: C_ES C_MA P_EN T_ES L_EN C_EN C_AM L_AM L_ES T_EN P_ES P_AM 
+Cluster 0,2 Prototipo: L_AM [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 129.252373854
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,1	Total
+
+1	3	 3
+2	4	 4
+3	4	 4
+4	1	 1
+Total	[12]
+Corrected Rand index: 0.370134730539
+
+F-measure(P,Q): 0.446153846154
+OERC: 0.666666666667
+
+#####################################
+Repetição do experimento: 21
+
+Cluster 0,0 Prototipo: C_MA [11 objetos]Objetos: C_ES P_EN T_ES L_EN C_EN C_AM L_AM T_EN P_ES P_AM C_MA 
+Cluster 0,1 Prototipo: L_EN [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 119.728627532
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	1,1	Total
+
+1	3	 0	 3
+2	4	 0	 4
+3	3	 1	 4
+4	1	 0	 1
+Total	[11  1]
+Corrected Rand index: 0.342572542226
+
+F-measure(P,Q): 0.432142857143
+OERC: 0.583333333333
+
+#####################################
+Repetição do experimento: 22
+
+Cluster 0,0 Prototipo: L_EN [0 objetos]Objetos: 
+Cluster 0,1 Prototipo: C_MA [10 objetos]Objetos: C_MA C_ES P_EN L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 1,0 Prototipo: L_EN [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_EN [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+
+Critério de adequação (energia): 109.891466442
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,1	0,3	1,3	Total
+
+1	3	 0	 0	 3
+2	4	 0	 0	 4
+3	2	 1	 1	 4
+4	1	 0	 0	 1
+Total	[10  1  1]
+Corrected Rand index: 0.33299646286
+
+F-measure(P,Q): 0.454345654346
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 23
+
+Cluster 0,0 Prototipo: C_MA [1 objetos]Objetos: C_MA 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 0,3 Prototipo: L_EN [1 objetos]Objetos: L_EN 
+Cluster 1,0 Prototipo: L_ES [9 objetos]Objetos: C_ES P_EN C_EN C_AM L_AM L_ES T_EN P_ES P_AM 
+Cluster 1,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 110.419789445
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	0,3	1,0	Total
+
+1	0	 0	 0	 3	 3
+2	0	 0	 1	 3	 4
+3	0	 1	 0	 3	 4
+4	1	 0	 0	 0	 1
+Total	[1 1 1 9]
+Corrected Rand index: 0.35255648038
+
+F-measure(P,Q): 0.516025641026
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 24
+
+Cluster 0,0 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 0,1 Prototipo: C_MA [12 objetos]Objetos: C_ES C_MA P_EN T_ES L_EN C_EN C_AM L_AM L_ES T_EN P_ES P_AM 
+Cluster 0,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 129.252373854
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,1	Total
+
+1	3	 3
+2	4	 4
+3	4	 4
+4	1	 1
+Total	[12]
+Corrected Rand index: 0.370134730539
+
+F-measure(P,Q): 0.446153846154
+OERC: 0.666666666667
+
+#####################################
+Repetição do experimento: 25
+
+Cluster 0,0 Prototipo: C_MA [11 objetos]Objetos: C_ES C_MA P_EN L_EN C_EN C_AM L_AM L_ES T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 1,0 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 119.476603502
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,3	Total
+
+1	3	 0	 3
+2	4	 0	 4
+3	3	 1	 4
+4	1	 0	 1
+Total	[11  1]
+Corrected Rand index: 0.342572542226
+
+F-measure(P,Q): 0.432142857143
+OERC: 0.583333333333
+
+#####################################
+Repetição do experimento: 26
+
+Cluster 0,0 Prototipo: C_MA [10 objetos]Objetos: C_MA C_ES P_EN L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 1,0 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 1,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 109.891466442
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,3	1,0	Total
+
+1	3	 0	 0	 3
+2	4	 0	 0	 4
+3	2	 1	 1	 4
+4	1	 0	 0	 1
+Total	[10  1  1]
+Corrected Rand index: 0.33299646286
+
+F-measure(P,Q): 0.454345654346
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 27
+
+Cluster 0,0 Prototipo: C_MA [12 objetos]Objetos: C_MA C_ES P_EN T_ES L_EN C_EN C_AM L_AM L_ES T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_ES [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_EN [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 129.252373854
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	Total
+
+1	3	 3
+2	4	 4
+3	4	 4
+4	1	 1
+Total	[12]
+Corrected Rand index: 0.370134730539
+
+F-measure(P,Q): 0.446153846154
+OERC: 0.666666666667
+
+#####################################
+Repetição do experimento: 28
+
+Cluster 0,0 Prototipo: C_MA [11 objetos]Objetos: C_MA C_ES P_EN T_ES L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 119.728627532
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	Total
+
+1	3	 0	 3
+2	4	 0	 4
+3	3	 1	 4
+4	1	 0	 1
+Total	[11  1]
+Corrected Rand index: 0.342572542226
+
+F-measure(P,Q): 0.432142857143
+OERC: 0.583333333333
+
+#####################################
+Repetição do experimento: 29
+
+Cluster 0,0 Prototipo: C_MA [12 objetos]Objetos: C_ES C_MA P_EN T_ES L_EN C_EN C_AM L_AM L_ES T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 129.252373854
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	Total
+
+1	3	 3
+2	4	 4
+3	4	 4
+4	1	 1
+Total	[12]
+Corrected Rand index: 0.370134730539
+
+F-measure(P,Q): 0.446153846154
+OERC: 0.666666666667
+
+#####################################
+Repetição do experimento: 30
+
+Cluster 0,0 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 0,1 Prototipo: C_MA [12 objetos]Objetos: C_MA C_ES P_EN T_ES L_EN C_EN C_AM L_AM L_ES T_EN P_ES P_AM 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 129.252373854
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,1	Total
+
+1	3	 3
+2	4	 4
+3	4	 4
+4	1	 1
+Total	[12]
+Corrected Rand index: 0.370134730539
+
+F-measure(P,Q): 0.446153846154
+OERC: 0.666666666667
+
+#####################################
+Repetição do experimento: 31
+
+Cluster 0,0 Prototipo: C_MA [12 objetos]Objetos: C_MA C_ES P_EN T_ES L_EN C_EN C_AM L_AM L_ES T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 129.252373854
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	Total
+
+1	3	 3
+2	4	 4
+3	4	 4
+4	1	 1
+Total	[12]
+Corrected Rand index: 0.370134730539
+
+F-measure(P,Q): 0.446153846154
+OERC: 0.666666666667
+
+#####################################
+Repetição do experimento: 32
+
+Cluster 0,0 Prototipo: C_MA [1 objetos]Objetos: C_MA 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 0,3 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: L_EN [1 objetos]Objetos: L_EN 
+Cluster 1,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [9 objetos]Objetos: C_ES P_EN C_EN C_AM L_AM L_ES T_EN P_ES P_AM 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 110.419789445
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	1,0	1,2	Total
+
+1	0	 0	 0	 3	 3
+2	0	 0	 1	 3	 4
+3	0	 1	 0	 3	 4
+4	1	 0	 0	 0	 1
+Total	[1 1 1 9]
+Corrected Rand index: 0.35255648038
+
+F-measure(P,Q): 0.516025641026
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 33
+
+Cluster 0,0 Prototipo: C_MA [10 objetos]Objetos: C_MA C_ES P_EN L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 1,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 109.891466442
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	1,0	1,2	Total
+
+1	3	 0	 0	 3
+2	4	 0	 0	 4
+3	2	 1	 1	 4
+4	1	 0	 0	 1
+Total	[10  1  1]
+Corrected Rand index: 0.33299646286
+
+F-measure(P,Q): 0.454345654346
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 34
+
+Cluster 0,0 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 0,1 Prototipo: C_MA [11 objetos]Objetos: C_MA C_ES P_EN T_ES L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: C_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_AM [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: C_MA [0 objetos]Objetos: 
+
+Critério de adequação (energia): 119.728627532
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	Total
+
+1	0	 3	 3
+2	0	 4	 4
+3	1	 3	 4
+4	0	 1	 1
+Total	[ 1 11]
+Corrected Rand index: 0.342572542226
+
+F-measure(P,Q): 0.432142857143
+OERC: 0.583333333333
+
+#####################################
+Repetição do experimento: 35
+
+Cluster 0,0 Prototipo: C_MA [9 objetos]Objetos: C_MA C_ES P_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: C_EN [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 1,1 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_EN [1 objetos]Objetos: L_EN 
+Cluster 1,3 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+
+Critério de adequação (energia): 103.516263286
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	1,0	1,2	1,3	Total
+
+1	3	 0	 0	 0	 3
+2	3	 0	 1	 0	 4
+3	2	 1	 0	 1	 4
+4	1	 0	 0	 0	 1
+Total	[9 1 1 1]
+Corrected Rand index: 0.274078478002
+
+F-measure(P,Q): 0.428846153846
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 36
+
+Cluster 0,0 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 0,1 Prototipo: C_AM [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: C_MA [10 objetos]Objetos: C_ES P_EN L_EN C_EN C_AM L_AM T_EN P_ES P_AM C_MA 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_EN [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+
+Critério de adequação (energia): 109.891466442
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	1,3	Total
+
+1	0	 3	 0	 3
+2	0	 4	 0	 4
+3	1	 2	 1	 4
+4	0	 1	 0	 1
+Total	[ 1 10  1]
+Corrected Rand index: 0.33299646286
+
+F-measure(P,Q): 0.454345654346
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 37
+
+Cluster 0,0 Prototipo: C_MA [1 objetos]Objetos: C_MA 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: T_ES [9 objetos]Objetos: T_ES C_ES P_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,3 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_EN [1 objetos]Objetos: L_EN 
+Cluster 1,3 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+
+Critério de adequação (energia): 107.396606653
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	1,2	1,3	Total
+
+1	0	 3	 0	 0	 3
+2	0	 3	 1	 0	 4
+3	0	 3	 0	 1	 4
+4	1	 0	 0	 0	 1
+Total	[1 9 1 1]
+Corrected Rand index: 0.35255648038
+
+F-measure(P,Q): 0.516025641026
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 38
+
+Cluster 0,0 Prototipo: C_ES [0 objetos]Objetos: 
+Cluster 0,1 Prototipo: C_MA [11 objetos]Objetos: C_ES P_EN T_ES L_EN C_EN C_AM L_AM T_EN P_ES P_AM C_MA 
+Cluster 0,2 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+
+Critério de adequação (energia): 119.728627532
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,1	1,3	Total
+
+1	3	 0	 3
+2	4	 0	 4
+3	3	 1	 4
+4	1	 0	 1
+Total	[11  1]
+Corrected Rand index: 0.342572542226
+
+F-measure(P,Q): 0.432142857143
+OERC: 0.583333333333
+
+#####################################
+Repetição do experimento: 39
+
+Cluster 0,0 Prototipo: L_EN [0 objetos]Objetos: 
+Cluster 0,1 Prototipo: C_MA [11 objetos]Objetos: C_ES P_EN T_ES L_EN C_EN C_AM L_AM T_EN P_ES P_AM C_MA 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 119.728627532
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,1	1,2	Total
+
+1	3	 0	 3
+2	4	 0	 4
+3	3	 1	 4
+4	1	 0	 1
+Total	[11  1]
+Corrected Rand index: 0.342572542226
+
+F-measure(P,Q): 0.432142857143
+OERC: 0.583333333333
+
+#####################################
+Repetição do experimento: 40
+
+Cluster 0,0 Prototipo: C_MA [12 objetos]Objetos: C_ES C_MA P_EN T_ES L_EN C_EN C_AM L_AM L_ES T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 129.252373854
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	Total
+
+1	3	 3
+2	4	 4
+3	4	 4
+4	1	 1
+Total	[12]
+Corrected Rand index: 0.370134730539
+
+F-measure(P,Q): 0.446153846154
+OERC: 0.666666666667
+
+#####################################
+Repetição do experimento: 41
+
+Cluster 0,0 Prototipo: C_MA [12 objetos]Objetos: C_ES C_MA P_EN T_ES L_EN C_EN C_AM L_AM L_ES T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: C_EN [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: P_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: C_MA [0 objetos]Objetos: 
+
+Critério de adequação (energia): 129.252373854
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	Total
+
+1	3	 3
+2	4	 4
+3	4	 4
+4	1	 1
+Total	[12]
+Corrected Rand index: 0.370134730539
+
+F-measure(P,Q): 0.446153846154
+OERC: 0.666666666667
+
+#####################################
+Repetição do experimento: 42
+
+Cluster 0,0 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 0,1 Prototipo: C_MA [10 objetos]Objetos: C_ES P_EN L_EN C_EN C_AM L_AM T_EN P_ES P_AM C_MA 
+Cluster 0,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 109.891466442
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,2	Total
+
+1	0	 3	 0	 3
+2	0	 4	 0	 4
+3	1	 2	 1	 4
+4	0	 1	 0	 1
+Total	[ 1 10  1]
+Corrected Rand index: 0.33299646286
+
+F-measure(P,Q): 0.454345654346
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 43
+
+Cluster 0,0 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 0,1 Prototipo: C_MA [1 objetos]Objetos: C_MA 
+Cluster 0,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: T_ES [10 objetos]Objetos: C_ES P_EN T_ES L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 1,0 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 118.292310701
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,3	Total
+
+1	0	 0	 3	 3
+2	0	 0	 4	 4
+3	1	 0	 3	 4
+4	0	 1	 0	 1
+Total	[ 1  1 10]
+Corrected Rand index: 0.399696816574
+
+F-measure(P,Q): 0.532051282051
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 44
+
+Cluster 0,0 Prototipo: C_MA [12 objetos]Objetos: C_ES C_MA P_EN T_ES L_EN C_EN C_AM L_AM L_ES T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: C_ES [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: L_EN [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: C_MA [0 objetos]Objetos: 
+
+Critério de adequação (energia): 129.252373854
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	Total
+
+1	3	 3
+2	4	 4
+3	4	 4
+4	1	 1
+Total	[12]
+Corrected Rand index: 0.370134730539
+
+F-measure(P,Q): 0.446153846154
+OERC: 0.666666666667
+
+#####################################
+Repetição do experimento: 45
+
+Cluster 0,0 Prototipo: C_MA [1 objetos]Objetos: C_MA 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 0,3 Prototipo: L_EN [1 objetos]Objetos: L_EN 
+Cluster 1,0 Prototipo: L_ES [9 objetos]Objetos: L_ES C_ES P_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 1,1 Prototipo: P_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 110.419789445
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	0,3	1,0	Total
+
+1	0	 0	 0	 3	 3
+2	0	 0	 1	 3	 4
+3	0	 1	 0	 3	 4
+4	1	 0	 0	 0	 1
+Total	[1 1 1 9]
+Corrected Rand index: 0.35255648038
+
+F-measure(P,Q): 0.516025641026
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 46
+
+Cluster 0,0 Prototipo: C_MA [11 objetos]Objetos: C_MA C_ES P_EN T_ES L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: P_ES [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_ES [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 119.728627532
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	1,2	Total
+
+1	3	 0	 3
+2	4	 0	 4
+3	3	 1	 4
+4	1	 0	 1
+Total	[11  1]
+Corrected Rand index: 0.342572542226
+
+F-measure(P,Q): 0.432142857143
+OERC: 0.583333333333
+
+#####################################
+Repetição do experimento: 47
+
+Cluster 0,0 Prototipo: L_EN [1 objetos]Objetos: L_EN 
+Cluster 0,1 Prototipo: C_MA [1 objetos]Objetos: C_MA 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 1,0 Prototipo: L_EN [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_EN [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [9 objetos]Objetos: L_ES C_ES P_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 110.419789445
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,3	1,2	Total
+
+1	0	 0	 0	 3	 3
+2	1	 0	 0	 3	 4
+3	0	 0	 1	 3	 4
+4	0	 1	 0	 0	 1
+Total	[1 1 1 9]
+Corrected Rand index: 0.35255648038
+
+F-measure(P,Q): 0.516025641026
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 48
+
+Cluster 0,0 Prototipo: C_MA [1 objetos]Objetos: C_MA 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: T_EN [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 1,0 Prototipo: C_ES [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_EN [1 objetos]Objetos: L_EN 
+Cluster 1,2 Prototipo: L_ES [9 objetos]Objetos: C_ES P_EN C_EN C_AM L_AM L_ES T_EN P_ES P_AM 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 110.419789445
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,3	1,1	1,2	Total
+
+1	0	 0	 0	 3	 3
+2	0	 0	 1	 3	 4
+3	0	 1	 0	 3	 4
+4	1	 0	 0	 0	 1
+Total	[1 1 1 9]
+Corrected Rand index: 0.35255648038
+
+F-measure(P,Q): 0.516025641026
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 49
+
+Cluster 0,0 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 0,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: C_MA [11 objetos]Objetos: C_MA C_ES P_EN T_ES L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 119.728627532
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	Total
+
+1	0	 3	 3
+2	0	 4	 4
+3	1	 3	 4
+4	0	 1	 1
+Total	[ 1 11]
+Corrected Rand index: 0.342572542226
+
+F-measure(P,Q): 0.432142857143
+OERC: 0.583333333333
+
+#####################################
+Repetição do experimento: 50
+
+Cluster 0,0 Prototipo: C_MA [11 objetos]Objetos: C_ES C_MA P_EN T_ES L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: P_EN [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 119.728627532
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	1,2	Total
+
+1	3	 0	 3
+2	4	 0	 4
+3	3	 1	 4
+4	1	 0	 1
+Total	[11  1]
+Corrected Rand index: 0.342572542226
+
+F-measure(P,Q): 0.432142857143
+OERC: 0.583333333333
+
+#####################################
+Repetição do experimento: 51
+
+Cluster 0,0 Prototipo: C_MA [11 objetos]Objetos: C_ES C_MA P_EN T_ES L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: L_AM [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 0,3 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_EN [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 119.728627532
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	Total
+
+1	3	 0	 3
+2	4	 0	 4
+3	3	 1	 4
+4	1	 0	 1
+Total	[11  1]
+Corrected Rand index: 0.342572542226
+
+F-measure(P,Q): 0.432142857143
+OERC: 0.583333333333
+
+#####################################
+Repetição do experimento: 52
+
+Cluster 0,0 Prototipo: C_MA [11 objetos]Objetos: C_MA C_ES P_EN T_ES L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 1,0 Prototipo: L_EN [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 119.728627532
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,3	Total
+
+1	3	 0	 3
+2	4	 0	 4
+3	3	 1	 4
+4	1	 0	 1
+Total	[11  1]
+Corrected Rand index: 0.342572542226
+
+F-measure(P,Q): 0.432142857143
+OERC: 0.583333333333
+
+#####################################
+Repetição do experimento: 53
+
+Cluster 0,0 Prototipo: C_MA [11 objetos]Objetos: C_ES C_MA P_EN T_ES L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 119.728627532
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	1,1	Total
+
+1	3	 0	 3
+2	4	 0	 4
+3	3	 1	 4
+4	1	 0	 1
+Total	[11  1]
+Corrected Rand index: 0.342572542226
+
+F-measure(P,Q): 0.432142857143
+OERC: 0.583333333333
+
+#####################################
+Repetição do experimento: 54
+
+Cluster 0,0 Prototipo: C_MA [1 objetos]Objetos: C_MA 
+Cluster 0,1 Prototipo: L_EN [1 objetos]Objetos: L_EN 
+Cluster 0,2 Prototipo: L_ES [9 objetos]Objetos: L_ES C_ES P_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,3 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 1,0 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: T_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 110.419789445
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	Total
+
+1	0	 0	 3	 0	 3
+2	0	 1	 3	 0	 4
+3	0	 0	 3	 1	 4
+4	1	 0	 0	 0	 1
+Total	[1 1 9 1]
+Corrected Rand index: 0.35255648038
+
+F-measure(P,Q): 0.516025641026
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 55
+
+Cluster 0,0 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 0,1 Prototipo: C_MA [12 objetos]Objetos: C_ES C_MA P_EN T_ES L_EN C_EN C_AM L_AM L_ES T_EN P_ES P_AM 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 129.252373854
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,1	Total
+
+1	3	 3
+2	4	 4
+3	4	 4
+4	1	 1
+Total	[12]
+Corrected Rand index: 0.370134730539
+
+F-measure(P,Q): 0.446153846154
+OERC: 0.666666666667
+
+#####################################
+Repetição do experimento: 56
+
+Cluster 0,0 Prototipo: C_MA [10 objetos]Objetos: C_MA C_ES P_EN L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 0,3 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 109.891466442
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	0,3	Total
+
+1	3	 0	 0	 3
+2	4	 0	 0	 4
+3	2	 1	 1	 4
+4	1	 0	 0	 1
+Total	[10  1  1]
+Corrected Rand index: 0.33299646286
+
+F-measure(P,Q): 0.454345654346
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 57
+
+Cluster 0,0 Prototipo: C_MA [1 objetos]Objetos: C_MA 
+Cluster 0,1 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 0,2 Prototipo: L_EN [1 objetos]Objetos: L_EN 
+Cluster 0,3 Prototipo: L_ES [9 objetos]Objetos: L_ES C_ES P_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 1,0 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 110.419789445
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	Total
+
+1	0	 0	 0	 3	 3
+2	0	 0	 1	 3	 4
+3	0	 1	 0	 3	 4
+4	1	 0	 0	 0	 1
+Total	[1 1 1 9]
+Corrected Rand index: 0.35255648038
+
+F-measure(P,Q): 0.516025641026
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 58
+
+Cluster 0,0 Prototipo: C_MA [1 objetos]Objetos: C_MA 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: T_ES [4 objetos]Objetos: T_ES C_ES C_EN T_EN 
+Cluster 0,3 Prototipo: P_AM [3 objetos]Objetos: P_EN P_ES P_AM 
+Cluster 1,0 Prototipo: L_AM [2 objetos]Objetos: C_AM L_AM 
+Cluster 1,1 Prototipo: L_EN [1 objetos]Objetos: L_EN 
+Cluster 1,2 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 48.867765097
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	0,3	1,0	1,1	1,2	Total
+
+1	0	 0	 1	 2	 0	 0	 3
+2	0	 2	 1	 0	 1	 0	 4
+3	0	 2	 1	 0	 0	 1	 4
+4	1	 0	 0	 0	 0	 0	 1
+Total	[1 4 3 2 1 1]
+Corrected Rand index: 0.239077669903
+
+F-measure(P,Q): 0.616666666667
+OERC: 0.333333333333
+
+#####################################
+Repetição do experimento: 59
+
+Cluster 0,0 Prototipo: C_MA [11 objetos]Objetos: C_ES C_MA P_EN T_ES L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 119.728627532
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	Total
+
+1	3	 0	 3
+2	4	 0	 4
+3	3	 1	 4
+4	1	 0	 1
+Total	[11  1]
+Corrected Rand index: 0.342572542226
+
+F-measure(P,Q): 0.432142857143
+OERC: 0.583333333333
+
+#####################################
+Repetição do experimento: 60
+
+Cluster 0,0 Prototipo: C_MA [1 objetos]Objetos: C_MA 
+Cluster 0,1 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 0,2 Prototipo: L_AM [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: L_EN [1 objetos]Objetos: L_EN 
+Cluster 1,1 Prototipo: L_ES [9 objetos]Objetos: L_ES C_ES P_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 110.419789445
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	Total
+
+1	0	 0	 0	 3	 3
+2	0	 0	 1	 3	 4
+3	0	 1	 0	 3	 4
+4	1	 0	 0	 0	 1
+Total	[1 1 1 9]
+Corrected Rand index: 0.35255648038
+
+F-measure(P,Q): 0.516025641026
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 61
+
+Cluster 0,0 Prototipo: C_MA [12 objetos]Objetos: C_MA C_ES P_EN T_ES L_EN C_EN C_AM L_AM L_ES T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 129.252373854
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	Total
+
+1	3	 3
+2	4	 4
+3	4	 4
+4	1	 1
+Total	[12]
+Corrected Rand index: 0.370134730539
+
+F-measure(P,Q): 0.446153846154
+OERC: 0.666666666667
+
+#####################################
+Repetição do experimento: 62
+
+Cluster 0,0 Prototipo: C_MA [11 objetos]Objetos: C_MA C_ES P_EN T_ES L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+
+Critério de adequação (energia): 119.728627532
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	1,3	Total
+
+1	3	 0	 3
+2	4	 0	 4
+3	3	 1	 4
+4	1	 0	 1
+Total	[11  1]
+Corrected Rand index: 0.342572542226
+
+F-measure(P,Q): 0.432142857143
+OERC: 0.583333333333
+
+#####################################
+Repetição do experimento: 63
+
+Cluster 0,0 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 0,1 Prototipo: L_AM [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: C_MA [10 objetos]Objetos: C_ES C_MA P_EN L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+
+Critério de adequação (energia): 109.891466442
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	1,3	Total
+
+1	0	 3	 0	 3
+2	0	 4	 0	 4
+3	1	 2	 1	 4
+4	0	 1	 0	 1
+Total	[ 1 10  1]
+Corrected Rand index: 0.33299646286
+
+F-measure(P,Q): 0.454345654346
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 64
+
+Cluster 0,0 Prototipo: C_MA [1 objetos]Objetos: C_MA 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: T_ES [5 objetos]Objetos: C_EN T_EN L_ES C_ES T_ES 
+Cluster 0,3 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: L_AM [2 objetos]Objetos: C_AM L_AM 
+Cluster 1,1 Prototipo: L_EN [1 objetos]Objetos: L_EN 
+Cluster 1,2 Prototipo: L_EN [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: P_AM [3 objetos]Objetos: P_EN P_ES P_AM 
+
+Critério de adequação (energia): 57.2166904898
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	1,0	1,1	1,3	Total
+
+1	0	 0	 2	 0	 1	 3
+2	0	 2	 0	 1	 1	 4
+3	0	 3	 0	 0	 1	 4
+4	1	 0	 0	 0	 0	 1
+Total	[1 5 2 1 3]
+Corrected Rand index: 0.344142259414
+
+F-measure(P,Q): 0.653703703704
+OERC: 0.333333333333
+
+#####################################
+Repetição do experimento: 65
+
+Cluster 0,0 Prototipo: C_MA [9 objetos]Objetos: C_MA C_ES P_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 1,1 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_EN [1 objetos]Objetos: L_EN 
+Cluster 1,3 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+
+Critério de adequação (energia): 103.516263286
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	1,0	1,2	1,3	Total
+
+1	3	 0	 0	 0	 3
+2	3	 0	 1	 0	 4
+3	2	 1	 0	 1	 4
+4	1	 0	 0	 0	 1
+Total	[9 1 1 1]
+Corrected Rand index: 0.274078478002
+
+F-measure(P,Q): 0.428846153846
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 66
+
+Cluster 0,0 Prototipo: L_AM [3 objetos]Objetos: L_EN C_AM L_AM 
+Cluster 0,1 Prototipo: C_MA [1 objetos]Objetos: C_MA 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: T_ES [5 objetos]Objetos: T_ES C_ES C_EN T_EN L_ES 
+Cluster 1,3 Prototipo: P_AM [3 objetos]Objetos: P_EN P_ES P_AM 
+
+Critério de adequação (energia): 62.7256672981
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,2	1,3	Total
+
+1	2	 0	 0	 1	 3
+2	1	 0	 2	 1	 4
+3	0	 0	 3	 1	 4
+4	0	 1	 0	 0	 1
+Total	[3 1 5 3]
+Corrected Rand index: 0.321917808219
+
+F-measure(P,Q): 0.62037037037
+OERC: 0.416666666667
+
+#####################################
+Repetição do experimento: 67
+
+Cluster 0,0 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 0,1 Prototipo: C_MA [11 objetos]Objetos: C_ES C_MA P_EN T_ES L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 119.728627532
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	Total
+
+1	0	 3	 3
+2	0	 4	 4
+3	1	 3	 4
+4	0	 1	 1
+Total	[ 1 11]
+Corrected Rand index: 0.342572542226
+
+F-measure(P,Q): 0.432142857143
+OERC: 0.583333333333
+
+#####################################
+Repetição do experimento: 68
+
+Cluster 0,0 Prototipo: C_MA [11 objetos]Objetos: C_MA C_ES P_EN T_ES L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: P_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 119.728627532
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,3	Total
+
+1	3	 0	 3
+2	4	 0	 4
+3	3	 1	 4
+4	1	 0	 1
+Total	[11  1]
+Corrected Rand index: 0.342572542226
+
+F-measure(P,Q): 0.432142857143
+OERC: 0.583333333333
+
+#####################################
+Repetição do experimento: 69
+
+Cluster 0,0 Prototipo: C_MA [10 objetos]Objetos: C_ES P_EN L_EN C_EN C_AM L_AM T_EN P_ES P_AM C_MA 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 1,2 Prototipo: L_EN [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+
+Critério de adequação (energia): 109.891466442
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	1,1	1,3	Total
+
+1	3	 0	 0	 3
+2	4	 0	 0	 4
+3	2	 1	 1	 4
+4	1	 0	 0	 1
+Total	[10  1  1]
+Corrected Rand index: 0.33299646286
+
+F-measure(P,Q): 0.454345654346
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 70
+
+Cluster 0,0 Prototipo: C_MA [12 objetos]Objetos: C_ES C_MA P_EN T_ES L_EN C_EN C_AM L_AM L_ES T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: L_AM [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 129.252373854
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	Total
+
+1	3	 3
+2	4	 4
+3	4	 4
+4	1	 1
+Total	[12]
+Corrected Rand index: 0.370134730539
+
+F-measure(P,Q): 0.446153846154
+OERC: 0.666666666667
+
+#####################################
+Repetição do experimento: 71
+
+Cluster 0,0 Prototipo: C_MA [10 objetos]Objetos: C_ES C_MA P_EN L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: P_ES [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 109.891466442
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,3	1,2	Total
+
+1	3	 0	 0	 3
+2	4	 0	 0	 4
+3	2	 1	 1	 4
+4	1	 0	 0	 1
+Total	[10  1  1]
+Corrected Rand index: 0.33299646286
+
+F-measure(P,Q): 0.454345654346
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 72
+
+Cluster 0,0 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 0,1 Prototipo: C_MA [9 objetos]Objetos: C_MA C_ES P_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,2 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_EN [1 objetos]Objetos: L_EN 
+Cluster 1,2 Prototipo: L_EN [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+
+Critério de adequação (energia): 103.516263286
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,1	1,3	Total
+
+1	0	 3	 0	 0	 3
+2	0	 3	 1	 0	 4
+3	1	 2	 0	 1	 4
+4	0	 1	 0	 0	 1
+Total	[1 9 1 1]
+Corrected Rand index: 0.274078478002
+
+F-measure(P,Q): 0.428846153846
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 73
+
+Cluster 0,0 Prototipo: C_MA [1 objetos]Objetos: C_MA 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 0,3 Prototipo: L_EN [1 objetos]Objetos: L_EN 
+Cluster 1,0 Prototipo: L_ES [9 objetos]Objetos: L_ES C_ES P_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 1,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 110.419789445
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	0,3	1,0	Total
+
+1	0	 0	 0	 3	 3
+2	0	 0	 1	 3	 4
+3	0	 1	 0	 3	 4
+4	1	 0	 0	 0	 1
+Total	[1 1 1 9]
+Corrected Rand index: 0.35255648038
+
+F-measure(P,Q): 0.516025641026
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 74
+
+Cluster 0,0 Prototipo: C_MA [11 objetos]Objetos: C_MA C_ES P_EN T_ES L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 0,2 Prototipo: P_ES [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 119.728627532
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	Total
+
+1	3	 0	 3
+2	4	 0	 4
+3	3	 1	 4
+4	1	 0	 1
+Total	[11  1]
+Corrected Rand index: 0.342572542226
+
+F-measure(P,Q): 0.432142857143
+OERC: 0.583333333333
+
+#####################################
+Repetição do experimento: 75
+
+Cluster 0,0 Prototipo: L_ES [9 objetos]Objetos: C_ES P_EN C_EN C_AM L_AM L_ES T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: C_MA [1 objetos]Objetos: C_MA 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 1,0 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_EN [1 objetos]Objetos: L_EN 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 110.419789445
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,3	1,1	Total
+
+1	3	 0	 0	 0	 3
+2	3	 0	 0	 1	 4
+3	3	 0	 1	 0	 4
+4	0	 1	 0	 0	 1
+Total	[9 1 1 1]
+Corrected Rand index: 0.35255648038
+
+F-measure(P,Q): 0.516025641026
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 76
+
+Cluster 0,0 Prototipo: T_EN [0 objetos]Objetos: 
+Cluster 0,1 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 0,2 Prototipo: C_MA [11 objetos]Objetos: C_ES C_MA P_EN T_ES L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: C_MA [0 objetos]Objetos: 
+
+Critério de adequação (energia): 119.728627532
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,1	0,2	Total
+
+1	0	 3	 3
+2	0	 4	 4
+3	1	 3	 4
+4	0	 1	 1
+Total	[ 1 11]
+Corrected Rand index: 0.342572542226
+
+F-measure(P,Q): 0.432142857143
+OERC: 0.583333333333
+
+#####################################
+Repetição do experimento: 77
+
+Cluster 0,0 Prototipo: L_AM [3 objetos]Objetos: L_EN C_AM L_AM 
+Cluster 0,1 Prototipo: C_MA [1 objetos]Objetos: C_MA 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: T_ES [5 objetos]Objetos: C_EN T_EN L_ES C_ES T_ES 
+Cluster 1,0 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: P_AM [3 objetos]Objetos: P_EN P_ES P_AM 
+
+Critério de adequação (energia): 62.7256672981
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,3	1,3	Total
+
+1	2	 0	 0	 1	 3
+2	1	 0	 2	 1	 4
+3	0	 0	 3	 1	 4
+4	0	 1	 0	 0	 1
+Total	[3 1 5 3]
+Corrected Rand index: 0.321917808219
+
+F-measure(P,Q): 0.62037037037
+OERC: 0.416666666667
+
+#####################################
+Repetição do experimento: 78
+
+Cluster 0,0 Prototipo: C_MA [11 objetos]Objetos: C_MA C_ES P_EN T_ES L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 0,2 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 119.728627532
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	Total
+
+1	3	 0	 3
+2	4	 0	 4
+3	3	 1	 4
+4	1	 0	 1
+Total	[11  1]
+Corrected Rand index: 0.342572542226
+
+F-measure(P,Q): 0.432142857143
+OERC: 0.583333333333
+
+#####################################
+Repetição do experimento: 79
+
+Cluster 0,0 Prototipo: C_MA [10 objetos]Objetos: C_MA C_ES P_EN T_ES C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: C_EN [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: L_EN [1 objetos]Objetos: L_EN 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: C_MA [0 objetos]Objetos: 
+
+Critério de adequação (energia): 113.306522616
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,3	1,1	Total
+
+1	3	 0	 0	 3
+2	3	 1	 0	 4
+3	3	 0	 1	 4
+4	1	 0	 0	 1
+Total	[10  1  1]
+Corrected Rand index: 0.299646286003
+
+F-measure(P,Q): 0.41625041625
+OERC: 0.583333333333
+
+#####################################
+Repetição do experimento: 80
+
+Cluster 0,0 Prototipo: C_MA [11 objetos]Objetos: C_ES C_MA P_EN T_ES L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: C_AM [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 119.728627532
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	Total
+
+1	3	 0	 3
+2	4	 0	 4
+3	3	 1	 4
+4	1	 0	 1
+Total	[11  1]
+Corrected Rand index: 0.342572542226
+
+F-measure(P,Q): 0.432142857143
+OERC: 0.583333333333
+
+#####################################
+Repetição do experimento: 81
+
+Cluster 0,0 Prototipo: C_MA [1 objetos]Objetos: C_MA 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: L_EN [1 objetos]Objetos: L_EN 
+Cluster 0,3 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 1,0 Prototipo: L_ES [9 objetos]Objetos: L_ES C_ES P_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 1,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 110.419789445
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	0,3	1,0	Total
+
+1	0	 0	 0	 3	 3
+2	0	 1	 0	 3	 4
+3	0	 0	 1	 3	 4
+4	1	 0	 0	 0	 1
+Total	[1 1 1 9]
+Corrected Rand index: 0.35255648038
+
+F-measure(P,Q): 0.516025641026
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 82
+
+Cluster 0,0 Prototipo: C_MA [1 objetos]Objetos: C_MA 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: T_ES [11 objetos]Objetos: T_ES C_ES P_EN L_EN C_EN C_AM L_AM L_ES T_EN P_ES P_AM 
+Cluster 0,3 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_EN [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 126.251621492
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	Total
+
+1	0	 3	 3
+2	0	 4	 4
+3	0	 4	 4
+4	1	 0	 1
+Total	[ 1 11]
+Corrected Rand index: 0.428323949762
+
+F-measure(P,Q): 0.546031746032
+OERC: 0.583333333333
+
+#####################################
+Repetição do experimento: 83
+
+Cluster 0,0 Prototipo: C_MA [1 objetos]Objetos: C_MA 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 0,3 Prototipo: L_EN [1 objetos]Objetos: L_EN 
+Cluster 1,0 Prototipo: L_ES [9 objetos]Objetos: L_ES C_ES P_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 1,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 110.419789445
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	0,3	1,0	Total
+
+1	0	 0	 0	 3	 3
+2	0	 0	 1	 3	 4
+3	0	 1	 0	 3	 4
+4	1	 0	 0	 0	 1
+Total	[1 1 1 9]
+Corrected Rand index: 0.35255648038
+
+F-measure(P,Q): 0.516025641026
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 84
+
+Cluster 0,0 Prototipo: C_MA [1 objetos]Objetos: C_MA 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 0,3 Prototipo: L_EN [1 objetos]Objetos: L_EN 
+Cluster 1,0 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_ES [9 objetos]Objetos: C_ES P_EN C_EN C_AM L_AM L_ES T_EN P_ES P_AM 
+Cluster 1,2 Prototipo: P_AM [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 110.419789445
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	0,3	1,1	Total
+
+1	0	 0	 0	 3	 3
+2	0	 0	 1	 3	 4
+3	0	 1	 0	 3	 4
+4	1	 0	 0	 0	 1
+Total	[1 1 1 9]
+Corrected Rand index: 0.35255648038
+
+F-measure(P,Q): 0.516025641026
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 85
+
+Cluster 0,0 Prototipo: C_MA [10 objetos]Objetos: C_MA C_ES P_EN L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 0,3 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 1,0 Prototipo: C_ES [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 109.891466442
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	0,3	Total
+
+1	3	 0	 0	 3
+2	4	 0	 0	 4
+3	2	 1	 1	 4
+4	1	 0	 0	 1
+Total	[10  1  1]
+Corrected Rand index: 0.33299646286
+
+F-measure(P,Q): 0.454345654346
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 86
+
+Cluster 0,0 Prototipo: C_MA [1 objetos]Objetos: C_MA 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: T_ES [4 objetos]Objetos: T_ES C_ES C_EN T_EN 
+Cluster 0,3 Prototipo: L_AM [2 objetos]Objetos: C_AM L_AM 
+Cluster 1,0 Prototipo: L_EN [1 objetos]Objetos: L_EN 
+Cluster 1,1 Prototipo: P_AM [3 objetos]Objetos: P_EN P_ES P_AM 
+Cluster 1,2 Prototipo: L_EN [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+
+Critério de adequação (energia): 48.867765097
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	0,3	1,0	1,1	1,3	Total
+
+1	0	 0	 2	 0	 1	 0	 3
+2	0	 2	 0	 1	 1	 0	 4
+3	0	 2	 0	 0	 1	 1	 4
+4	1	 0	 0	 0	 0	 0	 1
+Total	[1 4 2 1 3 1]
+Corrected Rand index: 0.239077669903
+
+F-measure(P,Q): 0.616666666667
+OERC: 0.333333333333
+
+#####################################
+Repetição do experimento: 87
+
+Cluster 0,0 Prototipo: C_MA [1 objetos]Objetos: C_MA 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: T_ES [5 objetos]Objetos: T_ES C_ES C_EN T_EN L_ES 
+Cluster 0,3 Prototipo: L_AM [2 objetos]Objetos: C_AM L_AM 
+Cluster 1,0 Prototipo: L_EN [1 objetos]Objetos: L_EN 
+Cluster 1,1 Prototipo: L_EN [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_EN [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: P_AM [3 objetos]Objetos: P_EN P_ES P_AM 
+
+Critério de adequação (energia): 57.2166904898
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	0,3	1,0	1,3	Total
+
+1	0	 0	 2	 0	 1	 3
+2	0	 2	 0	 1	 1	 4
+3	0	 3	 0	 0	 1	 4
+4	1	 0	 0	 0	 0	 1
+Total	[1 5 2 1 3]
+Corrected Rand index: 0.344142259414
+
+F-measure(P,Q): 0.653703703704
+OERC: 0.333333333333
+
+#####################################
+Repetição do experimento: 88
+
+Cluster 0,0 Prototipo: C_MA [10 objetos]Objetos: C_MA C_ES P_EN L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 0,2 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 109.891466442
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	Total
+
+1	3	 0	 0	 3
+2	4	 0	 0	 4
+3	2	 1	 1	 4
+4	1	 0	 0	 1
+Total	[10  1  1]
+Corrected Rand index: 0.33299646286
+
+F-measure(P,Q): 0.454345654346
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 89
+
+Cluster 0,0 Prototipo: C_MA [1 objetos]Objetos: C_MA 
+Cluster 0,1 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 0,2 Prototipo: L_EN [1 objetos]Objetos: L_EN 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: L_EN [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [9 objetos]Objetos: C_ES P_EN C_EN C_AM L_AM L_ES T_EN P_ES P_AM 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 110.419789445
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,2	Total
+
+1	0	 0	 0	 3	 3
+2	0	 0	 1	 3	 4
+3	0	 1	 0	 3	 4
+4	1	 0	 0	 0	 1
+Total	[1 1 1 9]
+Corrected Rand index: 0.35255648038
+
+F-measure(P,Q): 0.516025641026
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 90
+
+Cluster 0,0 Prototipo: C_MA [10 objetos]Objetos: C_MA C_ES P_EN L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 1,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 109.891466442
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	1,0	1,2	Total
+
+1	3	 0	 0	 3
+2	4	 0	 0	 4
+3	2	 1	 1	 4
+4	1	 0	 0	 1
+Total	[10  1  1]
+Corrected Rand index: 0.33299646286
+
+F-measure(P,Q): 0.454345654346
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 91
+
+Cluster 0,0 Prototipo: C_MA [11 objetos]Objetos: C_MA C_ES P_EN T_ES L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+
+Critério de adequação (energia): 119.728627532
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	1,3	Total
+
+1	3	 0	 3
+2	4	 0	 4
+3	3	 1	 4
+4	1	 0	 1
+Total	[11  1]
+Corrected Rand index: 0.342572542226
+
+F-measure(P,Q): 0.432142857143
+OERC: 0.583333333333
+
+#####################################
+Repetição do experimento: 92
+
+Cluster 0,0 Prototipo: C_MA [9 objetos]Objetos: C_MA C_ES P_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 1,1 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_EN [1 objetos]Objetos: L_EN 
+Cluster 1,3 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+
+Critério de adequação (energia): 103.516263286
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	1,0	1,2	1,3	Total
+
+1	3	 0	 0	 0	 3
+2	3	 0	 1	 0	 4
+3	2	 1	 0	 1	 4
+4	1	 0	 0	 0	 1
+Total	[9 1 1 1]
+Corrected Rand index: 0.274078478002
+
+F-measure(P,Q): 0.428846153846
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 93
+
+Cluster 0,0 Prototipo: L_AM [3 objetos]Objetos: L_EN C_AM L_AM 
+Cluster 0,1 Prototipo: C_MA [1 objetos]Objetos: C_MA 
+Cluster 0,2 Prototipo: T_ES [5 objetos]Objetos: C_EN T_EN L_ES C_ES T_ES 
+Cluster 0,3 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: P_AM [3 objetos]Objetos: P_EN P_ES P_AM 
+
+Critério de adequação (energia): 62.7256672981
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,3	Total
+
+1	2	 0	 0	 1	 3
+2	1	 0	 2	 1	 4
+3	0	 0	 3	 1	 4
+4	0	 1	 0	 0	 1
+Total	[3 1 5 3]
+Corrected Rand index: 0.321917808219
+
+F-measure(P,Q): 0.62037037037
+OERC: 0.416666666667
+
+#####################################
+Repetição do experimento: 94
+
+Cluster 0,0 Prototipo: C_MA [11 objetos]Objetos: C_ES C_MA P_EN T_ES L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 119.728627532
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	1,2	Total
+
+1	3	 0	 3
+2	4	 0	 4
+3	3	 1	 4
+4	1	 0	 1
+Total	[11  1]
+Corrected Rand index: 0.342572542226
+
+F-measure(P,Q): 0.432142857143
+OERC: 0.583333333333
+
+#####################################
+Repetição do experimento: 95
+
+Cluster 0,0 Prototipo: C_MA [11 objetos]Objetos: C_MA C_ES P_EN T_ES L_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: C_MA [0 objetos]Objetos: 
+
+Critério de adequação (energia): 119.728627532
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,3	Total
+
+1	3	 0	 3
+2	4	 0	 4
+3	3	 1	 4
+4	1	 0	 1
+Total	[11  1]
+Corrected Rand index: 0.342572542226
+
+F-measure(P,Q): 0.432142857143
+OERC: 0.583333333333
+
+#####################################
+Repetição do experimento: 96
+
+Cluster 0,0 Prototipo: L_EN [0 objetos]Objetos: 
+Cluster 0,1 Prototipo: C_MA [12 objetos]Objetos: C_ES C_MA P_EN T_ES L_EN C_EN C_AM L_AM L_ES T_EN P_ES P_AM 
+Cluster 0,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 129.252373854
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,1	Total
+
+1	3	 3
+2	4	 4
+3	4	 4
+4	1	 1
+Total	[12]
+Corrected Rand index: 0.370134730539
+
+F-measure(P,Q): 0.446153846154
+OERC: 0.666666666667
+
+#####################################
+Repetição do experimento: 97
+
+Cluster 0,0 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 0,1 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: L_ES [0 objetos]Objetos: 
+Cluster 0,3 Prototipo: C_MA [11 objetos]Objetos: C_ES P_EN T_ES L_EN C_EN C_AM L_AM T_EN P_ES P_AM C_MA 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: T_ES [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 119.728627532
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,3	Total
+
+1	0	 3	 3
+2	0	 4	 4
+3	1	 3	 4
+4	0	 1	 1
+Total	[ 1 11]
+Corrected Rand index: 0.342572542226
+
+F-measure(P,Q): 0.432142857143
+OERC: 0.583333333333
+
+#####################################
+Repetição do experimento: 98
+
+Cluster 0,0 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+Cluster 0,1 Prototipo: T_ES [1 objetos]Objetos: T_ES 
+Cluster 0,2 Prototipo: L_EN [1 objetos]Objetos: L_EN 
+Cluster 0,3 Prototipo: C_MA [9 objetos]Objetos: C_MA C_ES P_EN C_EN C_AM L_AM T_EN P_ES P_AM 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: L_EN [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: L_ES [0 objetos]Objetos: 
+
+Critério de adequação (energia): 103.516263286
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	Total
+
+1	0	 0	 0	 3	 3
+2	0	 0	 1	 3	 4
+3	1	 1	 0	 2	 4
+4	0	 0	 0	 1	 1
+Total	[1 1 1 9]
+Corrected Rand index: 0.274078478002
+
+F-measure(P,Q): 0.428846153846
+OERC: 0.5
+
+#####################################
+Repetição do experimento: 99
+
+Cluster 0,0 Prototipo: C_MA [1 objetos]Objetos: C_MA 
+Cluster 0,1 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: P_AM [3 objetos]Objetos: P_EN P_ES P_AM 
+Cluster 0,3 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: C_MA [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: T_ES [4 objetos]Objetos: T_ES C_ES C_EN T_EN 
+Cluster 1,2 Prototipo: L_AM [3 objetos]Objetos: L_EN C_AM L_AM 
+Cluster 1,3 Prototipo: L_ES [1 objetos]Objetos: L_ES 
+
+Critério de adequação (energia): 54.3767419054
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	1,1	1,2	1,3	Total
+
+1	0	 1	 0	 2	 0	 3
+2	0	 1	 2	 1	 0	 4
+3	0	 1	 2	 0	 1	 4
+4	1	 0	 0	 0	 0	 1
+Total	[1 3 4 3 1]
+Corrected Rand index: 0.221348314607
+
+F-measure(P,Q): 0.583333333333
+OERC: 0.416666666667
+
+Melhor repetição: 58
+Menor oerc: 58
