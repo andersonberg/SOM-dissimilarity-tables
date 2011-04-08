@@ -1,0 +1,238 @@
+\documentclass[12pt]{article}
+
+\usepackage{sbc-template}
+
+\usepackage{graphicx,url}
+\usepackage{amsfonts}
+\usepackage[brazil]{babel}   
+\usepackage[latin1]{inputenc}  
+
+     
+\sloppy
+
+\title{Clustering de múltiplas tabelas de dissimilaridade\\ com pesos adaptativos}
+
+\author{Anderson B. S. Dantas\inst{1}, Francisco de A. T. de Carvalho\inst{1} }
+
+
+\address{Centro de Informática -- Universidade Federal de Pernambuco (CIn/UFPE)\\
+  Av. Prof. Luiz Freire, s/n - Cidade Universitária, CEP 50740-540, Recife -- PE -- Brazil
+  \email{\{absd,fatc\}@cin.ufpe.br}
+}
+
+\begin{document} 
+
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+     
+\begin{resumo}
+
+\end{resumo}
+
+
+\section{Introdução}
+
+%Colocar mais referências sobre SOM
+\section{Self-organizing map (SOM)} \label{sec:som}
+A classe de métodos chamados \textit{self-organizing maps} (mapas auto-organizáveis) segue uma série de procedimentos para associar um número finito de vetores de objetos (entradas) com um número finito de pontos representativos, tal que as relações de semelhança entre as entradas são respeitadas por esses pontos. O algoritmo SOM representa uma abordagem de aprendizado não-supervisionado, todas as propriedades de cada cluster são estimados ou aprendidos sem o uso de informação a priori \cite{Murtagh:2010}.
+
+O SOM consiste em um conjunto de neurônios organizados topologicamente em uma grade, geralmente com uma, duas, ou três dimensões, chamada mapa. De modo mais formal, o mapa é descrito por um grafo não-orientado ($C,\Gamma$). $C$ é um conjunto de $m$ neurônios interconectados com topologia definida por $\Gamma$. A estrutura de grafo permite que se defina uma função de distância entre dois neurônios no mapa. Para cada par de neurônios (\textit{c,r}) no mapa, $\delta(c,r)$ é o comprimento do caminho mais curto entre \textit{c} e \textit{r} no grafo \textit{C}. Essa função de distância permite que haja uma relação de vizinhança entre neurônios.
+
+O conceito de vizinhança é incorporado ao algoritmo através do uso de uma função \textit{kernel} $K$ positiva e tal que $\lim_{|x| \to \infty} K(x) = 0$ \cite{Badran:2005}. As distâncias $\delta(c,r)$ entre os neurônios \textit{c} e \textit{r} do mapa permitem a definição da influência relativa dos neurônios sobre os objetos. $K(\delta(c,r))$ quantifica essa influência. A região ao redor do neurônio que melhor representa um dado objeto de entrada é modificada para se aproximar mais do objeto apresentado, ou seja, não só o neurônio vencedor é atualizado, como também seus vizinhos no mapa. O resultado é que os neurônios no mapa ficam ordenados, neurônios vizinhos possuem vetores referência (ou protótipos) similares.
+
+O SOM recebe como entrada um conjunto de vetores rotulados e tem como resultado um vetor de neurônios com os vetores de entrada atrelados. Seja $n$ o número de objetos $x_i \in R^p$ e $x_i \in E$(conjunto de dados de entrada), $i = 1,2,\dots, n$, onde cada objeto é formados por um vetor e cada vetor $x_i$ é identificado por um rótulo. O algoritmo básico SOM segue as seguintes etapas:
+
+\begin{enumerate}
+\item Fixe os valores de $m$, $\eta(0)$ (taxa de aprendizado inicial), $N_{iter}$ (número máximo de iterações) e $h_{\delta(j,l)}(0)$ (função de vizinhança inicial, onde $\delta(j,l)$ é uma função de distância fixa entre os neurônios $j$ e $l$);
+\item Inicialização: selecione aleatoriamente $m$ vetores distintos para protótipos iniciais $w_c(0), c = 1,2,\dots, m$ e faça $t = 1$;
+\item Selecione aleatoriamente um vetor de entrada $x_i(t)$;
+\item Encontre o melhor neurônio (vencedor) $w_c(t)$ em relação à menor distância Euclidiana:
+$$
+f(x_i(t))^T = \min_{1\leq j\leq m} \sum_{k=1}^p \, (x_{ik}(t) - w_{jk}(t))^2;
+$$
+\item Para todos os neurônios $j$ dentro do raio de vizinhança do neurônio vencedor $w_c$, ajuste os pesos segundo a equação:
+$$
+w_j(t+1) = w_j(t) + \eta(t) h_{\delta(w_c,w_j)}(t)(x_i(t) - w_j(t));
+$$
+
+\item Atualize a taxa de aprendizado $\eta(t)$ e a função de vizinhança $h_{l,j}(t)$;
+
+\item Critério de parada: se $t = N_{iter}$, pare; senão vá para 3.
+
+\end{enumerate}
+
+%\subsection*{Algoritmo de treinamento batch}
+
+\section{Batch self-organizing map aplicado em dados de dissimilaridade}
+
+O SOM para dados de dissimilaridade conforme proposto por \cite{golli:2004} também é descrito por um grafo ($C,\Gamma$). A principal diferença está nos dados que serão classificados que consistem em um conjunto arbitrário onde uma dissimilaridade é definida. 
+
+Cada neurônio $c$ é representado por um "\textit{individual referent}" $a_c = x_{j_i}, \: x_{j_i} \in \Omega$. Denotamos $a$ \textit{individuals codebook}, i.e. a lista $a = \{a_c; c = 1,\dots,m\}$ de \textit{individual referents} do mapa.
+
+Uma nova dissimilaridade $d^T$ de $\Omega \times P(\Omega)$ para $\mathbb{R}$ é definida por:
+
+\begin{equation}
+d^T(x_i, a_c) = \sum_{r \in C}K^T(\delta(c,r)) \, d^2(x_i,a_r)
+\end{equation}
+
+%Comentar função objetivo e descrever o algoritmo
+Tal dissimilaridade é baseada na função kernel positiva $K$, como descrita na seção anterior. $K$ é usada para definir uma família de funções $K^T$ parametrizadas por $T$, onde $K^T(\delta) = K (\frac{\delta}{T})$. O parâmetro $T$ controla o tamanho da vizinhança dos neurônios: se o valor de $T$ for pequeno, poucos neurônios serão atingidos pela vizinhança. Um simples exemplo para $K^T$ é definido por $K^T(\delta) = e^{-\frac{\delta^2}{T^2}}$.
+
+Durante a etapa de aprendizado, a seguinte função custo $E$ é minimizada alternando-se o passo de afetação e o passo de representação:
+
+\begin{equation}
+E(f,a) = \sum_{x_i \in \Omega} d^T(x_i, a_{f(x_i)}) = \sum_{x_i \in \Omega} \sum_{r \in C}K^T(\delta(f(x_i),r)) d^2(x_i, a_r)
+\end{equation}
+
+Na etapa de afetação, a função $f$ afeta cada indivíduo $x_i$ ao neurônio mais próximo. Em termos da dissimilaridade $d^T$:
+
+\begin{equation}
+f(x_i) = arg \min_{c \in C} d^T(x_i, a_c)
+\label{affectation_function}
+\end{equation}
+
+Na etapa de representação, são selecionados novos protótipos que representam o conjunto de objetos. Esta etapa de otimização pode ser realizada independentemente para cada neurônio. De fato, as seguintes $m$ funções são minimizadas:
+
+\begin{equation}
+E_r = \sum_{x_i \in \Omega} K^T(\delta(f(x_i),r)) d^2(x_i, a_r)
+\label{E_batch_rossi}
+\end{equation}
+
+\subsection*{O Algoritmo}
+
+\textbf{Inicialização}: iteração $k = 0$; selecione os protótipos iniciais $a^0$; fixe $T = T_{max}$ e o número total de iterações $N_{iter}$\\
+\textbf{\underline{Iteração}}: Na iteração $k$, o conjunto de protótipos da iteração anterior $a^{k-1}$ é conhecido. Calcule o novo valor de $T$:
+$$
+T = T_{max}\ast (\frac{T_{min}}{T_{max}})^\frac{k}{N_{iter}-1}
+$$
+
+\begin{itemize}
+\item \textbf{etapa de afetação}: Afetar cada indivíduo $X_i$ ao protótipo como definido na equação \ref{affectation_function}.
+\item \textbf{etapa de representação}: determinar os novos protótipos $a^k*$ que minimizam a função $E(f_{a^k},a)$, $a^k_c*$ é definido pela equação \ref{E_batch_rossi}.
+\end{itemize}
+
+Repetir \textbf{\underline{Iteração}} até $T = T_{min}$.
+
+\section{Self-organizing map adaptativo para múltiplas tabelas de dissimilaridade}
+
+\subsection{Introdução}
+
+Nesta seção apresentamos um algoritmo baseado no algoritmo SOM para dados de dissimilaridade \cite{golli:2004} e no algoritmo de \textit{clustering} de múltiplas tabelas de dissimilaridade de \cite{Lechevallier:2010}. O objetivo do modelo apresentado é mapear objetos levando em conta suas descrições relacionais dadas por múltiplas matrizes de dissimilaridade. O algoritmo é capaz de associar dados de entrada com pontos representativos de um mapa formando grupos (\textit{clusters}) de objetos.
+
+Seja $E = \{e_1,\dots,e_n\}$ um conjunto de $n$ objetos e $p$ o número de matrizes de dissimilaridade $\textbf{D}_j = [d_j(e_i,e_l)] (j = 1,\dots,p)$, onde $d_j(e_i,e_l)$ é a dissimilaridade entre os objetos $e_i$ e $e_l (i,l = 1,\dots,n)$ na matriz de dissimilaridades $\textbf{D}_j$. Assuma que o protótipo $g_l$ do \textit{cluster} $C_l$ é um elemento do conjunto de objetos $E$, i.e., $g_l \in E \: \forall l = 1,\dots,L$.
+
+O algoritmo SOM ponderado para múltiplas tabelas de dissimilaridade calcula uma partição $P = (C_1,\dots, C_l)$ de $E$ em $L$ clusters e o respectivo protótipo $g_l$ representando o cluster $C_l$ em $P$ tal que um determinado critério de adequação (função objetivo) que mede  o ajuste entre os clusters e seus repectivos protótipos é localmente otimizado. O critério de adequação é definido como:
+
+\begin{eqnarray}
+E &=& \sum_{i=1}^n \sum_{l=1}^c K(\delta(f(e_i),l),T)D_{ \lambda_l}(e_i,g_l) \nonumber\\
+&=& \sum_{i=1}^n \sum_{l=1}^c \exp \{- \frac{(\delta((f(e_i)),l))^2}{2T^2} \sum_{j=1}^p \lambda_{lj} d_j(e_i, g_l)
+\end{eqnarray}
+
+onde $K$ é uma função kernel positiva, tal que $\lim_{|\delta| \to \infty} K(\delta) = 0$. E $\delta(c,r)$ calcula a distância entre dois neurônios no mapa.
+A matriz de pesos $\lambda$ é composta por $L$ vetores de pesos $\lambda_k = (\lambda_k^1,\dots,\lambda_k^j,\dots,\lambda_k^p)$, muda a cada iteração do algoritmo, ou seja, os vetores não possuem valores determinados absolutamente e é diferente para cada matriz de dissimilaridades. O modelo segue três etapas definidas (representação, atualização de pesos e afetação):
+
+\subsection*{\textbf{\textit{Etapa 1: Definição dos melhores protótipos}}}
+Nesta etapa, a partição $P^{(t-1)} = (P_1^{(t-1)},\dots,P_c^{(t-1)})$ e $\lambda_l^{(t)} (l = 1,\dots,c)$ são fixos. O protótipo $g_l^{(t)} = g^* \in E$ do cluster $C_l$, que minimiza o critério de adequação $E$ é calculado segundo a equação:
+
+\begin{equation}
+g^* = argmin_{e \in E} \sum_{i=1}^n \exp \{- \frac{(\delta((f(e_i))^{(t-1)},l))^2}{2T^2} \sum_{j=1}^p \lambda_{lj}^{(t-1)} d_j(e_i, e)
+\label{prototipo}
+\end{equation}
+
+\subsection*{\textbf{\textit{Etapa 2: Definição dos melhores pesos}}}
+Nesta etapa, a partição $P^{(t-1)} = (P_1^{(t-1)},\dots,P_c^{(t-1)})$ e os protótipos $g_l^{(t)} \in E (l = 1,\dots,c)$ são fixos. O elemento $j$ do vetor de pesos $\lambda_l = (\lambda_k^1,\dots,\lambda_k^p)$, que minimiza o critério de adequação $E$ é calculado segundo a expressão:
+
+\begin{equation}
+\lambda_{lj}^{(t)} = \frac{\left\lbrace  \prod_{h=1}^p ( \sum_{i=1}^n \exp\{- \frac{\delta^2(f^{(t-1)}(x_i), l)}{2T^2} \} d_h(e_i,g_l^{(t)})) \right\rbrace  ^ \frac{1}{p} }{\sum_{i=1}^n \exp\{- \frac{\delta^2(f^{(t-1)}(x_i), l)}{2T^2} \} d_j(e_i,g_l^{(t)})}
+\label{pesos}
+\end{equation}
+
+\subsection*{\textbf{\textit{Etapa 3: Definição da melhor partição}}}
+Nesta etapa, os protótipos $g_l^{(t)} \in E (l = 1,\dots,c)$ e $\lambda_l^{(t)} (l = 1,\dots,c)$ são fixos. O cluster $C_r$ que minimiza o critério E é determinado de acordo com a equação:
+
+\begin{equation}
+r = (f(e_i))^{(t)} = argmin_{1\leq h\leq c} \sum_{l=1}^c \exp \{- \frac{(\delta(h,l))^2}{2T^2}\} \sum_{j=1}^p \lambda_{lj}^{(t)} d_j(e_i, g_l^{(t)})
+\label{cluster}
+\end{equation}
+
+
+%Descomentar as linhas no caso de $G_l$ ser um subconjunto de $E$
+%Assumindo que o protótipo $G_l$ do \textit{cluster} $C_l$ é um subconjunto de cardinalidade fixa $1 \leq q \ll n$ do conjunto de objetos $E$, isto é, $G_l \in E^{(q)} = \{A \subset E : |A| = q\}$.
+%\begin{equation}
+%E = \sum_{i=1}^n \sum_{l=1}^c \exp \{- \frac{(\delta((f(e_i)),l))^2}{2T^2} \sum_{j=1}^p \lambda_{lj} \sum_{e %\in G_l} d_j(e_i, e)
+%\end{equation}
+
+\subsection{O algoritmo}
+
+\begin{enumerate}
+\item \textit{Inicialização\\}
+Fixe o número $c$ de clusters;\\
+%Fixe a cardinalidade $1 \leq q \ll n$ dos protótipos $G_l (l = 1,\dots,c)$;\\
+Fixe $\delta$;\\
+Fixe a função kernel $K$;\\
+Fixe o número de iterações $N_{iter}$;\\
+Fixe $T_{min}$, $T_{max}$; Atribua $T \leftarrow T_{max}$; Atribua $t \leftarrow 0$;\\
+Selecione $c$ protótipos aleatoriamente $g_l^{(0)} \in E(l = 1,\dots,c$;\\
+Configure $\lambda_l^{(0)} = (\lambda_{l1}^{(0)},\dots,\lambda_{lp}^{(0)}) = (1,\dots,1)(l = 1,\dots,c)$;\\
+Configure o mapa $L(c,\textbf{G}^0)$, onde $\textbf{G}^0 = (g_1^{(0)},\dots,g_c^{(0)})$.\\
+Cada objeto $e_i$ é afetado ao protótipo mais próximo com o objetivo de obter a partição $P^{(0)} = (P_1^{(0)},\dots,P_c^{(0)})$ de acordo com o seguinte critério:
+\begin{equation}
+(f(e_i))^{(0)} = argmin_{1\leq r\leq c}\sum_{l=1}^c \exp \{- \frac{(\delta(r,l))^2}{2T^2}\} \sum_{j=1}^p \lambda_{lj}^{(0)} d_j(e_i, g_l)
+\end{equation}
+
+\item \textit{Passo 1: Representação}\\
+Atribua $t = t + 1$;\\
+Atribua $T = T_{max} (\frac{T_{min}}{T_{max}})^\frac{t}{N_{iter} - 1}$\\
+A partição $P^{(t-1)} = (P_1^{(t-1)},\dots,P_c^{(t-1)})$ e $\lambda_l^{(t)} (l = 1,\dots,c)$ são fixos.\\
+Calcule o protótipo $g_l^{(t)} = g^* \in E$ do cluster $P_l^{(t-1)} (l = 1,\dots,c)$ de acordo com a equação \ref{prototipo}.
+
+
+\item Passo 2: Atualização dos pesos\\
+A partição $P^{(t-1)} = (P_1^{(t-1)},\dots,P_c^{(t-1)})$ e os protótipos $g_l^{(t)} \in E (l = 1,\dots,c)$ são fixos.\\
+Atualize o vetor de pesos de acordo com a equação \ref{pesos}.
+
+
+\item \textit{Passo 3: Afetação}\\
+Os protótipos $g_l^{(t)} \in E (l = 1,\dots,c)$ e $\lambda_l^{(t)} (l = 1,\dots,c)$ são fixos\\ 
+$P^{(t)} \leftarrow P^{(t-1)}$\\
+para $i=1$ até $n$ faça:\\
+encontre o cluster $C_m^{(t)}$ ao qual o objeto $e_i$ pertence\\
+encontre o cluster vencedor $C_r^{(t)}$, onde $r$ é obtido pela equação \ref{cluster}\\
+
+se $r \neq m:\\$
+$C_r^{(t)} \leftarrow C_r^{(t)} \cup \{e_i\}$\\
+$C_m^{(t)} \leftarrow C_m^{(t)} \setminus \{e_i\}$\\
+
+\item \textit{Critério de parada}\\
+Se $T == T_{min}$ então PARE; senão volte ao passo 1
+
+\end{enumerate}
+
+\section{Experimentos e resultados}
+
+Para provar a utilidade do algoritmo proposto, foram realizados experimentos utilizando bases de dados obtidas do repositório UCI Machine Learning Repository \cite{Frank:2010}. Com a finalidade de avaliar os resultados da clusterização realizada pelo método proposto neste trabalho foi considerado um índice externo: o índice de Rand corrigido (CR) \cite{Hubert:1985}, a medida F-\textit{measure} \cite{Rijsbergen:1979} e a taxa de erro global de classificação (OERC - overall error rate of classification) \cite{Breiman:1984}.
+
+O índice CR avalia o grau de similaridade entre a partição a priori e a partição fornecida pelo algoritmo de clustering. Além disso, o índice CR não é sensível ao número de classes nas partições ou à distribuição dos itens dentro dos clusters. O índice CR pode assumir valores no intervalo [-1,1], onde o valor 1 indica perfeita combinação entre as partições, valores perto de 0 ou negativos indicam pouca semelhança. O índice F-\textit{measure} entre a partição a priori e a partição obtida pelo algoritmo de clustering assume valores no intervalo [0,1], em que 1 indica perfeita combinação entre as partições. O índice OERC mede a habilidade de um algoritmo de clustering encontrar classes a priori presentes na base de dados.
+
+\subsection{Base de dados Iris}
+Esta base de dados consiste em três tipos (classes) de planta íris: iris setosa, iris versicolor e iris virginica. Cada uma das classes possui 50 exemplos. Cada instância é descrita por quatro atributos, que são o comprimento (length) e a largura (width) da sépala (sepal) e da pétala (petal), em centímetros.
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Cluster/Classe & 1 & 2 & 3
+
+\label{iris_table}
+\end{tabular}
+\end{center}
+
+\section{Conclusão}
+
+%\nocite{*} % displays all references, cited or not
+\bibliographystyle{sbc}
+\bibliography{dantas-DeCarvalho-enia}
+
+\end{document}

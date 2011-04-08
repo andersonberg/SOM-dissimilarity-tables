@@ -1,0 +1,52 @@
+\section{Self-organizing map para múltiplas tabelas de dissimilaridade}
+Seja $E = \{e_1,\dots,e_n\}$ um conjunto de $n$ objetos e seja $p$ o número de matrizes de dissimilaridade $\textbf{D}_j = [d_j(e_i,e_l)] (j = 1,\dots,p)$, onde $d_j(e_i,e_l)$ é a similaridade entre os objetos $e_i e e_l (i,l = 1,\dots,n)$ na matriz de dissimilaridades $\textbf{D}_j$. Assumindo que o protótipo $G_l$ do \textit{cluster} $C_l$ é um subconjunto de cardinalidade fixa $1 \leq q \ll n$ do conjunto de objetos $E$, isto é, $G_l \in E^{(q)} = \{A \subset E : |A| = q\}$.
+
+\begin{equation}
+E = \sum_{i=1}^n \sum_{l=1}^c \exp \{- \frac{(\delta((f(e_i)),l))^2}{2T^2} \sum_{j=1}^p \sum_{e \in G_l} d_j(e_i, e)
+\end{equation}
+
+\subsection{O algoritmo}
+
+\begin{enumerate}
+\item \textit{Inicialização\\}
+Fixe o número $c$ de clusters;\\
+Fixe a cardinalidade $1 \leq q \ll n$ dos protótipos $G_l (l = 1,\dots,c)$;\\
+Fixe $\delta$;\\
+Fixe a função kernel $K$;\\
+Fixe o número de iterações $N_iter$;\\
+Fixe $T_{min}$, $T_{max}$; Atribua $T \leftarrow T_{max}$; Atribua $t \leftarrow 0$;\\
+Selecione $c$ protótipos aleatoriamente $G_l^{(0)} \in E^{(q)}(l = 1,\dots,c$;\\
+Configure o mapa $L(c,\textbf{G}^0)$, onde $\textbf{G}^0 = (G_1^{(0)},\dots,G_c^{(0)})$.\\
+Cada objeto $e_i$ é afetado ao protótipo mais próximo com o objetivo de obter a partição $P^{(0)} = (P_1^{(0)},\dots,P_c^{(0)})$ de acordo com o seguinte critério:
+\begin{equation}
+(f(e_i))^{(0)} = argmin_{1\leq r\leq c}\sum_{l=1}^c \exp \{- \frac{(\delta(r,l))^2}{2T^2}\} \sum_{j=1}^p \sum_{e \in G_l^{(0)}} d_j(e_i, e)
+\end{equation}
+
+\item \textit{Passo 1: Representação}\\
+Atribua $t = t + 1$;\\
+Atribua $T = T_{max} (\frac{T_{min}}{T_{max}})^\frac{t}{N_{iter} - 1}$\\
+A partição $P^{(t-1)} = (P_1^{(t-1)},\dots,P_c^{(t-1)})$ é fixa.\\
+Calcule o protótipo $G_l^{(t)} = G^* \in E^{(q)}$ do cluster $P_l^{(t-1)} (l = 1,\dots,c)$ de acordo com a equação:
+
+\begin{equation}
+G^* = argmin_{G \in E^{(q)}} \sum_{i=1}^n \exp \{- \frac{(\delta((f(e_i))^{(t-1)},l))^2}{2T^2} \sum_{j=1}^p \sum_{e \in G} d_j(e_i, e)
+\end{equation}
+
+\item \textit{Passo 2: Afetação}\\
+Os protótipos $G_l^{(t)} \in E^{(q)} (l = 1,\dots,c)$ são fixos $P^{(t)} \leftarrow P^{(t-1)}$\\
+para $i=1$ até $n$ faça:\\
+encontre o cluster $C_m^{(t)}$ ao qual o objeto $e_i$ pertence\\
+encontre o cluster vencedor $C_r^{(t)}$ tal que:\\
+
+\begin{equation}
+r = (f(e_i))^{(t)} = argmin_1\leq h\leq c \sum_{l=1}^c \exp \{- \frac{(\delta(h,l))^2}{2T^2}\} \sum_{j=1}^p \sum_{e \in G_l^{(t)}} d_j(e_i, e)
+\end{equation}
+
+se $r \neq m:\\$
+$C_r^{(t)} \leftarrow C_r^{(t)} \cup \{e_i\}$\\
+$C_m^{(t)} \leftarrow C_m^{(t)} \setminus \{e_i\}$\\
+
+\item \textit{Critério de parada}\\
+Se $T == T_{min}$ então PARE; senão volte ao passo 1
+
+\end{enumerate}
