@@ -10,7 +10,7 @@
      
 \sloppy
 
-\title{Clustering de múltiplas tabelas de dissimilaridade\\ com pesos adaptativos}
+\title{Agrupamento de múltiplas tabelas de dissimilaridade\\ baseado em SOM com pesos adaptativos}
 
 \author{Anderson B. S. Dantas\inst{1}, Francisco de A. T. de Carvalho\inst{1} }
 
@@ -35,38 +35,36 @@
 
 \section{Introdução}
 
-%Colocar mais referências sobre SOM
+
 \section{Self-organizing map (SOM)} \label{sec:som}
 A classe de métodos chamados \textit{self-organizing maps} \cite{Kohonen:1990} (mapas auto-organizáveis) segue uma série de procedimentos para associar um número finito de vetores de objetos (entradas) com um número finito de pontos representativos, tal que as relações de semelhança entre as entradas são respeitadas por esses pontos. O algoritmo SOM representa uma abordagem de aprendizado não-supervisionado, todas as propriedades de cada cluster são estimados ou aprendidos sem o uso de informação a priori \cite{Murtagh:2010}.
 
 O SOM consiste em um conjunto de neurônios organizados topologicamente em uma grade, geralmente com uma, duas, ou três dimensões, chamada mapa. De modo mais formal, o mapa é descrito por um grafo não-orientado ($C,\Gamma$). $C$ é um conjunto de $m$ neurônios interconectados com topologia definida por $\Gamma$. A estrutura de grafo permite que se defina uma função de distância entre dois neurônios no mapa. Para cada par de neurônios (\textit{c,r}) no mapa, $\delta(c,r)$ é o comprimento do caminho mais curto entre \textit{c} e \textit{r} no grafo \textit{C}. Essa função de distância permite que haja uma relação de vizinhança entre neurônios.
 
-O conceito de vizinhança é incorporado ao algoritmo através do uso de uma função \textit{kernel} $K$ positiva e tal que $\lim_{|x| \to \infty} K(x) = 0$ \cite{Badran:2005}. As distâncias $\delta(c,r)$ entre os neurônios \textit{c} e \textit{r} do mapa permitem a definição da influência relativa dos neurônios sobre os objetos. $K(\delta(c,r))$ quantifica essa influência. A região ao redor do neurônio que melhor representa um dado objeto de entrada é modificada para se aproximar mais do objeto apresentado, ou seja, não só o neurônio vencedor é atualizado, como também seus vizinhos no mapa. O resultado é que os neurônios no mapa ficam ordenados, neurônios vizinhos possuem vetores referência (ou protótipos) similares.
+O conceito de vizinhança é incorporado ao algoritmo através do uso de uma função \textit{kernel} $K$ positiva e tal que $\lim_{|x| \to \infty} K(x) = 0$ \cite{Badran:2005}. As distâncias $\delta(c,r)$ entre os neurônios \textit{c} e \textit{r} do mapa permitem a definição da influência relativa dos neurônios sobre os objetos. $K(\delta(c,r))$ quantifica essa influência. Os neurônios e os padrões de entrada são ambos associados a vetores m-dimensionais. O neurônio com melhor correspondência será atualizado, como também os neurônios na vizinhança ao redor deste "vencedor". A região ao redor do neurônio que melhor representa um dado objeto de entrada é modificada para se aproximar mais do objeto apresentado. O resultado é que os neurônios no mapa ficam ordenados, neurônios vizinhos possuem vetores referência (ou protótipos) similares.
 
-O SOM recebe como entrada um conjunto de vetores rotulados e tem como resultado um vetor de neurônios com os vetores de entrada atrelados. Seja $n$ o número de objetos $x_i \in R^p$ e $x_i \in E$(conjunto de dados de entrada), $i = 1,2,\dots, n$, onde cada objeto é formados por um vetor e cada vetor $x_i$ é identificado por um rótulo. O algoritmo básico SOM segue as seguintes etapas:
+Considere um vetor $\mathbf{w}_i (\mathbf{w}_i \in \mathbb{R}^p)$ associado a cada elemento $i$ do mapa. O vetor do elemento $i$ na iteração $t$ é $\mathbf{w}_i^{(t)}$. Atribua $t = 0$.
 
-\begin{enumerate}
-\item Fixe os valores de $m$, $\eta(0)$ (taxa de aprendizado inicial), $N_{iter}$ (número máximo de iterações) e $h_{\delta(j,l)}(0)$ (função de vizinhança inicial, onde $\delta(j,l)$ é uma função de distância fixa entre os neurônios $j$ e $l$);
-\item Inicialização: selecione aleatoriamente $m$ vetores distintos para protótipos iniciais $w_c(0), c = 1,2,\dots, m$ e faça $t = 1$;
-\item Selecione aleatoriamente um vetor de entrada $x_i(t)$;
-\item Encontre o melhor neurônio (vencedor) $w_c(t)$ em relação à menor distância Euclidiana:
-$$
-f(x_i(t))^T = \min_{1\leq j\leq m} \sum_{k=1}^p \, (x_{ik}(t) - w_{jk}(t))^2;
-$$
-\item Para todos os neurônios $j$ dentro do raio de vizinhança do neurônio vencedor $w_c$, ajuste os pesos segundo a equação:
-$$
-w_j(t+1) = w_j(t) + \eta(t) h_{\delta(w_c,w_j)}(t)(x_i(t) - w_j(t));
-$$
+\textbf{Etapa 0:} Escolha um vetor $\mathbf{x} (\mathbf{x} \in \mathbb{R}^p)$ aleatoriamente do conjunto de entradas.
 
-\item Atualize a taxa de aprendizado $\eta(t)$ e a função de vizinhança $h_{l,j}(t)$;
+\textbf{Etapa 1:} Determine o neurônio $c = i$ tal que $\parallel \mathbf{x} - \mathbf{w}_i^{(t)} \parallel$ é mínimo. Onde $\parallel \cdot \parallel$ representa uma medida de dissimilaridade que pode ser expressa em termos de uma função de distância, por exemplo, a distância Euclidiana seria uma escolha plausível.
 
-\item Critério de parada: se $t = N_{iter}$, pare; senão vá para 3.
+\textbf{Etapa 2:} Para todos os elementos $i$ do mapa:
+\begin{eqnarray*}
+\mathbf{w}_i^{(t+1)} &=& \mathbf{w}_i^{(t)} + \alpha^{(t)} (\mathbf{x} - \mathbf{w}_i^{(t)}) \; \mbox{se} \, i \in N_c(t)\\
+&=& \mathbf{w}_i^{(t)} \; \mbox{se} \, i \notin N_c(t)
+\end{eqnarray*}
+onde $\alpha^{(t)}$ é uma pequena taxa usada para controlar a convergência e $N_c(t)$ é a vizinhança do elemento $c$ do mapa.
 
-\end{enumerate}
+\textbf{Etapa 3:} Incremente $t$; retorne ao Passo 0, a menos que uma condição de parada seja atingida.
+
+É importante notar que neste tipo de algoritmo somente um indivíduo é apresentado por vez (Etapa 0), os neurônios do mapa se ajustam às entradas a medida em que elas são apresentadas.
 
 \section{Batch self-organizing map aplicado em dados de dissimilaridade}
 
 \subsection{Algoritmo de treinamento batch}
+
+O algoritmo de treinamento do tipo batch é um algoritmo iterativo onde todo o conjunto de exemplos ($E$) é apresentado ao mapa antes que qualquer ajuste seja realizado. Definimos uma função de afetação $f$ de $\mathbb{R}^p$ em $C$, que associa cada elemento $x_i \in \mathbb{R}^p$ ao neurônio cujo vetor é mais semelhante a $x_i$. Essa função induz uma partição $P = \{P_c; c = 1,\dots, k\}$ do conjunto de indivíduos, onde $P_c = \{x_i \in E; f(x_i) = c\}$. Esta é a chamada etapa de afetação.
 
 \subsection{O mapa para dados de dissimilaridade}
 O SOM para dados de dissimilaridade conforme proposto por \cite{golli:2004} também é descrito por um grafo ($C,\Gamma$). A principal diferença está nos dados que serão classificados que consistem em um conjunto arbitrário onde uma dissimilaridade é definida.
@@ -217,29 +215,134 @@ Para provar a utilidade do algoritmo proposto, foram realizados experimentos uti
 
 O índice CR avalia o grau de similaridade entre a partição a priori e a partição fornecida pelo algoritmo de clustering. Além disso, o índice CR não é sensível ao número de classes nas partições ou à distribuição dos itens dentro dos clusters. O índice CR pode assumir valores no intervalo [-1,1], onde o valor 1 indica perfeita combinação entre as partições, valores perto de 0 ou negativos indicam pouca semelhança. O índice F-\textit{measure} entre a partição a priori e a partição obtida pelo algoritmo de clustering assume valores no intervalo [0,1], em que 1 indica perfeita combinação entre as partições. O índice OERC mede a habilidade de um algoritmo de clustering encontrar classes a priori presentes na base de dados.
 
+Alguns parâmetros são considerados para a realização dos experimentos. São eles: topologia do mapa, o valor de $T_{min}$, $T_{max}$ e o número de iterações $N_{iter}$. A topologia do mapa define o número máximo de clusters que serão formados. Como os protótipos de cada cluster são os próprios objetos de entrada, o número máximo de clusters deve ser um número menor do que a quantidade de indivíduos presentes na base de dados. Todos os parâmetros foram definidos empiricamente.
+
 \subsection{Base de dados Iris}
 Esta base de dados consiste em três tipos (classes) de planta íris: iris setosa, iris versicolor e iris virginica. Cada uma das classes possui 50 exemplos. Cada instância é descrita por quatro atributos, que são o comprimento (length) e a largura (width) da sépala (sepal) e da pétala (petal), em centímetros.
 
+Os algoritmos SOM foram aplicados nesta base de dados com os parâmetros apresentados na tabela \ref{param_iris}. As tabelas \ref{iris_batch} e \ref{iris_adaptativo} mostram a matriz de confusão obtidas pelos algoritmos batch SOM e batch SOM adaptativo para múltiplas tabelas de dissimilaridade.
+
+\begin{table}[!h]
 \begin{center}
-\begin{table}
+\caption{Parâmetros utilizados nos experimentos com a base iris}
+\begin{tabular}{|c|c|}
+\hline
+Parâmetros & Valor\\
+\hline
+Topologia & 2x5\\ \hline
+$T_{min}$ & 0,02\\ \hline
+$T_{max}$ & 2,0\\ \hline
+$N_{iter}$ & 300\\ \hline
+\end{tabular}
+\label{param_iris}
+\end{center}
+\end{table}
+
+\begin{table}[!h]
+\begin{center}
+\caption{Base de dados iris: Matriz de confusão obtida pelo algoritmo batch SOM}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+Classe/Cluster & 0,0 & 0,1 & 0,2 & 0,3 & 0,4 & 1,0 & 1,1 & 1,2 & 1,3 & 1,4 \\ \hline
+1 & 13 & 17 & 4 & 0 & 0 & 16 & 0 & 0 & 0 & 0 \\ \hline
+2 & 0 & 0 & 0 & 12 & 15 & 0 & 19 & 0 & 0 & 4 \\ \hline
+3 & 0 & 0 & 0 & 1 & 2 & 0 & 0 & 3 & 26 & 18 \\ \hline
+\end{tabular}
+\label{iris_batch}
+\end{center}
+\end{table}
+
+\begin{table}[!h]
+\begin{center}
+\caption{Base de dados iris: Matriz de confusão obtida pelo algoritmo SOM adaptativo}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+Classe/Cluster & 0,0 & 0,1 & 0,2 & 0,3 & 0,4 & 1,0 & 1,1 & 1,2 & 1,3 & 1,4 \\ \hline
+1 & 0 & 0  & & & & & & & \\ \hline
+2 & 0 & 0 & & & & & & & \\ \hline
+3 & 9 & 25 & & & & & & & \\ \hline
+
+%0,0 & 0 & 0 & 9 \\ \hline
+%0,1 & 0 & 0 & 25 \\ \hline
+%0,2 & 0 & 1 & 13 \\ \hline
+%0,3 & 0 & 17 & 0 \\ \hline
+%0,4 & 18 & 0 & 0 \\ \hline
+%1,0 & 0 & 10 & 0 \\ \hline
+%1,1 & 0 & 10 & 0 \\ \hline
+%1,2 & 0 & 12 & 0 \\ \hline
+%1,3 & 12 & 0 & 0 \\ \hline
+%1,4 & 20 & 0 & 0\\ \hline
+
+\end{tabular}
+\label{iris_adaptativo}
+\end{center}
+\end{table}
+
+Os índices CR, F-\textit{measure} e OERC obtiveram, respectivamente, os valores 0,46, 0,58, 0,027 para o modelo SOM adaptativo, e os valores, respectivamente 0,47, 0,68, 0,047 para o modelo SOM batch não-adaptativo.
+
+\subsection{Base de dados Wine}
+
+A base de dados wine consiste em resultados da análise química de vinhos produzidos numa mesma região na Itália, mas derivados de três cultivos diferentes, formando três classes de vinhos. As classes 1, 2 e 3 possuem, respectivamente 59, 71 e 48 instâncias. Cada indivíduo é descrito por 13 atributos com valores reais representando os valores de 13 componentes encontrados em cada um dos três tipos de vinho. Tais atributos são: (1) álcool; (2) ácido málico; (3) cinzas; (4) alcalinidade das cinzas; (5) magnésio; (6) fenóis totais; (7) flavonóides; (8) fenóis não-flavonóides; (9) proantocianinas; (10) intensidade da cor; (11) matiz; (12) OD280/OD315 de vinhos diluídos e (13) proline.
+
+Os algoritmos SOM foram aplicados nesta base de dados com os parâmetros apresentados na tabela \ref{param_wine}. As tabelas \ref{wine_batch} e \ref{wine_adaptativo} mostram a matriz de confusão obtidas pelos algoritmos batch SOM e batch SOM adaptativo para múltiplas tabelas de dissimilaridade.
+
+\begin{table}[!h]
+\begin{center}
+\caption{Parâmetros utilizados nos experimentos com a base wine}
+\begin{tabular}{|c|c|}
+\hline
+Parâmetros & Valor\\
+\hline
+Topologia & 2x5\\ \hline
+$T_{min}$ & 0,002\\ \hline
+$T_{max}$ & 2,0\\ \hline
+$N_{iter}$ & 300\\ \hline
+\end{tabular}
+\label{param_wine}
+\end{center}
+\end{table}
+
+\begin{table}[!h]
+\begin{center}
+\caption{Base de dados wine: Matriz de confusão obtida pelo algoritmo batch SOM}
 \begin{tabular}{|c|c|c|c|}
 \hline
 Cluster/Classe & 1 & 2 & 3 \\ \hline
-0,0 & 0 & 0 & 9 \\ \hline
-0,1 & 0 & 0 & 25 \\ \hline
-0,2 & 0 & 1 & 13 \\ \hline
-0,3 & 0 & 17 & 0 \\ \hline
-0,4 & 18 & 0 & 0 \\ \hline
-1,0 & 0 & 10 & 0 \\ \hline
-1,1 & 0 & 10 & 0 \\ \hline
-1,2 & 0 & 12 & 0 \\ \hline
-1,3 & 12 & 0 & 0 \\ \hline
-1,4 & 20 & 0 & 0\\ \hline
+0,0 & 33 & 1 & 0 \\ \hline
+0,1 & 3 & 34 & 0 \\ \hline
+0,2 & 0 & 22 & 0 \\ \hline
+0,3 & 0 & 1 & 8 \\ \hline
+0,4 & 0 & 0 & 26 \\ \hline
+1,0 & 23 & 4 & 0 \\ \hline
+1,3 & 0 & 5 & 2 \\ \hline
+1,4 & 0 & 4 & 12\\ \hline
 
 \end{tabular}
-\label{iris_table}
-\end{table}
+\label{wine_batch}
 \end{center}
+\end{table}
+
+\begin{table}[!h]
+\begin{center}
+\caption{Base de dados wine: Matriz de confusão obtida pelo algoritmo batch SOM adaptativo}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Cluster/Classe & 1 & 2 & 3 \\ \hline
+0,0 & 0 & 21 & 0 \\ \hline
+0,1 & 0 & 9 & 0 \\ \hline
+0,2 & 0 & 2 & 23 \\ \hline
+0,3 & 8 & 0 & 0 \\ \hline
+0,4 & 30 & 2 & 0 \\ \hline
+1,0 & 1 & 16 & 0 \\ \hline
+1,1 & 0 & 19 & 0 \\ \hline
+1,2 & 2 & 0 & 0 \\ \hline
+1,3 & 0 & 1 & 25 \\ \hline
+1,4 & 18 & 1 & 0\\ \hline
+
+\end{tabular}
+\label{wine_adaptativo}
+\end{center}
+\end{table}
 
 \section{Conclusão}
 
