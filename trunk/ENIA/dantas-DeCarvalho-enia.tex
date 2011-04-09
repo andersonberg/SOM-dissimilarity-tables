@@ -62,16 +62,19 @@ onde $\alpha^{(t)}$ é uma pequena taxa usada para controlar a convergência e $N_
 
 \section{Batch self-organizing map aplicado em dados de dissimilaridade}
 
-\subsection{Algoritmo de treinamento batch}
+%\subsection{Algoritmo de treinamento batch}
+%
+%O algoritmo de treinamento do tipo batch é um algoritmo iterativo onde todo o conjunto de exemplos ($E$) é apresentado ao mapa antes que qualquer ajuste seja realizado. Definimos uma função de afetação $f$ de $\mathbb{R}^p$ em $C$, que associa cada elemento $x_i \in \mathbb{R}^p$ ao neurônio cujo vetor é mais semelhante a $x_i$. Essa função induz uma partição $P = \{P_c; c = 1,\dots, k\}$ do conjunto de indivíduos, onde $P_c = \{x_i \in E; f(x_i) = c\}$. Esta é a chamada etapa de afetação.
+%
+%Após a etapa de afetação, a etapa de representação é realizada. O algoritmo atualiza os vetores dos neurônios minimizando uma função custo $E(j,W)$
 
-O algoritmo de treinamento do tipo batch é um algoritmo iterativo onde todo o conjunto de exemplos ($E$) é apresentado ao mapa antes que qualquer ajuste seja realizado. Definimos uma função de afetação $f$ de $\mathbb{R}^p$ em $C$, que associa cada elemento $x_i \in \mathbb{R}^p$ ao neurônio cujo vetor é mais semelhante a $x_i$. Essa função induz uma partição $P = \{P_c; c = 1,\dots, k\}$ do conjunto de indivíduos, onde $P_c = \{x_i \in E; f(x_i) = c\}$. Esta é a chamada etapa de afetação.
-
-\subsection{O mapa para dados de dissimilaridade}
+\subsection{SOM batch para dados de dissimilaridade}
 O SOM para dados de dissimilaridade conforme proposto por \cite{golli:2004} também é descrito por um grafo ($C,\Gamma$). A principal diferença está nos dados que serão classificados que consistem em um conjunto arbitrário onde uma dissimilaridade é definida.
 
-Cada neurônio $c$ é representado por um "\textit{individual referent}" $a_c = x_{j_i}, \: x_{j_i} \in \Omega$. Denotamos $a$ \textit{individuals codebook}, i.e. a lista $a = \{a_c; c = 1,\dots,m\}$ de \textit{individual referents} do mapa.
+Cada neurônio $c$ é representado por um protótipo $a_c = x_{j_i}, \: x_{j_i} \in E$. 
+%Denotamos $a$ \textit{individuals codebook}, i.e. a lista $a = \{a_c; c = 1,\dots,m\}$ de \textit{individual referents} do mapa.
 
-Uma nova dissimilaridade $d^T$ de $\Omega \times P(\Omega)$ para $\mathbb{R}$ é definida por:
+Uma dissimilaridade $d^T$ de $E \times P(E)$ em $\mathbb{R}$ é definida por:
 
 \begin{equation}
 d^T(x_i, a_c) = \sum_{r \in C}K^T(\delta(c,r)) \, d^2(x_i,a_r)
@@ -82,7 +85,7 @@ Tal dissimilaridade é baseada na função kernel positiva $K$, como descrita na se
 Durante a etapa de aprendizado, a seguinte função custo $E$ é minimizada alternando-se o passo de afetação e o passo de representação:
 
 \begin{equation}
-E(f,a) = \sum_{x_i \in \Omega} d^T(x_i, a_{f(x_i)}) = \sum_{x_i \in \Omega} \sum_{r \in C}K^T(\delta(f(x_i),r)) d^2(x_i, a_r)
+E(f,a) = \sum_{i = 1}^n d^T(x_i, a_{f(x_i)}) = \sum_{i = 1}^n \sum_{r \in C}K^T(\delta(f(x_i),r)) d^2(x_i, a_r)
 \end{equation}
 
 Na etapa de afetação, a função $f$ afeta cada indivíduo $x_i$ ao neurônio mais próximo. Em termos da dissimilaridade $d^T$:
@@ -118,7 +121,7 @@ Repetir \textbf{\underline{Iteração}} até $T = T_{min}$.
 
 \subsection{Introdução}
 
-Nesta seção apresentamos um algoritmo baseado no algoritmo SOM para dados de dissimilaridade \cite{golli:2004} e no algoritmo de \textit{clustering} de múltiplas tabelas de dissimilaridade de \cite{Lechevallier:2010}. O objetivo do modelo apresentado é mapear objetos levando em conta suas descrições relacionais dadas por múltiplas matrizes de dissimilaridade. O algoritmo é capaz de associar dados de entrada com pontos representativos de um mapa formando grupos (\textit{clusters}) de objetos.
+Nesta seção apresentamos um algoritmo baseado no algoritmo SOM para dados de dissimilaridade \cite{golli:2004} e no algoritmo de agrupamento (\textit{clustering}) de múltiplas tabelas de dissimilaridade de \cite{Lechevallier:2010}. O objetivo do modelo apresentado é mapear objetos levando em conta suas descrições relacionais dadas por múltiplas matrizes de dissimilaridade. O algoritmo é capaz de associar dados de entrada com pontos representativos de um mapa formando grupos (\textit{clusters}) de objetos.
 
 Seja $E = \{e_1,\dots,e_n\}$ um conjunto de $n$ objetos e $p$ o número de matrizes de dissimilaridade $\textbf{D}_j = [d_j(e_i,e_l)] (j = 1,\dots,p)$, onde $d_j(e_i,e_l)$ é a dissimilaridade entre os objetos $e_i$ e $e_l (i,l = 1,\dots,n)$ na matriz de dissimilaridades $\textbf{D}_j$. Assuma que o protótipo $g_l$ do \textit{cluster} $C_l$ é um elemento do conjunto de objetos $E$, i.e., $g_l \in E \: \forall l = 1,\dots,L$.
 
@@ -213,7 +216,7 @@ Se $T == T_{min}$ então PARE; senão volte ao passo 1
 
 Para provar a utilidade do algoritmo proposto, foram realizados experimentos utilizando bases de dados obtidas do repositório UCI Machine Learning Repository \cite{Frank:2010}. Com a finalidade de avaliar os resultados da clusterização realizada pelo método proposto neste trabalho foi considerado um índice externo: o índice de Rand corrigido (CR) \cite{Hubert:1985}, a medida F-\textit{measure} \cite{Rijsbergen:1979} e a taxa de erro global de classificação (OERC - overall error rate of classification) \cite{Breiman:1984}.
 
-O índice CR avalia o grau de similaridade entre a partição a priori e a partição fornecida pelo algoritmo de clustering. Além disso, o índice CR não é sensível ao número de classes nas partições ou à distribuição dos itens dentro dos clusters. O índice CR pode assumir valores no intervalo [-1,1], onde o valor 1 indica perfeita combinação entre as partições, valores perto de 0 ou negativos indicam pouca semelhança. O índice F-\textit{measure} entre a partição a priori e a partição obtida pelo algoritmo de clustering assume valores no intervalo [0,1], em que 1 indica perfeita combinação entre as partições. O índice OERC mede a habilidade de um algoritmo de clustering encontrar classes a priori presentes na base de dados.
+O índice CR avalia o grau de similaridade entre a partição a priori e a partição fornecida pelo algoritmo de agrupamento. Além disso, o índice CR não é sensível ao número de classes nas partições ou à distribuição dos itens dentro dos clusters. O índice CR pode assumir valores no intervalo [-1,1], onde o valor 1 indica perfeita combinação entre as partições, valores perto de 0 ou negativos indicam pouca semelhança. O índice F-\textit{measure} entre a partição a priori e a partição obtida pelo algoritmo de agrupamento assume valores no intervalo [0,1], em que 1 indica perfeita combinação entre as partições. O índice OERC mede a habilidade de um algoritmo de agrupamento encontrar classes a priori presentes na base de dados.
 
 Alguns parâmetros são considerados para a realização dos experimentos. São eles: topologia do mapa, o valor de $T_{min}$, $T_{max}$ e o número de iterações $N_{iter}$. A topologia do mapa define o número máximo de clusters que serão formados. Como os protótipos de cada cluster são os próprios objetos de entrada, o número máximo de clusters deve ser um número menor do que a quantidade de indivíduos presentes na base de dados. Todos os parâmetros foram definidos empiricamente.
 
