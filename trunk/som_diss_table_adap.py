@@ -274,12 +274,20 @@ def main():
 	
 		text.append("\nTotal" + "\t" + str(confusion_matrix.sum(axis=0)))
 
+		#Imprime a matriz de pesos
+		text.append("\n\nMatriz de pesos:")
+		for cluster in mapa.flat:
+			lista_pesos_str = [str(peso) for peso in cluster.pesos ]
+			text.append("\nCluster " + str(cluster.point.x) + "," + str(cluster.point.y) + ":")
+			for peso in lista_pesos_str:
+				text.append(" " + peso)
+
 		##########################################################################################
 		# Cálculo do índice de Rand Corrigido #
 		no_objetos = len(individuals)
 		
 		cr = calcula_cr(confusion_matrix, classes_a_priori, no_clusters_completos, no_objetos)	
-		text.append("\nCorrected Rand index: " + str(cr) + "\n")
+		text.append("\n\nCorrected Rand index: " + str(cr))
 
 		##########################################################
 		# Cálculo da precisão #
