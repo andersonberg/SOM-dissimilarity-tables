@@ -1,0 +1,1209 @@
+Parâmetros iniciais
+
+Topologia: 2x5
+Cardinalidade (q): 1
+Tmin: 0.2 Tmax: 2.0
+Número de iterações: 300.0
+
+#####################################
+Repetição do experimento: 0
+
+Cluster 0,0 Prototipo: class_exe183 [16 objetos]Objetos: class_exe154 class_exe160 class_exe161 class_exe162 class_exe164 class_exe167 class_exe169 class_exe171 class_exe172 class_exe180 class_exe183 class_exe153 class_exe155 class_exe158 class_exe166 class_exe176 
+Cluster 0,1 Prototipo: class_exe20 [35 objetos]Objetos: class_exe23 class_exe60 class_exe77 class_exe82 class_exe116 class_exe120 class_exe124 class_exe126 class_exe129 class_exe149 class_exe20 class_exe61 class_exe109 class_exe25 class_exe48 class_exe67 class_exe83 class_exe93 class_exe141 class_exe213 class_exe70 class_exe144 class_exe214 class_exe131 class_exe121 class_exe39 class_exe56 class_exe81 class_exe159 class_exe33 class_exe184 class_exe212 class_exe148 class_exe50 class_exe69 
+Cluster 0,2 Prototipo: class_exe139 [35 objetos]Objetos: class_exe5 class_exe187 class_exe10 class_exe65 class_exe103 class_exe140 class_exe0 class_exe3 class_exe4 class_exe45 class_exe54 class_exe100 class_exe113 class_exe125 class_exe138 class_exe139 class_exe8 class_exe15 class_exe26 class_exe37 class_exe46 class_exe59 class_exe88 class_exe89 class_exe115 class_exe130 class_exe135 class_exe41 class_exe75 class_exe78 class_exe97 class_exe99 class_exe112 class_exe16 class_exe22 
+Cluster 0,3 Prototipo: class_exe57 [23 objetos]Objetos: class_exe98 class_exe40 class_exe14 class_exe18 class_exe24 class_exe30 class_exe43 class_exe44 class_exe47 class_exe53 class_exe57 class_exe66 class_exe71 class_exe76 class_exe86 class_exe87 class_exe111 class_exe134 class_exe143 class_exe35 class_exe73 class_exe145 class_exe34 
+Cluster 0,4 Prototipo: class_exe72 [10 objetos]Objetos: class_exe72 class_exe150 class_exe178 class_exe211 class_exe128 class_exe137 class_exe38 class_exe42 class_exe156 class_exe2 
+Cluster 1,0 Prototipo: class_exe51 [20 objetos]Objetos: class_exe85 class_exe107 class_exe182 class_exe179 class_exe28 class_exe163 class_exe51 class_exe106 class_exe165 class_exe168 class_exe175 class_exe173 class_exe170 class_exe181 class_exe9 class_exe21 class_exe114 class_exe58 class_exe90 class_exe174 
+Cluster 1,1 Prototipo: class_exe68 [28 objetos]Objetos: class_exe123 class_exe6 class_exe29 class_exe36 class_exe74 class_exe92 class_exe95 class_exe104 class_exe133 class_exe27 class_exe55 class_exe62 class_exe68 class_exe11 class_exe31 class_exe102 class_exe108 class_exe96 class_exe101 class_exe147 class_exe80 class_exe110 class_exe152 class_exe94 class_exe151 class_exe177 class_exe157 class_exe105 
+Cluster 1,2 Prototipo: class_exe146 [26 objetos]Objetos: class_exe17 class_exe19 class_exe117 class_exe146 class_exe12 class_exe52 class_exe119 class_exe132 class_exe136 class_exe196 class_exe1 class_exe7 class_exe49 class_exe63 class_exe64 class_exe79 class_exe210 class_exe122 class_exe188 class_exe142 class_exe13 class_exe84 class_exe127 class_exe118 class_exe91 class_exe32 
+Cluster 1,3 Prototipo: class_exe208 [10 objetos]Objetos: class_exe203 class_exe189 class_exe185 class_exe191 class_exe197 class_exe208 class_exe200 class_exe199 class_exe190 class_exe201 
+Cluster 1,4 Prototipo: class_exe193 [12 objetos]Objetos: class_exe186 class_exe192 class_exe193 class_exe194 class_exe195 class_exe198 class_exe204 class_exe205 class_exe206 class_exe207 class_exe209 class_exe202 
+
+Critério de adequação (energia): 43.0571219603
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,2	1,3	1,4	Total
+
+1	0	 30	 34	 23	 6	 10	 24	 23	 0	 0	 150
+2	16	 2	 0	 0	 3	 10	 4	 0	 0	 0	 35
+3	0	 3	 1	 0	 1	 0	 0	 3	 10	 12	 30
+Total	[16 35 35 23 10 20 28 26 10 12]
+Corrected Rand index: 0.28750758845
+
+F-measure(P,Q): 0.438319891124
+OERC: 0.125581395349
+
+#####################################
+Repetição do experimento: 1
+
+Cluster 0,0 Prototipo: class_exe183 [16 objetos]Objetos: class_exe153 class_exe154 class_exe155 class_exe158 class_exe160 class_exe161 class_exe162 class_exe164 class_exe166 class_exe167 class_exe169 class_exe171 class_exe172 class_exe176 class_exe180 class_exe183 
+Cluster 0,1 Prototipo: class_exe28 [28 objetos]Objetos: class_exe163 class_exe179 class_exe21 class_exe131 class_exe114 class_exe182 class_exe28 class_exe106 class_exe51 class_exe88 class_exe148 class_exe58 class_exe115 class_exe4 class_exe8 class_exe90 class_exe107 class_exe157 class_exe82 class_exe120 class_exe26 class_exe37 class_exe69 class_exe85 class_exe140 class_exe9 class_exe54 class_exe125 
+Cluster 0,2 Prototipo: class_exe52 [27 objetos]Objetos: class_exe96 class_exe104 class_exe55 class_exe68 class_exe105 class_exe95 class_exe1 class_exe17 class_exe19 class_exe36 class_exe52 class_exe62 class_exe74 class_exe132 class_exe146 class_exe27 class_exe91 class_exe117 class_exe136 class_exe142 class_exe122 class_exe134 class_exe188 class_exe7 class_exe12 class_exe79 class_exe102 
+Cluster 0,3 Prototipo: class_exe185 [12 objetos]Objetos: class_exe199 class_exe200 class_exe191 class_exe197 class_exe185 class_exe208 class_exe203 class_exe189 class_exe194 class_exe206 class_exe207 class_exe193 
+Cluster 0,4 Prototipo: class_exe192 [5 objetos]Objetos: class_exe195 class_exe198 class_exe186 class_exe192 class_exe209 
+Cluster 1,0 Prototipo: class_exe39 [37 objetos]Objetos: class_exe60 class_exe129 class_exe214 class_exe20 class_exe23 class_exe25 class_exe61 class_exe77 class_exe109 class_exe116 class_exe124 class_exe126 class_exe149 class_exe39 class_exe48 class_exe50 class_exe213 class_exe93 class_exe141 class_exe67 class_exe70 class_exe83 class_exe121 class_exe144 class_exe165 class_exe168 class_exe56 class_exe159 class_exe170 class_exe181 class_exe81 class_exe173 class_exe175 class_exe33 class_exe184 class_exe212 class_exe174 
+Cluster 1,1 Prototipo: class_exe75 [42 objetos]Objetos: class_exe16 class_exe84 class_exe118 class_exe119 class_exe123 class_exe133 class_exe147 class_exe6 class_exe11 class_exe29 class_exe32 class_exe41 class_exe59 class_exe97 class_exe113 class_exe130 class_exe15 class_exe46 class_exe75 class_exe135 class_exe151 class_exe112 class_exe89 class_exe3 class_exe22 class_exe100 class_exe138 class_exe139 class_exe0 class_exe45 class_exe78 class_exe94 class_exe99 class_exe177 class_exe187 class_exe65 class_exe10 class_exe5 class_exe103 class_exe13 class_exe92 class_exe152 
+Cluster 1,2 Prototipo: class_exe72 [14 objetos]Objetos: class_exe2 class_exe38 class_exe42 class_exe73 class_exe137 class_exe145 class_exe156 class_exe72 class_exe128 class_exe150 class_exe178 class_exe211 class_exe201 class_exe190 
+Cluster 1,3 Prototipo: class_exe111 [28 objetos]Objetos: class_exe80 class_exe110 class_exe34 class_exe35 class_exe76 class_exe108 class_exe143 class_exe31 class_exe63 class_exe64 class_exe66 class_exe101 class_exe111 class_exe127 class_exe18 class_exe30 class_exe40 class_exe43 class_exe47 class_exe53 class_exe57 class_exe71 class_exe86 class_exe98 class_exe14 class_exe24 class_exe44 class_exe87 
+Cluster 1,4 Prototipo: class_exe196 [6 objetos]Objetos: class_exe49 class_exe196 class_exe202 class_exe204 class_exe210 class_exe205 
+
+Critério de adequação (energia): 36.2164793528
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,2	1,3	1,4	Total
+
+1	0	 24	 26	 0	 0	 25	 38	 8	 28	 1	 150
+2	16	 4	 0	 0	 0	 9	 3	 3	 0	 0	 35
+3	0	 0	 1	 12	 5	 3	 1	 3	 0	 5	 30
+Total	[16 28 27 12  5 37 42 14 28  6]
+Corrected Rand index: 0.299848090557
+
+F-measure(P,Q): 0.458040192821
+OERC: 0.13023255814
+
+#####################################
+Repetição do experimento: 2
+
+Cluster 0,0 Prototipo: class_exe72 [18 objetos]Objetos: class_exe2 class_exe38 class_exe42 class_exe72 class_exe73 class_exe128 class_exe137 class_exe145 class_exe150 class_exe156 class_exe178 class_exe190 class_exe191 class_exe199 class_exe200 class_exe201 class_exe211 class_exe208 
+Cluster 0,1 Prototipo: class_exe111 [40 objetos]Objetos: class_exe19 class_exe27 class_exe31 class_exe52 class_exe62 class_exe80 class_exe101 class_exe110 class_exe127 class_exe12 class_exe35 class_exe63 class_exe136 class_exe7 class_exe18 class_exe34 class_exe66 class_exe86 class_exe108 class_exe111 class_exe122 class_exe134 class_exe143 class_exe64 class_exe24 class_exe30 class_exe43 class_exe47 class_exe53 class_exe57 class_exe71 class_exe76 class_exe14 class_exe40 class_exe87 class_exe98 class_exe44 class_exe188 class_exe79 class_exe146 
+Cluster 0,2 Prototipo: class_exe29 [51 objetos]Objetos: class_exe9 class_exe85 class_exe99 class_exe107 class_exe15 class_exe22 class_exe46 class_exe75 class_exe78 class_exe89 class_exe94 class_exe100 class_exe112 class_exe135 class_exe41 class_exe97 class_exe130 class_exe177 class_exe6 class_exe11 class_exe29 class_exe59 class_exe113 class_exe157 class_exe16 class_exe32 class_exe84 class_exe118 class_exe119 class_exe123 class_exe147 class_exe151 class_exe92 class_exe117 class_exe133 class_exe142 class_exe13 class_exe36 class_exe74 class_exe132 class_exe1 class_exe68 class_exe102 class_exe104 class_exe105 class_exe152 class_exe91 class_exe17 class_exe55 class_exe95 class_exe96 
+Cluster 0,3 Prototipo: class_exe115 [33 objetos]Objetos: class_exe10 class_exe4 class_exe88 class_exe140 class_exe115 class_exe120 class_exe148 class_exe8 class_exe21 class_exe82 class_exe114 class_exe131 class_exe179 class_exe26 class_exe28 class_exe37 class_exe51 class_exe54 class_exe65 class_exe90 class_exe103 class_exe106 class_exe109 class_exe125 class_exe45 class_exe58 class_exe182 class_exe187 class_exe138 class_exe163 class_exe139 class_exe0 class_exe3 
+Cluster 0,4 Prototipo: class_exe159 [18 objetos]Objetos: class_exe181 class_exe56 class_exe144 class_exe159 class_exe170 class_exe173 class_exe33 class_exe81 class_exe184 class_exe175 class_exe70 class_exe67 class_exe83 class_exe121 class_exe165 class_exe168 class_exe50 class_exe162 
+Cluster 1,0 Prototipo: class_exe193 [13 objetos]Objetos: class_exe186 class_exe192 class_exe193 class_exe194 class_exe195 class_exe198 class_exe205 class_exe207 class_exe209 class_exe189 class_exe206 class_exe185 class_exe203 
+Cluster 1,1 Prototipo: class_exe196 [6 objetos]Objetos: class_exe196 class_exe49 class_exe210 class_exe202 class_exe204 class_exe197 
+Cluster 1,2 Prototipo: class_exe124 [20 objetos]Objetos: class_exe213 class_exe25 class_exe124 class_exe129 class_exe212 class_exe214 class_exe20 class_exe61 class_exe77 class_exe149 class_exe23 class_exe69 class_exe93 class_exe126 class_exe141 class_exe39 class_exe5 class_exe48 class_exe60 class_exe116 
+Cluster 1,3 Prototipo: class_exe164 [11 objetos]Objetos: class_exe154 class_exe160 class_exe161 class_exe164 class_exe167 class_exe174 class_exe180 class_exe172 class_exe171 class_exe166 class_exe183 
+Cluster 1,4 Prototipo: class_exe158 [5 objetos]Objetos: class_exe153 class_exe155 class_exe158 class_exe169 class_exe176 
+
+Critério de adequação (energia): 43.0816583457
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,2	1,3	1,4	Total
+
+1	8	 39	 47	 29	 9	 0	 1	 17	 0	 0	 150
+2	3	 0	 4	 3	 9	 0	 0	 0	 11	 5	 35
+3	7	 1	 0	 1	 0	 13	 5	 3	 0	 0	 30
+Total	[18 40 51 33 18 13  6 20 11  5]
+Corrected Rand index: 0.343608337193
+
+F-measure(P,Q): 0.488501949069
+OERC: 0.148837209302
+
+#####################################
+Repetição do experimento: 3
+
+Cluster 0,0 Prototipo: class_exe185 [12 objetos]Objetos: class_exe185 class_exe191 class_exe197 class_exe199 class_exe200 class_exe203 class_exe206 class_exe208 class_exe194 class_exe189 class_exe207 class_exe193 
+Cluster 0,1 Prototipo: class_exe72 [14 objetos]Objetos: class_exe2 class_exe42 class_exe73 class_exe145 class_exe38 class_exe72 class_exe128 class_exe150 class_exe156 class_exe178 class_exe137 class_exe211 class_exe201 class_exe190 
+Cluster 0,2 Prototipo: class_exe111 [42 objetos]Objetos: class_exe17 class_exe19 class_exe27 class_exe52 class_exe62 class_exe80 class_exe110 class_exe146 class_exe7 class_exe12 class_exe18 class_exe30 class_exe31 class_exe34 class_exe35 class_exe47 class_exe53 class_exe57 class_exe63 class_exe66 class_exe86 class_exe101 class_exe108 class_exe111 class_exe122 class_exe127 class_exe134 class_exe136 class_exe143 class_exe40 class_exe43 class_exe64 class_exe71 class_exe76 class_exe79 class_exe98 class_exe188 class_exe14 class_exe87 class_exe44 class_exe24 class_exe1 
+Cluster 0,3 Prototipo: class_exe133 [24 objetos]Objetos: class_exe55 class_exe95 class_exe96 class_exe104 class_exe105 class_exe152 class_exe74 class_exe133 class_exe151 class_exe157 class_exe36 class_exe68 class_exe92 class_exe102 class_exe177 class_exe132 class_exe22 class_exe94 class_exe147 class_exe16 class_exe41 class_exe13 class_exe142 class_exe91 
+Cluster 0,4 Prototipo: class_exe158 [5 objetos]Objetos: class_exe153 class_exe158 class_exe155 class_exe169 class_exe176 
+Cluster 1,0 Prototipo: class_exe192 [5 objetos]Objetos: class_exe186 class_exe192 class_exe198 class_exe209 class_exe195 
+Cluster 1,1 Prototipo: class_exe196 [6 objetos]Objetos: class_exe210 class_exe49 class_exe196 class_exe202 class_exe204 class_exe205 
+Cluster 1,2 Prototipo: class_exe100 [52 objetos]Objetos: class_exe89 class_exe75 class_exe112 class_exe3 class_exe78 class_exe99 class_exe100 class_exe139 class_exe138 class_exe187 class_exe45 class_exe0 class_exe65 class_exe5 class_exe9 class_exe10 class_exe26 class_exe37 class_exe54 class_exe85 class_exe103 class_exe125 class_exe140 class_exe4 class_exe8 class_exe58 class_exe90 class_exe107 class_exe115 class_exe28 class_exe88 class_exe106 class_exe182 class_exe15 class_exe130 class_exe6 class_exe11 class_exe29 class_exe32 class_exe46 class_exe59 class_exe97 class_exe113 class_exe123 class_exe135 class_exe119 class_exe84 class_exe118 class_exe117 class_exe69 class_exe148 class_exe212 
+Cluster 1,3 Prototipo: class_exe39 [41 objetos]Objetos: class_exe70 class_exe175 class_exe144 class_exe121 class_exe159 class_exe165 class_exe168 class_exe170 class_exe173 class_exe181 class_exe56 class_exe67 class_exe83 class_exe48 class_exe50 class_exe93 class_exe141 class_exe39 class_exe20 class_exe25 class_exe61 class_exe77 class_exe213 class_exe109 class_exe116 class_exe124 class_exe129 class_exe81 class_exe126 class_exe149 class_exe23 class_exe21 class_exe51 class_exe82 class_exe131 class_exe120 class_exe214 class_exe60 class_exe114 class_exe163 class_exe179 
+Cluster 1,4 Prototipo: class_exe180 [14 objetos]Objetos: class_exe33 class_exe154 class_exe160 class_exe161 class_exe162 class_exe164 class_exe166 class_exe167 class_exe171 class_exe172 class_exe174 class_exe180 class_exe183 class_exe184 
+
+Critério de adequação (energia): 33.3445469496
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,2	1,3	1,4	Total
+
+1	0	 8	 41	 20	 0	 0	 1	 49	 30	 1	 150
+2	0	 3	 0	 4	 5	 0	 0	 1	 9	 13	 35
+3	12	 3	 1	 0	 0	 5	 5	 2	 2	 0	 30
+Total	[12 14 42 24  5  5  6 52 41 14]
+Corrected Rand index: 0.364339607174
+
+F-measure(P,Q): 0.504588664847
+OERC: 0.125581395349
+
+#####################################
+Repetição do experimento: 4
+
+Cluster 0,0 Prototipo: class_exe193 [13 objetos]Objetos: class_exe185 class_exe186 class_exe189 class_exe192 class_exe193 class_exe194 class_exe195 class_exe198 class_exe203 class_exe205 class_exe206 class_exe207 class_exe209 
+Cluster 0,1 Prototipo: class_exe196 [6 objetos]Objetos: class_exe49 class_exe196 class_exe210 class_exe202 class_exe197 class_exe204 
+Cluster 0,2 Prototipo: class_exe75 [30 objetos]Objetos: class_exe0 class_exe3 class_exe22 class_exe45 class_exe75 class_exe78 class_exe94 class_exe99 class_exe100 class_exe112 class_exe138 class_exe139 class_exe187 class_exe6 class_exe11 class_exe15 class_exe29 class_exe41 class_exe46 class_exe59 class_exe89 class_exe97 class_exe113 class_exe130 class_exe135 class_exe32 class_exe118 class_exe123 class_exe147 class_exe119 
+Cluster 0,3 Prototipo: class_exe23 [30 objetos]Objetos: class_exe39 class_exe48 class_exe93 class_exe141 class_exe20 class_exe23 class_exe25 class_exe61 class_exe77 class_exe109 class_exe116 class_exe124 class_exe126 class_exe129 class_exe213 class_exe82 class_exe120 class_exe149 class_exe214 class_exe60 class_exe212 class_exe4 class_exe69 class_exe148 class_exe140 class_exe10 class_exe103 class_exe5 class_exe65 class_exe131 
+Cluster 0,4 Prototipo: class_exe58 [23 objetos]Objetos: class_exe28 class_exe90 class_exe106 class_exe163 class_exe179 class_exe26 class_exe115 class_exe8 class_exe37 class_exe51 class_exe58 class_exe182 class_exe9 class_exe21 class_exe85 class_exe88 class_exe107 class_exe114 class_exe157 class_exe54 class_exe125 class_exe177 class_exe151 
+Cluster 1,0 Prototipo: class_exe72 [18 objetos]Objetos: class_exe191 class_exe199 class_exe201 class_exe211 class_exe38 class_exe42 class_exe72 class_exe128 class_exe137 class_exe150 class_exe156 class_exe178 class_exe190 class_exe200 class_exe208 class_exe2 class_exe73 class_exe145 
+Cluster 1,1 Prototipo: class_exe111 [35 objetos]Objetos: class_exe110 class_exe101 class_exe18 class_exe31 class_exe34 class_exe35 class_exe43 class_exe71 class_exe76 class_exe86 class_exe127 class_exe143 class_exe12 class_exe14 class_exe24 class_exe30 class_exe40 class_exe47 class_exe53 class_exe57 class_exe63 class_exe66 class_exe87 class_exe108 class_exe111 class_exe122 class_exe134 class_exe136 class_exe98 class_exe64 class_exe79 class_exe44 class_exe27 class_exe80 class_exe188 
+Cluster 1,2 Prototipo: class_exe36 [26 objetos]Objetos: class_exe1 class_exe7 class_exe17 class_exe19 class_exe36 class_exe52 class_exe55 class_exe62 class_exe68 class_exe74 class_exe95 class_exe96 class_exe102 class_exe104 class_exe105 class_exe132 class_exe146 class_exe152 class_exe13 class_exe91 class_exe92 class_exe117 class_exe133 class_exe142 class_exe16 class_exe84 
+Cluster 1,3 Prototipo: class_exe159 [21 objetos]Objetos: class_exe174 class_exe160 class_exe162 class_exe33 class_exe184 class_exe81 class_exe56 class_exe144 class_exe159 class_exe181 class_exe170 class_exe70 class_exe173 class_exe67 class_exe83 class_exe121 class_exe165 class_exe168 class_exe175 class_exe180 class_exe50 
+Cluster 1,4 Prototipo: class_exe183 [13 objetos]Objetos: class_exe153 class_exe155 class_exe158 class_exe166 class_exe169 class_exe171 class_exe172 class_exe176 class_exe183 class_exe154 class_exe161 class_exe164 class_exe167 
+
+Critério de adequação (energia): 45.2257134819
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,2	1,3	1,4	Total
+
+1	0	 1	 29	 27	 17	 8	 34	 25	 9	 0	 150
+2	0	 0	 0	 0	 6	 3	 0	 1	 12	 13	 35
+3	13	 5	 1	 3	 0	 7	 1	 0	 0	 0	 30
+Total	[13  6 30 30 23 18 35 26 21 13]
+Corrected Rand index: 0.283046944775
+
+F-measure(P,Q): 0.428990713266
+OERC: 0.148837209302
+
+#####################################
+Repetição do experimento: 5
+
+Cluster 0,0 Prototipo: class_exe183 [16 objetos]Objetos: class_exe153 class_exe154 class_exe155 class_exe158 class_exe160 class_exe161 class_exe162 class_exe164 class_exe166 class_exe167 class_exe169 class_exe171 class_exe172 class_exe176 class_exe180 class_exe183 
+Cluster 0,1 Prototipo: class_exe15 [26 objetos]Objetos: class_exe32 class_exe119 class_exe113 class_exe84 class_exe59 class_exe123 class_exe118 class_exe3 class_exe15 class_exe46 class_exe97 class_exe135 class_exe187 class_exe6 class_exe11 class_exe29 class_exe89 class_exe147 class_exe5 class_exe75 class_exe139 class_exe100 class_exe65 class_exe112 class_exe130 class_exe138 
+Cluster 0,2 Prototipo: class_exe72 [18 objetos]Objetos: class_exe38 class_exe42 class_exe72 class_exe128 class_exe150 class_exe156 class_exe178 class_exe137 class_exe190 class_exe191 class_exe199 class_exe200 class_exe201 class_exe211 class_exe208 class_exe2 class_exe73 class_exe145 
+Cluster 0,3 Prototipo: class_exe193 [13 objetos]Objetos: class_exe185 class_exe186 class_exe192 class_exe193 class_exe194 class_exe195 class_exe198 class_exe206 class_exe207 class_exe203 class_exe189 class_exe205 class_exe209 
+Cluster 0,4 Prototipo: class_exe111 [35 objetos]Objetos: class_exe12 class_exe14 class_exe18 class_exe24 class_exe27 class_exe30 class_exe31 class_exe34 class_exe35 class_exe40 class_exe43 class_exe44 class_exe47 class_exe53 class_exe57 class_exe63 class_exe64 class_exe66 class_exe71 class_exe76 class_exe79 class_exe80 class_exe86 class_exe87 class_exe98 class_exe101 class_exe108 class_exe110 class_exe111 class_exe122 class_exe127 class_exe134 class_exe136 class_exe143 class_exe188 
+Cluster 1,0 Prototipo: class_exe39 [36 objetos]Objetos: class_exe39 class_exe48 class_exe50 class_exe67 class_exe70 class_exe83 class_exe93 class_exe121 class_exe141 class_exe165 class_exe168 class_exe170 class_exe173 class_exe175 class_exe56 class_exe81 class_exe144 class_exe159 class_exe181 class_exe33 class_exe184 class_exe25 class_exe213 class_exe20 class_exe61 class_exe77 class_exe124 class_exe129 class_exe109 class_exe23 class_exe116 class_exe126 class_exe149 class_exe51 class_exe214 class_exe174 
+Cluster 1,1 Prototipo: class_exe26 [38 objetos]Objetos: class_exe22 class_exe78 class_exe94 class_exe99 class_exe0 class_exe10 class_exe45 class_exe54 class_exe103 class_exe125 class_exe4 class_exe8 class_exe9 class_exe26 class_exe28 class_exe37 class_exe58 class_exe69 class_exe85 class_exe88 class_exe90 class_exe106 class_exe107 class_exe115 class_exe140 class_exe148 class_exe177 class_exe182 class_exe114 class_exe157 class_exe179 class_exe163 class_exe212 class_exe21 class_exe60 class_exe82 class_exe120 class_exe131 
+Cluster 1,2 Prototipo: class_exe36 [27 objetos]Objetos: class_exe17 class_exe105 class_exe132 class_exe146 class_exe104 class_exe19 class_exe95 class_exe117 class_exe91 class_exe36 class_exe52 class_exe13 class_exe68 class_exe74 class_exe142 class_exe7 class_exe102 class_exe92 class_exe55 class_exe16 class_exe96 class_exe133 class_exe62 class_exe152 class_exe41 class_exe151 class_exe1 
+Cluster 1,3 Prototipo: class_exe196 [6 objetos]Objetos: class_exe196 class_exe202 class_exe204 class_exe197 class_exe49 class_exe210 
+Cluster 1,4 Prototipo: class_exe111 [0 objetos]Objetos: 
+
+Critério de adequação (energia): 47.7185413711
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,2	1,3	Total
+
+1	0	 25	 8	 0	 34	 25	 32	 25	 1	 150
+2	16	 0	 3	 0	 0	 9	 5	 2	 0	 35
+3	0	 1	 7	 13	 1	 2	 1	 0	 5	 30
+Total	[16 26 18 13 35 36 38 27  6]
+Corrected Rand index: 0.298517294169
+
+F-measure(P,Q): 0.442955601547
+OERC: 0.148837209302
+
+#####################################
+Repetição do experimento: 6
+
+Cluster 0,0 Prototipo: class_exe193 [13 objetos]Objetos: class_exe203 class_exe185 class_exe205 class_exe206 class_exe195 class_exe189 class_exe193 class_exe198 class_exe186 class_exe194 class_exe209 class_exe192 class_exe207 
+Cluster 0,1 Prototipo: class_exe72 [16 objetos]Objetos: class_exe2 class_exe38 class_exe42 class_exe72 class_exe128 class_exe137 class_exe150 class_exe156 class_exe178 class_exe211 class_exe190 class_exe191 class_exe199 class_exe200 class_exe201 class_exe208 
+Cluster 0,2 Prototipo: class_exe152 [6 objetos]Objetos: class_exe110 class_exe80 class_exe152 class_exe157 class_exe151 class_exe177 
+Cluster 0,3 Prototipo: class_exe132 [51 objetos]Objetos: class_exe1 class_exe7 class_exe12 class_exe13 class_exe17 class_exe19 class_exe36 class_exe52 class_exe55 class_exe62 class_exe63 class_exe64 class_exe68 class_exe74 class_exe79 class_exe91 class_exe92 class_exe95 class_exe96 class_exe102 class_exe104 class_exe105 class_exe108 class_exe117 class_exe122 class_exe127 class_exe132 class_exe133 class_exe136 class_exe142 class_exe146 class_exe84 class_exe118 class_exe123 class_exe16 class_exe119 class_exe130 class_exe147 class_exe6 class_exe11 class_exe29 class_exe32 class_exe59 class_exe97 class_exe113 class_exe41 class_exe135 class_exe3 class_exe15 class_exe89 class_exe187 
+Cluster 0,4 Prototipo: class_exe20 [42 objetos]Objetos: class_exe10 class_exe103 class_exe60 class_exe69 class_exe120 class_exe140 class_exe148 class_exe212 class_exe214 class_exe23 class_exe61 class_exe82 class_exe109 class_exe116 class_exe124 class_exe126 class_exe129 class_exe131 class_exe149 class_exe20 class_exe77 class_exe25 class_exe39 class_exe48 class_exe50 class_exe141 class_exe213 class_exe67 class_exe83 class_exe93 class_exe121 class_exe165 class_exe168 class_exe70 class_exe144 class_exe159 class_exe170 class_exe181 class_exe56 class_exe5 class_exe81 class_exe173 
+Cluster 1,0 Prototipo: class_exe196 [6 objetos]Objetos: class_exe49 class_exe196 class_exe202 class_exe204 class_exe210 class_exe197 
+Cluster 1,1 Prototipo: class_exe57 [27 objetos]Objetos: class_exe87 class_exe14 class_exe24 class_exe40 class_exe43 class_exe71 class_exe57 class_exe76 class_exe30 class_exe47 class_exe98 class_exe18 class_exe86 class_exe53 class_exe44 class_exe143 class_exe66 class_exe111 class_exe34 class_exe35 class_exe145 class_exe188 class_exe73 class_exe101 class_exe134 class_exe31 class_exe27 
+Cluster 1,2 Prototipo: class_exe158 [5 objetos]Objetos: class_exe155 class_exe153 class_exe158 class_exe169 class_exe176 
+Cluster 1,3 Prototipo: class_exe58 [35 objetos]Objetos: class_exe0 class_exe9 class_exe45 class_exe78 class_exe85 class_exe99 class_exe107 class_exe182 class_exe58 class_exe163 class_exe179 class_exe8 class_exe22 class_exe26 class_exe28 class_exe37 class_exe94 class_exe106 class_exe175 class_exe100 class_exe54 class_exe125 class_exe51 class_exe75 class_exe88 class_exe90 class_exe114 class_exe115 class_exe112 class_exe139 class_exe138 class_exe65 class_exe4 class_exe46 class_exe21 
+Cluster 1,4 Prototipo: class_exe180 [14 objetos]Objetos: class_exe154 class_exe160 class_exe161 class_exe162 class_exe164 class_exe166 class_exe167 class_exe171 class_exe172 class_exe174 class_exe180 class_exe183 class_exe33 class_exe184 
+
+Critério de adequação (energia): 44.2443971946
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,2	1,3	1,4	Total
+
+1	0	 6	 2	 50	 33	 1	 26	 0	 31	 1	 150
+2	0	 3	 4	 0	 6	 0	 0	 5	 4	 13	 35
+3	13	 7	 0	 1	 3	 5	 1	 0	 0	 0	 30
+Total	[13 16  6 51 42  6 27  5 35 14]
+Corrected Rand index: 0.357197742323
+
+F-measure(P,Q): 0.517850368032
+OERC: 0.13023255814
+
+#####################################
+Repetição do experimento: 7
+
+Cluster 0,0 Prototipo: class_exe199 [14 objetos]Objetos: class_exe38 class_exe72 class_exe128 class_exe150 class_exe178 class_exe190 class_exe191 class_exe199 class_exe200 class_exe201 class_exe211 class_exe197 class_exe208 class_exe185 
+Cluster 0,1 Prototipo: class_exe206 [7 objetos]Objetos: class_exe189 class_exe193 class_exe194 class_exe203 class_exe204 class_exe206 class_exe207 
+Cluster 0,2 Prototipo: class_exe163 [11 objetos]Objetos: class_exe163 class_exe157 class_exe175 class_exe151 class_exe173 class_exe177 class_exe182 class_exe152 class_exe174 class_exe107 class_exe181 
+Cluster 0,3 Prototipo: class_exe183 [16 objetos]Objetos: class_exe153 class_exe154 class_exe155 class_exe158 class_exe160 class_exe161 class_exe162 class_exe164 class_exe166 class_exe167 class_exe169 class_exe171 class_exe172 class_exe176 class_exe180 class_exe183 
+Cluster 0,4 Prototipo: class_exe20 [48 objetos]Objetos: class_exe4 class_exe5 class_exe20 class_exe21 class_exe23 class_exe25 class_exe39 class_exe48 class_exe50 class_exe51 class_exe60 class_exe61 class_exe67 class_exe69 class_exe70 class_exe77 class_exe82 class_exe83 class_exe88 class_exe93 class_exe103 class_exe109 class_exe114 class_exe115 class_exe116 class_exe120 class_exe121 class_exe124 class_exe126 class_exe129 class_exe131 class_exe140 class_exe141 class_exe144 class_exe148 class_exe149 class_exe165 class_exe168 class_exe170 class_exe212 class_exe213 class_exe214 class_exe56 class_exe159 class_exe33 class_exe81 class_exe184 class_exe10 
+Cluster 1,0 Prototipo: class_exe206 [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: class_exe198 [3 objetos]Objetos: class_exe192 class_exe198 class_exe195 
+Cluster 1,2 Prototipo: class_exe186 [3 objetos]Objetos: class_exe186 class_exe209 class_exe205 
+Cluster 1,3 Prototipo: class_exe75 [57 objetos]Objetos: class_exe99 class_exe0 class_exe3 class_exe9 class_exe15 class_exe22 class_exe32 class_exe45 class_exe46 class_exe75 class_exe78 class_exe85 class_exe89 class_exe94 class_exe100 class_exe112 class_exe135 class_exe138 class_exe139 class_exe187 class_exe6 class_exe11 class_exe16 class_exe29 class_exe41 class_exe59 class_exe97 class_exe113 class_exe130 class_exe133 class_exe84 class_exe118 class_exe123 class_exe92 class_exe147 class_exe91 class_exe142 class_exe8 class_exe26 class_exe58 class_exe13 class_exe37 class_exe54 class_exe28 class_exe65 class_exe106 class_exe125 class_exe179 class_exe117 class_exe90 class_exe74 class_exe36 class_exe68 class_exe102 class_exe119 class_exe132 class_exe1 
+Cluster 1,4 Prototipo: class_exe111 [56 objetos]Objetos: class_exe7 class_exe12 class_exe14 class_exe17 class_exe18 class_exe19 class_exe24 class_exe27 class_exe30 class_exe31 class_exe34 class_exe35 class_exe40 class_exe43 class_exe47 class_exe49 class_exe52 class_exe53 class_exe55 class_exe57 class_exe62 class_exe63 class_exe64 class_exe66 class_exe71 class_exe76 class_exe79 class_exe86 class_exe87 class_exe95 class_exe98 class_exe101 class_exe104 class_exe105 class_exe108 class_exe111 class_exe122 class_exe127 class_exe134 class_exe136 class_exe143 class_exe146 class_exe210 class_exe80 class_exe96 class_exe110 class_exe188 class_exe196 class_exe44 class_exe2 class_exe145 class_exe202 class_exe73 class_exe42 class_exe137 class_exe156 
+
+Critério de adequação (energia): 38.7928108095
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,1	1,2	1,3	1,4	Total
+
+1	3	 0	 1	 0	 40	 0	 0	 55	 51	 150
+2	2	 0	 10	 16	 5	 0	 0	 1	 1	 35
+3	9	 7	 0	 0	 3	 3	 3	 1	 4	 30
+Total	[14  7 11 16 48  3  3 57 56]
+Corrected Rand index: 0.45233265436
+
+F-measure(P,Q): 0.529970495414
+OERC: 0.0976744186047
+
+#####################################
+Repetição do experimento: 8
+
+Cluster 0,0 Prototipo: class_exe128 [19 objetos]Objetos: class_exe2 class_exe38 class_exe42 class_exe72 class_exe73 class_exe128 class_exe137 class_exe145 class_exe150 class_exe190 class_exe191 class_exe199 class_exe200 class_exe201 class_exe208 class_exe211 class_exe178 class_exe197 class_exe156 
+Cluster 0,1 Prototipo: class_exe66 [41 objetos]Objetos: class_exe12 class_exe14 class_exe18 class_exe30 class_exe34 class_exe35 class_exe40 class_exe47 class_exe53 class_exe57 class_exe63 class_exe64 class_exe66 class_exe71 class_exe76 class_exe79 class_exe86 class_exe87 class_exe98 class_exe111 class_exe122 class_exe134 class_exe136 class_exe143 class_exe188 class_exe196 class_exe210 class_exe27 class_exe108 class_exe31 class_exe62 class_exe101 class_exe127 class_exe49 class_exe44 class_exe52 class_exe7 class_exe19 class_exe55 class_exe24 class_exe43 
+Cluster 0,2 Prototipo: class_exe54 [11 objetos]Objetos: class_exe54 class_exe90 class_exe65 class_exe5 class_exe115 class_exe125 class_exe0 class_exe45 class_exe103 class_exe78 class_exe4 
+Cluster 0,3 Prototipo: class_exe58 [18 objetos]Objetos: class_exe28 class_exe58 class_exe85 class_exe88 class_exe106 class_exe107 class_exe163 class_exe179 class_exe182 class_exe8 class_exe9 class_exe26 class_exe37 class_exe94 class_exe51 class_exe99 class_exe114 class_exe21 
+Cluster 0,4 Prototipo: class_exe97 [45 objetos]Objetos: class_exe3 class_exe6 class_exe11 class_exe13 class_exe15 class_exe16 class_exe22 class_exe29 class_exe32 class_exe41 class_exe46 class_exe59 class_exe75 class_exe84 class_exe89 class_exe91 class_exe97 class_exe100 class_exe112 class_exe113 class_exe117 class_exe118 class_exe119 class_exe123 class_exe130 class_exe135 class_exe138 class_exe139 class_exe142 class_exe187 class_exe17 class_exe132 class_exe36 class_exe74 class_exe92 class_exe146 class_exe147 class_exe1 class_exe68 class_exe95 class_exe102 class_exe104 class_exe105 class_exe133 class_exe96 
+Cluster 1,0 Prototipo: class_exe193 [15 objetos]Objetos: class_exe186 class_exe192 class_exe193 class_exe194 class_exe195 class_exe198 class_exe202 class_exe204 class_exe207 class_exe209 class_exe189 class_exe206 class_exe205 class_exe185 class_exe203 
+Cluster 1,1 Prototipo: class_exe152 [6 objetos]Objetos: class_exe80 class_exe110 class_exe152 class_exe151 class_exe157 class_exe177 
+Cluster 1,2 Prototipo: class_exe183 [13 objetos]Objetos: class_exe176 class_exe153 class_exe155 class_exe158 class_exe169 class_exe166 class_exe183 class_exe171 class_exe172 class_exe154 class_exe161 class_exe167 class_exe164 
+Cluster 1,3 Prototipo: class_exe159 [21 objetos]Objetos: class_exe174 class_exe184 class_exe160 class_exe162 class_exe173 class_exe180 class_exe181 class_exe33 class_exe159 class_exe170 class_exe175 class_exe81 class_exe165 class_exe56 class_exe168 class_exe121 class_exe70 class_exe83 class_exe144 class_exe67 class_exe50 
+Cluster 1,4 Prototipo: class_exe23 [26 objetos]Objetos: class_exe20 class_exe23 class_exe25 class_exe39 class_exe48 class_exe61 class_exe77 class_exe82 class_exe93 class_exe109 class_exe116 class_exe120 class_exe124 class_exe126 class_exe131 class_exe140 class_exe141 class_exe148 class_exe149 class_exe60 class_exe69 class_exe129 class_exe212 class_exe213 class_exe214 class_exe10 
+
+Critério de adequação (energia): 46.9502909609
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,2	1,3	1,4	Total
+
+1	8	 38	 11	 15	 44	 0	 2	 0	 9	 23	 150
+2	3	 0	 0	 3	 0	 0	 4	 13	 12	 0	 35
+3	8	 3	 0	 0	 1	 15	 0	 0	 0	 3	 30
+Total	[19 41 11 18 45 15  6 13 21 26]
+Corrected Rand index: 0.320222115482
+
+F-measure(P,Q): 0.496049493143
+OERC: 0.148837209302
+
+#####################################
+Repetição do experimento: 9
+
+Cluster 0,0 Prototipo: class_exe193 [15 objetos]Objetos: class_exe207 class_exe192 class_exe198 class_exe194 class_exe195 class_exe185 class_exe186 class_exe189 class_exe193 class_exe202 class_exe203 class_exe204 class_exe205 class_exe206 class_exe209 
+Cluster 0,1 Prototipo: class_exe128 [19 objetos]Objetos: class_exe145 class_exe156 class_exe38 class_exe42 class_exe72 class_exe73 class_exe128 class_exe150 class_exe178 class_exe137 class_exe190 class_exe191 class_exe199 class_exe200 class_exe201 class_exe211 class_exe208 class_exe197 class_exe2 
+Cluster 0,2 Prototipo: class_exe57 [25 objetos]Objetos: class_exe18 class_exe24 class_exe43 class_exe71 class_exe76 class_exe86 class_exe111 class_exe143 class_exe30 class_exe40 class_exe47 class_exe53 class_exe57 class_exe66 class_exe87 class_exe14 class_exe34 class_exe98 class_exe188 class_exe35 class_exe134 class_exe31 class_exe44 class_exe101 class_exe27 
+Cluster 0,3 Prototipo: class_exe70 [14 objetos]Objetos: class_exe67 class_exe83 class_exe70 class_exe144 class_exe56 class_exe93 class_exe141 class_exe81 class_exe213 class_exe33 class_exe39 class_exe25 class_exe184 class_exe48 
+Cluster 0,4 Prototipo: class_exe172 [11 objetos]Objetos: class_exe154 class_exe161 class_exe164 class_exe166 class_exe167 class_exe171 class_exe172 class_exe180 class_exe183 class_exe160 class_exe162 
+Cluster 1,0 Prototipo: class_exe115 [54 objetos]Objetos: class_exe0 class_exe4 class_exe5 class_exe8 class_exe9 class_exe10 class_exe20 class_exe21 class_exe23 class_exe26 class_exe28 class_exe37 class_exe45 class_exe51 class_exe54 class_exe58 class_exe60 class_exe61 class_exe65 class_exe69 class_exe77 class_exe82 class_exe85 class_exe88 class_exe90 class_exe103 class_exe106 class_exe109 class_exe115 class_exe116 class_exe120 class_exe124 class_exe125 class_exe126 class_exe129 class_exe131 class_exe140 class_exe148 class_exe149 class_exe179 class_exe182 class_exe212 class_exe214 class_exe114 class_exe187 class_exe138 class_exe139 class_exe100 class_exe78 class_exe99 class_exe22 class_exe112 class_exe75 class_exe89 
+Cluster 1,1 Prototipo: class_exe132 [53 objetos]Objetos: class_exe55 class_exe68 class_exe96 class_exe102 class_exe95 class_exe133 class_exe36 class_exe62 class_exe74 class_exe92 class_exe104 class_exe105 class_exe147 class_exe132 class_exe17 class_exe19 class_exe52 class_exe1 class_exe7 class_exe63 class_exe108 class_exe127 class_exe146 class_exe12 class_exe136 class_exe13 class_exe16 class_exe91 class_exe117 class_exe122 class_exe142 class_exe79 class_exe6 class_exe11 class_exe29 class_exe41 class_exe59 class_exe84 class_exe97 class_exe113 class_exe118 class_exe119 class_exe123 class_exe130 class_exe3 class_exe15 class_exe32 class_exe46 class_exe135 class_exe196 class_exe49 class_exe64 class_exe210 
+Cluster 1,2 Prototipo: class_exe151 [9 objetos]Objetos: class_exe151 class_exe152 class_exe157 class_exe163 class_exe177 class_exe80 class_exe94 class_exe110 class_exe107 
+Cluster 1,3 Prototipo: class_exe158 [5 objetos]Objetos: class_exe153 class_exe158 class_exe155 class_exe169 class_exe176 
+Cluster 1,4 Prototipo: class_exe170 [10 objetos]Objetos: class_exe170 class_exe173 class_exe175 class_exe181 class_exe165 class_exe168 class_exe50 class_exe159 class_exe121 class_exe174 
+
+Critério de adequação (energia): 44.3875836762
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,2	1,3	1,4	Total
+
+1	0	 8	 24	 12	 0	 49	 51	 4	 0	 2	 150
+2	0	 3	 0	 1	 11	 2	 0	 5	 5	 8	 35
+3	15	 8	 1	 1	 0	 3	 2	 0	 0	 0	 30
+Total	[15 19 25 14 11 54 53  9  5 10]
+Corrected Rand index: 0.388197380856
+
+F-measure(P,Q): 0.521435295641
+OERC: 0.125581395349
+
+#####################################
+Repetição do experimento: 10
+
+Cluster 0,0 Prototipo: class_exe183 [13 objetos]Objetos: class_exe153 class_exe158 class_exe176 class_exe154 class_exe155 class_exe166 class_exe169 class_exe171 class_exe183 class_exe172 class_exe161 class_exe167 class_exe164 
+Cluster 0,1 Prototipo: class_exe107 [12 objetos]Objetos: class_exe85 class_exe107 class_exe151 class_exe152 class_exe157 class_exe163 class_exe177 class_exe182 class_exe9 class_exe94 class_exe179 class_exe99 
+Cluster 0,2 Prototipo: class_exe97 [45 objetos]Objetos: class_exe22 class_exe41 class_exe75 class_exe6 class_exe11 class_exe29 class_exe46 class_exe78 class_exe112 class_exe89 class_exe15 class_exe135 class_exe97 class_exe16 class_exe32 class_exe59 class_exe113 class_exe118 class_exe123 class_exe130 class_exe147 class_exe84 class_exe92 class_exe133 class_exe13 class_exe36 class_exe68 class_exe74 class_exe91 class_exe102 class_exe117 class_exe132 class_exe142 class_exe95 class_exe104 class_exe105 class_exe1 class_exe17 class_exe146 class_exe3 class_exe100 class_exe119 class_exe138 class_exe139 class_exe187 
+Cluster 0,3 Prototipo: class_exe111 [41 objetos]Objetos: class_exe19 class_exe12 class_exe18 class_exe27 class_exe31 class_exe34 class_exe35 class_exe63 class_exe66 class_exe76 class_exe86 class_exe101 class_exe108 class_exe110 class_exe111 class_exe122 class_exe127 class_exe134 class_exe136 class_exe143 class_exe24 class_exe30 class_exe40 class_exe43 class_exe47 class_exe53 class_exe57 class_exe64 class_exe71 class_exe79 class_exe98 class_exe14 class_exe87 class_exe188 class_exe44 class_exe52 class_exe62 class_exe7 class_exe80 class_exe55 class_exe96 
+Cluster 0,4 Prototipo: class_exe72 [18 objetos]Objetos: class_exe178 class_exe42 class_exe145 class_exe150 class_exe156 class_exe38 class_exe72 class_exe73 class_exe128 class_exe137 class_exe190 class_exe191 class_exe199 class_exe200 class_exe201 class_exe208 class_exe211 class_exe2 
+Cluster 1,0 Prototipo: class_exe184 [10 objetos]Objetos: class_exe33 class_exe56 class_exe144 class_exe159 class_exe160 class_exe162 class_exe174 class_exe180 class_exe184 class_exe81 
+Cluster 1,1 Prototipo: class_exe39 [25 objetos]Objetos: class_exe25 class_exe39 class_exe48 class_exe50 class_exe83 class_exe93 class_exe141 class_exe165 class_exe168 class_exe175 class_exe213 class_exe67 class_exe70 class_exe121 class_exe170 class_exe173 class_exe20 class_exe61 class_exe51 class_exe77 class_exe109 class_exe124 class_exe126 class_exe129 class_exe181 
+Cluster 1,2 Prototipo: class_exe115 [32 objetos]Objetos: class_exe21 class_exe60 class_exe69 class_exe82 class_exe120 class_exe131 class_exe148 class_exe149 class_exe212 class_exe214 class_exe4 class_exe5 class_exe10 class_exe88 class_exe103 class_exe114 class_exe115 class_exe140 class_exe8 class_exe26 class_exe28 class_exe37 class_exe54 class_exe65 class_exe90 class_exe106 class_exe125 class_exe58 class_exe45 class_exe0 class_exe23 class_exe116 
+Cluster 1,3 Prototipo: class_exe196 [6 objetos]Objetos: class_exe196 class_exe202 class_exe49 class_exe210 class_exe204 class_exe197 
+Cluster 1,4 Prototipo: class_exe193 [13 objetos]Objetos: class_exe186 class_exe189 class_exe192 class_exe193 class_exe194 class_exe195 class_exe198 class_exe205 class_exe206 class_exe207 class_exe209 class_exe185 class_exe203 
+
+Critério de adequação (energia): 45.316012527
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,2	1,3	1,4	Total
+
+1	0	 5	 44	 40	 8	 4	 18	 30	 1	 0	 150
+2	13	 7	 0	 0	 3	 6	 6	 0	 0	 0	 35
+3	0	 0	 1	 1	 7	 0	 1	 2	 5	 13	 30
+Total	[13 12 45 41 18 10 25 32  6 13]
+Corrected Rand index: 0.341073064588
+
+F-measure(P,Q): 0.48739616702
+OERC: 0.144186046512
+
+#####################################
+Repetição do experimento: 11
+
+Cluster 0,0 Prototipo: class_exe192 [5 objetos]Objetos: class_exe195 class_exe198 class_exe192 class_exe186 class_exe209 
+Cluster 0,1 Prototipo: class_exe72 [12 objetos]Objetos: class_exe72 class_exe150 class_exe156 class_exe178 class_exe201 class_exe211 class_exe190 class_exe38 class_exe2 class_exe200 class_exe42 class_exe128 
+Cluster 0,2 Prototipo: class_exe196 [5 objetos]Objetos: class_exe202 class_exe196 class_exe49 class_exe210 class_exe204 
+Cluster 0,3 Prototipo: class_exe183 [16 objetos]Objetos: class_exe154 class_exe160 class_exe161 class_exe162 class_exe164 class_exe166 class_exe167 class_exe171 class_exe172 class_exe180 class_exe183 class_exe153 class_exe155 class_exe158 class_exe169 class_exe176 
+Cluster 0,4 Prototipo: class_exe39 [42 objetos]Objetos: class_exe20 class_exe23 class_exe25 class_exe39 class_exe48 class_exe61 class_exe67 class_exe70 class_exe77 class_exe93 class_exe109 class_exe116 class_exe124 class_exe126 class_exe129 class_exe141 class_exe144 class_exe50 class_exe83 class_exe121 class_exe159 class_exe165 class_exe168 class_exe170 class_exe173 class_exe175 class_exe181 class_exe56 class_exe81 class_exe184 class_exe33 class_exe149 class_exe51 class_exe214 class_exe131 class_exe21 class_exe213 class_exe82 class_exe60 class_exe120 class_exe174 class_exe114 
+Cluster 1,0 Prototipo: class_exe206 [9 objetos]Objetos: class_exe189 class_exe194 class_exe203 class_exe206 class_exe207 class_exe193 class_exe185 class_exe208 class_exe205 
+Cluster 1,1 Prototipo: class_exe137 [7 objetos]Objetos: class_exe73 class_exe137 class_exe145 class_exe191 class_exe197 class_exe199 class_exe44 
+Cluster 1,2 Prototipo: class_exe111 [48 objetos]Objetos: class_exe12 class_exe14 class_exe18 class_exe24 class_exe30 class_exe31 class_exe34 class_exe35 class_exe40 class_exe43 class_exe47 class_exe53 class_exe57 class_exe63 class_exe64 class_exe66 class_exe71 class_exe76 class_exe79 class_exe86 class_exe87 class_exe98 class_exe108 class_exe111 class_exe122 class_exe134 class_exe143 class_exe101 class_exe136 class_exe188 class_exe27 class_exe110 class_exe127 class_exe62 class_exe80 class_exe52 class_exe19 class_exe7 class_exe55 class_exe146 class_exe95 class_exe17 class_exe96 class_exe68 class_exe102 class_exe104 class_exe105 class_exe1 
+Cluster 1,3 Prototipo: class_exe107 [14 objetos]Objetos: class_exe163 class_exe107 class_exe151 class_exe152 class_exe157 class_exe177 class_exe179 class_exe182 class_exe9 class_exe85 class_exe94 class_exe28 class_exe58 class_exe106 
+Cluster 1,4 Prototipo: class_exe100 [57 objetos]Objetos: class_exe0 class_exe3 class_exe4 class_exe6 class_exe8 class_exe10 class_exe11 class_exe13 class_exe15 class_exe16 class_exe22 class_exe29 class_exe32 class_exe36 class_exe37 class_exe41 class_exe45 class_exe46 class_exe59 class_exe65 class_exe74 class_exe75 class_exe78 class_exe84 class_exe89 class_exe91 class_exe92 class_exe97 class_exe99 class_exe100 class_exe112 class_exe113 class_exe117 class_exe118 class_exe123 class_exe125 class_exe130 class_exe132 class_exe133 class_exe135 class_exe138 class_exe139 class_exe140 class_exe142 class_exe147 class_exe187 class_exe5 class_exe26 class_exe54 class_exe69 class_exe88 class_exe90 class_exe103 class_exe115 class_exe148 class_exe212 class_exe119 
+
+Critério de adequação (energia): 35.0109934308
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,2	1,3	1,4	Total
+
+1	0	 5	 1	 0	 31	 0	 4	 47	 7	 55	 150
+2	0	 3	 0	 16	 9	 0	 0	 0	 7	 0	 35
+3	5	 4	 4	 0	 2	 9	 3	 1	 0	 2	 30
+Total	[ 5 12  5 16 42  9  7 48 14 57]
+Corrected Rand index: 0.410183346675
+
+F-measure(P,Q): 0.537288758546
+OERC: 0.148837209302
+
+#####################################
+Repetição do experimento: 12
+
+Cluster 0,0 Prototipo: class_exe192 [5 objetos]Objetos: class_exe192 class_exe195 class_exe198 class_exe186 class_exe209 
+Cluster 0,1 Prototipo: class_exe185 [12 objetos]Objetos: class_exe203 class_exe185 class_exe189 class_exe191 class_exe197 class_exe208 class_exe200 class_exe199 class_exe193 class_exe194 class_exe206 class_exe207 
+Cluster 0,2 Prototipo: class_exe72 [14 objetos]Objetos: class_exe178 class_exe201 class_exe211 class_exe38 class_exe42 class_exe72 class_exe128 class_exe137 class_exe150 class_exe156 class_exe190 class_exe73 class_exe145 class_exe2 
+Cluster 0,3 Prototipo: class_exe107 [14 objetos]Objetos: class_exe157 class_exe107 class_exe151 class_exe163 class_exe177 class_exe182 class_exe9 class_exe179 class_exe85 class_exe94 class_exe28 class_exe58 class_exe106 class_exe152 
+Cluster 0,4 Prototipo: class_exe183 [16 objetos]Objetos: class_exe153 class_exe154 class_exe155 class_exe158 class_exe160 class_exe161 class_exe162 class_exe164 class_exe166 class_exe167 class_exe169 class_exe171 class_exe172 class_exe176 class_exe180 class_exe183 
+Cluster 1,0 Prototipo: class_exe196 [6 objetos]Objetos: class_exe49 class_exe196 class_exe202 class_exe204 class_exe210 class_exe205 
+Cluster 1,1 Prototipo: class_exe39 [42 objetos]Objetos: class_exe20 class_exe21 class_exe23 class_exe25 class_exe33 class_exe39 class_exe48 class_exe50 class_exe51 class_exe56 class_exe60 class_exe61 class_exe67 class_exe70 class_exe77 class_exe81 class_exe82 class_exe83 class_exe93 class_exe109 class_exe114 class_exe116 class_exe120 class_exe121 class_exe124 class_exe126 class_exe129 class_exe131 class_exe141 class_exe144 class_exe149 class_exe159 class_exe165 class_exe168 class_exe170 class_exe173 class_exe174 class_exe175 class_exe181 class_exe184 class_exe213 class_exe214 
+Cluster 1,2 Prototipo: class_exe111 [49 objetos]Objetos: class_exe24 class_exe188 class_exe14 class_exe18 class_exe30 class_exe34 class_exe40 class_exe43 class_exe47 class_exe53 class_exe57 class_exe64 class_exe66 class_exe71 class_exe76 class_exe86 class_exe87 class_exe98 class_exe111 class_exe143 class_exe27 class_exe31 class_exe35 class_exe79 class_exe101 class_exe108 class_exe110 class_exe122 class_exe134 class_exe12 class_exe63 class_exe136 class_exe127 class_exe80 class_exe62 class_exe7 class_exe19 class_exe52 class_exe17 class_exe55 class_exe95 class_exe96 class_exe104 class_exe105 class_exe146 class_exe102 class_exe1 class_exe68 class_exe44 
+Cluster 1,3 Prototipo: class_exe100 [57 objetos]Objetos: class_exe3 class_exe6 class_exe11 class_exe13 class_exe15 class_exe16 class_exe29 class_exe32 class_exe41 class_exe46 class_exe59 class_exe75 class_exe84 class_exe89 class_exe91 class_exe92 class_exe97 class_exe112 class_exe113 class_exe117 class_exe118 class_exe119 class_exe123 class_exe130 class_exe135 class_exe142 class_exe147 class_exe22 class_exe100 class_exe78 class_exe99 class_exe138 class_exe139 class_exe187 class_exe0 class_exe45 class_exe65 class_exe8 class_exe26 class_exe37 class_exe54 class_exe125 class_exe5 class_exe10 class_exe90 class_exe4 class_exe88 class_exe103 class_exe115 class_exe140 class_exe69 class_exe148 class_exe212 class_exe132 class_exe133 class_exe36 class_exe74 
+Cluster 1,4 Prototipo: class_exe39 [0 objetos]Objetos: 
+
+Critério de adequação (energia): 37.0650784165
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,2	1,3	Total
+
+1	0	 0	 8	 7	 0	 1	 31	 48	 55	 150
+2	0	 0	 3	 7	 16	 0	 9	 0	 0	 35
+3	5	 12	 3	 0	 0	 5	 2	 1	 2	 30
+Total	[ 5 12 14 14 16  6 42 49 57]
+Corrected Rand index: 0.418704944209
+
+F-measure(P,Q): 0.552622262252
+OERC: 0.13023255814
+
+#####################################
+Repetição do experimento: 13
+
+Cluster 0,0 Prototipo: class_exe193 [13 objetos]Objetos: class_exe185 class_exe203 class_exe193 class_exe194 class_exe205 class_exe206 class_exe186 class_exe192 class_exe195 class_exe198 class_exe209 class_exe189 class_exe207 
+Cluster 0,1 Prototipo: class_exe196 [6 objetos]Objetos: class_exe196 class_exe49 class_exe210 class_exe202 class_exe204 class_exe197 
+Cluster 0,2 Prototipo: class_exe177 [10 objetos]Objetos: class_exe85 class_exe107 class_exe151 class_exe157 class_exe177 class_exe152 class_exe94 class_exe163 class_exe182 class_exe80 
+Cluster 0,3 Prototipo: class_exe168 [12 objetos]Objetos: class_exe175 class_exe165 class_exe168 class_exe170 class_exe173 class_exe181 class_exe50 class_exe174 class_exe121 class_exe39 class_exe83 class_exe48 
+Cluster 0,4 Prototipo: class_exe183 [14 objetos]Objetos: class_exe154 class_exe161 class_exe164 class_exe166 class_exe167 class_exe171 class_exe153 class_exe155 class_exe158 class_exe169 class_exe172 class_exe176 class_exe180 class_exe183 
+Cluster 1,0 Prototipo: class_exe72 [18 objetos]Objetos: class_exe38 class_exe42 class_exe72 class_exe73 class_exe128 class_exe137 class_exe145 class_exe150 class_exe156 class_exe178 class_exe211 class_exe190 class_exe191 class_exe199 class_exe200 class_exe201 class_exe208 class_exe2 
+Cluster 1,1 Prototipo: class_exe111 [40 objetos]Objetos: class_exe27 class_exe62 class_exe12 class_exe18 class_exe31 class_exe34 class_exe35 class_exe63 class_exe66 class_exe86 class_exe101 class_exe108 class_exe110 class_exe111 class_exe122 class_exe127 class_exe134 class_exe136 class_exe143 class_exe24 class_exe30 class_exe43 class_exe53 class_exe57 class_exe64 class_exe71 class_exe76 class_exe79 class_exe47 class_exe14 class_exe40 class_exe87 class_exe98 class_exe188 class_exe44 class_exe7 class_exe52 class_exe19 class_exe55 class_exe96 
+Cluster 1,2 Prototipo: class_exe97 [46 objetos]Objetos: class_exe3 class_exe89 class_exe91 class_exe100 class_exe130 class_exe138 class_exe139 class_exe187 class_exe13 class_exe15 class_exe16 class_exe17 class_exe32 class_exe36 class_exe41 class_exe74 class_exe84 class_exe92 class_exe95 class_exe97 class_exe104 class_exe105 class_exe112 class_exe113 class_exe117 class_exe118 class_exe132 class_exe142 class_exe146 class_exe6 class_exe22 class_exe29 class_exe59 class_exe75 class_exe78 class_exe123 class_exe133 class_exe135 class_exe46 class_exe68 class_exe102 class_exe119 class_exe1 class_exe11 class_exe147 class_exe99 
+Cluster 1,3 Prototipo: class_exe115 [43 objetos]Objetos: class_exe20 class_exe25 class_exe61 class_exe77 class_exe109 class_exe116 class_exe124 class_exe126 class_exe129 class_exe21 class_exe23 class_exe51 class_exe131 class_exe149 class_exe60 class_exe82 class_exe120 class_exe214 class_exe114 class_exe212 class_exe148 class_exe69 class_exe140 class_exe4 class_exe5 class_exe103 class_exe88 class_exe90 class_exe115 class_exe28 class_exe106 class_exe179 class_exe54 class_exe125 class_exe26 class_exe37 class_exe58 class_exe8 class_exe10 class_exe65 class_exe45 class_exe0 class_exe9 
+Cluster 1,4 Prototipo: class_exe56 [13 objetos]Objetos: class_exe56 class_exe70 class_exe81 class_exe144 class_exe159 class_exe33 class_exe184 class_exe213 class_exe67 class_exe93 class_exe141 class_exe160 class_exe162 
+
+Critério de adequação (energia): 45.1314451105
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,2	1,3	1,4	Total
+
+1	0	 1	 4	 5	 0	 8	 39	 45	 40	 8	 150
+2	0	 0	 6	 7	 14	 3	 0	 0	 1	 4	 35
+3	13	 5	 0	 0	 0	 7	 1	 1	 2	 1	 30
+Total	[13  6 10 12 14 18 40 46 43 13]
+Corrected Rand index: 0.366237293346
+
+F-measure(P,Q): 0.497753887926
+OERC: 0.139534883721
+
+#####################################
+Repetição do experimento: 14
+
+Cluster 0,0 Prototipo: class_exe183 [13 objetos]Objetos: class_exe153 class_exe154 class_exe155 class_exe158 class_exe161 class_exe164 class_exe166 class_exe167 class_exe169 class_exe171 class_exe172 class_exe176 class_exe183 
+Cluster 0,1 Prototipo: class_exe23 [35 objetos]Objetos: class_exe4 class_exe20 class_exe23 class_exe25 class_exe60 class_exe61 class_exe69 class_exe77 class_exe82 class_exe88 class_exe109 class_exe114 class_exe116 class_exe120 class_exe124 class_exe126 class_exe129 class_exe131 class_exe141 class_exe148 class_exe149 class_exe212 class_exe213 class_exe214 class_exe5 class_exe103 class_exe140 class_exe21 class_exe93 class_exe10 class_exe39 class_exe48 class_exe51 class_exe65 class_exe115 
+Cluster 0,2 Prototipo: class_exe78 [45 objetos]Objetos: class_exe32 class_exe0 class_exe15 class_exe46 class_exe59 class_exe119 class_exe135 class_exe8 class_exe9 class_exe26 class_exe37 class_exe45 class_exe54 class_exe58 class_exe78 class_exe85 class_exe100 class_exe125 class_exe138 class_exe139 class_exe187 class_exe75 class_exe99 class_exe107 class_exe182 class_exe28 class_exe106 class_exe163 class_exe179 class_exe90 class_exe94 class_exe11 class_exe89 class_exe113 class_exe157 class_exe3 class_exe6 class_exe22 class_exe29 class_exe97 class_exe112 class_exe147 class_exe151 class_exe177 class_exe41 
+Cluster 0,3 Prototipo: class_exe36 [29 objetos]Objetos: class_exe13 class_exe16 class_exe17 class_exe19 class_exe36 class_exe52 class_exe55 class_exe62 class_exe68 class_exe74 class_exe91 class_exe92 class_exe95 class_exe96 class_exe102 class_exe104 class_exe105 class_exe117 class_exe118 class_exe123 class_exe130 class_exe132 class_exe133 class_exe142 class_exe146 class_exe152 class_exe1 class_exe84 class_exe7 
+Cluster 0,4 Prototipo: class_exe72 [18 objetos]Objetos: class_exe2 class_exe38 class_exe42 class_exe72 class_exe73 class_exe128 class_exe137 class_exe145 class_exe150 class_exe156 class_exe178 class_exe211 class_exe191 class_exe199 class_exe200 class_exe201 class_exe190 class_exe208 
+Cluster 1,0 Prototipo: class_exe159 [21 objetos]Objetos: class_exe50 class_exe56 class_exe67 class_exe70 class_exe81 class_exe83 class_exe121 class_exe144 class_exe159 class_exe165 class_exe168 class_exe170 class_exe173 class_exe175 class_exe181 class_exe33 class_exe184 class_exe174 class_exe160 class_exe162 class_exe180 
+Cluster 1,1 Prototipo: class_exe202 [2 objetos]Objetos: class_exe202 class_exe204 
+Cluster 1,2 Prototipo: class_exe193 [13 objetos]Objetos: class_exe207 class_exe194 class_exe203 class_exe206 class_exe185 class_exe189 class_exe193 class_exe205 class_exe195 class_exe192 class_exe198 class_exe186 class_exe209 
+Cluster 1,3 Prototipo: class_exe111 [34 objetos]Objetos: class_exe108 class_exe64 class_exe34 class_exe76 class_exe127 class_exe63 class_exe53 class_exe66 class_exe80 class_exe86 class_exe110 class_exe111 class_exe143 class_exe12 class_exe18 class_exe30 class_exe31 class_exe35 class_exe43 class_exe57 class_exe71 class_exe101 class_exe122 class_exe14 class_exe24 class_exe40 class_exe44 class_exe47 class_exe87 class_exe98 class_exe134 class_exe136 class_exe188 class_exe27 
+Cluster 1,4 Prototipo: class_exe210 [5 objetos]Objetos: class_exe49 class_exe79 class_exe197 class_exe210 class_exe196 
+
+Critério de adequação (energia): 45.5545549829
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,2	1,3	1,4	Total
+
+1	0	 32	 38	 28	 8	 9	 0	 0	 33	 2	 150
+2	13	 0	 6	 1	 3	 12	 0	 0	 0	 0	 35
+3	0	 3	 1	 0	 7	 0	 2	 13	 1	 3	 30
+Total	[13 35 45 29 18 21  2 13 34  5]
+Corrected Rand index: 0.3189638216
+
+F-measure(P,Q): 0.444462356645
+OERC: 0.153488372093
+
+#####################################
+Repetição do experimento: 15
+
+Cluster 0,0 Prototipo: class_exe193 [13 objetos]Objetos: class_exe206 class_exe203 class_exe205 class_exe185 class_exe193 class_exe194 class_exe195 class_exe198 class_exe186 class_exe189 class_exe192 class_exe207 class_exe209 
+Cluster 0,1 Prototipo: class_exe196 [6 objetos]Objetos: class_exe196 class_exe202 class_exe49 class_exe210 class_exe204 class_exe197 
+Cluster 0,2 Prototipo: class_exe183 [14 objetos]Objetos: class_exe153 class_exe155 class_exe158 class_exe169 class_exe176 class_exe166 class_exe183 class_exe154 class_exe171 class_exe172 class_exe161 class_exe167 class_exe164 class_exe180 
+Cluster 0,3 Prototipo: class_exe170 [13 objetos]Objetos: class_exe160 class_exe162 class_exe174 class_exe170 class_exe181 class_exe173 class_exe175 class_exe165 class_exe168 class_exe159 class_exe50 class_exe121 class_exe184 
+Cluster 0,4 Prototipo: class_exe97 [48 objetos]Objetos: class_exe45 class_exe138 class_exe139 class_exe3 class_exe89 class_exe112 class_exe130 class_exe15 class_exe22 class_exe41 class_exe46 class_exe75 class_exe78 class_exe97 class_exe99 class_exe100 class_exe113 class_exe135 class_exe0 class_exe6 class_exe11 class_exe16 class_exe29 class_exe32 class_exe59 class_exe84 class_exe91 class_exe118 class_exe13 class_exe74 class_exe92 class_exe117 class_exe119 class_exe123 class_exe133 class_exe142 class_exe147 class_exe36 class_exe68 class_exe102 class_exe132 class_exe1 class_exe104 class_exe105 class_exe17 class_exe95 class_exe146 class_exe187 
+Cluster 1,0 Prototipo: class_exe72 [18 objetos]Objetos: class_exe2 class_exe38 class_exe42 class_exe72 class_exe73 class_exe128 class_exe137 class_exe145 class_exe150 class_exe156 class_exe178 class_exe191 class_exe199 class_exe200 class_exe201 class_exe211 class_exe190 class_exe208 
+Cluster 1,1 Prototipo: class_exe111 [40 objetos]Objetos: class_exe19 class_exe52 class_exe62 class_exe27 class_exe31 class_exe101 class_exe110 class_exe7 class_exe12 class_exe35 class_exe63 class_exe127 class_exe136 class_exe108 class_exe122 class_exe18 class_exe30 class_exe34 class_exe43 class_exe53 class_exe57 class_exe64 class_exe66 class_exe71 class_exe76 class_exe79 class_exe86 class_exe111 class_exe134 class_exe143 class_exe14 class_exe24 class_exe40 class_exe47 class_exe87 class_exe98 class_exe188 class_exe44 class_exe55 class_exe96 
+Cluster 1,2 Prototipo: class_exe177 [11 objetos]Objetos: class_exe163 class_exe107 class_exe157 class_exe182 class_exe151 class_exe152 class_exe177 class_exe85 class_exe94 class_exe9 class_exe80 
+Cluster 1,3 Prototipo: class_exe144 [9 objetos]Objetos: class_exe93 class_exe141 class_exe213 class_exe67 class_exe70 class_exe144 class_exe56 class_exe81 class_exe33 
+Cluster 1,4 Prototipo: class_exe82 [43 objetos]Objetos: class_exe4 class_exe5 class_exe8 class_exe10 class_exe20 class_exe21 class_exe23 class_exe28 class_exe37 class_exe39 class_exe48 class_exe51 class_exe60 class_exe61 class_exe65 class_exe69 class_exe77 class_exe82 class_exe88 class_exe90 class_exe103 class_exe106 class_exe109 class_exe114 class_exe115 class_exe116 class_exe120 class_exe126 class_exe131 class_exe140 class_exe148 class_exe149 class_exe179 class_exe25 class_exe124 class_exe212 class_exe129 class_exe214 class_exe26 class_exe54 class_exe58 class_exe125 class_exe83 
+
+Critério de adequação (energia): 45.0744400508
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,2	1,3	1,4	Total
+
+1	0	 1	 0	 2	 47	 8	 39	 5	 8	 40	 150
+2	0	 0	 14	 11	 0	 3	 0	 6	 0	 1	 35
+3	13	 5	 0	 0	 1	 7	 1	 0	 1	 2	 30
+Total	[13  6 14 13 48 18 40 11  9 43]
+Corrected Rand index: 0.379203707385
+
+F-measure(P,Q): 0.508612353934
+OERC: 0.111627906977
+
+#####################################
+Repetição do experimento: 16
+
+Cluster 0,0 Prototipo: class_exe111 [44 objetos]Objetos: class_exe7 class_exe146 class_exe17 class_exe127 class_exe108 class_exe64 class_exe79 class_exe12 class_exe63 class_exe19 class_exe136 class_exe31 class_exe34 class_exe122 class_exe35 class_exe66 class_exe18 class_exe30 class_exe40 class_exe47 class_exe53 class_exe57 class_exe71 class_exe76 class_exe86 class_exe98 class_exe111 class_exe134 class_exe143 class_exe14 class_exe24 class_exe43 class_exe87 class_exe27 class_exe52 class_exe62 class_exe101 class_exe55 class_exe95 class_exe105 class_exe96 class_exe44 class_exe188 class_exe104 
+Cluster 0,1 Prototipo: class_exe196 [6 objetos]Objetos: class_exe49 class_exe196 class_exe202 class_exe210 class_exe197 class_exe204 
+Cluster 0,2 Prototipo: class_exe158 [5 objetos]Objetos: class_exe155 class_exe153 class_exe158 class_exe169 class_exe176 
+Cluster 0,3 Prototipo: class_exe172 [12 objetos]Objetos: class_exe154 class_exe160 class_exe161 class_exe162 class_exe164 class_exe166 class_exe167 class_exe171 class_exe172 class_exe180 class_exe183 class_exe174 
+Cluster 0,4 Prototipo: class_exe39 [44 objetos]Objetos: class_exe56 class_exe67 class_exe70 class_exe81 class_exe121 class_exe144 class_exe159 class_exe165 class_exe168 class_exe170 class_exe173 class_exe175 class_exe181 class_exe33 class_exe184 class_exe83 class_exe93 class_exe213 class_exe50 class_exe39 class_exe141 class_exe48 class_exe25 class_exe61 class_exe20 class_exe77 class_exe124 class_exe109 class_exe23 class_exe116 class_exe126 class_exe129 class_exe131 class_exe149 class_exe21 class_exe214 class_exe51 class_exe82 class_exe60 class_exe120 class_exe212 class_exe114 class_exe148 class_exe69 
+Cluster 1,0 Prototipo: class_exe72 [18 objetos]Objetos: class_exe38 class_exe42 class_exe72 class_exe73 class_exe128 class_exe137 class_exe150 class_exe156 class_exe178 class_exe190 class_exe199 class_exe200 class_exe201 class_exe211 class_exe191 class_exe208 class_exe145 class_exe2 
+Cluster 1,1 Prototipo: class_exe193 [13 objetos]Objetos: class_exe189 class_exe203 class_exe193 class_exe194 class_exe206 class_exe207 class_exe192 class_exe186 class_exe195 class_exe198 class_exe205 class_exe209 class_exe185 
+Cluster 1,2 Prototipo: class_exe151 [7 objetos]Objetos: class_exe152 class_exe151 class_exe157 class_exe177 class_exe163 class_exe80 class_exe110 
+Cluster 1,3 Prototipo: class_exe39 [0 objetos]Objetos: 
+Cluster 1,4 Prototipo: class_exe75 [66 objetos]Objetos: class_exe0 class_exe3 class_exe4 class_exe5 class_exe6 class_exe8 class_exe9 class_exe10 class_exe11 class_exe15 class_exe22 class_exe26 class_exe28 class_exe29 class_exe37 class_exe41 class_exe45 class_exe46 class_exe54 class_exe58 class_exe59 class_exe65 class_exe75 class_exe78 class_exe85 class_exe88 class_exe89 class_exe90 class_exe94 class_exe97 class_exe99 class_exe100 class_exe103 class_exe106 class_exe107 class_exe112 class_exe113 class_exe115 class_exe125 class_exe130 class_exe135 class_exe138 class_exe139 class_exe140 class_exe179 class_exe182 class_exe187 class_exe16 class_exe32 class_exe84 class_exe118 class_exe123 class_exe147 class_exe92 class_exe133 class_exe13 class_exe91 class_exe142 class_exe117 class_exe119 class_exe1 class_exe36 class_exe68 class_exe74 class_exe132 class_exe102 
+
+Critério de adequação (energia): 45.2071421118
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,2	1,4	Total
+
+1	43	 1	 0	 0	 33	 8	 0	 2	 63	 150
+2	0	 0	 5	 12	 8	 3	 0	 5	 2	 35
+3	1	 5	 0	 0	 3	 7	 13	 0	 1	 30
+Total	[44  6  5 12 44 18 13  7 66]
+Corrected Rand index: 0.439312628957
+
+F-measure(P,Q): 0.574473838648
+OERC: 0.13023255814
+
+#####################################
+Repetição do experimento: 17
+
+Cluster 0,0 Prototipo: class_exe159 [21 objetos]Objetos: class_exe67 class_exe83 class_exe121 class_exe165 class_exe168 class_exe173 class_exe56 class_exe70 class_exe144 class_exe159 class_exe170 class_exe181 class_exe81 class_exe33 class_exe184 class_exe174 class_exe175 class_exe160 class_exe162 class_exe180 class_exe50 
+Cluster 0,1 Prototipo: class_exe78 [50 objetos]Objetos: class_exe3 class_exe6 class_exe15 class_exe16 class_exe29 class_exe32 class_exe41 class_exe59 class_exe75 class_exe84 class_exe89 class_exe97 class_exe100 class_exe112 class_exe113 class_exe118 class_exe123 class_exe130 class_exe135 class_exe138 class_exe139 class_exe11 class_exe46 class_exe119 class_exe147 class_exe22 class_exe78 class_exe94 class_exe99 class_exe177 class_exe0 class_exe9 class_exe26 class_exe45 class_exe54 class_exe85 class_exe107 class_exe125 class_exe157 class_exe8 class_exe28 class_exe37 class_exe58 class_exe90 class_exe106 class_exe182 class_exe179 class_exe187 class_exe163 class_exe151 
+Cluster 0,2 Prototipo: class_exe62 [42 objetos]Objetos: class_exe12 class_exe17 class_exe19 class_exe27 class_exe31 class_exe52 class_exe55 class_exe62 class_exe63 class_exe74 class_exe80 class_exe95 class_exe96 class_exe101 class_exe104 class_exe105 class_exe108 class_exe110 class_exe127 class_exe136 class_exe146 class_exe1 class_exe7 class_exe34 class_exe35 class_exe36 class_exe68 class_exe102 class_exe122 class_exe132 class_exe143 class_exe152 class_exe133 class_exe13 class_exe91 class_exe92 class_exe117 class_exe142 class_exe64 class_exe79 class_exe134 class_exe196 
+Cluster 0,3 Prototipo: class_exe40 [23 objetos]Objetos: class_exe14 class_exe40 class_exe87 class_exe47 class_exe24 class_exe30 class_exe43 class_exe57 class_exe71 class_exe44 class_exe53 class_exe98 class_exe188 class_exe76 class_exe73 class_exe145 class_exe210 class_exe49 class_exe137 class_exe18 class_exe86 class_exe66 class_exe111 
+Cluster 0,4 Prototipo: class_exe72 [9 objetos]Objetos: class_exe38 class_exe42 class_exe72 class_exe128 class_exe150 class_exe156 class_exe178 class_exe211 class_exe2 
+Cluster 1,0 Prototipo: class_exe183 [13 objetos]Objetos: class_exe153 class_exe154 class_exe155 class_exe158 class_exe161 class_exe164 class_exe166 class_exe167 class_exe169 class_exe171 class_exe172 class_exe176 class_exe183 
+Cluster 1,1 Prototipo: class_exe23 [35 objetos]Objetos: class_exe60 class_exe212 class_exe214 class_exe20 class_exe21 class_exe23 class_exe25 class_exe61 class_exe77 class_exe82 class_exe109 class_exe116 class_exe120 class_exe124 class_exe126 class_exe129 class_exe131 class_exe141 class_exe148 class_exe149 class_exe213 class_exe39 class_exe51 class_exe69 class_exe93 class_exe48 class_exe140 class_exe114 class_exe5 class_exe103 class_exe4 class_exe10 class_exe88 class_exe115 class_exe65 
+Cluster 1,2 Prototipo: class_exe78 [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: class_exe208 [10 objetos]Objetos: class_exe208 class_exe185 class_exe189 class_exe197 class_exe191 class_exe203 class_exe199 class_exe200 class_exe190 class_exe201 
+Cluster 1,4 Prototipo: class_exe193 [12 objetos]Objetos: class_exe186 class_exe192 class_exe193 class_exe194 class_exe195 class_exe198 class_exe205 class_exe206 class_exe207 class_exe209 class_exe204 class_exe202 
+
+Critério de adequação (energia): 41.9668936658
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,3	1,4	Total
+
+1	9	 43	 40	 21	 5	 0	 32	 0	 0	 150
+2	12	 6	 1	 0	 3	 13	 0	 0	 0	 35
+3	0	 1	 1	 2	 1	 0	 3	 10	 12	 30
+Total	[21 50 42 23  9 13 35 10 12]
+Corrected Rand index: 0.348272758658
+
+F-measure(P,Q): 0.467912513843
+OERC: 0.125581395349
+
+#####################################
+Repetição do experimento: 18
+
+Cluster 0,0 Prototipo: class_exe72 [18 objetos]Objetos: class_exe38 class_exe42 class_exe72 class_exe128 class_exe137 class_exe150 class_exe178 class_exe190 class_exe191 class_exe199 class_exe200 class_exe201 class_exe208 class_exe211 class_exe156 class_exe73 class_exe145 class_exe2 
+Cluster 0,1 Prototipo: class_exe193 [13 objetos]Objetos: class_exe186 class_exe192 class_exe193 class_exe195 class_exe198 class_exe205 class_exe206 class_exe209 class_exe194 class_exe207 class_exe189 class_exe203 class_exe185 
+Cluster 0,2 Prototipo: class_exe132 [33 objetos]Objetos: class_exe119 class_exe32 class_exe1 class_exe146 class_exe113 class_exe84 class_exe17 class_exe7 class_exe13 class_exe36 class_exe91 class_exe105 class_exe117 class_exe118 class_exe132 class_exe142 class_exe187 class_exe95 class_exe104 class_exe3 class_exe19 class_exe52 class_exe74 class_exe130 class_exe16 class_exe68 class_exe92 class_exe102 class_exe123 class_exe55 class_exe96 class_exe133 class_exe136 
+Cluster 0,3 Prototipo: class_exe56 [10 objetos]Objetos: class_exe33 class_exe56 class_exe81 class_exe184 class_exe162 class_exe144 class_exe70 class_exe213 class_exe67 class_exe160 
+Cluster 0,4 Prototipo: class_exe183 [14 objetos]Objetos: class_exe153 class_exe154 class_exe155 class_exe158 class_exe161 class_exe164 class_exe166 class_exe167 class_exe169 class_exe171 class_exe172 class_exe176 class_exe180 class_exe183 
+Cluster 1,0 Prototipo: class_exe111 [35 objetos]Objetos: class_exe14 class_exe18 class_exe24 class_exe27 class_exe30 class_exe31 class_exe34 class_exe35 class_exe40 class_exe43 class_exe47 class_exe53 class_exe57 class_exe64 class_exe66 class_exe71 class_exe76 class_exe80 class_exe86 class_exe87 class_exe98 class_exe101 class_exe110 class_exe111 class_exe122 class_exe134 class_exe143 class_exe12 class_exe62 class_exe63 class_exe108 class_exe127 class_exe44 class_exe79 class_exe188 
+Cluster 1,1 Prototipo: class_exe196 [6 objetos]Objetos: class_exe49 class_exe196 class_exe210 class_exe202 class_exe197 class_exe204 
+Cluster 1,2 Prototipo: class_exe78 [41 objetos]Objetos: class_exe6 class_exe11 class_exe15 class_exe22 class_exe29 class_exe41 class_exe46 class_exe75 class_exe78 class_exe89 class_exe94 class_exe97 class_exe99 class_exe100 class_exe112 class_exe135 class_exe138 class_exe139 class_exe147 class_exe151 class_exe157 class_exe177 class_exe0 class_exe9 class_exe45 class_exe85 class_exe107 class_exe54 class_exe152 class_exe26 class_exe58 class_exe125 class_exe37 class_exe8 class_exe182 class_exe163 class_exe179 class_exe59 class_exe28 class_exe90 class_exe106 
+Cluster 1,3 Prototipo: class_exe23 [35 objetos]Objetos: class_exe4 class_exe20 class_exe21 class_exe23 class_exe25 class_exe39 class_exe48 class_exe51 class_exe60 class_exe61 class_exe69 class_exe77 class_exe82 class_exe88 class_exe109 class_exe114 class_exe115 class_exe116 class_exe120 class_exe124 class_exe126 class_exe129 class_exe131 class_exe140 class_exe148 class_exe149 class_exe212 class_exe214 class_exe83 class_exe93 class_exe141 class_exe103 class_exe10 class_exe5 class_exe65 
+Cluster 1,4 Prototipo: class_exe170 [10 objetos]Objetos: class_exe168 class_exe121 class_exe165 class_exe170 class_exe173 class_exe174 class_exe175 class_exe181 class_exe159 class_exe50 
+
+Critério de adequação (energia): 45.0294932566
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,2	1,3	1,4	Total
+
+1	8	 0	 32	 6	 0	 34	 1	 34	 33	 2	 150
+2	3	 0	 0	 3	 14	 0	 0	 7	 0	 8	 35
+3	7	 13	 1	 1	 0	 1	 5	 0	 2	 0	 30
+Total	[18 13 33 10 14 35  6 41 35 10]
+Corrected Rand index: 0.322478572254
+
+F-measure(P,Q): 0.433835674506
+OERC: 0.13023255814
+
+#####################################
+Repetição do experimento: 19
+
+Cluster 0,0 Prototipo: class_exe56 [13 objetos]Objetos: class_exe33 class_exe56 class_exe81 class_exe184 class_exe144 class_exe159 class_exe70 class_exe67 class_exe93 class_exe141 class_exe213 class_exe160 class_exe162 
+Cluster 0,1 Prototipo: class_exe72 [12 objetos]Objetos: class_exe72 class_exe150 class_exe156 class_exe178 class_exe2 class_exe38 class_exe42 class_exe73 class_exe128 class_exe137 class_exe145 class_exe211 
+Cluster 0,2 Prototipo: class_exe118 [39 objetos]Objetos: class_exe3 class_exe13 class_exe15 class_exe16 class_exe17 class_exe32 class_exe59 class_exe84 class_exe91 class_exe97 class_exe113 class_exe117 class_exe118 class_exe119 class_exe123 class_exe130 class_exe135 class_exe142 class_exe1 class_exe6 class_exe7 class_exe11 class_exe29 class_exe36 class_exe41 class_exe46 class_exe74 class_exe89 class_exe92 class_exe132 class_exe146 class_exe147 class_exe75 class_exe133 class_exe112 class_exe68 class_exe102 class_exe177 class_exe94 
+Cluster 0,3 Prototipo: class_exe210 [6 objetos]Objetos: class_exe196 class_exe49 class_exe210 class_exe202 class_exe188 class_exe79 
+Cluster 0,4 Prototipo: class_exe193 [11 objetos]Objetos: class_exe186 class_exe192 class_exe193 class_exe194 class_exe195 class_exe198 class_exe204 class_exe205 class_exe206 class_exe207 class_exe209 
+Cluster 1,0 Prototipo: class_exe183 [14 objetos]Objetos: class_exe153 class_exe154 class_exe155 class_exe158 class_exe161 class_exe164 class_exe166 class_exe167 class_exe169 class_exe171 class_exe172 class_exe176 class_exe180 class_exe183 
+Cluster 1,1 Prototipo: class_exe168 [13 objetos]Objetos: class_exe121 class_exe165 class_exe168 class_exe175 class_exe170 class_exe173 class_exe50 class_exe181 class_exe39 class_exe174 class_exe163 class_exe48 class_exe83 
+Cluster 1,2 Prototipo: class_exe115 [53 objetos]Objetos: class_exe20 class_exe21 class_exe23 class_exe51 class_exe61 class_exe77 class_exe109 class_exe116 class_exe124 class_exe126 class_exe131 class_exe149 class_exe82 class_exe120 class_exe129 class_exe60 class_exe214 class_exe114 class_exe148 class_exe212 class_exe4 class_exe88 class_exe179 class_exe28 class_exe69 class_exe140 class_exe106 class_exe115 class_exe8 class_exe90 class_exe10 class_exe26 class_exe37 class_exe58 class_exe103 class_exe125 class_exe182 class_exe54 class_exe65 class_exe0 class_exe45 class_exe85 class_exe107 class_exe9 class_exe78 class_exe99 class_exe22 class_exe100 class_exe138 class_exe139 class_exe5 class_exe25 class_exe187 
+Cluster 1,3 Prototipo: class_exe35 [44 objetos]Objetos: class_exe55 class_exe95 class_exe96 class_exe104 class_exe152 class_exe62 class_exe80 class_exe110 class_exe19 class_exe27 class_exe31 class_exe52 class_exe101 class_exe127 class_exe12 class_exe18 class_exe34 class_exe35 class_exe63 class_exe66 class_exe86 class_exe108 class_exe111 class_exe122 class_exe134 class_exe136 class_exe143 class_exe64 class_exe76 class_exe24 class_exe30 class_exe43 class_exe47 class_exe53 class_exe57 class_exe71 class_exe14 class_exe40 class_exe87 class_exe98 class_exe151 class_exe157 class_exe44 class_exe105 
+Cluster 1,4 Prototipo: class_exe208 [10 objetos]Objetos: class_exe190 class_exe191 class_exe199 class_exe208 class_exe197 class_exe185 class_exe189 class_exe200 class_exe201 class_exe203 
+
+Critério de adequação (energia): 40.8035512895
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,2	1,3	1,4	Total
+
+1	8	 8	 38	 2	 0	 0	 5	 48	 41	 0	 150
+2	4	 3	 1	 0	 0	 14	 8	 2	 3	 0	 35
+3	1	 1	 0	 4	 11	 0	 0	 3	 0	 10	 30
+Total	[13 12 39  6 11 14 13 53 44 10]
+Corrected Rand index: 0.376990696002
+
+F-measure(P,Q): 0.497830332869
+OERC: 0.116279069767
+
+#####################################
+Repetição do experimento: 20
+
+Cluster 0,0 Prototipo: class_exe125 [70 objetos]Objetos: class_exe20 class_exe21 class_exe51 class_exe61 class_exe77 class_exe109 class_exe116 class_exe124 class_exe126 class_exe131 class_exe23 class_exe149 class_exe82 class_exe179 class_exe28 class_exe60 class_exe114 class_exe120 class_exe182 class_exe214 class_exe4 class_exe69 class_exe88 class_exe106 class_exe115 class_exe148 class_exe212 class_exe90 class_exe140 class_exe5 class_exe8 class_exe26 class_exe37 class_exe54 class_exe58 class_exe103 class_exe125 class_exe0 class_exe9 class_exe10 class_exe45 class_exe65 class_exe78 class_exe85 class_exe99 class_exe107 class_exe94 class_exe22 class_exe100 class_exe138 class_exe139 class_exe187 class_exe112 class_exe75 class_exe89 class_exe3 class_exe15 class_exe41 class_exe130 class_exe135 class_exe46 class_exe97 class_exe29 class_exe6 class_exe59 class_exe113 class_exe11 class_exe16 class_exe177 class_exe32 
+Cluster 0,1 Prototipo: class_exe175 [9 objetos]Objetos: class_exe173 class_exe174 class_exe175 class_exe181 class_exe163 class_exe165 class_exe168 class_exe170 class_exe157 
+Cluster 0,2 Prototipo: class_exe199 [17 objetos]Objetos: class_exe178 class_exe150 class_exe201 class_exe190 class_exe211 class_exe191 class_exe199 class_exe200 class_exe208 class_exe185 class_exe197 class_exe72 class_exe128 class_exe38 class_exe137 class_exe156 class_exe42 
+Cluster 0,3 Prototipo: class_exe70 [18 objetos]Objetos: class_exe144 class_exe70 class_exe56 class_exe81 class_exe213 class_exe67 class_exe93 class_exe159 class_exe141 class_exe83 class_exe121 class_exe33 class_exe184 class_exe25 class_exe39 class_exe50 class_exe48 class_exe129 
+Cluster 0,4 Prototipo: class_exe171 [7 objetos]Objetos: class_exe171 class_exe172 class_exe154 class_exe161 class_exe166 class_exe183 class_exe176 
+Cluster 1,0 Prototipo: class_exe63 [72 objetos]Objetos: class_exe79 class_exe44 class_exe73 class_exe98 class_exe64 class_exe145 class_exe47 class_exe119 class_exe14 class_exe53 class_exe122 class_exe40 class_exe134 class_exe136 class_exe146 class_exe2 class_exe17 class_exe30 class_exe12 class_exe63 class_exe87 class_exe7 class_exe19 class_exe57 class_exe66 class_exe108 class_exe111 class_exe127 class_exe1 class_exe24 class_exe117 class_exe76 class_exe18 class_exe52 class_exe86 class_exe91 class_exe132 class_exe34 class_exe84 class_exe142 class_exe13 class_exe35 class_exe71 class_exe43 class_exe143 class_exe31 class_exe105 class_exe27 class_exe62 class_exe123 class_exe36 class_exe95 class_exe101 class_exe104 class_exe74 class_exe102 class_exe68 class_exe55 class_exe92 class_exe96 class_exe147 class_exe80 class_exe110 class_exe133 class_exe152 class_exe151 class_exe188 class_exe210 class_exe49 class_exe196 class_exe202 class_exe118 
+Cluster 1,1 Prototipo: class_exe206 [8 objetos]Objetos: class_exe204 class_exe206 class_exe207 class_exe193 class_exe194 class_exe205 class_exe189 class_exe203 
+Cluster 1,2 Prototipo: class_exe192 [5 objetos]Objetos: class_exe195 class_exe186 class_exe192 class_exe198 class_exe209 
+Cluster 1,3 Prototipo: class_exe158 [4 objetos]Objetos: class_exe153 class_exe155 class_exe158 class_exe169 
+Cluster 1,4 Prototipo: class_exe180 [5 objetos]Objetos: class_exe160 class_exe162 class_exe164 class_exe167 class_exe180 
+
+Critério de adequação (energia): 36.2262217826
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,2	1,3	1,4	Total
+
+1	64	 0	 5	 15	 0	 66	 0	 0	 0	 0	 150
+2	3	 9	 3	 2	 7	 2	 0	 0	 4	 5	 35
+3	3	 0	 9	 1	 0	 4	 8	 5	 0	 0	 30
+Total	[70  9 17 18  7 72  8  5  4  5]
+Corrected Rand index: 0.505234408113
+
+F-measure(P,Q): 0.54018116258
+OERC: 0.106976744186
+
+#####################################
+Repetição do experimento: 21
+
+Cluster 0,0 Prototipo: class_exe183 [13 objetos]Objetos: class_exe169 class_exe153 class_exe155 class_exe158 class_exe172 class_exe183 class_exe164 class_exe166 class_exe171 class_exe176 class_exe154 class_exe161 class_exe167 
+Cluster 0,1 Prototipo: class_exe129 [13 objetos]Objetos: class_exe141 class_exe213 class_exe25 class_exe93 class_exe129 class_exe214 class_exe212 class_exe5 class_exe124 class_exe61 class_exe77 class_exe69 class_exe60 
+Cluster 0,2 Prototipo: class_exe193 [14 objetos]Objetos: class_exe194 class_exe207 class_exe203 class_exe206 class_exe195 class_exe186 class_exe189 class_exe192 class_exe193 class_exe198 class_exe205 class_exe209 class_exe185 class_exe204 
+Cluster 0,3 Prototipo: class_exe122 [15 objetos]Objetos: class_exe19 class_exe17 class_exe52 class_exe79 class_exe122 class_exe134 class_exe136 class_exe146 class_exe188 class_exe210 class_exe64 class_exe12 class_exe47 class_exe98 class_exe53 
+Cluster 0,4 Prototipo: class_exe128 [19 objetos]Objetos: class_exe2 class_exe38 class_exe42 class_exe72 class_exe73 class_exe128 class_exe137 class_exe145 class_exe150 class_exe156 class_exe178 class_exe190 class_exe191 class_exe197 class_exe199 class_exe200 class_exe201 class_exe211 class_exe208 
+Cluster 1,0 Prototipo: class_exe159 [22 objetos]Objetos: class_exe165 class_exe168 class_exe175 class_exe67 class_exe70 class_exe83 class_exe121 class_exe144 class_exe170 class_exe173 class_exe181 class_exe56 class_exe159 class_exe81 class_exe33 class_exe184 class_exe160 class_exe162 class_exe174 class_exe50 class_exe180 class_exe48 
+Cluster 1,1 Prototipo: class_exe115 [44 objetos]Objetos: class_exe85 class_exe99 class_exe107 class_exe9 class_exe78 class_exe100 class_exe138 class_exe139 class_exe0 class_exe45 class_exe187 class_exe8 class_exe26 class_exe37 class_exe54 class_exe58 class_exe65 class_exe125 class_exe182 class_exe10 class_exe28 class_exe90 class_exe103 class_exe106 class_exe163 class_exe179 class_exe4 class_exe88 class_exe114 class_exe115 class_exe140 class_exe148 class_exe21 class_exe23 class_exe51 class_exe82 class_exe116 class_exe120 class_exe126 class_exe131 class_exe149 class_exe109 class_exe20 class_exe39 
+Cluster 1,2 Prototipo: class_exe119 [12 objetos]Objetos: class_exe196 class_exe32 class_exe119 class_exe202 class_exe49 class_exe1 class_exe113 class_exe135 class_exe59 class_exe46 class_exe7 class_exe84 
+Cluster 1,3 Prototipo: class_exe92 [37 objetos]Objetos: class_exe13 class_exe36 class_exe55 class_exe68 class_exe74 class_exe91 class_exe95 class_exe96 class_exe102 class_exe117 class_exe118 class_exe123 class_exe132 class_exe142 class_exe147 class_exe152 class_exe6 class_exe11 class_exe16 class_exe92 class_exe104 class_exe105 class_exe133 class_exe29 class_exe41 class_exe89 class_exe97 class_exe130 class_exe151 class_exe177 class_exe15 class_exe22 class_exe75 class_exe94 class_exe112 class_exe157 class_exe3 
+Cluster 1,4 Prototipo: class_exe111 [26 objetos]Objetos: class_exe18 class_exe30 class_exe34 class_exe35 class_exe57 class_exe66 class_exe71 class_exe76 class_exe86 class_exe111 class_exe143 class_exe14 class_exe24 class_exe40 class_exe43 class_exe44 class_exe63 class_exe87 class_exe108 class_exe31 class_exe80 class_exe101 class_exe110 class_exe127 class_exe27 class_exe62 
+
+Critério de adequação (energia): 46.8742663024
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,2	1,3	1,4	Total
+
+1	0	 10	 0	 13	 8	 10	 40	 10	 33	 26	 150
+2	13	 0	 0	 0	 3	 12	 3	 0	 4	 0	 35
+3	0	 3	 14	 2	 8	 0	 1	 2	 0	 0	 30
+Total	[13 13 14 15 19 22 44 12 37 26]
+Corrected Rand index: 0.287929417063
+
+F-measure(P,Q): 0.464674011755
+OERC: 0.167441860465
+
+#####################################
+Repetição do experimento: 22
+
+Cluster 0,0 Prototipo: class_exe39 [98 objetos]Objetos: class_exe39 class_exe120 class_exe125 class_exe213 class_exe45 class_exe65 class_exe60 class_exe182 class_exe176 class_exe180 class_exe75 class_exe33 class_exe58 class_exe171 class_exe177 class_exe115 class_exe116 class_exe181 class_exe148 class_exe184 class_exe90 class_exe162 class_exe5 class_exe160 class_exe20 class_exe94 class_exe100 class_exe0 class_exe4 class_exe26 class_exe82 class_exe124 class_exe126 class_exe138 class_exe187 class_exe37 class_exe70 class_exe93 class_exe144 class_exe164 class_exe22 class_exe25 class_exe83 class_exe158 class_exe175 class_exe99 class_exe155 class_exe157 class_exe166 class_exe168 class_exe170 class_exe173 class_exe21 class_exe56 class_exe77 class_exe141 class_exe169 class_exe8 class_exe9 class_exe23 class_exe67 class_exe78 class_exe112 class_exe114 class_exe165 class_exe174 class_exe10 class_exe61 class_exe129 class_exe163 class_exe167 class_exe179 class_exe183 class_exe214 class_exe48 class_exe50 class_exe85 class_exe88 class_exe103 class_exe106 class_exe121 class_exe149 class_exe153 class_exe161 class_exe172 class_exe28 class_exe51 class_exe54 class_exe69 class_exe81 class_exe107 class_exe109 class_exe131 class_exe139 class_exe140 class_exe154 class_exe159 class_exe212 
+Cluster 0,1 Prototipo: class_exe39 [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: class_exe64 [117 objetos]Objetos: class_exe1 class_exe2 class_exe3 class_exe7 class_exe11 class_exe12 class_exe13 class_exe14 class_exe15 class_exe24 class_exe27 class_exe29 class_exe30 class_exe31 class_exe32 class_exe34 class_exe35 class_exe40 class_exe41 class_exe43 class_exe44 class_exe46 class_exe49 class_exe52 class_exe55 class_exe57 class_exe62 class_exe63 class_exe64 class_exe66 class_exe68 class_exe71 class_exe72 class_exe73 class_exe76 class_exe79 class_exe80 class_exe86 class_exe87 class_exe91 class_exe95 class_exe96 class_exe97 class_exe98 class_exe102 class_exe108 class_exe110 class_exe113 class_exe117 class_exe118 class_exe119 class_exe123 class_exe127 class_exe130 class_exe132 class_exe133 class_exe135 class_exe136 class_exe142 class_exe143 class_exe145 class_exe147 class_exe151 class_exe152 class_exe156 class_exe185 class_exe188 class_exe189 class_exe191 class_exe192 class_exe194 class_exe195 class_exe196 class_exe198 class_exe199 class_exe200 class_exe202 class_exe203 class_exe204 class_exe205 class_exe206 class_exe207 class_exe209 class_exe211 class_exe6 class_exe16 class_exe17 class_exe18 class_exe19 class_exe36 class_exe38 class_exe42 class_exe47 class_exe53 class_exe59 class_exe74 class_exe84 class_exe89 class_exe92 class_exe101 class_exe104 class_exe105 class_exe111 class_exe122 class_exe128 class_exe134 class_exe137 class_exe146 class_exe150 class_exe178 class_exe186 class_exe190 class_exe193 class_exe197 class_exe201 class_exe208 class_exe210 
+Cluster 0,3 Prototipo: class_exe64 [0 objetos]Objetos: 
+Cluster 0,4 Prototipo: class_exe64 [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: class_exe39 [0 objetos]Objetos: 
+Cluster 1,1 Prototipo: class_exe39 [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: class_exe64 [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: class_exe64 [0 objetos]Objetos: 
+Cluster 1,4 Prototipo: class_exe64 [0 objetos]Objetos: 
+
+Critério de adequação (energia): 143.753955001
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	Total
+
+1	64	 86	 150
+2	30	 5	 35
+3	4	 26	 30
+Total	[ 98 117]
+Corrected Rand index: 0.543042451157
+
+F-measure(P,Q): 0.572236893327
+OERC: 0.302325581395
+
+#####################################
+Repetição do experimento: 23
+
+Cluster 0,0 Prototipo: class_exe193 [12 objetos]Objetos: class_exe192 class_exe186 class_exe193 class_exe194 class_exe195 class_exe198 class_exe204 class_exe205 class_exe206 class_exe207 class_exe209 class_exe202 
+Cluster 0,1 Prototipo: class_exe193 [0 objetos]Objetos: 
+Cluster 0,2 Prototipo: class_exe124 [23 objetos]Objetos: class_exe212 class_exe5 class_exe124 class_exe129 class_exe213 class_exe214 class_exe25 class_exe93 class_exe141 class_exe69 class_exe60 class_exe23 class_exe20 class_exe61 class_exe77 class_exe126 class_exe149 class_exe39 class_exe48 class_exe109 class_exe116 class_exe120 class_exe148 
+Cluster 0,3 Prototipo: class_exe132 [52 objetos]Objetos: class_exe6 class_exe11 class_exe29 class_exe32 class_exe59 class_exe16 class_exe84 class_exe91 class_exe97 class_exe113 class_exe117 class_exe118 class_exe119 class_exe123 class_exe142 class_exe13 class_exe92 class_exe132 class_exe133 class_exe147 class_exe130 class_exe3 class_exe1 class_exe36 class_exe74 class_exe17 class_exe146 class_exe196 class_exe68 class_exe102 class_exe7 class_exe19 class_exe55 class_exe95 class_exe104 class_exe105 class_exe127 class_exe52 class_exe62 class_exe96 class_exe136 class_exe12 class_exe27 class_exe31 class_exe63 class_exe79 class_exe101 class_exe108 class_exe122 class_exe49 class_exe64 class_exe210 
+Cluster 0,4 Prototipo: class_exe14 [33 objetos]Objetos: class_exe18 class_exe24 class_exe30 class_exe34 class_exe35 class_exe40 class_exe43 class_exe47 class_exe53 class_exe57 class_exe66 class_exe71 class_exe76 class_exe86 class_exe87 class_exe98 class_exe111 class_exe134 class_exe143 class_exe188 class_exe14 class_exe2 class_exe38 class_exe42 class_exe44 class_exe72 class_exe73 class_exe128 class_exe137 class_exe145 class_exe150 class_exe156 class_exe178 
+Cluster 1,0 Prototipo: class_exe208 [11 objetos]Objetos: class_exe190 class_exe191 class_exe197 class_exe199 class_exe200 class_exe201 class_exe211 class_exe185 class_exe189 class_exe208 class_exe203 
+Cluster 1,1 Prototipo: class_exe152 [6 objetos]Objetos: class_exe152 class_exe151 class_exe157 class_exe177 class_exe80 class_exe110 
+Cluster 1,2 Prototipo: class_exe183 [13 objetos]Objetos: class_exe172 class_exe183 class_exe169 class_exe171 class_exe153 class_exe154 class_exe155 class_exe158 class_exe164 class_exe166 class_exe167 class_exe176 class_exe161 
+Cluster 1,3 Prototipo: class_exe159 [21 objetos]Objetos: class_exe33 class_exe56 class_exe81 class_exe184 class_exe159 class_exe170 class_exe173 class_exe181 class_exe70 class_exe175 class_exe67 class_exe121 class_exe165 class_exe168 class_exe50 class_exe83 class_exe174 class_exe144 class_exe160 class_exe162 class_exe180 
+Cluster 1,4 Prototipo: class_exe26 [44 objetos]Objetos: class_exe0 class_exe4 class_exe8 class_exe9 class_exe10 class_exe21 class_exe26 class_exe28 class_exe37 class_exe45 class_exe54 class_exe58 class_exe65 class_exe82 class_exe85 class_exe88 class_exe90 class_exe103 class_exe106 class_exe107 class_exe114 class_exe115 class_exe125 class_exe131 class_exe140 class_exe163 class_exe179 class_exe182 class_exe22 class_exe78 class_exe94 class_exe99 class_exe100 class_exe112 class_exe138 class_exe139 class_exe51 class_exe15 class_exe41 class_exe46 class_exe75 class_exe89 class_exe135 class_exe187 
+
+Critério de adequação (energia): 45.2036989935
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	0,3	0,4	1,0	1,1	1,2	1,3	1,4	Total
+
+1	0	 20	 50	 29	 0	 2	 0	 9	 40	 150
+2	0	 0	 0	 3	 0	 4	 13	 12	 3	 35
+3	12	 3	 2	 1	 11	 0	 0	 0	 1	 30
+Total	[12 23 52 33 11  6 13 21 44]
+Corrected Rand index: 0.37227394117
+
+F-measure(P,Q): 0.51329588939
+OERC: 0.111627906977
+
+#####################################
+Repetição do experimento: 24
+
+Cluster 0,0 Prototipo: class_exe183 [16 objetos]Objetos: class_exe153 class_exe154 class_exe155 class_exe158 class_exe160 class_exe161 class_exe162 class_exe164 class_exe166 class_exe167 class_exe169 class_exe171 class_exe172 class_exe176 class_exe180 class_exe183 
+Cluster 0,1 Prototipo: class_exe107 [16 objetos]Objetos: class_exe163 class_exe179 class_exe182 class_exe107 class_exe157 class_exe177 class_exe9 class_exe85 class_exe151 class_exe94 class_exe28 class_exe58 class_exe106 class_exe152 class_exe11 class_exe99 
+Cluster 0,2 Prototipo: class_exe62 [28 objetos]Objetos: class_exe146 class_exe1 class_exe132 class_exe7 class_exe17 class_exe102 class_exe19 class_exe36 class_exe52 class_exe55 class_exe62 class_exe68 class_exe95 class_exe96 class_exe104 class_exe105 class_exe127 class_exe136 class_exe31 class_exe80 class_exe74 class_exe13 class_exe27 class_exe101 class_exe92 class_exe110 class_exe133 class_exe147 
+Cluster 0,3 Prototipo: class_exe196 [6 objetos]Objetos: class_exe49 class_exe196 class_exe202 class_exe204 class_exe210 class_exe197 
+Cluster 0,4 Prototipo: class_exe192 [5 objetos]Objetos: class_exe186 class_exe209 class_exe192 class_exe195 class_exe198 
+Cluster 1,0 Prototipo: class_exe39 [42 objetos]Objetos: class_exe20 class_exe23 class_exe25 class_exe39 class_exe61 class_exe77 class_exe82 class_exe109 class_exe116 class_exe120 class_exe124 class_exe126 class_exe129 class_exe149 class_exe213 class_exe214 class_exe48 class_exe93 class_exe141 class_exe50 class_exe165 class_exe168 class_exe83 class_exe67 class_exe70 class_exe121 class_exe175 class_exe144 class_exe56 class_exe159 class_exe170 class_exe173 class_exe181 class_exe81 class_exe33 class_exe184 class_exe60 class_exe21 class_exe51 class_exe131 class_exe174 class_exe114 
+Cluster 1,1 Prototipo: class_exe139 [48 objetos]Objetos: class_exe6 class_exe15 class_exe16 class_exe29 class_exe32 class_exe41 class_exe46 class_exe59 class_exe75 class_exe89 class_exe97 class_exe112 class_exe113 class_exe130 class_exe135 class_exe3 class_exe22 class_exe78 class_exe100 class_exe138 class_exe139 class_exe0 class_exe118 class_exe123 class_exe84 class_exe187 class_exe45 class_exe8 class_exe10 class_exe26 class_exe37 class_exe54 class_exe65 class_exe125 class_exe5 class_exe90 class_exe103 class_exe115 class_exe4 class_exe88 class_exe140 class_exe69 class_exe148 class_exe119 class_exe91 class_exe117 class_exe142 class_exe212 
+Cluster 1,2 Prototipo: class_exe111 [28 objetos]Objetos: class_exe44 class_exe188 class_exe14 class_exe24 class_exe30 class_exe40 class_exe43 class_exe47 class_exe53 class_exe57 class_exe71 class_exe76 class_exe87 class_exe98 class_exe18 class_exe66 class_exe86 class_exe111 class_exe134 class_exe143 class_exe35 class_exe34 class_exe64 class_exe79 class_exe122 class_exe108 class_exe63 class_exe12 
+Cluster 1,3 Prototipo: class_exe72 [17 objetos]Objetos: class_exe191 class_exe199 class_exe200 class_exe211 class_exe178 class_exe201 class_exe72 class_exe128 class_exe137 class_exe150 class_exe38 class_exe190 class_exe156 class_exe42 class_exe73 class_exe145 class_exe2 
+Cluster 1,4 Prototipo: class_exe206 [9 objetos]Objetos: class_exe185 class_exe189 class_exe193 class_exe194 class_exe203 class_exe206 class_exe207 class_exe208 class_exe205 
+
+Critério de adequação (energia): 34.9538264721
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,2	1,3	1,4	Total
+
+1	0	 9	 28	 1	 0	 31	 46	 27	 8	 0	 150
+2	16	 7	 0	 0	 0	 9	 0	 0	 3	 0	 35
+3	0	 0	 0	 5	 5	 2	 2	 1	 6	 9	 30
+Total	[16 16 28  6  5 42 48 28 17  9]
+Corrected Rand index: 0.33092870227
+
+F-measure(P,Q): 0.490715850497
+OERC: 0.144186046512
+
+#####################################
+Repetição do experimento: 25
+
+Cluster 0,0 Prototipo: class_exe208 [10 objetos]Objetos: class_exe185 class_exe190 class_exe191 class_exe197 class_exe199 class_exe200 class_exe201 class_exe203 class_exe208 class_exe189 
+Cluster 0,1 Prototipo: class_exe193 [11 objetos]Objetos: class_exe186 class_exe192 class_exe195 class_exe198 class_exe204 class_exe209 class_exe193 class_exe205 class_exe206 class_exe207 class_exe194 
+Cluster 0,2 Prototipo: class_exe119 [11 objetos]Objetos: class_exe119 class_exe32 class_exe202 class_exe1 class_exe196 class_exe49 class_exe7 class_exe146 class_exe210 class_exe17 class_exe113 
+Cluster 0,3 Prototipo: class_exe159 [17 objetos]Objetos: class_exe159 class_exe170 class_exe173 class_exe175 class_exe181 class_exe165 class_exe168 class_exe174 class_exe121 class_exe56 class_exe81 class_exe184 class_exe33 class_exe70 class_exe67 class_exe83 class_exe144 
+Cluster 0,4 Prototipo: class_exe158 [5 objetos]Objetos: class_exe153 class_exe155 class_exe158 class_exe169 class_exe176 
+Cluster 1,0 Prototipo: class_exe72 [12 objetos]Objetos: class_exe2 class_exe42 class_exe73 class_exe145 class_exe38 class_exe72 class_exe128 class_exe137 class_exe150 class_exe156 class_exe178 class_exe211 
+Cluster 1,1 Prototipo: class_exe111 [38 objetos]Objetos: class_exe108 class_exe79 class_exe12 class_exe63 class_exe64 class_exe136 class_exe122 class_exe127 class_exe34 class_exe31 class_exe66 class_exe35 class_exe18 class_exe19 class_exe27 class_exe30 class_exe47 class_exe52 class_exe53 class_exe57 class_exe62 class_exe71 class_exe76 class_exe80 class_exe86 class_exe98 class_exe101 class_exe110 class_exe111 class_exe134 class_exe143 class_exe188 class_exe14 class_exe24 class_exe40 class_exe43 class_exe44 class_exe87 
+Cluster 1,2 Prototipo: class_exe29 [58 objetos]Objetos: class_exe8 class_exe26 class_exe37 class_exe45 class_exe58 class_exe85 class_exe107 class_exe182 class_exe0 class_exe9 class_exe99 class_exe78 class_exe22 class_exe94 class_exe100 class_exe138 class_exe139 class_exe187 class_exe112 class_exe3 class_exe15 class_exe46 class_exe75 class_exe89 class_exe135 class_exe157 class_exe177 class_exe6 class_exe11 class_exe16 class_exe29 class_exe41 class_exe59 class_exe97 class_exe118 class_exe123 class_exe130 class_exe147 class_exe151 class_exe84 class_exe133 class_exe92 class_exe152 class_exe13 class_exe36 class_exe55 class_exe68 class_exe74 class_exe91 class_exe96 class_exe102 class_exe117 class_exe142 class_exe104 class_exe105 class_exe132 class_exe163 class_exe95 
+Cluster 1,3 Prototipo: class_exe126 [42 objetos]Objetos: class_exe93 class_exe213 class_exe39 class_exe48 class_exe141 class_exe25 class_exe20 class_exe61 class_exe77 class_exe109 class_exe124 class_exe129 class_exe116 class_exe126 class_exe21 class_exe23 class_exe51 class_exe131 class_exe149 class_exe214 class_exe60 class_exe82 class_exe120 class_exe114 class_exe212 class_exe4 class_exe5 class_exe69 class_exe88 class_exe140 class_exe148 class_exe103 class_exe115 class_exe10 class_exe28 class_exe90 class_exe106 class_exe179 class_exe65 class_exe125 class_exe50 class_exe54 
+Cluster 1,4 Prototipo: class_exe172 [11 objetos]Objetos: class_exe160 class_exe162 class_exe180 class_exe164 class_exe167 class_exe161 class_exe154 class_exe171 class_exe172 class_exe166 class_exe183 
+
+Critério de adequação (energia): 39.0175184282
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,2	1,3	1,4	Total
+
+1	0	 0	 8	 8	 0	 8	 37	 51	 38	 0	 150
+2	0	 0	 0	 9	 5	 3	 0	 6	 1	 11	 35
+3	10	 11	 3	 0	 0	 1	 1	 1	 3	 0	 30
+Total	[10 11 11 17  5 12 38 58 42 11]
+Corrected Rand index: 0.372759400749
+
+F-measure(P,Q): 0.494857598689
+OERC: 0.125581395349
+
+#####################################
+Repetição do experimento: 26
+
+Cluster 0,0 Prototipo: class_exe128 [19 objetos]Objetos: class_exe38 class_exe42 class_exe72 class_exe73 class_exe128 class_exe137 class_exe145 class_exe150 class_exe156 class_exe178 class_exe191 class_exe199 class_exe200 class_exe211 class_exe201 class_exe197 class_exe208 class_exe190 class_exe2 
+Cluster 0,1 Prototipo: class_exe111 [38 objetos]Objetos: class_exe12 class_exe31 class_exe63 class_exe101 class_exe127 class_exe136 class_exe34 class_exe35 class_exe108 class_exe122 class_exe18 class_exe64 class_exe66 class_exe86 class_exe111 class_exe134 class_exe143 class_exe14 class_exe24 class_exe30 class_exe40 class_exe43 class_exe47 class_exe53 class_exe57 class_exe71 class_exe76 class_exe79 class_exe87 class_exe98 class_exe188 class_exe19 class_exe27 class_exe44 class_exe52 class_exe62 class_exe80 class_exe110 
+Cluster 0,2 Prototipo: class_exe29 [46 objetos]Objetos: class_exe29 class_exe41 class_exe94 class_exe177 class_exe6 class_exe11 class_exe16 class_exe59 class_exe133 class_exe147 class_exe151 class_exe157 class_exe13 class_exe84 class_exe91 class_exe92 class_exe117 class_exe118 class_exe123 class_exe142 class_exe152 class_exe36 class_exe68 class_exe74 class_exe96 class_exe102 class_exe55 class_exe104 class_exe105 class_exe132 class_exe22 class_exe97 class_exe46 class_exe75 class_exe135 class_exe107 class_exe15 class_exe95 class_exe112 class_exe9 class_exe130 class_exe99 class_exe78 class_exe85 class_exe89 class_exe100 
+Cluster 0,3 Prototipo: class_exe168 [18 objetos]Objetos: class_exe170 class_exe173 class_exe175 class_exe181 class_exe165 class_exe168 class_exe70 class_exe121 class_exe159 class_exe50 class_exe83 class_exe67 class_exe144 class_exe39 class_exe163 class_exe48 class_exe93 class_exe56 
+Cluster 0,4 Prototipo: class_exe158 [5 objetos]Objetos: class_exe153 class_exe155 class_exe158 class_exe169 class_exe176 
+Cluster 1,0 Prototipo: class_exe193 [14 objetos]Objetos: class_exe185 class_exe186 class_exe189 class_exe192 class_exe193 class_exe194 class_exe195 class_exe198 class_exe203 class_exe204 class_exe205 class_exe206 class_exe207 class_exe209 
+Cluster 1,1 Prototipo: class_exe119 [11 objetos]Objetos: class_exe196 class_exe202 class_exe49 class_exe119 class_exe210 class_exe32 class_exe1 class_exe7 class_exe146 class_exe17 class_exe113 
+Cluster 1,2 Prototipo: class_exe115 [49 objetos]Objetos: class_exe5 class_exe212 class_exe214 class_exe69 class_exe20 class_exe21 class_exe23 class_exe25 class_exe51 class_exe60 class_exe61 class_exe77 class_exe82 class_exe109 class_exe114 class_exe116 class_exe120 class_exe124 class_exe126 class_exe129 class_exe131 class_exe148 class_exe149 class_exe213 class_exe0 class_exe3 class_exe4 class_exe8 class_exe10 class_exe26 class_exe28 class_exe37 class_exe45 class_exe54 class_exe58 class_exe65 class_exe88 class_exe90 class_exe103 class_exe106 class_exe115 class_exe125 class_exe138 class_exe139 class_exe140 class_exe179 class_exe182 class_exe187 class_exe141 
+Cluster 1,3 Prototipo: class_exe115 [0 objetos]Objetos: 
+Cluster 1,4 Prototipo: class_exe180 [15 objetos]Objetos: class_exe33 class_exe81 class_exe184 class_exe162 class_exe160 class_exe164 class_exe174 class_exe180 class_exe161 class_exe167 class_exe154 class_exe171 class_exe172 class_exe166 class_exe183 
+
+Critério de adequação (energia): 46.1136014827
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,2	1,4	Total
+
+1	8	 37	 42	 10	 0	 0	 8	 43	 2	 150
+2	3	 0	 4	 8	 5	 0	 0	 2	 13	 35
+3	8	 1	 0	 0	 0	 14	 3	 4	 0	 30
+Total	[19 38 46 18  5 14 11 49 15]
+Corrected Rand index: 0.35481405654
+
+F-measure(P,Q): 0.474953626483
+OERC: 0.162790697674
+
+#####################################
+Repetição do experimento: 27
+
+Cluster 0,0 Prototipo: class_exe183 [13 objetos]Objetos: class_exe153 class_exe154 class_exe155 class_exe158 class_exe161 class_exe164 class_exe166 class_exe167 class_exe169 class_exe171 class_exe172 class_exe176 class_exe183 
+Cluster 0,1 Prototipo: class_exe159 [21 objetos]Objetos: class_exe159 class_exe165 class_exe168 class_exe170 class_exe173 class_exe174 class_exe175 class_exe181 class_exe184 class_exe33 class_exe56 class_exe81 class_exe121 class_exe70 class_exe144 class_exe67 class_exe83 class_exe50 class_exe160 class_exe162 class_exe180 
+Cluster 0,2 Prototipo: class_exe213 [1 objetos]Objetos: class_exe213 
+Cluster 0,3 Prototipo: class_exe79 [13 objetos]Objetos: class_exe196 class_exe202 class_exe49 class_exe210 class_exe188 class_exe79 class_exe64 class_exe98 class_exe119 class_exe44 class_exe122 class_exe47 class_exe53 
+Cluster 0,4 Prototipo: class_exe62 [51 objetos]Objetos: class_exe13 class_exe36 class_exe74 class_exe91 class_exe92 class_exe104 class_exe117 class_exe133 class_exe142 class_exe105 class_exe68 class_exe95 class_exe96 class_exe132 class_exe55 class_exe102 class_exe152 class_exe62 class_exe80 class_exe110 class_exe27 class_exe101 class_exe1 class_exe17 class_exe19 class_exe52 class_exe146 class_exe31 class_exe7 class_exe127 class_exe12 class_exe34 class_exe35 class_exe63 class_exe136 class_exe108 class_exe111 class_exe134 class_exe143 class_exe18 class_exe66 class_exe86 class_exe76 class_exe24 class_exe30 class_exe43 class_exe57 class_exe71 class_exe40 class_exe14 class_exe87 
+Cluster 1,0 Prototipo: class_exe78 [49 objetos]Objetos: class_exe179 class_exe28 class_exe90 class_exe106 class_exe182 class_exe8 class_exe37 class_exe58 class_exe26 class_exe54 class_exe107 class_exe125 class_exe0 class_exe9 class_exe85 class_exe45 class_exe138 class_exe139 class_exe187 class_exe100 class_exe78 class_exe99 class_exe3 class_exe163 class_exe15 class_exe22 class_exe46 class_exe75 class_exe89 class_exe94 class_exe112 class_exe135 class_exe130 class_exe113 class_exe97 class_exe41 class_exe6 class_exe11 class_exe29 class_exe32 class_exe59 class_exe177 class_exe84 class_exe118 class_exe123 class_exe147 class_exe157 class_exe16 class_exe151 
+Cluster 1,1 Prototipo: class_exe23 [34 objetos]Objetos: class_exe129 class_exe214 class_exe5 class_exe212 class_exe25 class_exe141 class_exe93 class_exe124 class_exe61 class_exe77 class_exe69 class_exe20 class_exe23 class_exe60 class_exe126 class_exe149 class_exe39 class_exe48 class_exe109 class_exe116 class_exe120 class_exe148 class_exe4 class_exe10 class_exe21 class_exe82 class_exe88 class_exe103 class_exe114 class_exe131 class_exe140 class_exe51 class_exe65 class_exe115 
+Cluster 1,2 Prototipo: class_exe209 [6 objetos]Objetos: class_exe192 class_exe186 class_exe195 class_exe198 class_exe209 class_exe205 
+Cluster 1,3 Prototipo: class_exe185 [13 objetos]Objetos: class_exe193 class_exe206 class_exe207 class_exe194 class_exe185 class_exe189 class_exe203 class_exe204 class_exe208 class_exe197 class_exe191 class_exe200 class_exe199 
+Cluster 1,4 Prototipo: class_exe72 [14 objetos]Objetos: class_exe2 class_exe38 class_exe42 class_exe72 class_exe73 class_exe128 class_exe137 class_exe145 class_exe150 class_exe156 class_exe178 class_exe201 class_exe211 class_exe190 
+
+Critério de adequação (energia): 37.0849475877
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,2	1,3	1,4	Total
+
+1	0	 9	 0	 9	 50	 42	 32	 0	 0	 8	 150
+2	13	 12	 0	 0	 1	 6	 0	 0	 0	 3	 35
+3	0	 0	 1	 4	 0	 1	 2	 6	 13	 3	 30
+Total	[13 21  1 13 51 49 34  6 13 14]
+Corrected Rand index: 0.373818731881
+
+F-measure(P,Q): 0.519649925064
+OERC: 0.13488372093
+
+#####################################
+Repetição do experimento: 28
+
+Cluster 0,0 Prototipo: class_exe23 [35 objetos]Objetos: class_exe69 class_exe114 class_exe148 class_exe60 class_exe82 class_exe120 class_exe212 class_exe214 class_exe21 class_exe23 class_exe51 class_exe109 class_exe116 class_exe126 class_exe129 class_exe131 class_exe149 class_exe20 class_exe25 class_exe61 class_exe77 class_exe124 class_exe48 class_exe141 class_exe213 class_exe39 class_exe93 class_exe140 class_exe4 class_exe5 class_exe88 class_exe103 class_exe10 class_exe115 class_exe65 
+Cluster 0,1 Prototipo: class_exe78 [41 objetos]Objetos: class_exe6 class_exe15 class_exe29 class_exe41 class_exe59 class_exe89 class_exe97 class_exe112 class_exe138 class_exe139 class_exe0 class_exe9 class_exe11 class_exe22 class_exe45 class_exe46 class_exe75 class_exe78 class_exe85 class_exe94 class_exe99 class_exe100 class_exe107 class_exe135 class_exe147 class_exe151 class_exe157 class_exe177 class_exe26 class_exe54 class_exe58 class_exe125 class_exe182 class_exe8 class_exe37 class_exe28 class_exe106 class_exe179 class_exe163 class_exe90 class_exe152 
+Cluster 0,2 Prototipo: class_exe196 [6 objetos]Objetos: class_exe49 class_exe196 class_exe210 class_exe202 class_exe204 class_exe205 
+Cluster 0,3 Prototipo: class_exe192 [5 objetos]Objetos: class_exe186 class_exe192 class_exe195 class_exe198 class_exe209 
+Cluster 0,4 Prototipo: class_exe72 [14 objetos]Objetos: class_exe2 class_exe38 class_exe42 class_exe72 class_exe128 class_exe150 class_exe156 class_exe178 class_exe211 class_exe73 class_exe137 class_exe145 class_exe190 class_exe201 
+Cluster 1,0 Prototipo: class_exe183 [13 objetos]Objetos: class_exe153 class_exe155 class_exe158 class_exe166 class_exe169 class_exe176 class_exe183 class_exe171 class_exe172 class_exe154 class_exe164 class_exe167 class_exe161 
+Cluster 1,1 Prototipo: class_exe159 [21 objetos]Objetos: class_exe159 class_exe165 class_exe168 class_exe170 class_exe173 class_exe175 class_exe181 class_exe184 class_exe174 class_exe160 class_exe33 class_exe56 class_exe81 class_exe162 class_exe70 class_exe121 class_exe144 class_exe67 class_exe83 class_exe50 class_exe180 
+Cluster 1,2 Prototipo: class_exe111 [35 objetos]Objetos: class_exe14 class_exe18 class_exe24 class_exe30 class_exe40 class_exe43 class_exe47 class_exe53 class_exe57 class_exe66 class_exe71 class_exe86 class_exe87 class_exe111 class_exe134 class_exe12 class_exe27 class_exe31 class_exe35 class_exe76 class_exe101 class_exe143 class_exe34 class_exe62 class_exe63 class_exe80 class_exe108 class_exe110 class_exe127 class_exe44 class_exe64 class_exe98 class_exe122 class_exe188 class_exe79 
+Cluster 1,3 Prototipo: class_exe132 [33 objetos]Objetos: class_exe117 class_exe119 class_exe1 class_exe17 class_exe91 class_exe132 class_exe142 class_exe146 class_exe13 class_exe7 class_exe19 class_exe36 class_exe74 class_exe105 class_exe52 class_exe95 class_exe104 class_exe84 class_exe16 class_exe92 class_exe113 class_exe118 class_exe123 class_exe130 class_exe32 class_exe136 class_exe68 class_exe133 class_exe3 class_exe102 class_exe187 class_exe55 class_exe96 
+Cluster 1,4 Prototipo: class_exe185 [12 objetos]Objetos: class_exe185 class_exe191 class_exe197 class_exe199 class_exe208 class_exe189 class_exe200 class_exe203 class_exe194 class_exe206 class_exe207 class_exe193 
+
+Critério de adequação (energia): 34.0846466786
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,2	1,3	1,4	Total
+
+1	32	 34	 1	 0	 8	 0	 9	 34	 32	 0	 150
+2	0	 7	 0	 0	 3	 13	 12	 0	 0	 0	 35
+3	3	 0	 5	 5	 3	 0	 0	 1	 1	 12	 30
+Total	[35 41  6  5 14 13 21 35 33 12]
+Corrected Rand index: 0.320515344832
+
+F-measure(P,Q): 0.424355002843
+OERC: 0.13023255814
+
+#####################################
+Repetição do experimento: 29
+
+Cluster 0,0 Prototipo: class_exe70 [23 objetos]Objetos: class_exe39 class_exe48 class_exe50 class_exe67 class_exe70 class_exe83 class_exe93 class_exe121 class_exe141 class_exe165 class_exe168 class_exe175 class_exe25 class_exe144 class_exe159 class_exe170 class_exe173 class_exe181 class_exe213 class_exe56 class_exe81 class_exe33 class_exe184 
+Cluster 0,1 Prototipo: class_exe158 [5 objetos]Objetos: class_exe153 class_exe158 class_exe155 class_exe169 class_exe176 
+Cluster 0,2 Prototipo: class_exe196 [6 objetos]Objetos: class_exe49 class_exe210 class_exe196 class_exe202 class_exe204 class_exe197 
+Cluster 0,3 Prototipo: class_exe72 [18 objetos]Objetos: class_exe2 class_exe38 class_exe42 class_exe72 class_exe73 class_exe128 class_exe137 class_exe145 class_exe150 class_exe156 class_exe178 class_exe191 class_exe199 class_exe200 class_exe201 class_exe211 class_exe190 class_exe208 
+Cluster 0,4 Prototipo: class_exe193 [13 objetos]Objetos: class_exe186 class_exe189 class_exe192 class_exe193 class_exe194 class_exe195 class_exe198 class_exe205 class_exe206 class_exe209 class_exe207 class_exe185 class_exe203 
+Cluster 1,0 Prototipo: class_exe172 [12 objetos]Objetos: class_exe154 class_exe160 class_exe161 class_exe162 class_exe164 class_exe166 class_exe167 class_exe171 class_exe172 class_exe174 class_exe180 class_exe183 
+Cluster 1,1 Prototipo: class_exe59 [24 objetos]Objetos: class_exe32 class_exe46 class_exe135 class_exe113 class_exe119 class_exe59 class_exe15 class_exe84 class_exe118 class_exe123 class_exe89 class_exe1 class_exe3 class_exe11 class_exe117 class_exe147 class_exe75 class_exe100 class_exe6 class_exe146 class_exe7 class_exe78 class_exe139 class_exe97 
+Cluster 1,2 Prototipo: class_exe111 [36 objetos]Objetos: class_exe110 class_exe80 class_exe76 class_exe101 class_exe143 class_exe34 class_exe86 class_exe12 class_exe30 class_exe31 class_exe35 class_exe40 class_exe53 class_exe63 class_exe66 class_exe108 class_exe111 class_exe47 class_exe64 class_exe122 class_exe98 class_exe79 class_exe188 class_exe18 class_exe57 class_exe14 class_exe24 class_exe43 class_exe71 class_exe87 class_exe27 class_exe44 class_exe127 class_exe134 class_exe136 class_exe62 
+Cluster 1,3 Prototipo: class_exe92 [29 objetos]Objetos: class_exe13 class_exe17 class_exe19 class_exe36 class_exe52 class_exe55 class_exe68 class_exe74 class_exe91 class_exe92 class_exe95 class_exe96 class_exe102 class_exe104 class_exe105 class_exe132 class_exe133 class_exe151 class_exe177 class_exe16 class_exe22 class_exe29 class_exe41 class_exe94 class_exe112 class_exe130 class_exe142 class_exe152 class_exe157 
+Cluster 1,4 Prototipo: class_exe115 [49 objetos]Objetos: class_exe4 class_exe5 class_exe8 class_exe10 class_exe23 class_exe26 class_exe28 class_exe37 class_exe45 class_exe58 class_exe60 class_exe65 class_exe69 class_exe82 class_exe85 class_exe88 class_exe90 class_exe99 class_exe103 class_exe106 class_exe107 class_exe114 class_exe115 class_exe116 class_exe120 class_exe124 class_exe125 class_exe126 class_exe131 class_exe138 class_exe140 class_exe148 class_exe149 class_exe179 class_exe182 class_exe187 class_exe212 class_exe214 class_exe0 class_exe9 class_exe54 class_exe21 class_exe51 class_exe109 class_exe163 class_exe129 class_exe20 class_exe61 class_exe77 
+
+Critério de adequação (energia): 43.507145269
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,2	1,3	1,4	Total
+
+1	14	 0	 1	 8	 0	 0	 24	 35	 25	 43	 150
+2	8	 5	 0	 3	 0	 12	 0	 0	 4	 3	 35
+3	1	 0	 5	 7	 13	 0	 0	 1	 0	 3	 30
+Total	[23  5  6 18 13 12 24 36 29 49]
+Corrected Rand index: 0.317133870882
+
+F-measure(P,Q): 0.46900463215
+OERC: 0.144186046512
+
+#####################################
+Repetição do experimento: 30
+
+Cluster 0,0 Prototipo: class_exe193 [15 objetos]Objetos: class_exe185 class_exe186 class_exe189 class_exe192 class_exe193 class_exe194 class_exe195 class_exe198 class_exe203 class_exe204 class_exe205 class_exe206 class_exe207 class_exe209 class_exe202 
+Cluster 0,1 Prototipo: class_exe128 [20 objetos]Objetos: class_exe2 class_exe38 class_exe42 class_exe72 class_exe73 class_exe128 class_exe145 class_exe150 class_exe156 class_exe178 class_exe137 class_exe190 class_exe191 class_exe199 class_exe200 class_exe201 class_exe211 class_exe197 class_exe208 class_exe44 
+Cluster 0,2 Prototipo: class_exe39 [32 objetos]Objetos: class_exe20 class_exe21 class_exe33 class_exe39 class_exe48 class_exe50 class_exe51 class_exe56 class_exe61 class_exe67 class_exe70 class_exe77 class_exe81 class_exe82 class_exe83 class_exe109 class_exe114 class_exe116 class_exe120 class_exe121 class_exe126 class_exe131 class_exe159 class_exe163 class_exe165 class_exe168 class_exe170 class_exe173 class_exe174 class_exe175 class_exe181 class_exe184 
+Cluster 0,3 Prototipo: class_exe183 [16 objetos]Objetos: class_exe153 class_exe154 class_exe155 class_exe158 class_exe160 class_exe161 class_exe162 class_exe164 class_exe166 class_exe167 class_exe169 class_exe171 class_exe172 class_exe176 class_exe180 class_exe183 
+Cluster 0,4 Prototipo: class_exe129 [16 objetos]Objetos: class_exe5 class_exe69 class_exe212 class_exe213 class_exe214 class_exe129 class_exe25 class_exe93 class_exe141 class_exe124 class_exe103 class_exe60 class_exe144 class_exe148 class_exe23 class_exe149 
+Cluster 1,0 Prototipo: class_exe63 [53 objetos]Objetos: class_exe49 class_exe196 class_exe1 class_exe7 class_exe12 class_exe14 class_exe17 class_exe18 class_exe19 class_exe24 class_exe27 class_exe30 class_exe31 class_exe34 class_exe35 class_exe36 class_exe40 class_exe43 class_exe47 class_exe52 class_exe53 class_exe55 class_exe57 class_exe62 class_exe63 class_exe64 class_exe66 class_exe68 class_exe71 class_exe76 class_exe79 class_exe80 class_exe86 class_exe87 class_exe95 class_exe96 class_exe98 class_exe101 class_exe102 class_exe104 class_exe105 class_exe108 class_exe110 class_exe111 class_exe122 class_exe127 class_exe132 class_exe134 class_exe136 class_exe143 class_exe146 class_exe188 class_exe210 
+Cluster 1,1 Prototipo: class_exe63 [0 objetos]Objetos: 
+Cluster 1,2 Prototipo: class_exe75 [63 objetos]Objetos: class_exe3 class_exe6 class_exe11 class_exe13 class_exe15 class_exe16 class_exe22 class_exe29 class_exe41 class_exe74 class_exe75 class_exe89 class_exe91 class_exe92 class_exe94 class_exe97 class_exe112 class_exe130 class_exe133 class_exe142 class_exe151 class_exe152 class_exe157 class_exe177 class_exe0 class_exe9 class_exe10 class_exe45 class_exe46 class_exe59 class_exe78 class_exe84 class_exe85 class_exe99 class_exe100 class_exe107 class_exe113 class_exe117 class_exe118 class_exe123 class_exe135 class_exe138 class_exe139 class_exe147 class_exe187 class_exe8 class_exe26 class_exe32 class_exe37 class_exe54 class_exe58 class_exe65 class_exe125 class_exe182 class_exe4 class_exe88 class_exe90 class_exe115 class_exe119 class_exe106 class_exe140 class_exe28 class_exe179 
+Cluster 1,3 Prototipo: class_exe39 [0 objetos]Objetos: 
+Cluster 1,4 Prototipo: class_exe39 [0 objetos]Objetos: 
+
+Critério de adequação (energia): 50.9954010366
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,2	Total
+
+1	0	 9	 22	 0	 13	 50	 56	 150
+2	0	 3	 10	 16	 0	 0	 6	 35
+3	15	 8	 0	 0	 3	 3	 1	 30
+Total	[15 20 32 16 16 53 63]
+Corrected Rand index: 0.41431761629
+
+F-measure(P,Q): 0.562018715118
+OERC: 0.158139534884
+
+#####################################
+Repetição do experimento: 31
+
+Cluster 0,0 Prototipo: class_exe193 [14 objetos]Objetos: class_exe185 class_exe186 class_exe192 class_exe193 class_exe194 class_exe195 class_exe198 class_exe203 class_exe204 class_exe205 class_exe206 class_exe207 class_exe209 class_exe189 
+Cluster 0,1 Prototipo: class_exe210 [6 objetos]Objetos: class_exe196 class_exe49 class_exe210 class_exe202 class_exe197 class_exe79 
+Cluster 0,2 Prototipo: class_exe97 [46 objetos]Objetos: class_exe22 class_exe78 class_exe99 class_exe11 class_exe41 class_exe75 class_exe100 class_exe112 class_exe6 class_exe15 class_exe16 class_exe29 class_exe46 class_exe89 class_exe97 class_exe130 class_exe133 class_exe135 class_exe147 class_exe59 class_exe32 class_exe84 class_exe92 class_exe113 class_exe118 class_exe119 class_exe123 class_exe13 class_exe36 class_exe68 class_exe74 class_exe91 class_exe95 class_exe102 class_exe104 class_exe105 class_exe117 class_exe132 class_exe142 class_exe1 class_exe17 class_exe146 class_exe3 class_exe138 class_exe139 class_exe187 
+Cluster 0,3 Prototipo: class_exe177 [10 objetos]Objetos: class_exe152 class_exe151 class_exe157 class_exe163 class_exe177 class_exe182 class_exe107 class_exe94 class_exe85 class_exe80 
+Cluster 0,4 Prototipo: class_exe158 [5 objetos]Objetos: class_exe153 class_exe158 class_exe155 class_exe169 class_exe176 
+Cluster 1,0 Prototipo: class_exe72 [18 objetos]Objetos: class_exe2 class_exe38 class_exe42 class_exe72 class_exe73 class_exe128 class_exe145 class_exe150 class_exe156 class_exe178 class_exe137 class_exe211 class_exe190 class_exe191 class_exe199 class_exe200 class_exe201 class_exe208 
+Cluster 1,1 Prototipo: class_exe111 [39 objetos]Objetos: class_exe12 class_exe34 class_exe35 class_exe63 class_exe64 class_exe66 class_exe108 class_exe111 class_exe122 class_exe134 class_exe136 class_exe143 class_exe18 class_exe53 class_exe57 class_exe71 class_exe76 class_exe86 class_exe43 class_exe14 class_exe24 class_exe30 class_exe40 class_exe47 class_exe87 class_exe98 class_exe127 class_exe31 class_exe101 class_exe27 class_exe110 class_exe44 class_exe62 class_exe19 class_exe52 class_exe188 class_exe7 class_exe55 class_exe96 
+Cluster 1,2 Prototipo: class_exe115 [34 objetos]Objetos: class_exe5 class_exe21 class_exe23 class_exe28 class_exe54 class_exe60 class_exe65 class_exe69 class_exe82 class_exe90 class_exe103 class_exe106 class_exe114 class_exe115 class_exe116 class_exe120 class_exe125 class_exe131 class_exe149 class_exe212 class_exe214 class_exe4 class_exe8 class_exe10 class_exe26 class_exe37 class_exe58 class_exe88 class_exe140 class_exe148 class_exe179 class_exe45 class_exe0 class_exe9 
+Cluster 1,3 Prototipo: class_exe39 [29 objetos]Objetos: class_exe39 class_exe48 class_exe50 class_exe67 class_exe83 class_exe93 class_exe121 class_exe141 class_exe165 class_exe168 class_exe213 class_exe70 class_exe175 class_exe144 class_exe170 class_exe181 class_exe173 class_exe159 class_exe56 class_exe25 class_exe81 class_exe20 class_exe61 class_exe77 class_exe129 class_exe109 class_exe124 class_exe51 class_exe126 
+Cluster 1,4 Prototipo: class_exe180 [14 objetos]Objetos: class_exe33 class_exe154 class_exe160 class_exe161 class_exe162 class_exe164 class_exe167 class_exe171 class_exe172 class_exe174 class_exe180 class_exe184 class_exe183 class_exe166 
+
+Critério de adequação (energia): 43.6857369285
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,2	1,3	1,4	Total
+
+1	0	 2	 45	 4	 0	 8	 38	 31	 21	 1	 150
+2	0	 0	 0	 6	 5	 3	 0	 1	 7	 13	 35
+3	14	 4	 1	 0	 0	 7	 1	 2	 1	 0	 30
+Total	[14  6 46 10  5 18 39 34 29 14]
+Corrected Rand index: 0.345079133919
+
+F-measure(P,Q): 0.495534365966
+OERC: 0.139534883721
+
+#####################################
+Repetição do experimento: 32
+
+Cluster 0,0 Prototipo: class_exe62 [67 objetos]Objetos: class_exe1 class_exe6 class_exe7 class_exe12 class_exe13 class_exe14 class_exe16 class_exe17 class_exe18 class_exe19 class_exe24 class_exe27 class_exe29 class_exe30 class_exe31 class_exe34 class_exe35 class_exe36 class_exe40 class_exe43 class_exe47 class_exe52 class_exe53 class_exe55 class_exe57 class_exe59 class_exe62 class_exe63 class_exe64 class_exe66 class_exe68 class_exe71 class_exe74 class_exe76 class_exe79 class_exe80 class_exe84 class_exe86 class_exe87 class_exe91 class_exe92 class_exe95 class_exe96 class_exe98 class_exe101 class_exe102 class_exe104 class_exe105 class_exe108 class_exe110 class_exe111 class_exe117 class_exe118 class_exe119 class_exe122 class_exe123 class_exe127 class_exe132 class_exe133 class_exe134 class_exe136 class_exe142 class_exe143 class_exe146 class_exe147 class_exe188 class_exe44 
+Cluster 0,1 Prototipo: class_exe177 [10 objetos]Objetos: class_exe157 class_exe151 class_exe152 class_exe163 class_exe177 class_exe94 class_exe107 class_exe182 class_exe85 class_exe11 
+Cluster 0,2 Prototipo: class_exe158 [5 objetos]Objetos: class_exe153 class_exe155 class_exe158 class_exe169 class_exe176 
+Cluster 0,3 Prototipo: class_exe72 [14 objetos]Objetos: class_exe2 class_exe73 class_exe145 class_exe38 class_exe42 class_exe72 class_exe128 class_exe137 class_exe150 class_exe156 class_exe178 class_exe211 class_exe201 class_exe190 
+Cluster 0,4 Prototipo: class_exe185 [12 objetos]Objetos: class_exe208 class_exe185 class_exe197 class_exe200 class_exe199 class_exe191 class_exe203 class_exe189 class_exe194 class_exe206 class_exe207 class_exe193 
+Cluster 1,0 Prototipo: class_exe115 [64 objetos]Objetos: class_exe39 class_exe20 class_exe21 class_exe23 class_exe25 class_exe28 class_exe51 class_exe60 class_exe61 class_exe69 class_exe77 class_exe82 class_exe109 class_exe114 class_exe116 class_exe120 class_exe124 class_exe126 class_exe129 class_exe131 class_exe148 class_exe149 class_exe179 class_exe212 class_exe214 class_exe4 class_exe88 class_exe90 class_exe106 class_exe115 class_exe140 class_exe5 class_exe8 class_exe26 class_exe37 class_exe54 class_exe58 class_exe103 class_exe125 class_exe9 class_exe10 class_exe65 class_exe213 class_exe0 class_exe45 class_exe78 class_exe99 class_exe100 class_exe138 class_exe139 class_exe187 class_exe3 class_exe15 class_exe22 class_exe46 class_exe75 class_exe89 class_exe112 class_exe130 class_exe135 class_exe113 class_exe97 class_exe41 class_exe32 
+Cluster 1,1 Prototipo: class_exe164 [11 objetos]Objetos: class_exe154 class_exe161 class_exe164 class_exe167 class_exe171 class_exe172 class_exe180 class_exe160 class_exe166 class_exe183 class_exe174 
+Cluster 1,2 Prototipo: class_exe159 [21 objetos]Objetos: class_exe170 class_exe173 class_exe175 class_exe181 class_exe159 class_exe56 class_exe165 class_exe168 class_exe81 class_exe184 class_exe70 class_exe144 class_exe33 class_exe67 class_exe83 class_exe121 class_exe93 class_exe50 class_exe141 class_exe162 class_exe48 
+Cluster 1,3 Prototipo: class_exe196 [6 objetos]Objetos: class_exe49 class_exe196 class_exe202 class_exe204 class_exe210 class_exe205 
+Cluster 1,4 Prototipo: class_exe192 [5 objetos]Objetos: class_exe186 class_exe209 class_exe192 class_exe195 class_exe198 
+
+Critério de adequação (energia): 34.0716688456
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,2	1,3	1,4	Total
+
+1	66	 4	 0	 8	 0	 59	 0	 12	 1	 0	 150
+2	0	 6	 5	 3	 0	 1	 11	 9	 0	 0	 35
+3	1	 0	 0	 3	 12	 4	 0	 0	 5	 5	 30
+Total	[67 10  5 14 12 64 11 21  6  5]
+Corrected Rand index: 0.492500292659
+
+F-measure(P,Q): 0.581982452135
+OERC: 0.120930232558
+
+#####################################
+Repetição do experimento: 33
+
+Cluster 0,0 Prototipo: class_exe183 [16 objetos]Objetos: class_exe153 class_exe154 class_exe155 class_exe158 class_exe160 class_exe161 class_exe162 class_exe164 class_exe166 class_exe167 class_exe169 class_exe171 class_exe172 class_exe176 class_exe180 class_exe183 
+Cluster 0,1 Prototipo: class_exe177 [10 objetos]Objetos: class_exe157 class_exe163 class_exe151 class_exe177 class_exe152 class_exe94 class_exe107 class_exe182 class_exe80 class_exe85 
+Cluster 0,2 Prototipo: class_exe72 [18 objetos]Objetos: class_exe38 class_exe42 class_exe72 class_exe128 class_exe137 class_exe150 class_exe156 class_exe191 class_exe199 class_exe200 class_exe201 class_exe211 class_exe178 class_exe190 class_exe208 class_exe73 class_exe2 class_exe145 
+Cluster 0,3 Prototipo: class_exe193 [13 objetos]Objetos: class_exe185 class_exe186 class_exe192 class_exe193 class_exe195 class_exe198 class_exe205 class_exe206 class_exe209 class_exe194 class_exe203 class_exe207 class_exe189 
+Cluster 0,4 Prototipo: class_exe196 [6 objetos]Objetos: class_exe196 class_exe202 class_exe204 class_exe49 class_exe210 class_exe197 
+Cluster 1,0 Prototipo: class_exe39 [37 objetos]Objetos: class_exe20 class_exe23 class_exe25 class_exe39 class_exe48 class_exe50 class_exe51 class_exe61 class_exe67 class_exe70 class_exe77 class_exe83 class_exe93 class_exe109 class_exe116 class_exe121 class_exe124 class_exe126 class_exe129 class_exe141 class_exe165 class_exe168 class_exe175 class_exe213 class_exe56 class_exe144 class_exe159 class_exe170 class_exe181 class_exe33 class_exe81 class_exe184 class_exe173 class_exe131 class_exe174 class_exe21 class_exe149 
+Cluster 1,1 Prototipo: class_exe125 [43 objetos]Objetos: class_exe0 class_exe4 class_exe8 class_exe9 class_exe10 class_exe22 class_exe26 class_exe28 class_exe37 class_exe45 class_exe54 class_exe58 class_exe65 class_exe78 class_exe88 class_exe90 class_exe99 class_exe100 class_exe103 class_exe106 class_exe114 class_exe115 class_exe125 class_exe140 class_exe179 class_exe5 class_exe15 class_exe46 class_exe60 class_exe69 class_exe75 class_exe82 class_exe89 class_exe112 class_exe120 class_exe135 class_exe138 class_exe139 class_exe148 class_exe187 class_exe212 class_exe214 class_exe3 
+Cluster 1,2 Prototipo: class_exe111 [34 objetos]Objetos: class_exe43 class_exe24 class_exe87 class_exe14 class_exe40 class_exe57 class_exe71 class_exe44 class_exe30 class_exe47 class_exe98 class_exe188 class_exe18 class_exe53 class_exe66 class_exe76 class_exe86 class_exe111 class_exe143 class_exe34 class_exe35 class_exe110 class_exe134 class_exe12 class_exe31 class_exe63 class_exe64 class_exe101 class_exe108 class_exe122 class_exe27 class_exe127 class_exe62 class_exe79 
+Cluster 1,3 Prototipo: class_exe132 [38 objetos]Objetos: class_exe1 class_exe6 class_exe7 class_exe11 class_exe13 class_exe16 class_exe17 class_exe19 class_exe29 class_exe32 class_exe36 class_exe41 class_exe52 class_exe55 class_exe59 class_exe68 class_exe74 class_exe84 class_exe91 class_exe92 class_exe95 class_exe96 class_exe97 class_exe102 class_exe104 class_exe105 class_exe113 class_exe117 class_exe118 class_exe119 class_exe123 class_exe130 class_exe132 class_exe133 class_exe136 class_exe142 class_exe146 class_exe147 
+Cluster 1,4 Prototipo: class_exe132 [0 objetos]Objetos: 
+
+Critério de adequação (energia): 47.3567599341
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,2	1,3	Total
+
+1	0	 4	 8	 0	 1	 27	 39	 33	 38	 150
+2	16	 6	 3	 0	 0	 9	 1	 0	 0	 35
+3	0	 0	 7	 13	 5	 1	 3	 1	 0	 30
+Total	[16 10 18 13  6 37 43 34 38]
+Corrected Rand index: 0.342158064781
+
+F-measure(P,Q): 0.468551707301
+OERC: 0.139534883721
+
+#####################################
+Repetição do experimento: 34
+
+Cluster 0,0 Prototipo: class_exe100 [48 objetos]Objetos: class_exe0 class_exe3 class_exe4 class_exe5 class_exe6 class_exe8 class_exe9 class_exe10 class_exe15 class_exe22 class_exe26 class_exe29 class_exe32 class_exe37 class_exe41 class_exe45 class_exe46 class_exe54 class_exe58 class_exe59 class_exe65 class_exe75 class_exe78 class_exe85 class_exe89 class_exe90 class_exe97 class_exe99 class_exe100 class_exe103 class_exe112 class_exe113 class_exe115 class_exe125 class_exe130 class_exe135 class_exe138 class_exe139 class_exe140 class_exe187 class_exe28 class_exe69 class_exe88 class_exe106 class_exe148 class_exe212 class_exe11 class_exe119 
+Cluster 0,1 Prototipo: class_exe36 [28 objetos]Objetos: class_exe1 class_exe102 class_exe68 class_exe36 class_exe55 class_exe133 class_exe17 class_exe74 class_exe92 class_exe95 class_exe96 class_exe104 class_exe105 class_exe132 class_exe146 class_exe13 class_exe19 class_exe52 class_exe91 class_exe117 class_exe142 class_exe7 class_exe16 class_exe147 class_exe62 class_exe123 class_exe118 class_exe84 
+Cluster 0,2 Prototipo: class_exe72 [14 objetos]Objetos: class_exe2 class_exe38 class_exe42 class_exe73 class_exe128 class_exe145 class_exe156 class_exe72 class_exe150 class_exe137 class_exe178 class_exe211 class_exe190 class_exe201 
+Cluster 0,3 Prototipo: class_exe196 [6 objetos]Objetos: class_exe49 class_exe196 class_exe210 class_exe202 class_exe204 class_exe205 
+Cluster 0,4 Prototipo: class_exe192 [5 objetos]Objetos: class_exe186 class_exe192 class_exe195 class_exe198 class_exe209 
+Cluster 1,0 Prototipo: class_exe39 [43 objetos]Objetos: class_exe56 class_exe67 class_exe70 class_exe81 class_exe83 class_exe121 class_exe144 class_exe159 class_exe165 class_exe168 class_exe93 class_exe141 class_exe213 class_exe50 class_exe39 class_exe48 class_exe25 class_exe20 class_exe61 class_exe77 class_exe124 class_exe129 class_exe109 class_exe116 class_exe126 class_exe23 class_exe149 class_exe170 class_exe175 class_exe181 class_exe33 class_exe173 class_exe184 class_exe51 class_exe214 class_exe131 class_exe21 class_exe82 class_exe60 class_exe120 class_exe174 class_exe114 class_exe179 
+Cluster 1,1 Prototipo: class_exe183 [16 objetos]Objetos: class_exe171 class_exe154 class_exe161 class_exe164 class_exe166 class_exe167 class_exe172 class_exe176 class_exe180 class_exe183 class_exe153 class_exe155 class_exe158 class_exe160 class_exe162 class_exe169 
+Cluster 1,2 Prototipo: class_exe177 [9 objetos]Objetos: class_exe157 class_exe152 class_exe163 class_exe151 class_exe80 class_exe177 class_exe182 class_exe107 class_exe94 
+Cluster 1,3 Prototipo: class_exe111 [34 objetos]Objetos: class_exe12 class_exe63 class_exe64 class_exe79 class_exe108 class_exe127 class_exe136 class_exe27 class_exe31 class_exe34 class_exe35 class_exe101 class_exe122 class_exe66 class_exe111 class_exe143 class_exe134 class_exe18 class_exe30 class_exe47 class_exe53 class_exe57 class_exe71 class_exe76 class_exe86 class_exe98 class_exe188 class_exe14 class_exe24 class_exe40 class_exe43 class_exe87 class_exe44 class_exe110 
+Cluster 1,4 Prototipo: class_exe185 [12 objetos]Objetos: class_exe191 class_exe197 class_exe199 class_exe200 class_exe185 class_exe189 class_exe203 class_exe208 class_exe194 class_exe206 class_exe207 class_exe193 
+
+Critério de adequação (energia): 35.696547142
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,2	1,3	1,4	Total
+
+1	46	 28	 8	 1	 0	 31	 0	 3	 33	 0	 150
+2	0	 0	 3	 0	 0	 10	 16	 6	 0	 0	 35
+3	2	 0	 3	 5	 5	 2	 0	 0	 1	 12	 30
+Total	[48 28 14  6  5 43 16  9 34 12]
+Corrected Rand index: 0.349513307771
+
+F-measure(P,Q): 0.506049354203
+OERC: 0.116279069767
+
+#####################################
+Repetição do experimento: 35
+
+Cluster 0,0 Prototipo: class_exe167 [10 objetos]Objetos: class_exe161 class_exe167 class_exe174 class_exe164 class_exe154 class_exe171 class_exe166 class_exe172 class_exe183 class_exe180 
+Cluster 0,1 Prototipo: class_exe107 [15 objetos]Objetos: class_exe163 class_exe157 class_exe179 class_exe182 class_exe85 class_exe94 class_exe107 class_exe151 class_exe177 class_exe9 class_exe11 class_exe58 class_exe147 class_exe152 class_exe106 
+Cluster 0,2 Prototipo: class_exe45 [43 objetos]Objetos: class_exe69 class_exe114 class_exe120 class_exe148 class_exe212 class_exe4 class_exe140 class_exe103 class_exe10 class_exe88 class_exe28 class_exe65 class_exe90 class_exe115 class_exe8 class_exe26 class_exe37 class_exe54 class_exe125 class_exe187 class_exe0 class_exe45 class_exe100 class_exe138 class_exe139 class_exe3 class_exe15 class_exe22 class_exe41 class_exe75 class_exe78 class_exe89 class_exe97 class_exe99 class_exe112 class_exe130 class_exe6 class_exe29 class_exe16 class_exe91 class_exe13 class_exe92 class_exe142 
+Cluster 0,3 Prototipo: class_exe119 [19 objetos]Objetos: class_exe202 class_exe196 class_exe32 class_exe119 class_exe49 class_exe210 class_exe1 class_exe84 class_exe123 class_exe118 class_exe59 class_exe113 class_exe117 class_exe7 class_exe146 class_exe132 class_exe5 class_exe46 class_exe135 
+Cluster 0,4 Prototipo: class_exe193 [14 objetos]Objetos: class_exe185 class_exe194 class_exe203 class_exe206 class_exe186 class_exe192 class_exe193 class_exe195 class_exe198 class_exe204 class_exe205 class_exe209 class_exe189 class_exe207 
+Cluster 1,0 Prototipo: class_exe158 [5 objetos]Objetos: class_exe153 class_exe155 class_exe158 class_exe169 class_exe176 
+Cluster 1,1 Prototipo: class_exe184 [8 objetos]Objetos: class_exe33 class_exe160 class_exe162 class_exe81 class_exe184 class_exe56 class_exe144 class_exe159 
+Cluster 1,2 Prototipo: class_exe39 [33 objetos]Objetos: class_exe50 class_exe67 class_exe70 class_exe83 class_exe121 class_exe165 class_exe168 class_exe170 class_exe181 class_exe39 class_exe48 class_exe93 class_exe141 class_exe213 class_exe173 class_exe25 class_exe20 class_exe61 class_exe77 class_exe109 class_exe124 class_exe23 class_exe116 class_exe126 class_exe129 class_exe131 class_exe21 class_exe51 class_exe175 class_exe149 class_exe60 class_exe82 class_exe214 
+Cluster 1,3 Prototipo: class_exe35 [48 objetos]Objetos: class_exe133 class_exe74 class_exe36 class_exe55 class_exe68 class_exe95 class_exe96 class_exe102 class_exe104 class_exe105 class_exe17 class_exe52 class_exe62 class_exe19 class_exe80 class_exe110 class_exe127 class_exe12 class_exe27 class_exe31 class_exe63 class_exe101 class_exe108 class_exe136 class_exe34 class_exe35 class_exe122 class_exe143 class_exe18 class_exe64 class_exe66 class_exe71 class_exe76 class_exe86 class_exe111 class_exe134 class_exe30 class_exe53 class_exe57 class_exe79 class_exe14 class_exe24 class_exe40 class_exe43 class_exe47 class_exe87 class_exe98 class_exe188 
+Cluster 1,4 Prototipo: class_exe128 [20 objetos]Objetos: class_exe2 class_exe38 class_exe42 class_exe44 class_exe72 class_exe73 class_exe128 class_exe137 class_exe145 class_exe150 class_exe156 class_exe178 class_exe190 class_exe191 class_exe197 class_exe199 class_exe200 class_exe201 class_exe211 class_exe208 
+
+Critério de adequação (energia): 45.2185473363
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,2	1,3	1,4	Total
+
+1	0	 8	 41	 16	 0	 0	 4	 25	 47	 9	 150
+2	10	 7	 0	 0	 0	 5	 4	 6	 0	 3	 35
+3	0	 0	 2	 3	 14	 0	 0	 2	 1	 8	 30
+Total	[10 15 43 19 14  5  8 33 48 20]
+Corrected Rand index: 0.339522198298
+
+F-measure(P,Q): 0.492365515621
+OERC: 0.167441860465
+
+#####################################
+Repetição do experimento: 36
+
+Cluster 0,0 Prototipo: class_exe171 [7 objetos]Objetos: class_exe154 class_exe161 class_exe172 class_exe171 class_exe166 class_exe183 class_exe176 
+Cluster 0,1 Prototipo: class_exe159 [20 objetos]Objetos: class_exe175 class_exe56 class_exe144 class_exe159 class_exe170 class_exe173 class_exe181 class_exe33 class_exe70 class_exe81 class_exe165 class_exe168 class_exe184 class_exe121 class_exe67 class_exe83 class_exe50 class_exe93 class_exe141 class_exe48 
+Cluster 0,2 Prototipo: class_exe115 [69 objetos]Objetos: class_exe20 class_exe25 class_exe61 class_exe77 class_exe109 class_exe116 class_exe23 class_exe39 class_exe124 class_exe126 class_exe129 class_exe149 class_exe213 class_exe131 class_exe21 class_exe51 class_exe60 class_exe82 class_exe120 class_exe214 class_exe114 class_exe212 class_exe69 class_exe148 class_exe4 class_exe5 class_exe28 class_exe88 class_exe90 class_exe103 class_exe106 class_exe115 class_exe140 class_exe179 class_exe10 class_exe65 class_exe37 class_exe125 class_exe8 class_exe26 class_exe54 class_exe58 class_exe163 class_exe182 class_exe0 class_exe9 class_exe45 class_exe85 class_exe107 class_exe78 class_exe99 class_exe100 class_exe138 class_exe139 class_exe187 class_exe3 class_exe15 class_exe89 class_exe112 class_exe130 class_exe22 class_exe41 class_exe46 class_exe75 class_exe94 class_exe97 class_exe113 class_exe135 class_exe32 
+Cluster 0,3 Prototipo: class_exe62 [72 objetos]Objetos: class_exe6 class_exe11 class_exe29 class_exe59 class_exe177 class_exe13 class_exe16 class_exe84 class_exe91 class_exe92 class_exe117 class_exe118 class_exe123 class_exe133 class_exe142 class_exe147 class_exe151 class_exe157 class_exe74 class_exe119 class_exe36 class_exe55 class_exe68 class_exe96 class_exe102 class_exe104 class_exe105 class_exe132 class_exe152 class_exe1 class_exe17 class_exe95 class_exe146 class_exe7 class_exe19 class_exe52 class_exe62 class_exe80 class_exe127 class_exe27 class_exe31 class_exe101 class_exe110 class_exe12 class_exe34 class_exe35 class_exe63 class_exe108 class_exe136 class_exe143 class_exe66 class_exe111 class_exe122 class_exe134 class_exe18 class_exe53 class_exe76 class_exe86 class_exe64 class_exe79 class_exe71 class_exe24 class_exe30 class_exe43 class_exe47 class_exe57 class_exe14 class_exe40 class_exe87 class_exe98 class_exe188 class_exe44 
+Cluster 0,4 Prototipo: class_exe72 [18 objetos]Objetos: class_exe2 class_exe38 class_exe42 class_exe73 class_exe128 class_exe137 class_exe145 class_exe150 class_exe156 class_exe72 class_exe178 class_exe191 class_exe199 class_exe200 class_exe201 class_exe211 class_exe190 class_exe208 
+Cluster 1,0 Prototipo: class_exe158 [4 objetos]Objetos: class_exe153 class_exe155 class_exe158 class_exe169 
+Cluster 1,1 Prototipo: class_exe180 [6 objetos]Objetos: class_exe160 class_exe162 class_exe164 class_exe167 class_exe174 class_exe180 
+Cluster 1,2 Prototipo: class_exe180 [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: class_exe196 [6 objetos]Objetos: class_exe196 class_exe49 class_exe210 class_exe202 class_exe204 class_exe197 
+Cluster 1,4 Prototipo: class_exe193 [13 objetos]Objetos: class_exe185 class_exe186 class_exe192 class_exe193 class_exe195 class_exe198 class_exe203 class_exe205 class_exe206 class_exe209 class_exe194 class_exe189 class_exe207 
+
+Critério de adequação (energia): 46.4130645387
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,3	1,4	Total
+
+1	0	 12	 62	 67	 8	 0	 0	 1	 0	 150
+2	7	 8	 3	 4	 3	 4	 6	 0	 0	 35
+3	0	 0	 4	 1	 7	 0	 0	 5	 13	 30
+Total	[ 7 20 69 72 18  4  6  6 13]
+Corrected Rand index: 0.499630364316
+
+F-measure(P,Q): 0.559752288795
+OERC: 0.144186046512
+
+#####################################
+Repetição do experimento: 37
+
+Cluster 0,0 Prototipo: class_exe204 [5 objetos]Objetos: class_exe196 class_exe202 class_exe204 class_exe205 class_exe197 
+Cluster 0,1 Prototipo: class_exe68 [23 objetos]Objetos: class_exe1 class_exe102 class_exe147 class_exe7 class_exe55 class_exe68 class_exe80 class_exe96 class_exe152 class_exe95 class_exe127 class_exe146 class_exe62 class_exe110 class_exe36 class_exe133 class_exe11 class_exe19 class_exe52 class_exe74 class_exe104 class_exe105 class_exe92 
+Cluster 0,2 Prototipo: class_exe66 [34 objetos]Objetos: class_exe14 class_exe40 class_exe44 class_exe87 class_exe98 class_exe188 class_exe24 class_exe30 class_exe43 class_exe47 class_exe57 class_exe18 class_exe53 class_exe71 class_exe76 class_exe86 class_exe66 class_exe111 class_exe143 class_exe134 class_exe210 class_exe34 class_exe35 class_exe64 class_exe79 class_exe122 class_exe12 class_exe63 class_exe108 class_exe136 class_exe31 class_exe101 class_exe27 class_exe49 
+Cluster 0,3 Prototipo: class_exe107 [12 objetos]Objetos: class_exe151 class_exe157 class_exe163 class_exe177 class_exe9 class_exe85 class_exe94 class_exe107 class_exe182 class_exe58 class_exe179 class_exe99 
+Cluster 0,4 Prototipo: class_exe183 [16 objetos]Objetos: class_exe153 class_exe154 class_exe155 class_exe158 class_exe160 class_exe161 class_exe162 class_exe164 class_exe166 class_exe167 class_exe169 class_exe171 class_exe172 class_exe176 class_exe180 class_exe183 
+Cluster 1,0 Prototipo: class_exe206 [8 objetos]Objetos: class_exe193 class_exe194 class_exe206 class_exe207 class_exe185 class_exe189 class_exe203 class_exe208 
+Cluster 1,1 Prototipo: class_exe192 [5 objetos]Objetos: class_exe192 class_exe198 class_exe186 class_exe195 class_exe209 
+Cluster 1,2 Prototipo: class_exe72 [17 objetos]Objetos: class_exe190 class_exe201 class_exe191 class_exe199 class_exe200 class_exe211 class_exe72 class_exe137 class_exe150 class_exe38 class_exe128 class_exe178 class_exe42 class_exe156 class_exe73 class_exe2 class_exe145 
+Cluster 1,3 Prototipo: class_exe97 [37 objetos]Objetos: class_exe6 class_exe13 class_exe15 class_exe16 class_exe22 class_exe29 class_exe32 class_exe41 class_exe46 class_exe59 class_exe75 class_exe84 class_exe89 class_exe91 class_exe97 class_exe112 class_exe113 class_exe117 class_exe118 class_exe119 class_exe123 class_exe130 class_exe132 class_exe135 class_exe142 class_exe3 class_exe17 class_exe78 class_exe100 class_exe138 class_exe139 class_exe187 class_exe0 class_exe45 class_exe10 class_exe65 class_exe125 
+Cluster 1,4 Prototipo: class_exe109 [58 objetos]Objetos: class_exe8 class_exe4 class_exe5 class_exe28 class_exe69 class_exe88 class_exe90 class_exe103 class_exe106 class_exe115 class_exe140 class_exe114 class_exe148 class_exe212 class_exe23 class_exe60 class_exe82 class_exe120 class_exe129 class_exe149 class_exe214 class_exe20 class_exe21 class_exe51 class_exe61 class_exe77 class_exe109 class_exe116 class_exe124 class_exe126 class_exe131 class_exe25 class_exe39 class_exe48 class_exe50 class_exe213 class_exe93 class_exe67 class_exe83 class_exe121 class_exe141 class_exe165 class_exe168 class_exe70 class_exe144 class_exe175 class_exe56 class_exe159 class_exe170 class_exe181 class_exe173 class_exe33 class_exe81 class_exe184 class_exe26 class_exe37 class_exe174 class_exe54 
+
+Critério de adequação (energia): 35.8792860605
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,2	1,3	1,4	Total
+
+1	0	 22	 32	 6	 0	 0	 0	 8	 36	 46	 150
+2	0	 1	 0	 6	 16	 0	 0	 3	 0	 9	 35
+3	5	 0	 2	 0	 0	 8	 5	 6	 1	 3	 30
+Total	[ 5 23 34 12 16  8  5 17 37 58]
+Corrected Rand index: 0.340718101775
+
+F-measure(P,Q): 0.469481474917
+OERC: 0.144186046512
+
+#####################################
+Repetição do experimento: 38
+
+Cluster 0,0 Prototipo: class_exe128 [19 objetos]Objetos: class_exe137 class_exe190 class_exe191 class_exe197 class_exe199 class_exe200 class_exe201 class_exe208 class_exe211 class_exe2 class_exe38 class_exe42 class_exe72 class_exe73 class_exe128 class_exe145 class_exe150 class_exe156 class_exe178 
+Cluster 0,1 Prototipo: class_exe123 [45 objetos]Objetos: class_exe32 class_exe84 class_exe118 class_exe119 class_exe123 class_exe196 class_exe117 class_exe91 class_exe142 class_exe113 class_exe59 class_exe16 class_exe13 class_exe1 class_exe17 class_exe132 class_exe146 class_exe147 class_exe11 class_exe6 class_exe15 class_exe29 class_exe46 class_exe97 class_exe130 class_exe135 class_exe41 class_exe92 class_exe75 class_exe89 class_exe3 class_exe36 class_exe74 class_exe112 class_exe7 class_exe94 class_exe133 class_exe68 class_exe102 class_exe177 class_exe95 class_exe104 class_exe105 class_exe151 class_exe157 
+Cluster 0,2 Prototipo: class_exe159 [19 objetos]Objetos: class_exe173 class_exe175 class_exe181 class_exe56 class_exe70 class_exe121 class_exe159 class_exe165 class_exe168 class_exe170 class_exe184 class_exe33 class_exe67 class_exe81 class_exe83 class_exe144 class_exe174 class_exe50 class_exe48 
+Cluster 0,3 Prototipo: class_exe158 [5 objetos]Objetos: class_exe153 class_exe155 class_exe158 class_exe169 class_exe176 
+Cluster 0,4 Prototipo: class_exe172 [11 objetos]Objetos: class_exe154 class_exe160 class_exe161 class_exe162 class_exe164 class_exe166 class_exe167 class_exe171 class_exe172 class_exe180 class_exe183 
+Cluster 1,0 Prototipo: class_exe111 [43 objetos]Objetos: class_exe96 class_exe152 class_exe55 class_exe62 class_exe80 class_exe110 class_exe127 class_exe12 class_exe19 class_exe27 class_exe31 class_exe52 class_exe63 class_exe101 class_exe136 class_exe34 class_exe35 class_exe108 class_exe122 class_exe143 class_exe18 class_exe24 class_exe30 class_exe43 class_exe47 class_exe53 class_exe57 class_exe64 class_exe66 class_exe71 class_exe76 class_exe79 class_exe86 class_exe111 class_exe134 class_exe40 class_exe98 class_exe87 class_exe14 class_exe49 class_exe188 class_exe210 class_exe44 
+Cluster 1,1 Prototipo: class_exe115 [45 objetos]Objetos: class_exe107 class_exe9 class_exe85 class_exe182 class_exe0 class_exe8 class_exe21 class_exe22 class_exe26 class_exe28 class_exe37 class_exe45 class_exe51 class_exe54 class_exe58 class_exe78 class_exe88 class_exe99 class_exe106 class_exe109 class_exe114 class_exe115 class_exe125 class_exe131 class_exe179 class_exe4 class_exe20 class_exe23 class_exe82 class_exe90 class_exe116 class_exe120 class_exe126 class_exe140 class_exe148 class_exe149 class_exe10 class_exe65 class_exe100 class_exe103 class_exe138 class_exe139 class_exe187 class_exe163 class_exe39 
+Cluster 1,2 Prototipo: class_exe129 [13 objetos]Objetos: class_exe213 class_exe5 class_exe129 class_exe212 class_exe214 class_exe93 class_exe25 class_exe141 class_exe124 class_exe61 class_exe77 class_exe69 class_exe60 
+Cluster 1,3 Prototipo: class_exe193 [15 objetos]Objetos: class_exe192 class_exe186 class_exe195 class_exe198 class_exe209 class_exe194 class_exe193 class_exe207 class_exe206 class_exe205 class_exe203 class_exe204 class_exe189 class_exe202 class_exe185 
+Cluster 1,4 Prototipo: class_exe172 [0 objetos]Objetos: 
+
+Critério de adequação (energia): 45.4055624806
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,2	1,3	Total
+
+1	8	 41	 10	 0	 0	 40	 41	 10	 0	 150
+2	3	 3	 9	 5	 11	 1	 3	 0	 0	 35
+3	8	 1	 0	 0	 0	 2	 1	 3	 15	 30
+Total	[19 45 19  5 11 43 45 13 15]
+Corrected Rand index: 0.355274903939
+
+F-measure(P,Q): 0.464260714008
+OERC: 0.158139534884
+
+#####################################
+Repetição do experimento: 39
+
+Cluster 0,0 Prototipo: class_exe111 [53 objetos]Objetos: class_exe96 class_exe102 class_exe7 class_exe55 class_exe62 class_exe95 class_exe104 class_exe105 class_exe110 class_exe12 class_exe18 class_exe19 class_exe27 class_exe31 class_exe34 class_exe35 class_exe52 class_exe63 class_exe64 class_exe66 class_exe76 class_exe79 class_exe86 class_exe101 class_exe108 class_exe111 class_exe122 class_exe127 class_exe134 class_exe136 class_exe143 class_exe14 class_exe24 class_exe30 class_exe40 class_exe43 class_exe47 class_exe53 class_exe57 class_exe71 class_exe87 class_exe98 class_exe188 class_exe2 class_exe42 class_exe44 class_exe73 class_exe137 class_exe145 class_exe156 class_exe49 class_exe210 class_exe196 
+Cluster 0,1 Prototipo: class_exe177 [12 objetos]Objetos: class_exe157 class_exe151 class_exe163 class_exe177 class_exe152 class_exe107 class_exe182 class_exe85 class_exe94 class_exe133 class_exe9 class_exe80 
+Cluster 0,2 Prototipo: class_exe183 [14 objetos]Objetos: class_exe155 class_exe158 class_exe169 class_exe166 class_exe176 class_exe183 class_exe171 class_exe172 class_exe154 class_exe161 class_exe167 class_exe164 class_exe180 class_exe153 
+Cluster 0,3 Prototipo: class_exe56 [12 objetos]Objetos: class_exe213 class_exe81 class_exe33 class_exe144 class_exe56 class_exe184 class_exe70 class_exe159 class_exe174 class_exe160 class_exe162 class_exe67 
+Cluster 0,4 Prototipo: class_exe206 [8 objetos]Objetos: class_exe193 class_exe194 class_exe203 class_exe206 class_exe207 class_exe189 class_exe204 class_exe205 
+Cluster 1,0 Prototipo: class_exe15 [51 objetos]Objetos: class_exe26 class_exe0 class_exe5 class_exe10 class_exe54 class_exe65 class_exe103 class_exe125 class_exe45 class_exe78 class_exe99 class_exe100 class_exe138 class_exe139 class_exe187 class_exe3 class_exe15 class_exe135 class_exe46 class_exe89 class_exe75 class_exe112 class_exe22 class_exe130 class_exe6 class_exe11 class_exe29 class_exe32 class_exe41 class_exe59 class_exe97 class_exe113 class_exe16 class_exe84 class_exe91 class_exe118 class_exe123 class_exe119 class_exe142 class_exe13 class_exe92 class_exe117 class_exe147 class_exe36 class_exe74 class_exe132 class_exe202 class_exe1 class_exe17 class_exe68 class_exe146 
+Cluster 1,1 Prototipo: class_exe109 [46 objetos]Objetos: class_exe20 class_exe21 class_exe23 class_exe25 class_exe39 class_exe48 class_exe50 class_exe61 class_exe77 class_exe82 class_exe109 class_exe116 class_exe120 class_exe124 class_exe126 class_exe131 class_exe149 class_exe165 class_exe168 class_exe175 class_exe51 class_exe60 class_exe83 class_exe93 class_exe114 class_exe121 class_exe129 class_exe141 class_exe148 class_exe170 class_exe173 class_exe179 class_exe181 class_exe212 class_exe214 class_exe28 class_exe106 class_exe4 class_exe69 class_exe88 class_exe115 class_exe140 class_exe58 class_exe90 class_exe8 class_exe37 
+Cluster 1,2 Prototipo: class_exe183 [0 objetos]Objetos: 
+Cluster 1,3 Prototipo: class_exe199 [14 objetos]Objetos: class_exe201 class_exe211 class_exe200 class_exe178 class_exe199 class_exe150 class_exe190 class_exe191 class_exe208 class_exe72 class_exe197 class_exe185 class_exe128 class_exe38 
+Cluster 1,4 Prototipo: class_exe192 [5 objetos]Objetos: class_exe209 class_exe186 class_exe192 class_exe195 class_exe198 
+
+Critério de adequação (energia): 37.3420368504
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	1,0	1,1	1,3	1,4	Total
+
+1	49	 6	 0	 6	 0	 49	 37	 3	 0	 150
+2	1	 6	 14	 5	 0	 0	 7	 2	 0	 35
+3	3	 0	 0	 1	 8	 2	 2	 9	 5	 30
+Total	[53 12 14 12  8 51 46 14  5]
+Corrected Rand index: 0.402339178088
+
+F-measure(P,Q): 0.491934452584
+OERC: 0.148837209302
+
+Melhor repetição: 3
+Menor oerc: 7
