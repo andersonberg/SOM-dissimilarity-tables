@@ -7,10 +7,10 @@
 \usepackage[brazil]{babel}   
 \usepackage[latin1]{inputenc}  
 
-     
+
 \sloppy
 
-\title{Agrupamento de múltiplas tabelas de dissimilaridade\\ baseado em SOM com pesos adaptativos}
+\title{Agrupamento baseado em SOM com pesos adaptativos \\ para múltiplas tabelas de dissimilaridade  }
 
 \author{Anderson B. S. Dantas\inst{1}, Francisco de A. T. de Carvalho\inst{1} }
 
@@ -25,19 +25,41 @@
 \maketitle
 
 \begin{abstract}
-
+%Clustering methods for dissimilarity data are complex, but are universal and can be applied to any kind of data.
+This paper introduces a clustering algorithm based on batch Self-organizing map to partition objects taking into account their relational descriptions given by multiple dissimilarity matrices. 
+%These matrices can be generated using different sets of variables and a fixed dissimilarity function, using a fixed set of variables and different dissimilarity functions or using different sets of variables and dissimilarity functions.
+The presented approach provide a partition of the objects and a prototype for each cluster, moreover the method is capable of learn relevance weights for each dissimilarity matrix by optimizing an adequacy criterion that measures the fit between clusters and the respectives prototypes. These relevance weights change at each iteration and are different from one cluster to another. Experiments using real-world data bases are considered to show the usefulness of the method.
 \end{abstract}
      
 \begin{resumo}
-
+%Algoritmos de agrupamento baseados em dados de dissimilaridades são bastante complexos, em contrapartida são universais e podem ser aplicados a diferentes tipos de dados. 
+Este trabalho apresenta um modelo de algoritmo de agrupamento baseado no algoritmo SOM com treinamento batch para classificar objetos levando em consideração suas descrições relacionais dadas por múltiplas matrizes de dissimilaridade.
+%Estas matrizes podem ser obtidas usando diferentes conjuntos de variáveis e uma função de dissimilaridade fixa, um conjunto fixo de variáveis e diferentes funções de dissimilaridade ou diferentes conjuntos de variáveis e funções de dissimilaridade. 
+O método apresentado tem como resultado uma partição dos dados de entrada, assim como um protótipo para cada agrupamento, além de adaptar pesos que calculam a relevância de cada matriz de dissimilaridade otimizando um critério de adequação entre os agrupamentos e seus respectivos protótipos. Estes pesos mudam a cada iteração do algoritmo e são diferentes de um grupo para outro. Experimentos com bases de dados reais foram realizado com o objetivo de mostrar a utilidade do algoritmo.
 \end{resumo}
 
 
 \section{Introdução}
 
+Algoritmos de agrupamento (\textit{clutering}) têm sido largamente usados em áreas de aprendizagem de máquina como mineração de dados, recuperação de documentos, segmentação de imagens e classificação de padrões \cite{Jain:1999}. Métodos de agrupamento objetivam organizar um conjunto de dados em grupos (\textit{clusters}), de forma que itens pertencentes a um mesmo grupo (\textit{cluster}) tenham alto grau de similaridade, por outro lado, itens em grupos diferentes possuem alto grau de dissimilaridade. 
+%As técnicas mais populares de agrupamento são os métodos hierárquicos e os métodos de partição. Métodos hierárquicos produzem uma série de partições aninhadas, enquanto os métodos de partição produzem somente uma única partição, usualmente pela otimização de uma função objetivo.
+
+O mapa auto-organizável de Kohonen (Self-organizing map) \cite{Kohonen:1990} é um tipo especial de rede neural não-supervisionada e possui propriedades de agrupamento e visualização \cite{Gopalakrishnan:2008}. SOM pode ser considerado um algoritmo que faz a projeção de dados multidimensionais em um espaço de uma, duas ou, em casos especiais, três dimensões. Esta projeção possibilita uma partição das entradas em grupos similares ao mesmo tempo em que preserva sua topologia.
+
+Existem duas representações comuns dos objetos em que os algoritmos de agrupamento podem ser baseados: dados caracterizados ou relacionais. Quando cada objeto é descrito por um vetor de valores quantitativos ou qualitativos, os vetores que descrevem os objetos são chamados dados caracterizados. 
+%Quando cada objeto é descrito por um vetor de conjunto de categorias, intervalos ou pesos de histograma, os vetores são chamados de dados simbólicos. Este último tipo de dado é estudado no campo de análise de dados simbólicos (symbolic data analysis - SDA) \cite{Bock:2000}. 
+Quando cada par de objetos é representado por uma relação então temos dados relacionais. O modelo mais comum de dados relacionais é o caso de uma matriz de dissimilaridades $R = [r_{il}]$, onde $r_{il}$ é a dissimilaridade pareada (geralmente uma distância) entre os objetos $i$ e $l$.
+
+%A maioria dos métodos de análise de dados atualmente disponíveis são baseados em dados caracterizados, porém muitos dados do mundo real não seguem esse modelo. Algoritmos de análise de dados baseados em dissimilaridades entre objetos são mais complexos, em contrapartida eles são universais e podem ser aplicados a diferentes tipos de dados.
+
+\cite{golli:2004} propõe uma adaptação do modelo SOM para dados de dissimilaridade e \cite{Conan-Guez:2006} desenvolve diversas modificações para uma implementação mais rápida do algoritmo e para torná-lo mais eficaz. \cite{Lechevallier:2010} apresenta um algoritmo de agrupamento que realiza partição de objetos baseado nas descrições relacionais destes objetos dadas por múltiplas matrizes de dissimilaridade.
+
+Este trabalho propõe um algoritmo baseado em SOM com pesos adaptativos para classificar dados baseados em matrizes de dissimilaridades. Estas matrizes podem ser obtidas através de diferentes conjuntos de variáveis e uma função de dissimilaridade fixa (neste caso a partição final apresenta um consenso entre diferentes conjuntos de variáveis descrevendo os objetos), através de um conjunto fixo de variáveis e diferentes funções de dissimilaridade (consenso entre diferentes funções de dissimilaridade) ou através de diferentes conjuntos de variáveis e funções de dissimilaridade. A relevância de diferentes matrizes de dissimilaridades não é igualitária na definição final dos agrupamentos. Assim, para obter uma partição significativa partindo de todas as matrizes faz-se necessário o uso de pesos adaptativos para cada matriz de dissimilaridade e diferentes para cada agrupamento.
+
+Este trabalho está organizado da seguinte forma: a seção \ref{sec:som} traz uma introdução sobre o algoritmo SOM e sua definição formal. A seção \ref{som:batch} trata do algoritmo SOM com treinamento batch aplicado a dados de dissimilaridade. O algoritmo SOM com pesos adaptativos aplicado a dados representados por matrizes de dissimilaridade é apresentado na seção \ref{som:adaptativo}. Os experimentos realizados com bases de dados reais são apresentados na seção \ref{experimentos}. Finalmente, a seção \ref{conclusao} traz as conclusões do trabalho.
 
 \section{Self-organizing map (SOM)} \label{sec:som}
-A classe de métodos chamados \textit{self-organizing maps} \cite{Kohonen:1990} (mapas auto-organizáveis) segue uma série de procedimentos para associar um número finito de vetores de objetos (entradas) com um número finito de pontos representativos, tal que as relações de semelhança entre as entradas são respeitadas por esses pontos. O algoritmo SOM representa uma abordagem de aprendizado não-supervisionado, todas as propriedades de cada cluster são estimados ou aprendidos sem o uso de informação a priori \cite{Murtagh:2010}.
+A classe de métodos chamados \textit{self-organizing maps} \cite{Kohonen:1990} (mapas auto-organizáveis) segue uma série de procedimentos para associar um número finito de vetores de objetos (entradas) com um número finito de pontos representativos, tal que as relações de semelhança entre as entradas são respeitadas por esses pontos. O algoritmo SOM representa uma abordagem de aprendizado não-supervisionado, todas as propriedades de cada grupo são estimados ou aprendidos sem o uso de informação a priori \cite{Murtagh:1995}.
 
 O SOM consiste em um conjunto de neurônios organizados topologicamente em uma grade, geralmente com uma, duas, ou três dimensões, chamada mapa. De modo mais formal, o mapa é descrito por um grafo não-orientado ($C,\Gamma$). $C$ é um conjunto de $m$ neurônios interconectados com topologia definida por $\Gamma$. A estrutura de grafo permite que se defina uma função de distância entre dois neurônios no mapa. Para cada par de neurônios (\textit{c,r}) no mapa, $\delta(c,r)$ é o comprimento do caminho mais curto entre \textit{c} e \textit{r} no grafo \textit{C}. Essa função de distância permite que haja uma relação de vizinhança entre neurônios.
 
@@ -60,7 +82,7 @@ onde $\alpha^{(t)}$ é uma pequena taxa usada para controlar a convergência e $N_
 
 É importante notar que neste tipo de algoritmo somente um indivíduo é apresentado por vez (Etapa 0), os neurônios do mapa se ajustam às entradas a medida em que elas são apresentadas.
 
-\section{Batch self-organizing map aplicado em dados de dissimilaridade}
+\section{Batch self-organizing map aplicado em dados de dissimilaridade}\label{som:batch}
 
 %\subsection{Algoritmo de treinamento batch}
 %
@@ -69,40 +91,44 @@ onde $\alpha^{(t)}$ é uma pequena taxa usada para controlar a convergência e $N_
 %Após a etapa de afetação, a etapa de representação é realizada. O algoritmo atualiza os vetores dos neurônios minimizando uma função custo $E(j,W)$
 
 \subsection{SOM batch para dados de dissimilaridade}
-O SOM para dados de dissimilaridade conforme proposto por \cite{golli:2004} também é descrito por um grafo ($C,\Gamma$). A principal diferença está nos dados que serão classificados que consistem em um conjunto arbitrário onde uma dissimilaridade é definida.
+O algoritmo SOM batch baseado em dados de dissimilaridade conforme proposto por \cite{golli:2004} também é descrito por um grafo ($C,\Gamma$). A principal diferença está nos dados que serão classificados. Estes dados são representados por uma relação de dissimilaridade. O algoritmo de treinamento do tipo batch é um algoritmo iterativo onde todo o conjunto de exemplos ($E$) é apresentado ao mapa antes que qualquer ajuste seja realizado. A seguir é dada a definição formal deste modelo.
 
-Cada neurônio $c$ é representado por um protótipo $a_c = x_{j_i}, \: x_{j_i} \in E$. 
+Seja $E = {x_1,\dots,x_n}$ um conjunto de $n$ objetos. Cada neurônio $c$ é representado por um protótipo $a_c = x_{j_i}, \: x_{j_i} \in E$. 
 %Denotamos $a$ \textit{individuals codebook}, i.e. a lista $a = \{a_c; c = 1,\dots,m\}$ de \textit{individual referents} do mapa.
-
-Uma dissimilaridade $d^T$ de $E \times P(E)$ em $\mathbb{R}$ é definida por:
+A distância entre um objeto $x_i$ e o protótipo $a_c$ de um neurônio é descrita pela dissimilaridade $d^T$ de $E \times P(E)$ em $\mathbb{R}^+$ definida por:
 
 \begin{equation}
-d^T(x_i, a_c) = \sum_{r \in C}K^T(\delta(c,r)) \, d^2(x_i,a_r)
+d^T(x_i, a_c) = \sum_{l \in C}K^T(\delta(c,l)) \, d^2(x_i,a_l)
 \end{equation}
 
 Tal dissimilaridade é baseada na função kernel positiva $K$, como descrita na seção anterior. $K$ é usada para definir uma família de funções $K^T$ parametrizadas por $T$, onde $K^T(\delta) = K (\frac{\delta}{T})$. O parâmetro $T$ controla o tamanho da vizinhança dos neurônios: se o valor de $T$ for pequeno, poucos neurônios serão atingidos pela vizinhança. Um simples exemplo para $K^T$ é definido por $K^T(\delta) = e^{-\frac{\delta^2}{T^2}}$.
 
-Durante a etapa de aprendizado, a seguinte função custo $E$ é minimizada alternando-se o passo de afetação e o passo de representação:
+Durante a etapa de aprendizado, a seguinte função custo (ou função de adequação) $E$ é minimizada alternando-se o passo de afetação e o passo de representação:
 
 \begin{equation}
-E(f,a) = \sum_{i = 1}^n d^T(x_i, a_{f(x_i)}) = \sum_{i = 1}^n \sum_{r \in C}K^T(\delta(f(x_i),r)) d^2(x_i, a_r)
+E(f,a) = \sum_{i = 1}^n d^T(x_i, a_{f(x_i)}) = \sum_{i = 1}^n \sum_{l \in C}K^T(\delta(f(x_i),l)) d^2(x_i, a_l)
 \end{equation}
 
-Na etapa de afetação, a função $f$ afeta cada indivíduo $x_i$ ao neurônio mais próximo. Em termos da dissimilaridade $d^T$:
+Esta função calcula o ajuste entre a partição calculada pela função de afetação e os protótipos $a$ do mapa.
+
+Durante a etapa de afetação, a função $f$ afeta cada indivíduo $x_i$ ao neurônio mais próximo. O Grupo $C_r$ que minimiza a função de adequação é definida da seguinte forma:
 
 \begin{equation}
-f(x_i) = arg \min_{c \in C} d^T(x_i, a_c)
+r = f(x_i) = arg \min_{c \in C} d^T(x_i, a_c) = arg \min_{c \in C} \, \sum_{l \in C}K^T(\delta(c,l)) \, d^2(x_i,a_l)
 \label{affectation_function}
 \end{equation}
 
-Na etapa de representação, são selecionados novos protótipos que representam o conjunto de objetos. Esta etapa de otimização pode ser realizada independentemente para cada neurônio. De fato, as seguintes $m$ funções são minimizadas:
+Durante a etapa de representação, são selecionados novos protótipos que representam o conjunto de observações. Esta etapa de otimização pode ser realizada independentemente para cada neurônio. O protótipo $a^*_l$ do Grupo $C_l$, que minimiza o critério de adequação $E$ é calculado segundo a equação:
 
 \begin{equation}
-E_r = \sum_{x_i \in \Omega} K^T(\delta(f(x_i),r)) d^2(x_i, a_r)
+a^*_l = argmin_{x \in E} \sum_{i=1}^n \exp \{- \frac{(\delta((f(x_i))^{(t-1)},l))^2}{2T^2} \} d^2(x_i, x)
+%a_l = \sum_{i = 1}^n K^T(\delta(f(x_i),l)) d^2(x_i, a_l)
 \label{E_batch_rossi}
 \end{equation}
 
 \subsection{O Algoritmo}
+
+Cada iteração do algoritmo alterna entre duas fases (afetação e representação) objetivando minimizar a função de adequação.
 
 \textbf{Inicialização}: iteração $k = 0$; selecione os protótipos iniciais $a^0$; fixe $T = T_{max}$ e o número total de iterações $N_{iter}$\\
 \textbf{\underline{Iteração}}: Na iteração $k$, o conjunto de protótipos da iteração anterior $a^{k-1}$ é conhecido. Calcule o novo valor de $T$:
@@ -117,29 +143,29 @@ $$
 
 Repetir \textbf{\underline{Iteração}} até $T = T_{min}$.
 
-\section{Self-organizing map adaptativo para múltiplas tabelas de dissimilaridade}
+\section{Self-organizing map adaptativo para múltiplas tabelas de dissimilaridade}\label{som:adaptativo}
 
 \subsection{Introdução}
 
-Nesta seção apresentamos um algoritmo baseado no algoritmo SOM para dados de dissimilaridade \cite{golli:2004} e no algoritmo de agrupamento (\textit{clustering}) de múltiplas tabelas de dissimilaridade de \cite{Lechevallier:2010}. O objetivo do modelo apresentado é mapear objetos levando em conta suas descrições relacionais dadas por múltiplas matrizes de dissimilaridade. O algoritmo é capaz de associar dados de entrada com pontos representativos de um mapa formando grupos (\textit{clusters}) de objetos.
+Nesta seção apresentamos um algoritmo adaptativo baseado no algoritmo SOM para dados de dissimilaridade \cite{golli:2004} e no algoritmo de agrupamento para múltiplas tabelas de dissimilaridade de \cite{Lechevallier:2010}. O objetivo do modelo apresentado é mapear objetos levando em conta suas descrições relacionais dadas por múltiplas matrizes de dissimilaridade. O algoritmo é capaz de associar dados de entrada com pontos representativos de um mapa formando grupos de objetos. O método utiliza pesos adaptativos diferentes de um grupo para outro com o intuito de ponderar sobre as matrizes de dissimilaridades e medir sua relevância na formação de cada agrupamento.
 
-Seja $E = \{e_1,\dots,e_n\}$ um conjunto de $n$ objetos e $p$ o número de matrizes de dissimilaridade $\textbf{D}_j = [d_j(e_i,e_l)] (j = 1,\dots,p)$, onde $d_j(e_i,e_l)$ é a dissimilaridade entre os objetos $e_i$ e $e_l (i,l = 1,\dots,n)$ na matriz de dissimilaridades $\textbf{D}_j$. Assuma que o protótipo $g_l$ do \textit{cluster} $C_l$ é um elemento do conjunto de objetos $E$, i.e., $g_l \in E \: \forall l = 1,\dots,L$.
+Seja $E = \{e_1,\dots,e_n\}$ um conjunto de $n$ objetos e $p$ o número de matrizes de dissimilaridade $\textbf{D}_j = [d_j(e_i,e_l)] (j = 1,\dots,p)$, onde $d_j(e_i,e_l)$ é a dissimilaridade entre os objetos $e_i$ e $e_l (i,l = 1,\dots,n)$ na matriz de dissimilaridades $\textbf{D}_j$. Assuma que o protótipo $g_l$ do grupo (\textit{cluster}) $C_l$ é um elemento do conjunto de objetos $E$, i.e., $g_l \in E \: \forall l = 1,\dots,L$.
 
-O algoritmo SOM ponderado para múltiplas tabelas de dissimilaridade calcula uma partição $P = (C_1,\dots, C_l)$ de $E$ em $L$ clusters e o respectivo protótipo $g_l$ representando o cluster $C_l$ em $P$ tal que um determinado critério de adequação (função objetivo) que mede  o ajuste entre os clusters e seus repectivos protótipos é localmente otimizado. O critério de adequação é definido como:
+O algoritmo SOM ponderado para múltiplas tabelas de dissimilaridade calcula uma partição $P = (C_1,\dots, C_l)$ de $E$ em $L$ grupos e o respectivo protótipo $g_l$ representando o grupo $C_l$ em $P$ tal que um determinado critério de adequação (função objetivo) que mede  o ajuste entre os grupos e seus repectivos protótipos é localmente otimizado. O critério de adequação é definido como:
 
 \begin{eqnarray}
 E &=& \sum_{i=1}^n \sum_{l=1}^c K(\delta(f(e_i),l),T)D_{ \lambda_l}(e_i,g_l) \nonumber\\
 &=& \sum_{i=1}^n \sum_{l=1}^c \exp \{- \frac{(\delta((f(e_i)),l))^2}{2T^2} \sum_{j=1}^p \lambda_{lj} d_j(e_i, g_l)
 \end{eqnarray}
 
-onde $K$ é uma função kernel positiva, tal que $\lim_{|\delta| \to \infty} K(\delta) = 0$. E $\delta(c,r)$ calcula a distância entre dois neurônios no mapa.
-A matriz de pesos $\lambda$ é composta por $L$ vetores de pesos $\lambda_k = (\lambda_k^1,\dots,\lambda_k^j,\dots,\lambda_k^p)$, muda a cada iteração do algoritmo, ou seja, os vetores não possuem valores determinados absolutamente e é diferente para cada matriz de dissimilaridades. O modelo segue três etapas definidas (representação, atualização de pesos e afetação):
+onde $K$ é uma função kernel positiva, tal que $\lim_{|\delta| \to \infty} K(\delta) = 0$. $\delta(c,r)$ calcula a distância entre dois neurônios no mapa.
+A matriz de pesos $\lambda$ é composta por $c$ vetores de pesos $\lambda_k = (\lambda_k^1,\dots,\lambda_k^j,\dots,\lambda_k^p) (k = 1,\dots, c)$, muda a cada iteração do algoritmo, ou seja, os vetores não possuem valores determinados absolutamente e são diferentes para cada matriz de dissimilaridades. O objetivo da matriz de pesos é ponderar sobre cada matriz de dissimilaridade avaliando sua relevância na minimização do critério de adequação. O modelo segue três etapas definidas (representação, atualização de pesos e afetação):
 
 \subsection*{\textbf{\textit{Etapa 1: Definição dos melhores protótipos}}}
-Nesta etapa, a partição $P^{(t-1)} = (P_1^{(t-1)},\dots,P_c^{(t-1)})$ e $\lambda_l^{(t)} (l = 1,\dots,c)$ são fixos. O protótipo $g_l^{(t)} = g^* \in E$ do cluster $C_l$, que minimiza o critério de adequação $E$ é calculado segundo a equação:
+Nesta etapa, a partição $P^{(t-1)} = (P_1^{(t-1)},\dots,P_c^{(t-1)})$ e $\lambda_l^{(t)} (l = 1,\dots,c)$ são fixos. O protótipo $g_l^{(t)} = g^* \in E$ do grupo $C_l$, que minimiza o critério de adequação $E$ é calculado segundo a equação:
 
 \begin{equation}
-g^* = argmin_{e \in E} \sum_{i=1}^n \exp \{- \frac{(\delta((f(e_i))^{(t-1)},l))^2}{2T^2} \sum_{j=1}^p \lambda_{lj}^{(t-1)} d_j(e_i, e)
+g^* = argmin_{e \in E} \sum_{i=1}^n \exp \{- \frac{(\delta((f(e_i))^{(t-1)},l))^2}{2T^2} \} \sum_{j=1}^p \lambda_{lj}^{(t-1)} d_j(e_i, e)
 \label{prototipo}
 \end{equation}
 
@@ -152,7 +178,7 @@ Nesta etapa, a partição $P^{(t-1)} = (P_1^{(t-1)},\dots,P_c^{(t-1)})$ e os protó
 \end{equation}
 
 \subsection*{\textbf{\textit{Etapa 3: Definição da melhor partição}}}
-Nesta etapa, os protótipos $g_l^{(t)} \in E (l = 1,\dots,c)$ e $\lambda_l^{(t)} (l = 1,\dots,c)$ são fixos. O cluster $C_r$ que minimiza o critério E é determinado de acordo com a equação:
+Nesta etapa, os protótipos $g_l^{(t)} \in E (l = 1,\dots,c)$ e $\lambda_l^{(t)} (l = 1,\dots,c)$ são fixos. O grupo $C_r$ que minimiza o critério E é determinado de acordo com a equação:
 
 \begin{equation}
 r = (f(e_i))^{(t)} = argmin_{1\leq h\leq c} \sum_{l=1}^c \exp \{- \frac{(\delta(h,l))^2}{2T^2}\} \sum_{j=1}^p \lambda_{lj}^{(t)} d_j(e_i, g_l^{(t)})
@@ -161,7 +187,7 @@ r = (f(e_i))^{(t)} = argmin_{1\leq h\leq c} \sum_{l=1}^c \exp \{- \frac{(\delta(
 
 
 %Descomentar as linhas no caso de $G_l$ ser um subconjunto de $E$
-%Assumindo que o protótipo $G_l$ do \textit{cluster} $C_l$ é um subconjunto de cardinalidade fixa $1 \leq q \ll n$ do conjunto de objetos $E$, isto é, $G_l \in E^{(q)} = \{A \subset E : |A| = q\}$.
+%Assumindo que o protótipo $G_l$ do \textit{Grupo} $C_l$ é um subconjunto de cardinalidade fixa $1 \leq q \ll n$ do conjunto de objetos $E$, isto é, $G_l \in E^{(q)} = \{A \subset E : |A| = q\}$.
 %\begin{equation}
 %E = \sum_{i=1}^n \sum_{l=1}^c \exp \{- \frac{(\delta((f(e_i)),l))^2}{2T^2} \sum_{j=1}^p \lambda_{lj} \sum_{e %\in G_l} d_j(e_i, e)
 %\end{equation}
@@ -170,7 +196,7 @@ r = (f(e_i))^{(t)} = argmin_{1\leq h\leq c} \sum_{l=1}^c \exp \{- \frac{(\delta(
 
 \begin{enumerate}
 \item \textit{Inicialização\\}
-Fixe o número $c$ de clusters;\\
+Fixe o número $c$ de grupos;\\
 %Fixe a cardinalidade $1 \leq q \ll n$ dos protótipos $G_l (l = 1,\dots,c)$;\\
 Fixe $\delta$;\\
 Fixe a função kernel $K$;\\
@@ -188,7 +214,7 @@ Cada objeto $e_i$ é afetado ao protótipo mais próximo com o objetivo de obter a 
 Atribua $t = t + 1$;\\
 Atribua $T = T_{max} (\frac{T_{min}}{T_{max}})^\frac{t}{N_{iter} - 1}$\\
 A partição $P^{(t-1)} = (P_1^{(t-1)},\dots,P_c^{(t-1)})$ e $\lambda_l^{(t)} (l = 1,\dots,c)$ são fixos.\\
-Calcule o protótipo $g_l^{(t)} = g^* \in E$ do cluster $P_l^{(t-1)} (l = 1,\dots,c)$ de acordo com a equação \ref{prototipo}.
+Calcule o protótipo $g_l^{(t)} = g^* \in E$ do grupo $P_l^{(t-1)} (l = 1,\dots,c)$ de acordo com a equação \ref{prototipo}.
 
 
 \item Passo 2: Atualização dos pesos\\
@@ -200,8 +226,8 @@ Atualize o vetor de pesos de acordo com a equação \ref{pesos}.
 Os protótipos $g_l^{(t)} \in E (l = 1,\dots,c)$ e $\lambda_l^{(t)} (l = 1,\dots,c)$ são fixos\\ 
 $P^{(t)} \leftarrow P^{(t-1)}$\\
 para $i=1$ até $n$ faça:\\
-encontre o cluster $C_m^{(t)}$ ao qual o objeto $e_i$ pertence\\
-encontre o cluster vencedor $C_r^{(t)}$, onde $r$ é obtido pela equação \ref{cluster}\\
+encontre o grupo $C_m^{(t)}$ ao qual o objeto $e_i$ pertence\\
+encontre o grupo vencedor $C_r^{(t)}$, onde $r$ é obtido pela equação \ref{grupo}\\
 
 se $r \neq m:\\$
 $C_r^{(t)} \leftarrow C_r^{(t)} \cup \{e_i\}$\\
@@ -212,113 +238,46 @@ Se $T == T_{min}$ então PARE; senão volte ao passo 1
 
 \end{enumerate}
 
-\section{Experimentos e resultados}
+\section{Experimentos e resultados}\label{experimentos}
 
-Para provar a utilidade do algoritmo proposto, foram realizados experimentos utilizando bases de dados obtidas do repositório UCI Machine Learning Repository \cite{Frank:2010}. Com a finalidade de avaliar os resultados da clusterização realizada pelo método proposto neste trabalho foi considerado um índice externo: o índice de Rand corrigido (CR) \cite{Hubert:1985}, a medida F-\textit{measure} \cite{Rijsbergen:1979} e a taxa de erro global de classificação (OERC - overall error rate of classification) \cite{Breiman:1984}.
+Para mostrar a utilidade do algoritmo proposto, foram realizados experimentos utilizando bases de dados obtidas do repositório UCI Machine Learning Repository \cite{Frank:2010}. No algoritmo SOM adaptativo para múltiplas tabelas, cada um dos atributos que compõem as bases é representado por uma matriz de dissimilaridade. Para o modelo SOM batch não-adaptativo é considerada somente uma matriz de dissimilaridade. Com a finalidade de avaliar os resultados dos agrupamentos realizados pelo método proposto neste trabalho foi considerado um índice externo: o índice de Rand corrigido (CR) \cite{Hubert:1985}, a medida F-\textit{measure} \cite{Rijsbergen:1979} e a taxa de erro global de classificação (OERC - overall error rate of classification) \cite{Breiman:1984}.
 
-O índice CR avalia o grau de similaridade entre a partição a priori e a partição fornecida pelo algoritmo de agrupamento. Além disso, o índice CR não é sensível ao número de classes nas partições ou à distribuição dos itens dentro dos clusters. O índice CR pode assumir valores no intervalo [-1,1], onde o valor 1 indica perfeita combinação entre as partições, valores perto de 0 ou negativos indicam pouca semelhança. O índice F-\textit{measure} entre a partição a priori e a partição obtida pelo algoritmo de agrupamento assume valores no intervalo [0,1], em que 1 indica perfeita combinação entre as partições. O índice OERC mede a habilidade de um algoritmo de agrupamento encontrar classes a priori presentes na base de dados.
+O índice CR avalia o grau de similaridade entre a partição a priori e a partição fornecida pelo algoritmo de agrupamento. Além disso, o índice CR não é sensível ao número de classes nas partições ou à distribuição dos itens dentro dos grupos. O índice CR pode assumir valores no intervalo [-1,1], onde o valor 1 indica perfeita combinação entre as partições, valores perto de 0 ou negativos indicam pouca semelhança. O índice F-\textit{measure} entre a partição a priori e a partição obtida pelo algoritmo de agrupamento assume valores no intervalo [0,1], em que 1 indica perfeita combinação entre as partições. O índice OERC mede a habilidade de um algoritmo de agrupamento encontrar classes a priori presentes na base de dados.
 
-Alguns parâmetros são considerados para a realização dos experimentos. São eles: topologia do mapa, o valor de $T_{min}$, $T_{max}$ e o número de iterações $N_{iter}$. A topologia do mapa define o número máximo de clusters que serão formados. Como os protótipos de cada cluster são os próprios objetos de entrada, o número máximo de clusters deve ser um número menor do que a quantidade de indivíduos presentes na base de dados. Todos os parâmetros foram definidos empiricamente.
-
-\subsection{Base de dados Iris}
-Esta base de dados consiste em três tipos (classes) de planta íris: iris setosa, iris versicolor e iris virginica. Cada uma das classes possui 50 exemplos. Cada instância é descrita por quatro atributos, que são o comprimento (length) e a largura (width) da sépala (sepal) e da pétala (petal), em centímetros.
-
-Os algoritmos SOM foram aplicados nesta base de dados com os parâmetros apresentados na tabela \ref{param_iris}. As tabelas \ref{iris_batch} e \ref{iris_adaptativo} mostram a matriz de confusão obtidas pelos algoritmos batch SOM e batch SOM adaptativo para múltiplas tabelas de dissimilaridade.
+Alguns parâmetros são considerados para a realização dos experimentos. São eles: topologia do mapa, o valor de $T_{min}$, $T_{max}$ e o número de iterações $N_{iter}$. A topologia do mapa define o número máximo de grupos que serão formados. Todos os parâmetros foram definidos empiricamente. A tabela \ref{param} mostra os valores dos parâmetros utilizados em todos os experimentos descritos a seguir. Cada experimento foi repetido 100 vezes com a mesma configuração, dentre as 100 repetições foi selecionada a que obteve menor critério de adequação.
 
 \begin{table}[!h]
 \begin{center}
-\caption{Parâmetros utilizados nos experimentos com a base iris}
+\caption{Parâmetros utilizados nos experimentos}
 \begin{tabular}{|c|c|}
 \hline
 Parâmetros & Valor\\
 \hline
 Topologia & 2x5\\ \hline
-$T_{min}$ & 0,02\\ \hline
+$T_{min}$ & 0,2\\ \hline
 $T_{max}$ & 2,0\\ \hline
 $N_{iter}$ & 300\\ \hline
 \end{tabular}
-\label{param_iris}
+\label{param}
 \end{center}
 \end{table}
-
-\begin{table}[!h]
-\begin{center}
-\caption{Base de dados iris: Matriz de confusão obtida pelo algoritmo batch SOM}
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
-\hline
-Classe/Cluster & 0,0 & 0,1 & 0,2 & 0,3 & 0,4 & 1,0 & 1,1 & 1,2 & 1,3 & 1,4 \\ \hline
-1 & 13 & 17 & 4 & 0 & 0 & 16 & 0 & 0 & 0 & 0 \\ \hline
-2 & 0 & 0 & 0 & 12 & 15 & 0 & 19 & 0 & 0 & 4 \\ \hline
-3 & 0 & 0 & 0 & 1 & 2 & 0 & 0 & 3 & 26 & 18 \\ \hline
-\end{tabular}
-\label{iris_batch}
-\end{center}
-\end{table}
-
-\begin{table}[!h]
-\begin{center}
-\caption{Base de dados iris: Matriz de confusão obtida pelo algoritmo SOM adaptativo}
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
-\hline
-Classe/Cluster & 0,0 & 0,1 & 0,2 & 0,3 & 0,4 & 1,0 & 1,1 & 1,2 & 1,3 & 1,4 \\ \hline
-1 & 0 & 0  & & & & & & & \\ \hline
-2 & 0 & 0 & & & & & & & \\ \hline
-3 & 9 & 25 & & & & & & & \\ \hline
-
-%0,0 & 0 & 0 & 9 \\ \hline
-%0,1 & 0 & 0 & 25 \\ \hline
-%0,2 & 0 & 1 & 13 \\ \hline
-%0,3 & 0 & 17 & 0 \\ \hline
-%0,4 & 18 & 0 & 0 \\ \hline
-%1,0 & 0 & 10 & 0 \\ \hline
-%1,1 & 0 & 10 & 0 \\ \hline
-%1,2 & 0 & 12 & 0 \\ \hline
-%1,3 & 12 & 0 & 0 \\ \hline
-%1,4 & 20 & 0 & 0\\ \hline
-
-\end{tabular}
-\label{iris_adaptativo}
-\end{center}
-\end{table}
-
-Os índices CR, F-\textit{measure} e OERC obtiveram, respectivamente, os valores 0,46, 0,58, 0,027 para o modelo SOM adaptativo, e os valores, respectivamente 0,47, 0,68, 0,047 para o modelo SOM batch não-adaptativo.
 
 \subsection{Base de dados Wine}
 
-A base de dados wine consiste em resultados da análise química de vinhos produzidos numa mesma região na Itália, mas derivados de três cultivos diferentes, formando três classes de vinhos. As classes 1, 2 e 3 possuem, respectivamente 59, 71 e 48 instâncias. Cada indivíduo é descrito por 13 atributos com valores reais representando os valores de 13 componentes encontrados em cada um dos três tipos de vinho. Tais atributos são: (1) álcool; (2) ácido málico; (3) cinzas; (4) alcalinidade das cinzas; (5) magnésio; (6) fenóis totais; (7) flavonóides; (8) fenóis não-flavonóides; (9) proantocianinas; (10) intensidade da cor; (11) matiz; (12) OD280/OD315 de vinhos diluídos e (13) proline.
+A base de dados wine consiste em resultados da análise química de vinhos produzidos numa mesma região na Itália, mas derivados de três cultivos diferentes, formando três classes de vinhos. As classes 1, 2 e 3 possuem, respectivamente 59, 71 e 48 instâncias. Cada indivíduo é descrito por 13 atributos com valores reais representando os valores de 13 componentes encontrados em cada um dos três tipos de vinho.
+%Tais atributos são: (1) álcool; (2) ácido málico; (3) cinzas; (4) alcalinidade das cinzas; (5) magnésio; (6) fenóis totais; (7) flavonóides; (8) fenóis não-flavonóides; (9) proantocianinas; (10) intensidade da cor; (11) matiz; (12) OD280/OD315 de vinhos diluídos e (13) proline.
 
-Os algoritmos SOM foram aplicados nesta base de dados com os parâmetros apresentados na tabela \ref{param_wine}. As tabelas \ref{wine_batch} e \ref{wine_adaptativo} mostram a matriz de confusão obtidas pelos algoritmos batch SOM e batch SOM adaptativo para múltiplas tabelas de dissimilaridade.
-
-\begin{table}[!h]
-\begin{center}
-\caption{Parâmetros utilizados nos experimentos com a base wine}
-\begin{tabular}{|c|c|}
-\hline
-Parâmetros & Valor\\
-\hline
-Topologia & 2x5\\ \hline
-$T_{min}$ & 0,002\\ \hline
-$T_{max}$ & 2,0\\ \hline
-$N_{iter}$ & 300\\ \hline
-\end{tabular}
-\label{param_wine}
-\end{center}
-\end{table}
+As tabelas \ref{wine_batch} e \ref{wine_adaptativo} mostram a matriz de confusão obtidas pelos algoritmos batch SOM e batch SOM adaptativo para múltiplas tabelas de dissimilaridade.
 
 \begin{table}[!h]
 \begin{center}
-\caption{Base de dados wine: Matriz de confusão obtida pelo algoritmo batch SOM}
-\begin{tabular}{|c|c|c|c|}
+\caption{Wine: Matriz de confusão obtida pelo algoritmo batch SOM}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
 \hline
-Cluster/Classe & 1 & 2 & 3 \\ \hline
-0,0 & 33 & 1 & 0 \\ \hline
-0,1 & 3 & 34 & 0 \\ \hline
-0,2 & 0 & 22 & 0 \\ \hline
-0,3 & 0 & 1 & 8 \\ \hline
-0,4 & 0 & 0 & 26 \\ \hline
-1,0 & 23 & 4 & 0 \\ \hline
-1,3 & 0 & 5 & 2 \\ \hline
-1,4 & 0 & 4 & 12\\ \hline
+Classe/Grupo & 0,0 & 0,1 & 0,2 & 0,3 & 0,4 & 1,0 & 1,1 & 1,2 & 1,3 & 1,4 \\ \hline
+1 & 0 & 0 & 0 & 14 & 6 & 0 & 8 & 5 & 10 & 16 \\ \hline
+2 & 17 & 8 & 16 & 0 & 0 & 16 & 3 & 10 & 0 & 1 \\ \hline
+3 & 0 & 14 & 3 & 0 & 0 & 14 & 5 & 12 & 0 & 0 \\ \hline
 
 \end{tabular}
 \label{wine_batch}
@@ -327,27 +286,232 @@ Cluster/Classe & 1 & 2 & 3 \\ \hline
 
 \begin{table}[!h]
 \begin{center}
-\caption{Base de dados wine: Matriz de confusão obtida pelo algoritmo batch SOM adaptativo}
-\begin{tabular}{|c|c|c|c|}
+\caption{Wine: Matriz de confusão obtida pelo algoritmo batch SOM adaptativo}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
 \hline
-Cluster/Classe & 1 & 2 & 3 \\ \hline
-0,0 & 0 & 21 & 0 \\ \hline
-0,1 & 0 & 9 & 0 \\ \hline
-0,2 & 0 & 2 & 23 \\ \hline
-0,3 & 8 & 0 & 0 \\ \hline
-0,4 & 30 & 2 & 0 \\ \hline
-1,0 & 1 & 16 & 0 \\ \hline
-1,1 & 0 & 19 & 0 \\ \hline
-1,2 & 2 & 0 & 0 \\ \hline
-1,3 & 0 & 1 & 25 \\ \hline
-1,4 & 18 & 1 & 0\\ \hline
+Classe/Grupo & 0,0 & 0,1 & 0,2 & 0,3 & 0,4 & 1,0 & 1,1 & 1,2 & 1,3 \\ \hline
+1 & 0 & 0 & 0 & 13 & 31 & 0 & 0 & 0 & 15 \\ \hline
+2 & 20 & 21 & 0 & 0 & 8 & 18 & 4 & 0 & 0 \\ \hline
+3 & 0 & 0 & 7 & 0 & 0 & 0 & 22 & 19 & 0 \\ \hline
 
 \end{tabular}
 \label{wine_adaptativo}
 \end{center}
 \end{table}
 
-\section{Conclusão}
+Os índices CR, F-\textit{measure} e OERC obtiveram, respectivamente, os valores 0,45, 0,55, 0,067 para o modelo SOM adaptativo, e os valores, respectivamente 0,29, 0,40, 0,27 para o modelo SOM batch não-adaptativo. O algoritmo SOM adaptativo para múltiplas tabelas de dissimilaridade obteve melhores índices do que o modelo batch não-adaptativo.
+
+A tabela \ref{wine_pesos} mostra a matriz de pesos final obtida pelo algoritmo batch SOM adaptativo para múltiplas tabelas de dissimilaridade. Cada peso representa a relevância de uma determinada matriz de dissimilaridade para a formação de cada grupo. Valores acima de 1 indicam uma forte influência da matriz durante a afetação de objetos em um determinado grupo. Por exemplo, na tabela \ref{wine_pesos} o grupo 0,0 tem uma influência maior pela matriz 1 (3,19).
+
+\begin{table}
+\begin{center}
+\caption{Wine: Matriz de pesos obtida pelo algoritmo batch SOM adaptativo}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+Matriz/Grupo & 0,0 & 0,1 & 0,2 & 0,3 & 0,4 & 1,0 & 1,1 & 1,2 & 1,3 \\ \hline
+1 & \textbf{3,19} & \textbf{1,2} & \textbf{1,27} & 0,6 & 0,71 & 0,47 & \textbf{1,19} & 0,7 & \textbf{1,5}\\ \hline
+2 & \textbf{1,68} & 0,27 & \textbf{1,14} & \textbf{4,0} & 0,73 & 0,51 & 0,27 & 0,41 & \textbf{6,17}\\ \hline
+3 & 0,42 & 0,43 & \textbf{10,78} & 0,73 & 0,41 & 0,43 & \textbf{1,25} & 0,76 & \textbf{1,02}\\ \hline
+4 & 0,76 & 0,74 & \textbf{4,35} & 0,21 & 0,26 & 0,5 & \textbf{1,01} & 0,58 & 0,87\\ \hline
+5 & 0,11 & 0,95 & 0,65 & \textbf{1,06} & 0,47 & \textbf{1,27} & 0,5 & 0,5 & 0,99\\ \hline
+6 & \textbf{1,04} & \textbf{2,23} & 0,28 & \textbf{1,97} & \textbf{1,35} & 0,57 & \textbf{1,03} & \textbf{1,74} & 0,56\\ \hline
+7 & \textbf{1,8} & \textbf{2,93} & \textbf{2,24} & \textbf{1,71} & \textbf{1,8} & \textbf{6,17} & \textbf{3,91} & \textbf{5,0} & 0,79\\ \hline
+8 & 0,95 & 0,64 & 0,36 & 0,69 & \textbf{1,53} & 0,61 & 0,33 & 0,31 & 0,47\\ \hline
+9 & 0,46 & 0,17 & 0,24 & 0,63 & \textbf{1,73} & 0,8 & \textbf{1,83} & \textbf{1,54} & \textbf{1,13}\\ \hline
+10 & \textbf{2,52} & \textbf{8,87} & 0,22 & \textbf{1,06} & \textbf{2,6} & \textbf{4,97} & 0,6 & 0,37 & 0,87\\ \hline
+11 & \textbf{1,44} & 0,23 & 0,97 & \textbf{1,35} & \textbf{1,6} & 0,27 & 0,61 & \textbf{1,17} & 0,86\\ \hline
+12 & 0,75 & \textbf{2,0} & \textbf{1,93} & \textbf{2,65} & \textbf{1,64} & \textbf{1,56} & \textbf{2,1} & \textbf{7,42} & \textbf{1,46}\\ \hline
+13 & \textbf{2,35} & \textbf{3,24} & 0,96 & 0,43 & \textbf{1,64} & \textbf{4,1} & \textbf{2,6} & \textbf{1,12} & 0,47\\ \hline
+
+\end{tabular}
+\label{wine_pesos}
+\end{center}
+\end{table}
+
+\subsection{Base de dados Iris}
+Esta base de dados consiste em três tipos (classes) de planta íris: iris setosa, iris versicolor e iris virginica. Cada uma das classes possui 50 exemplos. Cada instância é descrita por quatro atributos. 
+%que são o comprimento (length) e a largura (width) da sépala (sepal) e da pétala (petal), em centímetros.
+
+As tabelas \ref{iris_batch} e \ref{iris_adaptativo} mostram a matriz de confusão obtidas pelos algoritmos batch SOM e batch SOM adaptativo para múltiplas tabelas de dissimilaridade.
+
+\begin{table}[!h]
+\begin{center}
+\caption{Iris: Matriz de confusão obtida pelo algoritmo batch SOM}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+Classe/Grupo & 0,0 & 0,1 & 0,2 & 0,3 & 0,4 & 1,0 & 1,1 & 1,2 & 1,3 & 1,4 \\ \hline
+1 & 0 & 0 & 0 & 11 & 17 & 0 & 0 & 0 & 0 & 22 \\ \hline
+2 & 18 & 13 & 16 & 0 & 0 & 0 & 1 & 2 & 0 & 0 \\ \hline
+3 & 3 & 0 & 1 & 0 & 0 & 8 & 15 & 11 & 12 & 0 \\ \hline
+\end{tabular}
+\label{iris_batch}
+\end{center}
+\end{table}
+
+\begin{table}[!h]
+\begin{center}
+\caption{Iris: Matriz de confusão obtida pelo algoritmo SOM adaptativo}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+Classe/Grupo & 0,0 & 0,1 & 0,2 & 0,3 & 0,4 & 1,0 & 1,1 & 1,2 & 1,3 & 1,4 \\ \hline
+1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 13 & 37 \\ \hline
+2 & 10 & 6 & 16 & 0 & 17 & 1 & 0 & 0 & 0 & 0\\ \hline
+3 & 0 & 7 & 0 & 3 & 0 & 15 & 16 & 9 & 0 & 0\\ \hline
+
+\end{tabular}
+\label{iris_adaptativo}
+\end{center}
+\end{table}
+
+Os índices CR, F-\textit{measure} e OERC obtiveram, respectivamente, os valores 0,53, 0,61 e 0,04 para o modelo SOM adaptativo para múltiplas tabelas de dissimilaridade, e os valores, respectivamente 0,43, 0,52, 0,04 para o modelo SOM batch não-adaptativo. Os dois algoritmos obtiveram desempenhos semelhantes para esta base de dados.
+
+A tabela \ref{iris_pesos} mostra a matriz de pesos final obtida pelo algoritmo batch SOM adaptativo para múltiplas tabelas de dissimilaridade.
+
+\begin{table}
+\begin{center}
+\caption{Iris: Matriz de pesos obtida pelo algoritmo batch SOM adaptativo}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+Matriz/Grupo & 0,0 & 0,1 & 0,2 & 0,3 & 0,4 & 1,0 & 1,1 & 1,2 & 1,3 & 1,4 \\ \hline
+1 & 0,25 & \textbf{2,13} & 0,36 & 0,55 & 0,12 & \textbf{2,11} & 0,6 & 0,16 & 0,42 & 0,25 \\ \hline
+2 & 0,28 & 0,10 & 0,15 & \textbf{1,11} & 0,55 & 0,33 & 0,88 & 0,69 & 0,11 & 0,06 \\ \hline
+3 & \textbf{1,37} & \textbf{6,05} & \textbf{2,51} & \textbf{1,59} & \textbf{4,49} & \textbf{4,4} & \textbf{1,41} & \textbf{1,93} & \textbf{5,04} & \textbf{5,12} \\ \hline
+4 & \textbf{10,14} & 0,75 & \textbf{7,31} & \textbf{1,03} & \textbf{3,22} & 0,32 & \textbf{1,32} & \textbf{4,46} & \textbf{4,07} & \textbf{12,03} \\ \hline
+
+\end{tabular}
+\label{iris_pesos}
+\end{center}
+\end{table}
+
+\subsection{Base de dados Thyroid}
+
+Esta base possui dados sobre os estados da glândula tireóide: normal, hipertireoidismo e hipotireoidismo. As três classes (1, 2 e 3) possuem, respectivamente, 150, 35 e 30 exemplos. Cada instância é descrita por 5 atributos com valores reais.
+%\textit{T3-resin uptake test, total serum thyroxin, total serum triiodothyronine, basal thyroidstimulating hormone}(TSH) e \textit{maximal absolute difference in TSH value}.
+
+As tabelas \ref{thyroid_batch} e \ref{thyroid_adaptativo} mostram a matriz de confusão obtidas pelos algoritmos batch SOM e batch SOM adaptativo para múltiplas tabelas de dissimilaridade.
+
+\begin{table}[!h]
+\begin{center}
+\caption{Thyroid: Matriz de confusão obtida pelo algoritmo batch SOM}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+Classe/Grupo & 0,0 & 0,1 & 0,2 & 0,3 & 0,4 & 1,0 & 1,1 & 1,2 & 1,3 & 1,4 \\ \hline
+1 & 0 & 8 & 41 & 20 & 0	& 0	& 1	& 49 & 30 & 1 \\ \hline
+2 & 0 & 3 & 0 & 4 & 5 & 0 & 0 & 1 & 9 & 13 \\ \hline
+3 & 12 & 3 & 1 & 0 & 0 & 5 & 5 & 2 & 2 & 0 \\ \hline
+
+\end{tabular}
+\label{thyroid_batch}
+\end{center}
+\end{table}
+
+\begin{table}[!h]
+\begin{center}
+\caption{Thyroid: Matriz de confusão obtida pelo algoritmo batch SOM adaptativo}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\hline
+Classe/Grupo & 0,0 & 0,1 & 0,2 & 0,3 & 0,4 & 1,1 & 1,2 & 1,3 & 1,4 \\ \hline
+1 & 75 & 74	& 1	& 0	& 0	& 0	& 0	& 0	& 0 \\ \hline
+2 & 0 & 2 & 0 & 0 & 9 & 24 & 0 & 0 & 0 \\ \hline
+3 & 2 & 2 & 4 & 10 & 0 & 0 & 4 & 5 & 3 \\ \hline
+
+\end{tabular}
+\label{thyroid_adaptativo}
+\end{center}
+\end{table}
+
+Os índices CR, F-\textit{measure} e OERC obtiveram, respectivamente, os valores 0,63, 0,66 e 0,03 para o modelo SOM adaptativo, e os valores, respectivamente 0,36, 0,50 e 0,13 para o modelo SOM batch não-adaptativo. O algoritmo SOM adaptativo para múltiplas tabelas de dissimilaridade obteve melhores índices do que o modelo batch não-adaptativo.
+
+A tabela \ref{thyroid_pesos} mostra a matriz de pesos final obtida pelo algoritmo batch SOM adaptativo para múltiplas tabelas de dissimilaridade.
+
+\begin{table}
+\begin{center}
+\caption{Thyroid: Matriz de pesos obtida pelo algoritmo batch SOM adaptativo}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+Grupo/Matriz & 0,0 & 0,1 & 0,2 & 0,3 & 0,4 & 1,0 & 1,1 & 1,2 & 1,3 & 1,4 \\ \hline
+1 & 0,16 & 0,16 & 0,12 & 0,67 & 0,03 & 0,25 & 0,04 & 0,79 & \textbf{5,64} & 0,66 \\ \hline
+2 & 0,55 & 0,32 & \textbf{2,44} & \textbf{3,31} & 0,94 & 0,28 & 0,33 & \textbf{8,56} & \textbf{1,97} & \textbf{2,08} \\ \hline
+3 & \textbf{1,88} & 0,59 & \textbf{1,62} & \textbf{3,31} & 0,04 & 0,19 & 0,034 & \textbf{2,79} & \textbf{1,02} & 0,33 \\ \hline
+4 & \textbf{5,27} & \textbf{19,76} & 0,57 & 0,09 & \textbf{17,26} & \textbf{22,55} & \textbf{20,44} & 0,02 & 0,89 & \textbf{2,71} \\ \hline
+5 & \textbf{1,13} & \textbf{1,63} & \textbf{3,74} & \textbf{1,37} & \textbf{41,08} & \textbf{3,24} & \textbf{103,65} & \textbf{3,12} & 0,09 & 0,8 \\ \hline
+
+\end{tabular}
+\label{thyroid_pesos}
+\end{center}
+\end{table}
+
+\subsection{Base de dados Ecoli}
+
+A base de dados Ecoli contém dados de proteínas classificadas em 8 classes: (1) cp (citoplasma), com 143 exemplos; (2) im (membrana interna sem sequência de sinal), com 77 exemplos; (3) pp (perisplasm), com 52 exemplos; (4) imU (inner membrane, uncleavable signal sequence), com 35 exemplos; (5) om  (outer membrane), com 20 exemplos; (6) omL (outer membrane lipoprotein), com 5 exemplos; (7) imL (inner membrane lipoprotein) com 2 exemplos e (8) imS (inner membrane, cleavable signal sequence), com 2 exemplos.  Cada indivíduo é descrito por 6 atributos.
+%Cada indivíduo é descrito por 8 atributos: (1) Sequence Name: Número de acesso para a base de dados SWISS-PROT; (2) mcg: método McGeoch's para reconhecimento de sequência de sinal; (3)
+
+As tabelas \ref{ecoli_batch} e \ref{ecoli_adaptativo} mostram a matriz de confusão obtidas pelos algoritmos batch SOM e batch SOM adaptativo para múltiplas tabelas de dissimilaridade, respectivamente.
+
+\begin{table}[!h]
+\begin{center}
+\caption{Ecoli: Matriz de confusão obtida pelo algoritmo batch SOM}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+Classe/Grupo & 0,0 & 0,1 & 0,2 & 0,3 & 0,4 & 1,0 & 1,1 & 1,2 & 1,3 & 1,4 \\ \hline
+1 & 47 & 18	& 19 & 0 & 0 & 25 & 27 & 6 & 1 & 0\\ \hline
+2 & 0 & 1 & 0 & 2 & 25 & 0 & 0 & 0 & 0 & 7\\ \hline
+3 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0\\ \hline
+4 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0\\ \hline
+5 & 5 & 0 & 0 & 32 & 24 & 1	& 0	& 0	& 1	& 14\\ \hline
+6 & 1 & 1 & 0 & 0 & 1 & 0 & 0 & 13 & 35	& 1\\ \hline
+7 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 4 & 1 & 0\\ \hline
+8 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 8 & 11 & 1\\ \hline
+
+\end{tabular}
+\label{ecoli_batch}
+\end{center}
+\end{table}
+
+\begin{table}[!h]
+\begin{center}
+\caption{Ecoli: Matriz de confusão obtida pelo algoritmo batch SOM adaptativo}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\hline
+Classe/Grupo & 0,0 & 0,1 & 0,2 & 0,3 & 0,4 & 1,0 & 1,2 & 1,3 & 1,4 \\ \hline
+1 & 0 & 0 & 3 & 36 & 57 & 0 & 0 & 3 & 44 \\ \hline
+2 & 10 & 6 & 1 & 0 & 0 & 17 & 0 & 1	& 0 \\ \hline
+3 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 1 & 0 \\ \hline
+4 & 1 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+5 & 23 & 17 & 0	& 8	& 0	& 28 & 0 & 1 & 0 \\ \hline
+6 & 0 & 1 & 5 & 2 & 2 & 0 & 13 & 29	& 0 \\ \hline
+7 & 0 & 0 & 5 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+8 & 0 & 0 & 1 & 0 & 0 & 0 & 11 & 8 & 0 \\ \hline
+
+\end{tabular}
+\label{ecoli_adaptativo}
+\end{center}
+\end{table}
+
+Os índices CR, F-\textit{measure} e OERC obtiveram, respectivamente, os valores 0,43, 0,52 e 0,24 para o modelo SOM adaptativo, e os valores, respectivamente 0,37, 0,52 e 0,24 para o modelo SOM batch não-adaptativo. O algoritmo SOM adaptativo para múltiplas tabelas de dissimilaridade obteve índices semelhantes ao modelo batch não-adaptativo.
+
+A tabela \ref{ecoli_pesos} mostra a matriz de pesos final obtida pelo algoritmo batch SOM adaptativo para múltiplas tabelas de dissimilaridade.
+
+\begin{table}
+\begin{center}
+\caption{Ecoli: Matriz de pesos obtida pelo algoritmo batch SOM adaptativo}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\hline
+Grupo/Matriz & 0,0 & 0,1 & 0,2 & 0,3 & 0,4 & 1,0 & 1,2 & 1,3 & 1,4 \\ \hline
+1 & 0,36 & 0,49 & 0,96 & 0,86 & \textbf{1,26} & 0,5 & \textbf{2,44} & \textbf{2,55} & 0,48 \\ \hline
+2 & 0,5 & 0,75 & 0,88 & \textbf{1,46} & 0,9 & 0,65 & 0,83 & 0,53 & 0,72 \\ \hline
+3 & 0,53 & 0,54 & 0,78 & \textbf{1,12} & 0,63 & 0,64 & 0,25 & 0,38 & 0,46 \\ \hline
+4 & \textbf{2,55} & \textbf{2,27} & \textbf{2,09} & 0,78 & \textbf{1,2} & \textbf{2,15} & \textbf{1,93} & \textbf{1,53} & \textbf{2,28} \\ \hline
+5 & \textbf{3,96} & \textbf{2,16} & 0,71 & 0,89 & \textbf{1,15} & \textbf{2,2} & 0,98 & \textbf{1,25} & \textbf{2,69} \\ \hline
+
+\end{tabular}
+\label{ecoli_pesos}
+\end{center}
+\end{table}
+
+\section{Conclusão}\label{conclusao}
+
+Este trabalho apresentou um modelo de agrupamento baseado no algoritmo SOM com treinamento batch. Este modelo realiza o agrupamento de objetos levando em consideração seus dados relacionais descritos por uma tabela de dissimilaridades. Como saída, o algoritmo produz uma partição dos dados de entrada, os protótipos de cada grupo e pesos adaptativos que indicam a relevância de cada tabela de dissimilaridade na formação dos agrupamentos, otimizando um critério de adequação que mede o ajuste entre os grupos e seus protótipos. Tais pesos mudam a cada iteração e são diferentes para cada grupo. Experimentos utilizando bases de dados reais foram realizados para mostrar a utilidade do modelo proposto comparando-o com o modelo apresentado por \cite{golli:2004}.
 
 %\nocite{*} % displays all references, cited or not
 \bibliographystyle{sbc}
