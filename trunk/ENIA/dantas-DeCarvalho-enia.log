@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.4)  10 APR 2011 22:32
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.5.4)  6 JUN 2011 14:28
 entering extended mode
  %&-line parsing enabled.
 **dantas-DeCarvalho-enia.tex
@@ -48,17 +48,35 @@ Package ifvtex Info: VTeX not detected.
 \Gm@odd@mp=\dimen105
 \Gm@even@mp=\dimen106
 \Gm@dimlist=\toks15
+)
+(/usr/share/texmf-texlive/tex/latex/caption/caption2.sty
+Package: caption2 2008/07/01 v2.2c Customising captions (AS)
 
-(/usr/share/texmf-texlive/tex/xelatex/xetexconfig/geometry.cfg))
-(./caption2.sty
-Package: caption2 2002/08/03 v2.1 Customising captions (AS)
+
+Package caption2 Warning: ****************************************************
+(caption2)                THIS PACKAGE IS OBSOLETE:
+(caption2)                This package attempts to provide an `caption2'
+(caption2)                package v2.0/2.1 author environment so that OLD
+(caption2)                documents can be successfully processed. It should
+(caption2)                NOT be used for NEW documents! New documents should
+(caption2)                use the regular `caption' package v3.x instead.
+(caption2)                ****************************************************
+
+(/usr/share/texmf-texlive/tex/latex/caption/caption3.sty
+Package: caption3 2009/10/09 v3.1k caption3 kernel (AR)
 \captionmargin=\dimen107
-\captionwidth=\dimen108
-\captionindent=\dimen109
+\captionmargin@=\dimen108
+\captionwidth=\dimen109
+\caption@indent=\dimen110
+\caption@parindent=\dimen111
+\caption@hangindent=\dimen112
+)
 Package caption2 Info: Running in caption2 v2.0 compatibility mode on input lin
-e 147.
-\captionlinewidth=\dimen110
-) (/usr/share/texmf-texlive/tex/latex/psnfss/times.sty
+e 209.
+\captionlinewidth=\dimen113
+\realcaptionwidth=\dimen114
+)
+(/usr/share/texmf-texlive/tex/latex/psnfss/times.sty
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
 \c@instn=\count90
@@ -68,12 +86,12 @@ Package: titlesec 2007/08/12 v2.8 Sectioning titles
 \ttl@box=\box26
 \beforetitleunit=\skip43
 \aftertitleunit=\skip44
-\ttl@plus=\dimen111
-\ttl@minus=\dimen112
+\ttl@plus=\dimen115
+\ttl@minus=\dimen116
 \ttl@toksa=\toks16
-\titlewidth=\dimen113
-\titlewidthlast=\dimen114
-\titlewidthfirst=\dimen115
+\titlewidth=\dimen117
+\titlewidthlast=\dimen118
+\titlewidthfirst=\dimen119
 ))
 (/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
@@ -93,8 +111,8 @@ Package graphics Info: Driver file: pdftex.def on input line 91.
 File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
 \Gread@gobject=\count91
 ))
-\Gin@req@height=\dimen116
-\Gin@req@width=\dimen117
+\Gin@req@height=\dimen120
+\Gin@req@width=\dimen121
 )
 (/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
 \Urlmuskip=\muskip10
@@ -117,7 +135,7 @@ Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
 (/usr/share/texmf-texlive/tex/generic/babel/babel.def
 File: babel.def 2008/07/06 v3.8l Babel common definitions
 \babel@savecnt=\count92
-\U@D=\dimen118
+\U@D=\dimen122
 )
 
 Package babel Warning: No hyphenation patterns were loaded for
@@ -138,19 +156,19 @@ File: latin1.def 2008/03/30 v1.1d Input encoding file
 (./dantas-DeCarvalho-enia.aux)
 \openout1 = `dantas-DeCarvalho-enia.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 25.
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -196,133 +214,96 @@ driver: pdftex
 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
-(/usr/share/texmf/tex/context/base/supp-pdf.mkii
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count93
-\scratchdimen=\dimen119
+\scratchdimen=\dimen123
 \scratchbox=\box27
 \nofMPsegments=\count94
 \nofMParguments=\count95
 \everyMPshowfont=\toks20
 \MPscratchCnt=\count96
-\MPscratchDim=\dimen120
+\MPscratchDim=\dimen124
 \MPnumerator=\count97
 \everyMPtoPDFconversion=\toks21
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <16> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 27.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
-LaTeX Font Info:    Try loading font information for U+msa on input line 25.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 27.
+LaTeX Font Info:    Try loading font information for U+msa on input line 27.
  (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 25.
+LaTeX Font Info:    Try loading font information for U+msb on input line 27.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 25.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 27.
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-LaTeX Font Info:    Try loading font information for OMS+pcr on input line 25.
+LaTeX Font Info:    Try loading font information for OMS+pcr on input line 27.
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/omspcr.fd
 File: omspcr.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 25.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 27.
 
-Overfull \hbox (2.78099pt too wide) in paragraph at lines 25--25
+Overfull \hbox (2.78099pt too wide) in paragraph at lines 27--27
  [][] 
  []
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 27.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 29.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <13> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
-
-Underfull \hbox (badness 1308) in paragraph at lines 44--46
-\OT1/ptm/m/n/12 Algoritmos de agru-pa-mento (\OT1/ptm/m/it/12 clu-ter-ing\OT1/p
-tm/m/n/12 ) t[]em sido larga-mente us-a-dos em []areas de
- []
-
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 44.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 1616) in paragraph at lines 55--56
-[]\OT1/ptm/m/n/12 [[]] prop[]oe uma adapta[][]ao do mod-elo SOM para da-dos de
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+\OT1/ptm/m/n/12 Os al-go-rit-mos chama-dos \OT1/ptm/m/it/12 self-organizing map
+s \OT1/ptm/m/n/12 [[]] (ma-pas auto-
  []
 
-
-Underfull \hbox (badness 2486) in paragraph at lines 55--56
-\OT1/ptm/m/n/12 dis-sim-i-lar-i-dade e [[]] de-sen-volve di-ver-sas modifica[][
-]oes para
- []
-
-
-Underfull \hbox (badness 6893) in paragraph at lines 55--56
-\OT1/ptm/m/n/12 uma implementa[][]ao mais r[]apida do al-go-ritmo e para torn[]
-a-lo mais efi-caz.
- []
-
-[2] [3]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 140.
-
- (/usr/share/texmf-texlive/tex/latex/psnfss/omsptm.fd
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 140.
- [4] [5]
-
-LaTeX Warning: Reference `grupo' on page 6 undefined on input line 230.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 225--231
-
- []
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 232--235
+[2] [3] [4] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 276--282
 
  []
 
 
-Underfull \hbox (badness 1005) in paragraph at lines 243--244
+Underfull \hbox (badness 10000) in paragraph at lines 283--286
+
+ []
+
+
+Underfull \hbox (badness 1005) in paragraph at lines 298--299
 \OT1/ptm/m/n/12 lizando bases de da-dos obti-das do reposit[]orio UCI Ma-chine 
 Learn-ing Repos-i-tory
  []
 
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 251.
+[6]
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 309.
 
-(/usr/share/texmf-texlive/tex/latex/psnfss/ot1phv.fd
+ (/usr/share/texmf-texlive/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 251.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[7]
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 309.
+ [7]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[8]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[9]
-Overfull \hbox (11.19588pt too wide) in paragraph at lines 430--441
+[8] [9]
+Overfull \hbox (5.19588pt too wide) in paragraph at lines 488--499
  [] 
  []
 
@@ -332,42 +313,36 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[10] (./dantas-DeCarvalho-enia.bbl
-Underfull \vbox (badness 2119) has occurred while \output is active []
-
- [11])
-[12] (./dantas-DeCarvalho-enia.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+[10] [11] (./dantas-DeCarvalho-enia.bbl) [12] (./dantas-DeCarvalho-enia.aux) ) 
 Here is how much of TeX's memory you used:
- 2498 strings out of 495061
- 32983 string characters out of 1182622
- 121272 words of memory out of 3000000
- 5627 multiletter control sequences out of 15000+50000
- 23870 words of font info for 56 fonts, out of 3000000 for 9000
- 28 hyphenation exceptions out of 8191
- 30i,12n,28p,921b,317s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
-ve/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/ty
-pe1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/public/
-amsfonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
-/cmmi6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb><
-/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/t
-exmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/
-fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/p
-ublic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
-nts/cm/cmsy6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8
-.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
-/usr/share/texmf-texlive/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-t
-exlive/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-texlive/fonts/type
-1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmbi8a.
-pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share/texm
-f-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on dantas-DeCarvalho-enia.pdf (12 pages, 248766 bytes).
+ 2988 strings out of 495061
+ 42065 string characters out of 1182622
+ 125624 words of memory out of 3000000
+ 6115 multiletter control sequences out of 15000+50000
+ 24918 words of font info for 59 fonts, out of 3000000 for 9000
+ 29 hyphenation exceptions out of 8191
+ 43i,9n,40p,982b,319s stack positions out of 5000i,500n,10000p,200000b,50000s
+{
+/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texlive/
+fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1
+/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/public/ams
+fonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
+mi6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texm
+f-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fon
+ts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/publ
+ic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
+/cm/cmsy6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pf
+b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-tex
+live/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-texlive/fonts/type1/u
+rw/helvetic/uhvb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.p
+fb></usr/share/texmf-texlive/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texm
+f-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type
+1/urw/times/utmri8a.pfb>
+Output written on dantas-DeCarvalho-enia.pdf (12 pages, 258787 bytes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
+ 118 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

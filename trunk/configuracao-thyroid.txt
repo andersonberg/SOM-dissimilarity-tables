@@ -1,8 +1,8 @@
-repeticoes = 40
+repeticoes = 50
 mapa_x = 2
-mapa_y = 5
+mapa_y = 8
 q = 1
-t_min = 0.2
-t_max = 2.0
-n_iter = 300.0
-files: BasesDados/thyroid-L2-2-N.sds BasesDados/thyroid-L2-3-N.sds BasesDados/thyroid-L2-4-N.sds BasesDados/thyroid-L2-5-N.sds BasesDados/thyroid-L2-6-N.sds
+t_min = 0.3
+t_max = 10.0
+n_iter = 50.0
+files: ../BasesDados/thyroid-L2-2-N.sds ../BasesDados/thyroid-L2-3-N.sds ../BasesDados/thyroid-L2-4-N.sds ../BasesDados/thyroid-L2-5-N.sds ../BasesDados/thyroid-L2-6-N.sds
