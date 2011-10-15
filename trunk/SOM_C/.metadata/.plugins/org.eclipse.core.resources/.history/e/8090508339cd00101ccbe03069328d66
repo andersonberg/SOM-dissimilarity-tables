@@ -1,0 +1,17 @@
+/*
+ * Individual.h
+ *
+ *  Created on: 22/08/2011
+ *      Author: Anderson
+ */
+
+#ifndef INDIVIDUAL_H_
+#define INDIVIDUAL_H_
+
+class Individual {
+public:
+	Individual();
+	virtual ~Individual();
+};
+
+#endif /* INDIVIDUAL_H_ */

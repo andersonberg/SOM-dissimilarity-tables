@@ -1,0 +1,22 @@
+/*
+ * Classe.cpp
+ *
+ *  Created on: 22/08/2011
+ *      Author: Anderson
+ */
+
+#include "Classe.h"
+
+Classe::Classe() {
+	// TODO Auto-generated constructor stub
+
+}
+
+void Classe::InserirObjeto(Individual objeto){
+	this->objetos.push_back(objeto);
+}
+
+Classe::~Classe() {
+	// TODO Auto-generated destructor stub
+}
+

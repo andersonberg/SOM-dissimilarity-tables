@@ -1,0 +1,41 @@
+/*
+ * Mapa.cpp
+ *
+ *  Created on: 23/08/2011
+ *      Author: Anderson
+ */
+
+#include "Mapa.h"
+#include <cstdlib>
+#include <ctime>
+
+Mapa::Mapa(list<Individual> objetos, int nLinhas, int nColunas, int cardinalidade) {
+	list<Cluster> clusters = new list<Cluster>();
+	int c = nLinhas * nColunas;
+	int i,j;
+
+	srand((unsigned)time(0));
+	int random_int;
+	int lowest=0, highest=this->objetos.size();
+	int range=(highest-lowest);
+
+	for (i = 0; i < c; i++){
+		Cluster cluster = new Cluster(i);
+		for (j = 0; j < cardinalidade; j++){
+			random_int = lowest+int(range*rand()/(RAND_MAX + 1.0));
+			Individual prot = this->objetos[random_int];
+			Individual novo_prototipo = new Individual(prot.indice, prot.id2, prot.nome);
+
+			//TODO: Verificar se já existe o protótipo na lista
+			cluster.prototipos.push_back(novo_prototipo);
+		}
+		clusters.push_back(cluster);
+	}
+
+
+}
+
+Mapa::~Mapa() {
+	// TODO Auto-generated destructor stub
+}
+

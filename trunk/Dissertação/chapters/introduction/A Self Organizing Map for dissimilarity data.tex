@@ -1,0 +1,56 @@
+A Self Organizing Map for dissimilarity data
+
+SOM é um método de rede neural não-supervisionada que possui propriedades de agrupamento e visualização. Ele pode ser considerado como um algoritmo que mapeia um espaço de dados de grande dimensionalidade $R^p$ para um espaço que tem uma dimensão menor, geralmente duas dimensões e é chamado de mapa. Esta projeção permite obter uma partição da entrada em agrupamentos "similares", preservando sua topologia. Os predecessores mais semelhantes são o k-means (MacQueen 1967) e o método de agrupamento dinâmico (Diday 1989) que opera como SOM sem preservação de topologia e sem fácil visualização.
+
+Este artigo propõe uma adaptação do SOM para dados de dissimilaridade. O algoritmo SOM como propôs Kohonen é baseado na noção de centro de gravidade. Este conceito não é aplicável a diversos tipos de dados complexos, especialmente dados semi-estruturados.
+
+\section{Mapa auto-organizável}
+
+\subsection{Introdução}
+
+O SOM de Kohonen é uma ferramenta bastante popular usada para visualização de espaços de dados de grandes dimensões. SOM realiza agrupamentos preservando a ordem espacial dos dados de entrada refletida através da implementação de uma ordenação dos vetores de referência em um espaço de saída de uma ou duas dimensões. O SOM consiste em neurônios organizados em uma grade, chamada de mapa. Mais formalmente, o mapa é descrito por um grafo ($C,\Gamma$). $C$ é um conjunto de $m$ neurônios interconectados tendo uma topologia discreta descrita por $\Gamma$. Para cada par de neurônios (\textit{c,r}) no mapa, $\delta(c,r)$ é o comprimento do caminho mais curto entre $c$ e $r$ no grafo $C$. Essa função de distância permite que haja uma relação de vizinhança entre neurônios. Cada neurônio $c$ é representado por um vetor de referência $\mathit{w}_c = \{\mathit{w}_c^1, \dots, \mathit{w}_c^p\}$, onde $p$ é igual à dimensão dos vetores de entrada. A quantidade de neurônios varia de acordo com a aplicação.
+
+O treinamento do algoritmo SOM se assemelha ao k-means. A principal diferença é que, além do vetor de referência vencedor, seus vizinhos no mapa são atualizados: a região em torno deste vetor é estendida em direção à observação apresentada. O resultado é que os neurônios na grade tornam-se ordenados: neurônios vizinhos possuem vetores de referência semelhantes.
+
+\subsection{Algoritmo de treinamento em lote}
+
+O algoritmo de treinamento em lote é um algoritmo iterativo em que todo o conjunto de dados ($\Omega$) é apresentado ao mapa antes que qualquer modificação seja feita.
+
+
+\subsection{Um mapa auto-organizável em lote para dados de dissimilaridade}
+
+O mapa para dados de dissimilaridade é descrito por um grafo ($C,\Gamma$), exatamente como o SOM tradicional. A principal diferença é que não estamos trabalhando em $R^d$, mas em um conjunto arbitrário em que uma dissimilaridade ($d$) é definida.
+
+Cada neurônio $c$ é representado por um indivíduo referência $a_c = \{z_{j1}, \dots, z_{jq}\}$, com $z_{ji} \in \Omega$. No SOM clássico, cada vetor referência envolve todo o espaço de entrada $R^p$. Nesta abordagem, cada neurônio tem um número finito de representações.
+
+Definimos uma nova dissimilaridade $d^T$:
+
+$$
+d^T(z_i, a_c) = \sum_{r \in C} K^T (\delta(c,r)) \sum_{z_j \in a_r} d^2(z_i, z_j)
+$$
+
+Esta dissimilaridade é baseada em uma função kernel positiva, $K$, tal que $\lim_{|\delta| \to \infty} K(\delta) = 0$ e permite transformar a distância bruta no grafo entre dois neurônios no mapa $(\delta(c,r))$ em uma distância suavizada. $K$ é usada para definir a família de funções $K^T$ parametrizada por $T$, com $K^T(\delta) = K (\frac{\delta}{T})$. Como no SOM tradicional, $T$ é utilizado para controlar o tamanho da vizinhança. Quando o valor de $T$ é pequeno, há poucos neurônios na vizinhança. Um simples exemplo de $K^T$ é definido por $K^T(\delta) = \exp ^ {-\frac{\delta^2}{T^2}}$.
+
+Durante o aprendizado, minimizamos a seguinte função de custo $E$ alternando a etapa de afetação e a etapa de representação:
+
+$$
+E(f,a) = \sum_{z_i \in \Omega} d^T(z_i, a_{f(z_i)} = \sum_{z_i \in \Omega} \sum_{r \in C} K^T(\delta(f(z_i), r)) \sum_{z_j \in a_r} d^2(z_i, z_j)
+$$
+
+Esta função calcula o ajuste entre a partição calculada pela função de afetação e os vetores de referência $a$ do mapa.
+
+Durante a etapa de afetação, a função $f$ afeta cada indivíduo $z_i$ ao neurônio mais próximo, em termos da dissimilaridade $d^T$:
+
+$$
+f(z_i) = arg min_{c \in C} d^T (z_i,a_c)
+$$
+
+Esta etapa de afetação decresce o critério $E$.
+
+Durante a etapa de representação, temos que encontrar novos vetores de referência que representam o conjunto de observações. Esta etapa de otimização pode ser realizada independentemente para cada neurônio. De fato, minimizamos as $m$ funções seguintes:
+
+$$
+E_r = \sum_{z_i \in \Omega} K^T(\delta(f(z_i), r)) \sum_{z_j \in a_r} d^2(z_i, z_j)
+$$
+
+Na versão em lote clássica, esta minimização da função $E$ é imediata, pois as posições dos vetores de referência são as médias dos dados ponderados pela função kernel.

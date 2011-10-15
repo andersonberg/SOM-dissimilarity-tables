@@ -1,0 +1,32 @@
+/*
+ * Cluster.h
+ *
+ *  Created on: 22/08/2011
+ *      Author: Anderson
+ */
+
+using namespace std;
+
+#ifndef CLUSTER_H_
+#define CLUSTER_H_
+
+#include <string>
+#include <vector>
+
+class Cluster {
+public:
+	Cluster(int indice);
+	virtual ~Cluster();
+
+	void definirPonto(int x, int y);
+	void inserirObjeto(Individual objeto);
+
+	int indice;
+	vector<Individual> prototipos;
+	vector<Individual> objetos;
+	vector<float> pesos;
+	Point ponto;
+
+};
+
+#endif /* CLUSTER_H_ */

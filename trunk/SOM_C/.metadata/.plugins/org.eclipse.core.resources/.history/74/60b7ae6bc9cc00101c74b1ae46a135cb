@@ -1,0 +1,21 @@
+/*
+ * Cluster.h
+ *
+ *  Created on: 22/08/2011
+ *      Author: Anderson
+ */
+
+#ifndef CLUSTER_H_
+#define CLUSTER_H_
+
+#include <string>
+#include <vector>
+
+class Cluster {
+public:
+	Cluster(int indice);
+	virtual ~Cluster();
+
+};
+
+#endif /* CLUSTER_H_ */

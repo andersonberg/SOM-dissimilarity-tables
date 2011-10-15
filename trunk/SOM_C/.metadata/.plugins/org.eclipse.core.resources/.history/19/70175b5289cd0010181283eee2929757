@@ -1,0 +1,26 @@
+/*
+ * Mapa.cpp
+ *
+ *  Created on: 23/08/2011
+ *      Author: Anderson
+ */
+
+#include "Mapa.h"
+#include "Cluster.h"
+
+Mapa::Mapa(list<Individual> objetos, int nLinhas, int nColunas, int cardinalidade) {
+	list<Cluster> clusters = new list<Cluster>();
+	int c = nLinhas * nColunas;
+	int i;
+
+	for (i = 0; i < c; i++){
+		Cluster cluster = new Cluster()
+	}
+
+
+}
+
+Mapa::~Mapa() {
+	// TODO Auto-generated destructor stub
+}
+

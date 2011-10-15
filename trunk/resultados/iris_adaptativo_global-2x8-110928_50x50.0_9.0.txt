@@ -1,0 +1,5959 @@
+# Topology: 2x8
+# Cardinality (q): 1
+# Tmin: 0.300000011921
+# Tmax: 9.0
+# Number of iterations: 50.0
+*Modelo adaptativo
+
+#####################################
+# Repetição do experimento: 0
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_103]
+Number of elements: 15
+Elements: I_103, I_106, I_113, I_119, I_123, I_129, I_131, I_136, I_105, I_110, I_121, I_144, I_118, I_125, I_132
+
+Cluster (0,1)
+Prototypes: [I_130]
+Number of elements: 3
+Elements: I_130, I_108, I_126
+
+Cluster (0,2)
+Prototypes: [I_8]
+Number of elements: 0
+Elements
+
+Cluster (0,3)
+Prototypes: [I_94]
+Number of elements: 5
+Elements: I_58, I_61, I_94, I_99, I_82
+
+Cluster (0,4)
+Prototypes: [I_50]
+Number of elements: 0
+Elements
+
+Cluster (0,5)
+Prototypes: [I_50]
+Number of elements: 35
+Elements: I_1, I_2, I_3, I_4, I_5, I_7, I_8, I_10, I_12, I_13, I_14, I_18, I_23, I_25, I_27, I_28, I_29, I_30, I_31, I_35, I_36, I_38, I_39, I_40, I_41, I_43, I_46, I_48, I_50, I_9, I_21, I_24, I_26, I_32, I_42
+
+Cluster (0,6)
+Prototypes: [I_37]
+Number of elements: 4
+Elements: I_11, I_37, I_15, I_49
+
+Cluster (0,7)
+Prototypes: [I_6]
+Number of elements: 11
+Elements: I_16, I_34, I_6, I_17, I_19, I_33, I_45, I_20, I_22, I_47, I_44
+
+Cluster (1,0)
+Prototypes: [I_128]
+Number of elements: 18
+Elements: I_84, I_102, I_122, I_143, I_57, I_71, I_78, I_86, I_127, I_128, I_139, I_150, I_112, I_114, I_124, I_147, I_111, I_148
+
+Cluster (1,1)
+Prototypes: [I_64]
+Number of elements: 25
+Elements: I_56, I_74, I_75, I_98, I_55, I_59, I_62, I_64, I_66, I_67, I_73, I_76, I_79, I_85, I_92, I_120, I_51, I_52, I_53, I_77, I_87, I_134, I_135, I_69, I_88
+
+Cluster (1,2)
+Prototypes: [I_116]
+Number of elements: 10
+Elements: I_115, I_116, I_149, I_101, I_133, I_137, I_141, I_142, I_145, I_146
+
+Cluster (1,3)
+Prototypes: [I_90]
+Number of elements: 6
+Elements: I_54, I_90, I_91, I_95, I_107, I_60
+
+Cluster (1,4)
+Prototypes: [I_140]
+Number of elements: 1
+Elements: I_140
+
+Cluster (1,5)
+Prototypes: [I_7]
+Number of elements: 0
+Elements
+
+Cluster (1,6)
+Prototypes: [I_117]
+Number of elements: 4
+Elements: I_104, I_109, I_117, I_138
+
+Cluster (1,7)
+Prototypes: [I_83]
+Number of elements: 13
+Elements: I_65, I_89, I_96, I_72, I_80, I_97, I_63, I_68, I_70, I_83, I_93, I_100, I_81
+
+
+Critério de adequação (energia): 53.2920083825
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,3	0,5	0,6	0,7	1,0	1,1	1,2	1,3	1,4	1,6	1,7	Total
+
+1	0	 0	 0	 35	 4	 11	 0	 0	 0	 0	 0	 0	 0	 50
+3	15	 3	 0	 0	 0	 0	 13	 3	 10	 1	 1	 4	 0	 50
+2	0	 0	 5	 0	 0	 0	 5	 22	 0	 5	 0	 0	 13	 50
+Total	[15  3  5 35  4 11 18 25 10  6  1  4 13]
+
+Matriz de pesos:
+Cluster (0,0): 0.509811093252 0.250337509837 3.04314548285 2.57479155347
+Cluster (0,1): 0.509811093252 0.250337509837 3.04314548285 2.57479155347
+Cluster (0,2): 0.509811093252 0.250337509837 3.04314548285 2.57479155347
+Cluster (0,3): 0.509811093252 0.250337509837 3.04314548285 2.57479155347
+Cluster (0,4): 0.509811093252 0.250337509837 3.04314548285 2.57479155347
+Cluster (0,5): 0.509811093252 0.250337509837 3.04314548285 2.57479155347
+Cluster (0,6): 0.509811093252 0.250337509837 3.04314548285 2.57479155347
+Cluster (0,7): 0.509811093252 0.250337509837 3.04314548285 2.57479155347
+Cluster (1,0): 0.509811093252 0.250337509837 3.04314548285 2.57479155347
+Cluster (1,1): 0.509811093252 0.250337509837 3.04314548285 2.57479155347
+Cluster (1,2): 0.509811093252 0.250337509837 3.04314548285 2.57479155347
+Cluster (1,3): 0.509811093252 0.250337509837 3.04314548285 2.57479155347
+Cluster (1,4): 0.509811093252 0.250337509837 3.04314548285 2.57479155347
+Cluster (1,5): 0.509811093252 0.250337509837 3.04314548285 2.57479155347
+Cluster (1,6): 0.509811093252 0.250337509837 3.04314548285 2.57479155347
+Cluster (1,7): 0.509811093252 0.250337509837 3.04314548285 2.57479155347
+
+Corrected Rand index: 0.489496612888
+F-measure(P,Q): 0.623911513323
+OERC: 0.06
+
+#####################################
+# Repetição do experimento: 1
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_20]
+Number of elements: 9
+Elements: I_6, I_17, I_19, I_20, I_45, I_47, I_11, I_22, I_49
+
+Cluster (0,1)
+Prototypes: [I_34]
+Number of elements: 4
+Elements: I_16, I_34, I_15, I_33
+
+Cluster (0,2)
+Prototypes: [I_86]
+Number of elements: 2
+Elements: I_86, I_71
+
+Cluster (0,3)
+Prototypes: [I_24]
+Number of elements: 3
+Elements: I_44, I_24, I_27
+
+Cluster (0,4)
+Prototypes: [I_58]
+Number of elements: 4
+Elements: I_99, I_58, I_94, I_61
+
+Cluster (0,5)
+Prototypes: [I_95]
+Number of elements: 0
+Elements
+
+Cluster (0,6)
+Prototypes: [I_5]
+Number of elements: 0
+Elements
+
+Cluster (0,7)
+Prototypes: [I_87]
+Number of elements: 14
+Elements: I_66, I_76, I_51, I_52, I_53, I_87, I_57, I_59, I_77, I_78, I_55, I_92, I_64, I_75
+
+Cluster (1,0)
+Prototypes: [I_4]
+Number of elements: 16
+Elements: I_2, I_9, I_13, I_26, I_46, I_4, I_10, I_14, I_31, I_35, I_39, I_3, I_30, I_36, I_43, I_48
+
+Cluster (1,1)
+Prototypes: [I_1]
+Number of elements: 15
+Elements: I_37, I_28, I_1, I_5, I_18, I_41, I_8, I_21, I_29, I_32, I_40, I_12, I_25, I_50, I_7
+
+Cluster (1,2)
+Prototypes: [I_38]
+Number of elements: 2
+Elements: I_23, I_38
+
+Cluster (1,3)
+Prototypes: [I_42]
+Number of elements: 1
+Elements: I_42
+
+Cluster (1,4)
+Prototypes: [I_82]
+Number of elements: 5
+Elements: I_82, I_63, I_81, I_70, I_80
+
+Cluster (1,5)
+Prototypes: [I_95]
+Number of elements: 24
+Elements: I_54, I_60, I_68, I_83, I_90, I_91, I_93, I_56, I_65, I_69, I_88, I_89, I_95, I_96, I_97, I_100, I_107, I_72, I_74, I_85, I_67, I_98, I_62, I_79
+
+Cluster (1,6)
+Prototypes: [I_124]
+Number of elements: 22
+Elements: I_135, I_73, I_84, I_134, I_124, I_127, I_139, I_102, I_114, I_120, I_122, I_128, I_143, I_147, I_150, I_112, I_104, I_111, I_115, I_117, I_138, I_148
+
+Cluster (1,7)
+Prototypes: [I_103]
+Number of elements: 29
+Elements: I_101, I_103, I_105, I_106, I_108, I_109, I_110, I_113, I_116, I_118, I_119, I_121, I_123, I_125, I_126, I_129, I_130, I_131, I_132, I_133, I_136, I_137, I_140, I_141, I_142, I_144, I_145, I_146, I_149
+
+
+Critério de adequação (energia): 55.4134306236
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	0,7	1,0	1,1	1,2	1,3	1,4	1,5	1,6	1,7	Total
+
+1	9	 4	 0	 3	 0	 0	 16	 15	 2	 1	 0	 0	 0	 0	 50
+3	0	 0	 0	 0	 0	 0	 0	 0	 0	 0	 0	 1	 20	 29	 50
+2	0	 0	 2	 0	 4	 14	 0	 0	 0	 0	 5	 23	 2	 0	 50
+Total	[ 9  4  2  3  4 14 16 15  2  1  5 24 22 29]
+
+Matriz de pesos:
+Cluster (0,0): 0.450674750768 0.391774657061 2.82025196394 2.00822571255
+Cluster (0,1): 0.450674750768 0.391774657061 2.82025196394 2.00822571255
+Cluster (0,2): 0.450674750768 0.391774657061 2.82025196394 2.00822571255
+Cluster (0,3): 0.450674750768 0.391774657061 2.82025196394 2.00822571255
+Cluster (0,4): 0.450674750768 0.391774657061 2.82025196394 2.00822571255
+Cluster (0,5): 0.450674750768 0.391774657061 2.82025196394 2.00822571255
+Cluster (0,6): 0.450674750768 0.391774657061 2.82025196394 2.00822571255
+Cluster (0,7): 0.450674750768 0.391774657061 2.82025196394 2.00822571255
+Cluster (1,0): 0.450674750768 0.391774657061 2.82025196394 2.00822571255
+Cluster (1,1): 0.450674750768 0.391774657061 2.82025196394 2.00822571255
+Cluster (1,2): 0.450674750768 0.391774657061 2.82025196394 2.00822571255
+Cluster (1,3): 0.450674750768 0.391774657061 2.82025196394 2.00822571255
+Cluster (1,4): 0.450674750768 0.391774657061 2.82025196394 2.00822571255
+Cluster (1,5): 0.450674750768 0.391774657061 2.82025196394 2.00822571255
+Cluster (1,6): 0.450674750768 0.391774657061 2.82025196394 2.00822571255
+Cluster (1,7): 0.450674750768 0.391774657061 2.82025196394 2.00822571255
+
+Corrected Rand index: 0.494866098167
+F-measure(P,Q): 0.61354910722
+OERC: 0.02
+
+#####################################
+# Repetição do experimento: 2
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_92]
+Number of elements: 22
+Elements: I_69, I_88, I_56, I_85, I_74, I_98, I_64, I_67, I_75, I_79, I_92, I_55, I_59, I_76, I_52, I_66, I_77, I_57, I_87, I_86, I_51, I_53
+
+Cluster (0,1)
+Prototypes: [I_81]
+Number of elements: 14
+Elements: I_58, I_94, I_99, I_61, I_80, I_82, I_63, I_70, I_81, I_54, I_83, I_90, I_93, I_65
+
+Cluster (0,2)
+Prototypes: [I_3]
+Number of elements: 3
+Elements: I_9, I_14, I_39
+
+Cluster (0,3)
+Prototypes: [I_143]
+Number of elements: 0
+Elements
+
+Cluster (0,4)
+Prototypes: [I_1]
+Number of elements: 1
+Elements: I_16
+
+Cluster (0,5)
+Prototypes: [I_110]
+Number of elements: 1
+Elements: I_110
+
+Cluster (0,6)
+Prototypes: [I_21]
+Number of elements: 1
+Elements: I_19
+
+Cluster (0,7)
+Prototypes: [I_97]
+Number of elements: 10
+Elements: I_72, I_89, I_96, I_100, I_60, I_62, I_91, I_95, I_97, I_107
+
+Cluster (1,0)
+Prototypes: [I_113]
+Number of elements: 25
+Elements: I_103, I_104, I_105, I_109, I_113, I_117, I_129, I_130, I_133, I_138, I_141, I_146, I_148, I_140, I_142, I_111, I_116, I_101, I_121, I_144, I_125, I_137, I_145, I_149, I_126
+
+Cluster (1,1)
+Prototypes: [I_124]
+Number of elements: 14
+Elements: I_135, I_73, I_84, I_120, I_134, I_150, I_124, I_127, I_139, I_78, I_128, I_147, I_71, I_112
+
+Cluster (1,2)
+Prototypes: [I_143]
+Number of elements: 5
+Elements: I_102, I_114, I_115, I_122, I_143
+
+Cluster (1,3)
+Prototypes: [I_8]
+Number of elements: 0
+Elements
+
+Cluster (1,4)
+Prototypes: [I_8]
+Number of elements: 44
+Elements: I_23, I_1, I_5, I_7, I_12, I_20, I_33, I_38, I_41, I_43, I_47, I_3, I_4, I_6, I_8, I_10, I_11, I_15, I_17, I_18, I_22, I_25, I_27, I_28, I_29, I_30, I_34, I_36, I_37, I_40, I_44, I_45, I_48, I_49, I_50, I_2, I_13, I_21, I_24, I_26, I_31, I_32, I_35, I_46
+
+Cluster (1,5)
+Prototypes: [I_42]
+Number of elements: 1
+Elements: I_42
+
+Cluster (1,6)
+Prototypes: [I_68]
+Number of elements: 1
+Elements: I_68
+
+Cluster (1,7)
+Prototypes: [I_106]
+Number of elements: 8
+Elements: I_119, I_123, I_106, I_132, I_118, I_136, I_108, I_131
+
+
+Critério de adequação (energia): 57.4377328048
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,4	0,5	0,6	0,7	1,0	1,1	1,2	1,4	1,5	1,6	1,7	Total
+
+1	0	 0	 3	 1	 0	 1	 0	 0	 0	 0	 44	 1	 0	 0	 50
+3	0	 0	 0	 0	 1	 0	 1	 25	 10	 5	 0	 0	 0	 8	 50
+2	22	 14	 0	 0	 0	 0	 9	 0	 4	 0	 0	 0	 1	 0	 50
+Total	[22 14  3  1  1  1 10 25 14  5 44  1  1  8]
+
+Matriz de pesos:
+Cluster (0,0): 0.485422112816 0.214521503525 4.77683701374 2.01033849246
+Cluster (0,1): 0.485422112816 0.214521503525 4.77683701374 2.01033849246
+Cluster (0,2): 0.485422112816 0.214521503525 4.77683701374 2.01033849246
+Cluster (0,3): 0.485422112816 0.214521503525 4.77683701374 2.01033849246
+Cluster (0,4): 0.485422112816 0.214521503525 4.77683701374 2.01033849246
+Cluster (0,5): 0.485422112816 0.214521503525 4.77683701374 2.01033849246
+Cluster (0,6): 0.485422112816 0.214521503525 4.77683701374 2.01033849246
+Cluster (0,7): 0.485422112816 0.214521503525 4.77683701374 2.01033849246
+Cluster (1,0): 0.485422112816 0.214521503525 4.77683701374 2.01033849246
+Cluster (1,1): 0.485422112816 0.214521503525 4.77683701374 2.01033849246
+Cluster (1,2): 0.485422112816 0.214521503525 4.77683701374 2.01033849246
+Cluster (1,3): 0.485422112816 0.214521503525 4.77683701374 2.01033849246
+Cluster (1,4): 0.485422112816 0.214521503525 4.77683701374 2.01033849246
+Cluster (1,5): 0.485422112816 0.214521503525 4.77683701374 2.01033849246
+Cluster (1,6): 0.485422112816 0.214521503525 4.77683701374 2.01033849246
+Cluster (1,7): 0.485422112816 0.214521503525 4.77683701374 2.01033849246
+
+Corrected Rand index: 0.625830245947
+F-measure(P,Q): 0.737982663515
+OERC: 0.0333333333333
+
+#####################################
+# Repetição do experimento: 3
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_106]
+Number of elements: 10
+Elements: I_119, I_123, I_106, I_108, I_118, I_132, I_136, I_110, I_131, I_126
+
+Cluster (0,1)
+Prototypes: [I_39]
+Number of elements: 2
+Elements: I_14, I_42
+
+Cluster (0,2)
+Prototypes: [I_34]
+Number of elements: 6
+Elements: I_16, I_34, I_15, I_17, I_19, I_33
+
+Cluster (0,3)
+Prototypes: [I_76]
+Number of elements: 11
+Elements: I_66, I_76, I_51, I_52, I_59, I_75, I_53, I_55, I_57, I_77, I_87
+
+Cluster (0,4)
+Prototypes: [I_24]
+Number of elements: 3
+Elements: I_24, I_44, I_32
+
+Cluster (0,5)
+Prototypes: [I_8]
+Number of elements: 24
+Elements: I_23, I_1, I_5, I_7, I_8, I_11, I_12, I_18, I_21, I_25, I_27, I_28, I_29, I_36, I_37, I_38, I_40, I_41, I_47, I_49, I_50, I_10, I_26, I_35
+
+Cluster (0,6)
+Prototypes: [I_24]
+Number of elements: 0
+Elements
+
+Cluster (0,7)
+Prototypes: [I_84]
+Number of elements: 15
+Elements: I_135, I_84, I_69, I_102, I_114, I_120, I_122, I_143, I_124, I_127, I_139, I_150, I_71, I_128, I_147
+
+Cluster (1,0)
+Prototypes: [I_94]
+Number of elements: 5
+Elements: I_58, I_61, I_94, I_99, I_82
+
+Cluster (1,1)
+Prototypes: [I_4]
+Number of elements: 11
+Elements: I_9, I_39, I_4, I_13, I_46, I_2, I_43, I_31, I_48, I_3, I_30
+
+Cluster (1,2)
+Prototypes: [I_72]
+Number of elements: 3
+Elements: I_72, I_88, I_98
+
+Cluster (1,3)
+Prototypes: [I_95]
+Number of elements: 16
+Elements: I_85, I_100, I_56, I_60, I_68, I_70, I_80, I_81, I_83, I_90, I_91, I_93, I_95, I_54, I_63, I_107
+
+Cluster (1,4)
+Prototypes: [I_97]
+Number of elements: 8
+Elements: I_62, I_89, I_96, I_65, I_67, I_79, I_86, I_97
+
+Cluster (1,5)
+Prototypes: [I_45]
+Number of elements: 4
+Elements: I_6, I_45, I_20, I_22
+
+Cluster (1,6)
+Prototypes: [I_134]
+Number of elements: 5
+Elements: I_64, I_134, I_73, I_74, I_92
+
+Cluster (1,7)
+Prototypes: [I_148]
+Number of elements: 27
+Elements: I_78, I_101, I_103, I_104, I_105, I_109, I_111, I_112, I_113, I_115, I_116, I_117, I_121, I_125, I_129, I_130, I_133, I_137, I_138, I_140, I_141, I_142, I_144, I_145, I_146, I_148, I_149
+
+
+Critério de adequação (energia): 55.4908485707
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	0,5	0,7	1,0	1,1	1,2	1,3	1,4	1,5	1,6	1,7	Total
+
+1	0	 2	 6	 0	 3	 24	 0	 0	 11	 0	 0	 0	 4	 0	 0	 50
+3	10	 0	 0	 0	 0	 0	 12	 0	 0	 0	 1	 0	 0	 1	 26	 50
+2	0	 0	 0	 11	 0	 0	 3	 5	 0	 3	 15	 8	 0	 4	 1	 50
+Total	[10  2  6 11  3 24 15  5 11  3 16  8  4  5 27]
+
+Matriz de pesos:
+Cluster (0,0): 0.867539201423 0.29890973879 2.54791611633 1.51351141497
+Cluster (0,1): 0.867539201423 0.29890973879 2.54791611633 1.51351141497
+Cluster (0,2): 0.867539201423 0.29890973879 2.54791611633 1.51351141497
+Cluster (0,3): 0.867539201423 0.29890973879 2.54791611633 1.51351141497
+Cluster (0,4): 0.867539201423 0.29890973879 2.54791611633 1.51351141497
+Cluster (0,5): 0.867539201423 0.29890973879 2.54791611633 1.51351141497
+Cluster (0,6): 0.867539201423 0.29890973879 2.54791611633 1.51351141497
+Cluster (0,7): 0.867539201423 0.29890973879 2.54791611633 1.51351141497
+Cluster (1,0): 0.867539201423 0.29890973879 2.54791611633 1.51351141497
+Cluster (1,1): 0.867539201423 0.29890973879 2.54791611633 1.51351141497
+Cluster (1,2): 0.867539201423 0.29890973879 2.54791611633 1.51351141497
+Cluster (1,3): 0.867539201423 0.29890973879 2.54791611633 1.51351141497
+Cluster (1,4): 0.867539201423 0.29890973879 2.54791611633 1.51351141497
+Cluster (1,5): 0.867539201423 0.29890973879 2.54791611633 1.51351141497
+Cluster (1,6): 0.867539201423 0.29890973879 2.54791611633 1.51351141497
+Cluster (1,7): 0.867539201423 0.29890973879 2.54791611633 1.51351141497
+
+Corrected Rand index: 0.421185350233
+F-measure(P,Q): 0.59283959284
+OERC: 0.04
+
+#####################################
+# Repetição do experimento: 4
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_20]
+Number of elements: 11
+Elements: I_6, I_17, I_19, I_20, I_22, I_45, I_47, I_11, I_49, I_5, I_44
+
+Cluster (0,1)
+Prototypes: [I_137]
+Number of elements: 5
+Elements: I_137, I_149, I_101, I_116, I_145
+
+Cluster (0,2)
+Prototypes: [I_34]
+Number of elements: 4
+Elements: I_16, I_34, I_15, I_33
+
+Cluster (0,3)
+Prototypes: [I_42]
+Number of elements: 1
+Elements: I_42
+
+Cluster (0,4)
+Prototypes: [I_117]
+Number of elements: 7
+Elements: I_78, I_104, I_117, I_130, I_138, I_111, I_148
+
+Cluster (0,5)
+Prototypes: [I_54]
+Number of elements: 11
+Elements: I_61, I_120, I_69, I_107, I_54, I_94, I_58, I_63, I_81, I_99, I_88
+
+Cluster (0,6)
+Prototypes: [I_93]
+Number of elements: 12
+Elements: I_70, I_82, I_90, I_60, I_80, I_83, I_91, I_93, I_95, I_65, I_100, I_72
+
+Cluster (0,7)
+Prototypes: [I_92]
+Number of elements: 23
+Elements: I_62, I_64, I_79, I_92, I_98, I_67, I_85, I_75, I_86, I_89, I_96, I_52, I_55, I_59, I_76, I_66, I_51, I_87, I_57, I_53, I_71, I_77, I_97
+
+Cluster (1,0)
+Prototypes: [I_50]
+Number of elements: 30
+Elements: I_2, I_13, I_26, I_10, I_31, I_35, I_4, I_3, I_24, I_30, I_36, I_48, I_21, I_43, I_50, I_8, I_25, I_29, I_32, I_40, I_12, I_27, I_37, I_7, I_28, I_1, I_18, I_41, I_38, I_23
+
+Cluster (1,1)
+Prototypes: [I_68]
+Number of elements: 1
+Elements: I_68
+
+Cluster (1,2)
+Prototypes: [I_74]
+Number of elements: 2
+Elements: I_74, I_56
+
+Cluster (1,3)
+Prototypes: [I_9]
+Number of elements: 4
+Elements: I_9, I_14, I_39, I_46
+
+Cluster (1,4)
+Prototypes: [I_118]
+Number of elements: 3
+Elements: I_132, I_118, I_110
+
+Cluster (1,5)
+Prototypes: [I_143]
+Number of elements: 6
+Elements: I_122, I_114, I_115, I_102, I_143, I_150
+
+Cluster (1,6)
+Prototypes: [I_124]
+Number of elements: 11
+Elements: I_109, I_112, I_124, I_127, I_147, I_73, I_84, I_128, I_139, I_135, I_134
+
+Cluster (1,7)
+Prototypes: [I_103]
+Number of elements: 19
+Elements: I_103, I_105, I_106, I_108, I_113, I_121, I_123, I_125, I_126, I_131, I_136, I_140, I_141, I_142, I_144, I_146, I_133, I_129, I_119
+
+
+Critério de adequação (energia): 51.4382063985
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	0,5	0,6	0,7	1,0	1,1	1,2	1,3	1,4	1,5	1,6	1,7	Total
+
+1	11	 0	 4	 1	 0	 0	 0	 0	 30	 0	 0	 4	 0	 0	 0	 0	 50
+3	0	 5	 0	 0	 6	 2	 0	 0	 0	 0	 0	 0	 3	 6	 9	 19	 50
+2	0	 0	 0	 0	 1	 9	 12	 23	 0	 1	 2	 0	 0	 0	 2	 0	 50
+Total	[11  5  4  1  7 11 12 23 30  1  2  4  3  6 11 19]
+
+Matriz de pesos:
+Cluster (0,0): 0.459985339487 0.587228089697 2.06132006171 1.79598935465
+Cluster (0,1): 0.459985339487 0.587228089697 2.06132006171 1.79598935465
+Cluster (0,2): 0.459985339487 0.587228089697 2.06132006171 1.79598935465
+Cluster (0,3): 0.459985339487 0.587228089697 2.06132006171 1.79598935465
+Cluster (0,4): 0.459985339487 0.587228089697 2.06132006171 1.79598935465
+Cluster (0,5): 0.459985339487 0.587228089697 2.06132006171 1.79598935465
+Cluster (0,6): 0.459985339487 0.587228089697 2.06132006171 1.79598935465
+Cluster (0,7): 0.459985339487 0.587228089697 2.06132006171 1.79598935465
+Cluster (1,0): 0.459985339487 0.587228089697 2.06132006171 1.79598935465
+Cluster (1,1): 0.459985339487 0.587228089697 2.06132006171 1.79598935465
+Cluster (1,2): 0.459985339487 0.587228089697 2.06132006171 1.79598935465
+Cluster (1,3): 0.459985339487 0.587228089697 2.06132006171 1.79598935465
+Cluster (1,4): 0.459985339487 0.587228089697 2.06132006171 1.79598935465
+Cluster (1,5): 0.459985339487 0.587228089697 2.06132006171 1.79598935465
+Cluster (1,6): 0.459985339487 0.587228089697 2.06132006171 1.79598935465
+Cluster (1,7): 0.459985339487 0.587228089697 2.06132006171 1.79598935465
+
+Corrected Rand index: 0.45991296941
+F-measure(P,Q): 0.643620541328
+OERC: 0.0333333333333
+
+#####################################
+# Repetição do experimento: 5
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_6]
+Number of elements: 10
+Elements: I_6, I_15, I_16, I_17, I_19, I_45, I_20, I_34, I_33, I_47
+
+Cluster (0,1)
+Prototypes: [I_50]
+Number of elements: 6
+Elements: I_36, I_50, I_8, I_12, I_25, I_40
+
+Cluster (0,2)
+Prototypes: [I_42]
+Number of elements: 1
+Elements: I_42
+
+Cluster (0,3)
+Prototypes: [I_144]
+Number of elements: 9
+Elements: I_125, I_110, I_101, I_105, I_118, I_121, I_141, I_144, I_145
+
+Cluster (0,4)
+Prototypes: [I_78]
+Number of elements: 8
+Elements: I_51, I_53, I_78, I_117, I_138, I_77, I_87, I_148
+
+Cluster (0,5)
+Prototypes: [I_28]
+Number of elements: 0
+Elements
+
+Cluster (0,6)
+Prototypes: [I_57]
+Number of elements: 5
+Elements: I_86, I_57, I_71, I_52, I_66
+
+Cluster (0,7)
+Prototypes: [I_79]
+Number of elements: 22
+Elements: I_55, I_59, I_75, I_62, I_64, I_76, I_79, I_92, I_98, I_139, I_74, I_67, I_72, I_96, I_85, I_89, I_97, I_56, I_88, I_95, I_100, I_107
+
+Cluster (1,0)
+Prototypes: [I_18]
+Number of elements: 16
+Elements: I_1, I_29, I_38, I_18, I_24, I_27, I_41, I_44, I_21, I_32, I_5, I_28, I_37, I_11, I_22, I_49
+
+Cluster (1,1)
+Prototypes: [I_4]
+Number of elements: 15
+Elements: I_4, I_9, I_14, I_39, I_43, I_2, I_3, I_13, I_46, I_48, I_10, I_26, I_30, I_31, I_35
+
+Cluster (1,2)
+Prototypes: [I_7]
+Number of elements: 2
+Elements: I_7, I_23
+
+Cluster (1,3)
+Prototypes: [I_116]
+Number of elements: 8
+Elements: I_115, I_149, I_116, I_137, I_111, I_142, I_146, I_133
+
+Cluster (1,4)
+Prototypes: [I_103]
+Number of elements: 14
+Elements: I_103, I_106, I_119, I_123, I_126, I_132, I_136, I_140, I_108, I_113, I_129, I_130, I_131, I_109
+
+Cluster (1,5)
+Prototypes: [I_81]
+Number of elements: 17
+Elements: I_58, I_61, I_94, I_99, I_54, I_63, I_70, I_80, I_81, I_82, I_68, I_90, I_60, I_83, I_93, I_65, I_91
+
+Cluster (1,6)
+Prototypes: [I_18]
+Number of elements: 0
+Elements
+
+Cluster (1,7)
+Prototypes: [I_84]
+Number of elements: 17
+Elements: I_135, I_102, I_104, I_112, I_114, I_120, I_143, I_147, I_69, I_73, I_84, I_122, I_124, I_134, I_127, I_150, I_128
+
+
+Critério de adequação (energia): 54.0640604749
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	0,6	0,7	1,0	1,1	1,2	1,3	1,4	1,5	1,7	Total
+
+1	10	 6	 1	 0	 0	 0	 0	 16	 15	 2	 0	 0	 0	 0	 50
+3	0	 0	 0	 9	 3	 0	 2	 0	 0	 0	 8	 14	 0	 14	 50
+2	0	 0	 0	 0	 5	 5	 20	 0	 0	 0	 0	 0	 17	 3	 50
+Total	[10  6  1  9  8  5 22 16 15  2  8 14 17 17]
+
+Matriz de pesos:
+Cluster (0,0): 0.587653209832 0.403356488708 2.60414777126 1.62003432035
+Cluster (0,1): 0.587653209832 0.403356488708 2.60414777126 1.62003432035
+Cluster (0,2): 0.587653209832 0.403356488708 2.60414777126 1.62003432035
+Cluster (0,3): 0.587653209832 0.403356488708 2.60414777126 1.62003432035
+Cluster (0,4): 0.587653209832 0.403356488708 2.60414777126 1.62003432035
+Cluster (0,5): 0.587653209832 0.403356488708 2.60414777126 1.62003432035
+Cluster (0,6): 0.587653209832 0.403356488708 2.60414777126 1.62003432035
+Cluster (0,7): 0.587653209832 0.403356488708 2.60414777126 1.62003432035
+Cluster (1,0): 0.587653209832 0.403356488708 2.60414777126 1.62003432035
+Cluster (1,1): 0.587653209832 0.403356488708 2.60414777126 1.62003432035
+Cluster (1,2): 0.587653209832 0.403356488708 2.60414777126 1.62003432035
+Cluster (1,3): 0.587653209832 0.403356488708 2.60414777126 1.62003432035
+Cluster (1,4): 0.587653209832 0.403356488708 2.60414777126 1.62003432035
+Cluster (1,5): 0.587653209832 0.403356488708 2.60414777126 1.62003432035
+Cluster (1,6): 0.587653209832 0.403356488708 2.60414777126 1.62003432035
+Cluster (1,7): 0.587653209832 0.403356488708 2.60414777126 1.62003432035
+
+Corrected Rand index: 0.38007298455
+F-measure(P,Q): 0.492634680135
+OERC: 0.0533333333333
+
+#####################################
+# Repetição do experimento: 6
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_4]
+Number of elements: 18
+Elements: I_42, I_9, I_39, I_46, I_2, I_3, I_4, I_10, I_13, I_14, I_26, I_30, I_31, I_35, I_43, I_48, I_7, I_25
+
+Cluster (0,1)
+Prototypes: [I_94]
+Number of elements: 5
+Elements: I_58, I_94, I_99, I_61, I_82
+
+Cluster (0,2)
+Prototypes: [I_144]
+Number of elements: 14
+Elements: I_101, I_110, I_145, I_103, I_121, I_144, I_125, I_126, I_141, I_105, I_113, I_140, I_142, I_146
+
+Cluster (0,3)
+Prototypes: [I_65]
+Number of elements: 2
+Elements: I_65, I_80
+
+Cluster (0,4)
+Prototypes: [I_132]
+Number of elements: 2
+Elements: I_118, I_132
+
+Cluster (0,5)
+Prototypes: [I_23]
+Number of elements: 1
+Elements: I_23
+
+Cluster (0,6)
+Prototypes: [I_31]
+Number of elements: 0
+Elements
+
+Cluster (0,7)
+Prototypes: [I_95]
+Number of elements: 25
+Elements: I_54, I_63, I_70, I_81, I_60, I_68, I_83, I_89, I_90, I_91, I_93, I_95, I_96, I_97, I_100, I_56, I_62, I_67, I_72, I_74, I_85, I_88, I_107, I_69, I_79
+
+Cluster (1,0)
+Prototypes: [I_18]
+Number of elements: 22
+Elements: I_1, I_5, I_8, I_11, I_12, I_18, I_20, I_21, I_22, I_24, I_27, I_28, I_29, I_32, I_36, I_37, I_38, I_40, I_41, I_47, I_49, I_50
+
+Cluster (1,1)
+Prototypes: [I_6]
+Number of elements: 8
+Elements: I_16, I_6, I_15, I_19, I_34, I_17, I_33, I_45
+
+Cluster (1,2)
+Prototypes: [I_76]
+Number of elements: 15
+Elements: I_59, I_66, I_51, I_52, I_55, I_75, I_76, I_77, I_86, I_87, I_92, I_53, I_57, I_64, I_98
+
+Cluster (1,3)
+Prototypes: [I_44]
+Number of elements: 1
+Elements: I_44
+
+Cluster (1,4)
+Prototypes: [I_106]
+Number of elements: 6
+Elements: I_106, I_119, I_123, I_108, I_131, I_136
+
+Cluster (1,5)
+Prototypes: [I_45]
+Number of elements: 0
+Elements
+
+Cluster (1,6)
+Prototypes: [I_149]
+Number of elements: 4
+Elements: I_116, I_137, I_149, I_115
+
+Cluster (1,7)
+Prototypes: [I_112]
+Number of elements: 27
+Elements: I_130, I_78, I_104, I_109, I_111, I_112, I_117, I_129, I_133, I_138, I_148, I_71, I_84, I_102, I_114, I_122, I_124, I_127, I_128, I_134, I_135, I_139, I_143, I_147, I_150, I_73, I_120
+
+
+Critério de adequação (energia): 53.0382030348
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	0,5	0,7	1,0	1,1	1,2	1,3	1,4	1,6	1,7	Total
+
+1	18	 0	 0	 0	 0	 1	 0	 22	 8	 0	 1	 0	 0	 0	 50
+3	0	 0	 14	 0	 2	 0	 1	 0	 0	 0	 0	 6	 4	 23	 50
+2	0	 5	 0	 2	 0	 0	 24	 0	 0	 15	 0	 0	 0	 4	 50
+Total	[18  5 14  2  2  1 25 22  8 15  1  6  4 27]
+
+Matriz de pesos:
+Cluster (0,0): 0.647844296872 0.332707019744 2.84628376226 1.63000599158
+Cluster (0,1): 0.647844296872 0.332707019744 2.84628376226 1.63000599158
+Cluster (0,2): 0.647844296872 0.332707019744 2.84628376226 1.63000599158
+Cluster (0,3): 0.647844296872 0.332707019744 2.84628376226 1.63000599158
+Cluster (0,4): 0.647844296872 0.332707019744 2.84628376226 1.63000599158
+Cluster (0,5): 0.647844296872 0.332707019744 2.84628376226 1.63000599158
+Cluster (0,6): 0.647844296872 0.332707019744 2.84628376226 1.63000599158
+Cluster (0,7): 0.647844296872 0.332707019744 2.84628376226 1.63000599158
+Cluster (1,0): 0.647844296872 0.332707019744 2.84628376226 1.63000599158
+Cluster (1,1): 0.647844296872 0.332707019744 2.84628376226 1.63000599158
+Cluster (1,2): 0.647844296872 0.332707019744 2.84628376226 1.63000599158
+Cluster (1,3): 0.647844296872 0.332707019744 2.84628376226 1.63000599158
+Cluster (1,4): 0.647844296872 0.332707019744 2.84628376226 1.63000599158
+Cluster (1,5): 0.647844296872 0.332707019744 2.84628376226 1.63000599158
+Cluster (1,6): 0.647844296872 0.332707019744 2.84628376226 1.63000599158
+Cluster (1,7): 0.647844296872 0.332707019744 2.84628376226 1.63000599158
+
+Corrected Rand index: 0.473525247791
+F-measure(P,Q): 0.616171236171
+OERC: 0.0333333333333
+
+#####################################
+# Repetição do experimento: 7
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_8]
+Number of elements: 46
+Elements: I_1, I_2, I_3, I_4, I_5, I_7, I_8, I_9, I_10, I_12, I_13, I_14, I_18, I_21, I_22, I_23, I_25, I_26, I_27, I_28, I_29, I_30, I_31, I_32, I_35, I_36, I_37, I_38, I_39, I_40, I_41, I_43, I_46, I_48, I_50, I_6, I_11, I_15, I_16, I_17, I_19, I_20, I_33, I_34, I_47, I_49
+
+Cluster (0,1)
+Prototypes: [I_42]
+Number of elements: 1
+Elements: I_42
+
+Cluster (0,2)
+Prototypes: [I_98]
+Number of elements: 8
+Elements: I_75, I_74, I_88, I_92, I_98, I_64, I_69, I_79
+
+Cluster (0,3)
+Prototypes: [I_82]
+Number of elements: 9
+Elements: I_61, I_94, I_99, I_58, I_63, I_70, I_80, I_81, I_82
+
+Cluster (0,4)
+Prototypes: [I_148]
+Number of elements: 10
+Elements: I_111, I_117, I_138, I_148, I_104, I_112, I_129, I_133, I_113, I_140
+
+Cluster (0,5)
+Prototypes: [I_106]
+Number of elements: 5
+Elements: I_119, I_123, I_106, I_118, I_132
+
+Cluster (0,6)
+Prototypes: [I_7]
+Number of elements: 0
+Elements
+
+Cluster (0,7)
+Prototypes: [I_116]
+Number of elements: 7
+Elements: I_137, I_142, I_115, I_116, I_141, I_146, I_149
+
+Cluster (1,0)
+Prototypes: [I_24]
+Number of elements: 3
+Elements: I_24, I_44, I_45
+
+Cluster (1,1)
+Prototypes: [I_101]
+Number of elements: 2
+Elements: I_101, I_145
+
+Cluster (1,2)
+Prototypes: [I_100]
+Number of elements: 7
+Elements: I_62, I_65, I_72, I_83, I_89, I_96, I_100
+
+Cluster (1,3)
+Prototypes: [I_95]
+Number of elements: 12
+Elements: I_54, I_56, I_68, I_90, I_91, I_93, I_95, I_97, I_60, I_67, I_85, I_107
+
+Cluster (1,4)
+Prototypes: [I_124]
+Number of elements: 17
+Elements: I_124, I_147, I_134, I_135, I_127, I_128, I_73, I_139, I_150, I_84, I_102, I_143, I_114, I_71, I_122, I_120, I_78
+
+Cluster (1,5)
+Prototypes: [I_87]
+Number of elements: 11
+Elements: I_59, I_51, I_53, I_66, I_76, I_77, I_87, I_52, I_55, I_57, I_86
+
+Cluster (1,6)
+Prototypes: [I_130]
+Number of elements: 1
+Elements: I_130
+
+Cluster (1,7)
+Prototypes: [I_103]
+Number of elements: 11
+Elements: I_103, I_108, I_110, I_121, I_125, I_126, I_136, I_144, I_105, I_131, I_109
+
+
+Critério de adequação (energia): 50.34598555
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	0,5	0,7	1,0	1,1	1,2	1,3	1,4	1,5	1,6	1,7	Total
+
+1	46	 1	 0	 0	 0	 0	 0	 3	 0	 0	 0	 0	 0	 0	 0	 50
+3	0	 0	 0	 0	 10	 5	 7	 0	 2	 0	 1	 13	 0	 1	 11	 50
+2	0	 0	 8	 9	 0	 0	 0	 0	 0	 7	 11	 4	 11	 0	 0	 50
+Total	[46  1  8  9 10  5  7  3  2  7 12 17 11  1 11]
+
+Matriz de pesos:
+Cluster (0,0): 0.541668120731 0.20580814305 4.39653064875 2.04030016362
+Cluster (0,1): 0.541668120731 0.20580814305 4.39653064875 2.04030016362
+Cluster (0,2): 0.541668120731 0.20580814305 4.39653064875 2.04030016362
+Cluster (0,3): 0.541668120731 0.20580814305 4.39653064875 2.04030016362
+Cluster (0,4): 0.541668120731 0.20580814305 4.39653064875 2.04030016362
+Cluster (0,5): 0.541668120731 0.20580814305 4.39653064875 2.04030016362
+Cluster (0,6): 0.541668120731 0.20580814305 4.39653064875 2.04030016362
+Cluster (0,7): 0.541668120731 0.20580814305 4.39653064875 2.04030016362
+Cluster (1,0): 0.541668120731 0.20580814305 4.39653064875 2.04030016362
+Cluster (1,1): 0.541668120731 0.20580814305 4.39653064875 2.04030016362
+Cluster (1,2): 0.541668120731 0.20580814305 4.39653064875 2.04030016362
+Cluster (1,3): 0.541668120731 0.20580814305 4.39653064875 2.04030016362
+Cluster (1,4): 0.541668120731 0.20580814305 4.39653064875 2.04030016362
+Cluster (1,5): 0.541668120731 0.20580814305 4.39653064875 2.04030016362
+Cluster (1,6): 0.541668120731 0.20580814305 4.39653064875 2.04030016362
+Cluster (1,7): 0.541668120731 0.20580814305 4.39653064875 2.04030016362
+
+Corrected Rand index: 0.558704438215
+F-measure(P,Q): 0.56901625751
+OERC: 0.0333333333333
+
+#####################################
+# Repetição do experimento: 8
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_113]
+Number of elements: 20
+Elements: I_111, I_121, I_125, I_141, I_144, I_142, I_105, I_113, I_138, I_140, I_146, I_148, I_103, I_117, I_129, I_133, I_104, I_109, I_112, I_126
+
+Cluster (0,1)
+Prototypes: [I_137]
+Number of elements: 7
+Elements: I_101, I_115, I_137, I_149, I_110, I_145, I_116
+
+Cluster (0,2)
+Prototypes: [I_38]
+Number of elements: 0
+Elements
+
+Cluster (0,3)
+Prototypes: [I_9]
+Number of elements: 5
+Elements: I_42, I_9, I_14, I_39, I_43
+
+Cluster (0,4)
+Prototypes: [I_8]
+Number of elements: 19
+Elements: I_36, I_7, I_8, I_12, I_25, I_50, I_27, I_29, I_40, I_41, I_1, I_18, I_23, I_38, I_21, I_28, I_32, I_5, I_37
+
+Cluster (0,5)
+Prototypes: [I_44]
+Number of elements: 2
+Elements: I_44, I_24
+
+Cluster (0,6)
+Prototypes: [I_53]
+Number of elements: 1
+Elements: I_130
+
+Cluster (0,7)
+Prototypes: [I_20]
+Number of elements: 5
+Elements: I_20, I_47, I_11, I_22, I_49
+
+Cluster (1,0)
+Prototypes: [I_79]
+Number of elements: 25
+Elements: I_56, I_62, I_64, I_67, I_69, I_72, I_73, I_74, I_75, I_79, I_84, I_85, I_88, I_89, I_92, I_95, I_96, I_97, I_98, I_100, I_107, I_120, I_134, I_135, I_86
+
+Cluster (1,1)
+Prototypes: [I_87]
+Number of elements: 11
+Elements: I_51, I_53, I_77, I_78, I_87, I_57, I_59, I_66, I_76, I_52, I_55
+
+Cluster (1,2)
+Prototypes: [I_106]
+Number of elements: 8
+Elements: I_123, I_106, I_108, I_119, I_131, I_132, I_118, I_136
+
+Cluster (1,3)
+Prototypes: [I_81]
+Number of elements: 17
+Elements: I_58, I_99, I_61, I_80, I_82, I_94, I_81, I_63, I_70, I_54, I_68, I_90, I_93, I_60, I_65, I_83, I_91
+
+Cluster (1,4)
+Prototypes: [I_31]
+Number of elements: 11
+Elements: I_2, I_13, I_26, I_31, I_46, I_4, I_10, I_35, I_3, I_30, I_48
+
+Cluster (1,5)
+Prototypes: [I_6]
+Number of elements: 4
+Elements: I_19, I_6, I_17, I_45
+
+Cluster (1,6)
+Prototypes: [I_139]
+Number of elements: 11
+Elements: I_71, I_122, I_128, I_150, I_102, I_114, I_124, I_127, I_139, I_143, I_147
+
+Cluster (1,7)
+Prototypes: [I_34]
+Number of elements: 4
+Elements: I_16, I_34, I_33, I_15
+
+
+Critério de adequação (energia): 51.5423024262
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,3	0,4	0,5	0,6	0,7	1,0	1,1	1,2	1,3	1,4	1,5	1,6	1,7	Total
+
+1	0	 0	 5	 19	 2	 0	 5	 0	 0	 0	 0	 11	 4	 0	 4	 50
+3	20	 7	 0	 0	 0	 1	 0	 4	 0	 8	 0	 0	 0	 10	 0	 50
+2	0	 0	 0	 0	 0	 0	 0	 21	 11	 0	 17	 0	 0	 1	 0	 50
+Total	[20  7  5 19  2  1  5 25 11  8 17 11  4 11  4]
+
+Matriz de pesos:
+Cluster (0,0): 0.718867031709 0.336965140807 2.4524588808 1.68331240361
+Cluster (0,1): 0.718867031709 0.336965140807 2.4524588808 1.68331240361
+Cluster (0,2): 0.718867031709 0.336965140807 2.4524588808 1.68331240361
+Cluster (0,3): 0.718867031709 0.336965140807 2.4524588808 1.68331240361
+Cluster (0,4): 0.718867031709 0.336965140807 2.4524588808 1.68331240361
+Cluster (0,5): 0.718867031709 0.336965140807 2.4524588808 1.68331240361
+Cluster (0,6): 0.718867031709 0.336965140807 2.4524588808 1.68331240361
+Cluster (0,7): 0.718867031709 0.336965140807 2.4524588808 1.68331240361
+Cluster (1,0): 0.718867031709 0.336965140807 2.4524588808 1.68331240361
+Cluster (1,1): 0.718867031709 0.336965140807 2.4524588808 1.68331240361
+Cluster (1,2): 0.718867031709 0.336965140807 2.4524588808 1.68331240361
+Cluster (1,3): 0.718867031709 0.336965140807 2.4524588808 1.68331240361
+Cluster (1,4): 0.718867031709 0.336965140807 2.4524588808 1.68331240361
+Cluster (1,5): 0.718867031709 0.336965140807 2.4524588808 1.68331240361
+Cluster (1,6): 0.718867031709 0.336965140807 2.4524588808 1.68331240361
+Cluster (1,7): 0.718867031709 0.336965140807 2.4524588808 1.68331240361
+
+Corrected Rand index: 0.402627652699
+F-measure(P,Q): 0.56071773637
+OERC: 0.0333333333333
+
+#####################################
+# Repetição do experimento: 9
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_112]
+Number of elements: 0
+Elements
+
+Cluster (0,1)
+Prototypes: [I_122]
+Number of elements: 3
+Elements: I_107, I_115, I_122
+
+Cluster (0,2)
+Prototypes: [I_52]
+Number of elements: 15
+Elements: I_86, I_57, I_52, I_92, I_66, I_76, I_51, I_59, I_64, I_75, I_79, I_87, I_98, I_55, I_62
+
+Cluster (0,3)
+Prototypes: [I_146]
+Number of elements: 5
+Elements: I_142, I_146, I_116, I_140, I_149
+
+Cluster (0,4)
+Prototypes: [I_112]
+Number of elements: 10
+Elements: I_109, I_112, I_104, I_129, I_133, I_147, I_148, I_117, I_138, I_111
+
+Cluster (0,5)
+Prototypes: [I_143]
+Number of elements: 3
+Elements: I_114, I_102, I_143
+
+Cluster (0,6)
+Prototypes: [I_73]
+Number of elements: 8
+Elements: I_69, I_73, I_88, I_120, I_135, I_134, I_74, I_84
+
+Cluster (0,7)
+Prototypes: [I_90]
+Number of elements: 26
+Elements: I_58, I_60, I_61, I_81, I_85, I_94, I_99, I_56, I_65, I_67, I_70, I_80, I_82, I_83, I_89, I_93, I_95, I_97, I_100, I_68, I_72, I_96, I_54, I_63, I_90, I_91
+
+Cluster (1,0)
+Prototypes: [I_8]
+Number of elements: 39
+Elements: I_1, I_2, I_3, I_4, I_5, I_7, I_8, I_9, I_10, I_11, I_12, I_13, I_14, I_18, I_20, I_21, I_22, I_23, I_25, I_26, I_27, I_28, I_29, I_30, I_31, I_35, I_36, I_37, I_38, I_39, I_40, I_41, I_43, I_46, I_47, I_48, I_49, I_50, I_42
+
+Cluster (1,1)
+Prototypes: [I_24]
+Number of elements: 4
+Elements: I_44, I_24, I_32, I_45
+
+Cluster (1,2)
+Prototypes: [I_146]
+Number of elements: 0
+Elements
+
+Cluster (1,3)
+Prototypes: [I_34]
+Number of elements: 7
+Elements: I_16, I_15, I_34, I_33, I_6, I_17, I_19
+
+Cluster (1,4)
+Prototypes: [I_106]
+Number of elements: 9
+Elements: I_123, I_108, I_119, I_131, I_106, I_132, I_118, I_136, I_126
+
+Cluster (1,5)
+Prototypes: [I_128]
+Number of elements: 6
+Elements: I_124, I_127, I_128, I_139, I_71, I_150
+
+Cluster (1,6)
+Prototypes: [I_78]
+Number of elements: 4
+Elements: I_77, I_53, I_78, I_130
+
+Cluster (1,7)
+Prototypes: [I_144]
+Number of elements: 11
+Elements: I_110, I_125, I_121, I_103, I_144, I_113, I_141, I_145, I_105, I_137, I_101
+
+
+Critério de adequação (energia): 57.7710985448
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,1	0,2	0,3	0,4	0,5	0,6	0,7	1,0	1,1	1,3	1,4	1,5	1,6	1,7	Total
+
+1	0	 0	 0	 0	 0	 0	 0	 39	 4	 7	 0	 0	 0	 0	 50
+3	3	 0	 5	 10	 3	 3	 0	 0	 0	 0	 9	 5	 1	 11	 50
+2	0	 15	 0	 0	 0	 5	 26	 0	 0	 0	 0	 1	 3	 0	 50
+Total	[ 3 15  5 10  3  8 26 39  4  7  9  6  4 11]
+
+Matriz de pesos:
+Cluster (0,0): 0.762292717527 0.24167238668 2.80810868522 1.93302417458
+Cluster (0,1): 0.762292717527 0.24167238668 2.80810868522 1.93302417458
+Cluster (0,2): 0.762292717527 0.24167238668 2.80810868522 1.93302417458
+Cluster (0,3): 0.762292717527 0.24167238668 2.80810868522 1.93302417458
+Cluster (0,4): 0.762292717527 0.24167238668 2.80810868522 1.93302417458
+Cluster (0,5): 0.762292717527 0.24167238668 2.80810868522 1.93302417458
+Cluster (0,6): 0.762292717527 0.24167238668 2.80810868522 1.93302417458
+Cluster (0,7): 0.762292717527 0.24167238668 2.80810868522 1.93302417458
+Cluster (1,0): 0.762292717527 0.24167238668 2.80810868522 1.93302417458
+Cluster (1,1): 0.762292717527 0.24167238668 2.80810868522 1.93302417458
+Cluster (1,2): 0.762292717527 0.24167238668 2.80810868522 1.93302417458
+Cluster (1,3): 0.762292717527 0.24167238668 2.80810868522 1.93302417458
+Cluster (1,4): 0.762292717527 0.24167238668 2.80810868522 1.93302417458
+Cluster (1,5): 0.762292717527 0.24167238668 2.80810868522 1.93302417458
+Cluster (1,6): 0.762292717527 0.24167238668 2.80810868522 1.93302417458
+Cluster (1,7): 0.762292717527 0.24167238668 2.80810868522 1.93302417458
+
+Corrected Rand index: 0.542372865214
+F-measure(P,Q): 0.640423586134
+OERC: 0.0333333333333
+
+#####################################
+# Repetição do experimento: 10
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_128]
+Number of elements: 15
+Elements: I_86, I_57, I_71, I_114, I_122, I_124, I_127, I_128, I_139, I_147, I_78, I_84, I_111, I_148, I_150
+
+Cluster (0,1)
+Prototypes: [I_104]
+Number of elements: 7
+Elements: I_104, I_117, I_138, I_109, I_112, I_130, I_135
+
+Cluster (0,2)
+Prototypes: [I_16]
+Number of elements: 1
+Elements: I_16
+
+Cluster (0,3)
+Prototypes: [I_100]
+Number of elements: 0
+Elements
+
+Cluster (0,4)
+Prototypes: [I_21]
+Number of elements: 1
+Elements: I_21
+
+Cluster (0,5)
+Prototypes: [I_63]
+Number of elements: 5
+Elements: I_63, I_68, I_80, I_81, I_82
+
+Cluster (0,6)
+Prototypes: [I_24]
+Number of elements: 4
+Elements: I_24, I_44, I_27, I_32
+
+Cluster (0,7)
+Prototypes: [I_50]
+Number of elements: 32
+Elements: I_1, I_2, I_3, I_4, I_5, I_7, I_8, I_9, I_10, I_12, I_13, I_14, I_18, I_23, I_25, I_26, I_28, I_29, I_30, I_31, I_35, I_36, I_37, I_38, I_39, I_40, I_41, I_43, I_46, I_48, I_50, I_42
+
+Cluster (1,0)
+Prototypes: [I_103]
+Number of elements: 17
+Elements: I_103, I_105, I_106, I_108, I_110, I_113, I_118, I_119, I_121, I_123, I_126, I_131, I_132, I_136, I_140, I_144, I_125
+
+Cluster (1,1)
+Prototypes: [I_116]
+Number of elements: 11
+Elements: I_101, I_116, I_137, I_149, I_129, I_133, I_142, I_145, I_146, I_115, I_141
+
+Cluster (1,2)
+Prototypes: [I_100]
+Number of elements: 0
+Elements
+
+Cluster (1,3)
+Prototypes: [I_55]
+Number of elements: 19
+Elements: I_120, I_69, I_73, I_51, I_53, I_55, I_59, I_64, I_66, I_74, I_76, I_77, I_87, I_92, I_134, I_52, I_75, I_79, I_88
+
+Cluster (1,4)
+Prototypes: [I_150]
+Number of elements: 2
+Elements: I_102, I_143
+
+Cluster (1,5)
+Prototypes: [I_100]
+Number of elements: 20
+Elements: I_54, I_90, I_91, I_70, I_60, I_65, I_83, I_93, I_95, I_100, I_89, I_107, I_96, I_97, I_56, I_72, I_85, I_62, I_67, I_98
+
+Cluster (1,6)
+Prototypes: [I_94]
+Number of elements: 4
+Elements: I_99, I_58, I_94, I_61
+
+Cluster (1,7)
+Prototypes: [I_20]
+Number of elements: 12
+Elements: I_45, I_6, I_22, I_11, I_15, I_17, I_19, I_20, I_33, I_34, I_47, I_49
+
+
+Critério de adequação (energia): 48.6692426319
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,4	0,5	0,6	0,7	1,0	1,1	1,3	1,4	1,5	1,6	1,7	Total
+
+1	0	 0	 1	 1	 0	 4	 32	 0	 0	 0	 0	 0	 0	 12	 50
+3	10	 7	 0	 0	 0	 0	 0	 17	 11	 2	 2	 1	 0	 0	 50
+2	5	 0	 0	 0	 5	 0	 0	 0	 0	 17	 0	 19	 4	 0	 50
+Total	[15  7  1  1  5  4 32 17 11 19  2 20  4 12]
+
+Matriz de pesos:
+Cluster (0,0): 0.53889694169 0.229287833561 3.13505770965 2.58147385287
+Cluster (0,1): 0.53889694169 0.229287833561 3.13505770965 2.58147385287
+Cluster (0,2): 0.53889694169 0.229287833561 3.13505770965 2.58147385287
+Cluster (0,3): 0.53889694169 0.229287833561 3.13505770965 2.58147385287
+Cluster (0,4): 0.53889694169 0.229287833561 3.13505770965 2.58147385287
+Cluster (0,5): 0.53889694169 0.229287833561 3.13505770965 2.58147385287
+Cluster (0,6): 0.53889694169 0.229287833561 3.13505770965 2.58147385287
+Cluster (0,7): 0.53889694169 0.229287833561 3.13505770965 2.58147385287
+Cluster (1,0): 0.53889694169 0.229287833561 3.13505770965 2.58147385287
+Cluster (1,1): 0.53889694169 0.229287833561 3.13505770965 2.58147385287
+Cluster (1,2): 0.53889694169 0.229287833561 3.13505770965 2.58147385287
+Cluster (1,3): 0.53889694169 0.229287833561 3.13505770965 2.58147385287
+Cluster (1,4): 0.53889694169 0.229287833561 3.13505770965 2.58147385287
+Cluster (1,5): 0.53889694169 0.229287833561 3.13505770965 2.58147385287
+Cluster (1,6): 0.53889694169 0.229287833561 3.13505770965 2.58147385287
+Cluster (1,7): 0.53889694169 0.229287833561 3.13505770965 2.58147385287
+
+Corrected Rand index: 0.469825821206
+F-measure(P,Q): 0.610269211434
+OERC: 0.0533333333333
+
+#####################################
+# Repetição do experimento: 11
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_124]
+Number of elements: 14
+Elements: I_114, I_84, I_102, I_134, I_143, I_122, I_124, I_127, I_128, I_139, I_147, I_150, I_109, I_112
+
+Cluster (0,1)
+Prototypes: [I_20]
+Number of elements: 1
+Elements: I_47
+
+Cluster (0,2)
+Prototypes: [I_135]
+Number of elements: 1
+Elements: I_135
+
+Cluster (0,3)
+Prototypes: [I_118]
+Number of elements: 3
+Elements: I_118, I_132, I_110
+
+Cluster (0,4)
+Prototypes: [I_69]
+Number of elements: 4
+Elements: I_88, I_69, I_120, I_73
+
+Cluster (0,5)
+Prototypes: [I_98]
+Number of elements: 10
+Elements: I_74, I_98, I_64, I_72, I_79, I_92, I_75, I_62, I_59, I_55
+
+Cluster (0,6)
+Prototypes: [I_87]
+Number of elements: 9
+Elements: I_52, I_66, I_76, I_51, I_57, I_77, I_86, I_87, I_53
+
+Cluster (0,7)
+Prototypes: [I_100]
+Number of elements: 16
+Elements: I_60, I_65, I_68, I_83, I_89, I_96, I_97, I_93, I_95, I_100, I_67, I_85, I_107, I_56, I_90, I_91
+
+Cluster (1,0)
+Prototypes: [I_113]
+Number of elements: 28
+Elements: I_104, I_115, I_129, I_131, I_133, I_148, I_103, I_105, I_106, I_108, I_111, I_113, I_116, I_119, I_121, I_123, I_125, I_126, I_136, I_140, I_141, I_142, I_144, I_146, I_101, I_137, I_145, I_149
+
+Cluster (1,1)
+Prototypes: [I_78]
+Number of elements: 5
+Elements: I_71, I_78, I_130, I_117, I_138
+
+Cluster (1,2)
+Prototypes: [I_82]
+Number of elements: 10
+Elements: I_61, I_58, I_82, I_94, I_99, I_81, I_54, I_63, I_70, I_80
+
+Cluster (1,3)
+Prototypes: [I_5]
+Number of elements: 0
+Elements
+
+Cluster (1,4)
+Prototypes: [I_42]
+Number of elements: 1
+Elements: I_42
+
+Cluster (1,5)
+Prototypes: [I_4]
+Number of elements: 16
+Elements: I_9, I_14, I_39, I_4, I_13, I_43, I_46, I_2, I_3, I_10, I_26, I_30, I_31, I_35, I_48, I_36
+
+Cluster (1,6)
+Prototypes: [I_6]
+Number of elements: 9
+Elements: I_33, I_6, I_15, I_16, I_17, I_19, I_20, I_34, I_45
+
+Cluster (1,7)
+Prototypes: [I_18]
+Number of elements: 23
+Elements: I_5, I_22, I_23, I_38, I_44, I_1, I_7, I_8, I_12, I_18, I_21, I_24, I_25, I_27, I_28, I_29, I_32, I_37, I_40, I_41, I_50, I_11, I_49
+
+
+Critério de adequação (energia): 51.6696594647
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	0,5	0,6	0,7	1,0	1,1	1,2	1,4	1,5	1,6	1,7	Total
+
+1	0	 1	 0	 0	 0	 0	 0	 0	 0	 0	 0	 1	 16	 9	 23	 50
+3	13	 0	 1	 3	 1	 0	 0	 1	 28	 3	 0	 0	 0	 0	 0	 50
+2	1	 0	 0	 0	 3	 10	 9	 15	 0	 2	 10	 0	 0	 0	 0	 50
+Total	[14  1  1  3  4 10  9 16 28  5 10  1 16  9 23]
+
+Matriz de pesos:
+Cluster (0,0): 0.48966804037 0.560903590569 1.96521993697 1.85267337003
+Cluster (0,1): 0.48966804037 0.560903590569 1.96521993697 1.85267337003
+Cluster (0,2): 0.48966804037 0.560903590569 1.96521993697 1.85267337003
+Cluster (0,3): 0.48966804037 0.560903590569 1.96521993697 1.85267337003
+Cluster (0,4): 0.48966804037 0.560903590569 1.96521993697 1.85267337003
+Cluster (0,5): 0.48966804037 0.560903590569 1.96521993697 1.85267337003
+Cluster (0,6): 0.48966804037 0.560903590569 1.96521993697 1.85267337003
+Cluster (0,7): 0.48966804037 0.560903590569 1.96521993697 1.85267337003
+Cluster (1,0): 0.48966804037 0.560903590569 1.96521993697 1.85267337003
+Cluster (1,1): 0.48966804037 0.560903590569 1.96521993697 1.85267337003
+Cluster (1,2): 0.48966804037 0.560903590569 1.96521993697 1.85267337003
+Cluster (1,3): 0.48966804037 0.560903590569 1.96521993697 1.85267337003
+Cluster (1,4): 0.48966804037 0.560903590569 1.96521993697 1.85267337003
+Cluster (1,5): 0.48966804037 0.560903590569 1.96521993697 1.85267337003
+Cluster (1,6): 0.48966804037 0.560903590569 1.96521993697 1.85267337003
+Cluster (1,7): 0.48966804037 0.560903590569 1.96521993697 1.85267337003
+
+Corrected Rand index: 0.459111644499
+F-measure(P,Q): 0.600877052932
+OERC: 0.0333333333333
+
+#####################################
+# Repetição do experimento: 12
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_113]
+Number of elements: 25
+Elements: I_101, I_103, I_105, I_109, I_111, I_113, I_116, I_117, I_121, I_125, I_129, I_133, I_137, I_140, I_141, I_142, I_144, I_145, I_146, I_148, I_149, I_138, I_104, I_126, I_130
+
+Cluster (0,1)
+Prototypes: [I_106]
+Number of elements: 9
+Elements: I_118, I_132, I_106, I_108, I_123, I_131, I_119, I_136, I_110
+
+Cluster (0,2)
+Prototypes: [I_127]
+Number of elements: 0
+Elements
+
+Cluster (0,3)
+Prototypes: [I_81]
+Number of elements: 14
+Elements: I_81, I_82, I_60, I_70, I_80, I_54, I_61, I_68, I_90, I_58, I_63, I_94, I_93, I_99
+
+Cluster (0,4)
+Prototypes: [I_97]
+Number of elements: 14
+Elements: I_89, I_96, I_62, I_65, I_67, I_85, I_97, I_56, I_72, I_74, I_95, I_100, I_83, I_91
+
+Cluster (0,5)
+Prototypes: [I_21]
+Number of elements: 1
+Elements: I_21
+
+Cluster (0,6)
+Prototypes: [I_27]
+Number of elements: 3
+Elements: I_24, I_27, I_44
+
+Cluster (0,7)
+Prototypes: [I_8]
+Number of elements: 10
+Elements: I_25, I_8, I_12, I_40, I_41, I_5, I_38, I_50, I_23, I_36
+
+Cluster (1,0)
+Prototypes: [I_127]
+Number of elements: 19
+Elements: I_69, I_79, I_64, I_120, I_86, I_73, I_84, I_135, I_71, I_134, I_139, I_57, I_127, I_128, I_150, I_124, I_147, I_78, I_112
+
+Cluster (1,1)
+Prototypes: [I_76]
+Number of elements: 13
+Elements: I_75, I_98, I_51, I_59, I_66, I_76, I_52, I_53, I_77, I_87, I_55, I_88, I_92
+
+Cluster (1,2)
+Prototypes: [I_15]
+Number of elements: 0
+Elements
+
+Cluster (1,3)
+Prototypes: [I_122]
+Number of elements: 6
+Elements: I_107, I_114, I_115, I_122, I_102, I_143
+
+Cluster (1,4)
+Prototypes: [I_22]
+Number of elements: 4
+Elements: I_6, I_20, I_22, I_45
+
+Cluster (1,5)
+Prototypes: [I_34]
+Number of elements: 6
+Elements: I_16, I_15, I_17, I_19, I_33, I_34
+
+Cluster (1,6)
+Prototypes: [I_28]
+Number of elements: 9
+Elements: I_11, I_37, I_49, I_47, I_28, I_18, I_1, I_29, I_32
+
+Cluster (1,7)
+Prototypes: [I_4]
+Number of elements: 17
+Elements: I_3, I_4, I_9, I_10, I_13, I_14, I_30, I_31, I_35, I_39, I_43, I_48, I_2, I_26, I_42, I_46, I_7
+
+
+Critério de adequação (energia): 47.8464870788
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,3	0,4	0,5	0,6	0,7	1,0	1,1	1,3	1,4	1,5	1,6	1,7	Total
+
+1	0	 0	 0	 0	 1	 3	 10	 0	 0	 0	 4	 6	 9	 17	 50
+3	25	 9	 0	 0	 0	 0	 0	 10	 0	 6	 0	 0	 0	 0	 50
+2	0	 0	 14	 14	 0	 0	 0	 9	 13	 0	 0	 0	 0	 0	 50
+Total	[25  9 14 14  1  3 10 19 13  6  4  6  9 17]
+
+Matriz de pesos:
+Cluster (0,0): 0.816128137735 0.269346494332 2.95817878708 1.53782140952
+Cluster (0,1): 0.816128137735 0.269346494332 2.95817878708 1.53782140952
+Cluster (0,2): 0.816128137735 0.269346494332 2.95817878708 1.53782140952
+Cluster (0,3): 0.816128137735 0.269346494332 2.95817878708 1.53782140952
+Cluster (0,4): 0.816128137735 0.269346494332 2.95817878708 1.53782140952
+Cluster (0,5): 0.816128137735 0.269346494332 2.95817878708 1.53782140952
+Cluster (0,6): 0.816128137735 0.269346494332 2.95817878708 1.53782140952
+Cluster (0,7): 0.816128137735 0.269346494332 2.95817878708 1.53782140952
+Cluster (1,0): 0.816128137735 0.269346494332 2.95817878708 1.53782140952
+Cluster (1,1): 0.816128137735 0.269346494332 2.95817878708 1.53782140952
+Cluster (1,2): 0.816128137735 0.269346494332 2.95817878708 1.53782140952
+Cluster (1,3): 0.816128137735 0.269346494332 2.95817878708 1.53782140952
+Cluster (1,4): 0.816128137735 0.269346494332 2.95817878708 1.53782140952
+Cluster (1,5): 0.816128137735 0.269346494332 2.95817878708 1.53782140952
+Cluster (1,6): 0.816128137735 0.269346494332 2.95817878708 1.53782140952
+Cluster (1,7): 0.816128137735 0.269346494332 2.95817878708 1.53782140952
+
+Corrected Rand index: 0.397190270778
+F-measure(P,Q): 0.537209784411
+OERC: 0.06
+
+#####################################
+# Repetição do experimento: 13
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_103]
+Number of elements: 19
+Elements: I_101, I_103, I_105, I_106, I_108, I_113, I_119, I_121, I_123, I_125, I_126, I_129, I_131, I_133, I_136, I_140, I_141, I_144, I_145
+
+Cluster (0,1)
+Prototypes: [I_143]
+Number of elements: 13
+Elements: I_112, I_147, I_150, I_102, I_143, I_114, I_122, I_124, I_115, I_127, I_128, I_107, I_139
+
+Cluster (0,2)
+Prototypes: [I_111]
+Number of elements: 8
+Elements: I_111, I_71, I_116, I_137, I_142, I_146, I_148, I_149
+
+Cluster (0,3)
+Prototypes: [I_73]
+Number of elements: 7
+Elements: I_120, I_135, I_69, I_73, I_84, I_88, I_134
+
+Cluster (0,4)
+Prototypes: [I_34]
+Number of elements: 0
+Elements
+
+Cluster (0,5)
+Prototypes: [I_39]
+Number of elements: 7
+Elements: I_9, I_14, I_39, I_46, I_4, I_13, I_43
+
+Cluster (0,6)
+Prototypes: [I_34]
+Number of elements: 4
+Elements: I_16, I_15, I_34, I_33
+
+Cluster (0,7)
+Prototypes: [I_49]
+Number of elements: 12
+Elements: I_5, I_6, I_11, I_17, I_19, I_20, I_22, I_37, I_45, I_47, I_49, I_28
+
+Cluster (1,0)
+Prototypes: [I_79]
+Number of elements: 17
+Elements: I_89, I_96, I_97, I_100, I_85, I_56, I_72, I_67, I_62, I_74, I_98, I_64, I_75, I_79, I_86, I_92, I_55
+
+Cluster (1,1)
+Prototypes: [I_70]
+Number of elements: 18
+Elements: I_58, I_99, I_54, I_60, I_61, I_63, I_65, I_68, I_70, I_80, I_81, I_82, I_90, I_94, I_83, I_91, I_93, I_95
+
+Cluster (1,2)
+Prototypes: [I_42]
+Number of elements: 1
+Elements: I_42
+
+Cluster (1,3)
+Prototypes: [I_87]
+Number of elements: 10
+Elements: I_51, I_53, I_87, I_66, I_77, I_78, I_52, I_57, I_59, I_76
+
+Cluster (1,4)
+Prototypes: [I_118]
+Number of elements: 3
+Elements: I_118, I_132, I_110
+
+Cluster (1,5)
+Prototypes: [I_117]
+Number of elements: 5
+Elements: I_130, I_138, I_104, I_109, I_117
+
+Cluster (1,6)
+Prototypes: [I_5]
+Number of elements: 2
+Elements: I_23, I_38
+
+Cluster (1,7)
+Prototypes: [I_50]
+Number of elements: 24
+Elements: I_2, I_26, I_3, I_7, I_8, I_10, I_12, I_25, I_30, I_31, I_35, I_36, I_48, I_50, I_29, I_40, I_1, I_18, I_21, I_24, I_27, I_32, I_41, I_44
+
+
+Critério de adequação (energia): 49.13793759
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,5	0,6	0,7	1,0	1,1	1,2	1,3	1,4	1,5	1,6	1,7	Total
+
+1	0	 0	 0	 0	 7	 4	 12	 0	 0	 1	 0	 0	 0	 2	 24	 50
+3	19	 13	 7	 3	 0	 0	 0	 0	 0	 0	 0	 3	 5	 0	 0	 50
+2	0	 0	 1	 4	 0	 0	 0	 17	 18	 0	 10	 0	 0	 0	 0	 50
+Total	[19 13  8  7  7  4 12 17 18  1 10  3  5  2 24]
+
+Matriz de pesos:
+Cluster (0,0): 0.445821821074 0.482846064937 2.43243149885 1.90980648369
+Cluster (0,1): 0.445821821074 0.482846064937 2.43243149885 1.90980648369
+Cluster (0,2): 0.445821821074 0.482846064937 2.43243149885 1.90980648369
+Cluster (0,3): 0.445821821074 0.482846064937 2.43243149885 1.90980648369
+Cluster (0,4): 0.445821821074 0.482846064937 2.43243149885 1.90980648369
+Cluster (0,5): 0.445821821074 0.482846064937 2.43243149885 1.90980648369
+Cluster (0,6): 0.445821821074 0.482846064937 2.43243149885 1.90980648369
+Cluster (0,7): 0.445821821074 0.482846064937 2.43243149885 1.90980648369
+Cluster (1,0): 0.445821821074 0.482846064937 2.43243149885 1.90980648369
+Cluster (1,1): 0.445821821074 0.482846064937 2.43243149885 1.90980648369
+Cluster (1,2): 0.445821821074 0.482846064937 2.43243149885 1.90980648369
+Cluster (1,3): 0.445821821074 0.482846064937 2.43243149885 1.90980648369
+Cluster (1,4): 0.445821821074 0.482846064937 2.43243149885 1.90980648369
+Cluster (1,5): 0.445821821074 0.482846064937 2.43243149885 1.90980648369
+Cluster (1,6): 0.445821821074 0.482846064937 2.43243149885 1.90980648369
+Cluster (1,7): 0.445821821074 0.482846064937 2.43243149885 1.90980648369
+
+Corrected Rand index: 0.424733453528
+F-measure(P,Q): 0.576261683679
+OERC: 0.0266666666667
+
+#####################################
+# Repetição do experimento: 14
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_49]
+Number of elements: 15
+Elements: I_1, I_5, I_11, I_15, I_20, I_21, I_28, I_29, I_33, I_37, I_38, I_47, I_49, I_23, I_22
+
+Cluster (0,1)
+Prototypes: [I_27]
+Number of elements: 12
+Elements: I_24, I_25, I_27, I_44, I_8, I_18, I_32, I_40, I_41, I_12, I_50, I_7
+
+Cluster (0,2)
+Prototypes: [I_6]
+Number of elements: 5
+Elements: I_6, I_16, I_17, I_19, I_34
+
+Cluster (0,3)
+Prototypes: [I_27]
+Number of elements: 0
+Elements
+
+Cluster (0,4)
+Prototypes: [I_45]
+Number of elements: 1
+Elements: I_45
+
+Cluster (0,5)
+Prototypes: [I_62]
+Number of elements: 1
+Elements: I_62
+
+Cluster (0,6)
+Prototypes: [I_113]
+Number of elements: 0
+Elements
+
+Cluster (0,7)
+Prototypes: [I_113]
+Number of elements: 37
+Elements: I_106, I_108, I_119, I_123, I_130, I_131, I_109, I_112, I_101, I_103, I_104, I_105, I_110, I_111, I_113, I_115, I_116, I_117, I_118, I_121, I_125, I_126, I_129, I_132, I_133, I_136, I_137, I_138, I_140, I_141, I_142, I_144, I_145, I_146, I_148, I_149, I_147
+
+Cluster (1,0)
+Prototypes: [I_4]
+Number of elements: 15
+Elements: I_2, I_4, I_9, I_10, I_13, I_14, I_31, I_35, I_36, I_39, I_46, I_3, I_30, I_43, I_48
+
+Cluster (1,1)
+Prototypes: [I_42]
+Number of elements: 1
+Elements: I_42
+
+Cluster (1,2)
+Prototypes: [I_100]
+Number of elements: 11
+Elements: I_91, I_95, I_96, I_100, I_83, I_89, I_93, I_97, I_56, I_65, I_72
+
+Cluster (1,3)
+Prototypes: [I_81]
+Number of elements: 12
+Elements: I_58, I_99, I_94, I_61, I_80, I_82, I_81, I_70, I_54, I_63, I_68, I_90
+
+Cluster (1,4)
+Prototypes: [I_60]
+Number of elements: 2
+Elements: I_60, I_107
+
+Cluster (1,5)
+Prototypes: [I_26]
+Number of elements: 1
+Elements: I_26
+
+Cluster (1,6)
+Prototypes: [I_79]
+Number of elements: 0
+Elements
+
+Cluster (1,7)
+Prototypes: [I_79]
+Number of elements: 37
+Elements: I_85, I_86, I_67, I_52, I_59, I_64, I_66, I_74, I_75, I_76, I_79, I_88, I_92, I_98, I_55, I_57, I_69, I_71, I_73, I_120, I_139, I_84, I_51, I_77, I_87, I_134, I_135, I_53, I_102, I_114, I_122, I_124, I_127, I_128, I_143, I_150, I_78
+
+
+Critério de adequação (energia): 67.8433133412
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,4	0,5	0,7	1,0	1,1	1,2	1,3	1,4	1,5	1,7	Total
+
+1	15	 12	 5	 1	 0	 0	 15	 1	 0	 0	 0	 1	 0	 50
+3	0	 0	 0	 0	 0	 37	 0	 0	 0	 0	 1	 0	 12	 50
+2	0	 0	 0	 0	 1	 0	 0	 0	 11	 12	 1	 0	 25	 50
+Total	[15 12  5  1  1 37 15  1 11 12  2  1 37]
+
+Matriz de pesos:
+Cluster (0,0): 0.546081906914 0.373390360673 2.452018822 2.00011658392
+Cluster (0,1): 0.546081906914 0.373390360673 2.452018822 2.00011658392
+Cluster (0,2): 0.546081906914 0.373390360673 2.452018822 2.00011658392
+Cluster (0,3): 0.546081906914 0.373390360673 2.452018822 2.00011658392
+Cluster (0,4): 0.546081906914 0.373390360673 2.452018822 2.00011658392
+Cluster (0,5): 0.546081906914 0.373390360673 2.452018822 2.00011658392
+Cluster (0,6): 0.546081906914 0.373390360673 2.452018822 2.00011658392
+Cluster (0,7): 0.546081906914 0.373390360673 2.452018822 2.00011658392
+Cluster (1,0): 0.546081906914 0.373390360673 2.452018822 2.00011658392
+Cluster (1,1): 0.546081906914 0.373390360673 2.452018822 2.00011658392
+Cluster (1,2): 0.546081906914 0.373390360673 2.452018822 2.00011658392
+Cluster (1,3): 0.546081906914 0.373390360673 2.452018822 2.00011658392
+Cluster (1,4): 0.546081906914 0.373390360673 2.452018822 2.00011658392
+Cluster (1,5): 0.546081906914 0.373390360673 2.452018822 2.00011658392
+Cluster (1,6): 0.546081906914 0.373390360673 2.452018822 2.00011658392
+Cluster (1,7): 0.546081906914 0.373390360673 2.452018822 2.00011658392
+
+Corrected Rand index: 0.53148659578
+F-measure(P,Q): 0.628941939287
+OERC: 0.0866666666667
+
+#####################################
+# Repetição do experimento: 15
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_103]
+Number of elements: 18
+Elements: I_106, I_108, I_110, I_118, I_123, I_126, I_130, I_131, I_132, I_136, I_103, I_119, I_121, I_144, I_105, I_113, I_125, I_140
+
+Cluster (0,1)
+Prototypes: [I_116]
+Number of elements: 11
+Elements: I_142, I_116, I_129, I_133, I_137, I_146, I_149, I_141, I_145, I_101, I_115
+
+Cluster (0,2)
+Prototypes: [I_53]
+Number of elements: 6
+Elements: I_51, I_53, I_87, I_77, I_66, I_78
+
+Cluster (0,3)
+Prototypes: [I_28]
+Number of elements: 5
+Elements: I_11, I_21, I_37, I_47, I_49
+
+Cluster (0,4)
+Prototypes: [I_95]
+Number of elements: 10
+Elements: I_89, I_96, I_97, I_100, I_91, I_95, I_60, I_90, I_56, I_85
+
+Cluster (0,5)
+Prototypes: [I_82]
+Number of elements: 9
+Elements: I_70, I_80, I_81, I_82, I_61, I_58, I_94, I_99, I_63
+
+Cluster (0,6)
+Prototypes: [I_24]
+Number of elements: 4
+Elements: I_24, I_44, I_27, I_32
+
+Cluster (0,7)
+Prototypes: [I_50]
+Number of elements: 30
+Elements: I_1, I_5, I_7, I_8, I_12, I_18, I_23, I_25, I_28, I_29, I_38, I_40, I_41, I_50, I_2, I_3, I_4, I_9, I_10, I_13, I_14, I_26, I_30, I_31, I_35, I_36, I_39, I_43, I_46, I_48
+
+Cluster (1,0)
+Prototypes: [I_128]
+Number of elements: 10
+Elements: I_124, I_127, I_128, I_139, I_71, I_150, I_57, I_84, I_111, I_148
+
+Cluster (1,1)
+Prototypes: [I_64]
+Number of elements: 17
+Elements: I_59, I_64, I_67, I_69, I_73, I_74, I_92, I_134, I_52, I_55, I_62, I_75, I_76, I_79, I_98, I_86, I_120
+
+Cluster (1,2)
+Prototypes: [I_93]
+Number of elements: 6
+Elements: I_68, I_83, I_93, I_72, I_54, I_88
+
+Cluster (1,3)
+Prototypes: [I_42]
+Number of elements: 1
+Elements: I_42
+
+Cluster (1,4)
+Prototypes: [I_104]
+Number of elements: 6
+Elements: I_104, I_109, I_117, I_135, I_138, I_112
+
+Cluster (1,5)
+Prototypes: [I_114]
+Number of elements: 6
+Elements: I_114, I_147, I_102, I_107, I_122, I_143
+
+Cluster (1,6)
+Prototypes: [I_65]
+Number of elements: 1
+Elements: I_65
+
+Cluster (1,7)
+Prototypes: [I_6]
+Number of elements: 10
+Elements: I_45, I_6, I_16, I_22, I_15, I_17, I_19, I_20, I_33, I_34
+
+
+Critério de adequação (energia): 47.0921914574
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	0,5	0,6	0,7	1,0	1,1	1,2	1,3	1,4	1,5	1,6	1,7	Total
+
+1	0	 0	 0	 5	 0	 0	 4	 30	 0	 0	 0	 1	 0	 0	 0	 10	 50
+3	18	 11	 0	 0	 0	 0	 0	 0	 7	 2	 0	 0	 6	 6	 0	 0	 50
+2	0	 0	 6	 0	 10	 9	 0	 0	 3	 15	 6	 0	 0	 0	 1	 0	 50
+Total	[18 11  6  5 10  9  4 30 10 17  6  1  6  6  1 10]
+
+Matriz de pesos:
+Cluster (0,0): 0.561304614513 0.244734549988 3.20472276245 2.27151515079
+Cluster (0,1): 0.561304614513 0.244734549988 3.20472276245 2.27151515079
+Cluster (0,2): 0.561304614513 0.244734549988 3.20472276245 2.27151515079
+Cluster (0,3): 0.561304614513 0.244734549988 3.20472276245 2.27151515079
+Cluster (0,4): 0.561304614513 0.244734549988 3.20472276245 2.27151515079
+Cluster (0,5): 0.561304614513 0.244734549988 3.20472276245 2.27151515079
+Cluster (0,6): 0.561304614513 0.244734549988 3.20472276245 2.27151515079
+Cluster (0,7): 0.561304614513 0.244734549988 3.20472276245 2.27151515079
+Cluster (1,0): 0.561304614513 0.244734549988 3.20472276245 2.27151515079
+Cluster (1,1): 0.561304614513 0.244734549988 3.20472276245 2.27151515079
+Cluster (1,2): 0.561304614513 0.244734549988 3.20472276245 2.27151515079
+Cluster (1,3): 0.561304614513 0.244734549988 3.20472276245 2.27151515079
+Cluster (1,4): 0.561304614513 0.244734549988 3.20472276245 2.27151515079
+Cluster (1,5): 0.561304614513 0.244734549988 3.20472276245 2.27151515079
+Cluster (1,6): 0.561304614513 0.244734549988 3.20472276245 2.27151515079
+Cluster (1,7): 0.561304614513 0.244734549988 3.20472276245 2.27151515079
+
+Corrected Rand index: 0.414805338283
+F-measure(P,Q): 0.575724319579
+OERC: 0.0333333333333
+
+#####################################
+# Repetição do experimento: 16
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_87]
+Number of elements: 13
+Elements: I_66, I_76, I_51, I_52, I_53, I_55, I_59, I_77, I_87, I_57, I_75, I_92, I_78
+
+Cluster (0,1)
+Prototypes: [I_49]
+Number of elements: 0
+Elements
+
+Cluster (0,2)
+Prototypes: [I_40]
+Number of elements: 7
+Elements: I_29, I_40, I_1, I_8, I_21, I_36, I_50
+
+Cluster (0,3)
+Prototypes: [I_6]
+Number of elements: 3
+Elements: I_16, I_6, I_45
+
+Cluster (0,4)
+Prototypes: [I_143]
+Number of elements: 7
+Elements: I_102, I_114, I_143, I_147, I_107, I_115, I_122
+
+Cluster (0,5)
+Prototypes: [I_106]
+Number of elements: 8
+Elements: I_119, I_106, I_123, I_108, I_118, I_132, I_131, I_136
+
+Cluster (0,6)
+Prototypes: [I_48]
+Number of elements: 1
+Elements: I_23
+
+Cluster (0,7)
+Prototypes: [I_4]
+Number of elements: 17
+Elements: I_2, I_3, I_4, I_9, I_10, I_13, I_14, I_30, I_31, I_39, I_42, I_43, I_48, I_26, I_35, I_46, I_7
+
+Cluster (1,0)
+Prototypes: [I_113]
+Number of elements: 27
+Elements: I_101, I_103, I_104, I_105, I_110, I_111, I_112, I_113, I_116, I_117, I_121, I_125, I_126, I_129, I_130, I_133, I_137, I_138, I_140, I_141, I_142, I_144, I_145, I_146, I_148, I_149, I_109
+
+Cluster (1,1)
+Prototypes: [I_128]
+Number of elements: 7
+Elements: I_86, I_71, I_139, I_128, I_150, I_124, I_127
+
+Cluster (1,2)
+Prototypes: [I_73]
+Number of elements: 9
+Elements: I_69, I_88, I_120, I_73, I_64, I_84, I_134, I_135, I_74
+
+Cluster (1,3)
+Prototypes: [I_100]
+Number of elements: 19
+Elements: I_83, I_90, I_93, I_60, I_89, I_91, I_95, I_96, I_97, I_100, I_56, I_72, I_85, I_62, I_65, I_67, I_68, I_98, I_79
+
+Cluster (1,4)
+Prototypes: [I_82]
+Number of elements: 10
+Elements: I_80, I_99, I_58, I_82, I_94, I_54, I_61, I_63, I_70, I_81
+
+Cluster (1,5)
+Prototypes: [I_40]
+Number of elements: 0
+Elements
+
+Cluster (1,6)
+Prototypes: [I_27]
+Number of elements: 8
+Elements: I_24, I_44, I_27, I_18, I_25, I_32, I_41, I_12
+
+Cluster (1,7)
+Prototypes: [I_49]
+Number of elements: 14
+Elements: I_5, I_11, I_15, I_17, I_19, I_20, I_22, I_28, I_33, I_34, I_37, I_38, I_47, I_49
+
+
+Critério de adequação (energia): 49.0413809246
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	0,3	0,4	0,5	0,6	0,7	1,0	1,1	1,2	1,3	1,4	1,6	1,7	Total
+
+1	0	 7	 3	 0	 0	 1	 17	 0	 0	 0	 0	 0	 8	 14	 50
+3	0	 0	 0	 7	 8	 0	 0	 27	 5	 3	 0	 0	 0	 0	 50
+2	13	 0	 0	 0	 0	 0	 0	 0	 2	 6	 19	 10	 0	 0	 50
+Total	[13  7  3  7  8  1 17 27  7  9 19 10  8 14]
+
+Matriz de pesos:
+Cluster (0,0): 0.665795157909 0.312656670188 2.77870596967 1.72881720214
+Cluster (0,1): 0.665795157909 0.312656670188 2.77870596967 1.72881720214
+Cluster (0,2): 0.665795157909 0.312656670188 2.77870596967 1.72881720214
+Cluster (0,3): 0.665795157909 0.312656670188 2.77870596967 1.72881720214
+Cluster (0,4): 0.665795157909 0.312656670188 2.77870596967 1.72881720214
+Cluster (0,5): 0.665795157909 0.312656670188 2.77870596967 1.72881720214
+Cluster (0,6): 0.665795157909 0.312656670188 2.77870596967 1.72881720214
+Cluster (0,7): 0.665795157909 0.312656670188 2.77870596967 1.72881720214
+Cluster (1,0): 0.665795157909 0.312656670188 2.77870596967 1.72881720214
+Cluster (1,1): 0.665795157909 0.312656670188 2.77870596967 1.72881720214
+Cluster (1,2): 0.665795157909 0.312656670188 2.77870596967 1.72881720214
+Cluster (1,3): 0.665795157909 0.312656670188 2.77870596967 1.72881720214
+Cluster (1,4): 0.665795157909 0.312656670188 2.77870596967 1.72881720214
+Cluster (1,5): 0.665795157909 0.312656670188 2.77870596967 1.72881720214
+Cluster (1,6): 0.665795157909 0.312656670188 2.77870596967 1.72881720214
+Cluster (1,7): 0.665795157909 0.312656670188 2.77870596967 1.72881720214
+
+Corrected Rand index: 0.425929840012
+F-measure(P,Q): 0.586495341849
+OERC: 0.0333333333333
+
+#####################################
+# Repetição do experimento: 17
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_121]
+Number of elements: 0
+Elements
+
+Cluster (0,1)
+Prototypes: [I_121]
+Number of elements: 17
+Elements: I_121, I_125, I_144, I_145, I_101, I_116, I_140, I_141, I_142, I_110, I_137, I_105, I_146, I_103, I_113, I_149, I_133
+
+Cluster (0,2)
+Prototypes: [I_112]
+Number of elements: 19
+Elements: I_109, I_117, I_129, I_148, I_111, I_112, I_138, I_104, I_115, I_147, I_124, I_102, I_114, I_127, I_135, I_143, I_122, I_150, I_128
+
+Cluster (0,3)
+Prototypes: [I_87]
+Number of elements: 12
+Elements: I_51, I_53, I_77, I_87, I_66, I_76, I_59, I_78, I_52, I_55, I_57, I_134
+
+Cluster (0,4)
+Prototypes: [I_96]
+Number of elements: 3
+Elements: I_89, I_96, I_97
+
+Cluster (0,5)
+Prototypes: [I_6]
+Number of elements: 13
+Elements: I_6, I_15, I_16, I_19, I_34, I_17, I_33, I_45, I_20, I_11, I_22, I_44, I_47
+
+Cluster (0,6)
+Prototypes: [I_72]
+Number of elements: 5
+Elements: I_72, I_75, I_83, I_88, I_98
+
+Cluster (0,7)
+Prototypes: [I_79]
+Number of elements: 15
+Elements: I_62, I_64, I_67, I_71, I_74, I_79, I_92, I_139, I_73, I_84, I_56, I_85, I_69, I_120, I_86
+
+Cluster (1,0)
+Prototypes: [I_45]
+Number of elements: 0
+Elements
+
+Cluster (1,1)
+Prototypes: [I_126]
+Number of elements: 4
+Elements: I_130, I_108, I_126, I_131
+
+Cluster (1,2)
+Prototypes: [I_70]
+Number of elements: 6
+Elements: I_63, I_80, I_82, I_68, I_70, I_81
+
+Cluster (1,3)
+Prototypes: [I_106]
+Number of elements: 6
+Elements: I_119, I_123, I_106, I_118, I_132, I_136
+
+Cluster (1,4)
+Prototypes: [I_1]
+Number of elements: 1
+Elements: I_49
+
+Cluster (1,5)
+Prototypes: [I_50]
+Number of elements: 36
+Elements: I_2, I_3, I_4, I_7, I_8, I_9, I_10, I_12, I_13, I_14, I_23, I_25, I_26, I_30, I_31, I_35, I_36, I_39, I_43, I_46, I_48, I_50, I_1, I_5, I_18, I_24, I_27, I_28, I_29, I_38, I_40, I_41, I_21, I_32, I_37, I_42
+
+Cluster (1,6)
+Prototypes: [I_94]
+Number of elements: 4
+Elements: I_58, I_94, I_99, I_61
+
+Cluster (1,7)
+Prototypes: [I_90]
+Number of elements: 9
+Elements: I_54, I_60, I_90, I_91, I_93, I_95, I_100, I_65, I_107
+
+
+Critério de adequação (energia): 48.6476250699
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,1	0,2	0,3	0,4	0,5	0,6	0,7	1,1	1,2	1,3	1,4	1,5	1,6	1,7	Total
+
+1	0	 0	 0	 0	 13	 0	 0	 0	 0	 0	 1	 36	 0	 0	 50
+3	17	 19	 1	 0	 0	 0	 2	 4	 0	 6	 0	 0	 0	 1	 50
+2	0	 0	 11	 3	 0	 5	 13	 0	 6	 0	 0	 0	 4	 8	 50
+Total	[17 19 12  3 13  5 15  4  6  6  1 36  4  9]
+
+Matriz de pesos:
+Cluster (0,0): 0.603530153642 0.23840984457 3.23101938188 2.15098449039
+Cluster (0,1): 0.603530153642 0.23840984457 3.23101938188 2.15098449039
+Cluster (0,2): 0.603530153642 0.23840984457 3.23101938188 2.15098449039
+Cluster (0,3): 0.603530153642 0.23840984457 3.23101938188 2.15098449039
+Cluster (0,4): 0.603530153642 0.23840984457 3.23101938188 2.15098449039
+Cluster (0,5): 0.603530153642 0.23840984457 3.23101938188 2.15098449039
+Cluster (0,6): 0.603530153642 0.23840984457 3.23101938188 2.15098449039
+Cluster (0,7): 0.603530153642 0.23840984457 3.23101938188 2.15098449039
+Cluster (1,0): 0.603530153642 0.23840984457 3.23101938188 2.15098449039
+Cluster (1,1): 0.603530153642 0.23840984457 3.23101938188 2.15098449039
+Cluster (1,2): 0.603530153642 0.23840984457 3.23101938188 2.15098449039
+Cluster (1,3): 0.603530153642 0.23840984457 3.23101938188 2.15098449039
+Cluster (1,4): 0.603530153642 0.23840984457 3.23101938188 2.15098449039
+Cluster (1,5): 0.603530153642 0.23840984457 3.23101938188 2.15098449039
+Cluster (1,6): 0.603530153642 0.23840984457 3.23101938188 2.15098449039
+Cluster (1,7): 0.603530153642 0.23840984457 3.23101938188 2.15098449039
+
+Corrected Rand index: 0.497576718514
+F-measure(P,Q): 0.595977980002
+OERC: 0.0266666666667
+
+#####################################
+# Repetição do experimento: 18
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_103]
+Number of elements: 17
+Elements: I_106, I_119, I_123, I_131, I_136, I_103, I_108, I_109, I_113, I_117, I_118, I_125, I_126, I_129, I_132, I_140, I_111
+
+Cluster (0,1)
+Prototypes: [I_141]
+Number of elements: 14
+Elements: I_115, I_137, I_149, I_101, I_116, I_145, I_141, I_146, I_110, I_105, I_121, I_133, I_142, I_144
+
+Cluster (0,2)
+Prototypes: [I_87]
+Number of elements: 10
+Elements: I_51, I_53, I_78, I_77, I_87, I_66, I_52, I_57, I_59, I_76
+
+Cluster (0,3)
+Prototypes: [I_130]
+Number of elements: 1
+Elements: I_130
+
+Cluster (0,4)
+Prototypes: [I_38]
+Number of elements: 0
+Elements
+
+Cluster (0,5)
+Prototypes: [I_39]
+Number of elements: 7
+Elements: I_14, I_39, I_43, I_4, I_9, I_48, I_42
+
+Cluster (0,6)
+Prototypes: [I_35]
+Number of elements: 10
+Elements: I_46, I_2, I_13, I_26, I_10, I_31, I_35, I_30, I_36, I_3
+
+Cluster (0,7)
+Prototypes: [I_1]
+Number of elements: 22
+Elements: I_7, I_8, I_12, I_23, I_25, I_40, I_50, I_1, I_5, I_18, I_28, I_29, I_38, I_41, I_21, I_37, I_11, I_20, I_22, I_33, I_47, I_49
+
+Cluster (1,0)
+Prototypes: [I_79]
+Number of elements: 25
+Elements: I_89, I_95, I_96, I_100, I_97, I_56, I_72, I_85, I_67, I_74, I_75, I_88, I_98, I_62, I_64, I_69, I_73, I_79, I_84, I_92, I_120, I_55, I_86, I_135, I_134
+
+Cluster (1,1)
+Prototypes: [I_143]
+Number of elements: 16
+Elements: I_102, I_114, I_122, I_143, I_150, I_104, I_112, I_147, I_107, I_124, I_127, I_128, I_71, I_138, I_139, I_148
+
+Cluster (1,2)
+Prototypes: [I_5]
+Number of elements: 0
+Elements
+
+Cluster (1,3)
+Prototypes: [I_21]
+Number of elements: 0
+Elements
+
+Cluster (1,4)
+Prototypes: [I_102]
+Number of elements: 0
+Elements
+
+Cluster (1,5)
+Prototypes: [I_6]
+Number of elements: 7
+Elements: I_16, I_6, I_15, I_17, I_19, I_34, I_45
+
+Cluster (1,6)
+Prototypes: [I_81]
+Number of elements: 17
+Elements: I_58, I_61, I_94, I_99, I_80, I_82, I_81, I_63, I_70, I_54, I_68, I_83, I_90, I_93, I_60, I_65, I_91
+
+Cluster (1,7)
+Prototypes: [I_24]
+Number of elements: 4
+Elements: I_24, I_44, I_27, I_32
+
+
+Critério de adequação (energia): 54.3669669042
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,5	0,6	0,7	1,0	1,1	1,5	1,6	1,7	Total
+
+1	0	 0	 0	 0	 7	 10	 22	 0	 0	 7	 0	 4	 50
+3	17	 14	 0	 1	 0	 0	 0	 3	 15	 0	 0	 0	 50
+2	0	 0	 10	 0	 0	 0	 0	 22	 1	 0	 17	 0	 50
+Total	[17 14 10  1  7 10 22 25 16  7 17  4]
+
+Matriz de pesos:
+Cluster (0,0): 0.574474953229 0.292534093232 2.37704324737 2.50331401214
+Cluster (0,1): 0.574474953229 0.292534093232 2.37704324737 2.50331401214
+Cluster (0,2): 0.574474953229 0.292534093232 2.37704324737 2.50331401214
+Cluster (0,3): 0.574474953229 0.292534093232 2.37704324737 2.50331401214
+Cluster (0,4): 0.574474953229 0.292534093232 2.37704324737 2.50331401214
+Cluster (0,5): 0.574474953229 0.292534093232 2.37704324737 2.50331401214
+Cluster (0,6): 0.574474953229 0.292534093232 2.37704324737 2.50331401214
+Cluster (0,7): 0.574474953229 0.292534093232 2.37704324737 2.50331401214
+Cluster (1,0): 0.574474953229 0.292534093232 2.37704324737 2.50331401214
+Cluster (1,1): 0.574474953229 0.292534093232 2.37704324737 2.50331401214
+Cluster (1,2): 0.574474953229 0.292534093232 2.37704324737 2.50331401214
+Cluster (1,3): 0.574474953229 0.292534093232 2.37704324737 2.50331401214
+Cluster (1,4): 0.574474953229 0.292534093232 2.37704324737 2.50331401214
+Cluster (1,5): 0.574474953229 0.292534093232 2.37704324737 2.50331401214
+Cluster (1,6): 0.574474953229 0.292534093232 2.37704324737 2.50331401214
+Cluster (1,7): 0.574474953229 0.292534093232 2.37704324737 2.50331401214
+
+Corrected Rand index: 0.443753863776
+F-measure(P,Q): 0.568413488115
+OERC: 0.0266666666667
+
+#####################################
+# Repetição do experimento: 19
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_28]
+Number of elements: 21
+Elements: I_1, I_5, I_6, I_8, I_11, I_12, I_17, I_18, I_19, I_20, I_21, I_28, I_29, I_36, I_37, I_38, I_40, I_41, I_47, I_49, I_50
+
+Cluster (0,1)
+Prototypes: [I_4]
+Number of elements: 17
+Elements: I_42, I_9, I_14, I_39, I_46, I_4, I_13, I_43, I_48, I_2, I_3, I_10, I_26, I_30, I_31, I_35, I_7
+
+Cluster (0,2)
+Prototypes: [I_34]
+Number of elements: 4
+Elements: I_16, I_34, I_15, I_33
+
+Cluster (0,3)
+Prototypes: [I_124]
+Number of elements: 0
+Elements
+
+Cluster (0,4)
+Prototypes: [I_116]
+Number of elements: 13
+Elements: I_101, I_137, I_144, I_145, I_149, I_105, I_116, I_121, I_141, I_142, I_146, I_115, I_133
+
+Cluster (0,5)
+Prototypes: [I_95]
+Number of elements: 24
+Elements: I_81, I_54, I_60, I_70, I_63, I_65, I_68, I_83, I_89, I_90, I_91, I_93, I_95, I_96, I_100, I_107, I_56, I_72, I_85, I_97, I_62, I_67, I_74, I_79
+
+Cluster (0,6)
+Prototypes: [I_73]
+Number of elements: 7
+Elements: I_120, I_135, I_69, I_73, I_64, I_88, I_134
+
+Cluster (0,7)
+Prototypes: [I_127]
+Number of elements: 11
+Elements: I_150, I_128, I_139, I_122, I_84, I_102, I_127, I_143, I_114, I_124, I_147
+
+Cluster (1,0)
+Prototypes: [I_27]
+Number of elements: 7
+Elements: I_24, I_25, I_27, I_44, I_45, I_22, I_32
+
+Cluster (1,1)
+Prototypes: [I_94]
+Number of elements: 6
+Elements: I_99, I_58, I_94, I_61, I_82, I_80
+
+Cluster (1,2)
+Prototypes: [I_113]
+Number of elements: 5
+Elements: I_103, I_113, I_140, I_125, I_129
+
+Cluster (1,3)
+Prototypes: [I_106]
+Number of elements: 9
+Elements: I_110, I_119, I_106, I_108, I_118, I_123, I_131, I_132, I_136
+
+Cluster (1,4)
+Prototypes: [I_117]
+Number of elements: 10
+Elements: I_109, I_104, I_112, I_117, I_130, I_138, I_148, I_126, I_78, I_111
+
+Cluster (1,5)
+Prototypes: [I_76]
+Number of elements: 12
+Elements: I_51, I_66, I_52, I_59, I_75, I_76, I_87, I_92, I_53, I_55, I_77, I_98
+
+Cluster (1,6)
+Prototypes: [I_7]
+Number of elements: 1
+Elements: I_23
+
+Cluster (1,7)
+Prototypes: [I_71]
+Number of elements: 3
+Elements: I_71, I_86, I_57
+
+
+Critério de adequação (energia): 43.6379813887
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,4	0,5	0,6	0,7	1,0	1,1	1,2	1,3	1,4	1,5	1,6	1,7	Total
+
+1	21	 17	 4	 0	 0	 0	 0	 7	 0	 0	 0	 0	 0	 1	 0	 50
+3	0	 0	 0	 13	 1	 3	 10	 0	 0	 5	 9	 9	 0	 0	 0	 50
+2	0	 0	 0	 0	 23	 4	 1	 0	 6	 0	 0	 1	 12	 0	 3	 50
+Total	[21 17  4 13 24  7 11  7  6  5  9 10 12  1  3]
+
+Matriz de pesos:
+Cluster (0,0): 0.649806691595 0.243728958548 2.83767446261 2.22508248996
+Cluster (0,1): 0.649806691595 0.243728958548 2.83767446261 2.22508248996
+Cluster (0,2): 0.649806691595 0.243728958548 2.83767446261 2.22508248996
+Cluster (0,3): 0.649806691595 0.243728958548 2.83767446261 2.22508248996
+Cluster (0,4): 0.649806691595 0.243728958548 2.83767446261 2.22508248996
+Cluster (0,5): 0.649806691595 0.243728958548 2.83767446261 2.22508248996
+Cluster (0,6): 0.649806691595 0.243728958548 2.83767446261 2.22508248996
+Cluster (0,7): 0.649806691595 0.243728958548 2.83767446261 2.22508248996
+Cluster (1,0): 0.649806691595 0.243728958548 2.83767446261 2.22508248996
+Cluster (1,1): 0.649806691595 0.243728958548 2.83767446261 2.22508248996
+Cluster (1,2): 0.649806691595 0.243728958548 2.83767446261 2.22508248996
+Cluster (1,3): 0.649806691595 0.243728958548 2.83767446261 2.22508248996
+Cluster (1,4): 0.649806691595 0.243728958548 2.83767446261 2.22508248996
+Cluster (1,5): 0.649806691595 0.243728958548 2.83767446261 2.22508248996
+Cluster (1,6): 0.649806691595 0.243728958548 2.83767446261 2.22508248996
+Cluster (1,7): 0.649806691595 0.243728958548 2.83767446261 2.22508248996
+
+Corrected Rand index: 0.39716309738
+F-measure(P,Q): 0.541956443365
+OERC: 0.04
+
+#####################################
+# Repetição do experimento: 20
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_127]
+Number of elements: 17
+Elements: I_69, I_73, I_78, I_84, I_102, I_104, I_112, I_114, I_120, I_124, I_127, I_128, I_134, I_135, I_139, I_143, I_147
+
+Cluster (0,1)
+Prototypes: [I_76]
+Number of elements: 12
+Elements: I_51, I_53, I_59, I_66, I_76, I_77, I_87, I_75, I_55, I_64, I_92, I_98
+
+Cluster (0,2)
+Prototypes: [I_37]
+Number of elements: 1
+Elements: I_37
+
+Cluster (0,3)
+Prototypes: [I_123]
+Number of elements: 6
+Elements: I_106, I_119, I_123, I_108, I_131, I_136
+
+Cluster (0,4)
+Prototypes: [I_118]
+Number of elements: 3
+Elements: I_118, I_132, I_110
+
+Cluster (0,5)
+Prototypes: [I_113]
+Number of elements: 19
+Elements: I_126, I_103, I_130, I_121, I_125, I_144, I_105, I_109, I_113, I_140, I_142, I_146, I_129, I_133, I_111, I_117, I_138, I_141, I_148
+
+Cluster (0,6)
+Prototypes: [I_150]
+Number of elements: 3
+Elements: I_71, I_122, I_150
+
+Cluster (0,7)
+Prototypes: [I_20]
+Number of elements: 7
+Elements: I_33, I_11, I_20, I_22, I_45, I_47, I_49
+
+Cluster (1,0)
+Prototypes: [I_100]
+Number of elements: 22
+Elements: I_68, I_54, I_56, I_60, I_62, I_65, I_67, I_72, I_74, I_83, I_85, I_89, I_90, I_91, I_93, I_95, I_96, I_97, I_100, I_107, I_88, I_79
+
+Cluster (1,1)
+Prototypes: [I_24]
+Number of elements: 3
+Elements: I_32, I_44, I_24
+
+Cluster (1,2)
+Prototypes: [I_57]
+Number of elements: 3
+Elements: I_86, I_57, I_52
+
+Cluster (1,3)
+Prototypes: [I_137]
+Number of elements: 6
+Elements: I_101, I_116, I_137, I_145, I_149, I_115
+
+Cluster (1,4)
+Prototypes: [I_22]
+Number of elements: 0
+Elements
+
+Cluster (1,5)
+Prototypes: [I_82]
+Number of elements: 9
+Elements: I_99, I_58, I_61, I_63, I_80, I_81, I_82, I_94, I_70
+
+Cluster (1,6)
+Prototypes: [I_17]
+Number of elements: 6
+Elements: I_16, I_6, I_15, I_17, I_19, I_34
+
+Cluster (1,7)
+Prototypes: [I_50]
+Number of elements: 33
+Elements: I_5, I_23, I_38, I_1, I_7, I_12, I_18, I_41, I_3, I_4, I_8, I_9, I_10, I_13, I_14, I_21, I_25, I_27, I_28, I_29, I_30, I_31, I_35, I_36, I_39, I_40, I_43, I_48, I_50, I_2, I_26, I_46, I_42
+
+
+Critério de adequação (energia): 50.9108219874
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	0,5	0,6	0,7	1,0	1,1	1,2	1,3	1,5	1,6	1,7	Total
+
+1	0	 0	 1	 0	 0	 0	 0	 7	 0	 3	 0	 0	 0	 6	 33	 50
+3	13	 0	 0	 6	 3	 19	 2	 0	 1	 0	 0	 6	 0	 0	 0	 50
+2	4	 12	 0	 0	 0	 0	 1	 0	 21	 0	 3	 0	 9	 0	 0	 50
+Total	[17 12  1  6  3 19  3  7 22  3  3  6  9  6 33]
+
+Matriz de pesos:
+Cluster (0,0): 0.641622806134 0.31672807351 2.44903602714 2.00927080773
+Cluster (0,1): 0.641622806134 0.31672807351 2.44903602714 2.00927080773
+Cluster (0,2): 0.641622806134 0.31672807351 2.44903602714 2.00927080773
+Cluster (0,3): 0.641622806134 0.31672807351 2.44903602714 2.00927080773
+Cluster (0,4): 0.641622806134 0.31672807351 2.44903602714 2.00927080773
+Cluster (0,5): 0.641622806134 0.31672807351 2.44903602714 2.00927080773
+Cluster (0,6): 0.641622806134 0.31672807351 2.44903602714 2.00927080773
+Cluster (0,7): 0.641622806134 0.31672807351 2.44903602714 2.00927080773
+Cluster (1,0): 0.641622806134 0.31672807351 2.44903602714 2.00927080773
+Cluster (1,1): 0.641622806134 0.31672807351 2.44903602714 2.00927080773
+Cluster (1,2): 0.641622806134 0.31672807351 2.44903602714 2.00927080773
+Cluster (1,3): 0.641622806134 0.31672807351 2.44903602714 2.00927080773
+Cluster (1,4): 0.641622806134 0.31672807351 2.44903602714 2.00927080773
+Cluster (1,5): 0.641622806134 0.31672807351 2.44903602714 2.00927080773
+Cluster (1,6): 0.641622806134 0.31672807351 2.44903602714 2.00927080773
+Cluster (1,7): 0.641622806134 0.31672807351 2.44903602714 2.00927080773
+
+Corrected Rand index: 0.475919509491
+F-measure(P,Q): 0.643079564635
+OERC: 0.04
+
+#####################################
+# Repetição do experimento: 21
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_121]
+Number of elements: 13
+Elements: I_118, I_125, I_101, I_103, I_121, I_141, I_144, I_140, I_105, I_113, I_110, I_136, I_145
+
+Cluster (0,1)
+Prototypes: [I_112]
+Number of elements: 16
+Elements: I_104, I_102, I_109, I_111, I_112, I_114, I_117, I_122, I_143, I_150, I_147, I_148, I_129, I_124, I_127, I_133
+
+Cluster (0,2)
+Prototypes: [I_116]
+Number of elements: 6
+Elements: I_115, I_149, I_116, I_137, I_142, I_146
+
+Cluster (0,3)
+Prototypes: [I_16]
+Number of elements: 1
+Elements: I_16
+
+Cluster (0,4)
+Prototypes: [I_123]
+Number of elements: 6
+Elements: I_106, I_119, I_123, I_108, I_131, I_132
+
+Cluster (0,5)
+Prototypes: [I_48]
+Number of elements: 0
+Elements
+
+Cluster (0,6)
+Prototypes: [I_27]
+Number of elements: 10
+Elements: I_24, I_27, I_44, I_8, I_25, I_32, I_41, I_18, I_22, I_7
+
+Cluster (0,7)
+Prototypes: [I_49]
+Number of elements: 20
+Elements: I_1, I_5, I_6, I_11, I_15, I_17, I_19, I_20, I_21, I_28, I_29, I_33, I_34, I_37, I_40, I_47, I_49, I_23, I_38, I_45
+
+Cluster (1,0)
+Prototypes: [I_93]
+Number of elements: 24
+Elements: I_72, I_96, I_97, I_63, I_68, I_83, I_89, I_90, I_91, I_93, I_95, I_100, I_54, I_65, I_70, I_60, I_81, I_82, I_80, I_61, I_58, I_94, I_99, I_88
+
+Cluster (1,1)
+Prototypes: [I_92]
+Number of elements: 22
+Elements: I_51, I_77, I_134, I_59, I_87, I_52, I_55, I_57, I_64, I_66, I_75, I_76, I_84, I_86, I_92, I_74, I_79, I_98, I_62, I_67, I_56, I_85
+
+Cluster (1,2)
+Prototypes: [I_78]
+Number of elements: 6
+Elements: I_53, I_71, I_78, I_130, I_128, I_139
+
+Cluster (1,3)
+Prototypes: [I_48]
+Number of elements: 0
+Elements
+
+Cluster (1,4)
+Prototypes: [I_120]
+Number of elements: 5
+Elements: I_120, I_69, I_135, I_73, I_107
+
+Cluster (1,5)
+Prototypes: [I_138]
+Number of elements: 2
+Elements: I_126, I_138
+
+Cluster (1,6)
+Prototypes: [I_14]
+Number of elements: 1
+Elements: I_14
+
+Cluster (1,7)
+Prototypes: [I_4]
+Number of elements: 18
+Elements: I_2, I_3, I_4, I_9, I_10, I_13, I_30, I_31, I_35, I_36, I_39, I_43, I_48, I_26, I_42, I_46, I_12, I_50
+
+
+Critério de adequação (energia): 52.3377709172
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	0,6	0,7	1,0	1,1	1,2	1,4	1,5	1,6	1,7	Total
+
+1	0	 0	 0	 1	 0	 10	 20	 0	 0	 0	 0	 0	 1	 18	 50
+3	13	 16	 6	 0	 6	 0	 0	 0	 1	 3	 3	 2	 0	 0	 50
+2	0	 0	 0	 0	 0	 0	 0	 24	 21	 3	 2	 0	 0	 0	 50
+Total	[13 16  6  1  6 10 20 24 22  6  5  2  1 18]
+
+Matriz de pesos:
+Cluster (0,0): 0.450823088988 0.320902869268 2.70052076282 2.55960369631
+Cluster (0,1): 0.450823088988 0.320902869268 2.70052076282 2.55960369631
+Cluster (0,2): 0.450823088988 0.320902869268 2.70052076282 2.55960369631
+Cluster (0,3): 0.450823088988 0.320902869268 2.70052076282 2.55960369631
+Cluster (0,4): 0.450823088988 0.320902869268 2.70052076282 2.55960369631
+Cluster (0,5): 0.450823088988 0.320902869268 2.70052076282 2.55960369631
+Cluster (0,6): 0.450823088988 0.320902869268 2.70052076282 2.55960369631
+Cluster (0,7): 0.450823088988 0.320902869268 2.70052076282 2.55960369631
+Cluster (1,0): 0.450823088988 0.320902869268 2.70052076282 2.55960369631
+Cluster (1,1): 0.450823088988 0.320902869268 2.70052076282 2.55960369631
+Cluster (1,2): 0.450823088988 0.320902869268 2.70052076282 2.55960369631
+Cluster (1,3): 0.450823088988 0.320902869268 2.70052076282 2.55960369631
+Cluster (1,4): 0.450823088988 0.320902869268 2.70052076282 2.55960369631
+Cluster (1,5): 0.450823088988 0.320902869268 2.70052076282 2.55960369631
+Cluster (1,6): 0.450823088988 0.320902869268 2.70052076282 2.55960369631
+Cluster (1,7): 0.450823088988 0.320902869268 2.70052076282 2.55960369631
+
+Corrected Rand index: 0.461442766089
+F-measure(P,Q): 0.568308568309
+OERC: 0.04
+
+#####################################
+# Repetição do experimento: 22
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_92]
+Number of elements: 12
+Elements: I_56, I_64, I_74, I_92, I_86, I_52, I_55, I_57, I_87, I_51, I_53, I_77
+
+Cluster (0,1)
+Prototypes: [I_75]
+Number of elements: 5
+Elements: I_75, I_59, I_66, I_98, I_76
+
+Cluster (0,2)
+Prototypes: [I_42]
+Number of elements: 1
+Elements: I_42
+
+Cluster (0,3)
+Prototypes: [I_16]
+Number of elements: 2
+Elements: I_16, I_34
+
+Cluster (0,4)
+Prototypes: [I_107]
+Number of elements: 1
+Elements: I_107
+
+Cluster (0,5)
+Prototypes: [I_73]
+Number of elements: 6
+Elements: I_69, I_73, I_120, I_135, I_84, I_134
+
+Cluster (0,6)
+Prototypes: [I_6]
+Number of elements: 6
+Elements: I_6, I_15, I_33, I_45, I_17, I_19
+
+Cluster (0,7)
+Prototypes: [I_18]
+Number of elements: 25
+Elements: I_1, I_5, I_7, I_8, I_11, I_12, I_18, I_20, I_21, I_22, I_23, I_24, I_25, I_27, I_28, I_29, I_32, I_37, I_38, I_40, I_41, I_44, I_47, I_49, I_50
+
+Cluster (1,0)
+Prototypes: [I_144]
+Number of elements: 20
+Elements: I_103, I_105, I_106, I_110, I_113, I_116, I_119, I_121, I_123, I_125, I_133, I_136, I_140, I_141, I_142, I_144, I_146, I_149, I_118, I_132
+
+Cluster (1,1)
+Prototypes: [I_117]
+Number of elements: 13
+Elements: I_78, I_104, I_117, I_130, I_138, I_109, I_112, I_108, I_111, I_126, I_129, I_131, I_148
+
+Cluster (1,2)
+Prototypes: [I_145]
+Number of elements: 3
+Elements: I_101, I_137, I_145
+
+Cluster (1,3)
+Prototypes: [I_79]
+Number of elements: 4
+Elements: I_62, I_67, I_79, I_85
+
+Cluster (1,4)
+Prototypes: [I_143]
+Number of elements: 12
+Elements: I_102, I_114, I_122, I_143, I_150, I_147, I_115, I_124, I_127, I_128, I_71, I_139
+
+Cluster (1,5)
+Prototypes: [I_93]
+Number of elements: 19
+Elements: I_88, I_54, I_63, I_68, I_70, I_90, I_93, I_60, I_65, I_72, I_80, I_81, I_83, I_89, I_91, I_95, I_96, I_97, I_100
+
+Cluster (1,6)
+Prototypes: [I_94]
+Number of elements: 5
+Elements: I_58, I_99, I_61, I_94, I_82
+
+Cluster (1,7)
+Prototypes: [I_4]
+Number of elements: 16
+Elements: I_9, I_14, I_39, I_46, I_2, I_4, I_13, I_26, I_31, I_35, I_43, I_3, I_10, I_30, I_48, I_36
+
+
+Critério de adequação (energia): 47.7775473065
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	0,5	0,6	0,7	1,0	1,1	1,2	1,3	1,4	1,5	1,6	1,7	Total
+
+1	0	 0	 1	 2	 0	 0	 6	 25	 0	 0	 0	 0	 0	 0	 0	 16	 50
+3	0	 0	 0	 0	 1	 3	 0	 0	 20	 12	 3	 0	 11	 0	 0	 0	 50
+2	12	 5	 0	 0	 0	 3	 0	 0	 0	 1	 0	 4	 1	 19	 5	 0	 50
+Total	[12  5  1  2  1  6  6 25 20 13  3  4 12 19  5 16]
+
+Matriz de pesos:
+Cluster (0,0): 0.431159519589 0.343135138504 2.64353548443 2.55688786705
+Cluster (0,1): 0.431159519589 0.343135138504 2.64353548443 2.55688786705
+Cluster (0,2): 0.431159519589 0.343135138504 2.64353548443 2.55688786705
+Cluster (0,3): 0.431159519589 0.343135138504 2.64353548443 2.55688786705
+Cluster (0,4): 0.431159519589 0.343135138504 2.64353548443 2.55688786705
+Cluster (0,5): 0.431159519589 0.343135138504 2.64353548443 2.55688786705
+Cluster (0,6): 0.431159519589 0.343135138504 2.64353548443 2.55688786705
+Cluster (0,7): 0.431159519589 0.343135138504 2.64353548443 2.55688786705
+Cluster (1,0): 0.431159519589 0.343135138504 2.64353548443 2.55688786705
+Cluster (1,1): 0.431159519589 0.343135138504 2.64353548443 2.55688786705
+Cluster (1,2): 0.431159519589 0.343135138504 2.64353548443 2.55688786705
+Cluster (1,3): 0.431159519589 0.343135138504 2.64353548443 2.55688786705
+Cluster (1,4): 0.431159519589 0.343135138504 2.64353548443 2.55688786705
+Cluster (1,5): 0.431159519589 0.343135138504 2.64353548443 2.55688786705
+Cluster (1,6): 0.431159519589 0.343135138504 2.64353548443 2.55688786705
+Cluster (1,7): 0.431159519589 0.343135138504 2.64353548443 2.55688786705
+
+Corrected Rand index: 0.431231463861
+F-measure(P,Q): 0.596273291925
+OERC: 0.0333333333333
+
+#####################################
+# Repetição do experimento: 23
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_103]
+Number of elements: 14
+Elements: I_103, I_106, I_108, I_113, I_119, I_123, I_126, I_131, I_136, I_140, I_125, I_118, I_132, I_130
+
+Cluster (0,1)
+Prototypes: [I_112]
+Number of elements: 19
+Elements: I_104, I_78, I_117, I_138, I_147, I_150, I_102, I_109, I_112, I_124, I_143, I_111, I_114, I_122, I_127, I_128, I_129, I_148, I_139
+
+Cluster (0,2)
+Prototypes: [I_135]
+Number of elements: 2
+Elements: I_135, I_120
+
+Cluster (0,3)
+Prototypes: [I_141]
+Number of elements: 13
+Elements: I_101, I_137, I_110, I_115, I_145, I_149, I_116, I_141, I_146, I_105, I_121, I_133, I_144
+
+Cluster (0,4)
+Prototypes: [I_142]
+Number of elements: 1
+Elements: I_142
+
+Cluster (0,5)
+Prototypes: [I_36]
+Number of elements: 0
+Elements
+
+Cluster (0,6)
+Prototypes: [I_9]
+Number of elements: 7
+Elements: I_42, I_9, I_14, I_39, I_4, I_43, I_46
+
+Cluster (0,7)
+Prototypes: [I_8]
+Number of elements: 29
+Elements: I_26, I_3, I_10, I_30, I_31, I_35, I_36, I_48, I_7, I_50, I_8, I_12, I_25, I_29, I_40, I_1, I_21, I_23, I_27, I_41, I_18, I_28, I_32, I_38, I_37, I_5, I_11, I_47, I_49
+
+Cluster (1,0)
+Prototypes: [I_64]
+Number of elements: 20
+Elements: I_88, I_56, I_62, I_67, I_74, I_85, I_98, I_64, I_69, I_75, I_79, I_92, I_73, I_59, I_76, I_84, I_55, I_66, I_134, I_77
+
+Cluster (1,1)
+Prototypes: [I_81]
+Number of elements: 11
+Elements: I_58, I_94, I_61, I_80, I_81, I_82, I_99, I_54, I_63, I_70, I_68
+
+Cluster (1,2)
+Prototypes: [I_13]
+Number of elements: 2
+Elements: I_2, I_13
+
+Cluster (1,3)
+Prototypes: [I_100]
+Number of elements: 13
+Elements: I_60, I_65, I_72, I_83, I_89, I_91, I_93, I_95, I_96, I_100, I_90, I_97, I_107
+
+Cluster (1,4)
+Prototypes: [I_44]
+Number of elements: 2
+Elements: I_44, I_24
+
+Cluster (1,5)
+Prototypes: [I_57]
+Number of elements: 6
+Elements: I_57, I_51, I_52, I_53, I_71, I_87
+
+Cluster (1,6)
+Prototypes: [I_86]
+Number of elements: 1
+Elements: I_86
+
+Cluster (1,7)
+Prototypes: [I_6]
+Number of elements: 10
+Elements: I_16, I_6, I_15, I_17, I_19, I_33, I_34, I_45, I_20, I_22
+
+
+Critério de adequação (energia): 51.7376201251
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	0,6	0,7	1,0	1,1	1,2	1,3	1,4	1,5	1,6	1,7	Total
+
+1	0	 0	 0	 0	 0	 7	 29	 0	 0	 2	 0	 2	 0	 0	 10	 50
+3	14	 18	 2	 13	 1	 0	 0	 1	 0	 0	 1	 0	 0	 0	 0	 50
+2	0	 1	 0	 0	 0	 0	 0	 19	 11	 0	 12	 0	 6	 1	 0	 50
+Total	[14 19  2 13  1  7 29 20 11  2 13  2  6  1 10]
+
+Matriz de pesos:
+Cluster (0,0): 0.470875396668 0.298065260664 2.58304100232 2.75836249184
+Cluster (0,1): 0.470875396668 0.298065260664 2.58304100232 2.75836249184
+Cluster (0,2): 0.470875396668 0.298065260664 2.58304100232 2.75836249184
+Cluster (0,3): 0.470875396668 0.298065260664 2.58304100232 2.75836249184
+Cluster (0,4): 0.470875396668 0.298065260664 2.58304100232 2.75836249184
+Cluster (0,5): 0.470875396668 0.298065260664 2.58304100232 2.75836249184
+Cluster (0,6): 0.470875396668 0.298065260664 2.58304100232 2.75836249184
+Cluster (0,7): 0.470875396668 0.298065260664 2.58304100232 2.75836249184
+Cluster (1,0): 0.470875396668 0.298065260664 2.58304100232 2.75836249184
+Cluster (1,1): 0.470875396668 0.298065260664 2.58304100232 2.75836249184
+Cluster (1,2): 0.470875396668 0.298065260664 2.58304100232 2.75836249184
+Cluster (1,3): 0.470875396668 0.298065260664 2.58304100232 2.75836249184
+Cluster (1,4): 0.470875396668 0.298065260664 2.58304100232 2.75836249184
+Cluster (1,5): 0.470875396668 0.298065260664 2.58304100232 2.75836249184
+Cluster (1,6): 0.470875396668 0.298065260664 2.58304100232 2.75836249184
+Cluster (1,7): 0.470875396668 0.298065260664 2.58304100232 2.75836249184
+
+Corrected Rand index: 0.45733220855
+F-measure(P,Q): 0.599591162827
+OERC: 0.02
+
+#####################################
+# Repetição do experimento: 24
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_78]
+Number of elements: 9
+Elements: I_77, I_51, I_53, I_78, I_87, I_117, I_138, I_130, I_111
+
+Cluster (0,1)
+Prototypes: [I_84]
+Number of elements: 15
+Elements: I_120, I_73, I_84, I_102, I_114, I_122, I_135, I_143, I_139, I_127, I_134, I_147, I_150, I_124, I_128
+
+Cluster (0,2)
+Prototypes: [I_95]
+Number of elements: 12
+Elements: I_91, I_56, I_68, I_72, I_83, I_90, I_93, I_95, I_97, I_100, I_54, I_85
+
+Cluster (0,3)
+Prototypes: [I_65]
+Number of elements: 1
+Elements: I_65
+
+Cluster (0,4)
+Prototypes: [I_50]
+Number of elements: 36
+Elements: I_23, I_1, I_3, I_5, I_7, I_8, I_12, I_18, I_25, I_27, I_28, I_29, I_30, I_32, I_36, I_37, I_38, I_40, I_41, I_43, I_48, I_50, I_2, I_4, I_10, I_13, I_14, I_24, I_26, I_31, I_35, I_39, I_46, I_9, I_42, I_44
+
+Cluster (0,5)
+Prototypes: [I_21]
+Number of elements: 1
+Elements: I_21
+
+Cluster (0,6)
+Prototypes: [I_106]
+Number of elements: 8
+Elements: I_119, I_123, I_106, I_108, I_131, I_132, I_118, I_136
+
+Cluster (0,7)
+Prototypes: [I_96]
+Number of elements: 2
+Elements: I_89, I_96
+
+Cluster (1,0)
+Prototypes: [I_121]
+Number of elements: 16
+Elements: I_101, I_103, I_110, I_113, I_116, I_121, I_125, I_126, I_137, I_140, I_141, I_142, I_144, I_145, I_146, I_149
+
+Cluster (1,1)
+Prototypes: [I_129]
+Number of elements: 8
+Elements: I_115, I_104, I_112, I_129, I_133, I_148, I_109, I_105
+
+Cluster (1,2)
+Prototypes: [I_92]
+Number of elements: 16
+Elements: I_86, I_64, I_71, I_75, I_79, I_92, I_98, I_52, I_74, I_55, I_57, I_59, I_76, I_62, I_66, I_67
+
+Cluster (1,3)
+Prototypes: [I_60]
+Number of elements: 2
+Elements: I_107, I_60
+
+Cluster (1,4)
+Prototypes: [I_6]
+Number of elements: 13
+Elements: I_16, I_6, I_15, I_17, I_19, I_20, I_22, I_33, I_34, I_45, I_11, I_47, I_49
+
+Cluster (1,5)
+Prototypes: [I_82]
+Number of elements: 5
+Elements: I_80, I_81, I_82, I_63, I_70
+
+Cluster (1,6)
+Prototypes: [I_88]
+Number of elements: 2
+Elements: I_88, I_69
+
+Cluster (1,7)
+Prototypes: [I_94]
+Number of elements: 4
+Elements: I_58, I_61, I_94, I_99
+
+
+Critério de adequação (energia): 47.0109346105
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	0,5	0,6	0,7	1,0	1,1	1,2	1,3	1,4	1,5	1,6	1,7	Total
+
+1	0	 0	 0	 0	 36	 1	 0	 0	 0	 0	 0	 0	 13	 0	 0	 0	 50
+3	4	 13	 0	 0	 0	 0	 8	 0	 16	 8	 0	 1	 0	 0	 0	 0	 50
+2	5	 2	 12	 1	 0	 0	 0	 2	 0	 0	 16	 1	 0	 5	 2	 4	 50
+Total	[ 9 15 12  1 36  1  8  2 16  8 16  2 13  5  2  4]
+
+Matriz de pesos:
+Cluster (0,0): 0.642024299254 0.308899441212 3.1189103014 1.61669660761
+Cluster (0,1): 0.642024299254 0.308899441212 3.1189103014 1.61669660761
+Cluster (0,2): 0.642024299254 0.308899441212 3.1189103014 1.61669660761
+Cluster (0,3): 0.642024299254 0.308899441212 3.1189103014 1.61669660761
+Cluster (0,4): 0.642024299254 0.308899441212 3.1189103014 1.61669660761
+Cluster (0,5): 0.642024299254 0.308899441212 3.1189103014 1.61669660761
+Cluster (0,6): 0.642024299254 0.308899441212 3.1189103014 1.61669660761
+Cluster (0,7): 0.642024299254 0.308899441212 3.1189103014 1.61669660761
+Cluster (1,0): 0.642024299254 0.308899441212 3.1189103014 1.61669660761
+Cluster (1,1): 0.642024299254 0.308899441212 3.1189103014 1.61669660761
+Cluster (1,2): 0.642024299254 0.308899441212 3.1189103014 1.61669660761
+Cluster (1,3): 0.642024299254 0.308899441212 3.1189103014 1.61669660761
+Cluster (1,4): 0.642024299254 0.308899441212 3.1189103014 1.61669660761
+Cluster (1,5): 0.642024299254 0.308899441212 3.1189103014 1.61669660761
+Cluster (1,6): 0.642024299254 0.308899441212 3.1189103014 1.61669660761
+Cluster (1,7): 0.642024299254 0.308899441212 3.1189103014 1.61669660761
+
+Corrected Rand index: 0.482364914854
+F-measure(P,Q): 0.602302090674
+OERC: 0.0466666666667
+
+#####################################
+# Repetição do experimento: 25
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_148]
+Number of elements: 27
+Elements: I_145, I_78, I_101, I_105, I_111, I_113, I_116, I_117, I_121, I_125, I_129, I_133, I_137, I_138, I_140, I_141, I_142, I_144, I_146, I_148, I_149, I_104, I_109, I_112, I_124, I_128, I_130
+
+Cluster (0,1)
+Prototypes: [I_67]
+Number of elements: 7
+Elements: I_85, I_62, I_67, I_86, I_71, I_79, I_107
+
+Cluster (0,2)
+Prototypes: [I_106]
+Number of elements: 11
+Elements: I_119, I_123, I_106, I_108, I_131, I_136, I_118, I_126, I_132, I_110, I_103
+
+Cluster (0,3)
+Prototypes: [I_114]
+Number of elements: 2
+Elements: I_114, I_115
+
+Cluster (0,4)
+Prototypes: [I_33]
+Number of elements: 3
+Elements: I_16, I_33, I_34
+
+Cluster (0,5)
+Prototypes: [I_143]
+Number of elements: 7
+Elements: I_102, I_122, I_143, I_84, I_139, I_147, I_150
+
+Cluster (0,6)
+Prototypes: [I_44]
+Number of elements: 2
+Elements: I_44, I_24
+
+Cluster (0,7)
+Prototypes: [I_96]
+Number of elements: 3
+Elements: I_96, I_68, I_89
+
+Cluster (1,0)
+Prototypes: [I_55]
+Number of elements: 18
+Elements: I_74, I_98, I_64, I_73, I_75, I_92, I_52, I_55, I_59, I_66, I_76, I_134, I_57, I_77, I_87, I_51, I_53, I_127
+
+Cluster (1,1)
+Prototypes: [I_81]
+Number of elements: 11
+Elements: I_54, I_58, I_61, I_63, I_70, I_81, I_82, I_94, I_80, I_90, I_99
+
+Cluster (1,2)
+Prototypes: [I_135]
+Number of elements: 1
+Elements: I_135
+
+Cluster (1,3)
+Prototypes: [I_42]
+Number of elements: 1
+Elements: I_42
+
+Cluster (1,4)
+Prototypes: [I_69]
+Number of elements: 3
+Elements: I_69, I_120, I_88
+
+Cluster (1,5)
+Prototypes: [I_100]
+Number of elements: 10
+Elements: I_97, I_65, I_100, I_60, I_72, I_95, I_56, I_83, I_91, I_93
+
+Cluster (1,6)
+Prototypes: [I_20]
+Number of elements: 11
+Elements: I_6, I_19, I_11, I_15, I_17, I_20, I_22, I_45, I_47, I_49, I_5
+
+Cluster (1,7)
+Prototypes: [I_50]
+Number of elements: 33
+Elements: I_1, I_2, I_3, I_4, I_7, I_8, I_9, I_10, I_12, I_13, I_14, I_18, I_21, I_23, I_25, I_26, I_27, I_28, I_29, I_30, I_31, I_35, I_36, I_37, I_38, I_39, I_40, I_41, I_43, I_46, I_48, I_50, I_32
+
+
+Critério de adequação (energia): 54.0851348703
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	0,5	0,6	0,7	1,0	1,1	1,2	1,3	1,4	1,5	1,6	1,7	Total
+
+1	0	 0	 0	 0	 3	 0	 2	 0	 0	 0	 0	 1	 0	 0	 11	 33	 50
+3	26	 1	 11	 2	 0	 6	 0	 0	 2	 0	 1	 0	 1	 0	 0	 0	 50
+2	1	 6	 0	 0	 0	 1	 0	 3	 16	 11	 0	 0	 2	 10	 0	 0	 50
+Total	[27  7 11  2  3  7  2  3 18 11  1  1  3 10 11 33]
+
+Matriz de pesos:
+Cluster (0,0): 0.637414142175 0.315584088454 2.78978488699 1.78193759114
+Cluster (0,1): 0.637414142175 0.315584088454 2.78978488699 1.78193759114
+Cluster (0,2): 0.637414142175 0.315584088454 2.78978488699 1.78193759114
+Cluster (0,3): 0.637414142175 0.315584088454 2.78978488699 1.78193759114
+Cluster (0,4): 0.637414142175 0.315584088454 2.78978488699 1.78193759114
+Cluster (0,5): 0.637414142175 0.315584088454 2.78978488699 1.78193759114
+Cluster (0,6): 0.637414142175 0.315584088454 2.78978488699 1.78193759114
+Cluster (0,7): 0.637414142175 0.315584088454 2.78978488699 1.78193759114
+Cluster (1,0): 0.637414142175 0.315584088454 2.78978488699 1.78193759114
+Cluster (1,1): 0.637414142175 0.315584088454 2.78978488699 1.78193759114
+Cluster (1,2): 0.637414142175 0.315584088454 2.78978488699 1.78193759114
+Cluster (1,3): 0.637414142175 0.315584088454 2.78978488699 1.78193759114
+Cluster (1,4): 0.637414142175 0.315584088454 2.78978488699 1.78193759114
+Cluster (1,5): 0.637414142175 0.315584088454 2.78978488699 1.78193759114
+Cluster (1,6): 0.637414142175 0.315584088454 2.78978488699 1.78193759114
+Cluster (1,7): 0.637414142175 0.315584088454 2.78978488699 1.78193759114
+
+Corrected Rand index: 0.492152899217
+F-measure(P,Q): 0.64703121117
+OERC: 0.04
+
+#####################################
+# Repetição do experimento: 26
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_113]
+Number of elements: 28
+Elements: I_103, I_105, I_106, I_108, I_109, I_111, I_113, I_116, I_121, I_123, I_125, I_126, I_129, I_131, I_133, I_136, I_137, I_140, I_141, I_142, I_144, I_146, I_148, I_149, I_130, I_104, I_117, I_138
+
+Cluster (0,1)
+Prototypes: [I_110]
+Number of elements: 6
+Elements: I_101, I_110, I_118, I_132, I_119, I_145
+
+Cluster (0,2)
+Prototypes: [I_27]
+Number of elements: 2
+Elements: I_24, I_27
+
+Cluster (0,3)
+Prototypes: [I_94]
+Number of elements: 4
+Elements: I_61, I_58, I_94, I_99
+
+Cluster (0,4)
+Prototypes: [I_143]
+Number of elements: 13
+Elements: I_122, I_102, I_114, I_115, I_143, I_139, I_147, I_150, I_84, I_112, I_124, I_127, I_128
+
+Cluster (0,5)
+Prototypes: [I_113]
+Number of elements: 0
+Elements
+
+Cluster (0,6)
+Prototypes: [I_44]
+Number of elements: 1
+Elements: I_44
+
+Cluster (0,7)
+Prototypes: [I_50]
+Number of elements: 33
+Elements: I_5, I_23, I_1, I_7, I_8, I_12, I_18, I_28, I_29, I_37, I_38, I_40, I_41, I_3, I_21, I_30, I_32, I_36, I_43, I_48, I_50, I_4, I_10, I_14, I_31, I_35, I_39, I_2, I_9, I_13, I_26, I_46, I_42
+
+Cluster (1,0)
+Prototypes: [I_55]
+Number of elements: 23
+Elements: I_98, I_74, I_52, I_92, I_75, I_64, I_66, I_76, I_79, I_57, I_59, I_88, I_51, I_55, I_69, I_87, I_73, I_77, I_120, I_134, I_135, I_53, I_78
+
+Cluster (1,1)
+Prototypes: [I_67]
+Number of elements: 5
+Elements: I_62, I_85, I_86, I_67, I_71
+
+Cluster (1,2)
+Prototypes: [I_34]
+Number of elements: 4
+Elements: I_16, I_34, I_15, I_33
+
+Cluster (1,3)
+Prototypes: [I_107]
+Number of elements: 1
+Elements: I_107
+
+Cluster (1,4)
+Prototypes: [I_12]
+Number of elements: 1
+Elements: I_25
+
+Cluster (1,5)
+Prototypes: [I_70]
+Number of elements: 9
+Elements: I_80, I_63, I_70, I_54, I_68, I_81, I_82, I_93, I_90
+
+Cluster (1,6)
+Prototypes: [I_100]
+Number of elements: 11
+Elements: I_91, I_60, I_95, I_65, I_72, I_89, I_96, I_97, I_100, I_56, I_83
+
+Cluster (1,7)
+Prototypes: [I_20]
+Number of elements: 9
+Elements: I_6, I_45, I_17, I_19, I_20, I_22, I_47, I_11, I_49
+
+
+Critério de adequação (energia): 55.866271858
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	0,6	0,7	1,0	1,1	1,2	1,3	1,4	1,5	1,6	1,7	Total
+
+1	0	 0	 2	 0	 0	 1	 33	 0	 0	 4	 0	 1	 0	 0	 9	 50
+3	28	 6	 0	 0	 12	 0	 0	 3	 0	 0	 1	 0	 0	 0	 0	 50
+2	0	 0	 0	 4	 1	 0	 0	 20	 5	 0	 0	 0	 9	 11	 0	 50
+Total	[28  6  2  4 13  1 33 23  5  4  1  1  9 11  9]
+
+Matriz de pesos:
+Cluster (0,0): 0.53430799268 0.325983718959 2.78419029674 2.06211795437
+Cluster (0,1): 0.53430799268 0.325983718959 2.78419029674 2.06211795437
+Cluster (0,2): 0.53430799268 0.325983718959 2.78419029674 2.06211795437
+Cluster (0,3): 0.53430799268 0.325983718959 2.78419029674 2.06211795437
+Cluster (0,4): 0.53430799268 0.325983718959 2.78419029674 2.06211795437
+Cluster (0,5): 0.53430799268 0.325983718959 2.78419029674 2.06211795437
+Cluster (0,6): 0.53430799268 0.325983718959 2.78419029674 2.06211795437
+Cluster (0,7): 0.53430799268 0.325983718959 2.78419029674 2.06211795437
+Cluster (1,0): 0.53430799268 0.325983718959 2.78419029674 2.06211795437
+Cluster (1,1): 0.53430799268 0.325983718959 2.78419029674 2.06211795437
+Cluster (1,2): 0.53430799268 0.325983718959 2.78419029674 2.06211795437
+Cluster (1,3): 0.53430799268 0.325983718959 2.78419029674 2.06211795437
+Cluster (1,4): 0.53430799268 0.325983718959 2.78419029674 2.06211795437
+Cluster (1,5): 0.53430799268 0.325983718959 2.78419029674 2.06211795437
+Cluster (1,6): 0.53430799268 0.325983718959 2.78419029674 2.06211795437
+Cluster (1,7): 0.53430799268 0.325983718959 2.78419029674 2.06211795437
+
+Corrected Rand index: 0.523931438802
+F-measure(P,Q): 0.687024882107
+OERC: 0.0266666666667
+
+#####################################
+# Repetição do experimento: 27
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_8]
+Number of elements: 49
+Elements: I_1, I_2, I_3, I_4, I_5, I_6, I_7, I_8, I_9, I_10, I_11, I_12, I_13, I_14, I_15, I_16, I_17, I_18, I_19, I_20, I_21, I_22, I_23, I_24, I_25, I_26, I_27, I_28, I_29, I_30, I_31, I_32, I_33, I_34, I_35, I_36, I_37, I_38, I_39, I_40, I_41, I_43, I_44, I_45, I_46, I_47, I_48, I_49, I_50
+
+Cluster (0,1)
+Prototypes: [I_36]
+Number of elements: 0
+Elements
+
+Cluster (0,2)
+Prototypes: [I_139]
+Number of elements: 0
+Elements
+
+Cluster (0,3)
+Prototypes: [I_87]
+Number of elements: 11
+Elements: I_53, I_51, I_87, I_77, I_66, I_52, I_55, I_57, I_59, I_76, I_78
+
+Cluster (0,4)
+Prototypes: [I_116]
+Number of elements: 9
+Elements: I_116, I_137, I_149, I_115, I_141, I_142, I_145, I_146, I_133
+
+Cluster (0,5)
+Prototypes: [I_70]
+Number of elements: 6
+Elements: I_82, I_80, I_81, I_63, I_70, I_68
+
+Cluster (0,6)
+Prototypes: [I_100]
+Number of elements: 16
+Elements: I_60, I_62, I_65, I_72, I_83, I_85, I_89, I_91, I_95, I_96, I_97, I_100, I_56, I_90, I_93, I_54
+
+Cluster (0,7)
+Prototypes: [I_64]
+Number of elements: 14
+Elements: I_75, I_86, I_92, I_64, I_74, I_134, I_69, I_73, I_88, I_120, I_135, I_79, I_98, I_67
+
+Cluster (1,0)
+Prototypes: [I_42]
+Number of elements: 1
+Elements: I_42
+
+Cluster (1,1)
+Prototypes: [I_137]
+Number of elements: 1
+Elements: I_101
+
+Cluster (1,2)
+Prototypes: [I_94]
+Number of elements: 4
+Elements: I_61, I_58, I_94, I_99
+
+Cluster (1,3)
+Prototypes: [I_126]
+Number of elements: 5
+Elements: I_130, I_108, I_126, I_131, I_132
+
+Cluster (1,4)
+Prototypes: [I_122]
+Number of elements: 5
+Elements: I_114, I_122, I_102, I_143, I_107
+
+Cluster (1,5)
+Prototypes: [I_128]
+Number of elements: 7
+Elements: I_71, I_84, I_124, I_127, I_128, I_139, I_150
+
+Cluster (1,6)
+Prototypes: [I_112]
+Number of elements: 9
+Elements: I_104, I_111, I_112, I_117, I_138, I_147, I_148, I_109, I_129
+
+Cluster (1,7)
+Prototypes: [I_103]
+Number of elements: 13
+Elements: I_119, I_123, I_103, I_105, I_106, I_113, I_121, I_136, I_140, I_144, I_110, I_118, I_125
+
+
+Critério de adequação (energia): 48.161987519
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,3	0,4	0,5	0,6	0,7	1,0	1,1	1,2	1,3	1,4	1,5	1,6	1,7	Total
+
+1	49	 0	 0	 0	 0	 0	 1	 0	 0	 0	 0	 0	 0	 0	 50
+3	0	 0	 9	 0	 0	 3	 0	 1	 0	 5	 5	 5	 9	 13	 50
+2	0	 11	 0	 6	 16	 11	 0	 0	 4	 0	 0	 2	 0	 0	 50
+Total	[49 11  9  6 16 14  1  1  4  5  5  7  9 13]
+
+Matriz de pesos:
+Cluster (0,0): 0.609661061464 0.176144912545 3.15308201498 2.95329051407
+Cluster (0,1): 0.609661061464 0.176144912545 3.15308201498 2.95329051407
+Cluster (0,2): 0.609661061464 0.176144912545 3.15308201498 2.95329051407
+Cluster (0,3): 0.609661061464 0.176144912545 3.15308201498 2.95329051407
+Cluster (0,4): 0.609661061464 0.176144912545 3.15308201498 2.95329051407
+Cluster (0,5): 0.609661061464 0.176144912545 3.15308201498 2.95329051407
+Cluster (0,6): 0.609661061464 0.176144912545 3.15308201498 2.95329051407
+Cluster (0,7): 0.609661061464 0.176144912545 3.15308201498 2.95329051407
+Cluster (1,0): 0.609661061464 0.176144912545 3.15308201498 2.95329051407
+Cluster (1,1): 0.609661061464 0.176144912545 3.15308201498 2.95329051407
+Cluster (1,2): 0.609661061464 0.176144912545 3.15308201498 2.95329051407
+Cluster (1,3): 0.609661061464 0.176144912545 3.15308201498 2.95329051407
+Cluster (1,4): 0.609661061464 0.176144912545 3.15308201498 2.95329051407
+Cluster (1,5): 0.609661061464 0.176144912545 3.15308201498 2.95329051407
+Cluster (1,6): 0.609661061464 0.176144912545 3.15308201498 2.95329051407
+Cluster (1,7): 0.609661061464 0.176144912545 3.15308201498 2.95329051407
+
+Corrected Rand index: 0.604616237425
+F-measure(P,Q): 0.629148629149
+OERC: 0.0333333333333
+
+#####################################
+# Repetição do experimento: 28
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_8]
+Number of elements: 36
+Elements: I_26, I_2, I_4, I_9, I_10, I_13, I_14, I_31, I_35, I_39, I_46, I_3, I_30, I_36, I_43, I_48, I_50, I_1, I_5, I_7, I_8, I_12, I_18, I_21, I_25, I_28, I_29, I_37, I_38, I_40, I_41, I_11, I_20, I_47, I_49, I_33
+
+Cluster (0,1)
+Prototypes: [I_42]
+Number of elements: 1
+Elements: I_42
+
+Cluster (0,2)
+Prototypes: [I_135]
+Number of elements: 2
+Elements: I_135, I_120
+
+Cluster (0,3)
+Prototypes: [I_70]
+Number of elements: 14
+Elements: I_70, I_80, I_81, I_82, I_68, I_58, I_94, I_99, I_93, I_54, I_90, I_91, I_83, I_61
+
+Cluster (0,4)
+Prototypes: [I_63]
+Number of elements: 1
+Elements: I_63
+
+Cluster (0,5)
+Prototypes: [I_53]
+Number of elements: 4
+Elements: I_51, I_53, I_78, I_87
+
+Cluster (0,6)
+Prototypes: [I_131]
+Number of elements: 9
+Elements: I_109, I_130, I_108, I_131, I_123, I_126, I_106, I_132, I_119
+
+Cluster (0,7)
+Prototypes: [I_121]
+Number of elements: 21
+Elements: I_133, I_136, I_103, I_105, I_113, I_121, I_129, I_140, I_141, I_142, I_146, I_101, I_110, I_116, I_118, I_125, I_144, I_145, I_137, I_149, I_115
+
+Cluster (1,0)
+Prototypes: [I_24]
+Number of elements: 5
+Elements: I_44, I_24, I_45, I_27, I_32
+
+Cluster (1,1)
+Prototypes: [I_71]
+Number of elements: 4
+Elements: I_71, I_86, I_128, I_139
+
+Cluster (1,2)
+Prototypes: [I_64]
+Number of elements: 17
+Elements: I_62, I_56, I_67, I_74, I_75, I_79, I_85, I_98, I_64, I_92, I_59, I_52, I_73, I_57, I_84, I_134, I_88
+
+Cluster (1,3)
+Prototypes: [I_55]
+Number of elements: 5
+Elements: I_55, I_66, I_69, I_76, I_77
+
+Cluster (1,4)
+Prototypes: [I_23]
+Number of elements: 1
+Elements: I_23
+
+Cluster (1,5)
+Prototypes: [I_17]
+Number of elements: 7
+Elements: I_16, I_34, I_6, I_15, I_17, I_19, I_22
+
+Cluster (1,6)
+Prototypes: [I_89]
+Number of elements: 8
+Elements: I_60, I_65, I_89, I_72, I_95, I_96, I_97, I_100
+
+Cluster (1,7)
+Prototypes: [I_143]
+Number of elements: 15
+Elements: I_102, I_114, I_122, I_124, I_143, I_150, I_127, I_147, I_107, I_112, I_111, I_148, I_104, I_138, I_117
+
+
+Critério de adequação (energia): 50.2710322347
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	0,5	0,6	0,7	1,0	1,1	1,2	1,3	1,4	1,5	1,6	1,7	Total
+
+1	36	 1	 0	 0	 0	 0	 0	 0	 5	 0	 0	 0	 1	 7	 0	 0	 50
+3	0	 0	 2	 0	 0	 0	 9	 21	 0	 2	 1	 0	 0	 0	 0	 15	 50
+2	0	 0	 0	 14	 1	 4	 0	 0	 0	 2	 16	 5	 0	 0	 8	 0	 50
+Total	[36  1  2 14  1  4  9 21  5  4 17  5  1  7  8 15]
+
+Matriz de pesos:
+Cluster (0,0): 0.428810167226 0.219984443496 2.79916314997 3.78716950506
+Cluster (0,1): 0.428810167226 0.219984443496 2.79916314997 3.78716950506
+Cluster (0,2): 0.428810167226 0.219984443496 2.79916314997 3.78716950506
+Cluster (0,3): 0.428810167226 0.219984443496 2.79916314997 3.78716950506
+Cluster (0,4): 0.428810167226 0.219984443496 2.79916314997 3.78716950506
+Cluster (0,5): 0.428810167226 0.219984443496 2.79916314997 3.78716950506
+Cluster (0,6): 0.428810167226 0.219984443496 2.79916314997 3.78716950506
+Cluster (0,7): 0.428810167226 0.219984443496 2.79916314997 3.78716950506
+Cluster (1,0): 0.428810167226 0.219984443496 2.79916314997 3.78716950506
+Cluster (1,1): 0.428810167226 0.219984443496 2.79916314997 3.78716950506
+Cluster (1,2): 0.428810167226 0.219984443496 2.79916314997 3.78716950506
+Cluster (1,3): 0.428810167226 0.219984443496 2.79916314997 3.78716950506
+Cluster (1,4): 0.428810167226 0.219984443496 2.79916314997 3.78716950506
+Cluster (1,5): 0.428810167226 0.219984443496 2.79916314997 3.78716950506
+Cluster (1,6): 0.428810167226 0.219984443496 2.79916314997 3.78716950506
+Cluster (1,7): 0.428810167226 0.219984443496 2.79916314997 3.78716950506
+
+Corrected Rand index: 0.511581049867
+F-measure(P,Q): 0.635456846133
+OERC: 0.02
+
+#####################################
+# Repetição do experimento: 29
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_49]
+Number of elements: 16
+Elements: I_1, I_28, I_37, I_11, I_19, I_20, I_45, I_47, I_49, I_6, I_15, I_17, I_33, I_16, I_34, I_22
+
+Cluster (0,1)
+Prototypes: [I_27]
+Number of elements: 6
+Elements: I_24, I_27, I_44, I_32, I_41, I_18
+
+Cluster (0,2)
+Prototypes: [I_42]
+Number of elements: 1
+Elements: I_42
+
+Cluster (0,3)
+Prototypes: [I_40]
+Number of elements: 4
+Elements: I_8, I_21, I_29, I_40
+
+Cluster (0,4)
+Prototypes: [I_143]
+Number of elements: 10
+Elements: I_114, I_102, I_122, I_143, I_107, I_115, I_147, I_150, I_112, I_127
+
+Cluster (0,5)
+Prototypes: [I_76]
+Number of elements: 9
+Elements: I_51, I_59, I_77, I_66, I_75, I_76, I_52, I_87, I_55
+
+Cluster (0,6)
+Prototypes: [I_70]
+Number of elements: 20
+Elements: I_58, I_61, I_63, I_68, I_70, I_80, I_81, I_82, I_83, I_91, I_93, I_94, I_99, I_54, I_60, I_65, I_88, I_90, I_95, I_100
+
+Cluster (0,7)
+Prototypes: [I_79]
+Number of elements: 23
+Elements: I_62, I_64, I_72, I_73, I_74, I_79, I_84, I_92, I_98, I_67, I_69, I_56, I_85, I_89, I_96, I_97, I_120, I_86, I_57, I_71, I_134, I_139, I_135
+
+Cluster (1,0)
+Prototypes: [I_3]
+Number of elements: 19
+Elements: I_2, I_4, I_9, I_10, I_13, I_14, I_26, I_31, I_35, I_36, I_39, I_46, I_3, I_30, I_43, I_48, I_7, I_50, I_12
+
+Cluster (1,1)
+Prototypes: [I_24]
+Number of elements: 0
+Elements
+
+Cluster (1,2)
+Prototypes: [I_113]
+Number of elements: 8
+Elements: I_116, I_129, I_133, I_137, I_142, I_146, I_148, I_149
+
+Cluster (1,3)
+Prototypes: [I_30]
+Number of elements: 1
+Elements: I_25
+
+Cluster (1,4)
+Prototypes: [I_5]
+Number of elements: 3
+Elements: I_5, I_23, I_38
+
+Cluster (1,5)
+Prototypes: [I_48]
+Number of elements: 0
+Elements
+
+Cluster (1,6)
+Prototypes: [I_78]
+Number of elements: 9
+Elements: I_53, I_78, I_124, I_130, I_104, I_111, I_117, I_128, I_138
+
+Cluster (1,7)
+Prototypes: [I_103]
+Number of elements: 21
+Elements: I_118, I_132, I_110, I_125, I_126, I_145, I_101, I_103, I_106, I_108, I_121, I_123, I_136, I_140, I_141, I_144, I_105, I_113, I_119, I_131, I_109
+
+
+Critério de adequação (energia): 59.8520509593
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	0,5	0,6	0,7	1,0	1,2	1,3	1,4	1,6	1,7	Total
+
+1	16	 6	 1	 4	 0	 0	 0	 0	 19	 0	 1	 3	 0	 0	 50
+3	0	 0	 0	 0	 10	 0	 0	 4	 0	 8	 0	 0	 7	 21	 50
+2	0	 0	 0	 0	 0	 9	 20	 19	 0	 0	 0	 0	 2	 0	 50
+Total	[16  6  1  4 10  9 20 23 19  8  1  3  9 21]
+
+Matriz de pesos:
+Cluster (0,0): 0.552848210987 0.339024602248 2.52372562969 2.11407669214
+Cluster (0,1): 0.552848210987 0.339024602248 2.52372562969 2.11407669214
+Cluster (0,2): 0.552848210987 0.339024602248 2.52372562969 2.11407669214
+Cluster (0,3): 0.552848210987 0.339024602248 2.52372562969 2.11407669214
+Cluster (0,4): 0.552848210987 0.339024602248 2.52372562969 2.11407669214
+Cluster (0,5): 0.552848210987 0.339024602248 2.52372562969 2.11407669214
+Cluster (0,6): 0.552848210987 0.339024602248 2.52372562969 2.11407669214
+Cluster (0,7): 0.552848210987 0.339024602248 2.52372562969 2.11407669214
+Cluster (1,0): 0.552848210987 0.339024602248 2.52372562969 2.11407669214
+Cluster (1,1): 0.552848210987 0.339024602248 2.52372562969 2.11407669214
+Cluster (1,2): 0.552848210987 0.339024602248 2.52372562969 2.11407669214
+Cluster (1,3): 0.552848210987 0.339024602248 2.52372562969 2.11407669214
+Cluster (1,4): 0.552848210987 0.339024602248 2.52372562969 2.11407669214
+Cluster (1,5): 0.552848210987 0.339024602248 2.52372562969 2.11407669214
+Cluster (1,6): 0.552848210987 0.339024602248 2.52372562969 2.11407669214
+Cluster (1,7): 0.552848210987 0.339024602248 2.52372562969 2.11407669214
+
+Corrected Rand index: 0.427318274333
+F-measure(P,Q): 0.571234168295
+OERC: 0.04
+
+#####################################
+# Repetição do experimento: 30
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_3]
+Number of elements: 21
+Elements: I_3, I_4, I_7, I_12, I_30, I_36, I_43, I_48, I_50, I_2, I_9, I_10, I_13, I_14, I_31, I_35, I_39, I_46, I_26, I_8, I_25
+
+Cluster (0,1)
+Prototypes: [I_24]
+Number of elements: 4
+Elements: I_44, I_24, I_27, I_32
+
+Cluster (0,2)
+Prototypes: [I_82]
+Number of elements: 10
+Elements: I_80, I_82, I_58, I_61, I_81, I_94, I_99, I_70, I_63, I_54
+
+Cluster (0,3)
+Prototypes: [I_95]
+Number of elements: 14
+Elements: I_60, I_65, I_83, I_90, I_91, I_93, I_95, I_96, I_100, I_107, I_89, I_97, I_56, I_68
+
+Cluster (0,4)
+Prototypes: [I_118]
+Number of elements: 3
+Elements: I_110, I_118, I_132
+
+Cluster (0,5)
+Prototypes: [I_42]
+Number of elements: 1
+Elements: I_42
+
+Cluster (0,6)
+Prototypes: [I_23]
+Number of elements: 1
+Elements: I_23
+
+Cluster (0,7)
+Prototypes: [I_106]
+Number of elements: 6
+Elements: I_106, I_108, I_119, I_123, I_136, I_131
+
+Cluster (1,0)
+Prototypes: [I_49]
+Number of elements: 19
+Elements: I_11, I_19, I_21, I_37, I_6, I_17, I_20, I_22, I_47, I_49, I_1, I_5, I_18, I_28, I_29, I_41, I_38, I_40, I_45
+
+Cluster (1,1)
+Prototypes: [I_34]
+Number of elements: 3
+Elements: I_16, I_34, I_33
+
+Cluster (1,2)
+Prototypes: [I_79]
+Number of elements: 0
+Elements
+
+Cluster (1,3)
+Prototypes: [I_79]
+Number of elements: 30
+Elements: I_124, I_55, I_64, I_69, I_71, I_73, I_74, I_75, I_79, I_84, I_86, I_88, I_92, I_98, I_102, I_114, I_120, I_122, I_127, I_128, I_134, I_135, I_139, I_143, I_150, I_62, I_67, I_72, I_85, I_147
+
+Cluster (1,4)
+Prototypes: [I_87]
+Number of elements: 9
+Elements: I_51, I_66, I_77, I_78, I_87, I_52, I_59, I_76, I_57
+
+Cluster (1,5)
+Prototypes: [I_15]
+Number of elements: 1
+Elements: I_15
+
+Cluster (1,6)
+Prototypes: [I_53]
+Number of elements: 1
+Elements: I_53
+
+Cluster (1,7)
+Prototypes: [I_113]
+Number of elements: 27
+Elements: I_103, I_121, I_126, I_130, I_140, I_141, I_142, I_144, I_145, I_101, I_105, I_109, I_113, I_125, I_137, I_146, I_116, I_129, I_133, I_149, I_111, I_148, I_117, I_104, I_115, I_138, I_112
+
+
+Critério de adequação (energia): 51.5967484906
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	0,5	0,6	0,7	1,0	1,1	1,3	1,4	1,5	1,6	1,7	Total
+
+1	21	 4	 0	 0	 0	 1	 1	 0	 19	 3	 0	 0	 1	 0	 0	 50
+3	0	 0	 0	 1	 3	 0	 0	 6	 0	 0	 13	 0	 0	 0	 27	 50
+2	0	 0	 10	 13	 0	 0	 0	 0	 0	 0	 17	 9	 0	 1	 0	 50
+Total	[21  4 10 14  3  1  1  6 19  3 30  9  1  1 27]
+
+Matriz de pesos:
+Cluster (0,0): 0.733539265578 0.348028683319 2.61672308745 1.49693805526
+Cluster (0,1): 0.733539265578 0.348028683319 2.61672308745 1.49693805526
+Cluster (0,2): 0.733539265578 0.348028683319 2.61672308745 1.49693805526
+Cluster (0,3): 0.733539265578 0.348028683319 2.61672308745 1.49693805526
+Cluster (0,4): 0.733539265578 0.348028683319 2.61672308745 1.49693805526
+Cluster (0,5): 0.733539265578 0.348028683319 2.61672308745 1.49693805526
+Cluster (0,6): 0.733539265578 0.348028683319 2.61672308745 1.49693805526
+Cluster (0,7): 0.733539265578 0.348028683319 2.61672308745 1.49693805526
+Cluster (1,0): 0.733539265578 0.348028683319 2.61672308745 1.49693805526
+Cluster (1,1): 0.733539265578 0.348028683319 2.61672308745 1.49693805526
+Cluster (1,2): 0.733539265578 0.348028683319 2.61672308745 1.49693805526
+Cluster (1,3): 0.733539265578 0.348028683319 2.61672308745 1.49693805526
+Cluster (1,4): 0.733539265578 0.348028683319 2.61672308745 1.49693805526
+Cluster (1,5): 0.733539265578 0.348028683319 2.61672308745 1.49693805526
+Cluster (1,6): 0.733539265578 0.348028683319 2.61672308745 1.49693805526
+Cluster (1,7): 0.733539265578 0.348028683319 2.61672308745 1.49693805526
+
+Corrected Rand index: 0.449117219085
+F-measure(P,Q): 0.572615999024
+OERC: 0.0933333333333
+
+#####################################
+# Repetição do experimento: 31
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_20]
+Number of elements: 9
+Elements: I_6, I_11, I_17, I_20, I_33, I_22, I_45, I_47, I_49
+
+Cluster (0,1)
+Prototypes: [I_34]
+Number of elements: 3
+Elements: I_15, I_16, I_34
+
+Cluster (0,2)
+Prototypes: [I_106]
+Number of elements: 7
+Elements: I_119, I_123, I_106, I_118, I_132, I_108, I_136
+
+Cluster (0,3)
+Prototypes: [I_18]
+Number of elements: 0
+Elements
+
+Cluster (0,4)
+Prototypes: [I_94]
+Number of elements: 4
+Elements: I_58, I_94, I_99, I_61
+
+Cluster (0,5)
+Prototypes: [I_76]
+Number of elements: 15
+Elements: I_75, I_52, I_59, I_66, I_76, I_86, I_92, I_51, I_53, I_55, I_57, I_77, I_87, I_64, I_98
+
+Cluster (0,6)
+Prototypes: [I_6]
+Number of elements: 1
+Elements: I_19
+
+Cluster (0,7)
+Prototypes: [I_124]
+Number of elements: 11
+Elements: I_114, I_73, I_78, I_84, I_124, I_134, I_135, I_147, I_112, I_120, I_69
+
+Cluster (1,0)
+Prototypes: [I_4]
+Number of elements: 16
+Elements: I_2, I_3, I_4, I_9, I_10, I_13, I_14, I_26, I_30, I_31, I_35, I_39, I_43, I_46, I_48, I_42
+
+Cluster (1,1)
+Prototypes: [I_8]
+Number of elements: 17
+Elements: I_25, I_1, I_8, I_12, I_18, I_21, I_28, I_29, I_38, I_40, I_41, I_5, I_7, I_23, I_36, I_37, I_50
+
+Cluster (1,2)
+Prototypes: [I_50]
+Number of elements: 0
+Elements
+
+Cluster (1,3)
+Prototypes: [I_24]
+Number of elements: 4
+Elements: I_44, I_24, I_27, I_32
+
+Cluster (1,4)
+Prototypes: [I_81]
+Number of elements: 6
+Elements: I_80, I_82, I_81, I_54, I_63, I_70
+
+Cluster (1,5)
+Prototypes: [I_95]
+Number of elements: 21
+Elements: I_107, I_56, I_60, I_62, I_65, I_67, I_83, I_85, I_89, I_90, I_91, I_95, I_96, I_97, I_100, I_68, I_72, I_74, I_79, I_88, I_93
+
+Cluster (1,6)
+Prototypes: [I_127]
+Number of elements: 8
+Elements: I_71, I_102, I_122, I_127, I_128, I_139, I_143, I_150
+
+Cluster (1,7)
+Prototypes: [I_113]
+Number of elements: 28
+Elements: I_101, I_103, I_104, I_105, I_109, I_111, I_113, I_115, I_116, I_117, I_121, I_125, I_126, I_129, I_130, I_131, I_133, I_137, I_138, I_140, I_141, I_142, I_144, I_145, I_146, I_148, I_149, I_110
+
+
+Critério de adequação (energia): 50.367889585
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,4	0,5	0,6	0,7	1,0	1,1	1,3	1,4	1,5	1,6	1,7	Total
+
+1	9	 3	 0	 0	 0	 1	 0	 16	 17	 4	 0	 0	 0	 0	 50
+3	0	 0	 7	 0	 0	 0	 7	 0	 0	 0	 0	 1	 7	 28	 50
+2	0	 0	 0	 4	 15	 0	 4	 0	 0	 0	 6	 20	 1	 0	 50
+Total	[ 9  3  7  4 15  1 11 16 17  4  6 21  8 28]
+
+Matriz de pesos:
+Cluster (0,0): 0.566862071554 0.317174697175 3.09469053437 1.79724316234
+Cluster (0,1): 0.566862071554 0.317174697175 3.09469053437 1.79724316234
+Cluster (0,2): 0.566862071554 0.317174697175 3.09469053437 1.79724316234
+Cluster (0,3): 0.566862071554 0.317174697175 3.09469053437 1.79724316234
+Cluster (0,4): 0.566862071554 0.317174697175 3.09469053437 1.79724316234
+Cluster (0,5): 0.566862071554 0.317174697175 3.09469053437 1.79724316234
+Cluster (0,6): 0.566862071554 0.317174697175 3.09469053437 1.79724316234
+Cluster (0,7): 0.566862071554 0.317174697175 3.09469053437 1.79724316234
+Cluster (1,0): 0.566862071554 0.317174697175 3.09469053437 1.79724316234
+Cluster (1,1): 0.566862071554 0.317174697175 3.09469053437 1.79724316234
+Cluster (1,2): 0.566862071554 0.317174697175 3.09469053437 1.79724316234
+Cluster (1,3): 0.566862071554 0.317174697175 3.09469053437 1.79724316234
+Cluster (1,4): 0.566862071554 0.317174697175 3.09469053437 1.79724316234
+Cluster (1,5): 0.566862071554 0.317174697175 3.09469053437 1.79724316234
+Cluster (1,6): 0.566862071554 0.317174697175 3.09469053437 1.79724316234
+Cluster (1,7): 0.566862071554 0.317174697175 3.09469053437 1.79724316234
+
+Corrected Rand index: 0.443888172814
+F-measure(P,Q): 0.596263895402
+OERC: 0.04
+
+#####################################
+# Repetição do experimento: 32
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_50]
+Number of elements: 28
+Elements: I_2, I_3, I_13, I_46, I_10, I_26, I_30, I_31, I_35, I_36, I_7, I_12, I_23, I_50, I_8, I_25, I_29, I_38, I_40, I_41, I_1, I_5, I_18, I_24, I_27, I_28, I_32, I_37
+
+Cluster (0,1)
+Prototypes: [I_43]
+Number of elements: 3
+Elements: I_43, I_4, I_48
+
+Cluster (0,2)
+Prototypes: [I_143]
+Number of elements: 7
+Elements: I_102, I_114, I_143, I_147, I_107, I_122, I_150
+
+Cluster (0,3)
+Prototypes: [I_39]
+Number of elements: 3
+Elements: I_9, I_14, I_39
+
+Cluster (0,4)
+Prototypes: [I_87]
+Number of elements: 11
+Elements: I_51, I_77, I_53, I_87, I_66, I_78, I_52, I_55, I_57, I_59, I_76
+
+Cluster (0,5)
+Prototypes: [I_130]
+Number of elements: 2
+Elements: I_130, I_126
+
+Cluster (0,6)
+Prototypes: [I_35]
+Number of elements: 0
+Elements
+
+Cluster (0,7)
+Prototypes: [I_81]
+Number of elements: 15
+Elements: I_61, I_94, I_99, I_58, I_80, I_81, I_82, I_70, I_54, I_63, I_90, I_68, I_83, I_93, I_91
+
+Cluster (1,0)
+Prototypes: [I_6]
+Number of elements: 14
+Elements: I_16, I_6, I_15, I_17, I_19, I_33, I_34, I_45, I_11, I_20, I_22, I_47, I_44, I_49
+
+Cluster (1,1)
+Prototypes: [I_65]
+Number of elements: 5
+Elements: I_65, I_60, I_89, I_96, I_100
+
+Cluster (1,2)
+Prototypes: [I_40]
+Number of elements: 1
+Elements: I_21
+
+Cluster (1,3)
+Prototypes: [I_42]
+Number of elements: 1
+Elements: I_42
+
+Cluster (1,4)
+Prototypes: [I_116]
+Number of elements: 10
+Elements: I_115, I_116, I_133, I_149, I_101, I_137, I_146, I_141, I_142, I_145
+
+Cluster (1,5)
+Prototypes: [I_103]
+Number of elements: 16
+Elements: I_103, I_106, I_108, I_110, I_118, I_119, I_121, I_123, I_125, I_131, I_132, I_136, I_140, I_144, I_113, I_105
+
+Cluster (1,6)
+Prototypes: [I_117]
+Number of elements: 10
+Elements: I_104, I_111, I_117, I_138, I_148, I_109, I_112, I_135, I_124, I_129
+
+Cluster (1,7)
+Prototypes: [I_79]
+Number of elements: 24
+Elements: I_56, I_62, I_64, I_67, I_69, I_71, I_72, I_73, I_74, I_75, I_79, I_84, I_85, I_86, I_88, I_92, I_98, I_120, I_127, I_128, I_134, I_139, I_95, I_97
+
+
+Critério de adequação (energia): 54.1033443494
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	0,5	0,7	1,0	1,1	1,2	1,3	1,4	1,5	1,6	1,7	Total
+
+1	28	 3	 0	 3	 0	 0	 0	 14	 0	 1	 1	 0	 0	 0	 0	 50
+3	0	 0	 7	 0	 0	 2	 0	 0	 0	 0	 0	 10	 16	 10	 5	 50
+2	0	 0	 0	 0	 11	 0	 15	 0	 5	 0	 0	 0	 0	 0	 19	 50
+Total	[28  3  7  3 11  2 15 14  5  1  1 10 16 10 24]
+
+Matriz de pesos:
+Cluster (0,0): 0.685364701732 0.302473702662 2.53646962303 1.90178307713
+Cluster (0,1): 0.685364701732 0.302473702662 2.53646962303 1.90178307713
+Cluster (0,2): 0.685364701732 0.302473702662 2.53646962303 1.90178307713
+Cluster (0,3): 0.685364701732 0.302473702662 2.53646962303 1.90178307713
+Cluster (0,4): 0.685364701732 0.302473702662 2.53646962303 1.90178307713
+Cluster (0,5): 0.685364701732 0.302473702662 2.53646962303 1.90178307713
+Cluster (0,6): 0.685364701732 0.302473702662 2.53646962303 1.90178307713
+Cluster (0,7): 0.685364701732 0.302473702662 2.53646962303 1.90178307713
+Cluster (1,0): 0.685364701732 0.302473702662 2.53646962303 1.90178307713
+Cluster (1,1): 0.685364701732 0.302473702662 2.53646962303 1.90178307713
+Cluster (1,2): 0.685364701732 0.302473702662 2.53646962303 1.90178307713
+Cluster (1,3): 0.685364701732 0.302473702662 2.53646962303 1.90178307713
+Cluster (1,4): 0.685364701732 0.302473702662 2.53646962303 1.90178307713
+Cluster (1,5): 0.685364701732 0.302473702662 2.53646962303 1.90178307713
+Cluster (1,6): 0.685364701732 0.302473702662 2.53646962303 1.90178307713
+Cluster (1,7): 0.685364701732 0.302473702662 2.53646962303 1.90178307713
+
+Corrected Rand index: 0.438276698316
+F-measure(P,Q): 0.572103572104
+OERC: 0.0333333333333
+
+#####################################
+# Repetição do experimento: 33
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_79]
+Number of elements: 29
+Elements: I_55, I_64, I_75, I_79, I_92, I_102, I_122, I_127, I_143, I_98, I_56, I_62, I_67, I_72, I_74, I_85, I_95, I_96, I_97, I_100, I_107, I_65, I_89, I_59, I_76, I_134, I_139, I_150, I_128
+
+Cluster (0,1)
+Prototypes: [I_18]
+Number of elements: 4
+Elements: I_5, I_18, I_23, I_41
+
+Cluster (0,2)
+Prototypes: [I_81]
+Number of elements: 16
+Elements: I_58, I_94, I_61, I_99, I_82, I_81, I_54, I_80, I_63, I_68, I_70, I_90, I_60, I_91, I_93, I_83
+
+Cluster (0,3)
+Prototypes: [I_28]
+Number of elements: 1
+Elements: I_37
+
+Cluster (0,4)
+Prototypes: [I_73]
+Number of elements: 11
+Elements: I_147, I_69, I_114, I_120, I_73, I_88, I_135, I_77, I_124, I_84, I_109
+
+Cluster (0,5)
+Prototypes: [I_57]
+Number of elements: 9
+Elements: I_86, I_57, I_71, I_52, I_51, I_53, I_66, I_78, I_87
+
+Cluster (0,6)
+Prototypes: [I_44]
+Number of elements: 2
+Elements: I_44, I_24
+
+Cluster (0,7)
+Prototypes: [I_20]
+Number of elements: 13
+Elements: I_16, I_20, I_22, I_33, I_34, I_45, I_47, I_6, I_11, I_15, I_17, I_19, I_49
+
+Cluster (1,0)
+Prototypes: [I_113]
+Number of elements: 32
+Elements: I_101, I_125, I_126, I_137, I_145, I_149, I_103, I_106, I_108, I_111, I_121, I_123, I_130, I_136, I_140, I_144, I_105, I_113, I_116, I_119, I_131, I_138, I_141, I_142, I_117, I_146, I_148, I_104, I_129, I_133, I_112, I_115
+
+Cluster (1,1)
+Prototypes: [I_25]
+Number of elements: 0
+Elements
+
+Cluster (1,2)
+Prototypes: [I_118]
+Number of elements: 3
+Elements: I_118, I_132, I_110
+
+Cluster (1,3)
+Prototypes: [I_18]
+Number of elements: 0
+Elements
+
+Cluster (1,4)
+Prototypes: [I_20]
+Number of elements: 0
+Elements
+
+Cluster (1,5)
+Prototypes: [I_42]
+Number of elements: 1
+Elements: I_42
+
+Cluster (1,6)
+Prototypes: [I_40]
+Number of elements: 14
+Elements: I_21, I_1, I_8, I_12, I_25, I_27, I_28, I_29, I_32, I_40, I_50, I_38, I_7, I_36
+
+Cluster (1,7)
+Prototypes: [I_4]
+Number of elements: 15
+Elements: I_2, I_3, I_4, I_9, I_10, I_13, I_14, I_26, I_30, I_31, I_35, I_39, I_43, I_46, I_48
+
+
+Critério de adequação (energia): 65.0831026912
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	0,5	0,6	0,7	1,0	1,2	1,5	1,6	1,7	Total
+
+1	0	 4	 0	 1	 0	 0	 2	 13	 0	 0	 1	 14	 15	 50
+3	9	 0	 0	 0	 6	 0	 0	 0	 32	 3	 0	 0	 0	 50
+2	20	 0	 16	 0	 5	 9	 0	 0	 0	 0	 0	 0	 0	 50
+Total	[29  4 16  1 11  9  2 13 32  3  1 14 15]
+
+Matriz de pesos:
+Cluster (0,0): 0.501209491147 0.610655859571 2.1155618043 1.54439528639
+Cluster (0,1): 0.501209491147 0.610655859571 2.1155618043 1.54439528639
+Cluster (0,2): 0.501209491147 0.610655859571 2.1155618043 1.54439528639
+Cluster (0,3): 0.501209491147 0.610655859571 2.1155618043 1.54439528639
+Cluster (0,4): 0.501209491147 0.610655859571 2.1155618043 1.54439528639
+Cluster (0,5): 0.501209491147 0.610655859571 2.1155618043 1.54439528639
+Cluster (0,6): 0.501209491147 0.610655859571 2.1155618043 1.54439528639
+Cluster (0,7): 0.501209491147 0.610655859571 2.1155618043 1.54439528639
+Cluster (1,0): 0.501209491147 0.610655859571 2.1155618043 1.54439528639
+Cluster (1,1): 0.501209491147 0.610655859571 2.1155618043 1.54439528639
+Cluster (1,2): 0.501209491147 0.610655859571 2.1155618043 1.54439528639
+Cluster (1,3): 0.501209491147 0.610655859571 2.1155618043 1.54439528639
+Cluster (1,4): 0.501209491147 0.610655859571 2.1155618043 1.54439528639
+Cluster (1,5): 0.501209491147 0.610655859571 2.1155618043 1.54439528639
+Cluster (1,6): 0.501209491147 0.610655859571 2.1155618043 1.54439528639
+Cluster (1,7): 0.501209491147 0.610655859571 2.1155618043 1.54439528639
+
+Corrected Rand index: 0.468059918138
+F-measure(P,Q): 0.58278512678
+OERC: 0.0933333333333
+
+#####################################
+# Repetição do experimento: 34
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_95]
+Number of elements: 29
+Elements: I_61, I_80, I_82, I_81, I_70, I_68, I_83, I_90, I_91, I_54, I_93, I_95, I_100, I_56, I_63, I_67, I_72, I_85, I_97, I_107, I_58, I_60, I_62, I_65, I_89, I_94, I_96, I_99, I_74
+
+Cluster (0,1)
+Prototypes: [I_2]
+Number of elements: 4
+Elements: I_9, I_14, I_39, I_46
+
+Cluster (0,2)
+Prototypes: [I_76]
+Number of elements: 16
+Elements: I_59, I_66, I_75, I_76, I_51, I_52, I_55, I_77, I_87, I_92, I_53, I_57, I_64, I_86, I_98, I_79
+
+Cluster (0,3)
+Prototypes: [I_6]
+Number of elements: 7
+Elements: I_17, I_6, I_15, I_19, I_34, I_45, I_22
+
+Cluster (0,4)
+Prototypes: [I_28]
+Number of elements: 0
+Elements
+
+Cluster (0,5)
+Prototypes: [I_42]
+Number of elements: 1
+Elements: I_42
+
+Cluster (0,6)
+Prototypes: [I_49]
+Number of elements: 6
+Elements: I_11, I_20, I_47, I_49, I_33, I_37
+
+Cluster (0,7)
+Prototypes: [I_50]
+Number of elements: 27
+Elements: I_1, I_2, I_3, I_4, I_5, I_7, I_8, I_10, I_12, I_13, I_18, I_21, I_23, I_25, I_26, I_28, I_29, I_30, I_31, I_35, I_36, I_38, I_40, I_41, I_43, I_48, I_50
+
+Cluster (1,0)
+Prototypes: [I_148]
+Number of elements: 31
+Elements: I_71, I_78, I_102, I_104, I_108, I_109, I_111, I_112, I_113, I_114, I_115, I_116, I_117, I_122, I_124, I_126, I_127, I_128, I_129, I_130, I_131, I_133, I_138, I_139, I_140, I_143, I_146, I_147, I_148, I_150, I_142
+
+Cluster (1,1)
+Prototypes: [I_144]
+Number of elements: 15
+Elements: I_119, I_136, I_141, I_145, I_101, I_103, I_106, I_121, I_123, I_125, I_137, I_144, I_149, I_105, I_110
+
+Cluster (1,2)
+Prototypes: [I_73]
+Number of elements: 7
+Elements: I_120, I_69, I_88, I_73, I_135, I_84, I_134
+
+Cluster (1,3)
+Prototypes: [I_31]
+Number of elements: 0
+Elements
+
+Cluster (1,4)
+Prototypes: [I_118]
+Number of elements: 2
+Elements: I_118, I_132
+
+Cluster (1,5)
+Prototypes: [I_16]
+Number of elements: 1
+Elements: I_16
+
+Cluster (1,6)
+Prototypes: [I_148]
+Number of elements: 0
+Elements
+
+Cluster (1,7)
+Prototypes: [I_24]
+Number of elements: 4
+Elements: I_24, I_44, I_27, I_32
+
+
+Critério de adequação (energia): 65.0478351915
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,5	0,6	0,7	1,0	1,1	1,2	1,4	1,5	1,7	Total
+
+1	0	 4	 0	 7	 1	 6	 27	 0	 0	 0	 0	 1	 4	 50
+3	1	 0	 0	 0	 0	 0	 0	 29	 15	 3	 2	 0	 0	 50
+2	28	 0	 16	 0	 0	 0	 0	 2	 0	 4	 0	 0	 0	 50
+Total	[29  4 16  7  1  6 27 31 15  7  2  1  4]
+
+Matriz de pesos:
+Cluster (0,0): 0.521712332329 0.424320469816 2.10934055589 2.14154996336
+Cluster (0,1): 0.521712332329 0.424320469816 2.10934055589 2.14154996336
+Cluster (0,2): 0.521712332329 0.424320469816 2.10934055589 2.14154996336
+Cluster (0,3): 0.521712332329 0.424320469816 2.10934055589 2.14154996336
+Cluster (0,4): 0.521712332329 0.424320469816 2.10934055589 2.14154996336
+Cluster (0,5): 0.521712332329 0.424320469816 2.10934055589 2.14154996336
+Cluster (0,6): 0.521712332329 0.424320469816 2.10934055589 2.14154996336
+Cluster (0,7): 0.521712332329 0.424320469816 2.10934055589 2.14154996336
+Cluster (1,0): 0.521712332329 0.424320469816 2.10934055589 2.14154996336
+Cluster (1,1): 0.521712332329 0.424320469816 2.10934055589 2.14154996336
+Cluster (1,2): 0.521712332329 0.424320469816 2.10934055589 2.14154996336
+Cluster (1,3): 0.521712332329 0.424320469816 2.10934055589 2.14154996336
+Cluster (1,4): 0.521712332329 0.424320469816 2.10934055589 2.14154996336
+Cluster (1,5): 0.521712332329 0.424320469816 2.10934055589 2.14154996336
+Cluster (1,6): 0.521712332329 0.424320469816 2.10934055589 2.14154996336
+Cluster (1,7): 0.521712332329 0.424320469816 2.10934055589 2.14154996336
+
+Corrected Rand index: 0.546610153863
+F-measure(P,Q): 0.708736281169
+OERC: 0.04
+
+#####################################
+# Repetição do experimento: 35
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_6]
+Number of elements: 9
+Elements: I_6, I_15, I_17, I_19, I_33, I_34, I_16, I_11, I_45
+
+Cluster (0,1)
+Prototypes: [I_7]
+Number of elements: 2
+Elements: I_7, I_44
+
+Cluster (0,2)
+Prototypes: [I_70]
+Number of elements: 24
+Elements: I_58, I_99, I_61, I_80, I_82, I_94, I_81, I_70, I_54, I_60, I_63, I_65, I_68, I_83, I_90, I_93, I_91, I_95, I_96, I_100, I_107, I_89, I_97, I_56
+
+Cluster (0,3)
+Prototypes: [I_25]
+Number of elements: 1
+Elements: I_25
+
+Cluster (0,4)
+Prototypes: [I_28]
+Number of elements: 1
+Elements: I_49
+
+Cluster (0,5)
+Prototypes: [I_23]
+Number of elements: 1
+Elements: I_23
+
+Cluster (0,6)
+Prototypes: [I_20]
+Number of elements: 3
+Elements: I_20, I_22, I_47
+
+Cluster (0,7)
+Prototypes: [I_112]
+Number of elements: 12
+Elements: I_109, I_112, I_114, I_124, I_147, I_104, I_129, I_130, I_133, I_135, I_115, I_117
+
+Cluster (1,0)
+Prototypes: [I_40]
+Number of elements: 17
+Elements: I_36, I_12, I_24, I_50, I_8, I_27, I_1, I_18, I_21, I_29, I_32, I_40, I_41, I_5, I_28, I_37, I_38
+
+Cluster (1,1)
+Prototypes: [I_4]
+Number of elements: 16
+Elements: I_4, I_9, I_30, I_39, I_43, I_3, I_14, I_42, I_48, I_2, I_10, I_13, I_26, I_31, I_35, I_46
+
+Cluster (1,2)
+Prototypes: [I_29]
+Number of elements: 0
+Elements
+
+Cluster (1,3)
+Prototypes: [I_69]
+Number of elements: 4
+Elements: I_69, I_88, I_120, I_73
+
+Cluster (1,4)
+Prototypes: [I_144]
+Number of elements: 25
+Elements: I_110, I_118, I_132, I_106, I_136, I_101, I_119, I_121, I_123, I_144, I_145, I_103, I_105, I_108, I_116, I_125, I_126, I_137, I_140, I_141, I_142, I_146, I_149, I_113, I_131
+
+Cluster (1,5)
+Prototypes: [I_43]
+Number of elements: 0
+Elements
+
+Cluster (1,6)
+Prototypes: [I_59]
+Number of elements: 15
+Elements: I_59, I_74, I_75, I_77, I_51, I_53, I_55, I_64, I_66, I_72, I_76, I_87, I_98, I_52, I_92
+
+Cluster (1,7)
+Prototypes: [I_128]
+Number of elements: 20
+Elements: I_57, I_62, I_67, I_71, I_78, I_79, I_84, I_86, I_102, I_111, I_122, I_127, I_128, I_134, I_138, I_139, I_143, I_148, I_150, I_85
+
+
+Critério de adequação (energia): 68.4725057847
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	0,5	0,6	0,7	1,0	1,1	1,3	1,4	1,6	1,7	Total
+
+1	9	 2	 0	 1	 1	 1	 3	 0	 17	 16	 0	 0	 0	 0	 50
+3	0	 0	 1	 0	 0	 0	 0	 12	 0	 0	 1	 25	 0	 11	 50
+2	0	 0	 23	 0	 0	 0	 0	 0	 0	 0	 3	 0	 15	 9	 50
+Total	[ 9  2 24  1  1  1  3 12 17 16  4 25 15 20]
+
+Matriz de pesos:
+Cluster (0,0): 0.573874619519 0.462933920192 2.29715727939 1.63860112035
+Cluster (0,1): 0.573874619519 0.462933920192 2.29715727939 1.63860112035
+Cluster (0,2): 0.573874619519 0.462933920192 2.29715727939 1.63860112035
+Cluster (0,3): 0.573874619519 0.462933920192 2.29715727939 1.63860112035
+Cluster (0,4): 0.573874619519 0.462933920192 2.29715727939 1.63860112035
+Cluster (0,5): 0.573874619519 0.462933920192 2.29715727939 1.63860112035
+Cluster (0,6): 0.573874619519 0.462933920192 2.29715727939 1.63860112035
+Cluster (0,7): 0.573874619519 0.462933920192 2.29715727939 1.63860112035
+Cluster (1,0): 0.573874619519 0.462933920192 2.29715727939 1.63860112035
+Cluster (1,1): 0.573874619519 0.462933920192 2.29715727939 1.63860112035
+Cluster (1,2): 0.573874619519 0.462933920192 2.29715727939 1.63860112035
+Cluster (1,3): 0.573874619519 0.462933920192 2.29715727939 1.63860112035
+Cluster (1,4): 0.573874619519 0.462933920192 2.29715727939 1.63860112035
+Cluster (1,5): 0.573874619519 0.462933920192 2.29715727939 1.63860112035
+Cluster (1,6): 0.573874619519 0.462933920192 2.29715727939 1.63860112035
+Cluster (1,7): 0.573874619519 0.462933920192 2.29715727939 1.63860112035
+
+Corrected Rand index: 0.453398433491
+F-measure(P,Q): 0.598583658285
+OERC: 0.0733333333333
+
+#####################################
+# Repetição do experimento: 36
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_49]
+Number of elements: 23
+Elements: I_6, I_16, I_15, I_17, I_19, I_20, I_22, I_32, I_34, I_47, I_1, I_5, I_11, I_18, I_21, I_28, I_29, I_33, I_37, I_38, I_41, I_49, I_40
+
+Cluster (0,1)
+Prototypes: [I_62]
+Number of elements: 3
+Elements: I_62, I_67, I_85
+
+Cluster (0,2)
+Prototypes: [I_106]
+Number of elements: 8
+Elements: I_119, I_123, I_106, I_108, I_131, I_136, I_132, I_118
+
+Cluster (0,3)
+Prototypes: [I_69]
+Number of elements: 3
+Elements: I_69, I_88, I_120
+
+Cluster (0,4)
+Prototypes: [I_143]
+Number of elements: 7
+Elements: I_147, I_102, I_114, I_143, I_107, I_122, I_84
+
+Cluster (0,5)
+Prototypes: [I_82]
+Number of elements: 10
+Elements: I_61, I_58, I_94, I_82, I_99, I_54, I_81, I_70, I_80, I_63
+
+Cluster (0,6)
+Prototypes: [I_145]
+Number of elements: 8
+Elements: I_101, I_110, I_137, I_144, I_145, I_149, I_141, I_121
+
+Cluster (0,7)
+Prototypes: [I_113]
+Number of elements: 19
+Elements: I_103, I_104, I_105, I_113, I_117, I_126, I_129, I_130, I_133, I_140, I_142, I_146, I_148, I_116, I_125, I_138, I_111, I_109, I_112
+
+Cluster (1,0)
+Prototypes: [I_31]
+Number of elements: 24
+Elements: I_2, I_3, I_4, I_9, I_10, I_13, I_14, I_26, I_30, I_31, I_35, I_36, I_39, I_42, I_43, I_46, I_48, I_7, I_50, I_12, I_24, I_25, I_27, I_8
+
+Cluster (1,1)
+Prototypes: [I_100]
+Number of elements: 14
+Elements: I_60, I_65, I_68, I_83, I_89, I_90, I_91, I_93, I_95, I_100, I_56, I_72, I_96, I_97
+
+Cluster (1,2)
+Prototypes: [I_139]
+Number of elements: 6
+Elements: I_71, I_128, I_150, I_127, I_139, I_124
+
+Cluster (1,3)
+Prototypes: [I_23]
+Number of elements: 1
+Elements: I_23
+
+Cluster (1,4)
+Prototypes: [I_20]
+Number of elements: 2
+Elements: I_44, I_45
+
+Cluster (1,5)
+Prototypes: [I_115]
+Number of elements: 1
+Elements: I_115
+
+Cluster (1,6)
+Prototypes: [I_92]
+Number of elements: 8
+Elements: I_79, I_86, I_57, I_64, I_74, I_92, I_98, I_52
+
+Cluster (1,7)
+Prototypes: [I_55]
+Number of elements: 13
+Elements: I_73, I_135, I_75, I_55, I_59, I_134, I_76, I_66, I_77, I_87, I_51, I_53, I_78
+
+
+Critério de adequação (energia): 46.4590662205
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	0,5	0,6	0,7	1,0	1,1	1,2	1,3	1,4	1,5	1,6	1,7	Total
+
+1	23	 0	 0	 0	 0	 0	 0	 0	 24	 0	 0	 1	 2	 0	 0	 0	 50
+3	0	 0	 8	 1	 6	 0	 8	 19	 0	 0	 5	 0	 0	 1	 0	 2	 50
+2	0	 3	 0	 2	 1	 10	 0	 0	 0	 14	 1	 0	 0	 0	 8	 11	 50
+Total	[23  3  8  3  7 10  8 19 24 14  6  1  2  1  8 13]
+
+Matriz de pesos:
+Cluster (0,0): 0.700286193501 0.283098638204 2.78516080414 1.811074772
+Cluster (0,1): 0.700286193501 0.283098638204 2.78516080414 1.811074772
+Cluster (0,2): 0.700286193501 0.283098638204 2.78516080414 1.811074772
+Cluster (0,3): 0.700286193501 0.283098638204 2.78516080414 1.811074772
+Cluster (0,4): 0.700286193501 0.283098638204 2.78516080414 1.811074772
+Cluster (0,5): 0.700286193501 0.283098638204 2.78516080414 1.811074772
+Cluster (0,6): 0.700286193501 0.283098638204 2.78516080414 1.811074772
+Cluster (0,7): 0.700286193501 0.283098638204 2.78516080414 1.811074772
+Cluster (1,0): 0.700286193501 0.283098638204 2.78516080414 1.811074772
+Cluster (1,1): 0.700286193501 0.283098638204 2.78516080414 1.811074772
+Cluster (1,2): 0.700286193501 0.283098638204 2.78516080414 1.811074772
+Cluster (1,3): 0.700286193501 0.283098638204 2.78516080414 1.811074772
+Cluster (1,4): 0.700286193501 0.283098638204 2.78516080414 1.811074772
+Cluster (1,5): 0.700286193501 0.283098638204 2.78516080414 1.811074772
+Cluster (1,6): 0.700286193501 0.283098638204 2.78516080414 1.811074772
+Cluster (1,7): 0.700286193501 0.283098638204 2.78516080414 1.811074772
+
+Corrected Rand index: 0.426632717851
+F-measure(P,Q): 0.545624428777
+OERC: 0.0333333333333
+
+#####################################
+# Repetição do experimento: 37
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_8]
+Number of elements: 39
+Elements: I_1, I_2, I_3, I_4, I_5, I_7, I_8, I_10, I_11, I_12, I_13, I_14, I_18, I_20, I_21, I_22, I_23, I_24, I_25, I_26, I_27, I_28, I_29, I_30, I_31, I_32, I_35, I_36, I_38, I_39, I_40, I_41, I_43, I_44, I_46, I_47, I_48, I_49, I_50
+
+Cluster (0,1)
+Prototypes: [I_29]
+Number of elements: 1
+Elements: I_37
+
+Cluster (0,2)
+Prototypes: [I_42]
+Number of elements: 2
+Elements: I_42, I_9
+
+Cluster (0,3)
+Prototypes: [I_41]
+Number of elements: 0
+Elements
+
+Cluster (0,4)
+Prototypes: [I_87]
+Number of elements: 11
+Elements: I_51, I_52, I_53, I_55, I_57, I_66, I_77, I_87, I_59, I_76, I_78
+
+Cluster (0,5)
+Prototypes: [I_123]
+Number of elements: 5
+Elements: I_106, I_108, I_119, I_123, I_131
+
+Cluster (0,6)
+Prototypes: [I_6]
+Number of elements: 4
+Elements: I_6, I_19, I_17, I_45
+
+Cluster (0,7)
+Prototypes: [I_90]
+Number of elements: 26
+Elements: I_99, I_58, I_60, I_61, I_63, I_65, I_68, I_70, I_72, I_80, I_81, I_82, I_83, I_89, I_90, I_91, I_93, I_94, I_95, I_96, I_97, I_100, I_54, I_69, I_88, I_107
+
+Cluster (1,0)
+Prototypes: [I_33]
+Number of elements: 4
+Elements: I_33, I_15, I_16, I_34
+
+Cluster (1,1)
+Prototypes: [I_101]
+Number of elements: 2
+Elements: I_101, I_137
+
+Cluster (1,2)
+Prototypes: [I_64]
+Number of elements: 16
+Elements: I_75, I_64, I_73, I_74, I_92, I_98, I_56, I_62, I_67, I_79, I_84, I_85, I_86, I_120, I_134, I_135
+
+Cluster (1,3)
+Prototypes: [I_132]
+Number of elements: 2
+Elements: I_132, I_118
+
+Cluster (1,4)
+Prototypes: [I_121]
+Number of elements: 11
+Elements: I_110, I_136, I_145, I_103, I_121, I_125, I_126, I_141, I_144, I_105, I_142
+
+Cluster (1,5)
+Prototypes: [I_32]
+Number of elements: 0
+Elements
+
+Cluster (1,6)
+Prototypes: [I_115]
+Number of elements: 3
+Elements: I_115, I_114, I_122
+
+Cluster (1,7)
+Prototypes: [I_148]
+Number of elements: 24
+Elements: I_102, I_104, I_109, I_111, I_112, I_113, I_116, I_117, I_124, I_127, I_128, I_129, I_130, I_133, I_138, I_139, I_140, I_143, I_146, I_147, I_148, I_149, I_150, I_71
+
+
+Critério de adequação (energia): 60.2506906998
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,4	0,5	0,6	0,7	1,0	1,1	1,2	1,3	1,4	1,6	1,7	Total
+
+1	39	 1	 2	 0	 0	 4	 0	 4	 0	 0	 0	 0	 0	 0	 50
+3	0	 0	 0	 0	 5	 0	 1	 0	 2	 3	 2	 11	 3	 23	 50
+2	0	 0	 0	 11	 0	 0	 25	 0	 0	 13	 0	 0	 0	 1	 50
+Total	[39  1  2 11  5  4 26  4  2 16  2 11  3 24]
+
+Matriz de pesos:
+Cluster (0,0): 0.609928658602 0.324095304307 2.80730503008 1.80201589516
+Cluster (0,1): 0.609928658602 0.324095304307 2.80730503008 1.80201589516
+Cluster (0,2): 0.609928658602 0.324095304307 2.80730503008 1.80201589516
+Cluster (0,3): 0.609928658602 0.324095304307 2.80730503008 1.80201589516
+Cluster (0,4): 0.609928658602 0.324095304307 2.80730503008 1.80201589516
+Cluster (0,5): 0.609928658602 0.324095304307 2.80730503008 1.80201589516
+Cluster (0,6): 0.609928658602 0.324095304307 2.80730503008 1.80201589516
+Cluster (0,7): 0.609928658602 0.324095304307 2.80730503008 1.80201589516
+Cluster (1,0): 0.609928658602 0.324095304307 2.80730503008 1.80201589516
+Cluster (1,1): 0.609928658602 0.324095304307 2.80730503008 1.80201589516
+Cluster (1,2): 0.609928658602 0.324095304307 2.80730503008 1.80201589516
+Cluster (1,3): 0.609928658602 0.324095304307 2.80730503008 1.80201589516
+Cluster (1,4): 0.609928658602 0.324095304307 2.80730503008 1.80201589516
+Cluster (1,5): 0.609928658602 0.324095304307 2.80730503008 1.80201589516
+Cluster (1,6): 0.609928658602 0.324095304307 2.80730503008 1.80201589516
+Cluster (1,7): 0.609928658602 0.324095304307 2.80730503008 1.80201589516
+
+Corrected Rand index: 0.573649274634
+F-measure(P,Q): 0.718640284282
+OERC: 0.0333333333333
+
+#####################################
+# Repetição do experimento: 38
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_18]
+Number of elements: 4
+Elements: I_20, I_22, I_32, I_44
+
+Cluster (0,1)
+Prototypes: [I_132]
+Number of elements: 2
+Elements: I_118, I_132
+
+Cluster (0,2)
+Prototypes: [I_135]
+Number of elements: 1
+Elements: I_135
+
+Cluster (0,3)
+Prototypes: [I_42]
+Number of elements: 1
+Elements: I_42
+
+Cluster (0,4)
+Prototypes: [I_142]
+Number of elements: 1
+Elements: I_142
+
+Cluster (0,5)
+Prototypes: [I_109]
+Number of elements: 2
+Elements: I_109, I_130
+
+Cluster (0,6)
+Prototypes: [I_134]
+Number of elements: 11
+Elements: I_77, I_51, I_53, I_73, I_87, I_120, I_124, I_134, I_84, I_127, I_78
+
+Cluster (0,7)
+Prototypes: [I_79]
+Number of elements: 28
+Elements: I_55, I_69, I_76, I_88, I_75, I_64, I_74, I_98, I_72, I_79, I_92, I_56, I_95, I_62, I_100, I_107, I_97, I_67, I_85, I_96, I_89, I_139, I_66, I_52, I_86, I_71, I_57, I_59
+
+Cluster (1,0)
+Prototypes: [I_8]
+Number of elements: 33
+Elements: I_1, I_2, I_3, I_4, I_5, I_7, I_8, I_10, I_11, I_12, I_13, I_18, I_21, I_23, I_24, I_25, I_26, I_27, I_28, I_29, I_30, I_31, I_35, I_36, I_37, I_38, I_40, I_41, I_46, I_47, I_48, I_49, I_50
+
+Cluster (1,1)
+Prototypes: [I_70]
+Number of elements: 13
+Elements: I_54, I_60, I_63, I_68, I_70, I_90, I_91, I_65, I_80, I_81, I_82, I_83, I_93
+
+Cluster (1,2)
+Prototypes: [I_6]
+Number of elements: 8
+Elements: I_16, I_6, I_15, I_19, I_34, I_17, I_33, I_45
+
+Cluster (1,3)
+Prototypes: [I_94]
+Number of elements: 4
+Elements: I_58, I_99, I_61, I_94
+
+Cluster (1,4)
+Prototypes: [I_39]
+Number of elements: 4
+Elements: I_9, I_14, I_39, I_43
+
+Cluster (1,5)
+Prototypes: [I_104]
+Number of elements: 3
+Elements: I_104, I_117, I_138
+
+Cluster (1,6)
+Prototypes: [I_103]
+Number of elements: 16
+Elements: I_106, I_110, I_126, I_103, I_108, I_119, I_121, I_123, I_131, I_136, I_144, I_141, I_145, I_125, I_101, I_105
+
+Cluster (1,7)
+Prototypes: [I_148]
+Number of elements: 19
+Elements: I_149, I_137, I_111, I_116, I_146, I_148, I_129, I_133, I_115, I_112, I_147, I_113, I_102, I_114, I_143, I_122, I_128, I_140, I_150
+
+
+Critério de adequação (energia): 56.4170315237
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	0,5	0,6	0,7	1,0	1,1	1,2	1,3	1,4	1,5	1,6	1,7	Total
+
+1	4	 0	 0	 1	 0	 0	 0	 0	 33	 0	 8	 0	 4	 0	 0	 0	 50
+3	0	 2	 1	 0	 1	 2	 4	 2	 0	 0	 0	 0	 0	 3	 16	 19	 50
+2	0	 0	 0	 0	 0	 0	 7	 26	 0	 13	 0	 4	 0	 0	 0	 0	 50
+Total	[ 4  2  1  1  1  2 11 28 33 13  8  4  4  3 16 19]
+
+Matriz de pesos:
+Cluster (0,0): 0.538791360074 0.300760207237 3.51032577769 1.75797048151
+Cluster (0,1): 0.538791360074 0.300760207237 3.51032577769 1.75797048151
+Cluster (0,2): 0.538791360074 0.300760207237 3.51032577769 1.75797048151
+Cluster (0,3): 0.538791360074 0.300760207237 3.51032577769 1.75797048151
+Cluster (0,4): 0.538791360074 0.300760207237 3.51032577769 1.75797048151
+Cluster (0,5): 0.538791360074 0.300760207237 3.51032577769 1.75797048151
+Cluster (0,6): 0.538791360074 0.300760207237 3.51032577769 1.75797048151
+Cluster (0,7): 0.538791360074 0.300760207237 3.51032577769 1.75797048151
+Cluster (1,0): 0.538791360074 0.300760207237 3.51032577769 1.75797048151
+Cluster (1,1): 0.538791360074 0.300760207237 3.51032577769 1.75797048151
+Cluster (1,2): 0.538791360074 0.300760207237 3.51032577769 1.75797048151
+Cluster (1,3): 0.538791360074 0.300760207237 3.51032577769 1.75797048151
+Cluster (1,4): 0.538791360074 0.300760207237 3.51032577769 1.75797048151
+Cluster (1,5): 0.538791360074 0.300760207237 3.51032577769 1.75797048151
+Cluster (1,6): 0.538791360074 0.300760207237 3.51032577769 1.75797048151
+Cluster (1,7): 0.538791360074 0.300760207237 3.51032577769 1.75797048151
+
+Corrected Rand index: 0.514636058769
+F-measure(P,Q): 0.670857342413
+OERC: 0.04
+
+#####################################
+# Repetição do experimento: 39
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_8]
+Number of elements: 31
+Elements: I_2, I_3, I_4, I_8, I_10, I_13, I_21, I_25, I_26, I_28, I_29, I_30, I_31, I_35, I_36, I_37, I_40, I_46, I_48, I_50, I_1, I_11, I_12, I_18, I_41, I_5, I_22, I_38, I_49, I_20, I_47
+
+Cluster (0,1)
+Prototypes: [I_42]
+Number of elements: 1
+Elements: I_42
+
+Cluster (0,2)
+Prototypes: [I_53]
+Number of elements: 3
+Elements: I_51, I_53, I_87
+
+Cluster (0,3)
+Prototypes: [I_150]
+Number of elements: 1
+Elements: I_104
+
+Cluster (0,4)
+Prototypes: [I_59]
+Number of elements: 6
+Elements: I_59, I_66, I_88, I_75, I_76, I_77
+
+Cluster (0,5)
+Prototypes: [I_81]
+Number of elements: 11
+Elements: I_80, I_82, I_54, I_61, I_63, I_68, I_70, I_81, I_94, I_58, I_99
+
+Cluster (0,6)
+Prototypes: [I_128]
+Number of elements: 8
+Elements: I_71, I_139, I_150, I_111, I_128, I_138, I_117, I_148
+
+Cluster (0,7)
+Prototypes: [I_103]
+Number of elements: 29
+Elements: I_101, I_103, I_105, I_106, I_108, I_109, I_110, I_113, I_116, I_118, I_119, I_121, I_123, I_125, I_126, I_129, I_130, I_131, I_132, I_133, I_136, I_137, I_140, I_141, I_142, I_144, I_145, I_146, I_149
+
+Cluster (1,0)
+Prototypes: [I_24]
+Number of elements: 5
+Elements: I_24, I_44, I_27, I_32, I_45
+
+Cluster (1,1)
+Prototypes: [I_122]
+Number of elements: 4
+Elements: I_107, I_114, I_115, I_122
+
+Cluster (1,2)
+Prototypes: [I_127]
+Number of elements: 0
+Elements
+
+Cluster (1,3)
+Prototypes: [I_34]
+Number of elements: 7
+Elements: I_16, I_34, I_15, I_6, I_17, I_19, I_33
+
+Cluster (1,4)
+Prototypes: [I_7]
+Number of elements: 6
+Elements: I_7, I_9, I_14, I_23, I_39, I_43
+
+Cluster (1,5)
+Prototypes: [I_100]
+Number of elements: 13
+Elements: I_65, I_60, I_72, I_89, I_95, I_96, I_97, I_100, I_83, I_91, I_93, I_56, I_90
+
+Cluster (1,6)
+Prototypes: [I_92]
+Number of elements: 13
+Elements: I_62, I_67, I_79, I_85, I_92, I_98, I_64, I_74, I_52, I_86, I_55, I_57, I_134
+
+Cluster (1,7)
+Prototypes: [I_124]
+Number of elements: 12
+Elements: I_120, I_73, I_135, I_84, I_102, I_143, I_124, I_127, I_147, I_78, I_112, I_69
+
+
+Critério de adequação (energia): 56.3497883793
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	0,5	0,6	0,7	1,0	1,1	1,3	1,4	1,5	1,6	1,7	Total
+
+1	31	 1	 0	 0	 0	 0	 0	 0	 5	 0	 7	 6	 0	 0	 0	 50
+3	0	 0	 0	 1	 0	 0	 7	 29	 0	 4	 0	 0	 0	 1	 8	 50
+2	0	 0	 3	 0	 6	 11	 1	 0	 0	 0	 0	 0	 13	 12	 4	 50
+Total	[31  1  3  1  6 11  8 29  5  4  7  6 13 13 12]
+
+Matriz de pesos:
+Cluster (0,0): 0.526165437479 0.272370745872 3.07046923294 2.272544902
+Cluster (0,1): 0.526165437479 0.272370745872 3.07046923294 2.272544902
+Cluster (0,2): 0.526165437479 0.272370745872 3.07046923294 2.272544902
+Cluster (0,3): 0.526165437479 0.272370745872 3.07046923294 2.272544902
+Cluster (0,4): 0.526165437479 0.272370745872 3.07046923294 2.272544902
+Cluster (0,5): 0.526165437479 0.272370745872 3.07046923294 2.272544902
+Cluster (0,6): 0.526165437479 0.272370745872 3.07046923294 2.272544902
+Cluster (0,7): 0.526165437479 0.272370745872 3.07046923294 2.272544902
+Cluster (1,0): 0.526165437479 0.272370745872 3.07046923294 2.272544902
+Cluster (1,1): 0.526165437479 0.272370745872 3.07046923294 2.272544902
+Cluster (1,2): 0.526165437479 0.272370745872 3.07046923294 2.272544902
+Cluster (1,3): 0.526165437479 0.272370745872 3.07046923294 2.272544902
+Cluster (1,4): 0.526165437479 0.272370745872 3.07046923294 2.272544902
+Cluster (1,5): 0.526165437479 0.272370745872 3.07046923294 2.272544902
+Cluster (1,6): 0.526165437479 0.272370745872 3.07046923294 2.272544902
+Cluster (1,7): 0.526165437479 0.272370745872 3.07046923294 2.272544902
+
+Corrected Rand index: 0.485673624863
+F-measure(P,Q): 0.637435908885
+OERC: 0.04
+
+#####################################
+# Repetição do experimento: 40
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_97]
+Number of elements: 18
+Elements: I_65, I_96, I_72, I_89, I_97, I_56, I_60, I_62, I_67, I_85, I_100, I_83, I_95, I_98, I_74, I_107, I_91, I_93
+
+Cluster (0,1)
+Prototypes: [I_81]
+Number of elements: 12
+Elements: I_54, I_61, I_63, I_70, I_80, I_81, I_82, I_58, I_90, I_94, I_99, I_68
+
+Cluster (0,2)
+Prototypes: [I_55]
+Number of elements: 20
+Elements: I_69, I_88, I_120, I_73, I_59, I_55, I_66, I_76, I_77, I_134, I_51, I_64, I_87, I_52, I_53, I_57, I_75, I_79, I_86, I_92
+
+Cluster (0,3)
+Prototypes: [I_36]
+Number of elements: 0
+Elements
+
+Cluster (0,4)
+Prototypes: [I_148]
+Number of elements: 0
+Elements
+
+Cluster (0,5)
+Prototypes: [I_29]
+Number of elements: 0
+Elements
+
+Cluster (0,6)
+Prototypes: [I_119]
+Number of elements: 1
+Elements: I_119
+
+Cluster (0,7)
+Prototypes: [I_42]
+Number of elements: 1
+Elements: I_42
+
+Cluster (1,0)
+Prototypes: [I_18]
+Number of elements: 34
+Elements: I_23, I_7, I_12, I_38, I_1, I_5, I_8, I_17, I_18, I_20, I_22, I_25, I_27, I_28, I_29, I_33, I_34, I_36, I_40, I_41, I_44, I_45, I_47, I_49, I_50, I_6, I_11, I_15, I_16, I_21, I_24, I_32, I_37, I_19
+
+Cluster (1,1)
+Prototypes: [I_4]
+Number of elements: 15
+Elements: I_9, I_14, I_39, I_4, I_13, I_43, I_46, I_48, I_2, I_3, I_10, I_26, I_30, I_31, I_35
+
+Cluster (1,2)
+Prototypes: [I_137]
+Number of elements: 9
+Elements: I_101, I_137, I_141, I_144, I_145, I_149, I_110, I_116, I_121
+
+Cluster (1,3)
+Prototypes: [I_148]
+Number of elements: 0
+Elements
+
+Cluster (1,4)
+Prototypes: [I_148]
+Number of elements: 24
+Elements: I_78, I_102, I_105, I_112, I_113, I_114, I_115, I_122, I_124, I_127, I_129, I_133, I_143, I_147, I_148, I_71, I_111, I_125, I_128, I_139, I_140, I_142, I_146, I_150
+
+Cluster (1,5)
+Prototypes: [I_104]
+Number of elements: 6
+Elements: I_104, I_109, I_84, I_117, I_135, I_138
+
+Cluster (1,6)
+Prototypes: [I_106]
+Number of elements: 5
+Elements: I_106, I_123, I_136, I_118, I_132
+
+Cluster (1,7)
+Prototypes: [I_126]
+Number of elements: 5
+Elements: I_130, I_126, I_103, I_108, I_131
+
+
+Critério de adequação (energia): 57.6837718167
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,6	0,7	1,0	1,1	1,2	1,4	1,5	1,6	1,7	Total
+
+1	0	 0	 0	 0	 1	 34	 15	 0	 0	 0	 0	 0	 50
+3	1	 0	 2	 1	 0	 0	 0	 9	 22	 5	 5	 5	 50
+2	17	 12	 18	 0	 0	 0	 0	 0	 2	 1	 0	 0	 50
+Total	[18 12 20  1  1 34 15  9 24  6  5  5]
+
+Matriz de pesos:
+Cluster (0,0): 0.630422341201 0.266039125211 2.97572273069 2.00368953972
+Cluster (0,1): 0.630422341201 0.266039125211 2.97572273069 2.00368953972
+Cluster (0,2): 0.630422341201 0.266039125211 2.97572273069 2.00368953972
+Cluster (0,3): 0.630422341201 0.266039125211 2.97572273069 2.00368953972
+Cluster (0,4): 0.630422341201 0.266039125211 2.97572273069 2.00368953972
+Cluster (0,5): 0.630422341201 0.266039125211 2.97572273069 2.00368953972
+Cluster (0,6): 0.630422341201 0.266039125211 2.97572273069 2.00368953972
+Cluster (0,7): 0.630422341201 0.266039125211 2.97572273069 2.00368953972
+Cluster (1,0): 0.630422341201 0.266039125211 2.97572273069 2.00368953972
+Cluster (1,1): 0.630422341201 0.266039125211 2.97572273069 2.00368953972
+Cluster (1,2): 0.630422341201 0.266039125211 2.97572273069 2.00368953972
+Cluster (1,3): 0.630422341201 0.266039125211 2.97572273069 2.00368953972
+Cluster (1,4): 0.630422341201 0.266039125211 2.97572273069 2.00368953972
+Cluster (1,5): 0.630422341201 0.266039125211 2.97572273069 2.00368953972
+Cluster (1,6): 0.630422341201 0.266039125211 2.97572273069 2.00368953972
+Cluster (1,7): 0.630422341201 0.266039125211 2.97572273069 2.00368953972
+
+Corrected Rand index: 0.517951719389
+F-measure(P,Q): 0.639468039468
+OERC: 0.04
+
+#####################################
+# Repetição do experimento: 41
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_113]
+Number of elements: 16
+Elements: I_103, I_108, I_109, I_111, I_113, I_116, I_117, I_125, I_126, I_129, I_131, I_133, I_140, I_142, I_146, I_148
+
+Cluster (0,1)
+Prototypes: [I_144]
+Number of elements: 15
+Elements: I_101, I_145, I_106, I_110, I_118, I_119, I_132, I_137, I_144, I_121, I_123, I_136, I_141, I_105, I_149
+
+Cluster (0,2)
+Prototypes: [I_53]
+Number of elements: 5
+Elements: I_53, I_51, I_77, I_87, I_130
+
+Cluster (0,3)
+Prototypes: [I_95]
+Number of elements: 15
+Elements: I_60, I_65, I_83, I_54, I_90, I_91, I_93, I_95, I_100, I_89, I_96, I_97, I_56, I_72, I_88
+
+Cluster (0,4)
+Prototypes: [I_92]
+Number of elements: 14
+Elements: I_62, I_92, I_52, I_59, I_64, I_66, I_75, I_76, I_79, I_86, I_98, I_55, I_57, I_74
+
+Cluster (0,5)
+Prototypes: [I_115]
+Number of elements: 1
+Elements: I_115
+
+Cluster (0,6)
+Prototypes: [I_42]
+Number of elements: 1
+Elements: I_42
+
+Cluster (0,7)
+Prototypes: [I_8]
+Number of elements: 34
+Elements: I_2, I_13, I_14, I_39, I_46, I_3, I_4, I_10, I_30, I_31, I_35, I_36, I_43, I_48, I_50, I_1, I_7, I_8, I_12, I_21, I_23, I_25, I_29, I_37, I_38, I_40, I_41, I_5, I_18, I_28, I_11, I_47, I_49, I_33
+
+Cluster (1,0)
+Prototypes: [I_127]
+Number of elements: 15
+Elements: I_102, I_114, I_122, I_124, I_127, I_139, I_143, I_147, I_71, I_150, I_128, I_112, I_78, I_104, I_138
+
+Cluster (1,1)
+Prototypes: [I_127]
+Number of elements: 0
+Elements
+
+Cluster (1,2)
+Prototypes: [I_26]
+Number of elements: 2
+Elements: I_9, I_26
+
+Cluster (1,3)
+Prototypes: [I_82]
+Number of elements: 10
+Elements: I_61, I_94, I_58, I_99, I_82, I_80, I_63, I_81, I_70, I_68
+
+Cluster (1,4)
+Prototypes: [I_73]
+Number of elements: 6
+Elements: I_135, I_134, I_73, I_120, I_69, I_84
+
+Cluster (1,5)
+Prototypes: [I_16]
+Number of elements: 2
+Elements: I_16, I_34
+
+Cluster (1,6)
+Prototypes: [I_67]
+Number of elements: 3
+Elements: I_67, I_85, I_107
+
+Cluster (1,7)
+Prototypes: [I_22]
+Number of elements: 11
+Elements: I_24, I_44, I_45, I_6, I_22, I_27, I_32, I_15, I_17, I_19, I_20
+
+
+Critério de adequação (energia): 50.5620460573
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	0,5	0,6	0,7	1,0	1,2	1,3	1,4	1,5	1,6	1,7	Total
+
+1	0	 0	 0	 0	 0	 0	 1	 34	 0	 2	 0	 0	 2	 0	 11	 50
+3	16	 15	 1	 0	 0	 1	 0	 0	 13	 0	 0	 3	 0	 1	 0	 50
+2	0	 0	 4	 15	 14	 0	 0	 0	 2	 0	 10	 3	 0	 2	 0	 50
+Total	[16 15  5 15 14  1  1 34 15  2 10  6  2  3 11]
+
+Matriz de pesos:
+Cluster (0,0): 0.42568735701 0.249325057759 2.94003808631 3.20472201277
+Cluster (0,1): 0.42568735701 0.249325057759 2.94003808631 3.20472201277
+Cluster (0,2): 0.42568735701 0.249325057759 2.94003808631 3.20472201277
+Cluster (0,3): 0.42568735701 0.249325057759 2.94003808631 3.20472201277
+Cluster (0,4): 0.42568735701 0.249325057759 2.94003808631 3.20472201277
+Cluster (0,5): 0.42568735701 0.249325057759 2.94003808631 3.20472201277
+Cluster (0,6): 0.42568735701 0.249325057759 2.94003808631 3.20472201277
+Cluster (0,7): 0.42568735701 0.249325057759 2.94003808631 3.20472201277
+Cluster (1,0): 0.42568735701 0.249325057759 2.94003808631 3.20472201277
+Cluster (1,1): 0.42568735701 0.249325057759 2.94003808631 3.20472201277
+Cluster (1,2): 0.42568735701 0.249325057759 2.94003808631 3.20472201277
+Cluster (1,3): 0.42568735701 0.249325057759 2.94003808631 3.20472201277
+Cluster (1,4): 0.42568735701 0.249325057759 2.94003808631 3.20472201277
+Cluster (1,5): 0.42568735701 0.249325057759 2.94003808631 3.20472201277
+Cluster (1,6): 0.42568735701 0.249325057759 2.94003808631 3.20472201277
+Cluster (1,7): 0.42568735701 0.249325057759 2.94003808631 3.20472201277
+
+Corrected Rand index: 0.480784936033
+F-measure(P,Q): 0.585303585304
+OERC: 0.0466666666667
+
+#####################################
+# Repetição do experimento: 42
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_103]
+Number of elements: 17
+Elements: I_105, I_110, I_121, I_125, I_144, I_113, I_118, I_132, I_140, I_103, I_136, I_106, I_108, I_119, I_123, I_126, I_131
+
+Cluster (0,1)
+Prototypes: [I_117]
+Number of elements: 7
+Elements: I_104, I_109, I_112, I_117, I_130, I_138, I_129
+
+Cluster (0,2)
+Prototypes: [I_84]
+Number of elements: 3
+Elements: I_84, I_134, I_135
+
+Cluster (0,3)
+Prototypes: [I_34]
+Number of elements: 7
+Elements: I_16, I_15, I_34, I_6, I_17, I_19, I_33
+
+Cluster (0,4)
+Prototypes: [I_120]
+Number of elements: 3
+Elements: I_120, I_69, I_73
+
+Cluster (0,5)
+Prototypes: [I_143]
+Number of elements: 12
+Elements: I_107, I_114, I_122, I_71, I_102, I_139, I_143, I_150, I_128, I_147, I_124, I_127
+
+Cluster (0,6)
+Prototypes: [I_148]
+Number of elements: 2
+Elements: I_111, I_148
+
+Cluster (0,7)
+Prototypes: [I_8]
+Number of elements: 0
+Elements
+
+Cluster (1,0)
+Prototypes: [I_79]
+Number of elements: 8
+Elements: I_64, I_98, I_92, I_79, I_62, I_67, I_85, I_86
+
+Cluster (1,1)
+Prototypes: [I_87]
+Number of elements: 11
+Elements: I_53, I_77, I_51, I_55, I_87, I_66, I_76, I_59, I_52, I_57, I_78
+
+Cluster (1,2)
+Prototypes: [I_116]
+Number of elements: 10
+Elements: I_116, I_142, I_146, I_149, I_101, I_115, I_133, I_137, I_141, I_145
+
+Cluster (1,3)
+Prototypes: [I_94]
+Number of elements: 4
+Elements: I_58, I_99, I_94, I_61
+
+Cluster (1,4)
+Prototypes: [I_93]
+Number of elements: 20
+Elements: I_63, I_80, I_82, I_54, I_60, I_65, I_68, I_70, I_81, I_83, I_90, I_91, I_93, I_95, I_100, I_89, I_96, I_72, I_97, I_88
+
+Cluster (1,5)
+Prototypes: [I_74]
+Number of elements: 3
+Elements: I_74, I_56, I_75
+
+Cluster (1,6)
+Prototypes: [I_42]
+Number of elements: 1
+Elements: I_42
+
+Cluster (1,7)
+Prototypes: [I_8]
+Number of elements: 42
+Elements: I_2, I_3, I_4, I_7, I_8, I_9, I_10, I_12, I_13, I_14, I_21, I_24, I_25, I_26, I_27, I_29, I_30, I_31, I_32, I_35, I_36, I_39, I_40, I_43, I_46, I_48, I_50, I_1, I_5, I_11, I_18, I_20, I_22, I_23, I_28, I_37, I_38, I_41, I_44, I_45, I_47, I_49
+
+
+Critério de adequação (energia): 47.1230367085
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	0,5	0,6	1,0	1,1	1,2	1,3	1,4	1,5	1,6	1,7	Total
+
+1	0	 0	 0	 7	 0	 0	 0	 0	 0	 0	 0	 0	 0	 1	 42	 50
+3	17	 7	 2	 0	 1	 11	 2	 0	 0	 10	 0	 0	 0	 0	 0	 50
+2	0	 0	 1	 0	 2	 1	 0	 8	 11	 0	 4	 20	 3	 0	 0	 50
+Total	[17  7  3  7  3 12  2  8 11 10  4 20  3  1 42]
+
+Matriz de pesos:
+Cluster (0,0): 0.560499113746 0.218866998452 3.12523900387 2.60832408695
+Cluster (0,1): 0.560499113746 0.218866998452 3.12523900387 2.60832408695
+Cluster (0,2): 0.560499113746 0.218866998452 3.12523900387 2.60832408695
+Cluster (0,3): 0.560499113746 0.218866998452 3.12523900387 2.60832408695
+Cluster (0,4): 0.560499113746 0.218866998452 3.12523900387 2.60832408695
+Cluster (0,5): 0.560499113746 0.218866998452 3.12523900387 2.60832408695
+Cluster (0,6): 0.560499113746 0.218866998452 3.12523900387 2.60832408695
+Cluster (0,7): 0.560499113746 0.218866998452 3.12523900387 2.60832408695
+Cluster (1,0): 0.560499113746 0.218866998452 3.12523900387 2.60832408695
+Cluster (1,1): 0.560499113746 0.218866998452 3.12523900387 2.60832408695
+Cluster (1,2): 0.560499113746 0.218866998452 3.12523900387 2.60832408695
+Cluster (1,3): 0.560499113746 0.218866998452 3.12523900387 2.60832408695
+Cluster (1,4): 0.560499113746 0.218866998452 3.12523900387 2.60832408695
+Cluster (1,5): 0.560499113746 0.218866998452 3.12523900387 2.60832408695
+Cluster (1,6): 0.560499113746 0.218866998452 3.12523900387 2.60832408695
+Cluster (1,7): 0.560499113746 0.218866998452 3.12523900387 2.60832408695
+
+Corrected Rand index: 0.556902604751
+F-measure(P,Q): 0.663978245419
+OERC: 0.02
+
+#####################################
+# Repetição do experimento: 43
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_79]
+Number of elements: 10
+Elements: I_85, I_62, I_67, I_86, I_64, I_79, I_92, I_52, I_55, I_57
+
+Cluster (0,1)
+Prototypes: [I_82]
+Number of elements: 10
+Elements: I_58, I_94, I_99, I_61, I_80, I_81, I_82, I_63, I_70, I_68
+
+Cluster (0,2)
+Prototypes: [I_42]
+Number of elements: 1
+Elements: I_42
+
+Cluster (0,3)
+Prototypes: [I_104]
+Number of elements: 4
+Elements: I_104, I_109, I_117, I_138
+
+Cluster (0,4)
+Prototypes: [I_19]
+Number of elements: 2
+Elements: I_15, I_19
+
+Cluster (0,5)
+Prototypes: [I_143]
+Number of elements: 11
+Elements: I_102, I_122, I_143, I_150, I_114, I_147, I_71, I_107, I_139, I_112, I_127
+
+Cluster (0,6)
+Prototypes: [I_115]
+Number of elements: 1
+Elements: I_115
+
+Cluster (0,7)
+Prototypes: [I_8]
+Number of elements: 0
+Elements
+
+Cluster (1,0)
+Prototypes: [I_144]
+Number of elements: 20
+Elements: I_103, I_105, I_113, I_116, I_121, I_129, I_133, I_136, I_140, I_141, I_142, I_144, I_146, I_101, I_110, I_125, I_137, I_145, I_149, I_118
+
+Cluster (1,1)
+Prototypes: [I_78]
+Number of elements: 7
+Elements: I_53, I_78, I_87, I_124, I_128, I_111, I_148
+
+Cluster (1,2)
+Prototypes: [I_131]
+Number of elements: 8
+Elements: I_108, I_126, I_131, I_106, I_119, I_123, I_130, I_132
+
+Cluster (1,3)
+Prototypes: [I_100]
+Number of elements: 14
+Elements: I_60, I_65, I_96, I_83, I_89, I_91, I_93, I_95, I_97, I_100, I_56, I_72, I_90, I_54
+
+Cluster (1,4)
+Prototypes: [I_59]
+Number of elements: 8
+Elements: I_66, I_75, I_59, I_76, I_98, I_74, I_77, I_51
+
+Cluster (1,5)
+Prototypes: [I_73]
+Number of elements: 7
+Elements: I_135, I_73, I_84, I_120, I_134, I_69, I_88
+
+Cluster (1,6)
+Prototypes: [I_6]
+Number of elements: 6
+Elements: I_16, I_6, I_17, I_34, I_45, I_44
+
+Cluster (1,7)
+Prototypes: [I_8]
+Number of elements: 41
+Elements: I_1, I_2, I_3, I_5, I_7, I_8, I_10, I_11, I_12, I_13, I_18, I_20, I_21, I_22, I_23, I_24, I_25, I_26, I_27, I_28, I_29, I_30, I_31, I_32, I_33, I_35, I_36, I_37, I_38, I_40, I_41, I_47, I_48, I_49, I_50, I_4, I_43, I_46, I_14, I_39, I_9
+
+
+Critério de adequação (energia): 50.6059430458
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	0,5	0,6	1,0	1,1	1,2	1,3	1,4	1,5	1,6	1,7	Total
+
+1	0	 0	 1	 0	 2	 0	 0	 0	 0	 0	 0	 0	 0	 6	 41	 50
+3	0	 0	 0	 4	 0	 10	 1	 20	 4	 8	 0	 0	 3	 0	 0	 50
+2	10	 10	 0	 0	 0	 1	 0	 0	 3	 0	 14	 8	 4	 0	 0	 50
+Total	[10 10  1  4  2 11  1 20  7  8 14  8  7  6 41]
+
+Matriz de pesos:
+Cluster (0,0): 0.493624383476 0.271601614414 2.53062436732 2.94742907325
+Cluster (0,1): 0.493624383476 0.271601614414 2.53062436732 2.94742907325
+Cluster (0,2): 0.493624383476 0.271601614414 2.53062436732 2.94742907325
+Cluster (0,3): 0.493624383476 0.271601614414 2.53062436732 2.94742907325
+Cluster (0,4): 0.493624383476 0.271601614414 2.53062436732 2.94742907325
+Cluster (0,5): 0.493624383476 0.271601614414 2.53062436732 2.94742907325
+Cluster (0,6): 0.493624383476 0.271601614414 2.53062436732 2.94742907325
+Cluster (0,7): 0.493624383476 0.271601614414 2.53062436732 2.94742907325
+Cluster (1,0): 0.493624383476 0.271601614414 2.53062436732 2.94742907325
+Cluster (1,1): 0.493624383476 0.271601614414 2.53062436732 2.94742907325
+Cluster (1,2): 0.493624383476 0.271601614414 2.53062436732 2.94742907325
+Cluster (1,3): 0.493624383476 0.271601614414 2.53062436732 2.94742907325
+Cluster (1,4): 0.493624383476 0.271601614414 2.53062436732 2.94742907325
+Cluster (1,5): 0.493624383476 0.271601614414 2.53062436732 2.94742907325
+Cluster (1,6): 0.493624383476 0.271601614414 2.53062436732 2.94742907325
+Cluster (1,7): 0.493624383476 0.271601614414 2.53062436732 2.94742907325
+
+Corrected Rand index: 0.528466557352
+F-measure(P,Q): 0.636675824176
+OERC: 0.0466666666667
+
+#####################################
+# Repetição do experimento: 44
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_4]
+Number of elements: 17
+Elements: I_2, I_3, I_4, I_9, I_10, I_13, I_14, I_26, I_30, I_31, I_35, I_36, I_39, I_43, I_46, I_48, I_42
+
+Cluster (0,1)
+Prototypes: [I_98]
+Number of elements: 5
+Elements: I_74, I_98, I_64, I_75, I_92
+
+Cluster (0,2)
+Prototypes: [I_18]
+Number of elements: 18
+Elements: I_24, I_27, I_32, I_18, I_1, I_8, I_21, I_28, I_29, I_37, I_40, I_41, I_5, I_12, I_23, I_38, I_50, I_7
+
+Cluster (0,3)
+Prototypes: [I_34]
+Number of elements: 4
+Elements: I_16, I_34, I_15, I_33
+
+Cluster (0,4)
+Prototypes: [I_87]
+Number of elements: 6
+Elements: I_52, I_87, I_51, I_53, I_66, I_78
+
+Cluster (0,5)
+Prototypes: [I_59]
+Number of elements: 4
+Elements: I_59, I_76, I_77, I_55
+
+Cluster (0,6)
+Prototypes: [I_22]
+Number of elements: 1
+Elements: I_44
+
+Cluster (0,7)
+Prototypes: [I_139]
+Number of elements: 9
+Elements: I_102, I_128, I_139, I_143, I_150, I_71, I_122, I_127, I_115
+
+Cluster (1,0)
+Prototypes: [I_20]
+Number of elements: 9
+Elements: I_6, I_11, I_17, I_19, I_20, I_22, I_45, I_47, I_49
+
+Cluster (1,1)
+Prototypes: [I_86]
+Number of elements: 2
+Elements: I_86, I_57
+
+Cluster (1,2)
+Prototypes: [I_25]
+Number of elements: 1
+Elements: I_25
+
+Cluster (1,3)
+Prototypes: [I_117]
+Number of elements: 8
+Elements: I_104, I_138, I_109, I_111, I_112, I_117, I_130, I_148
+
+Cluster (1,4)
+Prototypes: [I_97]
+Number of elements: 15
+Elements: I_56, I_62, I_65, I_67, I_79, I_85, I_89, I_96, I_97, I_72, I_100, I_60, I_83, I_91, I_95
+
+Cluster (1,5)
+Prototypes: [I_81]
+Number of elements: 14
+Elements: I_63, I_70, I_80, I_81, I_82, I_54, I_88, I_90, I_93, I_94, I_58, I_61, I_99, I_68
+
+Cluster (1,6)
+Prototypes: [I_84]
+Number of elements: 10
+Elements: I_134, I_135, I_73, I_84, I_114, I_120, I_147, I_69, I_107, I_124
+
+Cluster (1,7)
+Prototypes: [I_103]
+Number of elements: 27
+Elements: I_129, I_133, I_101, I_103, I_105, I_106, I_108, I_110, I_113, I_116, I_118, I_119, I_121, I_123, I_125, I_126, I_131, I_132, I_136, I_137, I_140, I_141, I_142, I_144, I_145, I_146, I_149
+
+
+Critério de adequação (energia): 55.7879780768
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	0,5	0,6	0,7	1,0	1,1	1,2	1,3	1,4	1,5	1,6	1,7	Total
+
+1	17	 0	 18	 4	 0	 0	 1	 0	 9	 0	 1	 0	 0	 0	 0	 0	 50
+3	0	 0	 0	 0	 0	 0	 0	 8	 0	 0	 0	 8	 0	 0	 7	 27	 50
+2	0	 5	 0	 0	 6	 4	 0	 1	 0	 2	 0	 0	 15	 14	 3	 0	 50
+Total	[17  5 18  4  6  4  1  9  9  2  1  8 15 14 10 27]
+
+Matriz de pesos:
+Cluster (0,0): 0.486238272961 0.412688206026 2.34866594187 2.12181517979
+Cluster (0,1): 0.486238272961 0.412688206026 2.34866594187 2.12181517979
+Cluster (0,2): 0.486238272961 0.412688206026 2.34866594187 2.12181517979
+Cluster (0,3): 0.486238272961 0.412688206026 2.34866594187 2.12181517979
+Cluster (0,4): 0.486238272961 0.412688206026 2.34866594187 2.12181517979
+Cluster (0,5): 0.486238272961 0.412688206026 2.34866594187 2.12181517979
+Cluster (0,6): 0.486238272961 0.412688206026 2.34866594187 2.12181517979
+Cluster (0,7): 0.486238272961 0.412688206026 2.34866594187 2.12181517979
+Cluster (1,0): 0.486238272961 0.412688206026 2.34866594187 2.12181517979
+Cluster (1,1): 0.486238272961 0.412688206026 2.34866594187 2.12181517979
+Cluster (1,2): 0.486238272961 0.412688206026 2.34866594187 2.12181517979
+Cluster (1,3): 0.486238272961 0.412688206026 2.34866594187 2.12181517979
+Cluster (1,4): 0.486238272961 0.412688206026 2.34866594187 2.12181517979
+Cluster (1,5): 0.486238272961 0.412688206026 2.34866594187 2.12181517979
+Cluster (1,6): 0.486238272961 0.412688206026 2.34866594187 2.12181517979
+Cluster (1,7): 0.486238272961 0.412688206026 2.34866594187 2.12181517979
+
+Corrected Rand index: 0.42181506104
+F-measure(P,Q): 0.564082975848
+OERC: 0.0266666666667
+
+#####################################
+# Repetição do experimento: 45
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_8]
+Number of elements: 44
+Elements: I_1, I_2, I_3, I_4, I_5, I_6, I_7, I_8, I_9, I_10, I_11, I_12, I_13, I_14, I_17, I_18, I_20, I_21, I_22, I_23, I_24, I_25, I_26, I_27, I_28, I_29, I_30, I_31, I_32, I_35, I_36, I_37, I_38, I_39, I_40, I_41, I_43, I_44, I_45, I_46, I_47, I_48, I_49, I_50
+
+Cluster (0,1)
+Prototypes: [I_42]
+Number of elements: 1
+Elements: I_42
+
+Cluster (0,2)
+Prototypes: [I_109]
+Number of elements: 2
+Elements: I_109, I_130
+
+Cluster (0,3)
+Prototypes: [I_16]
+Number of elements: 3
+Elements: I_16, I_34, I_15
+
+Cluster (0,4)
+Prototypes: [I_38]
+Number of elements: 1
+Elements: I_33
+
+Cluster (0,5)
+Prototypes: [I_82]
+Number of elements: 9
+Elements: I_58, I_94, I_99, I_61, I_82, I_80, I_81, I_63, I_70
+
+Cluster (0,6)
+Prototypes: [I_55]
+Number of elements: 15
+Elements: I_59, I_73, I_75, I_77, I_88, I_134, I_51, I_53, I_66, I_76, I_55, I_87, I_52, I_69, I_78
+
+Cluster (0,7)
+Prototypes: [I_79]
+Number of elements: 14
+Elements: I_79, I_57, I_62, I_67, I_85, I_107, I_86, I_71, I_139, I_64, I_74, I_84, I_92, I_98
+
+Cluster (1,0)
+Prototypes: [I_40]
+Number of elements: 1
+Elements: I_19
+
+Cluster (1,1)
+Prototypes: [I_135]
+Number of elements: 2
+Elements: I_135, I_120
+
+Cluster (1,2)
+Prototypes: [I_96]
+Number of elements: 2
+Elements: I_96, I_68
+
+Cluster (1,3)
+Prototypes: [I_137]
+Number of elements: 9
+Elements: I_101, I_116, I_137, I_145, I_149, I_115, I_141, I_142, I_146
+
+Cluster (1,4)
+Prototypes: [I_106]
+Number of elements: 5
+Elements: I_118, I_119, I_123, I_106, I_132
+
+Cluster (1,5)
+Prototypes: [I_100]
+Number of elements: 13
+Elements: I_91, I_60, I_65, I_72, I_83, I_90, I_93, I_95, I_97, I_100, I_54, I_56, I_89
+
+Cluster (1,6)
+Prototypes: [I_112]
+Number of elements: 17
+Elements: I_102, I_114, I_122, I_124, I_143, I_147, I_150, I_104, I_112, I_127, I_117, I_128, I_138, I_111, I_129, I_148, I_133
+
+Cluster (1,7)
+Prototypes: [I_103]
+Number of elements: 12
+Elements: I_103, I_105, I_110, I_113, I_121, I_125, I_136, I_140, I_144, I_108, I_126, I_131
+
+
+Critério de adequação (energia): 52.1065879259
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	0,5	0,6	0,7	1,0	1,1	1,2	1,3	1,4	1,5	1,6	1,7	Total
+
+1	44	 1	 0	 3	 1	 0	 0	 0	 1	 0	 0	 0	 0	 0	 0	 0	 50
+3	0	 0	 2	 0	 0	 0	 1	 2	 0	 2	 0	 9	 5	 0	 17	 12	 50
+2	0	 0	 0	 0	 0	 9	 14	 12	 0	 0	 2	 0	 0	 13	 0	 0	 50
+Total	[44  1  2  3  1  9 15 14  1  2  2  9  5 13 17 12]
+
+Matriz de pesos:
+Cluster (0,0): 0.570568606855 0.215226950569 3.32828656274 2.44666642993
+Cluster (0,1): 0.570568606855 0.215226950569 3.32828656274 2.44666642993
+Cluster (0,2): 0.570568606855 0.215226950569 3.32828656274 2.44666642993
+Cluster (0,3): 0.570568606855 0.215226950569 3.32828656274 2.44666642993
+Cluster (0,4): 0.570568606855 0.215226950569 3.32828656274 2.44666642993
+Cluster (0,5): 0.570568606855 0.215226950569 3.32828656274 2.44666642993
+Cluster (0,6): 0.570568606855 0.215226950569 3.32828656274 2.44666642993
+Cluster (0,7): 0.570568606855 0.215226950569 3.32828656274 2.44666642993
+Cluster (1,0): 0.570568606855 0.215226950569 3.32828656274 2.44666642993
+Cluster (1,1): 0.570568606855 0.215226950569 3.32828656274 2.44666642993
+Cluster (1,2): 0.570568606855 0.215226950569 3.32828656274 2.44666642993
+Cluster (1,3): 0.570568606855 0.215226950569 3.32828656274 2.44666642993
+Cluster (1,4): 0.570568606855 0.215226950569 3.32828656274 2.44666642993
+Cluster (1,5): 0.570568606855 0.215226950569 3.32828656274 2.44666642993
+Cluster (1,6): 0.570568606855 0.215226950569 3.32828656274 2.44666642993
+Cluster (1,7): 0.570568606855 0.215226950569 3.32828656274 2.44666642993
+
+Corrected Rand index: 0.567791691928
+F-measure(P,Q): 0.624800710034
+OERC: 0.02
+
+#####################################
+# Repetição do experimento: 46
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_64]
+Number of elements: 25
+Elements: I_86, I_67, I_52, I_56, I_62, I_64, I_74, I_75, I_79, I_92, I_98, I_59, I_66, I_76, I_88, I_55, I_73, I_84, I_57, I_77, I_134, I_69, I_51, I_87, I_53
+
+Cluster (0,1)
+Prototypes: [I_81]
+Number of elements: 13
+Elements: I_58, I_61, I_94, I_99, I_80, I_81, I_82, I_54, I_63, I_70, I_68, I_90, I_93
+
+Cluster (0,2)
+Prototypes: [I_45]
+Number of elements: 3
+Elements: I_6, I_45, I_44
+
+Cluster (0,3)
+Prototypes: [I_135]
+Number of elements: 2
+Elements: I_135, I_120
+
+Cluster (0,4)
+Prototypes: [I_107]
+Number of elements: 1
+Elements: I_107
+
+Cluster (0,5)
+Prototypes: [I_34]
+Number of elements: 6
+Elements: I_19, I_15, I_16, I_17, I_34, I_33
+
+Cluster (0,6)
+Prototypes: [I_50]
+Number of elements: 0
+Elements
+
+Cluster (0,7)
+Prototypes: [I_50]
+Number of elements: 41
+Elements: I_1, I_2, I_3, I_4, I_5, I_7, I_8, I_9, I_10, I_11, I_12, I_13, I_14, I_18, I_20, I_21, I_22, I_23, I_24, I_25, I_26, I_27, I_28, I_29, I_30, I_31, I_32, I_35, I_36, I_37, I_38, I_39, I_40, I_41, I_42, I_43, I_46, I_47, I_48, I_49, I_50
+
+Cluster (1,0)
+Prototypes: [I_148]
+Number of elements: 17
+Elements: I_78, I_104, I_105, I_109, I_111, I_112, I_113, I_116, I_117, I_125, I_129, I_133, I_138, I_140, I_142, I_146, I_148
+
+Cluster (1,1)
+Prototypes: [I_143]
+Number of elements: 12
+Elements: I_114, I_102, I_122, I_143, I_115, I_150, I_147, I_71, I_127, I_128, I_139, I_124
+
+Cluster (1,2)
+Prototypes: [I_126]
+Number of elements: 5
+Elements: I_130, I_126, I_103, I_108, I_131
+
+Cluster (1,3)
+Prototypes: [I_106]
+Number of elements: 5
+Elements: I_118, I_132, I_106, I_136, I_123
+
+Cluster (1,4)
+Prototypes: [I_145]
+Number of elements: 8
+Elements: I_101, I_137, I_144, I_145, I_110, I_121, I_141, I_149
+
+Cluster (1,5)
+Prototypes: [I_100]
+Number of elements: 5
+Elements: I_72, I_91, I_83, I_95, I_100
+
+Cluster (1,6)
+Prototypes: [I_119]
+Number of elements: 1
+Elements: I_119
+
+Cluster (1,7)
+Prototypes: [I_89]
+Number of elements: 6
+Elements: I_65, I_89, I_96, I_97, I_60, I_85
+
+
+Critério de adequação (energia): 49.9659403283
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	0,5	0,7	1,0	1,1	1,2	1,3	1,4	1,5	1,6	1,7	Total
+
+1	0	 0	 3	 0	 0	 6	 41	 0	 0	 0	 0	 0	 0	 0	 0	 50
+3	1	 0	 0	 2	 1	 0	 0	 16	 11	 5	 5	 8	 0	 1	 0	 50
+2	24	 13	 0	 0	 0	 0	 0	 1	 1	 0	 0	 0	 5	 0	 6	 50
+Total	[25 13  3  2  1  6 41 17 12  5  5  8  5  1  6]
+
+Matriz de pesos:
+Cluster (0,0): 0.613966661375 0.22706073139 3.18252674072 2.25393359455
+Cluster (0,1): 0.613966661375 0.22706073139 3.18252674072 2.25393359455
+Cluster (0,2): 0.613966661375 0.22706073139 3.18252674072 2.25393359455
+Cluster (0,3): 0.613966661375 0.22706073139 3.18252674072 2.25393359455
+Cluster (0,4): 0.613966661375 0.22706073139 3.18252674072 2.25393359455
+Cluster (0,5): 0.613966661375 0.22706073139 3.18252674072 2.25393359455
+Cluster (0,6): 0.613966661375 0.22706073139 3.18252674072 2.25393359455
+Cluster (0,7): 0.613966661375 0.22706073139 3.18252674072 2.25393359455
+Cluster (1,0): 0.613966661375 0.22706073139 3.18252674072 2.25393359455
+Cluster (1,1): 0.613966661375 0.22706073139 3.18252674072 2.25393359455
+Cluster (1,2): 0.613966661375 0.22706073139 3.18252674072 2.25393359455
+Cluster (1,3): 0.613966661375 0.22706073139 3.18252674072 2.25393359455
+Cluster (1,4): 0.613966661375 0.22706073139 3.18252674072 2.25393359455
+Cluster (1,5): 0.613966661375 0.22706073139 3.18252674072 2.25393359455
+Cluster (1,6): 0.613966661375 0.22706073139 3.18252674072 2.25393359455
+Cluster (1,7): 0.613966661375 0.22706073139 3.18252674072 2.25393359455
+
+Corrected Rand index: 0.557770451104
+F-measure(P,Q): 0.672903613799
+OERC: 0.02
+
+#####################################
+# Repetição do experimento: 47
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_141]
+Number of elements: 18
+Elements: I_103, I_110, I_121, I_101, I_141, I_144, I_145, I_105, I_125, I_137, I_140, I_142, I_113, I_146, I_116, I_133, I_149, I_129
+
+Cluster (0,1)
+Prototypes: [I_16]
+Number of elements: 2
+Elements: I_16, I_34
+
+Cluster (0,2)
+Prototypes: [I_43]
+Number of elements: 3
+Elements: I_43, I_4, I_48
+
+Cluster (0,3)
+Prototypes: [I_122]
+Number of elements: 6
+Elements: I_115, I_107, I_114, I_122, I_102, I_143
+
+Cluster (0,4)
+Prototypes: [I_9]
+Number of elements: 6
+Elements: I_42, I_9, I_39, I_13, I_14, I_46
+
+Cluster (0,5)
+Prototypes: [I_8]
+Number of elements: 28
+Elements: I_1, I_2, I_3, I_5, I_7, I_8, I_10, I_12, I_23, I_25, I_26, I_30, I_31, I_35, I_36, I_38, I_41, I_50, I_11, I_18, I_21, I_27, I_28, I_29, I_37, I_40, I_47, I_49
+
+Cluster (0,6)
+Prototypes: [I_24]
+Number of elements: 3
+Elements: I_24, I_44, I_32
+
+Cluster (0,7)
+Prototypes: [I_92]
+Number of elements: 21
+Elements: I_89, I_96, I_97, I_56, I_72, I_62, I_75, I_85, I_98, I_59, I_67, I_92, I_64, I_66, I_76, I_79, I_51, I_52, I_55, I_87, I_53
+
+Cluster (1,0)
+Prototypes: [I_106]
+Number of elements: 10
+Elements: I_106, I_118, I_123, I_132, I_136, I_119, I_108, I_131, I_126, I_130
+
+Cluster (1,1)
+Prototypes: [I_24]
+Number of elements: 0
+Elements
+
+Cluster (1,2)
+Prototypes: [I_86]
+Number of elements: 3
+Elements: I_86, I_57, I_71
+
+Cluster (1,3)
+Prototypes: [I_70]
+Number of elements: 19
+Elements: I_58, I_61, I_70, I_81, I_82, I_94, I_54, I_60, I_63, I_80, I_90, I_91, I_99, I_93, I_68, I_83, I_95, I_65, I_100
+
+Cluster (1,4)
+Prototypes: [I_69]
+Number of elements: 3
+Elements: I_69, I_120, I_88
+
+Cluster (1,5)
+Prototypes: [I_17]
+Number of elements: 8
+Elements: I_15, I_19, I_6, I_17, I_33, I_20, I_22, I_45
+
+Cluster (1,6)
+Prototypes: [I_64]
+Number of elements: 4
+Elements: I_74, I_77, I_134, I_135
+
+Cluster (1,7)
+Prototypes: [I_124]
+Number of elements: 16
+Elements: I_73, I_84, I_112, I_124, I_127, I_128, I_139, I_147, I_150, I_109, I_104, I_117, I_138, I_148, I_78, I_111
+
+
+Critério de adequação (energia): 54.6344946396
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	0,5	0,6	0,7	1,0	1,2	1,3	1,4	1,5	1,6	1,7	Total
+
+1	0	 2	 3	 0	 6	 28	 3	 0	 0	 0	 0	 0	 8	 0	 0	 50
+3	18	 0	 0	 6	 0	 0	 0	 0	 10	 0	 0	 1	 0	 2	 13	 50
+2	0	 0	 0	 0	 0	 0	 0	 21	 0	 3	 19	 2	 0	 2	 3	 50
+Total	[18  2  3  6  6 28  3 21 10  3 19  3  8  4 16]
+
+Matriz de pesos:
+Cluster (0,0): 0.651711085496 0.324320995713 2.41617330854 1.95813100734
+Cluster (0,1): 0.651711085496 0.324320995713 2.41617330854 1.95813100734
+Cluster (0,2): 0.651711085496 0.324320995713 2.41617330854 1.95813100734
+Cluster (0,3): 0.651711085496 0.324320995713 2.41617330854 1.95813100734
+Cluster (0,4): 0.651711085496 0.324320995713 2.41617330854 1.95813100734
+Cluster (0,5): 0.651711085496 0.324320995713 2.41617330854 1.95813100734
+Cluster (0,6): 0.651711085496 0.324320995713 2.41617330854 1.95813100734
+Cluster (0,7): 0.651711085496 0.324320995713 2.41617330854 1.95813100734
+Cluster (1,0): 0.651711085496 0.324320995713 2.41617330854 1.95813100734
+Cluster (1,1): 0.651711085496 0.324320995713 2.41617330854 1.95813100734
+Cluster (1,2): 0.651711085496 0.324320995713 2.41617330854 1.95813100734
+Cluster (1,3): 0.651711085496 0.324320995713 2.41617330854 1.95813100734
+Cluster (1,4): 0.651711085496 0.324320995713 2.41617330854 1.95813100734
+Cluster (1,5): 0.651711085496 0.324320995713 2.41617330854 1.95813100734
+Cluster (1,6): 0.651711085496 0.324320995713 2.41617330854 1.95813100734
+Cluster (1,7): 0.651711085496 0.324320995713 2.41617330854 1.95813100734
+
+Corrected Rand index: 0.459308325374
+F-measure(P,Q): 0.612969926143
+OERC: 0.04
+
+#####################################
+# Repetição do experimento: 48
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_4]
+Number of elements: 17
+Elements: I_42, I_2, I_9, I_13, I_26, I_31, I_46, I_3, I_4, I_10, I_14, I_30, I_35, I_36, I_39, I_43, I_48
+
+Cluster (0,1)
+Prototypes: [I_25]
+Number of elements: 2
+Elements: I_25, I_12
+
+Cluster (0,2)
+Prototypes: [I_69]
+Number of elements: 4
+Elements: I_120, I_69, I_73, I_88
+
+Cluster (0,3)
+Prototypes: [I_70]
+Number of elements: 19
+Elements: I_58, I_99, I_54, I_61, I_63, I_70, I_80, I_81, I_82, I_90, I_94, I_60, I_68, I_83, I_91, I_93, I_95, I_65, I_100
+
+Cluster (0,4)
+Prototypes: [I_92]
+Number of elements: 26
+Elements: I_56, I_62, I_67, I_74, I_85, I_89, I_96, I_97, I_98, I_52, I_55, I_59, I_64, I_66, I_75, I_76, I_77, I_79, I_92, I_134, I_57, I_87, I_51, I_53, I_72, I_86
+
+Cluster (0,5)
+Prototypes: [I_128]
+Number of elements: 8
+Elements: I_71, I_150, I_127, I_128, I_139, I_78, I_104, I_138
+
+Cluster (0,6)
+Prototypes: [I_19]
+Number of elements: 0
+Elements
+
+Cluster (0,7)
+Prototypes: [I_118]
+Number of elements: 3
+Elements: I_118, I_132, I_110
+
+Cluster (1,0)
+Prototypes: [I_6]
+Number of elements: 10
+Elements: I_16, I_6, I_15, I_17, I_19, I_33, I_34, I_20, I_45, I_47
+
+Cluster (1,1)
+Prototypes: [I_18]
+Number of elements: 19
+Elements: I_23, I_38, I_1, I_5, I_18, I_41, I_44, I_7, I_8, I_21, I_27, I_28, I_29, I_37, I_40, I_11, I_22, I_49, I_50
+
+Cluster (1,2)
+Prototypes: [I_32]
+Number of elements: 2
+Elements: I_24, I_32
+
+Cluster (1,3)
+Prototypes: [I_143]
+Number of elements: 10
+Elements: I_114, I_147, I_102, I_124, I_143, I_84, I_107, I_122, I_112, I_135
+
+Cluster (1,4)
+Prototypes: [I_113]
+Number of elements: 23
+Elements: I_109, I_105, I_117, I_119, I_129, I_131, I_133, I_148, I_103, I_106, I_108, I_113, I_121, I_123, I_125, I_126, I_130, I_136, I_140, I_142, I_144, I_146, I_111
+
+Cluster (1,5)
+Prototypes: [I_116]
+Number of elements: 7
+Elements: I_149, I_101, I_115, I_116, I_137, I_141, I_145
+
+Cluster (1,6)
+Prototypes: [I_10]
+Number of elements: 0
+Elements
+
+Cluster (1,7)
+Prototypes: [I_92]
+Number of elements: 0
+Elements
+
+
+Critério de adequação (energia): 51.9465204551
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	0,4	0,5	0,7	1,0	1,1	1,2	1,3	1,4	1,5	Total
+
+1	17	 2	 0	 0	 0	 0	 0	 10	 19	 2	 0	 0	 0	 50
+3	0	 0	 1	 0	 1	 6	 3	 0	 0	 0	 9	 23	 7	 50
+2	0	 0	 3	 19	 25	 2	 0	 0	 0	 0	 1	 0	 0	 50
+Total	[17  2  4 19 26  8  3 10 19  2 10 23  7]
+
+Matriz de pesos:
+Cluster (0,0): 0.480466288706 0.495718367901 2.26876741393 1.85059801355
+Cluster (0,1): 0.480466288706 0.495718367901 2.26876741393 1.85059801355
+Cluster (0,2): 0.480466288706 0.495718367901 2.26876741393 1.85059801355
+Cluster (0,3): 0.480466288706 0.495718367901 2.26876741393 1.85059801355
+Cluster (0,4): 0.480466288706 0.495718367901 2.26876741393 1.85059801355
+Cluster (0,5): 0.480466288706 0.495718367901 2.26876741393 1.85059801355
+Cluster (0,6): 0.480466288706 0.495718367901 2.26876741393 1.85059801355
+Cluster (0,7): 0.480466288706 0.495718367901 2.26876741393 1.85059801355
+Cluster (1,0): 0.480466288706 0.495718367901 2.26876741393 1.85059801355
+Cluster (1,1): 0.480466288706 0.495718367901 2.26876741393 1.85059801355
+Cluster (1,2): 0.480466288706 0.495718367901 2.26876741393 1.85059801355
+Cluster (1,3): 0.480466288706 0.495718367901 2.26876741393 1.85059801355
+Cluster (1,4): 0.480466288706 0.495718367901 2.26876741393 1.85059801355
+Cluster (1,5): 0.480466288706 0.495718367901 2.26876741393 1.85059801355
+Cluster (1,6): 0.480466288706 0.495718367901 2.26876741393 1.85059801355
+Cluster (1,7): 0.480466288706 0.495718367901 2.26876741393 1.85059801355
+
+Corrected Rand index: 0.474083160393
+F-measure(P,Q): 0.612918786942
+OERC: 0.0333333333333
+
+#####################################
+# Repetição do experimento: 49
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [I_49]
+Number of elements: 8
+Elements: I_11, I_20, I_22, I_33, I_47, I_49, I_37, I_5
+
+Cluster (0,1)
+Prototypes: [I_6]
+Number of elements: 6
+Elements: I_6, I_45, I_17, I_19, I_34, I_15
+
+Cluster (0,2)
+Prototypes: [I_2]
+Number of elements: 0
+Elements
+
+Cluster (0,3)
+Prototypes: [I_132]
+Number of elements: 3
+Elements: I_118, I_132, I_110
+
+Cluster (0,4)
+Prototypes: [I_73]
+Number of elements: 10
+Elements: I_135, I_120, I_69, I_73, I_88, I_114, I_147, I_84, I_124, I_134
+
+Cluster (0,5)
+Prototypes: [I_28]
+Number of elements: 0
+Elements
+
+Cluster (0,6)
+Prototypes: [I_106]
+Number of elements: 6
+Elements: I_119, I_123, I_106, I_108, I_136, I_131
+
+Cluster (0,7)
+Prototypes: [I_113]
+Number of elements: 27
+Elements: I_145, I_101, I_121, I_137, I_144, I_103, I_125, I_126, I_141, I_142, I_149, I_113, I_130, I_140, I_105, I_116, I_146, I_104, I_109, I_111, I_117, I_129, I_133, I_138, I_148, I_112, I_115
+
+Cluster (1,0)
+Prototypes: [I_4]
+Number of elements: 17
+Elements: I_2, I_3, I_4, I_7, I_9, I_10, I_13, I_14, I_26, I_30, I_31, I_35, I_39, I_42, I_43, I_46, I_48
+
+Cluster (1,1)
+Prototypes: [I_8]
+Number of elements: 18
+Elements: I_8, I_21, I_24, I_27, I_29, I_32, I_40, I_41, I_1, I_12, I_18, I_23, I_25, I_36, I_38, I_44, I_50, I_28
+
+Cluster (1,2)
+Prototypes: [I_94]
+Number of elements: 4
+Elements: I_99, I_58, I_61, I_94
+
+Cluster (1,3)
+Prototypes: [I_16]
+Number of elements: 1
+Elements: I_16
+
+Cluster (1,4)
+Prototypes: [I_70]
+Number of elements: 14
+Elements: I_63, I_54, I_68, I_70, I_80, I_81, I_82, I_60, I_65, I_83, I_90, I_91, I_93, I_95
+
+Cluster (1,5)
+Prototypes: [I_87]
+Number of elements: 10
+Elements: I_51, I_53, I_66, I_59, I_76, I_77, I_78, I_87, I_52, I_57
+
+Cluster (1,6)
+Prototypes: [I_79]
+Number of elements: 0
+Elements
+
+Cluster (1,7)
+Prototypes: [I_79]
+Number of elements: 26
+Elements: I_55, I_56, I_62, I_64, I_67, I_71, I_72, I_74, I_75, I_79, I_85, I_86, I_89, I_92, I_96, I_97, I_98, I_100, I_102, I_107, I_122, I_127, I_128, I_139, I_143, I_150
+
+
+Critério de adequação (energia): 49.3918655978
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,3	0,4	0,6	0,7	1,0	1,1	1,2	1,3	1,4	1,5	1,7	Total
+
+1	8	 6	 0	 0	 0	 0	 17	 18	 0	 1	 0	 0	 0	 50
+3	0	 0	 3	 6	 6	 27	 0	 0	 0	 0	 0	 0	 8	 50
+2	0	 0	 0	 4	 0	 0	 0	 0	 4	 0	 14	 10	 18	 50
+Total	[ 8  6  3 10  6 27 17 18  4  1 14 10 26]
+
+Matriz de pesos:
+Cluster (0,0): 0.706705133153 0.393551109026 2.82222308737 1.27399954616
+Cluster (0,1): 0.706705133153 0.393551109026 2.82222308737 1.27399954616
+Cluster (0,2): 0.706705133153 0.393551109026 2.82222308737 1.27399954616
+Cluster (0,3): 0.706705133153 0.393551109026 2.82222308737 1.27399954616
+Cluster (0,4): 0.706705133153 0.393551109026 2.82222308737 1.27399954616
+Cluster (0,5): 0.706705133153 0.393551109026 2.82222308737 1.27399954616
+Cluster (0,6): 0.706705133153 0.393551109026 2.82222308737 1.27399954616
+Cluster (0,7): 0.706705133153 0.393551109026 2.82222308737 1.27399954616
+Cluster (1,0): 0.706705133153 0.393551109026 2.82222308737 1.27399954616
+Cluster (1,1): 0.706705133153 0.393551109026 2.82222308737 1.27399954616
+Cluster (1,2): 0.706705133153 0.393551109026 2.82222308737 1.27399954616
+Cluster (1,3): 0.706705133153 0.393551109026 2.82222308737 1.27399954616
+Cluster (1,4): 0.706705133153 0.393551109026 2.82222308737 1.27399954616
+Cluster (1,5): 0.706705133153 0.393551109026 2.82222308737 1.27399954616
+Cluster (1,6): 0.706705133153 0.393551109026 2.82222308737 1.27399954616
+Cluster (1,7): 0.706705133153 0.393551109026 2.82222308737 1.27399954616
+
+Corrected Rand index: 0.427577720449
+F-measure(P,Q): 0.568131558844
+OERC: 0.08
+
+Melhor repetição: 19
+Menor oerc: 1

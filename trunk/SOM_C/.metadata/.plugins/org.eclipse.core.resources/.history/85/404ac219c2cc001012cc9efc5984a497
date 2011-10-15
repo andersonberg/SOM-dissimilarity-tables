@@ -1,0 +1,18 @@
+/*
+ * Classe.h
+ *
+ *  Created on: 22/08/2011
+ *      Author: Anderson
+ */
+
+#ifndef CLASSE_H_
+#define CLASSE_H_
+
+class Classe {
+public:
+	Classe();
+	void InserirObjeto(Individual objeto);
+	virtual ~Classe();
+};
+
+#endif /* CLASSE_H_ */

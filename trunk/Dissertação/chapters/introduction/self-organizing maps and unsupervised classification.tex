@@ -1,0 +1,193 @@
+Os mapas auto-organizï¿½veis fazem parte do grupo de modelos de aprendizado nï¿½o-supervisionado. O objetivo destes modelos ï¿½ encontrar uma estrutura lï¿½gica entre os dados fornecidos. Nï¿½o existe uma resposta esperada nem uma aï¿½ï¿½o que deva ser realizada. Os primeiros trabalhos nessa ï¿½rea foram relacionados ao aprendizado competitivo, os modelos eram projetados com filtros paralelos que analisavam a mesma observaï¿½ï¿½o. O filtro que obtinha a maior resposta era dito vencedor.
+
+Mapas auto-organizï¿½veis foram introduzidos por T. Kohonen em 1981. Os primeiros modelos foram projetados para tratar dados de grandes dimensï¿½es. Para realizar esse processamento, a metodologia de visualizaï¿½ï¿½o topolï¿½gica ï¿½ projetada para particionar os dados em \textit{clusters} que exibem alguma similaridade. 
+
+A caracterï¿½stica mais importante dos mapas auto-organizï¿½veis ï¿½ a possibilidade de comparar \textit{clusters}. Cada observaï¿½ï¿½o ï¿½ afetada a um \textit{cluster} e cada \textit{cluster} ï¿½ projetado em um nï¿½ do mapa. Observaï¿½ï¿½es semelhantes sï¿½o projetadas no mesmo nï¿½. A dissimilaridade entre as observaï¿½ï¿½es projetadas aumenta com a distï¿½ncia que separa os nï¿½s.
+
+Classificadores nï¿½o-supervisionados e mapas auto-organizï¿½veis sï¿½o classes de mï¿½todos que buscam agrupar dados semelhantes. A maioria das aplicaï¿½ï¿½es que usam mapas auto-organizï¿½veis sï¿½o classificadores, alguns porï¿½m, sï¿½o mï¿½todos de regressï¿½o.
+
+Pode ser considerado que qualquer aplicaï¿½ï¿½o utiliza informaï¿½ï¿½o supervisionada. Qualquer sistema precisa ser validado, portanto conhecimento especialista deve ser utilizado.
+
+\chapter*{Self-Organizing Topological Maps}
+\section*{Self-Organizing Maps}
+
+Kohonen projetou um algoritmo auto-organizï¿½vel do espaï¿½o de observaï¿½ï¿½es D em um espaï¿½o discreto de baixa dimensionalidade. Este espaï¿½o ï¿½ composto de um grafo nï¿½o-orientado que tem, geralmente 1, 2 ou 3 dimensï¿½es, este grafo ï¿½ denominado mapa. O mapa ï¿½ formado por neurï¿½nios interconectados, as conexï¿½es entre os neurï¿½nios sï¿½o as arestas do grafo. A estrutura de grafo permite a definiï¿½ï¿½o de uma distï¿½ncia inteira $\delta$ no conjunto $C$ de neurï¿½nios. Para cada par de neurï¿½nios $(c,r)$ do mapa, $\delta(c,r)$ ï¿½ o tamanho do caminho mais curto em $C$ entre $c$ e $r$. Para qualquer neurï¿½nio $c$, a distï¿½ncia permite a definiï¿½ï¿½o da vizinhanï¿½a de $c$ de ordem $d$,
+
+\begin{*equation}
+V_c(d) = {r \in C, \delta(c,r) \leq d}.
+\end{*equation}
+
+Busca-se, entï¿½o uma associaï¿½ï¿½o entre os neurï¿½nios do conjunto $C$ e os vetores do espaï¿½o de observaï¿½ï¿½es $D$. Treinamento permite que o conjunto de vetores de referï¿½ncia represente a distribuiï¿½ï¿½o de probabilidade do conjunto de dados. No caso de mapas topolï¿½gicos, existe outra restriï¿½ï¿½o para manter a topologia do mapa: dois neurï¿½nios vizinhos $r$ e $c$ sï¿½o associados aos vetores $\textbf{w}_c$ e $\textbf{w}_r$ que sï¿½o prï¿½ximos segundo a distï¿½ncia Euclidiana no espaï¿½o $D$.
+
+Para garantir a topologia, dois neurÃ´nios vizinhos $r$ e $c$ sÃ£o associados aos vetores $w_c$ e $w_r$ que sÃ£o prÃ³ximos segundo a distÃ¢ncia Euclidiana no espaÃ§o $D$.
+
+O conceito de vizinhanï¿½a ï¿½ levado em conta atravï¿½s de funï¿½ï¿½es kernel $K$ positivas e tais que $\lim_{|x|\rightarrow \inf} K(x) = 0 $. Estas funï¿½ï¿½es definem as regiï¿½es de influï¿½ncia em torno do neurï¿½nio $c$. As distï¿½ncias $\delta(c,r)$ entre quaisquer neurï¿½nios $c$ e $r$ do mapa definem a relativa influï¿½ncia que os neurï¿½nios possuem sobre os elementos do conjunto de dados. A famï¿½ï¿½lia de kernels $K$ ï¿½ parametrizada por $T$ (onde $T$ significa temperatura):
+
+\begin{equation}
+K^T(\delta) = K (\delta /T)
+\end{equation}
+
+Se escolhermos um nï¿½vel \alpha tal que se a influï¿½ncia de um neurï¿½nio for inferior a \alpha ï¿½ considerado insignificante ($K^T(\delta)<\alpha$), o raio da vizinhanï¿½a de um neurï¿½nio pode ser calculado para cada valor de $T$. A figura mostra que o tamanho da vizinhanï¿½a diminui com o valor de $T$, quanto menor for o valor de $T$, menos neurï¿½nios estarï¿½o na vizinhanï¿½a $V_c^T$ de $c$. Os algoritmos de treinamento dos mapas auto-organizï¿½veis minimizam uma funï¿½ï¿½o de custo. Quando o mï¿½nimo ï¿½ alcanï¿½ado, obtï¿½m-se uma partiï¿½ï¿½o que ï¿½ formada por conjuntos compactos e ï¿½ possï¿½vel definir uma ordem que deriva da topologia do mapa. A funï¿½ï¿½o de custo ï¿½ denominada $J_{som}^T$:
+
+$$J_{som}^T(X, W) = \sum_{z_i \in A} \sum_{c \in C} K^T(\delta(c, X(z_i))) \parallel \mathit{z}_i - \mathbf{w}_c \parallel ^2$$
+
+Nesta relaï¿½ï¿½o, $X$ ï¿½ uma funï¿½ï¿½o de alocaï¿½ï¿½o, e $W$ ï¿½ o conjunto de $p$ vetores de referï¿½ncia do mapa. $X(z_i)$ representa o neurï¿½nio do mapa $C$ que ï¿½ associado ï¿½ observaï¿½ï¿½o $z_i$, e $\delta(c, X(z_i))$ ï¿½ a distï¿½ncia, no mapa $C$  entre um neurï¿½nio $c$ e o neurï¿½nio onde estï¿½ alocada a observaï¿½ï¿½o $z_i$. Esta funï¿½ï¿½o de custo e uma extensï¿½o da funï¿½ï¿½o de custo do k-means, onde a distï¿½ncia euclidiana ï¿½ substituida por uma distï¿½ncia generalizada que ï¿½ uma soma das distï¿½ncias euclidianas entre $z$ e todos os vetores de referï¿½ncia da vizinhanï¿½a do neurï¿½nio $X(z)$:
+
+$$
+d^T(z_i, w_{X(z_i)}) = \sum_{c \in C} K^T(\delta(c, X(z_i))) \parallel \mathit{z}_i - \mathbf{w}_c \parallel ^2
+$$
+
+Se o valor de $T$ for muito pequeno, a funÃ§Ã£o de custo $J_{som}^T(X, W)$ Ã© igual Ã  funÃ§Ã£o de custo da k-means. E, neste caso, a distÃ¢ncia $d^T$ Ã© idÃªntica Ã  distÃ¢ncia Euclidiana.
+
+A minimizaÃ§Ã£o da funÃ§Ã£o de custo pode ser realizada de diferentes formas, dependendo se deseja-se uma otimizaÃ§Ã£o adaptativa ou em lote. AlÃ©m disso, existe um formalismo probabilÃ­stico onde obtÃ©m-se um terceiro tipo de otimizaÃ§Ã£o.
+
+\section{Algoritmo de otimizaÃ§Ã£o em lote para mapas topolÃ³gicos}
+
+A Ãºnica diferenÃ§a entre o k-means e o mapa auto-organizÃ¡vel Ã© a diferenÃ§a entre as duas funÃ§Ãµes de custo. Quando o valor de $T$ Ã© constante, a minimizaÃ§Ã£o de $J_{som}^T$ Ã© realizada iterativamente. Cada iteraÃ§Ã£o tem duas etapas. A primeira Ã© a etapa de alocaÃ§Ã£o e a segunda Ã© a etapa de minimizaÃ§Ã£o, onde a funÃ§Ã£o de custo associada Ã  partiÃ§Ã£o Ã© minimizada:
+
+\begin{itemize}
+\item Etapa de alocaÃ§Ã£o. $J_{som}^T(X, W)$ Ã© minimizado segundo a funÃ§Ã£o de alocaÃ§Ã£o $X$. O conjunto de vetores de referÃªncia $W$ Ã© mantido fixo durante esta etapa. A expressÃ£o de $J_{som}^T(X, W)$ e de $d^T(z_i, w_{X(z_i)})$ mostra que a melhor funÃ§Ã£o de alocaÃ§Ã£o Ã© definida para cada observaÃ§Ã£o $z$ por:
+
+$$
+X^T(z) = arg max_{r \in C} \sum_{c \in C} K_T (\delta(c,r)) \parallel z - w_c \parallel^2 = arg max_{r \in C} d^T (z, w_r)
+$$
+
+O vetor de referÃªncia mais prÃ³ximo segundo a funÃ§Ã£o de distÃ¢ncia $d^T$ Ã© alocado a cada observaÃ§Ã£o.
+
+\item Etapa de minimizaÃ§Ã£o. $J_{som}^T(X, W)$ Ã© minimizado segundo o conjunto de vetores de referÃªncia $W$. Esta minimizaÃ§Ã£o acontece congelando a funÃ§Ã£o de alocaÃ§Ã£o $X$ que foi calculada anteriormente. Como $J_{som}$ Ã© convexo com relaÃ§Ã£o aos parÃ¢metros de $W$, a minimizaÃ§Ã£o pode acontecer calculando-se o valor para o qual o gradiente da funÃ§Ã£o de custo Ã© zero. Isto define o novo conjunto de vetores de referÃªncia
+
+$$
+w_c^T = \frac{\sum_{r \in C} K (\delta(c,r))Z_r}{\sum_{r \in C} K (\delta(c,r))n_r},
+$$
+
+onde $Z_r = \sum_{z_i \in A, X(z_i)=r}$ $Z_i$ é a soma de todas as observações do conjunto de treinamento $A$ que está alocado ao neurônio $r$. Note que cada novo vetor de referência é o centro de massa do vetor médio dos subconjuntos $P_r \cap A$, cada centro de massa sendo ponderado por $K (\delta(c,r))n_r$.
+\end{itemize}
+
+Segue o algoritmo sumarizado:
+
+Algoritmo em lote dos mapas topológicos: T fixo
+
+\begin{enumerate}
+\item Inicialização: $t = 0$. Selecione $p$ vetores de referência (geralmente aleatórios), a estrutura do mapa e o seu tamanho, o máximo número de iterações $N_{iter}$.
+
+\item Iteração $t$. O conjunto de vetores de referência $W^{t-1}$ é conhecido da etapa anterior,
+
+Etapa de alocação: atualize a função de alocação $X^t$ que está associada a $W^{t-1}$. Então, cada observação $z_i$ é alocada a um vetor segundo a expressão:
+
+$$
+X^T(z) = arg max_{r \in C} \sum_{c \in C} K_T (\delta(c,r)) \parallel z - w_c \parallel^2 = arg max_{r \in C} d^T (z, w_r);
+$$
+
+Etapa de minimização: aplicar a relação:
+
+$$
+w_c^T = \sum_{r \in C} K (\delta(c,r))Z_r / \sum_{r \in C} K (\delta(c,r))n_r
+$$
+
+para calcular o novo conjunto $W^t$ de vetores de referência.
+
+\item Continue até que o número máximo de iterações seja atingido, ou até $J_{som}^T$ estabilize em um mínimo local de acordo com um critério de parada.
+
+\end{enumerate}
+
+Para grandes valores de $T$, os vetores de referência se aglomeram no centro de massa da nuvem de observações. Para valores pequenos de $T$, a interação da vizinhança é fraca.
+
+Para um valor fixo de $T$, o algoritmo encontra um mínimo local da função de custo $J_{som}^T$. Kohonen sugere que se repita a minimização com o valor de $T$ sendo monotonicamente decrescido. Os vetores de referência são inicializados aleatoriamente e a ordem aparece quando o valor de $T$ ainda é alto: o mapa se desdobra até que cubra todo o espaço de distribuição das observações. O desempenho do modelo depende da escolha dos parâmetros da minimização:
+
+\begin{itemize}
+\item o intervalo de variação da temperatura [$T^{min}, T^{max}$];
+\item o número de repetições da etapa iterativa;
+\item a função que define a variação do valor de $T$.
+\end{itemize}
+
+Se a temperatura cai muito rápido, a auto-organização não é eficiente e a relação de vizinhança entre os vetores de referência não reflete a topologia do grafo.
+
+\section{Otimização em lote para mapas topológicos ($T$ decrescendo)}
+
+\begin{enumerate}
+\item Inicialização: execute o algoritmo SOM para $T = T_{max}$, defina $t = 0$
+\item Iteração $t$. O conjunto de vetores de referência $W^{t-1}$ é conhecido da etapa anterior. Calcule o novo valor da temperatura de acordo com a seguinte equação:
+$$
+T = T_{max}\ast (\frac{T_{min}}{T_{max}})^\frac{t}{N_{iter}-1}
+$$
+Para esta temperatura $T$, execute sequencialmente as duas etapas seguintes:
+\begin{itemize}
+\item Alocação: atualize a função de alocação para cada observação pertencente aos dados de treinamento da relação:
+$$
+X^T(z) = arg max_{r \in C} \sum_{c \in C} K_T (\delta(c,r)) \parallel z - w_c \parallel^2 = arg max_{r \in C} d^T (z, w_r).
+$$
+
+\item Minimização: aplique a relação
+$$
+w_c^T = \sum_{r \in C} K (\delta(c,r))Z_r / \sum_{r \in C} K (\delta(c,r))n_r
+$$
+\end{itemize}
+
+\item Repita a etapa iterativa até $ T = T_{min} $.
+\end{enumerate}
+
+Em altas temperaturas, uma única observação $z_i$, gera uma mudança significante em muitos vetores de referência, enquanto que, em baixas temperaturas, $K^T (\delta(c,r))$ pode ser negligenciado se $c \neq r$: uma observação influencia somente a atualização dos vetores de referência mais próximos.
+
+Como o algoritmo de treinamento original de Kohonen inclui uma função que define a variação do valor da temperatura dentro do intervalo [$T^{min}, T^{max}$], a convergência para uma solução ocorre em duas etapas. A primeira etapa ocorre para altos valores de $T$: repetidas iterações do algoritmo SOM (com $T$ fixo) tendem a garantir a similaridade topológica entre o conjunto de vetores de referência e o mapa. A segunda etapa acontece a baixas temperaturas $T$: o algoritmo tende a se aproximar do k-means quando $T$ é muito pequeno e $K(\delta(c,r)) \equiv 0$. Assim, a primeira etapa pode ser considerada como a etapa de inicialização do k-means usando vetores de referência iniciais que mantêm a estrutura topológica do mapa.
+
+
+\section{Algoritmo de Kohonen}
+
+O algoritmo SOM original, como proposto por Kohonen, deriva da versão de clustering dinâmico descrito anteriormente. Como para o k-means, SOM possui uma versão estocástica. Durante a fase de minimização, não é necessário finalizar o processo de minimização e calcular o mínimo global de $J_{som}^T(X, W)$ para uma dada função de alocação $X$: é preciso apenas fazê-lo decrescer. A relação $w_c^T = \sum_{r \in C} K (\delta(c,r))Z_r / \sum_{r \in C} K (\delta(c,r))n_r$ precisa ser substituída por um simples gradiente descendente. Assim, na iteração $t$ e para o neurônio $c$:
+
+$$
+w_c^t = w_c^{t-1} - \mu^t \frac{\partial J_{som}^T}{\partial w_c^{t-1}},
+$$
+
+onde $\mu^t$ é o gradiente na iteração $t$,
+
+$$
+\frac{\partial J_{som}^T}{\partial w_c} = 2 \sum_{z_i in A}K^T(\delta(c,X(z_i)))(z_i-w_c).
+$$
+
+O algoritmo em lote exige que todo o conjunto de dados de treinamento $A$ esteja disponível. A contribuição de uma observação $z_i$ ao parâmetro $w_c$ na atualização é $2 \sum_{z_i in A}K^T(\delta(c,x(z_i)))(z_i-w_c)$. Alternativamente, pode-se usar o algoritmo de gradiente estocástico que calcula o conjunto de referência novamente a cada vez que uma observação $z_i$ é apresentada. Esta versão, originalmente sugerida por Kohonen difere da versão em lote apresentada anteriormente em dois aspectos: primeiro, o fluxo de dados é usado ao invés dos dados armazenados; segundo, a função de alocação $X$ não é a mesma; o algoritmo de Kohonen usa o mesmo do k-means: $X(z_i) = arg min_c \parallel z_i - w_c \parallel ^2$.
+
+Portanto, a cada vez que uma observação é apresentada, novos vetores de referência são calculados para todos os neurônios do mapa $C$, dependendo do neurônio selecionado,
+$$
+w_c^t = w_c^{t-1} - \mu^t K^T(\delta(c,X_t(z_i)))(w_c^{t-1} - z_i).
+$$
+
+Assim, o algoritmo de Kohonen pode ser sumarizado:
+
+\textit{Algoritmo de Kohonen}
+
+\begin{enumerate}
+\item Inicialização
+
+\begin{itemize}
+\item selecione a estrutura e tamanho do mapa;
+\item escolha a posição inicial dos $p$ vetores de referência (usualmente, esta escolha é aleatória)
+\item escolha $T_{max}, T_{min}$ e o máximo número de iterações $N_{iter}$;
+\item inicialize $t = 0$.
+\end{itemize}
+
+\item Iteração $t$: conhecendo o conjunto de vetores de referência $W^{t-1}$:
+\begin{itemize}
+\item obtenha a observação atual $z_i$ (ou selecione aleatoriamente uma observação do conjunto de treinamento);
+\item calcule o novo valor de $T$:
+$$
+T = T_{max}\ast (\frac{T_{min}}{T_{max}})^\frac{t}{N_{iter}-1}
+$$
+
+\item Para este valor de $T$, duas etapas devem ser realizadas:
+
+Etapa de alocação: Conhecendo-se o valor de $W^{t-1}$, o neurônio $X^t(z_i)$ é associado à observação atual $z_i$ pela função de alocação $X(z) = arg min_r \parallel z- w_r \parallel ^2$;
+
+Etapa de minimização: o novo conjunto de referência $W^t$ é calculado; os vetores de referência são atualizados de acordo com a expressão:
+
+$$
+w_c^t = w_c^{t-1} - \mu^t K^T(\delta(c,X_t(z_i)))(w_c^{t-1} - z_i),
+$$
+
+dependendo da distância ao neurônio que foi selecionado durante a etapa de alocação.
+
+\end{itemize}
+
+\item Itere decrescendo o valor de $T$ até que o número máximo de iterações seja alcançado.
+
+\end{enumerate}

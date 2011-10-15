@@ -1,0 +1,17 @@
+/*
+ * Mapa.h
+ *
+ *  Created on: 23/08/2011
+ *      Author: Anderson
+ */
+
+#ifndef MAPA_H_
+#define MAPA_H_
+
+class Mapa {
+public:
+	Mapa();
+	virtual ~Mapa();
+};
+
+#endif /* MAPA_H_ */
