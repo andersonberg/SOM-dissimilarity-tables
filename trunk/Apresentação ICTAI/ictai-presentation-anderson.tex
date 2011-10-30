@@ -1,0 +1,196 @@
+%Apresentao ADS - CIn
+%Anderson Berg - absd@cin.ufpe.br
+
+\documentclass[pdf,t]{beamer}
+\usetheme{CinArthur2}
+%\usecolortheme{Beaver}
+
+\usepackage{time}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{longtable}
+\usepackage{amssymb,amsmath}
+\usepackage{palatino}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumerate}
+
+\setbeamertemplate{itemize item}{$\bullet$}
+\setbeamertemplate{itemize subitem}{$\checkmark$}
+\setbeamertemplate{itemize subsubitem}{$\star$}
+
+\providecommand{\abs}[1]{\lvert#1\rvert}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+
+\begin{document}
+
+% Informacoes para a Capa
+\title[Adaptive batch SOM for multiple dissimilarity data tables]{Adaptive batch SOM for multiple dissimilarity data tables}%
+%\subtitle {Uma Abordagem Simbólica}
+\author[Anderson Dantas]{ \Large{Anderson Dantas}\\
+\footnotesize{absd@cin.ufpe.br}\\
+%\author[Francisco de Carvalho]{ \Large{Francisco de Carvalho}\\
+%\footnotesize{fatc@cin.ufpe.br}\\
+\vspace*{0.25cm}
+\includegraphics[height=2.0cm]{./figuras/ufpe}\\
+\vspace*{0.5cm}
+\includegraphics[height=1.4cm]{./figuras/logo-cin}
+\date{\today}
+}
+
+% Capa
+\frame{
+  \titlepage
+}
+
+% Indice
+%\AtBeginSection[]
+%{
+%  \begin{frame}
+%    \frametitle{Índice}
+%    \scriptsize
+%    \tableofcontents[currentsection,hideothersubsections]
+%    \normalsize
+% \end{frame}
+%}
+
+%\section{Batch Self-Organizing Map}
+
+%\begin{frame}[c]
+%\frametitle{Batch Self-Organizing Map Algorithm}
+%Iterative two step algorithm: \\
+%Affectation and representation steps
+%\end{frame}
+
+%\section{Batch Self-Organizing Map for dissimilarity data}
+
+\begin{frame}[c]
+\frametitle{Batch Self-Organizing Map Algorithm for dissimilarity data}
+\begin{center}
+Iterative two step algorithm: \\
+Affectation and representation steps\\
+\end{center}
+\end{frame}
+
+\begin{frame}[c]
+\frametitle{Cost function}
+\begin{center}
+Extension of the k-means cost function
+$$J = \sum_{i = 1}^n \sum_{r = 1}^m K^T(\delta(f(e_i),r)) d(e_i, g_r)$$
+$$\lim_{|x| \to \infty} K(x) = 0$$
+\end{center}
+\end{frame}
+
+\begin{frame}[c]
+\frametitle{Generalised distance}
+$$d^T(e_i, g_{f(e_i)}) = \sum_{r=1}^m K^T(\delta(f^T(e_i), r))d(e_i, g_r)$$
+\end{frame}
+
+\begin{frame}[c]
+\frametitle{Affectation step}
+\begin{center}
+Function $f$ associates $e_i$ to the "closest" neuron
+$$
+c = f^T(e_i) = arg \min_{1 \leq r \leq m} d^T(e_i, g_r)
+$$
+\end{center}
+\end{frame}
+
+\begin{frame}[c]
+\frametitle{Representation step}
+\begin{center}
+New prototypes are selected
+$$
+g^*_r = arg \min_{e \in E} \sum_{i=1}^n K^T (\delta(f^T(e_i),r)) d^T(e_i, e_r)
+$$
+\end{center}
+\end{frame}
+
+\begin{frame}[c]
+\frametitle{Adaptive batch SOM for data based on multiple dissimilarity matrices}
+\begin{center}
+Also iterative, but three-step algorithm\\
+Representation, weighting and affectation\\
+\end{center}
+\end{frame}
+
+\begin{frame}[c]
+\frametitle{The B-SOM Algorithm}
+\begin{enumerate}
+\item Initialization
+	\begin{itemize}
+	\item Fix: $m$, $\delta$, $K^T$, $N_{iter}$, $T_{min}$, $T_{max}$, $T \leftarrow T_{max}$, $t \leftarrow 0$
+	\item Randomly select $m$ distinct prototypes
+	\item Set the map $L(m, G^0)$
+	\item Assign each object $e_i$ to the closest neuron (cluster)
+	\end{itemize}
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}[c]
+\frametitle{The B-SOM Algorithm}
+
+\end{frame}
+
+
+
+%\section{Dynamic Cluster Algorithm}
+%
+%\begin{frame}[c]
+%\frametitle{Objetivo}
+%\begin{block}{}
+%Encontrar uma partição $ P^* = (C_1, ..., C_k)$ de $E$ em $k$ clusters não-vazios e um vetor $L^* = (G_1, ..., G_i, ...G_k)$ tal que $ P^*$ e $L^*$ otimizem o critério:
+%\end{block}
+%\begin{block}{}
+%\begin{center}
+%$$\Delta(P^*, L^*) = Min\{\Delta(P,L) / P \in P_k, L \in \Lambda^k\}$$
+%\pause
+%$$\Delta(P,L) = \sum_{i = 1}^k \sum_{s \in C_i} D(x_s,G_i)$$
+%\end{center}
+%\end{block}
+%\end{frame}
+%
+%\begin{frame}[c]
+%\frametitle{Algoritmo}
+%\begin{enumerate}
+%\item Inicialização: Inicia de uma partição aleatória $P = (C_1, ..., C_i, ..., C_k)$ ou de um vetor $(G_1, ..., G_i, ..., G_k)$ de $k$ protótipos aleatórios escolhidos entre os elementos de $E$. Neste caso:
+%	\begin{itemize}
+%	\item $C_i = \emptyset$ para $i = 1, ..., k$
+%	\item Para $s = 1$ até $n$ faça:
+%		\begin{itemize}
+%		\item Atribua $s$ ao cluster $C_l$, $l = argmin_{i = 1, ..., k}D(x_s, G_i)$
+%		\item $C_l = C_l \cup \{s\}$
+%		\end{itemize}
+%	\end{itemize}
+%\end{enumerate}
+%\end{frame}
+%	
+%\begin{frame}
+%\frametitle{Algoritmo}
+%\begin{enumerate}
+%\setcounter{enumi}{1}
+%\item Etapa de representação: $i = 1$ até $k$, obter o protótipo $G_i$ que minimiza o critério:
+%$$f_{C_i}(G) = \sum_{s \in C_i} D(x_s,G), G\in\Lambda$$
+%
+%\item Etapa de alocação:
+%	\begin{itemize}
+%	\item $test \leftarrow 0$
+%	\item para $s = 1$ até $n$ faça:
+%		\begin{itemize}
+%		\item Encontre o cluster $C_m$ ao qual $s$ pertence
+%		\item Encontre o índice $l$ tal que:  $l = argmin_{i = 1, ..., k}D(x_s, G_i)$
+%		\item Se $l \neq m$:\\
+%
+%			$test \leftarrow 1$\\
+%			$C_l = C_l \cup \{s\}$ e $C_m = C_m - \{s\}$\\
+%
+%		\end{itemize}
+%	\end{itemize}
+%	
+%\item Se $test = 0$ pare, senão vá para 2
+%\end{enumerate}
+%\end{frame}
+
+\end{document} 

@@ -1,0 +1,81 @@
+%%%%%%%%%%%%%%%%%%%%%
+% Apresentacao Centro de Informatica   %
+% Template Tex Beamer de                       %
+% Arthur Alvim - afma@cin.ufpe.br           %
+% Baseado no Template NSCU                %           
+%%%%%%%%%%%%%%%%%%%%%
+
+\mode<presentation>
+
+\useinnertheme{rounded}
+\usecolortheme{arthurcin}
+
+\setbeamercolor{NCSU logo1}{fg=white,bg=adr}
+\setbeamercolor{NCSU rule}{fg=white,bg=adr}
+\setbeamercolor{NCSU logo2}{fg=white,bg=bloc}
+\setbeamercolor{NCSU footer}{fg=black,bg=white}
+\setbeamercolor{NCSU header}{fg=white,bg=black}
+\setbeamerfont{details in NCSU foot}{size=\Tiny}
+\setbeamerfont{logo in NCSU foot}{size=\scriptsize}
+\setbeamerfont{page number in NCSU foot}{size=\tiny}
+
+\setbeamercolor{section in head/foot}{parent=palette quaternary}
+\setbeamercolor{subsection in head/foot}{parent=palette primary}
+
+\setbeamercolor{author in head/foot}{parent=palette quaternary}
+\setbeamercolor{title in head/foot}{parent=palette primary}
+
+\defbeamertemplate*{footline}{NCSU theme}
+{
+  \vskip0pt%
+   \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.2\paperwidth,ht=22pt,dp=1.125ex]{title in head/foot}%    
+    \includegraphics[height=20pt]{./figuras/logo-cin3.png}%
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.8\paperwidth,ht=22pt,dp=1.125ex,leftskip=.2cm,rightskip=.2cm]{author in head/foot}%
+    \usebeamerfont{author in head/foot}%      
+      \hfill%
+\tiny{       
+      \insertshortauthor \hspace{.05cm}
+      \hfill%
+      \insertshorttitle%
+      \hfill%
+      \insertframenumber{} / \inserttotalframenumber}%
+      \vspace*{6.5pt}%
+  \end{beamercolorbox}%
+  }%
+  \vskip0pt%
+}
+
+%\defbeamertemplate*{headline}{NCSU theme}
+%{
+%  \leavevmode%
+%  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex]{section in head/foot}%
+%  \centering\insertsectionhead%
+%  \end{beamercolorbox}%
+%  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex]{subsection in head/foot}%
+%  \centering\insertsubsectionnavigationhorizontal{.5\paperwidth}{}{\hskip0pt plus1filll}%
+%  \end{beamercolorbox}%
+%}
+
+\setbeamersize{text margin left=1em,text margin right=1em}
+
+\setbeamerfont{block title}{size={}}
+
+\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+
+\setbeamertemplate{frametitle}
+{
+\begin{beamercolorbox}[wd=1\paperwidth,ht=4ex,dp=1.125ex]{frametitle}
+
+ \hspace{0.2cm}
+ \insertframetitle
+\end{beamercolorbox}
+\par
+}
+
+\mode
+<all>
