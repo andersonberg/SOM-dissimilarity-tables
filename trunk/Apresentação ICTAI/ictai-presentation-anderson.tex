@@ -28,7 +28,7 @@
 % Informacoes para a Capa
 \title[Adaptive batch SOM for multiple dissimilarity data tables]{Adaptive batch SOM for multiple dissimilarity data tables}%
 %\subtitle {Uma Abordagem Simbólica}
-\author[Anderson Dantas, Francisco de Carvalho]{ \Large{Anderson Dantas \and \\ Francisco de Carvalho}\\
+\author[Anderson, Francisco]{ \Large{Anderson Dantas \and \\ Francisco de Carvalho}\\
 \footnotesize{\{absd, fatc\}@cin.ufpe.br}\\
 %\author[Francisco de Carvalho]{ \Large{Francisco de Carvalho}\\
 %\footnotesize{fatc@cin.ufpe.br}\\
@@ -148,7 +148,7 @@ D_{\mbox{\boldmath$\lambda$\unboldmath$_l$}}(e_i,G_l) = \sum_{j=1}^p \lambda_{lj
 $$
 \end{center}
 \begin{itemize}
-\item To compare clusters and theis prototypes using a different matching measure
+\item To compare clusters and theirs prototypes using a different matching measure
 \item $d_j(e_i,G_l)$ is the local dissimilarity between an example and the cluster prototype
 \end{itemize}
 \end{frame}
@@ -195,7 +195,7 @@ $$
 
 
 \begin{frame}[c]
-\frametitle{Empirical results}
+\frametitle{Experiments}
 \begin{center}
 
 \begin{itemize}
@@ -203,6 +203,8 @@ $$
 \item Measures: corrected Rand index (CR), F-measure, overall error rate of classification (OERC)
 \item Confusion matrix
 \item Data sets described by a matrix of objects x real-valued attributes
+\item Original batch SOM for single dissimilarity matrix
+\item Adaptive batch SOM for multiple dissimilarity matrices
 %\item All attributes x single attibutes
 \end{itemize}
 
@@ -234,15 +236,15 @@ $$
 \begin{table}[h!]
 \begin{center}
 %\caption{Wine data set: $CR$, $F-measure$, and $OERC$ indexes} \label{wine_index}
-{\scriptsize
+%{\scriptsize
 \begin{tabular}{|c|c|c|} \hline
-Indexes & B-SOM & AB-SOM \\ \hline
+Indexes & B-SOM & AB-SOM for multiple dissimilarity matrices\\ \hline
 $CR$ & 0.31 & 0.42 \\ \hline
 $F-measure$ & 0.45 & 0.52 \\ \hline
 $OERC$ & 27.00\% & 9.00\% \\ \hline
 
 \end{tabular}
-}
+%}
 \end{center}
 \end{table}
 \end{frame}
@@ -251,7 +253,7 @@ $OERC$ & 27.00\% & 9.00\% \\ \hline
 \frametitle{Confusion matrix}
 \begin{table}[!h]
 \begin{center}
-\scriptsize{
+%\scriptsize{
 \begin{tabular}{|c|c|c|c||c|}
 \hline
 Cluster/Class & 1 & 2 & 3 & Majority Class \\ \hline
@@ -267,7 +269,7 @@ Cluster/Class & 1 & 2 & 3 & Majority Class \\ \hline
 1,4 & 27 & 1 & 0 & 1\\ \hline
 
 \end{tabular}
-}
+%}
 \end{center}
 \end{table}
 \end{frame}
@@ -304,7 +306,7 @@ Cluster/Matrix & 1 & 2 & 3 & 4 & 5 & 6 \\ \hline
 \begin{itemize}
 \item The algorithm is able to partition objects taking into account their relational description given by multiple dissimilarity matrices.
 \item Learn relevance weights that change at each iteration and are different from one cluster to another.
-\item Performed better than non-adaptive model for most data bases.
+\item Performed better than batch SOM for single dissimilarity matrix on most data bases.
 \end{itemize}
 \end{frame}
 
