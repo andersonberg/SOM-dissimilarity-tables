@@ -35,7 +35,7 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, individua
         prototipos = {}
 #       clusters = []
         individuals = []
-        
+
         individuals.extend(individuals_objects)
 
         mapa = Mapa(individuals,  mapa_x, mapa_y, q)
@@ -48,11 +48,11 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, individua
         for objeto in mapa.objetos:
                 criterios = [ (mapa.calcula_criterio_adaptativo(objeto, denom, matrizes, cluster.point), cluster) for cluster in mapa.mapa.flat ]
                 (menor_criterio, menor_criterio_cluster) = min(criterios)
-                
+
                 # Insere o objeto no cluster de menor critério
                 mapa.mapa[menor_criterio_cluster.point.x, menor_criterio_cluster.point.y].inserir_objeto(objeto)
                 objeto.set_cluster(mapa.mapa[menor_criterio_cluster.point.x, menor_criterio_cluster.point.y])
-                        
+
         return mapa
 
 
@@ -66,7 +66,7 @@ def main():
 
         text = []
 #        text.append("\n*Modelo adaptativo")
-        
+
         criterios_energia = []
         oercs = []
 
@@ -77,7 +77,7 @@ def main():
                 #Etapa de inicialização
                 text.append("\n\n#####################################")
                 text.append("\n# Repetição do experimento: " + str(a) + "\n")
-        
+
                 print "Repetição ", a
                 print "..."
 
@@ -85,8 +85,8 @@ def main():
                 T = t_max
                 t = 0.0
                 denom = 2. * pow(T,2)
-                mapa = inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, individuals_objects)  
-        
+                mapa = inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, individuals_objects)
+
                 while T > t_min:
                 # while t < (n_iter - 1):
                         #Step 1: computation of the best prototypes
@@ -99,18 +99,18 @@ def main():
 
                         #Step 2: computation of the best weights
                         mapa.atualiza_pesos(denom, matrizes)
-                                
+
                         #Step 3: definition of the best partition
                         mapa.atualiza_particao(denom, matrizes, mapa.calcula_criterio_adaptativo)
 
-                #Imprime os clusters finais             
+                #Imprime os clusters finais
                 text.extend(imprime_clusters(mapa))
 
                 no_clusters_completos = 0
                 for cluster in mapa.mapa.flat:
                         if len(cluster.objetos) > 0:
                                 no_clusters_completos += 1
-                        
+
                 energia = mapa.calcula_energia_adaptativo(matrizes, T)
                 criterios_energia.append(energia)
 
@@ -141,8 +141,8 @@ def main():
 
         criterios_ordenados = sorted(criterios_energia)
         it = 0
-        while(criterios_ordenados[it] < 1.0):
-                it += 1
+#        while(criterios_ordenados[it] < 1.0):
+#                it += 1
 
         #menor_criterio_energia = min(criterios_energia)
         menor_criterio_energia = criterios_ordenados[it]
@@ -151,7 +151,7 @@ def main():
         text.append("\nMenor oerc: " + str(oercs.index(menor_erro)))
 
         resultado = open(filename_result, 'a')
-        resultado.writelines(text)      
+        resultado.writelines(text)
         resultado.close()
 
         print "Fim do experimento."
@@ -159,3 +159,4 @@ def main():
 if __name__ == '__main__':
         main()
 #       cProfile.run('main()', 'som_prof')
+

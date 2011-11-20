@@ -28,9 +28,9 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, individua
 
     prototipos = []
     individuals = []
-    
+
     individuals.extend(individuals_objects)
-    
+
     mapa = Mapa(individuals,  mapa_x, mapa_y, q)
 
     #valor de m
@@ -46,15 +46,15 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, individua
     for objeto in mapa.objetos:
         criterios = [ (mapa.calcula_criterio_soma(objeto, denom, matrizes, cluster.point), cluster) for cluster in mapa.mapa.flat ]
         (menor_criterio, menor_criterio_cluster) = min(criterios)
-        
+
         # Insere o objeto no cluster de menor critério
         mapa.mapa[menor_criterio_cluster.point.x, menor_criterio_cluster.point.y].inserir_objeto(objeto)
         objeto.set_cluster(mapa.mapa[menor_criterio_cluster.point.x, menor_criterio_cluster.point.y])
-                    
+
     return mapa
-    
+
 # def calcula_criterio(obj, mapa, denom, matrizes, point1, m):
-    
+
     # sum_1 = np.exp( -delta(point1, cluster.point)/denom ) * np.sum(np.array([ np.sum([matriz[int(obj.indice), int(prototipo.indice)] for prototipo in cluster.prototipos]) for matriz in matrizes] ) * (cluster.pesos**m) )
 
     # return sum_1
@@ -63,7 +63,7 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, individua
 # def calcula_prototipo(objeto_alvo, objetos, mapa, denom, matrizes, cluster, m):
 
     # sum_1 = np.sum([np.exp(-(cluster.deltas[obj.cluster.point]) / denom) * np.sum(np.array( [matriz[int(objeto_alvo.indice),int(obj.indice)] for matriz in matrizes ])  * (cluster.pesos**m) ) for obj in self.objetos])
-                    
+
     # return sum_1
 
 # Seleciona o melhor protótipo para cada cluster
@@ -72,12 +72,12 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, individua
         # if len(cluster.objetos) > 0:
 
             # somas = [ (calcula_prototipo(obj, individuals, mapa, denom, matrizes, cluster, m), obj) for obj in individuals ]
-            
+
             # #se q = 1
             # (menor_criterio, menor_criterio_obj) = min(somas)
             # novo_prototipo = Individual(menor_criterio_obj.indice, menor_criterio_obj.id2, menor_criterio_obj.nome)
             # cluster.prototipo = novo_prototipo
-            
+
     # return mapa
 
 # def delta(point1, point2):
@@ -89,7 +89,7 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, individua
 
     # for cluster in mapa.flat:
         # for j in range (len(cluster.pesos)):
-            
+
             # matriz_atual = matrizes[j]
             # numerador = np.sum( [ np.exp(-delta(objeto.cluster.point, cluster.point) / denom) * np.sum([matriz_atual[int(objeto.indice),int(prototipo.indice)] for prototipo in cluster.prototipos ]) for objeto in objetos ] )
 
@@ -101,16 +101,16 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, individua
             # cluster.pesos[j] = pow(soma, -1)
 
 def main():
-    
+
 #   if len(sys.argv) != 2:
 #       print 'usage: ./som_diss_table_adap.py configuration_file'
 #       sys.exit(1)
-    
-    
+
+
     conf_file, nome_base = inicio.lerArquivoConfig()
     matrizes, text, mapa_x, mapa_y, repeticoes, q, t_min, t_max, n_iter, individuals_objects, classes_a_priori = config.config(conf_file)
     filename_result, filename_individuos, resultado, file_individuos = inicio.criaArquivos(conf_file, nome_base, text, mapa_x, mapa_y, repeticoes, t_max, n_iter, "_somatorio")
-    
+
     text = []
     criterios_energia = []
     oercs = []
@@ -123,7 +123,7 @@ def main():
 
         text.append("\n\n#####################################")
         text.append("\nRepetição do experimento: " + str(a) + "\n")
-    
+
         print "Repetição ", a
         print "..."
 
@@ -145,18 +145,18 @@ def main():
 
             #Step 2: computation of the best weights
             mapa.atualiza_pesos_soma(denom, matrizes)
-                
+
             #Step 3: definition of the best partition
-            
+
             mapa.atualiza_particao(denom, matrizes, mapa.calcula_criterio_soma)
 
         no_clusters_completos = 0
-        #Imprime os clusters finais             
+        #Imprime os clusters finais
         text.extend(imprime_clusters(mapa))
         for cluster in mapa.mapa.flat:
             if len(cluster.objetos) > 0:
                 no_clusters_completos += 1
-            
+
         energia = mapa.calcula_energia_soma(matrizes, T)
         criterios_energia.append(energia)
 
@@ -184,8 +184,8 @@ def main():
 
     criterios_ordenados = sorted(criterios_energia)
     it = 0
-    while(criterios_ordenados[it] < 1.0):
-        it += 1
+#    while(criterios_ordenados[it] < 1.0):
+#        it += 1
 
     menor_criterio_energia = criterios_ordenados[it]
     menor_erro = min(oercs)
@@ -193,10 +193,11 @@ def main():
     text.append("\nMenor oerc: " + str(oercs.index(menor_erro)))
 
     resultado = open(filename_result, 'a')
-    resultado.writelines(text)      
+    resultado.writelines(text)
     resultado.close()
 
     print "Fim do experimento."
 
 if __name__ == '__main__':
     main()
+
