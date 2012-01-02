@@ -1,0 +1,63 @@
+%% M.Sc. Thesis
+%% Author: Anderson Berg
+%% CIn-UFPE
+
+\chapter{SOM para dados relacionais baseados em múltiplas tabelas de dissimilaridade}
+
+Neste capítulo introduzimos um mapa auto-organizável por lote para dados relacionais baseados em múltiplas matrizes de dissimilaridade. O objetivo do modelo apresentado é mapear objetos levando em conta suas descrições relacionais dadas por múltiplas matrizes de dissimilaridade. O modelo aqui proposto é um algoritmo iterativo composto por três etapas, são elas: representação, ponderação e afetação. É importante notar que por ser um algoritmo por lote, todo o conjunto de dados é apresentado ao mapa antes que quaisquer alterações sejam realizadas.
+
+\section{O algoritmo}
+
+Seja $E = \{e_1,\ldots,e_n\}$ o conjunto de $n$ objetos e $p$ matrizes de dissimilaridade \textbf{D}$_j =[d_j(e_i,e_l)] \, (j=1,\ldots,p)$, onde $d_j(e_i,e_l)$ denota a dissimilaridade entra dois objetos $e_i$ e $e_l \, (i,l=1,\ldots,n)$ na matriz de dissimilaridade \textbf{D}$_j$.
+
+Uma característica importante do modelo introduzido é que este assume que o protótipo $G_k$ do agrupamento $C_k$ é um subconjunto de cardinalidade fixa $1 \leq q << n$ do conjunto $E$ (por questão de simplicidade, geralmente $q = 1$), isto é, $G_k \in E^{(q)} = \{A \subset E: |A| = q\}$.
+
+O algoritmo busca minimizar uma função objetivo dada por:
+
+\begin{equation}
+J = \sum_{e_i \in E} \sum_{l=1}^c K^T(\delta(\chi(e_i),l)) D_{\mbox{\boldmath$\lambda$\unboldmath$_l$}}(e_i,G_l) 
+\end{equation}
+
+\noindent onde $D_{\mbox{\boldmath$\lambda$\unboldmath$_l$}}$ é a dissimilaridade global entre um objeto $e_i \in P_l$ e o protótipo do agrupamento $G_l \in E^{(q)}$, parametrizada pelo vetor de pesos \boldmath$\lambda$\unboldmath$_l \, = (\lambda_{l1}, \ldots, \lambda_{lp})$ das matrizes de dissimilaridade \textbf{D}$_j$ no agrupamento $P_l \, (l=1,\ldots,c)$.
+
+De acordo com a função de alocação, existem diferentes algoritmos SOM por lote. Neste trabalho consideramos funções de alocação com pesos para cada matriz de dissimilaridade, sendo estes pesos estimados localmente ou globalmente.
+
+Através da função de alocação com pesos estimados localmente, é possível comparar agrupamentos e seus protótipos usando diferentes medidas associadas a cada agrupamento que muda a cada iteração, isto é, a distância não é determinada absolutamente e é diferente de um agrupamento para outro.
+
+A função de alocação parametrizada pelo vetor de pesos \boldmath$\lambda$\unboldmath$_l \, = (\lambda_{l1}, \ldots, \lambda_{lp})$, onde $\lambda_{lj} > 0$ e $\prod_{j=1}^p \lambda_{lj} = 1$ e associada ao agrupamento $P_l \, (l=1,\ldots,c)$ é definida pela seguinte expressão:
+
+\begin{equation}\label{aloc}
+D_{\mbox{\boldmath$\lambda$\unboldmath$_l$}}(e_i,G_l) = \sum_{j=1}^p \lambda_{lj} D_j(e_i,G_l) = \sum_{j=1}^p \lambda_{lj} \sum_{e \in G_l} d_j(e_i,e)
+\end{equation}
+
+\noindent onde $D_j(e_i,G_l) = \sum_{e \in G_l} d_j(e_i,e)$ representa a dissimilaridade local entre um exemplo $e_i \in P_l$ e o protótipo do agrupamento $G_l \in E^{(q)}$ na matriz \textbf{D}$_j  \, (j=1,\ldots,p)$.
+
+O princípio da função de alocação definida por um vetor de pesos estimado globalmente para todos os agrupamentos é que há uma distância para comparar os agrupamentos e seus protótipos, distância esta que muda a cada iteração, mas é a mesma para todos os agrupamentos.
+
+A função de alocação parametrizada pelo vetor de pesos boldmath$\lambda$\unboldmath$_l$ \, =\boldmath$\lambda$\unboldmath$ \, = (\lambda_{1}, \ldots, \lambda_{p}) \, (l=1,\ldots,c)$, onde $\lambda_{j} > 0$ and $\prod_{j=1}^p \lambda_{j} = 1$, é expressa da seguinte forma:
+
+\begin{equation}\label{aloc-global}
+D_{\mbox{\boldmath$\lambda$\unboldmath}}(e_i,G_l) = \sum_{j=1}^p \lambda_{j} D_j(e_i,G_l) = \sum_{j=1}^p \lambda_{j} \sum_{e \in G_l} d_j(e_i,e)
+\end{equation} 
+
+\noindent onde $D_j(e_i,G_l)$, novamente representa a dissimilaridade local entre um exemplo $e_i \in P_l$ e o protótipo do agrupamento $G_l \in E^{(q)}$ na matriz \textbf{D}$_j  \, (j=1,\ldots,p)$.
+
+Quando $T$ é fixo, a minimização da função $J$ é realizada iterativamente em três etapas: representação, ponderação e afetação.
+
+\subsection{Etapa de representação: determinação dos melhores protótipos}
+
+Na etapa de representação, a partição $P^{(t-1)}=(P_1^{(t-1)},\ldots,P_c^{(t-1)})$ e os vetores de pesos \mbox{\boldmath$\lambda$\unboldmath$_l$}$^{(t-1)} \, (r=1,\ldots, c)$ são fixos. A função objetivo $J$ é minimizada de acordo com os protótipos.
+
+\begin{proposition}\label{prop:prototype}
+O protótipo é atualizado de acordo com a função de alocação usada:
+\begin{enumerate}
+\item Se a função de alocação for dada pela equação \ref{aloc}, calcule o protótipo $G_l^{(t)} = G^{*} \in E^{(q)}$ do agrupamento $P_l^{(t-1)}$ ($\, l = 1, \ldots, c$) segundo a expressão:
+
+\begin{equation} \label{prot-1}
+G^{*} = argmin_{G \in E^{(q)}} \sum_{e_i \in E} K^T(\delta(\chi^{(t-1)}(e_i),l)) \sum_{j=1}^p 
+\lambda_{lj}^{(t-1)} \sum_{e \in G} d_j(e_i,e)
+\end{equation}
+
+\end{enumerate}
+
+\end{proposition}

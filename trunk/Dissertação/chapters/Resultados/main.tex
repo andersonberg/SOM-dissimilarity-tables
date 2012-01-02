@@ -1,0 +1,232 @@
+%% M.Sc. Thesis
+%% Author: Anderson Berg
+%% CIn-UFPE
+
+\chapter{Resultados}
+
+\section{Base de dados Íris}
+
+\begin{table}[h!]
+\begin{center}
+\caption{Base de dados Íris: í­ndices $CR$, $F-measure$, e $OERC$} \label{iris_index}
+%{\scriptsize
+\begin{tabular}{|c|c|c|c|c|} \hline
+ Índices & $T_{max}$ & B-SOM & AB-SOM & global AB-SOM \\ \hline
+\multirow{4}{1.8cm}{$CR$} & 6 & 0.4017 & 0.4847 & 0.4599\\ 
+ & 7 & 0.3999 & 0.5067 & 0.5157 \\ 
+ & 9 & 0.3979 & 0.3978 & 0.4913 \\ 
+ & 16 & 0.3958 & 0.4653 & 0.3889 \\ \hline
+\multirow{4}{1.8cm}{$F-measure$} & 6 & 0.4931 & 0.5785 & 0.5501 \\
+ & 7 & 0.5229 & 0.6071 & 0.5575  \\
+ & 9 & 0.5394 & 0.5383 & 0.5490  \\
+ & 16 & 0.5340 & 0.5742 & 0.5250 \\ \hline
+\multirow{4}{1.8cm}{$OERC$} & 6 & 2.67\% & 4.00\% &  4.67\% \\ 
+ & 7 &  2.67\% & 4.67\% & 4.00\% \\ 
+ & 9 & 4.67\% & 3.33\% & 5.49\% \\ 
+ & 16 & 2.00\% & 4.67\% & 3.33\% \\ \hline
+
+\end{tabular}
+%}
+\end{center}
+\end{table}
+
+\begin{table}[h!]
+\caption{Base Íris: Matrizes ($T_{max} = 16$)} \label{iris_matrices}
+\begin{center}
+%{\scriptsize
+\begin{tabular}{|c|c|c|}
+\hline
+Modelo & Matriz mais importante & Matriz menos importante \\ \hline
+AB-SOM & 3-Petal length & 1-Sepal length \\ \hline
+global AB-SOM & 3-Petal length & 2-Sepal width \\ \hline
+\end{tabular}
+%}
+\end{center}
+\end{table}
+
+\begin{table}[!h]
+\caption{Base Íris: matriz de confusão do algoritmo AB-SOM para mútiplas tabelas de dissimilaridade ($T_{max} = 6$)}\label{iris_adapt_matrix}
+\begin{center}
+%{\scriptsize
+\begin{tabular}{|c|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{} &
+\multicolumn{3}{|c|}{Classes}
+\\ \cline{2-4}
+Agrupamentos & 1-Iris setosa & 2-Iris versicolour & 3-Iris virginica \\ \hline
+0,0 & 0 & 16 & 0 \\ \hline
+0,1 & 0 & 12 & 0 \\ \hline
+0,2 & 0 & 1 & 10 \\ \hline
+0,3 & 0 & 4 & 0 \\ \hline
+0,4 & 0 & 0 & 12 \\ \hline
+0,5 & 0 & 0 & 3 \\ \hline
+0,6 & 0 & 0 & 0 \\ \hline
+0,7 & 38 & 0 & 0 \\ \hline \hline
+1,0 & 0 & 2 & 10 \\ \hline
+1,1 & 0 & 9 & 0 \\ \hline
+1,2 & 0 & 3 & 0 \\ \hline
+1,3 & 0 & 0 & 6 \\ \hline
+1,4 & 0 & 0 & 4 \\ \hline
+1,5 & 0 & 3 & 3 \\ \hline
+1,6 & 0 & 0 & 2 \\ \hline
+1,7 & 12 & 0 & 0 \\ \hline
+\end{tabular}
+%}
+\end{center}
+\end{table}
+
+\begin{table}[h!]
+\caption{Base Íris: Matriz de pesos final do algoritmo AB-SOM para múltiplas tabelas de dissimilaridade ($T_{max} = 6$)}\label{iris_absom_weight}
+\begin{center}
+%{\scriptsize
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{} &
+\multicolumn{4}{|c|}{Matriz}
+\\ \cline{2-5}
+Agrupamentos & 1-Sepal length & 2-Sepal width & 3-Petal length & 4-Petal width\\ \hline
+0,0 & 0.5878 & 0.5075 & \textbf{2.1617} & \textbf{1.5507}\\ \hline
+0,1 & 0.1438 & 0.7925 & \textbf{1.5381} & \textbf{5.7034}\\ \hline
+0,2 & 0.1193 & \textbf{47.9332} & 0.5631 & 0.3104\\ \hline
+0,3 & 0.7568 & 0.9139 & \textbf{1.7698} & 0.8169\\ \hline
+0,4 & 0.3581 & 0.3508 & \textbf{3.3944} & \textbf{2.3451}\\ \hline
+0,5 & \textbf{1.7980} & 0.2266 & \textbf{2.7677} & 0.8866\\ \hline
+0,6 & \textbf{1.0037} & 0.3404 & \textbf{1.6919} & \textbf{1.7297}\\ \hline
+0,7 & 0.2591 & 0.0672 & \textbf{5.2699} & \textbf{10.8944}\\ \hline
+1,0 & 0.4403 & 0.3797 & \textbf{4.1288} & \textbf{1.4484}\\ \hline
+1,1 & 0.2676 & 0.2180 & \textbf{4.7063} & \textbf{3.6428}\\ \hline
+1,2 & 0.1780 & \textbf{2.1141} & \textbf{1.1214} & \textbf{2.3694}\\ \hline
+1,3 & \textbf{1.7573} & 0.0686 & \textbf{3.2489} & \textbf{2.5531}\\ \hline
+1,4 & 0.3215 & 0.1939 & \textbf{4.4941} & \textbf{3.5684}\\ \hline
+1,5 & \textbf{1.4477} & 0.1896 & \textbf{1.0308} & \textbf{3.5350}\\ \hline
+1,6 & \textbf{2.0289} & 0.7747 & 0.6483 & 0.9812\\ \hline
+1,7 & 0.4077 & 0.1109 & \textbf{5.3766} & \textbf{4.1132}\\ \hline
+\end{tabular}
+%}
+\end{center}
+\end{table}
+
+
+
+\section{Base de dados E.coli}
+
+\begin{table}[h!]
+\begin{center}
+\caption{Base E.coli: índices $CR$, $F-measure$, e $OERC$} \label{ecoli_index}
+
+\begin{tabular}{|c|c|c|c|c|} \hline
+ Índices & $T_{max}$ & B-SOM & AB-SOM & global AB-SOM \\ \hline
+\multirow{4}{1.8cm}{$CR$} & 4 & 0.3035 & 0.3213 & 0.2739 \\ 
+ & 4.5 & 0.3462 & 0.2899 & 0.3165 \\ 
+ & 6 & 0.3264 & 0.2867 & 0.3555 \\ 
+ & 10 & 0.3303 & 0.2998 & 0.2925 \\ \hline
+\multirow{4}{1.8cm}{$F-measure$} & 4 & 0.4473 & 0.4629 & 0.4082 \\
+ & 4.5 & 0.5486 & 0.4153 & 0.4680 \\
+ & 6 & 0.4631 & 0.4036 & 0.5265 \\
+ & 10 & 0.5187 & 0.4385 & 0.4460 \\ \hline
+\multirow{4}{1.8cm}{$OERC$} & 4 & 21.43\% & 17.56\% & 24.40\% \\ 
+ & 4.5 & 16.37\% & 25.30\% & 20.54\% \\ 
+ & 6 & 16.37\% & 24.11\% & 14.88\% \\ 
+ & 10 & 15.77\% & 24.70\% & 24.40\% \\ \hline
+
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[h!]
+\caption{Base E.coli: Matrizes ($T_{max} = 4$)} \label{ecoli_matrices}
+\begin{center}
+
+\begin{tabular}{|c|c|c|}
+\hline
+Modelo & Matriz mais importante & Matriz menos importante \\ \hline
+AB-SOM & 5 & 3\\ \hline
+global AB-SOM & 4 & 3\\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[h!]
+\caption{Base E.coli: matriz de confusão do algoritmo AB-SOM global para múltiplas tabelas de dissimilaridade ($T_{max} = 10$)}\label{ecoli_adapt_matrix}
+\begin{center}
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{} &
+\multicolumn{8}{|c|}{Classes}
+\\ \cline{2-9}
+Agrupamentos & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\ \hline
+0,0 & 0 & 18 & 0 & 0 & 16 & 1 & 0 & 0 \\ \hline
+0,1 & 0 & 10 & 0 & 1 & 24 & 0 & 0 & 0 \\ \hline
+0,2 & 0 & 6 & 1 & 0 & 17 & 1 & 0 & 0 \\ \hline
+0,3 & 6 & 0 & 0 & 0 & 1 & 4 & 0 & 0 \\ \hline
+0,4 & 22 & 0 & 0 & 0 & 2 & 0 & 0 & 0 \\ \hline \hline
+1,0 & 1 & 1 & 0 & 1 & 6 & 5 & 5 & 2 \\ \hline
+1,1 & 0 & 0 & 0 & 0 & 10 & 0 & 0 & 0 \\ \hline
+1,2 & 10 & 0 & 0 & 0 & 0 & 1 & 0 & 0 \\ \hline
+1,3 & 15 & 0 & 0 & 0 & 0 & 1 & 0 & 0 \\ \hline
+1,4 & 22 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline \hline
+2,0 & 2 & 0 & 1 & 0 & 0 & 29 & 0 & 9 \\ \hline
+2,1 & 0 & 0 & 0 & 0 & 0 & 10 & 0 & 9 \\ \hline
+2,2 & 6 & 0 & 0 & 0 & 1 & 0 & 0 & 0 \\ \hline
+2,3 & 25 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+2,4 & 34 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[h!]
+\caption{Base E.coli: Matriz de pesos final do algoritmo AB-SOM global para múltiplas tabelas de dissimilaridade ($T_{max} = 10$)}\label{ecoli_gl_absom_weight}
+\begin{center}
+{\scriptsize
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\multicolumn{5}{|c|}{Matriz}\\ \cline{1-5}
+1 & 2 & 3 & 4 & 5\\ \hline
+0.7636 & 0.7101 & 0.4876 & \textbf{2.1144} & \textbf{1.7887}\\ \hline
+
+\end{tabular}
+}
+\end{center}
+\end{table}
+
+
+
+\section{Base de dados Thyroid}
+
+\begin{table}[h!]
+\begin{center}
+\caption{Base de dados Thyroid: índices $CR$, $F-measure$ e $OERC$} \label{thyroid_index}
+
+\begin{tabular}{|c|c|c|c|c|} \hline
+ Índices & $T_{max}$ & B-SOM & AB-SOM & AB-SOM global\\ \hline
+\multirow{4}{1.8cm}{$CR$} & 4 & 0.3662 & 0.4539 & 0.5700 \\
+ & 5 & 0.3642 & 0.3689 & 0.3604 \\ 
+ & 6 & 0.2618 & 0.3183 & 0.5882 \\ 
+ & 10 & 0.3784 & 0.3660 & 0.3654 \\ \hline
+\multirow{4}{1.8cm}{$F-measure$} & 4 & 0.4961 & 0.5841 & 0.5978 \\
+ & 5 & 0.4870 & 0.4788 & 0.4678 \\
+ & 6 & 0.4019 & 0.4850 & 0.6401 \\
+ & 10 & 0.5023 & 0.5048 & 0.4885 \\ \hline
+\multirow{4}{1.8cm}{$OERC$} & 4 & 9.77\% & 3.25\% & 4.65\% \\ 
+ & 5 & 9.30\% & 5.58\% & 4.19\% \\ 
+ & 6 & 11.16\% & 4.19\% & 7.44\% \\ 
+ & 10 & 9.30\% & 3.72\% & 5.12\% \\ \hline
+
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[h!]
+\caption{Base de dados Thyroid: Matrizes ($T_{max} = 4$)} \label{thyroid_matrices}
+\begin{center}
+{\scriptsize
+\begin{tabular}{|c|c|c|}
+\hline
+Modelo & Matriz mais importante & Matriz menos importante \\ \hline
+AB-SOM & 4-TSH & 1-T3-resin uptake test\\ \hline
+global AB-SOM & 5-maximal absolute difference in TSH & 1-T3-resin uptake test\\ \hline
+\end{tabular}
+}
+\end{center}
+\end{table}
