@@ -51,13 +51,47 @@ Na etapa de representação, a partição $P^{(t-1)}=(P_1^{(t-1)},\ldots,P_c^{(t-1)}
 \begin{proposition}\label{prop:prototype}
 O protótipo é atualizado de acordo com a função de alocação usada:
 \begin{enumerate}
-\item Se a função de alocação for dada pela equação \ref{aloc}, calcule o protótipo $G_l^{(t)} = G^{*} \in E^{(q)}$ do agrupamento $P_l^{(t-1)}$ ($\, l = 1, \ldots, c$) segundo a expressão:
+\item Se a função de alocação é definida pela equação \ref{aloc}, calcule o protótipo $G_l^{(t)} = G^{*} \in E^{(q)}$ do agrupamento $P_l^{(t-1)}$ ($\, l = 1, \ldots, c$) segundo a expressão:
 
-\begin{equation} \label{prot-1}
+\begin{equation} \label{prototipo}
 G^{*} = argmin_{G \in E^{(q)}} \sum_{e_i \in E} K^T(\delta(\chi^{(t-1)}(e_i),l)) \sum_{j=1}^p 
 \lambda_{lj}^{(t-1)} \sum_{e \in G} d_j(e_i,e)
+\end{equation}
+
+\item Se a função de alocação é definida pela equação \ref{aloc-global}, calcule o protótipo $G_l^{(t)} = G^{*} \in E^{(q)}$ do agrupamento $P_l^{(t-1)}$ ($\, r = 1, \ldots, c$) de acordo com a equação seguinte:
+\begin{equation} \label{prototipo-global}
+G^{*} = argmin_{G \in E^{(q)}} \sum_{e_i \in E} K^T(\delta(\chi^{(t-1)}(e_i),l)) \sum_{j=1}^p 
+\lambda_{j}^{(t-1)} \sum_{e \in G} d_j(e_i,e)
 \end{equation}
 
 \end{enumerate}
 
 \end{proposition}
+
+\subsection{Etapa de ponderação: definição dos melhores vetores de pesos}
+
+Durante a etapa de ponderação, a partição $P^{(t-1)}=(P_1^{(t-1)},\ldots,P_c^{(t-1)})$ e os 
+protótipos $G_l^{(t)} \in E^{(q)} \, (l=1,\ldots, c)$ são mantidos fixos. A função objetivo $J$ é minimizada de acordo com os vetores de pesos.
+
+\begin{proposition}\label{prop:distance}
+Os vetores de pesos são atualizados de acordo com a função de alocação utilizada:
+
+\begin{enumerate}
+\item Se a função de alocação é definida pela equação \ref{aloc}, os vetores de pesos \mbox{\boldmath$\lambda$\unboldmath$_l$}$^{(t)}=(\lambda_{l1}^{(t)},\ldots,\lambda_{lp}^{(t)}) \, (l=1,\ldots,c)$, com $\lambda^{(t)}_{lj} > 0$ e $\prod_{j=1}^{p} \lambda^{(t)}_{lj} = 1$, têm seus pesos $\lambda^{(t)}_{lj} \, (j=1,\ldots,p)$ calculados de acordo com a equação:
+
+\begin{equation} \label{weight-1}
+\lambda^{(t)}_{lj} = \frac{\left\{\displaystyle \prod_{h=1}^p \left[\sum_{e_i \in E}  K^T(\delta(\chi^{(t-1)}(e_i),l)) \sum_{e \in G_l^{(t)}} d_h(e_i,e)\right]\right\}^{\frac{1}{p}}}{\displaystyle \left[\sum_{e_i \in E}  K^T(\delta(\chi^{(t-1)}(e_i),l)) \sum_{e \in G_l^{(t)}} d_j(e_i,e)\right]}
+\end{equation}
+
+\item Se a função de alocação é definida pela equação \ref{aloc-global}, o vetor de pesos \mbox{\boldmath$\lambda$\unboldmath}$^{(t)}=(\lambda_{1}^{(t)},\ldots,\lambda_{p}^{(t)})$ , com $\lambda^{(t)}_{j} > 0$ e $\prod_{j=1}^{p} \lambda^{(t)}_{j} = 1$, tem seus pesos $\lambda^{(t)}_{j} \, (j=1,\ldots,p)$ calculados segundo a equação:
+
+\begin{equation} \label{weight-global}
+\lambda^{(t)}_{j} = \frac{\left\{\displaystyle \prod_{h=1}^p\left[\sum_{r=1}^c\left(\sum_{e_i \in E}  K^T(\delta(\chi^{(t-1)}(e_i),l)) \sum_{e \in G_l^{(t)}} d_h(e_i,e)]\right)\right]\right\}^{\frac{1}{p}}}{\displaystyle \sum_{r=1}^c \left[\sum_{e_i \in E}  K^T(\delta(\chi^{(t-1)}(e_i),l)) \sum_{e \in G_l^{(t)}} d_j(e_i,e)\right]}
+\end{equation}
+
+\end{enumerate}
+\end{proposition}
+
+\textbf{Prova}
+
+Aqui, vamos demonstrar a prova para o caso onde a função de alocação é definida pela equação \ref{aloc}. A prova para o outro caso the remaining cases are obtained in a similar way.
