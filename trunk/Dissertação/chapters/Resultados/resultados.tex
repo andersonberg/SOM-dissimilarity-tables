@@ -31,7 +31,7 @@
 \end{table}
 
 \begin{table}[h!]
-\caption{Base Íris: Matrizes ($T_{max} = 16$)} \label{iris_matrices}
+\caption{Base Íris: Matrizes relevantes ($T_{max} = 16$)} \label{iris_matrices}
 \begin{center}
 %{\scriptsize
 \begin{tabular}{|c|c|c|}
@@ -134,7 +134,7 @@ Agrupamentos & 1-Sepal length & 2-Sepal width & 3-Petal length & 4-Petal width\\
 \end{table}
 
 \begin{table}[h!]
-\caption{Base E.coli: Matrizes ($T_{max} = 4$)} \label{ecoli_matrices}
+\caption{Base E.coli: Matrizes relevantes ($T_{max} = 4$)} \label{ecoli_matrices}
 \begin{center}
 
 \begin{tabular}{|c|c|c|}
@@ -178,7 +178,7 @@ Agrupamentos & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\ \hline
 \begin{table}[h!]
 \caption{Base E.coli: Matriz de pesos final do algoritmo AB-SOM global para múltiplas tabelas de dissimilaridade ($T_{max} = 10$)}\label{ecoli_gl_absom_weight}
 \begin{center}
-{\scriptsize
+
 \begin{tabular}{|c|c|c|c|c|}
 \hline
 \multicolumn{5}{|c|}{Matriz}\\ \cline{1-5}
@@ -186,7 +186,7 @@ Agrupamentos & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\ \hline
 0.7636 & 0.7101 & 0.4876 & \textbf{2.1144} & \textbf{1.7887}\\ \hline
 
 \end{tabular}
-}
+
 \end{center}
 \end{table}
 
@@ -220,13 +220,55 @@ Agrupamentos & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\ \hline
 \begin{table}[h!]
 \caption{Base de dados Thyroid: Matrizes ($T_{max} = 4$)} \label{thyroid_matrices}
 \begin{center}
-{\scriptsize
+
 \begin{tabular}{|c|c|c|}
 \hline
 Modelo & Matriz mais importante & Matriz menos importante \\ \hline
 AB-SOM & 4-TSH & 1-T3-resin uptake test\\ \hline
 global AB-SOM & 5-maximal absolute difference in TSH & 1-T3-resin uptake test\\ \hline
 \end{tabular}
-}
+
+\end{center}
+\end{table}
+
+
+\section{Base de dados Wine}
+
+\begin{table}[h!]
+\begin{center}
+\caption{Base de dados Wine: índices $CR$, $F-measure$ e $OERC$} \label{wine_index}
+
+\begin{tabular}{|c|c|c|c|c|c|c|} \hline
+ Índices & $T_{max}$ & B-SOM & AB-SOM & global AB-SOM \\ \hline
+\multirow{4}{1.8cm}{$CR$} & 4 & 0.2775 & 0.3560 & 0.3498 \\
+ & 5 & 0.2857 & 0.3449 & 0.3248 \\ 
+ & 6 & 0.2967 & 0.3589 & 0.3489 \\ 
+ & 10 & 0.2940 & 0.3773 & 0.3339 \\ \hline
+\multirow{4}{1.8cm}{$F-measure$} & 4 & 0.4163 & 0.4897 & 0.4737 \\
+ & 5 & 0.4286 & 0.4735 & 0.4357 \\
+ & 6 & 0.4343 & 0.5245 & 0.4801 \\
+ & 10 & 0.4427 & 0.5332 & 0.4637 \\ \hline
+\multirow{4}{1.8cm}{$OERC$} & 4 & 26.40\% & 7.30\% & 2.25\% \\ 
+ & 5 & 26.97\% & 3.37\% & 4.49\% \\ 
+ & 6 & 26.97\% & 4.49\% & 5.06\% \\ 
+ & 10 & 26.97\% & 6.17\% & 6.74\% \\ \hline
+
+\end{tabular}
+
+\end{center}
+\end{table}
+
+
+\begin{table}[h!]
+\caption{Base de dados Wine: Matrizes relevantes $T_{max} = 4$} \label{wine_matrices}
+\begin{center}
+
+\begin{tabular}{|c|c|c|}
+\hline
+Modelo & Matriz mais importante & Matriz menos importante \\ \hline
+AB-SOM & 2 & 3\\ \hline
+global AB-SOM & 7 & 3\\ \hline
+\end{tabular}
+
 \end{center}
 \end{table}

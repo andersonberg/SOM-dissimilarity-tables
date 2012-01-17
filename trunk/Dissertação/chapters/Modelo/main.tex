@@ -4,7 +4,11 @@
 
 \chapter{SOM para dados relacionais baseados em múltiplas tabelas de dissimilaridade}
 
+\section{Introdução}
+
 Neste capítulo introduzimos um mapa auto-organizável por lote para dados relacionais baseados em múltiplas matrizes de dissimilaridade. O objetivo do modelo apresentado é mapear objetos levando em conta suas descrições relacionais dadas por múltiplas matrizes de dissimilaridade. O modelo aqui proposto é um algoritmo iterativo composto por três etapas, são elas: representação, ponderação e afetação. É importante notar que por ser um algoritmo por lote, todo o conjunto de dados é apresentado ao mapa antes que quaisquer alterações sejam realizadas.
+
+O algoritmo SOM por lote para dados relacionais baseados em múltiplas tabelas de dissimilaridade deriva do SOM original por lote (REFERÊNCIA) e do algoritmo de agrupamento para dados relacionais (REFERÊNCIA). Esta abordagem utiliza diferentes pesos para as matrizes de dissimilaridade, com o objetivo de ponderar a relevância de cada matriz na formação dos agrupamentos. Os pesos mudam a cada iteração do algoritmo, portanto não são definidos absolutamente, além disso, são diferentes de um agrupamento para outro. O cálculo dos vetores de pesos neste algoritmo foi inspirado pela abordagem utilizada para calcular pesos para cada variável em cada agrupamento no algoritmo de agrupamento dinâmico baseado em distâncias adaptativas (REFERÊNCIA).
 
 \section{O algoritmo}
 
@@ -92,6 +96,104 @@ Os vetores de pesos são atualizados de acordo com a função de alocação utilizada
 \end{enumerate}
 \end{proposition}
 
-\textbf{Prova}
+%\textbf{Prova}
+%
+%Vamos demonstrar a prova para o caso onde a função de alocação é definida pela equação \ref{aloc}. A prova para o outro caso pode ser feita de maneira similar.
+%
+%Como a partição $P=(P_1,\ldots,P_c)$ de $E$ em $c$ agrupamentos e os protótipos $G_1,\ldots,G_c$ são fixos, pode-se reescrever a função objetivo $J$:
+%
+%\[
+%J(\mbox{\boldmath$\lambda$\unboldmath$_1$},\ldots,\mbox{\boldmath$\lambda$\unboldmath$_c$}) = \sum_{l=1}^c J_l(\mbox{\boldmath$\lambda$\unboldmath$_l$})
+%\]
+%
+%com
+%
+%\[
+%J_l(\mbox{\boldmath$\lambda$\unboldmath$_l$}) = J_l(\lambda_{l1}, \ldots, \lambda_{lp})= \sum_{j=1}^p \lambda_{lj} \, J_{lj}
+%\mbox{ where } J_{lj} = \sum_{e_i \in E} K^T(\delta(\chi(e_i),l)) \sum_{e \in G_l} d_j(e_i,e)
+%\]
+%
+%Seja $g(\lambda_{l1},\ldots,\lambda_{lp}) = \lambda_{l1} \times \ldots \times \lambda_{lp} - 1$. Pode-se determinar os extremos de $J_l(\lambda_{l1},\ldots,\lambda_{lp})$ com a restrição $g(\lambda_{l1},\ldots,\lambda_{lp}) =0$. 
+%Do método Lagrange multiplier, e após some algebra, it follows that (for $j = 1, \ldots, p$)
+%
+%\[ \label{meth1:lamb}
+%\lambda_{lj} = \frac{
+%\left(\prod_{h=1}^p J_{lh}\right)^{1/p}}{J_{lj}
+%}=
+%\frac{
+%\left\{\prod_{h=1}^p \left( \sum_{e_i \in E} K^T(\delta(\chi(e_i),l)) \sum_{e \in G_l} d_h(e_i,e)
+%\right)
+%\right\}^{\frac{1}{p}}
+%}
+%{\sum_{e_i \in E} K^T(\delta(\chi(e_i),l)) \sum_{e \in G_l} d_j(e_i,e)
+%}
+%\]
+%
+%Assim, um valor extremo de $J_l$ é alcançado quando $J_l(\lambda_{l1},\ldots,\lambda_{lp})
+%= p \, \{J_{l1} \times \ldots \times J_{lp} \}^{1/p}$.
+%Como $J_l(1,\ldots,1)=\sum_{j=1}^p J_{lj}=J_{l1}+\ldots+J_{lp}$ e é sabido que a média aritmética é maior do que a média geométrica, isto é, $\frac{1}{p} \left(J_{l1}+\ldots+J_{lp}\right)> \left\{J_{l1}
+%\times \ldots \times J_{lp}\right\}^{1/p}$ (the equality holds only
+%if $J_{l1}= \ldots = J_{lp}$), pode-se concluir que este extremo é um valor mínimo.
 
-Aqui, vamos demonstrar a prova para o caso onde a função de alocação é definida pela equação \ref{aloc}. A prova para o outro caso the remaining cases are obtained in a similar way.
+\subsection{Etapa de afetação: definição da melhor partição}
+
+Durante a etapa de afetação os protótipos $G_l^{(t)} \in E^{(q)} \, (l=1,\ldots, c)$ e os vetores de pesos \mbox{\boldmath$\lambda$\unboldmath$_l$}$^{(t-1)} \, (r=1,\ldots, c)$ são mantidos fixos. A função objetivo $J$ é minimizada de acordo com a função de afetação.
+
+\begin{proposition}\label{prop:partition}
+Cada exemplo $e_i \in E$ é alocado ao neurônio mais próximo de acordo com a função de alocação utilizada:
+
+\begin{enumerate}
+\item Se a função de alocação é definida pela equação (\ref{aloc}), alocar o exemplo $e_i \in E$ no agrupamento $C_m$ segundo a equação:
+\begin{equation} \label{part-1}
+m = (\chi^{(t)}(e_i))^{(t)} = argmin_{1 \leq r \leq c} \sum_{l=1}^c K^T(\delta(r,l)) \sum_{j=1}^p \lambda_{lj}^{(t)} \sum_{e \in G_l^{(t)}} d_j(e_i,e)
+\end{equation}
+
+\item Se a função de alocação é definida pela equação (\ref{aloc-global}), alocar o exemplo $e_i \in E$ no agrupamento $C_m$ segundo a expressão:
+\begin{equation} \label{part-3}
+m = (\chi^{(t)}(e_i))^{(t)} = argmin_{1 \leq r \leq c} \sum_{l=1}^c K^T(\delta(r,l)) \sum_{j=1}^p \lambda_{j}^{(t)} \sum_{e \in G_l^{(t)}} d_j(e_i,e)
+\end{equation}
+
+\end{enumerate}
+\end{proposition}
+
+\subsection{O algoritmo}
+
+O algoritmo SOM em lote para dados relacionais baseados em múltiplas matrizes de dissimilaridade pode ser resumido como segue:
+
+\begin{enumerate}
+%\item {\bf Algorithm}
+\item Inicialização
+\\Fixe o número $c$ de agrupamentos; 
+\\Fixe a cardinalidade $1 \leq q << n$ dos protótipos $G_l \, (l=1,\ldots,c)$;
+\\Fixe $\delta$; Fixe a função kernel $K$
+\\Fixe o número de iterações $N_{iter}$
+\\Fixe $T_{min}$, $T_{max}$; Determine $T\leftarrow T_{max}$; Determine $t\leftarrow 0$;
+\\Selecione aleatoriamente $c$ protótipos distintos $G_l^{(0)} \in E^{(q)} \, (l=1,\ldots,c)$;
+\\Determine \mbox{\boldmath$\lambda$\unboldmath$_l$}$^{(0)}=(1,\ldots,1) \, (l=1,\ldots,c)$;
+\\Determine o mapa $L(c,\textbf{G}^{0})$, onde $\textbf{G}^{0}=(G_1^{(0)}, \ldots, G_c^{(0)})$
+\\Aloque cada objeto $e_i$ ao protótipo mais próximo para obter a partição $P^{(0)}=(P_1^{(0)},\ldots,P_c^{(0)})$ de acordo com as equações (\ref{part-1}) e (\ref{part-3})
+\item {\it Etapa de representação: cálculo dos melhores protótipos}.
+\\ Determine $t=t+1$;
+\\Calcule $T=T_{max} (\frac{T_{min}}{T_{max}})^{\frac{t}{N_{iter}-1}}$
+\\A partição $P^{(t-1)}=(P_1^{(t-1)},\ldots,P_c^{(t-1)})$ e \mbox{\boldmath$\lambda$\unboldmath$_l$}$^{(t-1)} \, (l=1,\ldots, c)$ são mantidos fixos. 
+\\Calcule o protótipo $G_l^{(t)} = G^{*} \in E^{(q)}$ do agrupamento $P_l^{(t-1)}$ ($\, l = 1, \ldots, c$) de acordo com as equações (\ref{prototipo}) e (\ref{prototipo-global})
+\item {\it Etapa de ponderação: cálculo dos melhores pesos}.
+\\A partição $P^{(t-1)}=(P_1^{(t-1)},\ldots,P_c^{(t-1)})$ e os 
+protótipos $G_l^{(t)} \in E^{(q)} \, (l=1,\ldots, c)$ são mantidos fixos. 
+\\Calcule os vetores de pesos \mbox{\boldmath$\lambda$\unboldmath$_l$} \, $(l=1,\ldots,c)$ de acordo com as equações (\ref{weight-1}) e (\ref{weight-global})
+\item[4)] {\it Etapa de afetação: definição da melhor partição}.
+ \\ Os protótipos $G_l^{(t)} \in E^{(q)} \, (l=1,\ldots, c)$ e \mbox{\boldmath$\lambda$\unboldmath$_l$}$^{(t)} \, (l=1,\ldots, c)$ são mantidos fixos
+ \\ 	$P^{(t)} \leftarrow P^{(t-1)}$
+  \begin{tabbing}
+  para \= $i = 1$ até $n$ faça \\
+  		\>encontre o agrupamento $C_{m^*}^{(t)}$ ao qual $e_i$ pertence
+  		\\
+      \>encontre \= o agrupamento vencedor $C_{m}^{(t)}$ segundo as equações (\ref{part-1}) e (\ref{part-3}) 
+      \\
+      \>se $m^* \neq m$ \\
+      \>     \>$C_{m}^{(t)} \leftarrow C_{m}^{(t)} \cup{\{e_i\}}$ \\
+      \>     \>$C_{m^*}^{(t)} \leftarrow C_m^{(t)} \setminus{\{e_i\}}$\\
+  \end{tabbing}
+  \item[4)] {\it Critério de parada}.
+  \\Se $T = T_{min}$ (ou se $t=N_{iter}-1$) então PARE; senão vá para 2 (Etapa de representação).
+\end{enumerate}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.1.1)  4 JAN 2012 19:40
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.1.1)  10 JAN 2012 14:55
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -631,13 +631,13 @@ LaTeX Info: Redefining \pageref on input line 104.
 \openout4 = `main.out'.
 
 \AtBeginShipoutBox=\box35
- <cinlogo.png, id=55, 363.3575pt x 146.5475pt>
+ <cinlogo.png, id=59, 363.3575pt x 146.5475pt>
 File: cinlogo.png Graphic file (type png)
  <use cinlogo.png>
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 107.
 
-<ufpelogo.png, id=57, 57.0933pt x 86.0013pt>
+<ufpelogo.png, id=61, 57.0933pt x 86.0013pt>
 File: ufpelogo.png Graphic file (type png)
  <use ufpelogo.png>
 LaTeX Font Info:    Try loading font information for T1+times on input line 107
@@ -796,23 +796,22 @@ Cap\'{\i }tulo 1.
 
  (./chapters/Modelo/main.tex
 Cap\'{\i }tulo 2.
-
-Package mathptmx Warning: There are no bold math fonts on input line 18.
-
 [2
 
 
 
 ]
-Overfull \hbox (26.07855pt too wide) in paragraph at lines 37--38
+
+Package mathptmx Warning: There are no bold math fonts on input line 22.
+
+
+Overfull \hbox (26.07855pt too wide) in paragraph at lines 41--42
 []\T1/ptm/m/n/12 (-20) A fun-ção de alo-ca-ção pa-ra-me-tri-zada pelo ve-tor de
  pe-sos boldmath$\OML/ztmcm/m/it/12 ^^U$$[]$  \T1/ptm/m/n/12 (-20) =$\OML/ztmcm
 /m/it/12 ^^U$$ \OT1/ztmcm/m/n/12 = (\OML/ztmcm/m/it/12 ^^U[]; [] ; ^^U[]\OT1/zt
 mcm/m/n/12 ) (\OML/ztmcm/m/it/12 l \OT1/ztmcm/m/n/12 =
  []
 
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 47.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -820,13 +819,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [3]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 51.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[4])
+[4]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -834,6 +836,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [5]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7]
 \openout2 = `chapters/Resultados/resultados.aux'.
 
  (./chapters/Resultados/resultados.tex
@@ -846,7 +862,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[6
+[8
 
 
 
@@ -860,8 +876,17 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 186.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (2.46904pt too wide) in paragraph at lines 224--230
+ [] 
+ []
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -878,20 +903,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[8]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
 [9]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -900,13 +911,27 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [10]
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 160.
- [11
 
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
+[11]
 
-] (./main.aux (./chapters/SOM/main.aux) (./chapters/Modelo/main.aux)
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13] (./main.aux (./chapters/SOM/main.aux) (./chapters/Modelo/main.aux)
 (./chapters/Resultados/resultados.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -916,30 +941,66 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 9792 strings out of 495041
- 140218 string characters out of 1181898
- 278422 words of memory out of 3000000
- 12484 multiletter control sequences out of 15000+50000
- 106726 words of font info for 223 fonts, out of 3000000 for 9000
+ 9860 strings out of 495041
+ 140947 string characters out of 1181898
+ 284855 words of memory out of 3000000
+ 12496 multiletter control sequences out of 15000+50000
+ 106930 words of font info for 243 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
- 41i,12n,45p,650b,545s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/fonts
-/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf-texlive/fonts/type1/publi
-c/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
-cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pf
-b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb></usr/share/
-texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf-texlive/fonts/
-type1/urw/avantgar/uagd8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/courier
-/ucrr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvr8a.pfb></usr
-/share/texmf-texlive/fonts/type1/urw/symbol/usyr.pfb></usr/share/texmf-texlive/
-fonts/type1/urw/symbol/usyr.pfb></usr/share/texmf-texlive/fonts/type1/urw/times
-/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/sh
-are/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-texlive/fo
-nts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (20 pages, 266094 bytes).
+ 41i,12n,45p,794b,553s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{equation.2.1.7} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.2.1.6} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.2.1.5} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.2.1.4} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.2.1.9} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.2.1.8} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.2.1.3} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.2.1.2} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.1.4} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.1.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.1.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.1.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/fonts/e
+nc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf-texlive/fonts/type1/public/
+amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
+/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share
+/texmf-texlive/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb></usr/share/te
+xmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf-texlive/fonts/ty
+pe1/urw/avantgar/uagd8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/courier/u
+crr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/s
+hare/texmf-texlive/fonts/type1/urw/symbol/usyr.pfb></usr/share/texmf-texlive/fo
+nts/type1/urw/symbol/usyr.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/u
+tmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/shar
+e/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-texlive/font
+s/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (22 pages, 283195 bytes).
 PDF statistics:
- 283 PDF objects out of 1000 (max. 8388607)
- 61 named destinations out of 1000 (max. 500000)
- 52339 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 337 PDF objects out of 1000 (max. 8388607)
+ 88 named destinations out of 1000 (max. 500000)
+ 52859 words of extra memory for PDF output out of 61914 (max. 10000000)
 
