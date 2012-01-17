@@ -139,7 +139,7 @@ class Mapa:
             
                 somas = sorted(somas)
             
-#               (menor_criterio, menor_criterio_obj) = min(somas)
+               #(menor_criterio, menor_criterio_obj) = min(somas)
                 for i in range(q):
                     (menor_criterio, menor_criterio_obj) = somas[i]
                     novo_prototipo = Individual(menor_criterio_obj.indice, menor_criterio_obj.id2, menor_criterio_obj.nome)
@@ -193,7 +193,7 @@ class Mapa:
         return energia
 
     def atualiza_pesos_global(self, denom, matrizes):
-#       tic = time.time()
+        #tic = time.time()
         pesos = []
         for j in range(len(matrizes)):
             produto = 1.0
@@ -207,8 +207,8 @@ class Mapa:
             
             pesos.append(pow(produto, 1./len(matrizes)) / denominador)
                 
-#       toc = time.time()
-#       print "atualiza pesos time: ", toc - tic
+        #toc = time.time()
+        #print "atualiza pesos time: ", toc - tic
         return np.array(pesos)
         
         

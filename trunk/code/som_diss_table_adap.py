@@ -33,7 +33,7 @@ import inicio
 def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, individuals_objects):
 
         prototipos = {}
-#       clusters = []
+        #clusters = []
         individuals = []
 
         individuals.extend(individuals_objects)
