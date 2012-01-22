@@ -12,7 +12,11 @@ O algoritmo SOM por lote para dados relacionais baseados em múltiplas tabelas de
 
 \section{Dados relacionais}
 
-Diversos métodos de análise de dados se baseiam em dados que podem ser descritos por valores reais, ou seja, por vetores finitos. Entretanto, muitos dados do mundo real requerem estruturas mais complexas para que sejam representados adequadamente.
+Diversos métodos de análise de dados se baseiam em dados que podem ser descritos por valores reais, ou seja, por vetores em um espaço dimensional fixo e finito. Entretanto, muitos dados do mundo real requerem estruturas mais complexas para que sejam representados adequadamente. Textos, por exemplo, não são numéricos e possuem uma estrutura interna complexa que é difícil de representar em um vetor.
+
+Uma maneira de solucionar este problema é criar métodos que possam analisar dados a partir da comparação entre objetos. É possível definir uma medida de similaridade ou dissimilaridade entre os dados e compará-los. Quando cada par de objetos do conjunto de dados é representado por uma relação, então temos o que se chama de dados relacionais. Em geral, algoritmos baseados em dissimilaridades ou similaridades entre dados são mais complexos do que os usuais dados vetorizados, porém são universais e podem ser aplicados a qualquer tipo de dado.
+
+O algoritmo apresentado neste trabalho é capaz de analisar dados levando em consideração a dissimilaridade entre observações. Os dados analisados são matrizes de dissimilaridade contendo a relação entre cada um dos objetos presentes na base de dados. Cada matriz representa uma variável da base e a dissimilaridade é calculada por uma função fixa que é a distância euclidiana entre os objetos. Para encontrar uma partição dos elementos, o método descrito leva em consideração simultaneamente a descrição relacional dos dados dada por múltiplas matrizes de dissimilaridade.
 
 \section{O algoritmo}
 
