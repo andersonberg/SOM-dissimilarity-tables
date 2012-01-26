@@ -18,7 +18,9 @@ Existem basicamente dois tipos de dados em que se baseiam os algoritmos de agrup
 
 Muitos algoritmos foram adaptados para analisar dados relacionais. \cite{Kaufman:1987} apresenta uma adaptação do k-means para dados relacionais. Ainda, \cite{Golli:2004} apresenta um modelo de mapa auto-organizável por lote baseado em dados relacionais. O algoritmo apresentado neste trabalho é capaz de analisar dados levando em consideração a dissimilaridade entre observações. Os dados analisados são matrizes de dissimilaridade contendo a relação entre cada um dos objetos presentes na base de dados. Cada matriz representa uma variável da base e a dissimilaridade é calculada por uma função fixa que é a distância euclidiana entre os objetos. Para encontrar uma partição dos elementos, o método descrito leva em consideração simultaneamente a descrição relacional dos dados dada por múltiplas matrizes de dissimilaridade.
 
-\section{Ponderação}
+\section{Múltiplas matrizes de dissimilaridade}
+
+Em diversas situações dados relacionais são descritos por múltiplas tabelas de dissimilaridade. Como apontado por \cite{Frigui:2007} muitas aplicações podem se beneficiar de algoritmos de agrupamento baseados em múltiplas matrizes de dissimilaridade. Na categorização de imagens, pode-se ter uma matriz com informações de cor, outra matriz com informação de textura e outra com informação de estrutura. Porém, as variáveis não são igualmente importantes, algumas podem ser redundantes, outras irrelevantes, ou ainda, podem interferir negativamente na formação dos agrupamentos.
 
 \section{O algoritmo}
 
