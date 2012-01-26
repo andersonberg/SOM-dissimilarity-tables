@@ -20,7 +20,11 @@ Muitos algoritmos foram adaptados para analisar dados relacionais. \cite{Kaufman
 
 \section{Múltiplas matrizes de dissimilaridade}
 
-Em diversas situações dados relacionais são descritos por múltiplas tabelas de dissimilaridade. Como apontado por \cite{Frigui:2007} muitas aplicações podem se beneficiar de algoritmos de agrupamento baseados em múltiplas matrizes de dissimilaridade. Na categorização de imagens, pode-se ter uma matriz com informações de cor, outra matriz com informação de textura e outra com informação de estrutura. Porém, as variáveis não são igualmente importantes, algumas podem ser redundantes, outras irrelevantes, ou ainda, podem interferir negativamente na formação dos agrupamentos.
+Em diversas situações, dados relacionais são descritos por múltiplas tabelas de dissimilaridade. Como apontado por \cite{Frigui:2007} muitas aplicações podem se beneficiar de algoritmos de agrupamento baseados em múltiplas matrizes de dissimilaridade. Na categorização de imagens, pode-se ter uma matriz com informações de cor, outra matriz com informação de textura e outra com informação de estrutura. 
+
+Porém, diferentes matrizes não são igualmente importantes, algumas podem ser redundantes, outras irrelevantes, ou ainda, podem interferir negativamente na formação dos agrupamentos. Para que haja uma formação adequada dos agrupamentos faz-se necessário o uso de pesos para cada matriz de dissimilaridade, pesos estes que dependem de cada agrupamento. O objetivo da ponderação sobre as matrizes é encontrar graus de relevância e identificar quais características descrevem melhor os dados, tornando o agrupamento mais significativo.
+
+(ref:grozavu) desenvolveu dois modelos usando mapas auto-organizáveis (SOM), que realizam simultaneamente agrupamento e ponderação de variáveis. \cite{Frigui:2007} propõe um algoritmo de agrupamento baseados em múltiplas tabelas de dissimilaridade (CARD) que calcula pesos relacionados à relevância de cada matriz de dissimilaridade sobre cada agrupamento. Em outro trabalho (ref:frigui) apresenta uma abordagem que realiza agrupamento e ponderação de variáveis simultaneamente.
 
 \section{O algoritmo}
 
