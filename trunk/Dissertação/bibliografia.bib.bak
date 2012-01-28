@@ -1,33 +1,93 @@
-% This file was created with JabRef 2.7b.
+% This file was created with JabRef 2.7.2.
 % Encoding: UTF-8
 
-@ARTICLE{,
-  author = {Badran, F and Yacoub, M and Thiria, S},
-  title = {Self organizing maps and unsupervised classification},
-  journal = {Neural Networks Methodology and Applications},
+@INCOLLECTION{Badran:2005,
+  author = {Fouad Badran and M. Yacoub and Sylvie Thiria},
+  title = {Self-Organizing Maps and Unsupervised Classification},
+  booktitle = {Neural networks: methodology and applications},
+  publisher = {Springer-Verlag},
   year = {2005},
-  pages = {379-442},
-  owner = {anderson},
-  timestamp = {2012.01.18}
+  pages = {379--442}
 }
 
-@ARTICLE{,
-  author = {de Carvalho, F.A.T. and Lechevallier, Y. and de Melo, F.M.},
+@ARTICLE{DeCarvalho:2011,
+  author = {De Carvalho, F.A.T. and Lechevallier, Y. and de Melo, F.M.},
   title = {Partitioning hard clustering algorithms based on multiple dissimilarity
 	matrices},
   journal = {Pattern Recognition},
   year = {2011},
-  volume = {45},
-  pages = {447-464},
-  owner = {anderson},
-  timestamp = {2012.01.18}
+  doi = {doi: 10.1016/j.patcog.2011.05.016},
+  publisher = {Elsevier}
 }
 
-@comment{jabref-meta: selector_publisher:}
+@ARTICLE{Frigui:2007,
+  author = {H. Frigui and C. Hwanga and F. C.-H. Rhee},
+  title = {Clustering and aggregation of relational data with applications to
+	image database categorization},
+  journal = {Pattern Recognition},
+  year = {2007},
+  pages = {3053--3068},
+  number = {40 (11)}
+}
 
-@comment{jabref-meta: selector_author:}
+@ARTICLE{frigui:2004,
+  author = {Hichem Frigui and Olfa Nasraoui},
+  title = {Unsupervised learning of prototypes and attribute weights},
+  journal = {Pattern Recognition},
+  year = {2004},
+  volume = {37},
+  pages = {567--581},
+  owner = {anderson},
+  timestamp = {2012.01.28}
+}
 
-@comment{jabref-meta: selector_journal:}
+@INCOLLECTION{Golli:2004,
+  author = {Aïcha Golli and Brieuc Conan-Guez and Fabrice Rossi},
+  title = {A Self-Organizing Map for Dissimilarity Data},
+  booktitle = {Classification, Clustering, and Data Mining Applications},
+  publisher = {Springer Berlin Heidelberg},
+  year = {2004},
+  pages = {61--68},
+  keyword = {Statistics}
+}
 
-@comment{jabref-meta: selector_keywords:}
+@ARTICLE{grozavu:2009,
+  author = {Nistor Grozavu and Younès Bennani and Mustapha Lebbah},
+  title = {From variable weighting to cluster characterization in topographic
+	unsupervised learning},
+  journal = {Proceedings of the International Joint Conference on Neural Networks},
+  year = {2009},
+  pages = {1005--1010},
+  owner = {anderson},
+  timestamp = {2012.01.28}
+}
+
+@ARTICLE{Kaufman:1987,
+  author = {Kaufman, Leonard and Rousseeuw, Peter J.},
+  title = {Clustering by Means of Medoids},
+  journal = {Statistical data analysis based on the L1-norm and related methods},
+  year = {1987},
+  pages = {405--416}
+}
+
+@ARTICLE{Lechevallier:2010,
+  author = {Lechevallier, Y. and De Carvalho, F. A. T. and Despeyroux, T. and
+	de Melo, F. M.},
+  title = {Clustering of Multiple Dissimilarity Data Tables for Documents Categorization},
+  journal = {COMPSTAT?2010 Book of Abstracts},
+  year = {?},
+  optkey = {?},
+  optnumber = {?},
+  optpages = {1263--1270}
+}
+
+@ARTICLE{wang:2008,
+  author = {Qiang Wang, Yunming Ye and Joshua Zhexue Huang},
+  title = {Fuzzy k-Means with Variable Weighting in High Dimensional Data Analysis},
+  journal = {The Ninth International Conference on Web-Age Information Management},
+  year = {2008},
+  pages = {365--372},
+  owner = {anderson},
+  timestamp = {2012.01.28}
+}
 
