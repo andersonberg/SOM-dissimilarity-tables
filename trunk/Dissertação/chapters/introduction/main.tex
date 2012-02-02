@@ -1,0 +1,37 @@
+%% M.Sc. Thesis
+%% Author: Anderson Berg
+%% CIn-UFPE
+
+\chapter{Introdução}
+
+Métodos de agrupamento organizam um conjunto de itens em grupos de forma que itens localizados em um mesmo grupo possuem alto grau de similaridade, por outro lado, itens de grupos distintos têm alto grau de dissimilaridade. Estes modelos têm sido amplamente aplicados em campos como taxonomia, processamento de imagem, recuperação de informação e mineração de dados. As técnicas mais populares de agrupamento são os métodos hierárquicos e de particionamento \citep{Wang2008, Xu2005}.
+
+Métodos hierárquicos fornecem uma hierarquia completa, isto é, uma sequência de partições aninhadas a partir dos dados de entrada. Métodos hierárquicos podem ser aglomerativos \citep{SneathSokal73, Zhang96, Guha98, Karypis99, Guha2000} ou divisivos \citep{LanceWilliams68, GowdaKrishina78, Kaufman1990, Genoche91, Chavent1998}. Métodos aglomerativos fornecem uma sequência partições aninhadas iniciando com agrupamento trivial onde cada item está em um único grupo e termina com um agrupamento onde todos os itens estão no mesmo grupo. Um método divisivo inicia com todos os itens no mesmo grupo e executa  um procedimento de divisão até que um critério de parada seja alcançado.
+
+Métodos de particionamento buscam obter uma única partição dos dados em um número fixo de agrupamentos. Estes métodos frequentemente buscam uma partição que otimize (geralmente localmente) uma função objetivo. Para melhorar a qualidade do agrupamento, o algoritmo é executado diversas vezes com diferentes inicializações e a melhor configuração obtida do total de execuções é usada como saída do algoritmo de agrupamento. Métodos de particionamento podem ser divididos em agrupamentos HARD \citep{Forgy65, Huang98, Kanungo00, Hansen01, Su01} e agrupamentos fuzzy \citep{Bez81, Hoeppner99, Hathaway00, Hung01, Kolen02}. Agrupamentos HARD fornecem uma partição na qual cada objeto do conjunto de dados é atribuído a um e somente um grupo. Agrupamento fuzzy gera uma partição fuzzy que fornece um grau de atribuição a cada padrão em um dado grupo, que dá flexibilidade para expressar que este objeto pertence a mais de um grupo ao mesmo tempo.
+
+O objetivo dos mapas auto-organizáveis é encontrar um estrutura nos dados fornecidos.
+
+%O mapa auto-organizável faz parte do grupo de modelos de aprendizado não-supervisionado de aprendizado competitivo. O objetivo destes modelos é encontrar uma estrutura lógica entre os dados fornecidos, não existe uma resposta esperada nem uma ação determinada que deva ser realizada. Mapas auto-organizáveis foram introduzidos por T. Kohonen em 1981. Os primeiros modelos foram projetados para tratar dados de grandes dimensões. Para realizar esse processamento, a metodologia de visualização topológica é projetada para particionar os dados em agrupamentos (\textit{clusters}) que exibem alguma similaridade. 
+%
+%A característica mais importante dos mapas auto-organizáveis é a possibilidade de comparar agrupamentos. Cada observação é afetada a um agrupamento e cada agrupamento é projetado em um nó do mapa. Observações semelhantes são projetadas no mesmo nó. A dissimilaridade entre as observações projetadas aumenta com a distância que separa os nós.
+%
+%Classificadores não-supervisionados e mapas auto-organizáveis são classes
+%de métodos que buscam agrupar dados semelhantes. A maioria das aplicações
+%que usam mapas auto-organizáveis são classificadores.
+%
+%Kohonen projetou um algoritmo auto-organizável que projeta dados em grandes
+%dimensionalidades em um espaço discreto de baixa dimensionalidade. Este espaço é composto
+%de um grafo não-orientado que tem, geralmente 1, 2 ou 3 dimensões, este
+%grafo é denominado mapa. O mapa é formado por neurônios interconectados,
+%as conexões entre os neurônios são as arestas do grafo. A estrutura de
+%grafo permite a definição de uma distância inteira $\delta$ no conjunto
+%$C$ de neurônios. Para cada par de neurônios $(c,r)$ do mapa, $\delta(c,r)$
+%é o tamanho do caminho mais curto em $C$ entre $c$ e $r$. Para qualquer
+%neurônio $c$, a distância permite a definição da vizinhança de $c$ de
+%ordem $d$,
+%
+%\begin{equation}
+%V_c(d) = {r \in C, \delta(c,r) \leq d}.
+%\end{equation}
+
