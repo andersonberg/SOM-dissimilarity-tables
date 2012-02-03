@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+
+\usepackage{sbc-template}
+
+\usepackage{graphicx,url}
+\usepackage{amsfonts}
+\usepackage[brazil]{babel}   
+\usepackage[latin1]{inputenc}  
+
+     
+\sloppy
+
+\title{SOM para dados relacionais baseados em múltiplas tabelas de dissimilaridade}
+
+\author{Anderson Berg dos Santos Dantas \inst{1}}
+
+
+\address{Centro de Informática - Universidade Federal de Pernambuco
+\email{absd@cin.ufpe.br}
+}
+
+\begin{document} 
+
+\maketitle
+
+%\begin{abstract}
+%  This meta-paper describes the style to be used in articles and short papers
+%  for SBC conferences. For papers in English, you should add just an abstract
+%  while for the papers in Portuguese, we also ask for an abstract in
+%  Portuguese (``resumo''). In both cases, abstracts should not have more than
+%  10 lines and must be in the first page of the paper.
+%\end{abstract}
+%     
+%\begin{resumo} 
+%  Este meta-artigo descreve o estilo a ser usado na confecção de artigos e
+%  resumos de artigos para publicação nos anais das conferências organizadas
+%  pela SBC. É solicitada a escrita de resumo e abstract apenas para os artigos
+%  escritos em português. Artigos em inglês deverão apresentar apenas abstract.
+%  Nos dois casos, o autor deve tomar cuidado para que o resumo (e o abstract)
+%  não ultrapassem 10 linhas cada, sendo que ambos devem estar na primeira
+%  página do artigo.
+%\end{resumo}
+
+
+\section{Justificativa}
+
+\section{Revisão da Literatura}
+
+Métodos de agrupamento organizam um conjunto de itens em grupos de forma que itens localizados em um mesmo grupo possuem alto grau de similaridade, por outro lado, itens de grupos distintos têm alto grau de dissimilaridade. Estes modelos têm sido amplamente aplicados em campos como taxonomia, processamento de imagem, recuperação de informação e mineração de dados \cite{Jain:99}. As técnicas mais populares de agrupamento são os métodos hierárquicos e de particionamento \cite{Wang2008, Xu2005}.
+
+Métodos hierárquicos fornecem uma hierarquia completa, isto é, uma sequência de partições aninhadas a partir dos dados de entrada. Métodos hierárquicos podem ser aglomerativos \cite{SneathSokal73, Zhang96, Guha98, Karypis99, Guha2000} ou divisivos \cite{LanceWilliams68, GowdaKrishina78, Kaufman1990, Genoche91, Chavent1998}. Métodos aglomerativos fornecem uma sequência partições aninhadas iniciando com agrupamento trivial onde cada item está em um único grupo e termina com um agrupamento onde todos os itens estão no mesmo grupo. Um método divisivo inicia com todos os itens no mesmo grupo e executa  um procedimento de divisão até que um critério de parada seja alcançado.
+
+Métodos de particionamento buscam obter uma única partição dos dados em um número fixo de agrupamentos. Estes métodos frequentemente buscam uma partição que otimize (geralmente uma solução local) uma função objetivo. Para melhorar a qualidade do agrupamento, o algoritmo é executado diversas vezes com diferentes inicializações e a melhor configuração obtida do total de execuções é usada como saída do algoritmo de agrupamento. Métodos de particionamento podem ser divididos em agrupamentos HARD \cite{Forgy65, Huang98, Kanungo00, Hansen01, Su01} e agrupamentos fuzzy \cite{Bez81, Hoeppner99, Hathaway00, Hung01, Kolen02}. Agrupamentos HARD fornecem uma partição na qual cada objeto do conjunto de dados é atribuído a um e somente um grupo. Agrupamento fuzzy gera uma partição fuzzy que fornece um grau de atribuição a cada padrão em um dado grupo, que dá flexibilidade para expressar que este objeto pertence a mais de um grupo ao mesmo tempo.
+
+Existem duas representações comuns dos objetos nos quais os modelos de agrupamento podem ser baseados: dados caracterizados ou relacionais. Quando cada objeto é descrito por um vetor de valores quantitativos ou qualitativos, os vetores que descrevem os objetos são chamados dados caracterizados. Quando cada par de objetos é representado por uma relação então temos dados relacionais. O modelo mais comum de dados relacionais é o caso de uma matriz de dissimilaridades $R = [r_{il}]$, onde $r_{il}$ é a dissimilaridade pareada (geralmente uma distância) entre os objetos $i$ e $l$. Agrupamento baseado em dados relacionais é muito útil quando os objetos não podem ser representados por um vetor de valores, quando a medida de distância não tem uma forma definida, etc \cite{Kaufman1990, lec74, DeCarvalho2009, Davenport89, Hathaway1994}.
+
+Os mapas auto-organizáveis de Kohonen \cite{Kohonen:1990} (Self organizing maps - SOM) fazem parte do grupo de modelos de rede neurais não-supervisionadas e de aprendizado competitivo. A rede SOM possui propriedades de agrupamento e visualização. O objetivo destes modelos é encontrar uma estrutura lógica entre os dados fornecidos, não existe uma resposta esperada nem uma ação determinada que deva ser realizada. Para descobrir essa estrutura lógica, o algoritmo se utiliza de interações laterais entre os neurônios formando uma vizinhança. O neurônio que obtiver o melhor valor de similaridade para uma dada entrada é atualizado, da mesma forma neurônios vizinhos também são atualizados para representar melhor a entrada, resultando em regiões nas quais os neurônios são mais similares entre si.
+
+O mapa auto-organizável pode ser considerado como um algoritmo que mapeia dados de alta dimensionalidade espacial em um espaço de dimensionalidade reduzida, geralmente uma, duas ou três dimensões. Esta projeção habilita o particionamento dos dados em grupos similares e possui a propriedade de preservar a topologia dos dados. A característica mais importante dos mapas auto-organizáveis é a possibilidade de comparar agrupamentos \cite{Badran2005}. Cada objeto é afetado a um grupo e cada grupo é projetado em um nó do mapa. Objetos semelhantes são projetados no mesmo nó. A dissimilaridade entre os objetos projetados aumenta com a distância que separa os nós.
+
+%TODO: Falar sobre SOM em lote.
+
+\cite{Golli:2004} e \cite{Conan-Guez2006} propõem uma adaptação dos mapas auto-organizáveis em lote para dados de dissimilaridade. \cite{Frigui:2007} propôs um algoritmo de agrupamento fuzzy para dados relacionais (CARD), que é capaz de particionar objetos levando em conta múltiplas matrizes de dissimilaridade e que ainda calcula pesos que medem a relevância de cada matriz de dissimilaridade para cada um dos grupos. O CARD é baseado em algoritmos de agrupamento fuzzy para dados relacionais bastante conhecidos, o NERF \cite{Hathaway1994} e o FANNY \cite{Kaufman1990}. Como citado por \cite{Frigui:2007}, diversas aplicações podem se beneficiar de algoritmos de agrupamento de dados relacionais baseados em múltiplas matrizes de dissimilaridade. No campo de categorização de base de dados de imagem, a relação entre os objetos pode ser descrita por múltiplas matrizes e a medida de dissimilaridade mais efetiva não possui uma forma definida ou não é diferenciável com respeito aos parâmetros do protótipo.
+
+
+
+\section{Objetivos}
+
+\section{Metodologia}
+
+\bibliographystyle{sbc}
+\bibliography{bibliografia}
+
+\section{Cronograma de Atividades}
+
+\end{document}
