@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2012.1.21)  2 FEB 2012 12:19
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2012.1.21)  2 FEB 2012 21:32
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -495,8 +495,8 @@ Package hyperref Info: Link coloring ON on input line 3120.
 File: hpdftex.def 2007/02/07 v6.75r Hyperref driver for pdfTeX
 \Fld@listcount=\count125
 ) (./main.aux
-(./chapters/introduction/main.aux) (./chapters/Modelo/main.aux)
-(./chapters/Resultados/resultados.aux))
+(./chapters/introduction/main.aux) (./chapters/SOM/som.aux)
+(./chapters/Modelo/main.aux) (./chapters/Resultados/resultados.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
@@ -556,13 +556,13 @@ LaTeX Info: Redefining \pageref on input line 104.
 \openout4 = `main.out'.
 
 
-<cinlogo.png, id=79, 363.3575pt x 146.5475pt>
+<cinlogo.png, id=87, 363.3575pt x 146.5475pt>
 File: cinlogo.png Graphic file (type png)
  <use cinlogo.png>
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 107.
 
-<ufpelogo.png, id=80, 57.0933pt x 86.0013pt>
+<ufpelogo.png, id=88, 57.0933pt x 86.0013pt>
 File: ufpelogo.png Graphic file (type png)
  <use ufpelogo.png>
 LaTeX Font Info:    Try loading font information for T1+times on input line 107
@@ -731,11 +731,29 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [3]
+\openout2 = `chapters/SOM/som.aux'.
+
+ (./chapters/SOM/som.tex
+Cap\'{\i }tulo 2.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 13.
+[4
+
+
+
+])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.67784pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[5]
 \openout2 = `chapters/Modelo/main.aux'.
 
  (./chapters/Modelo/main.tex
-Cap\'{\i }tulo 2.
-[4
+Cap\'{\i }tulo 3.
+[6
 
 
 
@@ -746,9 +764,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5]
+[7]
 
-Package natbib Warning: Citation `wang:2008' on page 6 undefined on input line 
+Package natbib Warning: Citation `wang:2008' on page 8 undefined on input line 
 27.
 
 
@@ -760,7 +778,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6]
+[8]
 Overfull \hbox (26.08215pt too wide) in paragraph at lines 59--60
 []\T1/ptm/m/n/12 (-20) A fun-ção de alo-ca-ção pa-ra-me-tri-zada pelo ve-tor de
  pe-sos boldmath$\OML/ztmcm/m/it/12 ^^U$$[]$  \T1/ptm/m/n/12 (-20) =$\OML/ztmcm
@@ -768,29 +786,13 @@ Overfull \hbox (26.08215pt too wide) in paragraph at lines 59--60
 mcm/m/n/12 ) (\OML/ztmcm/m/it/12 l \OT1/ztmcm/m/n/12 =
  []
 
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 69.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[8]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[9])
+[9]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -798,10 +800,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [10]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12]
 \openout2 = `chapters/Resultados/resultados.aux'.
 
  (./chapters/Resultados/resultados.tex
-Cap\'{\i }tulo 3.
+Cap\'{\i }tulo 4.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 11.
 
@@ -810,7 +826,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[11
+[13
 
 
 
@@ -851,20 +867,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[13]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
 [14]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -879,7 +881,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16] (./main.bbl [17
+[16]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[17]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[18] (./main.bbl [19
 
 
 ]
@@ -889,7 +905,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18])
+[20])
 
 Package natbib Warning: There were undefined citations.
 
@@ -899,20 +915,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[19] (./main.aux (./chapters/introduction/main.aux) (./chapters/Modelo/main.aux
-) (./chapters/Resultados/resultados.aux))
+[21] (./main.aux (./chapters/introduction/main.aux) (./chapters/SOM/som.aux)
+(./chapters/Modelo/main.aux) (./chapters/Resultados/resultados.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 8053 strings out of 256216
- 110590 string characters out of 1917072
- 231009 words of memory out of 1500000
- 10837 multiletter control sequences out of 10000+200000
+ 8068 strings out of 256216
+ 110809 string characters out of 1917072
+ 231485 words of memory out of 1500000
+ 10840 multiletter control sequences out of 10000+200000
  105873 words of font info for 222 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 41i,12n,45p,1080b,565s stack positions out of 5000i,500n,6000p,200000b,15000s
+ 41i,12n,45p,1350b,565s stack positions out of 5000i,500n,6000p,200000b,15000s
 {/usr/share/texmf/fonts/enc/dvips/base/8r.enc} </home/anderson/.texlive2007/t
 exmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0600.600pk></usr/share/texmf/fonts/typ
 e1/bluesky/cm/cmex10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi10.pfb></
@@ -924,9 +940,9 @@ vr8a.pfb></usr/share/texmf/fonts/type1/urw/symbol/usyr.pfb></usr/share/texmf/fo
 nts/type1/urw/symbol/usyr.pfb></usr/share/texmf/fonts/type1/urw/times/utmb8a.pf
 b></usr/share/texmf/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/share/texmf/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (28 pages, 291701 bytes).
+Output written on main.pdf (30 pages, 299067 bytes).
 PDF statistics:
- 532 PDF objects out of 1000 (max. 8388607)
- 121 named destinations out of 1000 (max. 131072)
- 52907 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 550 PDF objects out of 1000 (max. 8388607)
+ 125 named destinations out of 1000 (max. 131072)
+ 52923 words of extra memory for PDF output out of 61914 (max. 10000000)
 

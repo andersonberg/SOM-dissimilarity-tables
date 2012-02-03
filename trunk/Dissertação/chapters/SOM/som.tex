@@ -1,0 +1,31 @@
+%% M.Sc. Thesis
+%% Author: Anderson Berg
+%% CIn-UFPE
+
+\chapter{Mapas auto-organizáveis}
+
+\section{Mapas auto-organizáveis de Kohonen}
+
+Os mapas auto-organizáveis de Kohonen (SOM) têm sido bastante utilizados em diversos domínios e têm sido aplicados com sucesso em diversas aplicações. Tornou-se uma ferramenta muito popular usada para visualização de dados de alta dimensionalidade espacial. SOM é capaz de realizar quantização de vetores e/ou agrupamento de dados preservando o ordenamento espacial dos dados. A preservação topológica dos dados é possível através da ordenação dos vetores dos protótipos (também chamados de centros, centróides ou vetores de referência) em um espaço de uma ou duas dimensões. O mapa auto-organizável consiste em neurônios organizados em uma grade , geralmente com baixa dimensionalidade (comumente duas dimensões), chamado de mapa. Formalmente, o mapa é descrito por um grafo ($C$ , \textit{$\Gamma$}). $C$ é um conjunto de $m$ neurônios interconectados por uma topologia discreta definida por \textit{$\Gamma$}. Para cada par de neurônios ($c, r$) no mapa, $\delta (c, r)$ é definida como a função de distância entre $c$ e $r$ no grafo. Esta distância impõe uma relação de vizinhança entre os neurônios. Cada neurônio $c$ é representado por um protótipo $p$-dimensional $\textbf{w}_c = (w_c^1, ..., w_c^p)$, onde $p$ é igual à dimensão dos vetores dos dados de entrada.
+
+Seja $E=\{1,\ldots,n\}$ o conjunto de objetos, onde cada objeto $\textbf{x}_i = (x_{i1},\ldots,x_{ip}) \, (i=1,\ldots,n)$ pertence a ${\rm I\!R^p}$.
+
+\subsection*{O algoritmo}
+
+O algoritmo SOM básico executa as seguintes etapas:
+
+\begin{itemize}
+\item[1)] {\it Inicialização}.
+\\ Fixe o número $m$ de neurônios (grupos);
+\\ Fixe $h_{\delta(j, l)}(0)$ (função de vizinhança inicial, onde $\delta(j, l)$ é uma função de distância fixa entre os neurônios $j$ e $l$);
+\\ Fixe a função kernel $K$;
+\\ Fixe o número de iterações $N_{iter}$;
+\\ Fixe $\eta(0)$ (taxa de aprendizado inicial);
+\\ Defina $t\leftarrow 1$;
+\\ Selecione $m$ protótipos distintos aleatoriamente $\textbf{w}_c^{(0)} \in E \, (c=1,\ldots,m)$;
+\\ Defina o mapa $L(m,\textbf{W}^{0})$, onde $\textbf{W}^{0}=(\textbf{w}_1^{(0)}, \ldots, \textbf{w}_m^{(0)})$;
+
+\item[2)] {\it Etapa 1: Amostragem}.
+\\ Obtenha um vetor de entrada aleatório \textbf{x}$_i(t)$;
+\item[3)] {\it Etapa 2: Seleção}.
+\end{itemize}
