@@ -23,26 +23,19 @@
 
 \maketitle
 
-%\begin{abstract}
-%  This meta-paper describes the style to be used in articles and short papers
-%  for SBC conferences. For papers in English, you should add just an abstract
-%  while for the papers in Portuguese, we also ask for an abstract in
-%  Portuguese (``resumo''). In both cases, abstracts should not have more than
-%  10 lines and must be in the first page of the paper.
-%\end{abstract}
-%     
-%\begin{resumo} 
-%  Este meta-artigo descreve o estilo a ser usado na confecção de artigos e
-%  resumos de artigos para publicação nos anais das conferências organizadas
-%  pela SBC. É solicitada a escrita de resumo e abstract apenas para os artigos
-%  escritos em português. Artigos em inglês deverão apresentar apenas abstract.
-%  Nos dois casos, o autor deve tomar cuidado para que o resumo (e o abstract)
-%  não ultrapassem 10 linhas cada, sendo que ambos devem estar na primeira
-%  página do artigo.
-%\end{resumo}
-
-
 \section{Justificativa}
+
+O projeto de pesquisa aqui apresentado surgiu da necessidade de realizar agrupamento de dados relacionais levando em conta simultaneamente múltiplas matrizes de dissimilaridade. Agrupamento de dados relacionais é mais utilizado em situações onde os dados não podem ser descritos por características numéricas, também é mais prático quando a distância possui alto grau de complexidade computacional ou quando grupos de objetos similares não podem ser representados eficientemente por um único protótipo.
+
+Muitos algoritmos foram adaptados para analisar dados relacionais. \cite{Kaufman:1987} apresenta uma adaptação do k-means para dados relacionais. Ainda, \cite{Golli:2004} apresenta um modelo de mapa auto-organizável por lote baseado em dados relacionais. O algoritmo apresentado neste trabalho é capaz de analisar dados levando em consideração a dissimilaridade entre observações. Os dados analisados são matrizes de dissimilaridade contendo a relação entre cada um dos objetos presentes na base de dados. Cada matriz representa uma variável da base e a dissimilaridade é calculada por uma função fixa que é a distância euclidiana entre os objetos.
+
+Diversos métodos de análise de dados se baseiam em dados que podem ser descritos por valores reais, ou seja, por vetores em um espaço dimensional fixo e finito. Entretanto, muitos dados do mundo real requerem estruturas mais complexas para que sejam representados adequadamente. Textos, por exemplo, não são numéricos e possuem uma estrutura interna complexa que é difícil de representar em um vetor.
+
+Em diversas situações, dados relacionais são descritos por múltiplas tabelas de dissimilaridade. Como apontado por \cite{Frigui:2007} muitas aplicações podem se beneficiar de algoritmos de agrupamento baseados em múltiplas matrizes de dissimilaridade. Na categorização de imagens, pode-se ter uma matriz com informações de cor, outra matriz com informação de textura e outra com informação de estrutura. 
+
+Porém, diferentes matrizes não são igualmente importantes, algumas podem ser redundantes, outras irrelevantes, ou ainda, podem interferir negativamente na formação dos agrupamentos. Para que haja uma formação adequada dos agrupamentos faz-se necessário o uso de pesos para cada matriz de dissimilaridade, pesos estes que dependem de cada agrupamento. O objetivo da ponderação sobre as matrizes é encontrar graus de relevância e identificar quais características descrevem melhor os dados, tornando o agrupamento mais significativo.
+
+O modelo aqui apresentado utiliza diferentes pesos adaptativos para cada matriz de dissimilaridades. Esses pesos mudam a cada iteração do algoritmo e, além disso, são diferentes de um agrupamento para outro, ou seja, cada matriz possui uma influência diferente sobre a formação de cada agrupamento. O cálculo dos vetores de pesos neste algoritmo foi inspirado pela abordagem utilizada para calcular pesos para cada variável em cada agrupamento no algoritmo de agrupamento dinâmico baseado em distâncias adaptativas (\cite{diday:1977}). Para encontrar uma partição dos elementos, o método descrito leva em consideração simultaneamente a descrição relacional dos dados dada por múltiplas matrizes de dissimilaridade.
 
 \section{Revisão da Literatura}
 
@@ -61,6 +54,8 @@ O mapa auto-organizável pode ser considerado como um algoritmo que mapeia dados 
 %TODO: Falar sobre SOM em lote.
 
 \cite{Golli:2004} e \cite{Conan-Guez2006} propõem uma adaptação dos mapas auto-organizáveis em lote para dados de dissimilaridade. \cite{Frigui:2007} propôs um algoritmo de agrupamento fuzzy para dados relacionais (CARD), que é capaz de particionar objetos levando em conta múltiplas matrizes de dissimilaridade e que ainda calcula pesos que medem a relevância de cada matriz de dissimilaridade para cada um dos grupos. O CARD é baseado em algoritmos de agrupamento fuzzy para dados relacionais bastante conhecidos, o NERF \cite{Hathaway1994} e o FANNY \cite{Kaufman1990}. Como citado por \cite{Frigui:2007}, diversas aplicações podem se beneficiar de algoritmos de agrupamento de dados relacionais baseados em múltiplas matrizes de dissimilaridade. No campo de categorização de base de dados de imagem, a relação entre os objetos pode ser descrita por múltiplas matrizes e a medida de dissimilaridade mais efetiva não possui uma forma definida ou não é diferenciável com respeito aos parâmetros do protótipo.
+
+A ponderação de características deriva da seleção de características e tem sido um tópico de pesquisa importante em algoritmo de aprendizado não-supervisionado. Em \cite{Wang2008}, os autores introduzem um algoritmo fuzzy k-means que tem a vantagem de trabalhar com ponderação para objetos e variáveis simultaneamente. \cite{grozavu:2009} desenvolveu dois modelos usando mapas auto-organizáveis (SOM), que realizam simultaneamente agrupamento e ponderação de variáveis. \cite{Frigui:2007} propõe um algoritmo de agrupamento baseados em múltiplas tabelas de dissimilaridade (CARD) que calcula pesos relacionados à relevância de cada matriz de dissimilaridade sobre cada agrupamento. Em outro trabalho, \cite{frigui:2004} apresenta uma abordagem que realiza agrupamento e ponderação de variáveis simultaneamente.
 
 
 
