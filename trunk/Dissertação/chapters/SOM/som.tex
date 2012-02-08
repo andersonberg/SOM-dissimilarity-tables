@@ -114,7 +114,7 @@ O algoritmo de mapas auto-organizáveis por lote pode ser resumido da seguinte fo
 
 \section{Mapas auto-organizáveis por lote para dados de dissimilaridade} \label{sec:dissimilarity-som}
 
-O algoritmo de mapas auto-organizáveis por lote para dados de dissimilaridade introduzido por \cite{Golli2005} deriva do SOM original como descrito acima. A diferença principal está nos dados que serão agrupados. Estes dados são representados por uma relação de dissimilaridade. 
+O algoritmo de mapas auto-organizáveis por lote para dados de dissimilaridade introduzido por \cite{Golli2004} deriva do SOM original como descrito acima. A diferença principal está nos dados que serão agrupados. Estes dados são representados por uma relação de dissimilaridade. 
 
 Seja $E = \{e_1,\dots,e_n\}$ um conjunto de $n$ objetos e uma medida de dissimilaridade $d(e_i, e_l)$ entre os objetos $e_i$ e $e_l$. Cada neurônio $c$ é representado por um vetor referência (ou protótipo) $g_c = e_j, \: e_j \in E$. No modelo clássico do SOM cada vetor referência pode assumir qualquer valor no espaço de entrada $\mathbb{R}^p$, nesta abordagem, cada neurônio possui um número finito de representações.
 
@@ -126,3 +126,53 @@ J = \sum_{i = 1}^n \sum_{r = 1}^m K^T(\delta(f(e_i),r)) d(e_i, g_r)
 \end{equation}
 
 \noindent onde é a função de alocação e $f(e_i)$ representa o neurônio do mapa que é associado ao objeto $e_i$ e $\delta(f(e_i),r)$ é a distância no mapa entre um neurônio $r$ e o neurônio que está alocado ao objeto $e_i$. O conceito de vizinhança é incorporado através de funções \textit{kernel} $K$ que são positivas e tais que $\lim_{|x| \to \infty} K(x) = 0$ \cite{Badran2005}. Além disso, $K^T$, parametrizado por $T$ ($T$ significa temperatura) é a função \textit{kernel} de vizinhança que define a região de influência ao redor do neurônio $r$. Quanto menor o valor de $T$, menos neurônios irão pertencer à vizinhança de um dado neurônio $r$.
+
+A função objetivo é uma extensão da função objetivo do \textit{k-means}, onde a distância Euclidiana é substituída por uma distância generalizada:
+
+\begin{equation}
+d^T(e_i, g_{f(e_i)}) = \sum_{r=1}^m K^T(\delta(f^T(e_i), r))d(e_i, g_r)
+\label{distance}
+\end{equation}
+
+\noindent esta distância generalizada é a soma dos pesos das distâncias euclidianas entre $e_i$ e todos os protótipos da vizinhança do neurônio $f(e_i)$.
+
+Quando $T$ é mantido fixo, a minimização de $J$ é realizada iterativamente em duas etapas: afetação e representação.
+
+Durante a etapa de afetação, a função $f$ associa cada elemento $e_i$ ao neurônio cujo vetor referência é "mais próximo" a $e_i$ e diminui o valor da função objetivo $J$. Cada indivíduo $e_i$ é associado ao neurônio mais próximo:
+
+\begin{equation}
+c = f^T(e_i) = arg \min_{1 \leq r \leq m} d^T(e_i, g_r)
+\label{f_function_batch} 
+\end{equation}
+
+Durante a etapa de representação, novos protótipos representando cada grupo são selecionados. O protótipo $g^*_r$ do grupo $C_r$, que minimiza a função objetivo $J$ é determinado pela equação:
+
+\begin{equation}
+g^*_r = arg \min_{e \in E} \sum_{i=1}^n K^T (\delta(f^T(e_i),r)) d^T(e_i, e_r)
+\label{G_batch_rossi}
+\end{equation}
+
+\subsection*{O algoritmo}
+
+\begin{enumerate}
+\item Inicialização.\\
+Fixe o número $m$ de neurônios (grupos);
+\\Fixe $\delta$; Fixe a função \textit{kernel} $K^T$;
+\\Fixe o número de iterações $N_{iter}$;
+\\Fixe $T_{min}$, $T_{max}$; Defina $T\leftarrow T_{max}$; Defina $t\leftarrow 0$;
+\\Selecione aleatoriamente $m$ protótipos distintos $g_c^{(0)} \in E (c = 1, \dots, m)$;
+\\Defina o mapa $L(m, G^0)$, onde $G^0 = (g_1^{(0)}, \dots, g_m^{(0)})$;
+\\Associe cada objeto $e_i$ ao neurônio (grupo) mais próximo conforme a equação \ref{f_function_batch};\\
+
+\item Etapa 1: Representação.\\
+Defina $T = T_{max}\ast (\frac{T_{min}}{T_{max}})^\frac{t}{N_{iter}-1}$;\\
+A função de alocação é mantida fixa.\\
+Selecione os protótipos $g_c^{(t)} (c = 1, \dots, m)$ conforme a equação \ref{G_batch_rossi};\\
+
+\item Etapa 2: Afetação.\\
+Os protótipos $g_c^{(t)} (c = 1, \dots, m)$ permanecem fixos. Associe cada indivíduo $e_i (i = 1, \dots, n)$ ao neurônio mais próximo conforme a equação \ref{f_function_batch};\\
+
+\item Critério de parada.
+\\Se $T = T_{min}$ então PARE; senão defina $t = t+1$ e vá para 2 (Etapa 1).
+
+\end{enumerate}
