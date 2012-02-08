@@ -16,16 +16,113 @@ O algoritmo SOM básico executa as seguintes etapas:
 
 \begin{itemize}
 \item[1)] {\it Inicialização}.
-\\ Fixe o número $m$ de neurônios (grupos);
-\\ Fixe $h_{\delta(j, l)}(0)$ (função de vizinhança inicial, onde $\delta(j, l)$ é uma função de distância fixa entre os neurônios $j$ e $l$);
-\\ Fixe a função kernel $K$;
-\\ Fixe o número de iterações $N_{iter}$;
-\\ Fixe $\eta(0)$ (taxa de aprendizado inicial);
-\\ Defina $t\leftarrow 1$;
-\\ Selecione $m$ protótipos distintos aleatoriamente $\textbf{w}_c^{(0)} \in E \, (c=1,\ldots,m)$;
-\\ Defina o mapa $L(m,\textbf{W}^{0})$, onde $\textbf{W}^{0}=(\textbf{w}_1^{(0)}, \ldots, \textbf{w}_m^{(0)})$;
+\\Fixe o número $m$ de neurônios (grupos);
+\\Fixe $h_{\delta(j, l)}(0)$ (função de vizinhança inicial, onde $\delta(j, l)$ é uma função de distância fixa entre os neurônios $j$ e $l$);
+\\Fixe a função kernel $K$;
+\\Fixe o número de iterações $N_{iter}$;
+\\Fixe $\eta(0)$ (taxa de aprendizado inicial);
+\\Defina $t\leftarrow 1$;
+\\Selecione $m$ protótipos distintos aleatoriamente $\textbf{w}_c^{(0)} \in E \, (c=1,\ldots,m)$;
+\\Defina o mapa $L(m,\textbf{W}^{0})$, onde $\textbf{W}^{0}=(\textbf{w}_1^{(0)}, \ldots, \textbf{w}_m^{(0)})$;
 
 \item[2)] {\it Etapa 1: Amostragem}.
-\\ Obtenha um vetor de entrada aleatório \textbf{x}$_i(t)$;
+\\Obtenha um vetor de entrada aleatório \textbf{x}$_i(t)$;
 \item[3)] {\it Etapa 2: Seleção}.
+\\Encontre o melhor neurônio (vencedor) \textbf{w}$_c(t)$ em relação à distância Euclidiana mínima:
+\begin{eqnarray}
+		\centering
+			f(\textbf{x}_i(t)) = \mathop{\mbox{min}}_{1 \leq j \leq m} \sum_{k = 1}^{p} (x_{ik}(t) - w_{jk}(t))^2; \nonumber			
+\end{eqnarray}	
+\item[4)]{\it Etapa 3: Modificação do pesos}.
+\\Para todos os neurônios $j$ dentro de um determinado raio de vizinhança do neurônio vencedor \textbf{w}$_c$, ajuste os pesos de acordo com a expressão:
+		\begin{eqnarray}
+			\centering
+			\textbf{w}_j(t + 1) = \textbf{w}_j(t) + \eta (t)h_{\delta (\textbf{w}_c, w_j)}(t)(\textbf{x}_i(t) - \textbf{w}_j(t)); \nonumber 
+		\end{eqnarray}
+\item[5)] {\it Atualizando}.
+\\Atualize a taxa de aprendizado $\eta (t)$ e a função de vizinhança $h_{l, j} (t)$
+\item[6)] {\it Critério de parada}.
+\\Se $t$ = $N_{Iter}$, pare; senão, vá para 2 (Etapa 1).
+
 \end{itemize}
+
+\section{Mapas auto-organizáveis por lote} \label{sec:b-som}
+
+Esta seção apresenta o mapa auto-organizável por lote introduzido por \cite{Kohonen2002}.
+
+Seja $E=\{1,\ldots,n\}$ o conjunto de objetos, onde cada objeto $\textbf{x}_i = (x_{i1},\ldots,x_{ip}) \, (i=1,\ldots,n)$ pertence a ${\rm I\!R^p}$. Cada neurônio do mapa é representado por um protótipo $\textbf{w}_c = (w_{c1},\ldots,w_{cp}) \, (c=1,\ldots,m)$ que também pertence a ${\rm I\!R^p}$.
+
+O algoritmo de treinamento em lote dos mapas auto-organizáveis \cite{Kohonen2002} é um algoritmo iterativo composto de duas etapas (afetação e representação, discutidas posteriormente), onde todo o conjunto de dados (chamado $E$) é apresentado ao mapa antes que qualquer alteração seja realizada. O algoritmo minimiza a seguinte função objetivo:
+
+\begin{equation}
+	J = \sum_{i = 1}^n \sum_{r = 1}^m K^T(\delta (f^T(\textbf{x}_i), r)) d^2(\textbf{x}_i, \textbf{w}_r) 	
+\end{equation} 
+
+\noindent onde $f$ é a função de alocação e $f(\textbf{x}_i)$ representa o neurônio do mapa que é associado ao objeto $\textbf{x}_i$ e $\delta (f(\textbf{x}_i), r))$ é a distância, no mapa, entre um neurônio $r$ e o neurônio que está alocado ao objeto $\textbf{x}_i$. Além disso, $K^T$, parametrizado por $T$ ($T$ significa temperatura) é a função \textit{kernel} de vizinhança que define a região de influência ao redor do neurônio $r$.
+
+A função objetivo é uma extensão da função objetivo do \textit{k-means}, onde a distância Euclidiana é substituída por uma distância generalizada:
+
+\begin{equation}
+	d^T(\textbf{x}_i, \textbf{w}_{f(\textbf{x}_i)}) = \sum_{r = 1}^m K^T(\delta (f^T(\textbf{x}_i), r)) d^2(\textbf{x}_i, \textbf{w}_r)
+\end{equation}
+
+\noindent onde
+
+\begin{equation}
+d^2(\textbf{x}_i, \textbf{w}_r) = \sum_{j=1}^p (x_{ij} - w_{rj})^2
+\end{equation}
+
+\noindent é a distância Euclidiana. Esta distância generalizada é a soma ponderada das distâncias euclidianas entre $\textbf{x}_i$ e todos os vetores de referência da vizinhança do neurônio $f(\textbf{x}_i)$, e que leva em conta todos os neurônios do mapa.
+
+Quando $T$ é mantido fixo, a minimização de $J$ é realizada iterativamente em duas etapas: afetação e representação.
+
+Durante a etapa de afetação, os vetores de referência (protótipos) são mantidos fixos. A função objetivo é minimizada de acordo com a função de alocação e cada indivíduo \textbf{x}$_i$ é associado ao neurônio mais próximo:
+
+\begin{equation} \label{af}
+	c = f^T (\textbf{x}_i)= arg \mathop{\mbox{min}}_{1 \leq r \leq m} d^T(\textbf{x}_i, \textbf{w}_r)
+\end{equation} 
+
+Durante a etapa de representação, a função de alocação é mantida fixa. A função objetivo $J$ é minimizada de acordo com a atualização dos protótipos. O protótipo $\textbf{w}_c$ é atualizado segundo a expressão:
+
+\begin{equation} \label{rep}
+	\textbf{w}_c = \frac{\sum_{i = 1}^n K^T(\delta(f^T(\textbf{x}_i), c)) \textbf{x}_{i}}{\sum_{i = 1}^n K^T(\delta(f^T(\textbf{x}_i), c))}. 
+\end{equation}
+
+\subsection*{O algoritmo}
+
+O algoritmo de mapas auto-organizáveis por lote pode ser resumido da seguinte forma:
+
+\begin{itemize}
+\item[1)] {\it Inicialização}.
+\\Fixe o número $m$ de neurônios (grupos);
+\\Fixe $\delta$; Fixe a função \textit{kernel} $K^T$;
+\\Fixe o número de iterações $N_{iter}$;
+\\Fixe $T_{min}$, $T_{max}$; Defina $T\leftarrow T_{max}$; Defina $t\leftarrow 0$;
+\\Selecione aleatoriamente $m$ protótipos distintos $\textbf{w}_c^{(0)} \in E \, (c=1,\ldots,m)$;
+\\Defina o mapa $L(m,\textbf{W}^{0})$, onde $\textbf{W}^{0}=(\textbf{w}_1^{(0)}, \ldots, \textbf{w}_m^{(0)})$;
+\\Associe cada objeto $\textbf{x}_i$ ao neurônio mais próximo (grupo) conforme a equação (\ref{af});
+\item[2)] {\it Etapa 1: Representação}.
+\\Defina $T=T_{max} (\frac{T_{min}}{T_{max}})^{\frac{t}{N_{iter}-1}}$;
+\\A função de alocação é mantida fixa;
+\\Calcule os protótipos $\textbf{w}_c^{(t)} \, (c=1,\ldots,m)$ conforme a equação (\ref{rep});
+\item[3)] {\it Etapa 2: Afetação}.
+\\Os protótipos $\textbf{w}_c^{(t)} \, (c=1,\ldots,m)$ são fixos. Associe cada indivíduo $\textbf{x}_i \, (i=1,\ldots,n$ ao neurônio mais próximo conforme a equação (\ref{af});
+  \item[4)] {\it Critério de parada}.
+  \\Se $T = T_{min}$ então PARE; senão defina $t=t+1$ e vá para 2 (Etapa 1).
+
+\end{itemize}
+
+\section{Mapas auto-organizáveis por lote para dados de dissimilaridade} \label{sec:dissimilarity-som}
+
+O algoritmo de mapas auto-organizáveis por lote para dados de dissimilaridade introduzido por \cite{Golli2005} deriva do SOM original como descrito acima. A diferença principal está nos dados que serão agrupados. Estes dados são representados por uma relação de dissimilaridade. 
+
+Seja $E = \{e_1,\dots,e_n\}$ um conjunto de $n$ objetos e uma medida de dissimilaridade $d(e_i, e_l)$ entre os objetos $e_i$ e $e_l$. Cada neurônio $c$ é representado por um vetor referência (ou protótipo) $g_c = e_j, \: e_j \in E$. No modelo clássico do SOM cada vetor referência pode assumir qualquer valor no espaço de entrada $\mathbb{R}^p$, nesta abordagem, cada neurônio possui um número finito de representações.
+
+O algoritmo de treinamento em lote é um algoritmo iterativo composto de duas etapas (afetação e representação, discutidas a seguir) onde todo o conjunto de dados (chamado $E$) é apresentado ao mapa antes que qualquer alteração seja realizada. Durante o aprendizado, a seguinte função objetivo é minimizada:
+
+\begin{equation}
+J = \sum_{i = 1}^n \sum_{r = 1}^m K^T(\delta(f(e_i),r)) d(e_i, g_r)
+\label{custo_batch}
+\end{equation}
+
+\noindent onde é a função de alocação e $f(e_i)$ representa o neurônio do mapa que é associado ao objeto $e_i$ e $\delta(f(e_i),r)$ é a distância no mapa entre um neurônio $r$ e o neurônio que está alocado ao objeto $e_i$. O conceito de vizinhança é incorporado através de funções \textit{kernel} $K$ que são positivas e tais que $\lim_{|x| \to \infty} K(x) = 0$ \cite{Badran2005}. Além disso, $K^T$, parametrizado por $T$ ($T$ significa temperatura) é a função \textit{kernel} de vizinhança que define a região de influência ao redor do neurônio $r$. Quanto menor o valor de $T$, menos neurônios irão pertencer à vizinhança de um dado neurônio $r$.

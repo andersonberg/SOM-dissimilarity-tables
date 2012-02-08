@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2012.1.21)  7 FEB 2012 15:17
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2012.1.21)  7 FEB 2012 23:48
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -556,13 +556,13 @@ LaTeX Info: Redefining \pageref on input line 104.
 \openout4 = `main.out'.
 
 
-<cinlogo.png, id=87, 363.3575pt x 146.5475pt>
+<cinlogo.png, id=91, 363.3575pt x 146.5475pt>
 File: cinlogo.png Graphic file (type png)
  <use cinlogo.png>
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 107.
 
-<ufpelogo.png, id=88, 57.0933pt x 86.0013pt>
+<ufpelogo.png, id=92, 57.0933pt x 86.0013pt>
 File: ufpelogo.png Graphic file (type png)
  <use ufpelogo.png>
 LaTeX Font Info:    Try loading font information for T1+times on input line 107
@@ -741,19 +741,69 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 
 
 
-])
+]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.67784pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5]
+[5pdfTeX warning (ext4): destination with the same identifier (name{equation.pr
+otectrm2.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \endgroup \set@typeset@protect 
+l.56 
+     ]pdfTeX warning (ext4): destination with the same identifier (name{equatio
+n.protectrm2.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.57 \begin{equation}
+                     pdfTeX warning (ext4): destination with the same identifie
+r (name{equation.protectrm2.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.57 \begin{equation}
+                     pdfTeX warning (ext4): destination with the same identifie
+r (name{equation.protectrm2.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.57 \begin{equation}
+                     pdfTeX warning (ext4): destination with the same identifie
+r (name{equation.protectrm2.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.57 \begin{equation}
+                     
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.67784pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6]
+
+Package natbib Warning: Citation `Golli2005' on page 7 undefined on input line 
+117.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.67784pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.67784pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8]
 \openout2 = `chapters/Modelo/main.aux'.
 
  (./chapters/Modelo/main.tex
 Cap\'{\i }tulo 3.
-[6
+[9
 
 
 
@@ -764,7 +814,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7]
+[10]
 
 Package mathptmx Warning: There are no bold math fonts on input line 40.
 
@@ -774,7 +824,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8]
+[11]
 Overfull \hbox (26.08215pt too wide) in paragraph at lines 59--60
 []\T1/ptm/m/n/12 (-20) A fun-ção de alo-ca-ção pa-ra-me-tri-zada pelo ve-tor de
  pe-sos boldmath$\OML/ztmcm/m/it/12 ^^U$$[]$  \T1/ptm/m/n/12 (-20) =$\OML/ztmcm
@@ -788,28 +838,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[10]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[11])
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
 [12]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[15]
 \openout2 = `chapters/Resultados/resultados.aux'.
 
  (./chapters/Resultados/resultados.tex
@@ -822,7 +872,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[13
+[16
 
 
 
@@ -863,27 +913,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[15]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[16]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
 [17]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -891,7 +920,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18] (./main.bbl [19
+[18]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[19]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[20]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[21] (./main.bbl [22
 
 
 ]
@@ -901,25 +951,31 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20])
+[23])
+
+Package natbib Warning: There were undefined citations.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.67784pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[21] (./main.aux (./chapters/introduction/main.aux) (./chapters/SOM/som.aux)
+[24] (./main.aux (./chapters/introduction/main.aux) (./chapters/SOM/som.aux)
 (./chapters/Modelo/main.aux) (./chapters/Resultados/resultados.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 8067 strings out of 256216
- 110798 string characters out of 1917072
- 231485 words of memory out of 1500000
- 10839 multiletter control sequences out of 10000+200000
- 105873 words of font info for 222 fonts, out of 1200000 for 2000
+ 8089 strings out of 256216
+ 111091 string characters out of 1917072
+ 231749 words of memory out of 1500000
+ 10847 multiletter control sequences out of 10000+200000
+ 107043 words of font info for 224 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  41i,12n,45p,1350b,565s stack positions out of 5000i,500n,6000p,200000b,15000s
 {/usr/share/texmf/fonts/enc/dvips/base/8r.enc} </home/anderson/.texlive2007/t
@@ -927,15 +983,16 @@ exmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0600.600pk></usr/share/texmf/fonts/typ
 e1/bluesky/cm/cmex10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi10.pfb></
 usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/
 bluesky/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/bluesky/latex-fonts/lcircle
-1.pfb></usr/share/texmf/fonts/type1/urw/avantgar/uagd8a.pfb></usr/share/texmf/f
-onts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf/fonts/type1/urw/helvetic/uh
-vr8a.pfb></usr/share/texmf/fonts/type1/urw/symbol/usyr.pfb></usr/share/texmf/fo
-nts/type1/urw/symbol/usyr.pfb></usr/share/texmf/fonts/type1/urw/times/utmb8a.pf
-b></usr/share/texmf/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf/fonts/ty
-pe1/urw/times/utmr8a.pfb></usr/share/texmf/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (30 pages, 298898 bytes).
+1.pfb></usr/share/texmf/fonts/type1/bluesky/ams/msbm10.pfb></usr/share/texmf/fo
+nts/type1/urw/avantgar/uagd8a.pfb></usr/share/texmf/fonts/type1/urw/courier/ucr
+r8a.pfb></usr/share/texmf/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf
+/fonts/type1/urw/symbol/usyr.pfb></usr/share/texmf/fonts/type1/urw/symbol/usyr.
+pfb></usr/share/texmf/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf/fonts/
+type1/urw/times/utmr8a.pfb></usr/share/texmf/fonts/type1/urw/times/utmr8a.pfb><
+/usr/share/texmf/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (33 pages, 317529 bytes).
 PDF statistics:
- 552 PDF objects out of 1000 (max. 8388607)
- 125 named destinations out of 1000 (max. 131072)
- 52923 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 595 PDF objects out of 1000 (max. 8388607)
+ 137 named destinations out of 1000 (max. 131072)
+ 52931 words of extra memory for PDF output out of 61914 (max. 10000000)
 
