@@ -25,6 +25,13 @@
   year = {1981}
 }
 
+@ARTICLE{Breiman84,
+  author = {L. Breiman and J. Friedman and C.J. Stone and R.A. Olshen},
+  title = {Classification and Regression Trees},
+  journal = {Chapman and Hall/CRC, Boca Raton},
+  year = {1984}
+}
+
 @ARTICLE{Chavent1998,
   author = {M. Chavent},
   title = {A monotetic clustering method},
@@ -110,7 +117,7 @@
   pages = {567--581}
 }
 
-@ARTICLE{Golli:2004,
+@ARTICLE{Golli2004,
   author = {A. El Golli and B. Conan-Guez and F. Rossi},
   title = {A Self Organizing Map for dissimilarity data},
   journal = {IFCS 2004 Proceedings},
@@ -205,6 +212,15 @@
   year = {1998},
   volume = {2},
   pages = {283--304}
+}
+
+@ARTICLE{Hubert85,
+  author = {L. Hubert and P. Arabie},
+  title = {Comparing partitions},
+  journal = {Journal of Classification},
+  year = {1985},
+  volume = {2},
+  pages = {193--218}
 }
 
 @ARTICLE{Hung01,
@@ -314,12 +330,28 @@
   optpages = {1263--1270}
 }
 
+@ARTICLE{,
+  author = {G. W. Milligan},
+  title = {Clustering Validation: results and implications for applied analysis},
+  journal = {in P. Arabie, L. Hubert, G. De Soete (eds), Clustering and Classification,
+	Word Scientific, Singapore},
+  year = {1996},
+  pages = {341--375}
+}
+
 @ARTICLE{Wang2008,
   author = {Qiang Wang, Yunming Ye and Joshua Zhexue Huang},
   title = {Fuzzy k-Means with Variable Weighting in High Dimensional Data Analysis},
   journal = {The Ninth International Conference on Web-Age Information Management},
   year = {2008},
   pages = {365--372}
+}
+
+@ARTICLE{Rijisbergen79,
+  author = {C.J. van Rijisbergen},
+  title = {Information retrieval},
+  journal = {Butterworth-Heinemann, London},
+  year = {1979}
 }
 
 @ARTICLE{SneathSokal73,

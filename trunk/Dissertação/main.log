@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2012.1.21)  13 FEB 2012 12:42
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2012.1.21)  14 FEB 2012 23:29
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -556,13 +556,13 @@ LaTeX Info: Redefining \pageref on input line 104.
 \openout4 = `main.out'.
 
 
-<cinlogo.png, id=103, 363.3575pt x 146.5475pt>
+<cinlogo.png, id=107, 363.3575pt x 146.5475pt>
 File: cinlogo.png Graphic file (type png)
  <use cinlogo.png>
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 107.
 
-<ufpelogo.png, id=104, 57.0933pt x 86.0013pt>
+<ufpelogo.png, id=108, 57.0933pt x 86.0013pt>
 File: ufpelogo.png Graphic file (type png)
  <use ufpelogo.png>
 LaTeX Font Info:    Try loading font information for T1+times on input line 107
@@ -889,54 +889,37 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
  (./chapters/Resultados/resultados.tex
 Cap\'{\i }tulo 4.
+
+Overfull \hbox (12.4185pt too wide) in paragraph at lines 9--10
+[]\T1/ptm/m/n/12 (-20) Seja $\OML/ztmcm/m/it/12 P \OT1/ztmcm/m/n/12 = \OMS/ztmc
+m/m/n/12 f\OML/ztmcm/m/it/12 P[]; [] ; P[]; [] ; P[]\OMS/ztmcm/m/n/12 g$ \T1/pt
+m/m/n/12 (-20) a par-ti-ção \T1/ptm/m/it/12 (-20) a pri-ori \T1/ptm/m/n/12 (-20
+) em $\OML/ztmcm/m/it/12 m$ \T1/ptm/m/n/12 (-20) clas-ses e $\OML/ztmcm/m/it/12
+ Q \OT1/ztmcm/m/n/12 = \OMS/ztmcm/m/n/12 f\OML/ztmcm/m/it/12 Q[]; [] ; Q[]; [] 
+; Q[]\OMS/ztmcm/m/n/12 g$
+ []
+
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 15.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 12.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (2.46904pt too wide) in paragraph at lines 228--234
+Overfull \hbox (20.18639pt too wide) in paragraph at lines 15--29
  [] 
  []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Package amsmath Warning: Foreign command \atopwithdelims;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 38.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) [18
+[18
 
 
 
 ]
+
+Package natbib Warning: Citation `Milligan96' on page 19 undefined on input lin
+e 43.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -946,18 +929,51 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [19]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
+ Make it at least 14.67784pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [20]
 
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 113.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
+ Make it at least 14.67784pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [21]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (2.46904pt too wide) in paragraph at lines 340--346
+ [] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -965,6 +981,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [22]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -978,7 +1001,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24] (./main.bbl [25
+[24]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[25]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[26]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[27] (./main.bbl [28
 
 
 ]
@@ -988,27 +1032,34 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26])
+[29]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.67784pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[27] (./main.aux (./chapters/introduction/main.aux) (./chapters/SOM/som.aux)
+[30])
+
+Package natbib Warning: There were undefined citations.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.67784pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[31] (./main.aux (./chapters/introduction/main.aux) (./chapters/SOM/som.aux)
 (./chapters/Modelo/main.aux) (./chapters/Resultados/resultados.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 8111 strings out of 256216
- 111363 string characters out of 1917072
- 238132 words of memory out of 1500000
- 10857 multiletter control sequences out of 10000+200000
+ 8142 strings out of 256216
+ 111839 string characters out of 1917072
+ 235517 words of memory out of 1500000
+ 10870 multiletter control sequences out of 10000+200000
  107043 words of font info for 224 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  41i,12n,45p,1350b,565s stack positions out of 5000i,500n,6000p,200000b,15000s
@@ -1024,9 +1075,9 @@ r8a.pfb></usr/share/texmf/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf
 pfb></usr/share/texmf/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf/fonts/
 type1/urw/times/utmr8a.pfb></usr/share/texmf/fonts/type1/urw/times/utmr8a.pfb><
 /usr/share/texmf/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (36 pages, 330006 bytes).
+Output written on main.pdf (40 pages, 351967 bytes).
 PDF statistics:
- 637 PDF objects out of 1000 (max. 8388607)
- 149 named destinations out of 1000 (max. 131072)
- 52955 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 688 PDF objects out of 1000 (max. 8388607)
+ 167 named destinations out of 1000 (max. 131072)
+ 52963 words of extra memory for PDF output out of 61914 (max. 10000000)
 

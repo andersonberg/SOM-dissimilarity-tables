@@ -2,13 +2,117 @@
 %% Author: Anderson Berg
 %% CIn-UFPE
 
-\chapter{Resultados}
+\chapter{Experimentos}
+
+Para comparar os resultados dos agrupamentos fornecidos pelos algoritmos, serão considerador um índice externo -- o índice de Rand corrigido ($CR$) \citep{Hubert85} -- como também o índice $F-measure$ \citep{Rijisbergen79} e a taxa de erro global de classificação (overall error rate of classification -- $OERC$) \citep{Breiman84}.
+
+Seja $P = \{P_1, \dots, P_i, \dots, P_m\}$ a partição \textit{a priori} em $m$ classes e $Q = \{Q_1, \dots, Q_j, \dots, Q_K\}$ a partição em $K$ grupos dada pelo algoritmo de agrupamento. A matriz de confusão é dada abaixo:
+
+\begin{table}[h!]
+\caption{Matriz de Confusão}\label{t-0}
+\begin{center}
+%{\scriptsize
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{} &
+\multicolumn{6}{|c|}{Clusters}
+\\ \cline{2-7}
+\multicolumn{1}{|c|}{Classes} & \multicolumn{1}{|c|}{$Q_1$} & \multicolumn{1}{|c|}{$\ldots$} & \multicolumn{1}{|c|}{$Q_j$} & \multicolumn{1}{|c|}{$\ldots$} & \multicolumn{1}{|c|}{$Q_K$} & \multicolumn{1}{|c|}{$\sum$}  \\ \hline
+$P_1$	&$n_{11}$	&$\ldots$	&$n_{1j}$	&$\ldots$	&$n_{1K}$ &	$n_{1\bullet} = \sum_{j=1}^K n_{1j}$\\
+$\vdots$	&$\vdots$	&$\hdots$	&$\vdots$	&$\hdots$	&$\vdots$ &	$\vdots$ \\
+$P_i$	&$n_{i1}$	&$\ldots$	&$n_{ij}$	&$\ldots$	&$n_{iK}$ &	$n_{i\bullet} = \sum_{j=1}^K n_{ij}$ \\
+$\vdots$	&$\vdots$	&$\ldots$	&$\vdots$	&$\ldots$	&$\vdots$ &	 \\
+$P_m$	&$n_{m1}$	&$\ldots$	&$n_{mj}$	&$\ldots$	&$n_{mK}$ & $n_{m\bullet} = \sum_{j=1}^K n_{mj}$\\ \hline
+$\sum$  & $n_{\bullet1} = \sum_{i=1}^m n_{i1}$ & $\ldots$ & $n_{\bullet j} = \sum_{i=1}^m n_{ij}$ &$\ldots$ & $n_{\bullet K} = \sum_{i=1}^m n_{iK}$ & $n=\sum_{i=1}^m \sum_{j=1}^K n_{ij}$\\ \hline
+\end{tabular}
+%}
+\end{center}
+\end{table}
+
+O índice de Rand corrigido é:
+
+\begin{equation} \label{eq:adjustedrand} CR =
+\frac{\sum_{i=1}^m\sum_{j=1}^K {{n_{ij}}\choose{2}} -
+{{n}\choose{2}}^{-1}\sum_{i=1}^m{{n_{i\bullet}}\choose{2}}\sum_{j=1}^K{{n_{\bullet j}}\choose{2}}}
+{\frac{1}{2}[\sum_{i=1}^m{{n_{i\bullet}}\choose{2}}+\sum_{j=1}^K{{n_{\bullet j}}\choose{2}}]
+-{{n}\choose{2}}^{-1}\sum_{i=1}^m{{n_{i\bullet}}\choose{2}}\sum_{j=1}^K{{n_{\bullet j}}\choose{2}}}
+\end{equation}
+
+\noindent onde ${{n}\choose{2}}=\frac{n(n-1)}{2}$ e $n_{ij}$ representa o número de objetos que estão na classe $P_i$ e no grupo $Q_j$; $n_{i\bullet}$ indica o número de objetos na classe $P_i$; $n_{\bullet j}$ indica o número de objetos no grupo $Q_j$; e $n$ é o número total de objetos na base de dados.
+
+O índice \textit{CR} avalia o grau de combinação (semelhança) entre uma partição \textit{a priori} e uma partição fornecida por um algoritmo de agrupamento. Além disso, o índice \textit{CR} não é sensível ao número de classes nas partições ou à distribuição dos itens nos grupos. Finalmente, o índice $CR$ possui valores no intervalo [-1,1], onde 1 indica perfeita combinação entre as partições, enquanto que valores próximos a 0 (ou negativos) correspondem a combinação entre partições encontrada por acaso \citep{Milligan96}.
+
+A tradicional medida $F-measure$ entre a classe $P_i \, (i=1,\ldots,m)$ e o grupo $Q_j \, (j=1,\ldots,K)$ é a média harmônica de \textit{precision} e \textit{recall}:
+
+\begin{equation}
+F-measure(P_i,Q_j) = 2 \, \frac{Precision(P_i,Q_j)\,Recall(P_i,Q_j) }{Precision(P_i,Q_j)+Recall(P_i,Q_j)}
+\end{equation}
+
+$Precision$ entre a classe $P_i \, (i=1,\ldots,m)$ e o grupo $Q_j \, (j=1,\ldots,K)$ é definido como a taxa entre o número de objetos que estão na classe $P_i$ e no grupo $Q_j$ e o número de objetos em $Q_j$:
+
+\begin{equation}
+Precision(P_i,Q_j) = \frac{n_{ij}}{n_{\bullet j}} = \frac{n_{ij}}{\sum_{i=1}^m n_{ij}}
+\end{equation}
+
+$Recall$ entre a classe $P_i \, (i=1,\ldots,m)$ e o grupo $Q_j \, (j=1,\ldots,K)$ é definido como a taxa entre o número de objetos que estão na classe $P_i$ e no grupo $Q_j$ e o número de objetos na classe $P_i$:
+
+\begin{equation}
+Recall(P_i,Q_j) = \frac{n_{ij}}{n_{i\bullet}} = \frac{n_{ij}}{\sum_{j=1}^K n_{ij}}
+\end{equation}
+
+$F-measure$ entre a partição \textit{a priori} $P = \{P_1, \dots, P_i, \dots, P_m\}$ e a partição $Q = \{Q_1, \dots, Q_j, \dots, Q_K\}$ fornecida pelo algoritmo de agrupamento é definido como:
+
+\begin{equation} \label{eq:Fmeasure}
+F-measure(P,Q) = \frac{1}{n} \sum_{i=1}^m n_{i\bullet} 
+\begin{tabular}[t]{c}
+max
+$_{1\leq j \leq K}$
+\end{tabular}
+F-measure(P_i,Q_j)
+\end{equation}
+
+O índice $F-measure$ possui valores dentro do intervalo [0,1], onde o valor 1 indica perfeita combinação entra as partições.
+
+Em problemas de classificação, cada grupo $Q_j$ é associado a uma classe \textit{a priori} $P_i$ e esta associação precisa ser interpretada como se a verdadeira classe \textit{a priori} seja $P_i$. Uma vez tomada esta decisão, para um dado objeto do grupo $Q_j$ a decisão é correta se a classe \textit{a priori} do objeto é $P_i$ e é um erro se a classe \textit{a priori} não é $P_i$. Para se obter uma taxa de erro de classificação (error rate of classification -- $ERC$) mínimo, precisa-se buscar uma regra de decisão que minimize a probabilidade de erro.
+
+Seja $p(P_i/Q_j)$ a probabilidade \textit{a posteriori} de que um objeto pertença à classe $P_i$ quando é associado ao grupo $Q_j$. Seja $p(Q_j)$ a probabilidade de que o objeto pertença ao grupo $Q_j$. A função $p$ é conhecida como função de verossimilhança.
+
+A estimativa da máxima probabilidade \textit{a posteriori} (maximum a posteriori probability -- MAP) é a moda da probabilidade \textit{a posteriori} $p(P_i/Q_j)$ e o índice da classe \textit{a priori} associada a esta moda é dada por:
+
+\begin{equation}
+MAP(Q_j) = \arg \max_{1\leq i \leq m}p(P_i/Q_j)
+\end{equation}
+
+A regra de decisão de Bayes para minimizar a probabilidade média de erro é selecionar a classe \textit{a priori} que maximiza a probabilidade \textit{a posteriori}. A taxa de erro de classificação $ERC(Q_j)$ do grupo $Q_j$ é igual a $1- p(P_{MAP(Q_j)}/Q_j)$ e a taxa de erro global de classificação $OERC$ é:
+
+\begin{equation} 
+OERC = \sum_{j=1}^K {p(Q_j)(1-p(P_{MAP(Q_j)}/Q_j))}
+\end{equation}
+
+Por exemplo,
+
+\begin{equation}
+p(P_{MAP(Q_j)}/Q_j)	 = \max_{1\leq i \leq m} \frac{n_{ij}}{n_{\bullet j}}.
+\end{equation}
+
+O índice $OERC$ mede a habilidade de um algoritmo de agrupamento de encontrar a classe \textit{a priori} presente em um conjunto de dados e é calculado por:
+
+\begin{equation} \label{eq:oerc}
+OERC = \sum_{j=1}^K \frac{n_{\bullet j}}{n} \, (1- \max_{1\leq i \leq m} n_{ij}/n_{\bullet j})=
+1 - \frac{\sum_{j=1}^K \max_{1\leq i \leq m}{n_{ij}}}{n}
+\end{equation}
+
+A seguir, apresentamos as características principais de cada base de dados utilizada durante os experimentos, bem como os parâmetros selecionados para executar os algoritmos descritos neste trabalho. Além disso, discutimos os resultados dos experimentos realizados comparando os diferentes algoritmos entre si.
 
 \section{Base de dados Íris}
 
 Esta base de dados consiste em três tipos (classes) de íris de plantas: iris setosa, iris versicolour and iris virginica. As três classes possuem 50 instâncias (objetos) cada. Uma das classes é linearmente separada das outras duas, estas últimas não são linearmente separadas uma da outra. Cada objeto é descrito por quatro atributos de valores reais: (1) comprimento da sépala, (2) largura da sépala, (3) comprimento da pétala e (4) largura da pétala.
 
-Os três algoritmos de agrupamento (SOM em lote baseado em uma única tabela de dissimilaridade, SOM em lote baseado em múltiplas tabelas de dissimilaridade com ponderação local e sua variante com ponderação global) foram aplicados às matrizes de dissimilaridade representando esta base de dados.
+Os três algoritmos de agrupamento (SOM em lote baseado em uma única tabela de dissimilaridade, SOM em lote baseado em múltiplas tabelas de dissimilaridade com ponderação local e sua variante com ponderação global) foram aplicados às matrizes de dissimilaridade representando esta base de dados. No caso do SOM em lote original há somente uma matriz disponível, enquanto que, para os demais estão disponíveis múltiplas matrizes de dissimilaridade. Cada algoritmo foi executado 100 vezes e o melhor resultado foi selecionado de acordo com o critério de adequação. A topologia selecionada para o mapa nesta base de dados é formada por duas linhas e oito colunas (2x8) totalizando 16 grupos. O número de iterações escolhido foi de 100 ($N_{iter}=100$). Os experimentos de cada algoritmo foram executados com quatro valores diferentes para $T_{max}$: 6, 7, 9 e 16. Os valores de $T_{min}$ correspondentes foram fixados no valor de 0,3.
+
+\subsubsection{Discussão dos Resultados}
+
+A tabela \ref{iris_index} mostra os valores para os índices de Rand corrigido, F-measure e a Taxa de Erro Global de Classificação (OERC). Em cada linha dessa tabela, pode-se observar os valores dos índices para cada um dos diferentes valores de $T_{max}$.
 
 \begin{table}[h!]
 \begin{center}
@@ -34,6 +138,10 @@ Os três algoritmos de agrupamento (SOM em lote baseado em uma única tabela de di
 \end{center}
 \end{table}
 
+Para esta base de dados, o melhor desempenho foi apresentado pelo SOM em lote ponderado localmente (AB-SOM) e pelo SOM em lote original, nesta ordem. O pior desempenho foi apresentado pelo SOM em lote ponderado globalmente (global AB-SOM).
+
+A tabela \ref{iris_matrices} mostra o resultado final dos pesos que medem a influência de cada matriz sobre a formação dos grupos. Nesta tabela pode-se observar quais matrizes tiveram maior e menor relevância geral para cada um dos algoritmos para o caso em que o valor de $T_{max} = 16$. A variável representando o comprimento da pétala obteve o maior grau de relevância para os dois algoritmos apresentados.
+
 \begin{table}[h!]
 \caption{Base Íris: Matrizes relevantes ($T_{max} = 16$)} \label{iris_matrices}
 \begin{center}
@@ -41,12 +149,14 @@ Os três algoritmos de agrupamento (SOM em lote baseado em uma única tabela de di
 \begin{tabular}{|c|c|c|}
 \hline
 Modelo & Matriz mais importante & Matriz menos importante \\ \hline
-AB-SOM & 3-Petal length & 1-Sepal length \\ \hline
-global AB-SOM & 3-Petal length & 2-Sepal width \\ \hline
+AB-SOM & 3-comprimento da pétala & 1-comprimento da sépala \\ \hline
+global AB-SOM & 3-comprimento da pétala & 2-largura da sépala \\ \hline
 \end{tabular}
 %}
 \end{center}
 \end{table}
+
+A tabela \ref{iris_adapt_matrix} mostra a matriz de confusão para o algoritmo SOM em lote para múltiplas tabelas de dissimilaridade com ponderação local (AB-SOM) aplicado à base de dados íris, neste caso com $T_{max} = 6$. A classe com maior número de elementos pertencentes ao grupo é a representante deste grupo. Logo, é possível observar que existe uma estrutura inerente aos dados. Por exemplo, os primeiros dois grupos (0,0 e 0,1) representam a classe Iris versicolour, assim como o segundo grupo, na segunda linha (1,1). Semelhantemente, os últimos grupos no mapa (0,7 e 1,7) representam a classe Iris setosa, ilustrando que elementos semelhantes se posicionam e m grupos próximos.
 
 \begin{table}[!h]
 \caption{Base Íris: matriz de confusão do algoritmo AB-SOM para mútiplas tabelas de dissimilaridade ($T_{max} = 6$)}\label{iris_adapt_matrix}
@@ -78,6 +188,8 @@ Agrupamentos & 1-Iris setosa & 2-Iris versicolour & 3-Iris virginica \\ \hline
 %}
 \end{center}
 \end{table}
+
+A tabela \ref{iris_absom_weight} mostra a matriz de pesos final para o algoritmo AB-SOM para múltiplas matrizes de dissimilaridade, com $T_{max} = 6$. Nesta tabela, os números em negrito possuem valor maior do que 1 e representam as matrizes mais relevantes na formação dos grupos de dados. Por exemplo, os pesos para as matrizes (3) comprimento da pétala e (4) largura da pétala possuem valores maiores do que as demais, denotando uma maior importância no momento em que os objetos são alocados a um determinado grupo.
 
 \begin{table}[h!]
 \caption{Base Íris: Matriz de pesos final do algoritmo AB-SOM para múltiplas tabelas de dissimilaridade ($T_{max} = 6$)}\label{iris_absom_weight}
