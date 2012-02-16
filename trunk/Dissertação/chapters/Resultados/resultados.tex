@@ -112,7 +112,7 @@ Os três algoritmos de agrupamento (SOM em lote baseado em uma única tabela de di
 
 \subsubsection{Discussão dos Resultados}
 
-A tabela \ref{iris_index} mostra os valores para os índices de Rand corrigido, F-measure e a Taxa de Erro Global de Classificação (OERC). Em cada linha dessa tabela, pode-se observar os valores dos índices para cada um dos diferentes valores de $T_{max}$.
+A tabela \ref{iris_index} mostra os valores para os índices de Rand corrigido ($CR$), $F-measure$ e a Taxa de Erro Global de Classificação ($OERC$). Em cada linha dessa tabela, pode-se observar os valores dos índices para cada um dos diferentes valores de $T_{max}$.
 
 \begin{table}[h!]
 \begin{center}
@@ -189,7 +189,7 @@ Agrupamentos & 1-Iris setosa & 2-Iris versicolour & 3-Iris virginica \\ \hline
 \end{center}
 \end{table}
 
-A tabela \ref{iris_absom_weight} mostra a matriz de pesos final para o algoritmo AB-SOM para múltiplas matrizes de dissimilaridade, com $T_{max} = 6$. Nesta tabela, os números em negrito possuem valor maior do que 1 e representam as matrizes mais relevantes na formação dos grupos de dados. Por exemplo, os pesos para as matrizes (3) comprimento da pétala e (4) largura da pétala possuem valores maiores do que as demais, denotando uma maior importância no momento em que os objetos são alocados a um determinado grupo.
+A tabela \ref{iris_absom_weight} mostra a matriz de pesos final para o algoritmo AB-SOM para múltiplas tabelas de dissimilaridade, com $T_{max} = 6$. Nesta tabela, os números em negrito possuem valor maior do que 1 e representam as matrizes mais relevantes na formação dos grupos de dados. Por exemplo, os pesos para as matrizes (3) comprimento da pétala e (4) largura da pétala possuem valores maiores do que as demais, denotando uma maior importância no momento em que os objetos são alocados a um determinado grupo.
 
 \begin{table}[h!]
 \caption{Base Íris: Matriz de pesos final do algoritmo AB-SOM para múltiplas tabelas de dissimilaridade ($T_{max} = 6$)}\label{iris_absom_weight}
@@ -226,6 +226,14 @@ Agrupamentos & 1-Sepal length & 2-Sepal width & 3-Petal length & 4-Petal width\\
 
 \section{Base de dados E.coli}
 
+A base de dados E.coli contém informações sobre proteínas classificadas em oito classes. Existem 336 exemplos descritos por 6 atributos, onde um dos atributos é a classe. As classes e suas distribuições são as seguintes: cp (cytoplasm), 143 exemplos; im (inner membrane without signal sequence), 77 exemplos; pp (perisplasm), 52 exemplos; imU (inner membrane, uncleavable signal sequence), 35 exemplos; om (outer membrane), 20 exemplos; omL (outer membrane lipoprotein), 5 exemplos; imL (inner membrane lipoprotein), 2 exemplos; imS (inner membrane, cleavable signal sequence), 2 exemplos. Cada exemplos (objeto) é descrito por oito atributos.
+
+Os três algoritmos de agrupamento (SOM em lote baseado em uma única tabela de dissimilaridade, SOM em lote baseado em múltiplas tabelas de dissimilaridade com ponderação local e sua variante com ponderação global) foram aplicados às matrizes de dissimilaridade representando esta base de dados. No caso do SOM em lote original há somente uma matriz disponível, enquanto que, para os demais estão disponíveis múltiplas matrizes de dissimilaridade. Cada algoritmo foi executado 100 vezes e o melhor resultado foi selecionado de acordo com o critério de adequação. A topologia selecionada para o mapa nesta base de dados é formada por três linhas e cinco colunas (3x5) totalizando 15 grupos. O número de iterações escolhido foi de 50 ($N_{iter}=50$). Os experimentos de cada algoritmo foram executados com quatro valores diferentes para $T_{max}$: 4; 4,5; 6 e 10. Os valores de $T_{min}$ correspondentes foram fixados no valor de 0,3.
+
+\subsubsection{Discussão dos Resultados}
+
+A tabela \ref{ecoli_index} mostra os valores do índice de Rand corrigido ($CR$), $F-measure$, e $OERC$ para cada um dos algoritmos. Em cada linha dessa tabela, pode-se observar os valores dos índices para cada um dos diferentes valores de $T_{max}$.
+
 \begin{table}[h!]
 \begin{center}
 \caption{Base E.coli: índices $CR$, $F-measure$, e $OERC$} \label{ecoli_index}
@@ -249,6 +257,8 @@ Agrupamentos & 1-Sepal length & 2-Sepal width & 3-Petal length & 4-Petal width\\
 \end{center}
 \end{table}
 
+A tabela \ref{ecoli_matrices} mostra as matrizes mais relevantes e menos relevantes para a definição dos grupos. As matrizes com maior relevância são aquelas que obtiveram maior peso no final da execução do algoritmo, as matrizes de menor relevâncias são as que obtiveram os menores pesos. Nesta tabela, pode-se observar as matrizes mais e menos importantes para cada algoritmo com $T_{max} = 4$.
+
 \begin{table}[h!]
 \caption{Base E.coli: Matrizes relevantes ($T_{max} = 4$)} \label{ecoli_matrices}
 \begin{center}
@@ -261,6 +271,11 @@ global AB-SOM & 4 & 3\\ \hline
 \end{tabular}
 \end{center}
 \end{table}
+
+A tabela \ref{ecoli_adapt_matrix} mostra a matriz de confusão para o algoritmo AB-SOM para múltiplas tabelas de dissimilaridade aplicado à base de dados, com $T_{max} = 10$. Da mesma forma que a base de dados anterior, pode-se buscar regiões na matriz (que representa o mapa) onde objetos de uma mesma classe são localizados. Por exemplo, os grupos 0,4; 1,2; 1,3; 1,4; 2,3 e 2,4 representam a classe 1.
+
+A tabela \ref{ecoli_gl_absom_weight} apresenta a matriz de pesos final para o algoritmo AB-SOM com ponderação global para $T_{max} = 10$. Os pesos para este algoritmo são os mesmos para todos os grupos, porém diferentes de uma matriz para outra. Nesta tabela, os números em negrito indicam pesos com valor maior do que 1 e representam matrizes com maior relevância na formação de cada grupo. Por exemplo, os pesos das matrizes 4 e 5 possuem valores maiores do que as demais matrizes, indicando maior influência no momento em que os objetos são alocados a um determinado grupo.
+
 
 \begin{table}[h!]
 \caption{Base E.coli: matriz de confusão do algoritmo AB-SOM global para múltiplas tabelas de dissimilaridade ($T_{max} = 10$)}\label{ecoli_adapt_matrix}
@@ -310,10 +325,18 @@ Agrupamentos & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\ \hline
 
 \section{Base de dados Thyroid}
 
+Esta base de dados consiste em três classes relativas ao estado da glândula tiroide: normal, hipertiroidismo e hipotiroidismo. As classes (1, 2 e 3) têm 150, 35 e 30 instâncias, respectivamente. Cada objeto é descrito por cinco atributos de valores reais: 1) T3-resin uptake test, (2) total serum thyroxin, (3) total serum triiodothyronine, (4) basal thyroid-stimulating hormone (TSH) e (5) maximal absolute difference in TSH value.
+
+
+Os três algoritmos de agrupamento (SOM em lote baseado em uma única tabela de dissimilaridade, SOM em lote baseado em múltiplas tabelas de dissimilaridade com ponderação local e sua variante com ponderação global) foram aplicados às matrizes de dissimilaridade representando esta base de dados. No caso do SOM em lote original há somente uma matriz disponível, enquanto que, para os demais estão disponíveis múltiplas matrizes de dissimilaridade. Cada algoritmo foi executado 100 vezes e o melhor resultado foi selecionado de acordo com o critério de adequação. A topologia selecionada para o mapa nesta base de dados é formada por três linhas e cinco colunas (3x5) totalizando 15 grupos. O número de iterações escolhido foi de 50 ($N_{iter}=50$). Os experimentos de cada algoritmo foram executados com quatro valores diferentes para $T_{max}$: 4; 4,5; 6 e 10. Os valores de $T_{min}$ correspondentes foram fixados no valor de 0,3.
+
+\subsubsection{Discussão dos Resultados}
+
+A tabela \ref{thyroid_index} mostra os valores para os índices de Rand corrigido ($CR$), $F-measure$ e a Taxa de Erro Global de Classificação ($OERC$) obtidos para cada um dos algoritmos. Em cada linha dessa tabela, pode-se observar os valores dos índices para cada um dos diferentes valores de $T_{max}$. Para esta base, o melhor desempenho global foi apresentado pelos algoritmos AB-SOM com ponderação global and AB-SOM com ponderação local, nesta ordem.
+
 \begin{table}[h!]
 \begin{center}
 \caption{Base de dados Thyroid: índices $CR$, $F-measure$ e $OERC$} \label{thyroid_index}
-
 \begin{tabular}{|c|c|c|c|c|} \hline
  Índices & $T_{max}$ & B-SOM & AB-SOM & AB-SOM global\\ \hline
 \multirow{4}{1.8cm}{$CR$} & 4 & 0.3662 & 0.4539 & 0.5700 \\
@@ -328,22 +351,21 @@ Agrupamentos & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\ \hline
  & 5 & 9.30\% & 5.58\% & 4.19\% \\ 
  & 6 & 11.16\% & 4.19\% & 7.44\% \\ 
  & 10 & 9.30\% & 3.72\% & 5.12\% \\ \hline
-
 \end{tabular}
 \end{center}
 \end{table}
 
+A tabela \ref{thyroid_matrices} mostra o resultado final dos pesos que medem a influência de cada matriz sobre a formação dos grupos. Nesta tabela pode-se observar quais matrizes tiveram maior e menor relevância geral para cada um dos algoritmos para o caso em que o valor de $T_{max} = 4$. A matriz representando o atributo TSH apresentou o peso com maior valor para o algoritmo AB-SOM com ponderação local, indicando maior influência na formação dos grupos durante a execução deste algoritmo. Para o algoritmo AB-SOM com ponderação global, o mesmo comportamento pode ser observado pela matriz representando o atributo \textit{maximal absolute difference}.
+
 \begin{table}[h!]
 \caption{Base de dados Thyroid: Matrizes ($T_{max} = 4$)} \label{thyroid_matrices}
 \begin{center}
-
 \begin{tabular}{|c|c|c|}
 \hline
 Modelo & Matriz mais importante & Matriz menos importante \\ \hline
 AB-SOM & 4-TSH & 1-T3-resin uptake test\\ \hline
 global AB-SOM & 5-maximal absolute difference in TSH & 1-T3-resin uptake test\\ \hline
 \end{tabular}
-
 \end{center}
 \end{table}
 
