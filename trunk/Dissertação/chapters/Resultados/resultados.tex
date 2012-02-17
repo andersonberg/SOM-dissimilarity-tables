@@ -4,7 +4,7 @@
 
 \chapter{Experimentos}
 
-Para comparar os resultados dos agrupamentos fornecidos pelos algoritmos, serão considerador um índice externo -- o índice de Rand corrigido ($CR$) \citep{Hubert85} -- como também o índice $F-measure$ \citep{Rijisbergen79} e a taxa de erro global de classificação (overall error rate of classification -- $OERC$) \citep{Breiman84}.
+Para comparar os resultados dos grupos fornecidos pelos algoritmos, serão considerador um índice externo -- o índice de Rand corrigido ($CR$) \citep{Hubert85} -- como também o índice $F-measure$ \citep{Rijisbergen79} e a taxa de erro global de classificação (overall error rate of classification -- $OERC$) \citep{Breiman84}.
 
 Seja $P = \{P_1, \dots, P_i, \dots, P_m\}$ a partição \textit{a priori} em $m$ classes e $Q = \{Q_1, \dots, Q_j, \dots, Q_K\}$ a partição em $K$ grupos dada pelo algoritmo de agrupamento. A matriz de confusão é dada abaixo:
 
@@ -167,7 +167,7 @@ A tabela \ref{iris_adapt_matrix} mostra a matriz de confusão para o algoritmo SO
 \multicolumn{1}{|c|}{} &
 \multicolumn{3}{|c|}{Classes}
 \\ \cline{2-4}
-Agrupamentos & 1-Iris setosa & 2-Iris versicolour & 3-Iris virginica \\ \hline
+Grupos & 1-Iris setosa & 2-Iris versicolour & 3-Iris virginica \\ \hline
 0,0 & 0 & 16 & 0 \\ \hline
 0,1 & 0 & 12 & 0 \\ \hline
 0,2 & 0 & 1 & 10 \\ \hline
@@ -200,7 +200,7 @@ A tabela \ref{iris_absom_weight} mostra a matriz de pesos final para o algoritmo
 \multicolumn{1}{|c|}{} &
 \multicolumn{4}{|c|}{Matriz}
 \\ \cline{2-5}
-Agrupamentos & 1-Sepal length & 2-Sepal width & 3-Petal length & 4-Petal width\\ \hline
+Grupos & 1-Sepal length & 2-Sepal width & 3-Petal length & 4-Petal width\\ \hline
 0,0 & 0.5878 & 0.5075 & \textbf{2.1617} & \textbf{1.5507}\\ \hline
 0,1 & 0.1438 & 0.7925 & \textbf{1.5381} & \textbf{5.7034}\\ \hline
 0,2 & 0.1193 & \textbf{47.9332} & 0.5631 & 0.3104\\ \hline
@@ -286,7 +286,7 @@ A tabela \ref{ecoli_gl_absom_weight} apresenta a matriz de pesos final para o al
 \multicolumn{1}{|c|}{} &
 \multicolumn{8}{|c|}{Classes}
 \\ \cline{2-9}
-Agrupamentos & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\ \hline
+Grupos & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\ \hline
 0,0 & 0 & 18 & 0 & 0 & 16 & 1 & 0 & 0 \\ \hline
 0,1 & 0 & 10 & 0 & 1 & 24 & 0 & 0 & 0 \\ \hline
 0,2 & 0 & 6 & 1 & 0 & 17 & 1 & 0 & 0 \\ \hline
@@ -369,13 +369,77 @@ global AB-SOM & 5-maximal absolute difference in TSH & 1-T3-resin uptake test\\ 
 \end{center}
 \end{table}
 
+A tabela \ref{thy_adapt_matrix} apresenta a matriz de confusão da variante com ponderação local do algoritmo AB-SOM. A matriz de confusão mostra a distribuição das classes dentro dos grupos formados pelo algoritmo, desta forma é possível perceber regiões de grupos próximos onde há predominância de objetos de uma mesma classe. Por exemplo, as classes 1,0; 1,1; 2,0 e 2,1 são formados por objetos, em sua maioria, da classe 1.
+
+A tabela \ref{thy_absom_weight} apresenta a matriz de pesos final da variante com ponderação local do algoritmo AB-SOM. Nesta tabela pode-se perceber que as matrizes 4 (\textit{basal thyroid-stimulating hormone (TSH)}) e 5 (\textit{maximal absolute difference in TSH value}) obtiveram os maiores pesos, denotando maior relevância na formação dos grupos.
+
+\begin{table}[h!]
+\caption{Base Thyroid: matriz de confusão do algoritmo AB-SOM para múltiplas tabelas de dissimilaridade ($T_{max} = 4$)}\label{thy_adapt_matrix}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{} &
+\multicolumn{3}{|c|}{Classes}
+\\ \cline{2-4}
+Grupos & 1 & 2 & 3 \\ \hline
+0,0 & 0 & 27 & 0 \\ \hline
+0,1 & 0 & 4 & 0 \\ \hline
+0,2 & 1 & 0 & 0 \\ \hline
+0,3 & 0 & 0 & 3 \\ \hline
+0,4 & 0 & 0 & 10 \\ \hline \hline
+1,0 & 21 & 1 & 0 \\ \hline
+1,1 & 16 & 0 & 0 \\ \hline
+1,2 & 0 & 3 & 0 \\ \hline
+1,3 & 1 & 0 & 2 \\ \hline
+1,4 & 0 & 0 & 1 \\ \hline \hline
+2,0 & 53 & 0 & 1 \\ \hline
+2,1 & 55 & 0 & 1 \\ \hline
+2,2 & 3 & 0 & 3 \\ \hline
+2,3 & 0 & 0 & 5 \\ \hline
+2,4 & 0 & 0 & 4 \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+\begin{table}[h!]
+\caption{Base Thyroid: Matriz de pesos final do algoritmo AB-SOM para múltiplas tabelas de dissimilaridade ($T_{max} = 4$)}\label{thy_absom_weight}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{} &
+\multicolumn{5}{|c|}{Matriz}
+\\ \cline{2-6}
+Grupos & 1 & 2 & 3 & 4 & 5 \\ \hline
+0,0 & 0.0664 & 0.1232 & 0.0416 & \textbf{24.5994} & \textbf{119.3779}\\ \hline
+0,1 & 0.1721 & 0.0895 & 0.1687 & \textbf{33.7149} & \textbf{11.4190}\\ \hline
+0,2 & 0.4323 & 0.3025 & \textbf{3.1604} & \textbf{3.8924} & 0.6216\\ \hline
+0,3 & 0.3471 & \textbf{3.1358} & \textbf{1.1614} & \textbf{3.6163} & 0.2188\\ \hline
+0,4 & 0.6744 & \textbf{3.3249} & \textbf{3.3112} & 0.0999 & \textbf{1.3487}\\ \hline
+1,0 & 0.0594 & 0.6714 & 0.4313 & \textbf{21.1315} & \textbf{2.7514}\\ \hline
+1,1 & 0.3278 & 0.2343 & 0.3235 & \textbf{8.5997} & \textbf{4.6795}\\ \hline
+1,2 & 0.2886 & 0.0904 & 0.4556 & \textbf{34.0884} & 2.4665\\ \hline
+1,3 & \textbf{2.5386} & \textbf{1.2595} & \textbf{1.1266} & 0.7627 & 0.3640\\ \hline
+1,4 & 0.7004 & \textbf{2.4398} & \textbf{10.0863} & 0.1071 & 0.5420\\ \hline
+2,0 & 0.1404 & 0.3898 & 0.5969 & \textbf{13.0529} & \textbf{2.3447}\\ \hline
+2,1 & 0.2506 & 0.2350 & 0.6867 & \textbf{7.2315} & \textbf{3.4204}\\ \hline
+2,2 & 0.7958 & 0.6775 & \textbf{3.3742} & \textbf{2.4085} & 0.2282\\ \hline
+2,3 & \textbf{4.8434} & \textbf{2.3485} & \textbf{1.2337} & 0.6914 & 0.1031\\ \hline
+2,4 & \textbf{1.5312} & \textbf{7.3742} & \textbf{7.5345} & 0.0125 & 0.9376\\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
 
 \section{Base de dados Wine}
+
+Esta base de dados consiste em três tipos (classes) de vinhos, produzidos na mesma região da Itália, porém derivados de três diferentes cultivos. As classes (1, 2, e 3) possuem 59, 71 e 48 exemplos, respectivamente. Cada vinho é descrito por 13 atributos de valores reais representando as quantidades de 13 componentes encontrados em cada um dos três tipos de vinho. Estes atributos são: (1) alcohol; (2) malic acid; (3) ash; (4) alkalinity of ash; (5) magnesium; (6) total phenols; (7) flavonoids; (8) non-flavonoid phenols; (9) proanthocyanins; (10) color intensity; (11) hue; (12) OD280/OD315 of diluted wines; e (13) proline.
+
+Os três algoritmos de agrupamento (SOM em lote baseado em uma única tabela de dissimilaridade, SOM em lote baseado em múltiplas tabelas de dissimilaridade com ponderação local e sua variante com ponderação global) foram aplicados às matrizes de dissimilaridade representando esta base de dados. No caso do SOM em lote original há somente uma matriz disponível, enquanto que, para os demais estão disponíveis múltiplas matrizes de dissimilaridade. Cada algoritmo foi executado 50 vezes e o melhor resultado foi selecionado de acordo com o critério de adequação. A topologia selecionada para o mapa nesta base de dados é formada por três linhas e cinco colunas (3x5) totalizando 15 grupos. O número de iterações escolhido foi de 50 ($N_{iter}=50$). Os experimentos de cada algoritmo foram executados com quatro valores diferentes para $T_{max}$: 4, 5, 6 e 10. Os valores de $T_{min}$ correspondentes foram fixados no valor de 0,3.
 
 \begin{table}[h!]
 \begin{center}
 \caption{Base de dados Wine: índices $CR$, $F-measure$ e $OERC$} \label{wine_index}
-
 \begin{tabular}{|c|c|c|c|c|c|c|} \hline
  Índices & $T_{max}$ & B-SOM & AB-SOM & global AB-SOM \\ \hline
 \multirow{4}{1.8cm}{$CR$} & 4 & 0.2775 & 0.3560 & 0.3498 \\
@@ -390,9 +454,7 @@ global AB-SOM & 5-maximal absolute difference in TSH & 1-T3-resin uptake test\\ 
  & 5 & 26.97\% & 3.37\% & 4.49\% \\ 
  & 6 & 26.97\% & 4.49\% & 5.06\% \\ 
  & 10 & 26.97\% & 6.17\% & 6.74\% \\ \hline
-
 \end{tabular}
-
 \end{center}
 \end{table}
 
@@ -410,3 +472,67 @@ global AB-SOM & 7 & 3\\ \hline
 
 \end{center}
 \end{table}
+
+\begin{table}[h!]
+\caption{Base Wine: matriz de confusão do algoritmo AB-SOM para múltiplas tabelas de dissimilaridade ($T_{max} = 4$)}\label{wine_adapt_matrix}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{} &
+\multicolumn{3}{|c|}{Classes}
+\\ \cline{2-4}
+Grupos & 1 & 2 & 3 \\ \hline
+0,0 & 0 & 17 & 0 \\ \hline
+0,1 & 0 & 13 & 0 \\ \hline
+0,2 & 0 & 4 & 0 \\ \hline
+0,3 & 14 & 2 & 0 \\ \hline
+0,4 & 13 & 3 & 0 \\ \hline \hline
+1,0 & 0 & 8 & 0 \\ \hline
+1,1 & 0 & 5 & 0 \\ \hline
+1,2 & 0 & 3 & 0 \\ \hline
+1,3 & 4 & 0 & 0 \\ \hline
+1,4 & 16 & 0 & 0 \\ \hline \hline
+2,0 & 0 & 0 & 27 \\ \hline
+2,1 & 0 & 4 & 21 \\ \hline
+2,2 & 0 & 6 & 0 \\ \hline
+2,3 & 4 & 6 & 0 \\ \hline
+2,4 & 8 & 0 & 0 \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[h!]
+\caption{Base Wine: Matriz de pesos final do algoritmo AB-SOM para múltiplas tabelas de dissimilaridade ($T_{max} = 4$)}\label{wine_absom_weight}
+\begin{center}
+\scriptsize{
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{} &
+\multicolumn{13}{|c|}{Matriz}
+\\ \cline{2-14}
+Grupos & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13\\ \hline
+0,0 & 1.0091 & 0.2418 & 0.5776 & \textbf{1.2869} & \textbf{1.0148} & \textbf{2.2689} & \textbf{2.1911} & 0.5327 &  0.1577 & \textbf{8.5170} & 0.1886 & \textbf{1.2842} & 6.3060 \\ \hline
+0,1 & \textbf{2.0952} & \textbf{3.0960} & 0.2255 & 0.2106 & \textbf{1.2340} & 0.8592 & \textbf{1.2570} & 0.7623 & 0.6877 & \textbf{1.8400} & 0.8322 & 0.4789 & \textbf{6.3369}\\ \hline
+0,2 & 0.7646 & \textbf{22.5494} & 0.3384 & 0.5242 & 0.5694 & 0.7708 & 0.2690 & 0.9311 & \textbf{1.3197} & \textbf{2.0367} & \textbf{1.1857} & \textbf{1.3798} & 0.6761\\ \hline
+0,3 & 0.8196 & \textbf{7.8194} & 0.5720 & 0.1287 & 0.2032 & \textbf{1.8406} & \textbf{3.5010} & \textbf{2.0590} & 0.8395 & \textbf{1.2363} & 0.7589 & \textbf{1.9563} & 0.5102\\ \hline
+0,4 & 0.3127 & 0.2991 & 0.1518 & 0.3934 & 0.8294 & \textbf{2.2293} & \textbf{1.2320} & \textbf{1.1951} & \textbf{1.1951} & \textbf{2.3507} & \textbf{3.1830} & 5.2633 & 1.2622\\ \hline
+1,0 & 0.4036 & 0.1882 & \textbf{1.8297} & \textbf{2.4907} & \textbf{2.8641} & 0.5187 & \textbf{3.4603} & 0.2615 & 0.9836 & \textbf{1.3417} & \textbf{1.1557} & 0.6300 & \textbf{2.2362}\\ \hline
+1,1 & \textbf{2.8292} & 0.1368 & 0.2785 & 0.2677 & 0.2585 & \textbf{3.1064} & \textbf{2.3869} & \textbf{1.1112} & \textbf{1.6055} & \textbf{3.5324} & 0.6597 & \textbf{2.4387} & \textbf{1.7830}\\ \hline
+1,2 & \textbf{9.8638} & \textbf{2.4959} & 0.5399 & 0.4135 & 0.1789 & 0.8419 & \textbf{1.5752} & 0.2981 & 0.6333 & \textbf{4.2140} & 0.7668 & 0.6312 & \textbf{1.9912}\\ \hline
+1,3 & \textbf{1.4122} & \textbf{2.6194} & \textbf{1.1263} & \textbf{1.0065} & 0.4545 & \textbf{1.5549} & \textbf{1.9557} & \textbf{4.3371} & 0.1168 & 0.7453 & 0.3839 & 0.8804 & \textbf{1.3518}\\ \hline
+1,4 & \textbf{1.1598} & \textbf{7.1409} & 0.7875 & 0.2511 & 0.6866 & 0.7305 & \textbf{2.5217} & 0.7350 & 0.5438 & \textbf{1.2208} & 0.8783 & \textbf{2.2542} & 0.4999\\ \hline
+2,0 & 0.8860 & 0.3491 & 0.6620 & 0.7487 & 0.3790 & 0.9119 & 3.9119 & 0.4539 & 0.6751 & 0.6581 & \textbf{1.4272} & \textbf{6.4068} & \textbf{2.6159}\\ \hline
+2,1 & \textbf{1.1684} & 0.3561 & 0.7714 & 0.5439 & 0.5684 & 0.9285 & \textbf{3.4554} & 0.3391 & \textbf{2.2713} & \textbf{1.4523} & 0.8220 & \textbf{1.7653} & \textbf{1.9353}\\ \hline
+2,2 & \textbf{2.9161} & 0.6551 & 0.4344 & 0.8233 & 0.4047 & \textbf{4.7123} & \textbf{1.7193} & 0.2413 & 0.7783 & \textbf{6.6365} & 0.1965 & \textbf{2.3237} & 0.7848\\ \hline
+2,3 & 0.4143 & \textbf{2.9362} & 0.1725 & 0.6155 & 0.9462 & \textbf{2.0611} & \textbf{1.5180} & \textbf{2.4741} & 0.5845 & \textbf{2.6926} & \textbf{4.5711} & 0.8081 & 0.1817\\ \hline
+2,4 & \textbf{2.0394} & \textbf{14.9034} & 0.1463 & 0.2290 & 0.2613 & \textbf{1.1660} & \textbf{2.5287} & 0.3144 & 0.3044 & 0.8857 & \textbf{2.3069} & \textbf{7.2819} & 0.8949\\ \hline
+\end{tabular}
+}
+\end{center}
+\end{table}
+
+\section{Base de dados Wine Quality}
+
+\section{Base de dados Phoneme}
+
+\section{Base de dados Multiple Features}
