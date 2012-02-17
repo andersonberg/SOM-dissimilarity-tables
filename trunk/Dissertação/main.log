@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2012.1.21)  16 FEB 2012 18:23
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2012.1.21)  17 FEB 2012 11:24
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -556,13 +556,13 @@ LaTeX Info: Redefining \pageref on input line 104.
 \openout4 = `main.out'.
 
 
-<cinlogo.png, id=126, 363.3575pt x 146.5475pt>
+<cinlogo.png, id=130, 363.3575pt x 146.5475pt>
 File: cinlogo.png Graphic file (type png)
  <use cinlogo.png>
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 107.
 
-<ufpelogo.png, id=127, 57.0933pt x 86.0013pt>
+<ufpelogo.png, id=131, 57.0933pt x 86.0013pt>
 File: ufpelogo.png Graphic file (type png)
  <use ufpelogo.png>
 LaTeX Font Info:    Try loading font information for T1+times on input line 107
@@ -1038,6 +1038,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [28]
 
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[29]
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
@@ -1047,9 +1054,9 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 514.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 524.
 
-Overfull \hbox (67.10518pt too wide) in paragraph at lines 508--531
+Overfull \hbox (67.10518pt too wide) in paragraph at lines 518--541
  [] 
  []
 
@@ -1063,13 +1070,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[29]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
 [30]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1077,7 +1077,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[31] (./main.bbl [32
+[31]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[32] (./main.bbl [33
 
 
 ]
@@ -1087,14 +1094,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[33]
+[34]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.67784pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[34])
+[35])
 
 Package natbib Warning: There were undefined citations.
 
@@ -1104,20 +1111,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[35] (./main.aux (./chapters/introduction/main.aux) (./chapters/SOM/som.aux)
+[36] (./main.aux (./chapters/introduction/main.aux) (./chapters/SOM/som.aux)
 (./chapters/Modelo/main.aux) (./chapters/Resultados/resultados.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 8178 strings out of 256216
- 112237 string characters out of 1917072
- 234485 words of memory out of 1500000
- 10881 multiletter control sequences out of 10000+200000
+ 8181 strings out of 256216
+ 112278 string characters out of 1917072
+ 229261 words of memory out of 1500000
+ 10882 multiletter control sequences out of 10000+200000
  112958 words of font info for 234 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 41i,12n,48p,1350b,565s stack positions out of 5000i,500n,6000p,200000b,15000s
+ 41i,12n,49p,1350b,565s stack positions out of 5000i,500n,6000p,200000b,15000s
 {/usr/share/texmf/fonts/enc/dvips/base/8r.enc} </home/anderson/.texlive2007/t
 exmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0600.600pk></usr/share/texmf/fonts/typ
 e1/bluesky/cm/cmex10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi10.pfb></
@@ -1130,9 +1137,9 @@ r8a.pfb></usr/share/texmf/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf
 pfb></usr/share/texmf/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf/fonts/
 type1/urw/times/utmr8a.pfb></usr/share/texmf/fonts/type1/urw/times/utmr8a.pfb><
 /usr/share/texmf/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (45 pages, 378888 bytes).
+Output written on main.pdf (46 pages, 382596 bytes).
 PDF statistics:
- 758 PDF objects out of 1000 (max. 8388607)
- 181 named destinations out of 1000 (max. 131072)
- 54027 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 771 PDF objects out of 1000 (max. 8388607)
+ 183 named destinations out of 1000 (max. 131072)
+ 54035 words of extra memory for PDF output out of 61914 (max. 10000000)
 

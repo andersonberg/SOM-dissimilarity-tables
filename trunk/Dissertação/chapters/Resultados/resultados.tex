@@ -369,7 +369,7 @@ global AB-SOM & 5-maximal absolute difference in TSH & 1-T3-resin uptake test\\ 
 \end{center}
 \end{table}
 
-A tabela \ref{thy_adapt_matrix} apresenta a matriz de confusão da variante com ponderação local do algoritmo AB-SOM. A matriz de confusão mostra a distribuição das classes dentro dos grupos formados pelo algoritmo, desta forma é possível perceber regiões de grupos próximos onde há predominância de objetos de uma mesma classe. Por exemplo, as classes 1,0; 1,1; 2,0 e 2,1 são formados por objetos, em sua maioria, da classe 1.
+A tabela \ref{thy_adapt_matrix} apresenta a matriz de confusão da variante com ponderação local do algoritmo AB-SOM. A matriz de confusão mostra a distribuição das classes dentro dos grupos formados pelo algoritmo, desta forma é possível perceber regiões de grupos próximos onde há predominância de objetos de uma mesma classe. Por exemplo, os grupos 1,0; 1,1; 2,0 e 2,1 são formados por objetos, em sua maioria, da classe 1.
 
 A tabela \ref{thy_absom_weight} apresenta a matriz de pesos final da variante com ponderação local do algoritmo AB-SOM. Nesta tabela pode-se perceber que as matrizes 4 (\textit{basal thyroid-stimulating hormone (TSH)}) e 5 (\textit{maximal absolute difference in TSH value}) obtiveram os maiores pesos, denotando maior relevância na formação dos grupos.
 
@@ -436,6 +436,16 @@ Grupos & 1 & 2 & 3 & 4 & 5 \\ \hline
 Esta base de dados consiste em três tipos (classes) de vinhos, produzidos na mesma região da Itália, porém derivados de três diferentes cultivos. As classes (1, 2, e 3) possuem 59, 71 e 48 exemplos, respectivamente. Cada vinho é descrito por 13 atributos de valores reais representando as quantidades de 13 componentes encontrados em cada um dos três tipos de vinho. Estes atributos são: (1) alcohol; (2) malic acid; (3) ash; (4) alkalinity of ash; (5) magnesium; (6) total phenols; (7) flavonoids; (8) non-flavonoid phenols; (9) proanthocyanins; (10) color intensity; (11) hue; (12) OD280/OD315 of diluted wines; e (13) proline.
 
 Os três algoritmos de agrupamento (SOM em lote baseado em uma única tabela de dissimilaridade, SOM em lote baseado em múltiplas tabelas de dissimilaridade com ponderação local e sua variante com ponderação global) foram aplicados às matrizes de dissimilaridade representando esta base de dados. No caso do SOM em lote original há somente uma matriz disponível, enquanto que, para os demais estão disponíveis múltiplas matrizes de dissimilaridade. Cada algoritmo foi executado 50 vezes e o melhor resultado foi selecionado de acordo com o critério de adequação. A topologia selecionada para o mapa nesta base de dados é formada por três linhas e cinco colunas (3x5) totalizando 15 grupos. O número de iterações escolhido foi de 50 ($N_{iter}=50$). Os experimentos de cada algoritmo foram executados com quatro valores diferentes para $T_{max}$: 4, 5, 6 e 10. Os valores de $T_{min}$ correspondentes foram fixados no valor de 0,3.
+
+\subsection{Discussão dos Resultados}
+
+A tabela \ref{wine_index} mostra os valores para os índices de Rand corrigido ($CR$), $F-measure$ e a Taxa de Erro Global de Classificação ($OERC$) obtidos para cada um dos algoritmos. Em cada linha dessa tabela, pode-se observar os valores dos índices para cada um dos diferentes valores de $T_{max}$. Para esta base, o melhor desempenho global foi apresentado pelos algoritmos AB-SOM com ponderação local and AB-SOM com ponderação global, nesta ordem. O SOM em lote original obteve o pior desempenho global nos índices.
+
+A tabela \ref{wine_matrices} mostra o resultado final dos pesos que medem a influência de cada matriz sobre a formação dos grupos. Nesta tabela pode-se observar quais matrizes tiveram maior e menor relevância geral para cada um dos algoritmos para o caso em que o valor de $T_{max} = 4$. A matriz 2 apresentou o peso com maior valor para o algoritmo AB-SOM com ponderação local, indicando maior influência na formação dos grupos durante a execução deste algoritmo. Para o algoritmo AB-SOM com ponderação global, o mesmo comportamento pode ser observado pela matriz 7. Em ambos os algoritmos a matriz menos relevante foi a matriz 3.
+
+A tabela \ref{wine_adapt_matrix} apresenta a matriz de confusão da variante com ponderação local do algoritmo AB-SOM. A matriz de confusão mostra a distribuição das classes dentro dos grupos formados pelo algoritmo, desta forma é possível perceber regiões de grupos próximos onde há predominância de objetos de uma mesma classe. Por exemplo, os grupos 0,0; 0,1; 0,1; 1,0 ; 1,1 e 1,2 são formados por objetos, em sua maioria, da classe 2.
+
+A tabela \ref{wine_absom_weight} apresenta a matriz de pesos final da variante com ponderação local do algoritmo AB-SOM.
 
 \begin{table}[h!]
 \begin{center}
