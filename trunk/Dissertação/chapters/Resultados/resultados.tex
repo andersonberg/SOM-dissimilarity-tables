@@ -543,8 +543,152 @@ Grupos & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13\\ \hline
 
 \section{Base de dados Wine Quality}
 
-A base de dados Wine quality consiste em duas bases relacionadas às variantes tinto e branco do vinho português "Vinho Verde" \cite{Cortez2009}. Somente a variante de vinho tinto foi considerado para estes experimentos. Existem 1599 exemplos, cada um é descrito por 11 atributos mais o atributo de classificação. Esta classificação é baseada em dados sensoriais (média de, pelo menos, 3 avaliações feitas por especialistas em vinho). Each expert graded the wine quality between 0 (very bad) and 10 (very excellent). In this example, the classifications of the wine red are: 3, 5, 4, 7, 6 and 8. The attributes describing data are: (1) fixed acidity, (2) volatile acidity, (3) citric acid, (4) residual sugar, (5) chlorides, (6) free sulfur dioxide, (7) total sulfur dioxide, (8) density, (9) pH, (10) sulphates and (11) alcohol.
+A base de dados Wine quality consiste em duas bases relacionadas às variantes tinto e branco do vinho português "Vinho Verde" \cite{Cortez2009}. Somente a variante de vinho tinto foi considerado para estes experimentos. Existem 1599 exemplos, cada um é descrito por 11 atributos mais o atributo de classificação. Esta classificação é baseada em dados sensoriais (média de, pelo menos, 3 avaliações feitas por especialistas em vinho). Cada especialista classifica as qualidade de vinho entre 0 (muito ruim) e 10 (excelente). Neste exemplo, as classificações de vinho tinto são: (1) fixed acidity, (2) volatile acidity, (3) citric acid, (4) residual sugar, (5) chlorides, (6) free sulfur dioxide, (7) total sulfur dioxide, (8) density, (9) pH, (10) sulphates e (11) alcohol.
+
+Os três algoritmos de agrupamento (SOM em lote baseado em uma única tabela de dissimilaridade, SOM em lote baseado em múltiplas tabelas de dissimilaridade com ponderação local e sua variante com ponderação global) foram aplicados às matrizes de dissimilaridade representando esta base de dados. No caso do SOM em lote original há somente uma matriz disponível, enquanto que, para os demais estão disponíveis múltiplas matrizes de dissimilaridade. Cada algoritmo foi executado 30 vezes e o melhor resultado foi selecionado de acordo com o critério de adequação. A topologia selecionada para o mapa nesta base de dados é formada por três linhas e dez colunas (3x10) totalizando 30 grupos. O número de iterações escolhido foi de 30 ($N_{iter}=30$). Os experimentos de cada algoritmo foram executados com quatro valores diferentes para $T_{max}$: 8, 9, 12 e 20. Os valores de $T_{min}$ correspondentes foram fixados no valor de 0,3.
+
+\subsubsection{Discussão dos Resultados}
+
+A tabela \ref{winered_index} mostra os valores obtidos por todos os algoritmos para os índices $CR$, $F-measure$ e $OERC$, considerando diferentes valores para $T_{max}$. O melhor desempenho global foi apresentado pelo algoritmo AB-SOM baseado em múltiplas tabelas de dissimilaridade com ponderação local.
+
+A tabela \ref{winered_matrices} mostra o resultado final dos pesos que medem a influência de cada matriz sobre a formação dos grupos. Nesta tabela pode-se observar quais matrizes tiveram maior e menor relevância geral para cada um dos algoritmos para o caso em que o valor de $T_{max} = 12$. A matriz 12 apresentou o peso com maior valor para o algoritmo AB-SOM com ponderação local, indicando maior influência na formação dos grupos durante a execução deste algoritmo. Para o algoritmo AB-SOM com ponderação global, o mesmo comportamento pode ser observado pela matriz 9.
+
+\begin{table}[h!]
+\begin{center}
+\caption{Base Wine Quality: índices $CR$, $F-measure$ e $OERC$} \label{winered_index}
+%{\scriptsize
+\begin{tabular}{|c|c|c|c|c|c|c|} \hline
+ Indexes & $T_{max}$ & B-SOM & AB-SOM & global AB-SOM\\ \hline
+\multirow{4}{1.8cm}{$CR$} & 8 & 0.1175 & 0.3777 & 0.1234 \\
+ & 9 & 0.1239 & 0.3631 & 0.1163 \\ 
+ & 12 & 0.1249 & 0.3185 & 0.1300 \\ 
+ & 20 & 0.1432 & 0.3549 & 0.1143 \\ \hline
+\multirow{4}{1.8cm}{$F-measure$} & 8 & 0.1850 & 0.4464 & 0.2465 \\
+ & 9 & 0.1940 & 0.4507 & 0.2297 \\
+ & 12 & 0.2068 & 0.4252 & 0.2290 \\
+ & 20 & 0.2125 & 0.4363 & 0.2227 \\ \hline
+\multirow{4}{1.8cm}{$OERC$} & 8 & 47.90\% & 44.00\% & 48.27\% \\ 
+ & 9 & 50.03\% & 43.94\% & 48.14\% \\ 
+ & 12 & 49.21\% & 43.69\% & 46.77\% \\
+ & 20 & 49.15\%	& 43.06\% & 47.27\% \\ \hline
+\end{tabular}
+%}
+\end{center}
+\end{table}
+
+\begin{table}[h!]
+\caption{Wine Quality data set: Relevance matrices $T_{max} = 12$} \label{winered_matrices}
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+Model & Most important matrix & Less important matrix \\ \hline
+AB-SOM & 12 & 5\\ \hline
+global AB-SOM & 9 & 12\\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[h!]
+\caption{Base Wine Quality: matriz de confusão do algoritmo AB-SOM para múltiplas tabelas de dissimilaridade ($T_{max} = 12$)}\label{winered_adapt_matrix}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{} &
+\multicolumn{6}{|c|}{Classes}
+\\ \cline{2-7}
+Grupos & 3 & 4 & 5 & 6 & 7 & 8\\ \hline
+0,0 & 0 & 0 & 6 & 6 & 2 & 0\\ \hline
+0,1 & 0 & 1 & 0 & 1 & 0 & 0\\ \hline
+0,2 & 3 & 13 & 162 & 208 & 46 & 1\\ \hline
+0,3 & 0 & 0 & 0 & 3 & 0 & 0\\ \hline
+0,4 & 1 & 11 & 35 & 124 & 46 & 7\\ \hline \hline
+1,0 & 0 & 0 & 3 & 3 & 0 & 0\\ \hline
+1,1 & 0 & 0 & 1 & 0 & 0 & 0\\ \hline
+1,2 & 0 & 1 & 122 & 33 & 0 & 0\\ \hline
+1,3 & 0 & 4 & 15 & 33 & 24 & 2\\ \hline
+1,4 & 0 & 0 & 6 & 12 & 7 & 0\\ \hline \hline
+2,0 & 0 & 0 & 2 & 2 & 0 & 0\\ \hline
+2,1 & 1 & 0 & 10 & 4 & 0 & 0\\ \hline
+2,2 & 4 & 22 & 304 & 140 & 9 & 1\\ \hline
+2,3 & 0 & 0 & 11 & 50 & 54 & 6\\ \hline
+2,4 & 1 & 1 & 4 & 14 & 10 & 1\\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[h!]
+\caption{Base Wine Quality: Matriz de pesos final do algoritmo AB-SOM para múltiplas tabelas de dissimilaridade ($T_{max} = 12$)}\label{winered_absom_weight}
+\begin{center}
+\scriptsize{
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{} &
+\multicolumn{13}{|c|}{Matriz}
+\\ \cline{2-14}
+Grupos & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13\\ \hline
+0,0 & 1.0091 & 0.2418 & 0.5776 & \textbf{1.2869} & \textbf{1.0148} & \textbf{2.2689} & \textbf{2.1911} & 0.5327 &  0.1577 & \textbf{8.5170} & 0.1886 & \textbf{1.2842} & 6.3060 \\ \hline
+0,1 & \textbf{2.0952} & \textbf{3.0960} & 0.2255 & 0.2106 & \textbf{1.2340} & 0.8592 & \textbf{1.2570} & 0.7623 & 0.6877 & \textbf{1.8400} & 0.8322 & 0.4789 & \textbf{6.3369}\\ \hline
+0,2 & 0.7646 & \textbf{22.5494} & 0.3384 & 0.5242 & 0.5694 & 0.7708 & 0.2690 & 0.9311 & \textbf{1.3197} & \textbf{2.0367} & \textbf{1.1857} & \textbf{1.3798} & 0.6761\\ \hline
+0,3 & 0.8196 & \textbf{7.8194} & 0.5720 & 0.1287 & 0.2032 & \textbf{1.8406} & \textbf{3.5010} & \textbf{2.0590} & 0.8395 & \textbf{1.2363} & 0.7589 & \textbf{1.9563} & 0.5102\\ \hline
+0,4 & 0.3127 & 0.2991 & 0.1518 & 0.3934 & 0.8294 & \textbf{2.2293} & \textbf{1.2320} & \textbf{1.1951} & \textbf{1.1951} & \textbf{2.3507} & \textbf{3.1830} & 5.2633 & 1.2622\\ \hline
+1,0 & 0.4036 & 0.1882 & \textbf{1.8297} & \textbf{2.4907} & \textbf{2.8641} & 0.5187 & \textbf{3.4603} & 0.2615 & 0.9836 & \textbf{1.3417} & \textbf{1.1557} & 0.6300 & \textbf{2.2362}\\ \hline
+1,1 & \textbf{2.8292} & 0.1368 & 0.2785 & 0.2677 & 0.2585 & \textbf{3.1064} & \textbf{2.3869} & \textbf{1.1112} & \textbf{1.6055} & \textbf{3.5324} & 0.6597 & \textbf{2.4387} & \textbf{1.7830}\\ \hline
+1,2 & \textbf{9.8638} & \textbf{2.4959} & 0.5399 & 0.4135 & 0.1789 & 0.8419 & \textbf{1.5752} & 0.2981 & 0.6333 & \textbf{4.2140} & 0.7668 & 0.6312 & \textbf{1.9912}\\ \hline
+1,3 & \textbf{1.4122} & \textbf{2.6194} & \textbf{1.1263} & \textbf{1.0065} & 0.4545 & \textbf{1.5549} & \textbf{1.9557} & \textbf{4.3371} & 0.1168 & 0.7453 & 0.3839 & 0.8804 & \textbf{1.3518}\\ \hline
+1,4 & \textbf{1.1598} & \textbf{7.1409} & 0.7875 & 0.2511 & 0.6866 & 0.7305 & \textbf{2.5217} & 0.7350 & 0.5438 & \textbf{1.2208} & 0.8783 & \textbf{2.2542} & 0.4999\\ \hline
+2,0 & 0.8860 & 0.3491 & 0.6620 & 0.7487 & 0.3790 & 0.9119 & 3.9119 & 0.4539 & 0.6751 & 0.6581 & \textbf{1.4272} & \textbf{6.4068} & \textbf{2.6159}\\ \hline
+2,1 & \textbf{1.1684} & 0.3561 & 0.7714 & 0.5439 & 0.5684 & 0.9285 & \textbf{3.4554} & 0.3391 & \textbf{2.2713} & \textbf{1.4523} & 0.8220 & \textbf{1.7653} & \textbf{1.9353}\\ \hline
+2,2 & \textbf{2.9161} & 0.6551 & 0.4344 & 0.8233 & 0.4047 & \textbf{4.7123} & \textbf{1.7193} & 0.2413 & 0.7783 & \textbf{6.6365} & 0.1965 & \textbf{2.3237} & 0.7848\\ \hline
+2,3 & 0.4143 & \textbf{2.9362} & 0.1725 & 0.6155 & 0.9462 & \textbf{2.0611} & \textbf{1.5180} & \textbf{2.4741} & 0.5845 & \textbf{2.6926} & \textbf{4.5711} & 0.8081 & 0.1817\\ \hline
+2,4 & \textbf{2.0394} & \textbf{14.9034} & 0.1463 & 0.2290 & 0.2613 & \textbf{1.1660} & \textbf{2.5287} & 0.3144 & 0.3044 & 0.8857 & \textbf{2.3069} & \textbf{7.2819} & 0.8949\\ \hline
+\end{tabular}
+}
+\end{center}
+\end{table}
 
 \section{Base de dados Phoneme}
 
 \section{Base de dados Multiple Features}
+
+Esta base consiste em características de numerais ('0' -- '9') escritos à mão extraídos de uma coleção de mapas de utilidade holandeses. 200 padrões por classe (de um total de 2000 padrões) foram digitalizados em imagens binárias. Os padrões são divididos em dez classes representando cada uma dos numerais escritos à mão de zero a nove. Estes dígitos são representados em termos das seguintes características: (1) mfeat-fou: 76 coeficientes de Fourier da forma dos caracteres, (2) mfeat-fac: 216 profile correlations, (3) mfeat-kar: 64 coeficientes Karhunen-Love, (4) mfeat-pix: 240 médias de pixel em janelas 2 x 3, (5) mfeat-zer: 47 Zernike moments, (6) mfeat-mor: 6 características morfológicas.
+
+Os três algoritmos de agrupamento (SOM em lote baseado em uma única tabela de dissimilaridade, SOM em lote baseado em múltiplas tabelas de dissimilaridade com ponderação local e sua variante com ponderação global) foram aplicados às matrizes de dissimilaridade representando esta base de dados. No caso do SOM em lote original há somente uma matriz disponível, enquanto que, para os demais estão disponíveis múltiplas matrizes de dissimilaridade. Cada algoritmo foi executado 30 vezes e o melhor resultado foi selecionado de acordo com o critério de adequação. A topologia selecionada para o mapa nesta base de dados é formada por três linhas e dez colunas (3x10) totalizando 30 grupos. O número de iterações escolhido foi de 30 ($N_{iter}=30$). Os experimentos de cada algoritmo foram executados com quatro valores diferentes para $T_{max}$: 8, 9, 12 e 20. Os valores de $T_{min}$ correspondentes foram fixados no valor de 0,3.
+
+\subsubsection{Discussão dos Resultados}
+
+A tabela \ref{mfeat_index} mostra os valores obtidos para os índices $CR$, $F-measure$ e $OERC$ em todos os três algoritmos considerando diferentes valores de $T_{max}$. Em cada linha dessa tabela, pode-se observar os valores dos índices para cada um dos diferentes valores de $T_{max}$. Para esta base, o melhor desempenho global foi apresentado pelos algoritmos AB-SOM com ponderação global and AB-SOM com ponderação local, nesta ordem. O SOM em lote original obteve o pior desempenho global nos índices.
+
+A tabela \ref{mfeat_matrices} mostra o resultado final dos pesos que medem a influência de cada matriz sobre a formação dos grupos. Nesta tabela pode-se observar quais matrizes tiveram maior e menor relevância geral para cada um dos algoritmos para o caso em que o valor de $T_{max} = 9$. A matriz 2 apresentou o peso com maior valor para o algoritmo AB-SOM com ponderação local, indicando maior influência na formação dos grupos durante a execução deste algoritmo. Para o algoritmo AB-SOM com ponderação global, o mesmo comportamento pode ser observado pela matriz 7. Em ambos os algoritmos a matriz menos relevante foi a matriz 3.
+
+\begin{table}[h!]
+\begin{center}
+\caption{Base Multiple Features: índices $CR$, $F-measure$ e $OERC$} \label{mfeat_index}
+\begin{tabular}{|c|c|c|c|c|c|c|} \hline
+ Indexes & $T_{max}$ & B-SOM & AB-SOM & global AB-SOM \\ \hline
+\multirow{4}{1.8cm}{$CR$} & 8 & 0.5401 & 0.5793 & 0.6259 \\
+ & 9 & 0.5364 & 0.6195 & 0.5873 \\ 
+ & 12 & 0.5176 & 0.6020 & 0.6221 \\ 
+ & 20 & 0.5315 & 0.5756 & 0.6263 \\ \hline
+\multirow{4}{1.8cm}{$F-measure$} & 8 & 0.6517 & 0.7001 & 0.7280 \\
+ & 9 & 0.6460 & 0.7082 & 0.6809 \\
+ & 12 & 0.6216 & 0.7005 & 0.7201 \\
+ & 20 & 0.6571 & 0.6733 & 0.7169 \\ \hline
+\multirow{4}{1.8cm}{$OERC$} & 8 & 20.00\% & 15.50\% & 8.55\% \\ 
+ & 9 & 21.70\% & 9.90\% & 7.70\% \\ 
+ & 12 & 28.85\% & 13.15\% & 7.25\% \\ 
+ & 20 & 19.30\% & 12.00\% & 7.75\% \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[h!]
+\caption{Base Multiple Features: Matrizes $T_{max} = 9$} \label{mfeat_matrices}
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+Model & Most important matrix & Less important matrix \\ \hline
+AB-SOM & 4 & 2\\ \hline
+global AB-SOM &  & \\ \hline
+\end{tabular}
+\end{center}
+\end{table}

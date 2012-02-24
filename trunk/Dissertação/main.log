@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.2.17)  17 FEB 2012 16:41
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.2.23)  23 FEB 2012 18:16
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -636,13 +636,13 @@ LaTeX Info: Redefining \pageref on input line 104.
 \openout4 = `main.out'.
 
 \AtBeginShipoutBox=\box35
- <cinlogo.png, id=126, 363.3575pt x 146.5475pt>
+ <cinlogo.png, id=135, 363.3575pt x 146.5475pt>
 File: cinlogo.png Graphic file (type png)
  <use cinlogo.png>
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 107.
 
-<ufpelogo.png, id=128, 57.0933pt x 86.0013pt>
+<ufpelogo.png, id=137, 57.0933pt x 86.0013pt>
 File: ufpelogo.png Graphic file (type png)
  <use ufpelogo.png>
 LaTeX Font Info:    Try loading font information for T1+times on input line 107
@@ -985,10 +985,6 @@ Package amsmath Warning: Foreign command \atopwithdelims;
 
 ]
 
-Package natbib Warning: Citation `Milligan96' on page 19 undefined on input lin
-e 43.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
@@ -1125,17 +1121,16 @@ Overfull \hbox (67.10518pt too wide) in paragraph at lines 518--541
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Package natbib Warning: Citation `Cortez2009' on page 30 undefined on input lin
-e 546.
-
-)
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [30]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 550.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1149,7 +1144,57 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[32] (./main.bbl [33
+[32]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (67.10518pt too wide) in paragraph at lines 623--646
+ [] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[33]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[34]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 657.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[35]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[36] (./main.bbl [37
 
 
 ]
@@ -1159,81 +1204,51 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[34]
+[38]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.67784pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[35])
-
-Package natbib Warning: There were undefined citations.
-
+[39])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.67784pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[36] (./main.aux (./chapters/introduction/main.aux) (./chapters/SOM/som.aux)
+[40] (./main.aux (./chapters/introduction/main.aux) (./chapters/SOM/som.aux)
 (./chapters/Modelo/main.aux) (./chapters/Resultados/resultados.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 10217 strings out of 495061
- 145102 string characters out of 1182621
- 278734 words of memory out of 3000000
- 12601 multiletter control sequences out of 15000+50000
- 121101 words of font info for 334 fonts, out of 3000000 for 9000
+ 10241 strings out of 495061
+ 145403 string characters out of 1182621
+ 287488 words of memory out of 3000000
+ 12616 multiletter control sequences out of 15000+50000
+ 121326 words of font info for 336 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 41i,12n,49p,1350b,544s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{Item.16} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{Item.14} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{equation.protectrm3.3} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.protectrm3.2} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.protectrm2.9} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.protectrm2.8} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.protectrm2.5} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.protectrm2.4} has been referenced but does
- not exist, replaced by a fixed one
-
-{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc} </home/anderson/.texmf-v
-ar/fonts/pk/ljfour/jknappen/ec/ecrm0600.600pk></usr/share/texmf-texlive/fonts/t
-ype1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/public
-/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
-m/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-></usr/share/texmf-texlive/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb></
-usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/sh
-are/texmf-texlive/fonts/type1/urw/avantgar/uagd8a.pfb></usr/share/texmf-texlive
-/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/h
-elvetic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/symbol/usyr.pfb></
-usr/share/texmf-texlive/fonts/type1/urw/symbol/usyr.pfb></usr/share/texmf-texli
-ve/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/t
-imes/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></us
-r/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (46 pages, 405478 bytes).
+ 41i,12n,51p,1350b,544s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc} </home/anderson/.texmf
+-var/fonts/pk/ljfour/jknappen/ec/ecrm0600.600pk></usr/share/texmf-texlive/fonts
+/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/publ
+ic/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
+/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb>
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/
+share/texmf-texlive/fonts/type1/urw/avantgar/uagd8a.pfb></usr/share/texmf-texli
+ve/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw
+/helvetic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/symbol/usyr.pfb>
+</usr/share/texmf-texlive/fonts/type1/urw/symbol/usyr.pfb></usr/share/texmf-tex
+live/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw
+/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></
+usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (50 pages, 425510 bytes).
 PDF statistics:
- 776 PDF objects out of 1000 (max. 8388607)
- 192 named destinations out of 1000 (max. 500000)
- 54019 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 820 PDF objects out of 1000 (max. 8388607)
+ 198 named destinations out of 1000 (max. 500000)
+ 54035 words of extra memory for PDF output out of 61914 (max. 10000000)
 
