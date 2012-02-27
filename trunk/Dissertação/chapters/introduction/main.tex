@@ -55,7 +55,20 @@ A ponderação de características deriva da seleção de características e tem sido 
 
 \section{Objetivos}
 
-A maioria dos métodos de análise de dados busca classificar novos objetos com base no conhecimento adquirido pela observação anterior de objetos semelhantes. Métodos de agrupamento, por outro lado, apenas buscam uma estrutura inerente aos dados, agrupando-os de acordo com as características semelhantes entre si. Em diversas situações na área de análise de dados, a representação destes dados é melhor descrita através de múltiplas matrizes de dissimilaridade. Visto isto, é necessário a criação de modelos que sejam capazes de agrupar objetos levando em consideração a descrição desses dados, contidas em múltiplas tabelas de dissimilaridade, simultaneamente. Este trabalho propõe um modelo que seja capaz de tratar múltiplas tabelas de dissimilaridade simultaneamente, que possa, também, aprender e calcular pesos medindo a relevância de cada tabela na formação dos grupos. Além disso, o método aqui proposto possui propriedades de visualização, pois se baseia no algoritmo de mapas auto-organizáveis.
+A maioria dos métodos de análise de dados busca classificar novos objetos com base no conhecimento adquirido pela observação anterior de objetos semelhantes. Métodos de agrupamento, por outro lado, apenas buscam uma estrutura inerente aos dados, agrupando-os de acordo com as características semelhantes entre si. Existem diversos métodos de agrupamento baseados em dados relacionais, porém grande parte deles leva em consideração apenas uma tabela representando todos as variáveis da base de dados. Em diversas situações na área de análise de dados, a representação destes dados é melhor descrita através de múltiplas matrizes de dissimilaridade. 
+
+Pensando nesta limitação, é necessário a criação de modelos que sejam capazes de agrupar objetos levando em consideração a descrição desses dados, contidas em múltiplas tabelas de dissimilaridade, simultaneamente. Este trabalho propõe um modelo que seja capaz de tratar múltiplas tabelas de dissimilaridade simultaneamente, que possa, também, aprender e calcular pesos medindo a relevância de cada tabela na formação dos grupos. Além disso, o método aqui proposto possui propriedades de visualização, pois se baseia no algoritmo de mapas auto-organizáveis.
+
+Como objetivos específicos podemos citar:
+
+\begin{enumerate}
+\item Desenvolvimento de novos métodos para agrupamento de dados relacionais baseados em múltiplas tabelas de dissimilaridade adaptando o algoritmo de mapa auto-organizável em lote original. 
+
+\item Os métodos devem ser capazes de aprender pesos que medem a relevância de cada matriz de dissimilaridade na formação dos grupos. Os pesos aprendidos são calculados para cada matriz e são diferentes de um grupo para outro (estimados localmente) ou podem ser iguais para todos os grupos (estimados globalmente).
+
+\item Realização de experimentos para a análise dos resultados alcançados e validação dos métodos propostos. Nesta fase será necessária a implementação do mapa auto-organizável em lote original para a comparação de resultados.
+
+\end{enumerate}
 
 
 \section{Organização da Dissertação}
