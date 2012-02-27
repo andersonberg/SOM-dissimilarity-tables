@@ -1,20 +1,15 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2012.1.21)  3 FEB 2012 12:32
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.2.24)  27 FEB 2012 13:30
 entering extended mode
  %&-line parsing enabled.
 **"anderson berg-saap-2012-1.tex"
 (./anderson berg-saap-2012-1.tex
-LaTeX2e <2005/12/01>
-Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, arabic, basque, bulgarian, coptic, welsh, czech, slovak, german, ng
-erman, danish, esperanto, spanish, catalan, galician, estonian, farsi, finnish,
- french, greek, monogreek, ancientgreek, croatian, hungarian, interlingua, ibyc
-us, indonesian, icelandic, italian, latin, mongolian, dutch, norsk, polish, por
-tuguese, pinyin, romanian, russian, slovenian, uppersorbian, serbian, swedish, 
-turkish, ukenglish, ukrainian, loaded.
-(/usr/share/texmf/tex/latex/base/article.cls
-Document Class: article 2005/09/16 v1.4f Standard LaTeX document class
-(/usr/share/texmf/tex/latex/base/size12.clo
-File: size12.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -30,12 +25,20 @@ File: size12.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
 ) (./sbc-template.sty
 Package: sbc-template 2001/06/09
 
-(/usr/share/texmf/tex/latex/geometry/geometry.sty
-Package: geometry 2002/07/08 v3.2 Page Geometry
+(/usr/share/texmf-texlive/tex/latex/geometry/geometry.sty
+Package: geometry 2008/12/21 v4.2 Page Geometry
 
-(/usr/share/texmf/tex/latex/graphics/keyval.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
 )
 \Gm@cnth=\count87
 \Gm@cntv=\count88
@@ -54,77 +57,84 @@ Package caption2 Info: Running in caption2 v2.0 compatibility mode on input lin
 e 147.
 \captionlinewidth=\dimen110
 )
-(/usr/share/texmf/tex/latex/psnfss/times.sty
+(/usr/share/texmf-texlive/tex/latex/psnfss/times.sty
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
 \c@instn=\count90
 
-(/usr/share/texmf/tex/latex/titlesec/titlesec.sty
-Package: titlesec 2005/01/22 v2.6 Sectioning titles
+(/usr/share/texmf-texlive/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2007/08/12 v2.8 Sectioning titles
 \ttl@box=\box26
 \beforetitleunit=\skip43
 \aftertitleunit=\skip44
 \ttl@plus=\dimen111
 \ttl@minus=\dimen112
+\ttl@toksa=\toks16
 \titlewidth=\dimen113
 \titlewidthlast=\dimen114
 \titlewidthfirst=\dimen115
 ))
-(/usr/share/texmf/tex/latex/graphics/graphicx.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf/tex/latex/graphics/graphics.sty
-Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf/tex/latex/graphics/trig.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/share/texmf/tex/latex/config/graphics.cfg
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 90.
+Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/share/texmf/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2007/01/08 v0.04d Graphics/color for pdfTeX
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
 \Gread@gobject=\count91
 ))
 \Gin@req@height=\dimen116
 \Gin@req@width=\dimen117
 )
-(/usr/share/texmf/tex/latex/ltxmisc/url.sty
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
 \Urlmuskip=\muskip10
-Package: url 2005/06/27  ver 3.2  Verb mode for urls, etc.
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
-(/usr/share/texmf/tex/latex/amsfonts/amsfonts.sty
-Package: amsfonts 2001/10/25 v2.2f
-\@emptytoks=\toks16
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks17
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 132.
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
 )
-(/usr/share/texmf/tex/generic/babel/babel.sty
-Package: babel 2005/11/23 v3.8h The Babel package
+(/usr/share/texmf-texlive/tex/generic/babel/babel.sty
+Package: babel 2008/07/06 v3.8l The Babel package
 
-(/usr/share/texmf/tex/generic/babel/portuges.ldf
-Language: portuges 2005/03/31 v1.2p Portuguese support from the babel system
+(/usr/share/texmf-texlive/tex/generic/babel/portuges.ldf
+Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
 
-(/usr/share/texmf/tex/generic/babel/babel.def
-File: babel.def 2005/11/23 v3.8h Babel common definitions
+(/usr/share/texmf-texlive/tex/generic/babel/babel.def
+File: babel.def 2008/07/06 v3.8l Babel common definitions
 \babel@savecnt=\count92
 \U@D=\dimen118
 )
+
+Package babel Warning: No hyphenation patterns were loaded for
+(babel)                the language `Portuguese'
+(babel)                I will use the patterns loaded for \language=0 instead.
+
+\l@portuges = a dialect from \language0
 \l@brazil = a dialect from \language\l@portuges 
 Package babel Info: Making " an active character on input line 145.
-))
-(/usr/share/texmf/tex/latex/base/inputenc.sty
-Package: inputenc 2006/05/05 v1.1b Input encoding file
-\inpenc@prehook=\toks17
-\inpenc@posthook=\toks18
+)) (/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks18
+\inpenc@posthook=\toks19
 
-(/usr/share/texmf/tex/latex/base/latin1.def
-File: latin1.def 2006/05/05 v1.1b Input encoding file
-)) (./anderson berg-saap-2012-1.aux)
+(/usr/share/texmf-texlive/tex/latex/base/latin1.def
+File: latin1.def 2008/03/30 v1.1d Input encoding file
+))
+(./anderson berg-saap-2012-1.aux)
 \openout1 = `"anderson berg-saap-2012-1.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
@@ -140,9 +150,12 @@ LaTeX Font Info:    ... okay on input line 22.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 22.
-(/usr/share/texmf/tex/latex/psnfss/ot1ptm.fd
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
+*geometry auto-detecting driver*
+*geometry detected driver: pdftex*
 -------------------- Geometry parameters
 paper: a4paper
 landscape: --
@@ -182,55 +195,67 @@ driver: pdftex
 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count93
+\scratchdimen=\dimen119
+\scratchbox=\box27
+\nofMPsegments=\count94
+\nofMParguments=\count95
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count96
+\MPscratchDim=\dimen120
+\MPnumerator=\count97
+\everyMPtoPDFconversion=\toks21
+)
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <16> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
 LaTeX Font Info:    Try loading font information for U+msa on input line 24.
-
-(/usr/share/texmf/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2002/01/19 v2.2g AMS font definitions
+ (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 24.
 
-(/usr/share/texmf/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2002/01/19 v2.2g AMS font definitions
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 24.
 
-(/usr/share/texmf/tex/latex/psnfss/ot1pcr.fd
+(/usr/share/texmf-texlive/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <13> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
 
 Underfull \hbox (badness 10000) in paragraph at lines 30--31
-[]\OT1/ptm/m/n/12 Muitos al-go-rit-mos fo-ram adap-ta-dos para ana-li-sar da-do
-s re-la-ci-o-nais.
+[]\OT1/ptm/m/n/12 Muitos al-go-rit-mos foram adap-ta-dos para anal-isar da-dos 
+rela-cionais.
  []
 
 
 Underfull \hbox (badness 1776) in paragraph at lines 30--31
-\OT1/ptm/m/n/12 [[]] apre-senta uma adapta[][]ao do k-means para da-dos
+\OT1/ptm/m/n/12 [[]] ap-re-senta uma adapta[][]ao do k-means para da-dos
  []
 
 [1
 
-{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Underfull \hbox (badness 10000) in paragraph at lines 44--45
-[]\OT1/ptm/m/n/12 M[]etodos hier[]arquicos for-ne-cem uma hi-e-rar-quia com-ple
-ta, isto []e,
+[]\OT1/ptm/m/n/12 M[]etodos hier[]arquicos fornecem uma hi-er-ar-quia com-pleta
+, isto []e,
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 44--45
-\OT1/ptm/m/n/12 uma sequ[]encia de parti[][]oes ani-nha-das a par-tir dos da-do
+\OT1/ptm/m/n/12 uma sequ[]encia de parti[][]oes an-in-hadas a par-tir dos da-do
 s de en-trada.
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 44--45
-\OT1/ptm/m/n/12 M[]etodos hier[]arquicos po-dem ser aglo-me-ra-ti-vos [[],
+\OT1/ptm/m/n/12 M[]etodos hier[]arquicos po-dem ser aglom-er-a-tivos [[],
  []
 
 
@@ -240,32 +265,32 @@ Underfull \hbox (badness 3989) in paragraph at lines 44--45
 
 
 Underfull \hbox (badness 3690) in paragraph at lines 46--47
-[]\OT1/ptm/m/n/12 M[]etodos de par-ti-ci-o-na-mento bus-cam ob-ter uma []unica 
-parti[][]ao dos da-
+[]\OT1/ptm/m/n/12 M[]etodos de par-ti-ciona-mento bus-cam obter uma []unica par
+ti[][]ao dos da-
  []
 
 
 Underfull \hbox (badness 1342) in paragraph at lines 46--47
-\OT1/ptm/m/n/12 dos em um n[]umero fixo de agru-pa-men-tos. Es-tes m[]etodos fr
-e-quen-te-mente bus-
+\OT1/ptm/m/n/12 dos em um n[]umero fixo de agru-pa-men-tos. Estes m[]etodos fre
+-quente-mente bus-
  []
 
 
 Underfull \hbox (badness 1454) in paragraph at lines 46--47
-\OT1/ptm/m/n/12 tivo. Para me-lho-rar a qua-li-dade do agru-pa-mento, o al-go-r
-itmo []e exe-cu-tado di-
+\OT1/ptm/m/n/12 tivo. Para mel-ho-rar a qual-i-dade do agru-pa-mento, o al-go-r
+itmo []e ex-e-cu-tado di-
  []
 
 
 Underfull \hbox (badness 1616) in paragraph at lines 46--47
-\OT1/ptm/m/n/12 tal de execu[][]oes []e usada como sa[]^^Pda do al-go-ritmo de 
-agru-pa-mento. M[]etodos
+\OT1/ptm/m/n/12 tal de execu[][]oes []e us-ada como sa[]^^Pda do al-go-ritmo de
+ agru-pa-mento. M[]etodos
  []
 
 
 Underfull \hbox (badness 2884) in paragraph at lines 46--47
-\OT1/ptm/m/n/12 de par-ti-ci-o-na-mento po-dem ser di-vi-di-dos em agru-pa-men-
-tos HARD [[],
+\OT1/ptm/m/n/12 de par-ti-ciona-mento po-dem ser di-vi-di-dos em agru-pa-men-to
+s HARD [[],
  []
 
 
@@ -274,34 +299,47 @@ Underfull \hbox (badness 4805) in paragraph at lines 46--47
  []
 
 [2]
-Underfull \hbox (badness 1024) in paragraph at lines 58--59
-\OT1/ptm/m/n/12 ta-ne-a-mente. [[]] de-sen-vol-veu dois mo-de-los usando ma-pas
- auto-
+Underfull \hbox (badness 1215) in paragraph at lines 58--59
+\OT1/ptm/m/n/12 Em [[]], os au-tores in-tro-duzem um al-go-ritmo fuzzy k-
+ []
+
+
+Underfull \hbox (badness 1590) in paragraph at lines 58--59
+\OT1/ptm/m/n/12 si-mul-tane-a-mente. [[]] de-sen-volveu dois mod-e-los us-ando 
+ma-pas
+ []
+
+
+Underfull \hbox (badness 1168) in paragraph at lines 58--59
+\OT1/ptm/m/n/12 de vari[]aveis. [[]] prop[]oe um al-go-ritmo de agru-pa-mento b
+asea-dos
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
-(./anderson berg-saap-2012-1.bbl [4] [5]) [6] (./anderson berg-saap-2012-1.aux)
- ) 
+[4] (./anderson berg-saap-2012-1.bbl [5] [6]) [7]
+(./anderson berg-saap-2012-1.aux) ) 
 Here is how much of TeX's memory you used:
- 1977 strings out of 256216
- 25320 string characters out of 1917072
- 87749 words of memory out of 1500000
- 5242 multiletter control sequences out of 10000+200000
- 18477 words of font info for 47 fonts, out of 1200000 for 2000
- 645 hyphenation exceptions out of 8191
- 30i,8n,28p,1061b,312s stack positions out of 5000i,500n,6000p,200000b,15000s
-{/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr/share/texmf/fonts/type1/b
-luesky/cm/cmmi12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi8.pfb></usr/s
-hare/texmf/fonts/type1/bluesky/cm/cmr12.pfb></usr/share/texmf/fonts/type1/blues
-ky/cm/cmr8.pfb></usr/share/texmf/fonts/type1/urw/courier/ucrr8a.pfb></usr/share
-/texmf/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf/fonts/type1/urw/times
-/utmr8a.pfb></usr/share/texmf/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "anderson berg-saap-2012-1.pdf" (6 pages, 89210 bytes).
+ 2383 strings out of 495061
+ 31207 string characters out of 1182621
+ 93396 words of memory out of 3000000
+ 5532 multiletter control sequences out of 15000+50000
+ 18468 words of font info for 47 fonts, out of 3000000 for 9000
+ 28 hyphenation exceptions out of 8191
+ 30i,8n,28p,1061b,310s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf-texlive/fonts/enc/dvips/ba
+se/8r.enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
+/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/t
+exmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive
+/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/
+urw/courier/ucrr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.p
+fb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf
+-texlive/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "anderson berg-saap-2012-1.pdf" (7 pages, 116723 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 131072)
+ 59 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
