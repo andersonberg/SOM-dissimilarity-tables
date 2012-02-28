@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.2.24)  28 FEB 2012 00:36
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.2.24)  28 FEB 2012 12:41
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -788,13 +788,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
  [9
 
-] (./main.lot)
+] (./main.lot [10
+
+])
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
- [10
 
-]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1197,6 +1197,9 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 )
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1218,7 +1221,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38] (./main.bbl [39
+[38]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[39] (./main.bbl [40
 
 
 ]
@@ -1228,31 +1238,31 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[40]
+[41]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.67784pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[41])
+[42])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.67784pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[42] (./main.aux (./chapters/introduction/main.aux) (./chapters/SOM/som.aux)
+[43] (./main.aux (./chapters/introduction/main.aux) (./chapters/SOM/som.aux)
 (./chapters/Modelo/main.aux) (./chapters/Resultados/resultados.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 10251 strings out of 495061
- 145504 string characters out of 1182621
- 287712 words of memory out of 3000000
- 12618 multiletter control sequences out of 15000+50000
+ 10255 strings out of 495061
+ 145561 string characters out of 1182621
+ 299937 words of memory out of 3000000
+ 12620 multiletter control sequences out of 15000+50000
  121392 words of font info for 337 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  41i,12n,51p,1350b,544s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1270,9 +1280,9 @@ ve/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw
 live/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw
 /times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></
 usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (53 pages, 433171 bytes).
+Output written on main.pdf (54 pages, 437731 bytes).
 PDF statistics:
- 840 PDF objects out of 1000 (max. 8388607)
- 205 named destinations out of 1000 (max. 500000)
+ 847 PDF objects out of 1000 (max. 8388607)
+ 207 named destinations out of 1000 (max. 500000)
  54035 words of extra memory for PDF output out of 61914 (max. 10000000)
 
