@@ -662,7 +662,7 @@ A tabela \ref{mfeat_matrices} mostra o resultado final dos pesos que medem a inf
 
 \begin{table}[h!]
 \begin{center}
-\caption{Base Multiple Features: índices $CR$, $F-measure$ e $OERC$} \label{mfeat_index}
+\caption{Multiple Features: índices $CR$, $F-measure$ e $OERC$} \label{mfeat_index}
 \begin{tabular}{|c|c|c|c|c|c|c|} \hline
  Indexes & $T_{max}$ & B-SOM & AB-SOM & global AB-SOM \\ \hline
 \multirow{4}{1.8cm}{$CR$} & 8 & 0.5401 & 0.5793 & 0.6259 \\
@@ -682,13 +682,56 @@ A tabela \ref{mfeat_matrices} mostra o resultado final dos pesos que medem a inf
 \end{table}
 
 \begin{table}[h!]
-\caption{Base Multiple Features: Matrizes $T_{max} = 9$} \label{mfeat_matrices}
+\caption{Multiple Features: Matrizes $T_{max} = 9$} \label{mfeat_matrices}
 \begin{center}
 \begin{tabular}{|c|c|c|}
 \hline
 Model & Most important matrix & Less important matrix \\ \hline
 AB-SOM & 4 & 2\\ \hline
 global AB-SOM &  & \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[h!]
+\caption{Multiple Features: matriz de confusão do algoritmo AB-SOM para múltiplas tabelas de dissimilaridade ($T_{max} = 9$)}\label{mfeat_adapt_matrix}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{} &
+\multicolumn{10}{|c|}{Classes}
+\\ \cline{2-11}
+Grupos & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9\\ \hline
+0,0 & 0 & 0 & 2 & 0 & 1 & 110 & 2 & 2 & 0 & 0 \\ \hline
+0,1 & 0 & 0 & 0 & 5 & 7 & 0 & 1 & 0 & 76 & 0\\ \hline
+0,2 & 0 & 0 & 1 & 1 & 9 & 1 & 2 & 0 & 50 & 2\\ \hline
+0,3 & 0 & 1 & 0 & 39 & 4 & 10 & 12 & 0 & 1 & 2\\ \hline
+0,4 & 0 & 0 & 0 & 24 & 0 & 0 & 0 & 0 & 0 & 0\\ \hline
+0,5 & 0 & 0 & 52 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\ \hline
+0,6 & 0 & 0 & 0 & 0 & 2 & 0 & 46 & 0 & 0 & 0\\ \hline
+0,7 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+0,8 & 0 & 11 & 3 & 0 & 0 & 0 & 0 & 1 & 0 & 159\\ \hline
+0,9 & 0 & 186 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 30\\ \hline \hline
+1,0 & 0 & 0 & 0 & 0 & 69 & 1 & 4 & 0 & 1 & 0\\ \hline
+1,1 & 0 & 0 & 0 & 0 & 6 & 0 & 0 & 0 & 71 & 0\\ \hline
+1,2 & 0 & 0 & 2 & 0 & 1 & 63 & 0 & 0 & 0 & 0\\ \hline
+1,3 & 0 & 0 & 0 & 127 & 0 & 0 & 1 & 0 & 0 & 0\\ \hline
+1,4 & 0 & 0 & 23 & 0 & 1 & 0 & 0 & 0 & 1 & 0\\ \hline
+1,5 & 0 & 0 & 1 & 0 & 0 & 7 & 0 & 34 & 0 & 1\\ \hline
+1,6 & 0 & 0 & 1 & 1 & 0 & 2 & 0 & 30 & 0 & 0\\ \hline
+1,7 & 0 & 0 & 0 & 0 & 4 & 0 & 1 & 0 & 0 & 0\\ \hline
+1,8 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\ \hline
+1,9 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\ \hline \hline
+2,0 & 0 & 1 & 0 & 0 & 1 & 0 & 103 & 0 & 0 & 0\\ \hline
+2,1 & 0 & 0 & 0 & 0 & 74 & 4 & 19 & 1 & 0 & 0\\ \hline
+2,2 & 0 & 1 & 0 & 2 & 21 & 0 & 9 & 0 & 0 & 0\\ \hline
+2,3 & 0 & 0 & 14 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\ \hline
+2,4 & 0 & 0 & 94 & 0 & 0 & 0 & 0 & 0 & 0 & 4\\ \hline
+2,5 & 0 & 0 & 7 & 0 & 0 & 1 & 0 & 59 & 0 & 2\\ \hline
+2,6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 73 & 0 & 0\\ \hline
+2,7 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\ \hline
+2,8 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\ \hline
+2,9 & 200 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\ \hline
 \end{tabular}
 \end{center}
 \end{table}
