@@ -362,7 +362,7 @@ A tabela \ref{thyroid_matrices} mostra o resultado final dos pesos que medem a i
 \begin{center}
 \begin{tabular}{|c|c|c|}
 \hline
-Modelo & Matriz mais importante & Matriz menos importante \\ \hline
+Modelo & Matriz mais relevante & Matriz menos relevante \\ \hline
 AB-SOM & 4-TSH & 1-T3-resin uptake test\\ \hline
 global AB-SOM & 5-maximal absolute difference in TSH & 1-T3-resin uptake test\\ \hline
 \end{tabular}
@@ -475,7 +475,7 @@ A tabela \ref{wine_absom_weight} apresenta a matriz de pesos final da variante c
 
 \begin{tabular}{|c|c|c|}
 \hline
-Modelo & Matriz mais importante & Matriz menos importante \\ \hline
+Modelo & Matriz mais relevante & Matriz menos relevante \\ \hline
 AB-SOM & 2 & 3\\ \hline
 global AB-SOM & 7 & 3\\ \hline
 \end{tabular}
@@ -577,11 +577,11 @@ A tabela \ref{winered_matrices} mostra o resultado final dos pesos que medem a i
 \end{table}
 
 \begin{table}[h!]
-\caption{Wine Quality data set: Relevance matrices $T_{max} = 12$} \label{winered_matrices}
+\caption{Wine Quality: Matrizes $T_{max} = 12$} \label{winered_matrices}
 \begin{center}
 \begin{tabular}{|c|c|c|}
 \hline
-Model & Most important matrix & Less important matrix \\ \hline
+Modelo & Matriz mais relevante & Matriz menos relevante \\ \hline
 AB-SOM & 12 & 5\\ \hline
 global AB-SOM & 9 & 12\\ \hline
 \end{tabular}
@@ -648,6 +648,139 @@ Grupos & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13\\ \hline
 
 \section{Base de dados Phoneme}
 
+Esta base de dados é parte de uma original que pode ser encontrada no link: http://www-stat.stanford.edu/~tibs/ElemStatLearn/. Ela consiste em cinco fonemas (classes): "sh", "iy", "dcl", "aa" e "ao". As cinco classes possuem, cada uma, 400 exemplos (objetos). Cada objeto é descrito como $(\textbf{x}_i,y_i) \, (i=1\ldots,n)$, onde $y_i$ é a classificação (fonema) e $\textbf{x}_i = (x_i(t_1),\ldots,x_i(t_{150}))$ é o $i$-ésimo dado funcional discretizado correspondendo aos log-periodogramas discretizados.
+
+A partir da base original, os autores obtiveram, inicialmente, duas bases adicionais correspondendo à velocidade e à aceleração dos log-periodogramas discretizados. Então, três tabelas relacionais foram obtidas desses três conjuntos de dados (posição, velocidade e aceleração dos log-periodogramas discretizados) através da aplicação da distância Euclidiana quadrada. Todas as matrizes de dissimilaridade foram normalizadas de acordo com suas dispersões globais \cite{Chavent2005} para ter a mesma variedade dinâmica.
+
+Os três algoritmos de agrupamento (SOM em lote baseado em uma única tabela de dissimilaridade, SOM em lote baseado em múltiplas tabelas de dissimilaridade com ponderação local e sua variante com ponderação global) foram aplicados às matrizes de dissimilaridade representando esta base de dados. No caso do SOM em lote original há somente uma matriz disponível, enquanto que, para os demais estão disponíveis múltiplas matrizes de dissimilaridade. Cada algoritmo foi executado 30 vezes e o melhor resultado foi selecionado de acordo com o critério de adequação. A topologia selecionada para o mapa nesta base de dados é formada por três linhas e dez colunas (3x10) totalizando 30 grupos. O número de iterações escolhido foi de 30 ($N_{iter}=30$). Os experimentos de cada algoritmo foram executados com quatro valores diferentes para $T_{max}$: 8, 9, 12 e 20. Os valores de $T_{min}$ correspondentes foram fixados no valor de 0,3.
+
+\subsubsection{Discussão dos Resultados}
+
+
+\begin{table}[h!]
+\begin{center}
+\caption{Phoneme: índices $CR$, $F-measure$ e $OERC$} \label{phoneme_index}
+\begin{tabular}{|c|c|c|c|c|c|c|} \hline
+ Indexes & $T_{max}$ & B-SOM & AB-SOM & global AB-SOM \\ \hline
+\multirow{4}{1.8cm}{$CR$} & 8 & 0.4107 & 0.3890 & 0.4552 \\ 
+ & 9 & 0.3481 & 0.3509 & 0.4094 \\ 
+ & 12 & 0.3301 & 0.3950 & 0.5170 \\ 
+ & 20 & 0.3589 & 0.4251 & 0.4022 \\ \hline
+\multirow{4}{1.8cm}{$F-measure$} & 8 & 0.5213 & 0.5325 & 0.5731 \\
+ & 9 & 0.4759 & 0.4940 & 0.5809 \\
+ & 12 & 0.4595 & 0.5380 & 0.6321 \\
+ & 20 & 0.5031 & 0.5436 & 0.5535 \\ \hline
+\multirow{4}{1.8cm}{$OERC$} & 8 & 28.45\% & 16.15\% & 17.55\% \\ 
+ & 9 & 31.00\% & 17.40\% & 17.10\% \\ 
+ & 12 & 32.55\% & 19.75\% & 17.40\% \\ 
+ & 20 & 32.60\% & 18.95\% & 17.05\% \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+\begin{table}[h!]
+\caption{Phoneme: Matrizes $T_{max} = 8$} \label{phoneme_matrices}
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+Modelo & Matriz mais relevante & Matriz menos relevante \\ \hline
+AB-SOM & position & acceleration \\ \hline
+global AB-SOM & position & acceleration \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+
+\begin{table}[!h]
+\caption{Phoneme: matriz de confusão do algoritmo AB-SOM para múltiplas tabelas de dissimilaridade ($T_{max} = 8$)}\label{phon_adapt_matrix}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{} &
+\multicolumn{5}{|c|}{Classes}
+\\ \cline{2-6}
+Grupos & 1-sh & 2-iy & 3-dcl & 4-aa & 5-ao \\ \hline
+0,0 & 0 & 9 & 0 & 110 & 269\\ \hline
+0,1 & 0 & 0 & 0 & 98 & 19 \\ \hline
+0,2 & 0 & 0 & 0 & 11 & 25 \\ \hline
+0,3 & 10 & 56 & 8 & 1 & 1 \\ \hline
+0,4 & 0 & 7 & 0 & 28 & 18 \\ \hline
+0,5 & 36 & 16 & 1 & 0 & 0 \\ \hline
+0,6 & 5 & 0 & 0 & 0 & 0 \\ \hline
+0,7 & 0 & 13 & 0 & 15 & 9 \\ \hline
+0,8 & 0 & 0 & 164 & 0 & 0 \\ \hline
+0,9 & 0 & 0 & 92 & 0 & 0 \\ \hline
+1,0 & 0 & 49 & 0 & 0 & 0 \\ \hline
+1,1 & 1 & 86 & 1 & 3 & 2 \\ \hline
+1,2 & 0 & 0 & 0 & 26 & 9 \\ \hline
+1,3 & 0 & 1 & 0 & 36 & 4 \\ \hline
+1,4 & 0 & 0 & 0 & 38 & 21 \\ \hline
+1,5 & 0 & 0 & 1 & 0 & 0 \\ \hline
+1,6 & 0 & 0 & 1 & 0 & 0 \\ \hline
+1,7 & 0 & 15 & 0 & 2 & 4 \\ \hline
+1,8 & 0 & 0 & 55 & 0 & 1 \\ \hline
+1,9 & 0 & 1 & 26 & 0 & 0 \\ \hline
+2,0 & 183 & 3 & 0 & 0 & 0 \\ \hline
+2,1 & 2 & 99 & 0 & 1 & 0 \\ \hline
+2,2 & 65 & 8 & 0 & 0 & 0 \\ \hline
+2,3 & 98 & 0 & 0 & 0 & 0 \\ \hline
+2,4 & 0 & 31 & 0 & 2 & 3 \\ \hline
+2,5 & 0 & 2 & 6 & 0 & 0 \\ \hline
+2,6 & 0 & 1 & 0 & 29 & 15 \\ \hline
+2,7 & 0 & 0 & 1 & 0 & 0 \\ \hline
+2,8 & 0 & 1 & 28 & 0 & 0 \\ \hline
+2,9 & 0 & 2 & 16 & 0 & 0 \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+\begin{table}[h!]
+\caption{Phoneme: Matriz de pesos final do algoritmo AB-SOM para múltiplas tabelas de dissimilaridade ($T_{max} = 8$)}\label{phon_absom_weight}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{} &
+\multicolumn{3}{|c|}{Matriz}
+\\ \cline{2-4}
+Grupos & 1-posição & 2-velocidade & 3-aceleração \\ \hline
+0,0 & \textbf{2.2387} & 0.6840 & 0.6530\\ \hline
+0,1 & \textbf{2.5131} & 0.6390 & 0.6227\\ \hline
+0,2 & \textbf{2.2162} & 0.7017 & 0.6431\\ \hline
+0,3 & \textbf{1.6707} & 0.7514 & 0.7966\\ \hline
+0,4 & \textbf{1.5695} & 0.8201 & 0.7769\\ \hline
+0,5 & \textbf{1.7866} & 0.7313 & 0.7653\\ \hline
+0,6 & \textbf{1.9211} & 0.7395 & 0.7039\\ \hline
+0,7 & \textbf{1.2229} & 0.9223 & 0.8866\\ \hline
+0,8 & \textbf{2.4899} & 0.6454 & 0.6222\\ \hline
+0,9 & \textbf{2.8460} & 0.6209 & 0.5659\\ \hline
+1,0 & \textbf{2.3495} & 0.6484 & 0.6564\\ \hline
+1,1 & \textbf{2.1013} & 0.7022 & 0.6776\\ \hline
+1,2 & \textbf{2.0499} & 0.7384 & 0.6606\\ \hline
+1,3 & \textbf{2.0462} & 0.7091 & 0.6892\\ \hline
+1,4 & \textbf{2.4468} & 0.6616 & 0.6177\\ \hline
+1,5 & 0.6564 & \textbf{1.2560} & \textbf{1.2128}\\ \hline
+1,6 & \textbf{1.1458} & 0.9366 & 0.9319\\ \hline
+1,7 & \textbf{1.4348} & 0.8526 & 0.8174\\ \hline
+1,8 & \textbf{2.1081} & 0.7130 & 0.6653\\ \hline
+1,9 & \textbf{1.9750} & 0.7259 & 0.6975\\ \hline
+2,0 & \textbf{2.2583} & 0.6856 & 0.6459\\ \hline
+2,1 & \textbf{2.1060} & 0.6853 & 0.6929\\ \hline
+2,2 & \textbf{2.2996} & 0.6644 & 0.6545\\ \hline
+2,3 & \textbf{2.5308} & 0.6511 & 0.6068\\ \hline
+2,4 & \textbf{1.8630} & 0.7217 & 0.7437\\ \hline
+2,5 & \textbf{1.3774} & 0.8700 & 0.8345\\ \hline
+2,6 & \textbf{1.4051} & 0.8900 & 0.7997\\ \hline
+2,7 & 0.8439 & \textbf{1.1189} & \textbf{1.0590}\\ \hline
+2,8 & \textbf{1.7495} & 0.7902 & 0.7233\\ \hline
+2,9 & \textbf{2.2398} & 0.6656 & 0.6707\\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
 \section{Base de dados Multiple Features}
 
 Esta base consiste em características de numerais ('0' -- '9') escritos à mão extraídos de uma coleção de mapas de utilidade holandeses. 200 padrões por classe (de um total de 2000 padrões) foram digitalizados em imagens binárias. Os padrões são divididos em dez classes representando cada uma dos numerais escritos à mão de zero a nove. Estes dígitos são representados em termos das seguintes características: (1) mfeat-fou: 76 coeficientes de Fourier da forma dos caracteres, (2) mfeat-fac: 216 profile correlations, (3) mfeat-kar: 64 coeficientes Karhunen-Love, (4) mfeat-pix: 240 médias de pixel em janelas 2 x 3, (5) mfeat-zer: 47 Zernike moments, (6) mfeat-mor: 6 características morfológicas.
@@ -686,7 +819,7 @@ A tabela \ref{mfeat_matrices} mostra o resultado final dos pesos que medem a inf
 \begin{center}
 \begin{tabular}{|c|c|c|}
 \hline
-Model & Most important matrix & Less important matrix \\ \hline
+Modelo & Matriz mais relevante & Matriz menos relevante \\ \hline
 AB-SOM & 4 & 2\\ \hline
 global AB-SOM &  & \\ \hline
 \end{tabular}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.2.24)  28 FEB 2012 12:41
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.2.24)  1 MAR 2012 11:57
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -636,13 +636,13 @@ LaTeX Info: Redefining \pageref on input line 104.
 \openout4 = `main.out'.
 
 \AtBeginShipoutBox=\box35
- <cinlogo.png, id=135, 363.3575pt x 146.5475pt>
+ <cinlogo.png, id=139, 363.3575pt x 146.5475pt>
 File: cinlogo.png Graphic file (type png)
  <use cinlogo.png>
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 107.
 
-<ufpelogo.png, id=137, 57.0933pt x 86.0013pt>
+<ufpelogo.png, id=141, 57.0933pt x 86.0013pt>
 File: ufpelogo.png Graphic file (type png)
  <use ufpelogo.png>
 LaTeX Font Info:    Try loading font information for T1+times on input line 107
@@ -1084,13 +1084,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [27]
-Overfull \hbox (2.46904pt too wide) in paragraph at lines 363--369
- [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1171,6 +1164,10 @@ Overfull \hbox (67.10518pt too wide) in paragraph at lines 623--646
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
+Package natbib Warning: Citation `Chavent2005' on page 34 undefined on input li
+ne 653.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
@@ -1195,13 +1192,6 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-)
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
@@ -1223,12 +1213,50 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [38]
 
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 790.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+)
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[39] (./main.bbl [40
+[39]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[40]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[41]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[42] (./main.bbl [43
 
 
 ]
@@ -1238,31 +1266,34 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[41]
+[44]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.67784pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[42])
+[45])
+
+Package natbib Warning: There were undefined citations.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.67784pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[43] (./main.aux (./chapters/introduction/main.aux) (./chapters/SOM/som.aux)
+[46] (./main.aux (./chapters/introduction/main.aux) (./chapters/SOM/som.aux)
 (./chapters/Modelo/main.aux) (./chapters/Resultados/resultados.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 10255 strings out of 495061
- 145561 string characters out of 1182621
- 299937 words of memory out of 3000000
- 12620 multiletter control sequences out of 15000+50000
+ 10279 strings out of 495061
+ 145909 string characters out of 1182621
+ 301476 words of memory out of 3000000
+ 12636 multiletter control sequences out of 15000+50000
  121392 words of font info for 337 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  41i,12n,51p,1350b,544s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1280,9 +1311,9 @@ ve/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw
 live/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw
 /times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></
 usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (54 pages, 437731 bytes).
+Output written on main.pdf (57 pages, 451483 bytes).
 PDF statistics:
- 847 PDF objects out of 1000 (max. 8388607)
- 207 named destinations out of 1000 (max. 500000)
- 54035 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 876 PDF objects out of 1000 (max. 8388607)
+ 215 named destinations out of 1000 (max. 500000)
+ 54043 words of extra memory for PDF output out of 61914 (max. 10000000)
 
