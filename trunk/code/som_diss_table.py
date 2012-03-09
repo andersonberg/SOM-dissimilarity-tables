@@ -26,14 +26,15 @@ from util import *
 import config
 import inicio
 
-def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, individuals_objects):
+def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes,
+        individuals_objects, nome_base, a):
 
         prototipos = []
         individuals = []
         
         individuals.extend(individuals_objects)
         
-        mapa = Mapa(individuals, mapa_x, mapa_y, q)
+        mapa = Mapa(individuals, mapa_x, mapa_y, q, nome_base, a)
 
         for cluster in mapa.mapa.flat:
                 for cluster2 in mapa.mapa.flat:
@@ -85,7 +86,8 @@ def main():
                 T = t_max
                 t = 0.0
                 denom = 2. * math.pow(T,2)
-                mapa = inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, individuals_objects)  
+                mapa = inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom,
+                        matrizes, individuals_objects, nome_base, a) 
         
                 #Iterações
                 while T > t_min:

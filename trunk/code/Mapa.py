@@ -7,35 +7,50 @@ from Cluster import *
 from Individual import *
 from Point import *
 from util import *
+import pickle
+import os.path
 
 class Mapa:
     ''' Define a distribuição dos clusters no mapa '''
-    def __init__(self, objetos, nlinhas, ncolunas, q):
+    def __init__(self, objetos, nlinhas, ncolunas, q, nome_base, a):
     
         self.m = 2.
-
-        clusters = []
-        c = nlinhas*ncolunas
-
-        # Criando os clusters e determinando os protótipos
-        for i in range(c):
-            cluster = Cluster(i)
-            for j in range(q):
-                prot = random.choice(objetos)
-                novo_prototipo = Individual(prot.indice, prot.id2, prot.nome)
-                if not novo_prototipo in cluster.prototipos:
-                    cluster.prototipos.append(novo_prototipo)
-            clusters.append(cluster)
-
-        #Cria uma matriz numpy
-        self.mapa = np.array(clusters)
-        self.mapa.shape = (nlinhas, ncolunas)
         self.objetos = objetos
 
-        # Define as coordenadas dos clusters no mapa
-        for i in range(nlinhas):
-            for j in range(ncolunas):
-                self.mapa[i,j].definir_ponto(i,j)
+        nome_arquivo = 'mapa_%s_%d.dat' % (nome_base, a)
+        if not os.path.exists(nome_arquivo):
+
+            clusters = []
+            c = nlinhas*ncolunas
+
+            # Criando os clusters e determinando os protótipos
+            for i in range(c):
+                cluster = Cluster(i)
+                for j in range(q):
+                    prot = random.choice(objetos)
+                    novo_prototipo = Individual(prot.indice, prot.id2, prot.nome)
+                    if not novo_prototipo in cluster.prototipos:
+                        cluster.prototipos.append(novo_prototipo)
+                clusters.append(cluster)
+
+            #Cria uma matriz numpy
+            self.mapa = np.array(clusters)
+            self.mapa.shape = (nlinhas, ncolunas)
+
+            # Define as coordenadas dos clusters no mapa
+            for i in range(nlinhas):
+                for j in range(ncolunas):
+                    self.mapa[i,j].definir_ponto(i,j)
+
+            # Armazena o mapa em arquivo
+            arquivo_mapa = nome_arquivo
+            f = open(arquivo_mapa, 'wb')
+            pickle.dump(self.mapa, f)
+            f.close()
+
+        else:
+            f = open(nome_arquivo, 'rb')
+            self.mapa = pickle.load(f)
 
 
     def calcula_criterio_adaptativo(self, obj, denom, matrizes, point1):
