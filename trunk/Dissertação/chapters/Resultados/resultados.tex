@@ -2,7 +2,9 @@
 %% Author: Anderson Berg
 %% CIn-UFPE
 
-\chapter{Experimentos}
+\chapter{Experimentos e resultados}
+
+\section{Índices}
 
 Para comparar os resultados dos grupos fornecidos pelos algoritmos, serão considerador um índice externo -- o índice de Rand corrigido ($CR$) \citep{Hubert85} -- como também o índice $F-measure$ \citep{Rijisbergen79} e a taxa de erro global de classificação (overall error rate of classification -- $OERC$) \citep{Breiman84}.
 
@@ -104,13 +106,79 @@ OERC = \sum_{j=1}^K \frac{n_{\bullet j}}{n} \, (1- \max_{1\leq i \leq m} n_{ij}/
 
 A seguir, apresentamos as características principais de cada base de dados utilizada durante os experimentos, bem como os parâmetros selecionados para executar os algoritmos descritos neste trabalho. Além disso, discutimos os resultados dos experimentos realizados comparando os diferentes algoritmos entre si.
 
-\section{Base de dados Íris}
+\section{Bases de dados}
+
+\subsection{Base de dados Íris}
 
 Esta base de dados consiste em três tipos (classes) de íris de plantas: iris setosa, iris versicolour and iris virginica. As três classes possuem 50 instâncias (objetos) cada. Uma das classes é linearmente separada das outras duas, estas últimas não são linearmente separadas uma da outra. Cada objeto é descrito por quatro atributos de valores reais: (1) comprimento da sépala, (2) largura da sépala, (3) comprimento da pétala e (4) largura da pétala.
 
 Os três algoritmos de agrupamento (SOM em lote baseado em uma única tabela de dissimilaridade, SOM em lote baseado em múltiplas tabelas de dissimilaridade com ponderação local e sua variante com ponderação global) foram aplicados às matrizes de dissimilaridade representando esta base de dados. No caso do SOM em lote original há somente uma matriz disponível, enquanto que, para os demais estão disponíveis múltiplas matrizes de dissimilaridade. Cada algoritmo foi executado 100 vezes e o melhor resultado foi selecionado de acordo com o critério de adequação. A topologia selecionada para o mapa nesta base de dados é formada por duas linhas e oito colunas (2x8) totalizando 16 grupos. O número de iterações escolhido foi de 100 ($N_{iter}=100$). Os experimentos de cada algoritmo foram executados com quatro valores diferentes para $T_{max}$: 6, 7, 9 e 16. Os valores de $T_{min}$ correspondentes foram fixados no valor de 0,3.
 
-\subsubsection{Discussão dos Resultados}
+
+\subsection{Base de dados E.coli}
+
+A base de dados E.coli contém informações sobre proteínas classificadas em oito classes. Existem 336 exemplos descritos por 6 atributos, onde um dos atributos é a classe. As classes e suas distribuições são as seguintes: cp (cytoplasm), 143 exemplos; im (inner membrane without signal sequence), 77 exemplos; pp (perisplasm), 52 exemplos; imU (inner membrane, uncleavable signal sequence), 35 exemplos; om (outer membrane), 20 exemplos; omL (outer membrane lipoprotein), 5 exemplos; imL (inner membrane lipoprotein), 2 exemplos; imS (inner membrane, cleavable signal sequence), 2 exemplos. A tabela \ref{ecoli_classes} mostra essa distribuição.
+
+\begin{table}[h!]
+\caption{Distribuição de classes da base de dados E.coli} \label{ecoli_classes}
+\begin{center}
+\begin{tabular}{l l r} \hline
+\textbf{Classe} & \textbf{Código} & \textbf{Exemplos} \\ \hline
+cytoplasm & cp & 143 \\
+inner membrane without signal sequence & im & 77 \\
+perisplasm & pp & 52 \\
+inner membrane, uncleavable signal sequence & imU & 35 \\
+outer membrane & om & 20 \\
+outer membrane lipoprotein & omL & 5 \\
+inner membrane lipoprotein & imL & 2 \\
+inner membrane, cleavable signal sequence & imS & 2 \\
+
+\end{tabular}
+\end{center}
+\end{table}
+
+
+Os três algoritmos de agrupamento (SOM em lote baseado em uma única tabela de dissimilaridade, SOM em lote baseado em múltiplas tabelas de dissimilaridade com ponderação local e sua variante com ponderação global) foram aplicados às matrizes de dissimilaridade representando esta base de dados. No caso do SOM em lote original há somente uma matriz disponível, enquanto que, para os demais estão disponíveis múltiplas matrizes de dissimilaridade. Cada algoritmo foi executado 100 vezes e o melhor resultado foi selecionado de acordo com o critério de adequação. A topologia selecionada para o mapa nesta base de dados é formada por três linhas e cinco colunas (3x5) totalizando 15 grupos. O número de iterações escolhido foi de 50 ($N_{iter}=50$). Os experimentos de cada algoritmo foram executados com quatro valores diferentes para $T_{max}$: 4; 4,5; 6 e 10. Os valores de $T_{min}$ correspondentes foram fixados no valor de 0,3.
+
+
+\subsection{Base de dados Thyroid}
+
+Esta base de dados consiste em três classes relativas ao estado da glândula tiroide: normal, hipertiroidismo e hipotiroidismo. As classes (1, 2 e 3) têm 150, 35 e 30 instâncias, respectivamente. Cada objeto é descrito por cinco atributos de valores reais: 1) T3-resin uptake test, (2) total serum thyroxin, (3) total serum triiodothyronine, (4) basal thyroid-stimulating hormone (TSH) e (5) maximal absolute difference in TSH value.
+
+Os três algoritmos de agrupamento (SOM em lote baseado em uma única tabela de dissimilaridade, SOM em lote baseado em múltiplas tabelas de dissimilaridade com ponderação local e sua variante com ponderação global) foram aplicados às matrizes de dissimilaridade representando esta base de dados. No caso do SOM em lote original há somente uma matriz disponível, enquanto que, para os demais estão disponíveis múltiplas matrizes de dissimilaridade. Cada algoritmo foi executado 100 vezes e o melhor resultado foi selecionado de acordo com o critério de adequação. A topologia selecionada para o mapa nesta base de dados é formada por três linhas e cinco colunas (3x5) totalizando 15 grupos. O número de iterações escolhido foi de 50 ($N_{iter}=50$). Os experimentos de cada algoritmo foram executados com quatro valores diferentes para $T_{max}$: 4; 4,5; 6 e 10. Os valores de $T_{min}$ correspondentes foram fixados no valor de 0,3.
+
+
+\subsection{Base de dados Wine}
+
+Esta base de dados consiste em três tipos (classes) de vinhos, produzidos na mesma região da Itália, porém derivados de três diferentes cultivos. As classes (1, 2, e 3) possuem 59, 71 e 48 exemplos, respectivamente. Cada vinho é descrito por 13 atributos de valores reais representando as quantidades de 13 componentes encontrados em cada um dos três tipos de vinho. Estes atributos são: (1) alcohol; (2) malic acid; (3) ash; (4) alkalinity of ash; (5) magnesium; (6) total phenols; (7) flavonoids; (8) non-flavonoid phenols; (9) proanthocyanins; (10) color intensity; (11) hue; (12) OD280/OD315 of diluted wines; e (13) proline.
+
+Os três algoritmos de agrupamento (SOM em lote baseado em uma única tabela de dissimilaridade, SOM em lote baseado em múltiplas tabelas de dissimilaridade com ponderação local e sua variante com ponderação global) foram aplicados às matrizes de dissimilaridade representando esta base de dados. No caso do SOM em lote original há somente uma matriz disponível, enquanto que, para os demais estão disponíveis múltiplas matrizes de dissimilaridade. Cada algoritmo foi executado 50 vezes e o melhor resultado foi selecionado de acordo com o critério de adequação. A topologia selecionada para o mapa nesta base de dados é formada por três linhas e cinco colunas (3x5) totalizando 15 grupos. O número de iterações escolhido foi de 50 ($N_{iter}=50$). Os experimentos de cada algoritmo foram executados com quatro valores diferentes para $T_{max}$: 4, 5, 6 e 10. Os valores de $T_{min}$ correspondentes foram fixados no valor de 0,3.
+
+\subsection{Base de dados Wine Quality}
+
+A base de dados Wine quality consiste em duas bases relacionadas às variantes tinto e branco do vinho português "Vinho Verde" \cite{Cortez2009}. Somente a variante de vinho tinto foi considerado para estes experimentos. Existem 1599 exemplos, cada um é descrito por 11 atributos mais o atributo de classificação. Esta classificação é baseada em dados sensoriais (média de, pelo menos, 3 avaliações feitas por especialistas em vinho). Cada especialista classifica as qualidade de vinho entre 0 (muito ruim) e 10 (excelente). Neste exemplo, as classificações de vinho tinto são: (1) fixed acidity, (2) volatile acidity, (3) citric acid, (4) residual sugar, (5) chlorides, (6) free sulfur dioxide, (7) total sulfur dioxide, (8) density, (9) pH, (10) sulphates e (11) alcohol.
+
+Os três algoritmos de agrupamento (SOM em lote baseado em uma única tabela de dissimilaridade, SOM em lote baseado em múltiplas tabelas de dissimilaridade com ponderação local e sua variante com ponderação global) foram aplicados às matrizes de dissimilaridade representando esta base de dados. No caso do SOM em lote original há somente uma matriz disponível, enquanto que, para os demais estão disponíveis múltiplas matrizes de dissimilaridade. Cada algoritmo foi executado 30 vezes e o melhor resultado foi selecionado de acordo com o critério de adequação. A topologia selecionada para o mapa nesta base de dados é formada por três linhas e dez colunas (3x10) totalizando 30 grupos. O número de iterações escolhido foi de 30 ($N_{iter}=30$). Os experimentos de cada algoritmo foram executados com quatro valores diferentes para $T_{max}$: 8, 9, 12 e 20. Os valores de $T_{min}$ correspondentes foram fixados no valor de 0,3.
+
+\subsection{Base de dados Phoneme}
+
+Esta base de dados é parte de uma original que pode ser encontrada no link: http://www-stat.stanford.edu/~tibs/ElemStatLearn/. Ela consiste em cinco fonemas (classes): "sh", "iy", "dcl", "aa" e "ao". As cinco classes possuem, cada uma, 400 exemplos (objetos). Cada objeto é descrito como $(\textbf{x}_i,y_i) \, (i=1\ldots,n)$, onde $y_i$ é a classificação (fonema) e $\textbf{x}_i = (x_i(t_1),\ldots,x_i(t_{150}))$ é o $i$-ésimo dado funcional discretizado correspondendo aos log-periodogramas discretizados.
+
+A partir da base original, os autores obtiveram, inicialmente, duas bases adicionais correspondendo à velocidade e à aceleração dos log-periodogramas discretizados. Então, três tabelas relacionais foram obtidas desses três conjuntos de dados (posição, velocidade e aceleração dos log-periodogramas discretizados) através da aplicação da distância Euclidiana quadrada. Todas as matrizes de dissimilaridade foram normalizadas de acordo com suas dispersões globais \cite{Chavent2005} para ter a mesma variedade dinâmica.
+
+Os três algoritmos de agrupamento (SOM em lote baseado em uma única tabela de dissimilaridade, SOM em lote baseado em múltiplas tabelas de dissimilaridade com ponderação local e sua variante com ponderação global) foram aplicados às matrizes de dissimilaridade representando esta base de dados. No caso do SOM em lote original há somente uma matriz disponível, enquanto que, para os demais estão disponíveis múltiplas matrizes de dissimilaridade. Cada algoritmo foi executado 30 vezes e o melhor resultado foi selecionado de acordo com o critério de adequação. A topologia selecionada para o mapa nesta base de dados é formada por três linhas e dez colunas (3x10) totalizando 30 grupos. O número de iterações escolhido foi de 30 ($N_{iter}=30$). Os experimentos de cada algoritmo foram executados com quatro valores diferentes para $T_{max}$: 8, 9, 12 e 20. Os valores de $T_{min}$ correspondentes foram fixados no valor de 0,3.
+
+\subsection{Base de dados Multiple Features}
+
+Esta base consiste em características de numerais ('0' -- '9') escritos à mão extraídos de uma coleção de mapas de utilidade holandeses. 200 padrões por classe (de um total de 2000 padrões) foram digitalizados em imagens binárias. Os padrões são divididos em dez classes representando cada uma dos numerais escritos à mão de zero a nove. Estes dígitos são representados em termos das seguintes características: (1) mfeat-fou: 76 coeficientes de Fourier da forma dos caracteres, (2) mfeat-fac: 216 profile correlations, (3) mfeat-kar: 64 coeficientes Karhunen-Love, (4) mfeat-pix: 240 médias de pixel em janelas 2 x 3, (5) mfeat-zer: 47 Zernike moments, (6) mfeat-mor: 6 características morfológicas.
+
+Os três algoritmos de agrupamento (SOM em lote baseado em uma única tabela de dissimilaridade, SOM em lote baseado em múltiplas tabelas de dissimilaridade com ponderação local e sua variante com ponderação global) foram aplicados às matrizes de dissimilaridade representando esta base de dados. No caso do SOM em lote original há somente uma matriz disponível, enquanto que, para os demais estão disponíveis múltiplas matrizes de dissimilaridade. Cada algoritmo foi executado 30 vezes e o melhor resultado foi selecionado de acordo com o critério de adequação. A topologia selecionada para o mapa nesta base de dados é formada por três linhas e dez colunas (3x10) totalizando 30 grupos. O número de iterações escolhido foi de 30 ($N_{iter}=30$). Os experimentos de cada algoritmo foram executados com quatro valores diferentes para $T_{max}$: 8, 9, 12 e 20. Os valores de $T_{min}$ correspondentes foram fixados no valor de 0,3.
+
+
+
+\section{Resultados}
+
+\subsection{Resultados Base de dados Íris}
 
 A tabela \ref{iris_index} mostra os valores para os índices de Rand corrigido ($CR$), $F-measure$ e a Taxa de Erro Global de Classificação ($OERC$). Em cada linha dessa tabela, pode-se observar os valores dos índices para cada um dos diferentes valores de $T_{max}$.
 
@@ -223,14 +291,7 @@ Grupos & 1-Sepal length & 2-Sepal width & 3-Petal length & 4-Petal width\\ \hlin
 \end{table}
 
 
-
-\section{Base de dados E.coli}
-
-A base de dados E.coli contém informações sobre proteínas classificadas em oito classes. Existem 336 exemplos descritos por 6 atributos, onde um dos atributos é a classe. As classes e suas distribuições são as seguintes: cp (cytoplasm), 143 exemplos; im (inner membrane without signal sequence), 77 exemplos; pp (perisplasm), 52 exemplos; imU (inner membrane, uncleavable signal sequence), 35 exemplos; om (outer membrane), 20 exemplos; omL (outer membrane lipoprotein), 5 exemplos; imL (inner membrane lipoprotein), 2 exemplos; imS (inner membrane, cleavable signal sequence), 2 exemplos. Cada exemplos (objeto) é descrito por oito atributos.
-
-Os três algoritmos de agrupamento (SOM em lote baseado em uma única tabela de dissimilaridade, SOM em lote baseado em múltiplas tabelas de dissimilaridade com ponderação local e sua variante com ponderação global) foram aplicados às matrizes de dissimilaridade representando esta base de dados. No caso do SOM em lote original há somente uma matriz disponível, enquanto que, para os demais estão disponíveis múltiplas matrizes de dissimilaridade. Cada algoritmo foi executado 100 vezes e o melhor resultado foi selecionado de acordo com o critério de adequação. A topologia selecionada para o mapa nesta base de dados é formada por três linhas e cinco colunas (3x5) totalizando 15 grupos. O número de iterações escolhido foi de 50 ($N_{iter}=50$). Os experimentos de cada algoritmo foram executados com quatro valores diferentes para $T_{max}$: 4; 4,5; 6 e 10. Os valores de $T_{min}$ correspondentes foram fixados no valor de 0,3.
-
-\subsubsection{Discussão dos Resultados}
+\subsection{Resultados Base de dados E.coli}
 
 A tabela \ref{ecoli_index} mostra os valores do índice de Rand corrigido ($CR$), $F-measure$, e $OERC$ para cada um dos algoritmos. Em cada linha dessa tabela, pode-se observar os valores dos índices para cada um dos diferentes valores de $T_{max}$.
 
@@ -322,15 +383,7 @@ Grupos & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\ \hline
 \end{table}
 
 
-
-\section{Base de dados Thyroid}
-
-Esta base de dados consiste em três classes relativas ao estado da glândula tiroide: normal, hipertiroidismo e hipotiroidismo. As classes (1, 2 e 3) têm 150, 35 e 30 instâncias, respectivamente. Cada objeto é descrito por cinco atributos de valores reais: 1) T3-resin uptake test, (2) total serum thyroxin, (3) total serum triiodothyronine, (4) basal thyroid-stimulating hormone (TSH) e (5) maximal absolute difference in TSH value.
-
-
-Os três algoritmos de agrupamento (SOM em lote baseado em uma única tabela de dissimilaridade, SOM em lote baseado em múltiplas tabelas de dissimilaridade com ponderação local e sua variante com ponderação global) foram aplicados às matrizes de dissimilaridade representando esta base de dados. No caso do SOM em lote original há somente uma matriz disponível, enquanto que, para os demais estão disponíveis múltiplas matrizes de dissimilaridade. Cada algoritmo foi executado 100 vezes e o melhor resultado foi selecionado de acordo com o critério de adequação. A topologia selecionada para o mapa nesta base de dados é formada por três linhas e cinco colunas (3x5) totalizando 15 grupos. O número de iterações escolhido foi de 50 ($N_{iter}=50$). Os experimentos de cada algoritmo foram executados com quatro valores diferentes para $T_{max}$: 4; 4,5; 6 e 10. Os valores de $T_{min}$ correspondentes foram fixados no valor de 0,3.
-
-\subsubsection{Discussão dos Resultados}
+\subsection{Resultados Base de dados Thyroid}
 
 A tabela \ref{thyroid_index} mostra os valores para os índices de Rand corrigido ($CR$), $F-measure$ e a Taxa de Erro Global de Classificação ($OERC$) obtidos para cada um dos algoritmos. Em cada linha dessa tabela, pode-se observar os valores dos índices para cada um dos diferentes valores de $T_{max}$. Para esta base, o melhor desempenho global foi apresentado pelos algoritmos AB-SOM com ponderação global and AB-SOM com ponderação local, nesta ordem.
 
@@ -431,13 +484,9 @@ Grupos & 1 & 2 & 3 & 4 & 5 \\ \hline
 \end{table}
 
 
-\section{Base de dados Wine}
 
-Esta base de dados consiste em três tipos (classes) de vinhos, produzidos na mesma região da Itália, porém derivados de três diferentes cultivos. As classes (1, 2, e 3) possuem 59, 71 e 48 exemplos, respectivamente. Cada vinho é descrito por 13 atributos de valores reais representando as quantidades de 13 componentes encontrados em cada um dos três tipos de vinho. Estes atributos são: (1) alcohol; (2) malic acid; (3) ash; (4) alkalinity of ash; (5) magnesium; (6) total phenols; (7) flavonoids; (8) non-flavonoid phenols; (9) proanthocyanins; (10) color intensity; (11) hue; (12) OD280/OD315 of diluted wines; e (13) proline.
 
-Os três algoritmos de agrupamento (SOM em lote baseado em uma única tabela de dissimilaridade, SOM em lote baseado em múltiplas tabelas de dissimilaridade com ponderação local e sua variante com ponderação global) foram aplicados às matrizes de dissimilaridade representando esta base de dados. No caso do SOM em lote original há somente uma matriz disponível, enquanto que, para os demais estão disponíveis múltiplas matrizes de dissimilaridade. Cada algoritmo foi executado 50 vezes e o melhor resultado foi selecionado de acordo com o critério de adequação. A topologia selecionada para o mapa nesta base de dados é formada por três linhas e cinco colunas (3x5) totalizando 15 grupos. O número de iterações escolhido foi de 50 ($N_{iter}=50$). Os experimentos de cada algoritmo foram executados com quatro valores diferentes para $T_{max}$: 4, 5, 6 e 10. Os valores de $T_{min}$ correspondentes foram fixados no valor de 0,3.
-
-\subsection{Discussão dos Resultados}
+\subsection{Resultados Base de dados Wine}
 
 A tabela \ref{wine_index} mostra os valores para os índices de Rand corrigido ($CR$), $F-measure$ e a Taxa de Erro Global de Classificação ($OERC$) obtidos para cada um dos algoritmos. Em cada linha dessa tabela, pode-se observar os valores dos índices para cada um dos diferentes valores de $T_{max}$. Para esta base, o melhor desempenho global foi apresentado pelos algoritmos AB-SOM com ponderação local and AB-SOM com ponderação global, nesta ordem. O SOM em lote original obteve o pior desempenho global nos índices.
 
@@ -541,13 +590,8 @@ Grupos & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13\\ \hline
 \end{center}
 \end{table}
 
-\section{Base de dados Wine Quality}
 
-A base de dados Wine quality consiste em duas bases relacionadas às variantes tinto e branco do vinho português "Vinho Verde" \cite{Cortez2009}. Somente a variante de vinho tinto foi considerado para estes experimentos. Existem 1599 exemplos, cada um é descrito por 11 atributos mais o atributo de classificação. Esta classificação é baseada em dados sensoriais (média de, pelo menos, 3 avaliações feitas por especialistas em vinho). Cada especialista classifica as qualidade de vinho entre 0 (muito ruim) e 10 (excelente). Neste exemplo, as classificações de vinho tinto são: (1) fixed acidity, (2) volatile acidity, (3) citric acid, (4) residual sugar, (5) chlorides, (6) free sulfur dioxide, (7) total sulfur dioxide, (8) density, (9) pH, (10) sulphates e (11) alcohol.
-
-Os três algoritmos de agrupamento (SOM em lote baseado em uma única tabela de dissimilaridade, SOM em lote baseado em múltiplas tabelas de dissimilaridade com ponderação local e sua variante com ponderação global) foram aplicados às matrizes de dissimilaridade representando esta base de dados. No caso do SOM em lote original há somente uma matriz disponível, enquanto que, para os demais estão disponíveis múltiplas matrizes de dissimilaridade. Cada algoritmo foi executado 30 vezes e o melhor resultado foi selecionado de acordo com o critério de adequação. A topologia selecionada para o mapa nesta base de dados é formada por três linhas e dez colunas (3x10) totalizando 30 grupos. O número de iterações escolhido foi de 30 ($N_{iter}=30$). Os experimentos de cada algoritmo foram executados com quatro valores diferentes para $T_{max}$: 8, 9, 12 e 20. Os valores de $T_{min}$ correspondentes foram fixados no valor de 0,3.
-
-\subsubsection{Discussão dos Resultados}
+\subsection{Resultados Base de dados Wine Quality}
 
 A tabela \ref{winered_index} mostra os valores obtidos por todos os algoritmos para os índices $CR$, $F-measure$ e $OERC$, considerando diferentes valores para $T_{max}$. O melhor desempenho global foi apresentado pelo algoritmo AB-SOM baseado em múltiplas tabelas de dissimilaridade com ponderação local.
 
@@ -646,15 +690,8 @@ Grupos & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13\\ \hline
 \end{center}
 \end{table}
 
-\section{Base de dados Phoneme}
 
-Esta base de dados é parte de uma original que pode ser encontrada no link: http://www-stat.stanford.edu/~tibs/ElemStatLearn/. Ela consiste em cinco fonemas (classes): "sh", "iy", "dcl", "aa" e "ao". As cinco classes possuem, cada uma, 400 exemplos (objetos). Cada objeto é descrito como $(\textbf{x}_i,y_i) \, (i=1\ldots,n)$, onde $y_i$ é a classificação (fonema) e $\textbf{x}_i = (x_i(t_1),\ldots,x_i(t_{150}))$ é o $i$-ésimo dado funcional discretizado correspondendo aos log-periodogramas discretizados.
-
-A partir da base original, os autores obtiveram, inicialmente, duas bases adicionais correspondendo à velocidade e à aceleração dos log-periodogramas discretizados. Então, três tabelas relacionais foram obtidas desses três conjuntos de dados (posição, velocidade e aceleração dos log-periodogramas discretizados) através da aplicação da distância Euclidiana quadrada. Todas as matrizes de dissimilaridade foram normalizadas de acordo com suas dispersões globais \cite{Chavent2005} para ter a mesma variedade dinâmica.
-
-Os três algoritmos de agrupamento (SOM em lote baseado em uma única tabela de dissimilaridade, SOM em lote baseado em múltiplas tabelas de dissimilaridade com ponderação local e sua variante com ponderação global) foram aplicados às matrizes de dissimilaridade representando esta base de dados. No caso do SOM em lote original há somente uma matriz disponível, enquanto que, para os demais estão disponíveis múltiplas matrizes de dissimilaridade. Cada algoritmo foi executado 30 vezes e o melhor resultado foi selecionado de acordo com o critério de adequação. A topologia selecionada para o mapa nesta base de dados é formada por três linhas e dez colunas (3x10) totalizando 30 grupos. O número de iterações escolhido foi de 30 ($N_{iter}=30$). Os experimentos de cada algoritmo foram executados com quatro valores diferentes para $T_{max}$: 8, 9, 12 e 20. Os valores de $T_{min}$ correspondentes foram fixados no valor de 0,3.
-
-\subsubsection{Discussão dos Resultados}
+\subsection{Resultados Base de dados Phoneme}
 
 
 \begin{table}[h!]
@@ -678,7 +715,6 @@ Os três algoritmos de agrupamento (SOM em lote baseado em uma única tabela de di
 \end{center}
 \end{table}
 
-
 \begin{table}[h!]
 \caption{Phoneme: Matrizes $T_{max} = 8$} \label{phoneme_matrices}
 \begin{center}
@@ -690,8 +726,6 @@ global AB-SOM & position & acceleration \\ \hline
 \end{tabular}
 \end{center}
 \end{table}
-
-
 
 \begin{table}[!h]
 \caption{Phoneme: matriz de confusão do algoritmo AB-SOM para múltiplas tabelas de dissimilaridade ($T_{max} = 8$)}\label{phon_adapt_matrix}
@@ -781,13 +815,9 @@ Grupos & 1-posição & 2-velocidade & 3-aceleração \\ \hline
 \end{table}
 
 
-\section{Base de dados Multiple Features}
 
-Esta base consiste em características de numerais ('0' -- '9') escritos à mão extraídos de uma coleção de mapas de utilidade holandeses. 200 padrões por classe (de um total de 2000 padrões) foram digitalizados em imagens binárias. Os padrões são divididos em dez classes representando cada uma dos numerais escritos à mão de zero a nove. Estes dígitos são representados em termos das seguintes características: (1) mfeat-fou: 76 coeficientes de Fourier da forma dos caracteres, (2) mfeat-fac: 216 profile correlations, (3) mfeat-kar: 64 coeficientes Karhunen-Love, (4) mfeat-pix: 240 médias de pixel em janelas 2 x 3, (5) mfeat-zer: 47 Zernike moments, (6) mfeat-mor: 6 características morfológicas.
 
-Os três algoritmos de agrupamento (SOM em lote baseado em uma única tabela de dissimilaridade, SOM em lote baseado em múltiplas tabelas de dissimilaridade com ponderação local e sua variante com ponderação global) foram aplicados às matrizes de dissimilaridade representando esta base de dados. No caso do SOM em lote original há somente uma matriz disponível, enquanto que, para os demais estão disponíveis múltiplas matrizes de dissimilaridade. Cada algoritmo foi executado 30 vezes e o melhor resultado foi selecionado de acordo com o critério de adequação. A topologia selecionada para o mapa nesta base de dados é formada por três linhas e dez colunas (3x10) totalizando 30 grupos. O número de iterações escolhido foi de 30 ($N_{iter}=30$). Os experimentos de cada algoritmo foram executados com quatro valores diferentes para $T_{max}$: 8, 9, 12 e 20. Os valores de $T_{min}$ correspondentes foram fixados no valor de 0,3.
-
-\subsubsection{Discussão dos Resultados}
+\subsection{Resultados Base de dados Multiple Features}
 
 A tabela \ref{mfeat_index} mostra os valores obtidos para os índices $CR$, $F-measure$ e $OERC$ em todos os três algoritmos considerando diferentes valores de $T_{max}$. Em cada linha dessa tabela, pode-se observar os valores dos índices para cada um dos diferentes valores de $T_{max}$. Para esta base, o melhor desempenho global foi apresentado pelos algoritmos AB-SOM com ponderação global and AB-SOM com ponderação local, nesta ordem. O SOM em lote original obteve o pior desempenho global nos índices.
 
