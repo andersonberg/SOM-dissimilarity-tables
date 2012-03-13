@@ -182,12 +182,12 @@ def main():
         file_individuos.writelines(list_individuos)
         file_individuos.close()
 
-    criterios_ordenados = sorted(criterios_energia)
-    it = 0
+#    criterios_ordenados = sorted(criterios_energia)
+#    it = 0
 #    while(criterios_ordenados[it] < 1.0):
 #        it += 1
-
-    menor_criterio_energia = criterios_ordenados[it]
+    menor_criterio_energia = min(criterios_energia)
+#    menor_criterio_energia = criterios_ordenados[it]
     media_criterios = np.mean(criterios_energia)
     menor_erro = min(oercs)
     text.append("\n\nMelhor repetição: " + str(criterios_energia.index(menor_criterio_energia)))
