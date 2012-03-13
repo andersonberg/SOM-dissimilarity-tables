@@ -21,14 +21,13 @@ class Individual:
         r = 1.
         self.pertinencias = numpy.array([])
         for i in range(tamanho):
-
-                        if i == tamanho-1:
-                                self.pertinencias = numpy.append(self.pertinencias, 1.-r)
-                                
-                        else:
-                                p = random.uniform(0,r)
-                                self.pertinencias = numpy.append(self.pertinencias,p)
-                                r = float(r - p)
+            if i == tamanho-1:
+                    self.pertinencias = numpy.append(self.pertinencias, 1.-r)
+                    
+            else:
+                    p = random.uniform(0,r)
+                    self.pertinencias = numpy.append(self.pertinencias,p)
+                    r = float(r - p)
     
     # Determina o segundo melhor neurônio
     def set_segundo(self, cluster):
