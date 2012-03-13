@@ -5,9 +5,11 @@
 # Projeto de mestrado
 # Autor: Anderson Berg
 
+from __future__ import division
 import sys
 from math import *
 import numpy as np
+import util
 
 # calcula binomial (n 2)
 def combinacao(n):
@@ -78,3 +80,19 @@ def calcula_oerc(confusion_matrix, len_clusters_comp, len_objetos):
 	resultado = 1. - (float(sumJ) / float(len_objetos))
 
 	return resultado
+
+def calcula_topographic_error(mapa):
+	
+	erro = 0
+	for objeto in mapa.objetos:
+		cluster1 = objeto.cluster
+		cluster2 = objeto.segundo
+		
+		distancia = util.delta(cluster1.point, cluster2.point)
+		if distancia > 2:
+			erro += 1
+			
+	tam = len(mapa.objetos)
+	erro_topografico = erro/tam
+	
+	return erro_topografico

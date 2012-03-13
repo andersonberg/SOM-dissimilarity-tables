@@ -100,13 +100,18 @@ class Mapa:
 
             #calcula o critério de cada cluster para o objeto em questão
             criterios = [ (metodo(objeto, denom, matrizes, cluster.point), cluster) for cluster in self.mapa.flat ]
+            # pega o menor valor dos critérios e o cluster correspondente
             (menor_criterio, menor_criterio_cluster) = min(criterios)
+            # ordena o vetor de critérios
+            criterios = sorted(criterios)
+            objeto.set_segundo(criterios[1][1])
 
             if menor_criterio_cluster.point != objeto.cluster.point:
                 #Insere o objeto no cluster de menor critério
                 self.mapa[menor_criterio_cluster.point.x, menor_criterio_cluster.point.y].inserir_objeto(objeto)
                 self.mapa[objeto.cluster.point.x, objeto.cluster.point.y].remover_objeto(objeto)
                 objeto.set_cluster(self.mapa[menor_criterio_cluster.point.x, menor_criterio_cluster.point.y])
+
 
         for cluster1 in self.mapa.flat:
             for cluster2 in self.mapa.flat:

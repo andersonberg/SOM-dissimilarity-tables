@@ -30,7 +30,7 @@ import inicio
 
 #DROPBOX_PATH = ''
 
-def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, individuals_objects):
+def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, individuals_objects, nome_base, a):
 
         prototipos = {}
         #clusters = []
@@ -38,7 +38,7 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, individua
 
         individuals.extend(individuals_objects)
 
-        mapa = Mapa(individuals,  mapa_x, mapa_y, q)
+        mapa = Mapa(individuals,  mapa_x, mapa_y, q, nome_base, a)
 
         # cria a matriz de pesos
         for cluster in mapa.mapa.flat:
@@ -85,7 +85,7 @@ def main():
                 T = t_max
                 t = 0.0
                 denom = 2. * pow(T,2)
-                mapa = inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, individuals_objects)
+                mapa = inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, individuals_objects, nome_base, a)
 
                 while T > t_min:
                 # while t < (n_iter - 1):

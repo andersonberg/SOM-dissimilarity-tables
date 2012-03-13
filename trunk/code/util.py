@@ -18,7 +18,7 @@ from Cluster import *
 from Classe import *
 from Variavel import *
 from leitor_sodas import *
-from indices import *
+import indices
 from datetime import *
 import os.path
 
@@ -156,7 +156,7 @@ def calcula_indices(mapa, classes_a_priori, no_clusters_completos, adap=True):
     text = []
     ########################################
     #Calcula a matrix de confusão #
-    confusion_matrix = calcula_confusion_matrix(mapa, classes_a_priori, no_clusters_completos)
+    confusion_matrix = indices.calcula_confusion_matrix(mapa, classes_a_priori, no_clusters_completos)
     text.extend(imprime_matriz_confusao(confusion_matrix, mapa, classes_a_priori, no_clusters_completos))
 
     if adap:
@@ -167,30 +167,35 @@ def calcula_indices(mapa, classes_a_priori, no_clusters_completos, adap=True):
     # Cálculo do índice de Rand Corrigido #
     no_objetos = len(mapa.objetos)
     
-    cr = calcula_cr(confusion_matrix, len(classes_a_priori), no_clusters_completos, len(mapa.objetos))     
+    cr = indices.calcula_cr(confusion_matrix, len(classes_a_priori), no_clusters_completos, len(mapa.objetos))     
     text.append("\n\nCorrected Rand index: " + str(cr))
 
     ##########################################################
     # Cálculo da precisão #
-    precisao_matrix = calcula_precisao(confusion_matrix, len(classes_a_priori), no_clusters_completos)
+    precisao_matrix = indices.calcula_precisao(confusion_matrix, len(classes_a_priori), no_clusters_completos)
 
     ###########################################################
     # Cálculo do recall #
-    recall_matrix = calcula_recall(confusion_matrix, len(classes_a_priori), no_clusters_completos)
+    recall_matrix = indices.calcula_recall(confusion_matrix, len(classes_a_priori), no_clusters_completos)
 
     ###########################################################
     # Cálculo do f_measure #
 
     len_cls_priori = len(classes_a_priori)
-    f_measure_matrix = calcula_f_measure(precisao_matrix, recall_matrix, len_cls_priori, no_clusters_completos)
+    f_measure_matrix = indices.calcula_f_measure(precisao_matrix, recall_matrix, len_cls_priori, no_clusters_completos)
     soma2 = sum( [ confusion_matrix[i,:].sum() * f_measure_matrix[i,:].max() for i in range(len(classes_a_priori)) ] )
     f_measure = float(soma2 / no_objetos)
     text.append("\nF-measure(P,Q): " + str(f_measure))
 
     ###########################################################
     # Cálculo do oerc (taxa de erro de classificação global) #
-    oerc = calcula_oerc(confusion_matrix, no_clusters_completos, no_objetos)
+    oerc = indices.calcula_oerc(confusion_matrix, no_clusters_completos, no_objetos)
 
     text.append("\nOERC: " + str(oerc))
+    
+    ###########################################################
+    # C�lculo do erro topogr�fico
+    erro_topografico = indices.calcula_topographic_error(mapa)
+    text.append("\nErro Topogr�fico: %s" % erro_topografico)
 
     return text, oerc
