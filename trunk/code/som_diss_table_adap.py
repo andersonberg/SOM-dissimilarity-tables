@@ -147,8 +147,10 @@ def main():
         #menor_criterio_energia = min(criterios_energia)
         menor_criterio_energia = criterios_ordenados[it]
         menor_erro = min(oercs)
+        media_criterios = np.mean(criterios_energia)
         text.append("\n\nMelhor repetiÃ§Ã£o: " + str(criterios_energia.index(menor_criterio_energia)))
         text.append("\nMenor oerc: " + str(oercs.index(menor_erro)))
+        text.append("\nMédia dos critérios: %s" % media_criterios)
 
         resultado = open(filename_result, 'a')
         resultado.writelines(text)

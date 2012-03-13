@@ -24,14 +24,14 @@ from Variavel import *
 from Mapa import *
 import inicio
 
-def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, individuals_objects):
+def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, individuals_objects, nome_base, a):
 
     prototipos = []
     individuals = []
 
     individuals.extend(individuals_objects)
 
-    mapa = Mapa(individuals,  mapa_x, mapa_y, q)
+    mapa = Mapa(individuals,  mapa_x, mapa_y, q, nome_base, a)
 
     #valor de m
     mapa.m = 2.0
@@ -131,7 +131,7 @@ def main():
         T = t_max
         t = 0.0
         denom = 2. * pow(T,2)
-        mapa = inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, individuals_objects)
+        mapa = inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, individuals_objects, nome_base, a)
 
         while T > t_min:
         # while t < (n_iter - 1):
@@ -188,9 +188,11 @@ def main():
 #        it += 1
 
     menor_criterio_energia = criterios_ordenados[it]
+    media_criterios = np.mean(criterios_energia)
     menor_erro = min(oercs)
     text.append("\n\nMelhor repetiÃ§Ã£o: " + str(criterios_energia.index(menor_criterio_energia)))
     text.append("\nMenor oerc: " + str(oercs.index(menor_erro)))
+    text.append("\nMédia dos critérios: %s" % media_criterios)
 
     resultado = open(filename_result, 'a')
     resultado.writelines(text)

@@ -27,7 +27,7 @@ from Variavel import *
 from Mapa import *
 import inicio
 
-def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, individuals_objects, pesos):
+def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, individuals_objects, pesos, nome_base, a):
 
         prototipos = {}
 #       clusters = []
@@ -35,7 +35,7 @@ def inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, individua
 
         individuals.extend(individuals_objects)
 
-        mapa = Mapa(individuals, mapa_x, mapa_y, q)
+        mapa = Mapa(individuals, mapa_x, mapa_y, q, nome_base, a)
 
         # cria a matriz de deltas
         for cluster in mapa.mapa.flat:
@@ -116,7 +116,7 @@ def main():
 #               text.extend([ str(peso) for peso in pesos ])
 
                 denom = 2. * pow(T,2)
-                mapa = inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, individuals_objects, pesos)
+                mapa = inicializacao(c, q, mapa_x, mapa_y, t_min, t_max, denom, matrizes, individuals_objects, pesos, nome_base, a)
 
                 while T > t_min:
                 # while t < (n_iter - 1):
@@ -178,9 +178,11 @@ def main():
 
         #menor_criterio_energia = min(criterios_energia)
         menor_criterio_energia = criterios_ordenados[it]
+        media_criterios = np.mean(criterios_energia)
         menor_erro = min(oercs)
         text.append("\n\nMelhor repetiÃ§Ã£o: " + str(criterios_energia.index(menor_criterio_energia)))
         text.append("\nMenor oerc: " + str(oercs.index(menor_erro)))
+        text.append("\nMédia dos critérios: %s" % media_criterios)
 
         resultado = open(filename_result, 'a')
         resultado.writelines(text)
