@@ -68,7 +68,7 @@ def main():
         # soma_dissimilaridades = np.array(soma_dissimilaridades).reshape(len(individuals_objects), len(individuals_objects))
 
         criterios_energia = []
-        oercs = []
+        #oercs = []
 
         c = mapa_x * mapa_y
 
@@ -118,8 +118,8 @@ def main():
 
                 text.append("\n\nCrit√©rio de adequa√ß√£o (energia): " + str(energia))
 
-                texto, oerc = calcula_indices(mapa, classes_a_priori, no_clusters_completos, adap=False)
-                oercs.append(oerc)
+                texto = calcula_indices(mapa, classes_a_priori, no_clusters_completos, adap=False)
+                #oercs.append(oerc)
                 text.extend(texto)
 
                 resultado = open(filename_result, 'a')
@@ -137,13 +137,18 @@ def main():
                 file_individuos = open(filename_individuos, 'a')
                 file_individuos.writelines(list_individuos)
                 file_individuos.close()
+                
+        texto = imprime_indices_finais(criterios_energia)
+        text.extend(texto)
 
-        menor_criterio_energia = min(criterios_energia)
-        media_criterios = np.mean(criterios_energia)
-        menor_erro = min(oercs)
-        text.append("\n\nMelhor repeti√ß√£o: " + str(criterios_energia.index(menor_criterio_energia)))
-        text.append("\nMenor oerc: " + str(oercs.index(menor_erro)))
-        text.append("\nMÈdia dos critÈrios: %s" % media_criterios)
+#        menor_criterio_energia = min(criterios_energia)
+#        media_criterios = np.mean(criterios_energia)
+#        #menor_erro = min(oercs)
+#        desvio_padrao = np.std(criterios_energia)
+#        text.append("\n\nMelhor repeti√ß√£o: " + str(criterios_energia.index(menor_criterio_energia)))
+#        #text.append("\nMenor oerc: " + str(oercs.index(menor_erro)))
+#        text.append("\nMÈdia dos critÈrios: %s" % media_criterios)
+#        text.append("\nDesvio padr„o: %s" % desvio_padrao)
 
         resultado = open(filename_result, 'a')
         resultado.writelines(text)      

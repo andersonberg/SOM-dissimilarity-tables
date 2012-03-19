@@ -68,7 +68,7 @@ def main():
 #        text.append("\n*Modelo adaptativo")
 
         criterios_energia = []
-        oercs = []
+#        oercs = []
 
         c = mapa_x * mapa_y
 
@@ -116,8 +116,8 @@ def main():
 
                 text.append("\n\nCrit√©rio de adequa√ß√£o (energia): " + str(energia))
 
-                texto, oerc = calcula_indices(mapa, classes_a_priori, no_clusters_completos)
-                oercs.append(oerc)
+                texto = calcula_indices(mapa, classes_a_priori, no_clusters_completos)
+#                oercs.append(oerc)
                 text.extend(texto)
 
                 resultado = open(filename_result, 'a')
@@ -139,18 +139,20 @@ def main():
                 #mapa_graph.plot_graph(mapa)
 
 
-        criterios_ordenados = sorted(criterios_energia)
-        it = 0
-#        while(criterios_ordenados[it] < 1.0):
-#                it += 1
-
-        #menor_criterio_energia = min(criterios_energia)
-        menor_criterio_energia = criterios_ordenados[it]
-        menor_erro = min(oercs)
-        media_criterios = np.mean(criterios_energia)
-        text.append("\n\nMelhor repeti√ß√£o: " + str(criterios_energia.index(menor_criterio_energia)))
-        text.append("\nMenor oerc: " + str(oercs.index(menor_erro)))
-        text.append("\nMÈdia dos critÈrios: %s" % media_criterios)
+        texto = imprime_indices_finais(criterios_energia)
+        text.extend(texto)
+#        criterios_ordenados = sorted(criterios_energia)
+#        it = 0
+##        while(criterios_ordenados[it] < 1.0):
+##                it += 1
+#
+#        #menor_criterio_energia = min(criterios_energia)
+#        menor_criterio_energia = criterios_ordenados[it]
+#        menor_erro = min(oercs)
+#        media_criterios = np.mean(criterios_energia)
+#        text.append("\n\nMelhor repeti√ß√£o: " + str(criterios_energia.index(menor_criterio_energia)))
+#        text.append("\nMenor oerc: " + str(oercs.index(menor_erro)))
+#        text.append("\nMÈdia dos critÈrios: %s" % media_criterios)
 
         resultado = open(filename_result, 'a')
         resultado.writelines(text)

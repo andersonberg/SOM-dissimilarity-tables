@@ -198,4 +198,17 @@ def calcula_indices(mapa, classes_a_priori, no_clusters_completos, adap=True):
     erro_topografico = indices.calcula_topographic_error(mapa)
     text.append("\nErro Topográfico: %s" % erro_topografico)
 
-    return text, oerc
+    return text
+
+def imprime_indices_finais(criterios):
+    text=[]
+    menor_criterio_energia = min(criterios)
+    media_criterios = np.mean(criterios)
+    #menor_erro = min(oercs)
+    desvio_padrao = np.std(criterios)
+    text.append("\n\nMelhor repetiÃ§Ã£o: " + str(criterios.index(menor_criterio_energia)))
+    #text.append("\nMenor oerc: " + str(oercs.index(menor_erro)))
+    text.append("\nMédia dos critérios: %s" % media_criterios)
+    text.append("\nDesvio padrão: %s" % desvio_padrao)
+    
+    return text
