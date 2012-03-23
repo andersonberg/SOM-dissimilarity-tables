@@ -1,0 +1,3069 @@
+# Topology: 4x4
+# Cardinality (q): 1
+# Tmin: 0.300000011921
+# Tmax: 14.0
+# Number of iterations: 30.0
+
+#####################################
+Repetição do experimento: 0
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [class_exe39]
+Number of elements: 25
+Elements: class_exe67, class_exe83, class_exe93, class_exe121, class_exe141, class_exe170, class_exe181, class_exe25, class_exe39, class_exe48, class_exe50, class_exe165, class_exe168, class_exe20, class_exe23, class_exe61, class_exe77, class_exe109, class_exe116, class_exe124, class_exe126, class_exe149, class_exe51, class_exe60, class_exe131
+
+Cluster (0,1)
+Prototypes: [class_exe56]
+Number of elements: 8
+Elements: class_exe33, class_exe81, class_exe56, class_exe144, class_exe162, class_exe184, class_exe70, class_exe159
+
+Cluster (0,2)
+Prototypes: [class_exe172]
+Number of elements: 10
+Elements: class_exe171, class_exe172, class_exe180, class_exe183, class_exe154, class_exe160, class_exe161, class_exe164, class_exe167, class_exe166
+
+Cluster (0,3)
+Prototypes: [class_exe158]
+Number of elements: 3
+Elements: class_exe153, class_exe158, class_exe176
+
+Cluster (1,0)
+Prototypes: [class_exe114]
+Number of elements: 9
+Elements: class_exe4, class_exe21, class_exe82, class_exe88, class_exe114, class_exe115, class_exe120, class_exe140, class_exe148
+
+Cluster (1,1)
+Prototypes: [class_exe155]
+Number of elements: 2
+Elements: class_exe155, class_exe169
+
+Cluster (1,2)
+Prototypes: [class_exe174]
+Number of elements: 3
+Elements: class_exe174, class_exe173, class_exe175
+
+Cluster (1,3)
+Prototypes: [class_exe32]
+Number of elements: 5
+Elements: class_exe32, class_exe113, class_exe119, class_exe196, class_exe202
+
+Cluster (2,0)
+Prototypes: [class_exe208]
+Number of elements: 11
+Elements: class_exe185, class_exe189, class_exe191, class_exe197, class_exe200, class_exe190, class_exe199, class_exe201, class_exe203, class_exe208, class_exe211
+
+Cluster (2,1)
+Prototypes: [class_exe150]
+Number of elements: 4
+Elements: class_exe178, class_exe150, class_exe156, class_exe72
+
+Cluster (2,2)
+Prototypes: [class_exe112]
+Number of elements: 15
+Elements: class_exe3, class_exe10, class_exe16, class_exe22, class_exe41, class_exe89, class_exe92, class_exe96, class_exe97, class_exe112, class_exe130, class_exe133, class_exe138, class_exe139, class_exe187
+
+Cluster (2,3)
+Prototypes: [class_exe78]
+Number of elements: 34
+Elements: class_exe0, class_exe8, class_exe9, class_exe26, class_exe28, class_exe37, class_exe45, class_exe54, class_exe58, class_exe78, class_exe85, class_exe90, class_exe94, class_exe99, class_exe106, class_exe107, class_exe125, class_exe163, class_exe177, class_exe179, class_exe182, class_exe6, class_exe11, class_exe15, class_exe29, class_exe46, class_exe75, class_exe100, class_exe135, class_exe147, class_exe157, class_exe59, class_exe151, class_exe152
+
+Cluster (3,0)
+Prototypes: [class_exe193]
+Number of elements: 11
+Elements: class_exe194, class_exe207, class_exe206, class_exe192, class_exe193, class_exe195, class_exe198, class_exe205, class_exe186, class_exe209, class_exe204
+
+Cluster (3,1)
+Prototypes: [class_exe5]
+Number of elements: 8
+Elements: class_exe212, class_exe5, class_exe65, class_exe69, class_exe103, class_exe129, class_exe213, class_exe214
+
+Cluster (3,2)
+Prototypes: [class_exe146]
+Number of elements: 36
+Elements: class_exe84, class_exe117, class_exe118, class_exe142, class_exe1, class_exe7, class_exe13, class_exe17, class_exe19, class_exe36, class_exe49, class_exe52, class_exe68, class_exe74, class_exe79, class_exe91, class_exe95, class_exe102, class_exe104, class_exe105, class_exe132, class_exe146, class_exe210, class_exe12, class_exe55, class_exe62, class_exe63, class_exe64, class_exe108, class_exe122, class_exe123, class_exe127, class_exe136, class_exe27, class_exe31, class_exe134
+
+Cluster (3,3)
+Prototypes: [class_exe40]
+Number of elements: 31
+Elements: class_exe2, class_exe14, class_exe18, class_exe24, class_exe30, class_exe34, class_exe35, class_exe40, class_exe43, class_exe44, class_exe47, class_exe53, class_exe57, class_exe66, class_exe71, class_exe73, class_exe76, class_exe80, class_exe86, class_exe87, class_exe98, class_exe101, class_exe110, class_exe111, class_exe143, class_exe145, class_exe188, class_exe38, class_exe42, class_exe128, class_exe137
+
+
+Critério de adequação (energia): 40.4919435399
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	1,3	2,0	2,1	2,2	2,3	3,0	3,1	3,2	3,3	Total
+
+1	21	 5	 0	 0	 9	 0	 0	 3	 0	 1	 14	 27	 0	 5	 35	 30	 150
+3	0	 0	 0	 0	 0	 0	 0	 2	 11	 0	 1	 0	 11	 3	 1	 1	 30
+2	4	 3	 10	 3	 0	 2	 3	 0	 0	 3	 0	 7	 0	 0	 0	 0	 35
+Total	[25  8 10  3  9  2  3  5 11  4 15 34 11  8 36 31]
+
+Corrected Rand index: 0.266923495891
+F-measure(P,Q): 0.40978943923
+OERC: 0.106976744186
+Erro Topogr�fico: 0.241860465116
+
+#####################################
+Repetição do experimento: 1
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [class_exe180]
+Number of elements: 20
+Elements: class_exe33, class_exe81, class_exe153, class_exe154, class_exe155, class_exe158, class_exe160, class_exe161, class_exe162, class_exe164, class_exe166, class_exe167, class_exe169, class_exe171, class_exe172, class_exe174, class_exe176, class_exe180, class_exe183, class_exe184
+
+Cluster (0,1)
+Prototypes: [class_exe126]
+Number of elements: 42
+Elements: class_exe4, class_exe10, class_exe140, class_exe20, class_exe23, class_exe25, class_exe51, class_exe60, class_exe61, class_exe69, class_exe77, class_exe82, class_exe103, class_exe109, class_exe114, class_exe115, class_exe116, class_exe120, class_exe124, class_exe126, class_exe129, class_exe131, class_exe148, class_exe149, class_exe212, class_exe214, class_exe39, class_exe48, class_exe50, class_exe67, class_exe70, class_exe83, class_exe93, class_exe121, class_exe141, class_exe213, class_exe5, class_exe56, class_exe65, class_exe90, class_exe144, class_exe159
+
+Cluster (0,2)
+Prototypes: [class_exe62]
+Number of elements: 28
+Elements: class_exe12, class_exe27, class_exe31, class_exe34, class_exe35, class_exe36, class_exe52, class_exe55, class_exe62, class_exe63, class_exe64, class_exe68, class_exe74, class_exe80, class_exe95, class_exe96, class_exe101, class_exe102, class_exe104, class_exe105, class_exe108, class_exe110, class_exe122, class_exe127, class_exe136, class_exe152, class_exe92, class_exe133
+
+Cluster (0,3)
+Prototypes: [class_exe42]
+Number of elements: 12
+Elements: class_exe150, class_exe178, class_exe211, class_exe72, class_exe156, class_exe38, class_exe128, class_exe137, class_exe2, class_exe42, class_exe73, class_exe145
+
+Cluster (1,0)
+Prototypes: [class_exe99]
+Number of elements: 30
+Elements: class_exe0, class_exe9, class_exe11, class_exe22, class_exe29, class_exe41, class_exe75, class_exe78, class_exe94, class_exe99, class_exe100, class_exe112, class_exe177, class_exe26, class_exe45, class_exe54, class_exe58, class_exe85, class_exe107, class_exe151, class_exe157, class_exe163, class_exe182, class_exe8, class_exe28, class_exe37, class_exe106, class_exe125, class_exe179, class_exe6
+
+Cluster (1,1)
+Prototypes: [class_exe95]
+Number of elements: 0
+Elements
+
+Cluster (1,2)
+Prototypes: [class_exe57]
+Number of elements: 19
+Elements: class_exe18, class_exe24, class_exe30, class_exe40, class_exe43, class_exe47, class_exe53, class_exe57, class_exe71, class_exe76, class_exe86, class_exe87, class_exe98, class_exe143, class_exe188, class_exe14, class_exe44, class_exe66, class_exe111
+
+Cluster (1,3)
+Prototypes: [class_exe62]
+Number of elements: 0
+Elements
+
+Cluster (2,0)
+Prototypes: [class_exe21]
+Number of elements: 3
+Elements: class_exe21, class_exe88, class_exe175
+
+Cluster (2,1)
+Prototypes: [class_exe192]
+Number of elements: 5
+Elements: class_exe192, class_exe195, class_exe198, class_exe209, class_exe186
+
+Cluster (2,2)
+Prototypes: [class_exe208]
+Number of elements: 10
+Elements: class_exe190, class_exe201, class_exe203, class_exe208, class_exe185, class_exe191, class_exe197, class_exe200, class_exe189, class_exe199
+
+Cluster (2,3)
+Prototypes: [class_exe207]
+Number of elements: 2
+Elements: class_exe194, class_exe207
+
+Cluster (3,0)
+Prototypes: [class_exe84]
+Number of elements: 28
+Elements: class_exe32, class_exe59, class_exe113, class_exe3, class_exe84, class_exe91, class_exe117, class_exe118, class_exe119, class_exe123, class_exe142, class_exe187, class_exe1, class_exe7, class_exe13, class_exe15, class_exe17, class_exe46, class_exe132, class_exe135, class_exe146, class_exe16, class_exe89, class_exe97, class_exe130, class_exe138, class_exe139, class_exe147
+
+Cluster (3,1)
+Prototypes: [class_exe52]
+Number of elements: 4
+Elements: class_exe19, class_exe79, class_exe134, class_exe210
+
+Cluster (3,2)
+Prototypes: [class_exe109]
+Number of elements: 5
+Elements: class_exe165, class_exe168, class_exe170, class_exe173, class_exe181
+
+Cluster (3,3)
+Prototypes: [class_exe204]
+Number of elements: 7
+Elements: class_exe206, class_exe193, class_exe205, class_exe204, class_exe202, class_exe49, class_exe196
+
+
+Critério de adequação (energia): 33.8814988171
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,2	2,0	2,1	2,2	2,3	3,0	3,1	3,2	3,3	Total
+
+1	2	 38	 27	 8	 24	 18	 2	 0	 0	 0	 27	 3	 0	 1	 150
+3	0	 3	 0	 1	 0	 1	 0	 5	 10	 2	 1	 1	 0	 6	 30
+2	18	 1	 1	 3	 6	 0	 1	 0	 0	 0	 0	 0	 5	 0	 35
+Total	[20 42 28 12 30 19  3  5 10  2 28  4  5  7]
+
+Corrected Rand index: 0.287144786064
+F-measure(P,Q): 0.452484143763
+OERC: 0.102325581395
+Erro Topogr�fico: 0.590697674419
+
+#####################################
+Repetição do experimento: 2
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [class_exe109]
+Number of elements: 39
+Elements: class_exe148, class_exe21, class_exe23, class_exe51, class_exe60, class_exe82, class_exe109, class_exe116, class_exe120, class_exe124, class_exe126, class_exe131, class_exe149, class_exe212, class_exe4, class_exe20, class_exe28, class_exe39, class_exe48, class_exe50, class_exe61, class_exe69, class_exe77, class_exe88, class_exe90, class_exe103, class_exe114, class_exe115, class_exe140, class_exe83, class_exe106, class_exe121, class_exe165, class_exe168, class_exe170, class_exe173, class_exe175, class_exe181, class_exe159
+
+Cluster (0,1)
+Prototypes: [class_exe93]
+Number of elements: 8
+Elements: class_exe81, class_exe213, class_exe144, class_exe56, class_exe70, class_exe93, class_exe214, class_exe129
+
+Cluster (0,2)
+Prototypes: [class_exe42]
+Number of elements: 11
+Elements: class_exe2, class_exe38, class_exe42, class_exe72, class_exe73, class_exe128, class_exe137, class_exe145, class_exe150, class_exe156, class_exe178
+
+Cluster (0,3)
+Prototypes: [class_exe185]
+Number of elements: 10
+Elements: class_exe185, class_exe194, class_exe197, class_exe203, class_exe206, class_exe208, class_exe189, class_exe207, class_exe193, class_exe204
+
+Cluster (1,0)
+Prototypes: [class_exe119]
+Number of elements: 9
+Elements: class_exe32, class_exe202, class_exe5, class_exe119, class_exe196, class_exe1, class_exe7, class_exe49, class_exe210
+
+Cluster (1,1)
+Prototypes: [class_exe105]
+Number of elements: 19
+Elements: class_exe91, class_exe96, class_exe104, class_exe105, class_exe13, class_exe17, class_exe19, class_exe36, class_exe52, class_exe55, class_exe68, class_exe74, class_exe92, class_exe95, class_exe117, class_exe132, class_exe133, class_exe142, class_exe146
+
+Cluster (1,2)
+Prototypes: [class_exe199]
+Number of elements: 6
+Elements: class_exe191, class_exe199, class_exe200, class_exe201, class_exe211, class_exe190
+
+Cluster (1,3)
+Prototypes: [class_exe107]
+Number of elements: 6
+Elements: class_exe163, class_exe9, class_exe85, class_exe107, class_exe179, class_exe182
+
+Cluster (2,0)
+Prototypes: [class_exe180]
+Number of elements: 13
+Elements: class_exe160, class_exe162, class_exe164, class_exe174, class_exe180, class_exe154, class_exe161, class_exe167, class_exe172, class_exe184, class_exe171, class_exe166, class_exe183
+
+Cluster (2,1)
+Prototypes: [class_exe141]
+Number of elements: 4
+Elements: class_exe25, class_exe33, class_exe67, class_exe141
+
+Cluster (2,2)
+Prototypes: [class_exe152]
+Number of elements: 6
+Elements: class_exe157, class_exe110, class_exe151, class_exe152, class_exe177, class_exe80
+
+Cluster (2,3)
+Prototypes: [class_exe75]
+Number of elements: 34
+Elements: class_exe6, class_exe11, class_exe15, class_exe16, class_exe22, class_exe29, class_exe41, class_exe46, class_exe59, class_exe75, class_exe78, class_exe84, class_exe89, class_exe94, class_exe97, class_exe99, class_exe100, class_exe102, class_exe112, class_exe118, class_exe123, class_exe135, class_exe147, class_exe0, class_exe45, class_exe58, class_exe139, class_exe8, class_exe26, class_exe37, class_exe54, class_exe65, class_exe113, class_exe125
+
+Cluster (3,0)
+Prototypes: [class_exe158]
+Number of elements: 5
+Elements: class_exe153, class_exe155, class_exe158, class_exe176, class_exe169
+
+Cluster (3,1)
+Prototypes: [class_exe186]
+Number of elements: 6
+Elements: class_exe186, class_exe192, class_exe195, class_exe198, class_exe209, class_exe205
+
+Cluster (3,2)
+Prototypes: [class_exe3]
+Number of elements: 5
+Elements: class_exe187, class_exe3, class_exe10, class_exe130, class_exe138
+
+Cluster (3,3)
+Prototypes: [class_exe111]
+Number of elements: 34
+Elements: class_exe62, class_exe127, class_exe12, class_exe27, class_exe31, class_exe63, class_exe64, class_exe79, class_exe101, class_exe108, class_exe136, class_exe34, class_exe35, class_exe122, class_exe53, class_exe66, class_exe76, class_exe111, class_exe134, class_exe143, class_exe18, class_exe30, class_exe40, class_exe43, class_exe47, class_exe57, class_exe71, class_exe86, class_exe98, class_exe188, class_exe14, class_exe24, class_exe87, class_exe44
+
+
+Critério de adequação (energia): 34.4273318586
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	1,3	2,0	2,1	2,2	2,3	3,0	3,1	3,2	3,3	Total
+
+1	31	 6	 8	 0	 6	 19	 0	 3	 0	 4	 2	 34	 0	 0	 4	 33	 150
+3	1	 2	 0	 10	 3	 0	 6	 0	 0	 0	 0	 0	 0	 6	 1	 1	 30
+2	7	 0	 3	 0	 0	 0	 0	 3	 13	 0	 4	 0	 5	 0	 0	 0	 35
+Total	[39  8 11 10  9 19  6  6 13  4  6 34  5  6  5 34]
+
+Corrected Rand index: 0.274455957776
+F-measure(P,Q): 0.415781934614
+OERC: 0.106976744186
+Erro Topogr�fico: 0.655813953488
+
+#####################################
+Repetição do experimento: 3
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [class_exe193]
+Number of elements: 8
+Elements: class_exe186, class_exe192, class_exe193, class_exe195, class_exe198, class_exe205, class_exe206, class_exe209
+
+Cluster (0,1)
+Prototypes: [class_exe208]
+Number of elements: 9
+Elements: class_exe185, class_exe190, class_exe191, class_exe197, class_exe199, class_exe200, class_exe201, class_exe208, class_exe203
+
+Cluster (0,2)
+Prototypes: [class_exe111]
+Number of elements: 24
+Elements: class_exe14, class_exe18, class_exe24, class_exe30, class_exe40, class_exe43, class_exe47, class_exe53, class_exe57, class_exe66, class_exe71, class_exe76, class_exe86, class_exe87, class_exe98, class_exe111, class_exe134, class_exe143, class_exe34, class_exe35, class_exe64, class_exe122, class_exe44, class_exe108
+
+Cluster (0,3)
+Prototypes: [class_exe75]
+Number of elements: 47
+Elements: class_exe11, class_exe16, class_exe29, class_exe94, class_exe163, class_exe177, class_exe6, class_exe9, class_exe22, class_exe41, class_exe46, class_exe59, class_exe75, class_exe78, class_exe84, class_exe85, class_exe92, class_exe97, class_exe99, class_exe107, class_exe112, class_exe118, class_exe123, class_exe182, class_exe0, class_exe3, class_exe8, class_exe15, class_exe26, class_exe28, class_exe37, class_exe45, class_exe54, class_exe58, class_exe89, class_exe100, class_exe106, class_exe113, class_exe125, class_exe130, class_exe135, class_exe138, class_exe139, class_exe179, class_exe187, class_exe65, class_exe32
+
+Cluster (1,0)
+Prototypes: [class_exe42]
+Number of elements: 12
+Elements: class_exe42, class_exe156, class_exe2, class_exe38, class_exe72, class_exe128, class_exe137, class_exe150, class_exe178, class_exe73, class_exe145, class_exe211
+
+Cluster (1,1)
+Prototypes: [class_exe116]
+Number of elements: 0
+Elements
+
+Cluster (1,2)
+Prototypes: [class_exe62]
+Number of elements: 23
+Elements: class_exe55, class_exe80, class_exe96, class_exe110, class_exe27, class_exe31, class_exe62, class_exe95, class_exe101, class_exe102, class_exe104, class_exe105, class_exe152, class_exe7, class_exe36, class_exe52, class_exe68, class_exe74, class_exe127, class_exe1, class_exe12, class_exe63, class_exe133
+
+Cluster (1,3)
+Prototypes: [class_exe126]
+Number of elements: 35
+Elements: class_exe20, class_exe21, class_exe23, class_exe25, class_exe60, class_exe61, class_exe69, class_exe77, class_exe82, class_exe109, class_exe114, class_exe116, class_exe120, class_exe124, class_exe126, class_exe129, class_exe131, class_exe140, class_exe148, class_exe149, class_exe212, class_exe214, class_exe4, class_exe5, class_exe39, class_exe48, class_exe50, class_exe51, class_exe88, class_exe93, class_exe103, class_exe115, class_exe141, class_exe10, class_exe90
+
+Cluster (2,0)
+Prototypes: [class_exe196]
+Number of elements: 5
+Elements: class_exe196, class_exe202, class_exe49, class_exe210, class_exe204
+
+Cluster (2,1)
+Prototypes: [class_exe17]
+Number of elements: 12
+Elements: class_exe17, class_exe19, class_exe146, class_exe79, class_exe91, class_exe117, class_exe132, class_exe136, class_exe142, class_exe188, class_exe13, class_exe119
+
+Cluster (2,2)
+Prototypes: [class_exe6]
+Number of elements: 3
+Elements: class_exe147, class_exe151, class_exe157
+
+Cluster (2,3)
+Prototypes: [class_exe172]
+Number of elements: 11
+Elements: class_exe166, class_exe183, class_exe171, class_exe172, class_exe154, class_exe161, class_exe164, class_exe167, class_exe180, class_exe160, class_exe162
+
+Cluster (3,0)
+Prototypes: [class_exe159]
+Number of elements: 17
+Elements: class_exe67, class_exe70, class_exe83, class_exe121, class_exe165, class_exe168, class_exe175, class_exe56, class_exe144, class_exe159, class_exe170, class_exe173, class_exe181, class_exe33, class_exe81, class_exe184, class_exe174
+
+Cluster (3,1)
+Prototypes: [class_exe213]
+Number of elements: 1
+Elements: class_exe213
+
+Cluster (3,2)
+Prototypes: [class_exe189]
+Number of elements: 3
+Elements: class_exe189, class_exe194, class_exe207
+
+Cluster (3,3)
+Prototypes: [class_exe158]
+Number of elements: 5
+Elements: class_exe153, class_exe155, class_exe158, class_exe169, class_exe176
+
+
+Critério de adequação (energia): 38.101297344
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,2	1,3	2,0	2,1	2,2	2,3	3,0	3,1	3,2	3,3	Total
+
+1	0	 0	 24	 42	 8	 22	 33	 1	 11	 1	 0	 8	 0	 0	 0	 150
+3	8	 9	 0	 1	 1	 0	 2	 4	 1	 0	 0	 0	 1	 3	 0	 30
+2	0	 0	 0	 4	 3	 1	 0	 0	 0	 2	 11	 9	 0	 0	 5	 35
+Total	[ 8  9 24 47 12 23 35  5 12  3 11 17  1  3  5]
+
+Corrected Rand index: 0.295756590351
+F-measure(P,Q): 0.439742675088
+OERC: 0.106976744186
+Erro Topogr�fico: 0.641860465116
+
+#####################################
+Repetição do experimento: 4
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [class_exe193]
+Number of elements: 12
+Elements: class_exe185, class_exe186, class_exe189, class_exe192, class_exe193, class_exe195, class_exe198, class_exe204, class_exe205, class_exe206, class_exe207, class_exe209
+
+Cluster (0,1)
+Prototypes: [class_exe116]
+Number of elements: 0
+Elements
+
+Cluster (0,2)
+Prototypes: [class_exe70]
+Number of elements: 13
+Elements: class_exe33, class_exe56, class_exe81, class_exe144, class_exe184, class_exe213, class_exe67, class_exe70, class_exe93, class_exe141, class_exe159, class_exe83, class_exe121
+
+Cluster (0,3)
+Prototypes: [class_exe145]
+Number of elements: 34
+Elements: class_exe18, class_exe66, class_exe71, class_exe76, class_exe86, class_exe111, class_exe43, class_exe53, class_exe57, class_exe2, class_exe14, class_exe24, class_exe30, class_exe40, class_exe44, class_exe47, class_exe87, class_exe98, class_exe145, class_exe38, class_exe42, class_exe73, class_exe128, class_exe137, class_exe156, class_exe72, class_exe150, class_exe178, class_exe191, class_exe199, class_exe200, class_exe201, class_exe211, class_exe190
+
+Cluster (1,0)
+Prototypes: [class_exe126]
+Number of elements: 2
+Elements: class_exe129, class_exe214
+
+Cluster (1,1)
+Prototypes: [class_exe203]
+Number of elements: 3
+Elements: class_exe203, class_exe194, class_exe208
+
+Cluster (1,2)
+Prototypes: [class_exe167]
+Number of elements: 4
+Elements: class_exe154, class_exe161, class_exe164, class_exe167
+
+Cluster (1,3)
+Prototypes: [class_exe210]
+Number of elements: 8
+Elements: class_exe196, class_exe49, class_exe210, class_exe64, class_exe79, class_exe197, class_exe202, class_exe188
+
+Cluster (2,0)
+Prototypes: [class_exe29]
+Number of elements: 75
+Elements: class_exe55, class_exe68, class_exe80, class_exe96, class_exe102, class_exe151, class_exe152, class_exe1, class_exe6, class_exe11, class_exe29, class_exe36, class_exe74, class_exe85, class_exe92, class_exe94, class_exe95, class_exe104, class_exe105, class_exe107, class_exe133, class_exe147, class_exe177, class_exe7, class_exe9, class_exe13, class_exe15, class_exe16, class_exe17, class_exe19, class_exe22, class_exe32, class_exe41, class_exe46, class_exe52, class_exe59, class_exe62, class_exe75, class_exe78, class_exe84, class_exe89, class_exe91, class_exe97, class_exe99, class_exe112, class_exe113, class_exe117, class_exe118, class_exe119, class_exe123, class_exe127, class_exe130, class_exe132, class_exe135, class_exe142, class_exe146, class_exe0, class_exe3, class_exe31, class_exe45, class_exe100, class_exe101, class_exe108, class_exe110, class_exe138, class_exe139, class_exe12, class_exe27, class_exe34, class_exe35, class_exe63, class_exe122, class_exe134, class_exe136, class_exe143
+
+Cluster (2,1)
+Prototypes: [class_exe163]
+Number of elements: 0
+Elements
+
+Cluster (2,2)
+Prototypes: [class_exe22]
+Number of elements: 0
+Elements
+
+Cluster (2,3)
+Prototypes: [class_exe163]
+Number of elements: 3
+Elements: class_exe163, class_exe157, class_exe182
+
+Cluster (3,0)
+Prototypes: [class_exe82]
+Number of elements: 42
+Elements: class_exe21, class_exe28, class_exe39, class_exe48, class_exe50, class_exe51, class_exe179, class_exe4, class_exe8, class_exe20, class_exe23, class_exe25, class_exe26, class_exe37, class_exe54, class_exe58, class_exe60, class_exe61, class_exe77, class_exe82, class_exe88, class_exe90, class_exe106, class_exe109, class_exe114, class_exe115, class_exe116, class_exe120, class_exe124, class_exe125, class_exe126, class_exe131, class_exe140, class_exe148, class_exe149, class_exe5, class_exe10, class_exe65, class_exe69, class_exe103, class_exe187, class_exe212
+
+Cluster (3,1)
+Prototypes: [class_exe181]
+Number of elements: 7
+Elements: class_exe174, class_exe170, class_exe173, class_exe175, class_exe181, class_exe165, class_exe168
+
+Cluster (3,2)
+Prototypes: [class_exe158]
+Number of elements: 5
+Elements: class_exe153, class_exe155, class_exe158, class_exe169, class_exe176
+
+Cluster (3,3)
+Prototypes: [class_exe172]
+Number of elements: 7
+Elements: class_exe160, class_exe162, class_exe166, class_exe171, class_exe172, class_exe180, class_exe183
+
+
+Critério de adequação (energia): 47.2392887696
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	0,3	1,0	1,1	1,2	1,3	2,0	2,3	3,0	3,1	3,2	3,3	Total
+
+1	0	 10	 25	 1	 0	 0	 3	 72	 0	 39	 0	 0	 0	 150
+3	12	 1	 6	 1	 3	 0	 5	 0	 0	 2	 0	 0	 0	 30
+2	0	 2	 3	 0	 0	 4	 0	 3	 3	 1	 7	 5	 7	 35
+Total	[12 13 34  2  3  4  8 75  3 42  7  5  7]
+
+Corrected Rand index: 0.457719812059
+F-measure(P,Q): 0.580509413068
+OERC: 0.102325581395
+Erro Topogr�fico: 0.781395348837
+
+#####################################
+Repetição do experimento: 5
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [class_exe206]
+Number of elements: 10
+Elements: class_exe193, class_exe194, class_exe206, class_exe207, class_exe205, class_exe204, class_exe203, class_exe208, class_exe185, class_exe189
+
+Cluster (0,1)
+Prototypes: [class_exe213]
+Number of elements: 1
+Elements: class_exe213
+
+Cluster (0,2)
+Prototypes: [class_exe192]
+Number of elements: 5
+Elements: class_exe195, class_exe198, class_exe192, class_exe209, class_exe186
+
+Cluster (0,3)
+Prototypes: [class_exe0]
+Number of elements: 0
+Elements
+
+Cluster (1,0)
+Prototypes: [class_exe45]
+Number of elements: 7
+Elements: class_exe3, class_exe45, class_exe89, class_exe100, class_exe138, class_exe139, class_exe187
+
+Cluster (1,1)
+Prototypes: [class_exe29]
+Number of elements: 28
+Elements: class_exe6, class_exe11, class_exe16, class_exe22, class_exe29, class_exe41, class_exe74, class_exe92, class_exe94, class_exe97, class_exe133, class_exe147, class_exe177, class_exe9, class_exe46, class_exe75, class_exe78, class_exe85, class_exe99, class_exe107, class_exe112, class_exe135, class_exe151, class_exe55, class_exe68, class_exe96, class_exe102, class_exe152
+
+Cluster (1,2)
+Prototypes: [class_exe142]
+Number of elements: 5
+Elements: class_exe19, class_exe91, class_exe104, class_exe105, class_exe130
+
+Cluster (1,3)
+Prototypes: [class_exe159]
+Number of elements: 20
+Elements: class_exe50, class_exe67, class_exe70, class_exe83, class_exe121, class_exe144, class_exe165, class_exe168, class_exe170, class_exe181, class_exe48, class_exe56, class_exe81, class_exe93, class_exe159, class_exe173, class_exe184, class_exe33, class_exe141, class_exe174
+
+Cluster (2,0)
+Prototypes: [class_exe115]
+Number of elements: 42
+Elements: class_exe25, class_exe61, class_exe77, class_exe124, class_exe0, class_exe5, class_exe20, class_exe21, class_exe23, class_exe26, class_exe28, class_exe51, class_exe54, class_exe60, class_exe65, class_exe69, class_exe82, class_exe90, class_exe103, class_exe109, class_exe114, class_exe115, class_exe116, class_exe120, class_exe125, class_exe126, class_exe129, class_exe131, class_exe148, class_exe149, class_exe212, class_exe214, class_exe4, class_exe8, class_exe10, class_exe37, class_exe58, class_exe88, class_exe106, class_exe140, class_exe179, class_exe39
+
+Cluster (2,1)
+Prototypes: [class_exe84]
+Number of elements: 20
+Elements: class_exe17, class_exe13, class_exe32, class_exe84, class_exe113, class_exe117, class_exe132, class_exe142, class_exe146, class_exe59, class_exe118, class_exe119, class_exe123, class_exe196, class_exe202, class_exe1, class_exe36, class_exe7, class_exe15, class_exe95
+
+Cluster (2,2)
+Prototypes: [class_exe163]
+Number of elements: 4
+Elements: class_exe157, class_exe163, class_exe175, class_exe182
+
+Cluster (2,3)
+Prototypes: [class_exe172]
+Number of elements: 11
+Elements: class_exe180, class_exe154, class_exe160, class_exe161, class_exe162, class_exe164, class_exe167, class_exe171, class_exe172, class_exe183, class_exe166
+
+Cluster (3,0)
+Prototypes: [class_exe111]
+Number of elements: 39
+Elements: class_exe12, class_exe27, class_exe31, class_exe52, class_exe62, class_exe63, class_exe80, class_exe101, class_exe108, class_exe110, class_exe127, class_exe18, class_exe34, class_exe35, class_exe64, class_exe66, class_exe76, class_exe86, class_exe111, class_exe122, class_exe134, class_exe136, class_exe143, class_exe30, class_exe43, class_exe47, class_exe49, class_exe53, class_exe57, class_exe71, class_exe79, class_exe210, class_exe14, class_exe24, class_exe40, class_exe87, class_exe98, class_exe188, class_exe44
+
+Cluster (3,1)
+Prototypes: [class_exe128]
+Number of elements: 16
+Elements: class_exe38, class_exe42, class_exe72, class_exe73, class_exe128, class_exe145, class_exe137, class_exe150, class_exe191, class_exe199, class_exe200, class_exe201, class_exe211, class_exe190, class_exe197, class_exe178
+
+Cluster (3,2)
+Prototypes: [class_exe2]
+Number of elements: 2
+Elements: class_exe2, class_exe156
+
+Cluster (3,3)
+Prototypes: [class_exe158]
+Number of elements: 5
+Elements: class_exe153, class_exe155, class_exe158, class_exe169, class_exe176
+
+
+Critério de adequação (energia): 34.519950151
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	1,0	1,1	1,2	1,3	2,0	2,1	2,2	2,3	3,0	3,1	3,2	3,3	Total
+
+1	0	 0	 0	 6	 25	 5	 12	 39	 18	 0	 0	 37	 7	 1	 0	 150
+3	10	 1	 5	 1	 0	 0	 0	 2	 2	 0	 0	 2	 7	 0	 0	 30
+2	0	 0	 0	 0	 3	 0	 8	 1	 0	 4	 11	 0	 2	 1	 5	 35
+Total	[10  1  5  7 28  5 20 42 20  4 11 39 16  2  5]
+
+Corrected Rand index: 0.290237818385
+F-measure(P,Q): 0.431054095046
+OERC: 0.13488372093
+Erro Topogr�fico: 0.348837209302
+
+#####################################
+Repetição do experimento: 6
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [class_exe157]
+Number of elements: 5
+Elements: class_exe157, class_exe152, class_exe163, class_exe151, class_exe177
+
+Cluster (0,1)
+Prototypes: [class_exe56]
+Number of elements: 9
+Elements: class_exe33, class_exe56, class_exe81, class_exe144, class_exe184, class_exe70, class_exe159, class_exe67, class_exe162
+
+Cluster (0,2)
+Prototypes: [class_exe97]
+Number of elements: 0
+Elements
+
+Cluster (0,3)
+Prototypes: [class_exe172]
+Number of elements: 11
+Elements: class_exe154, class_exe160, class_exe161, class_exe164, class_exe166, class_exe167, class_exe171, class_exe172, class_exe174, class_exe180, class_exe183
+
+Cluster (1,0)
+Prototypes: [class_exe150]
+Number of elements: 5
+Elements: class_exe178, class_exe150, class_exe156, class_exe72, class_exe211
+
+Cluster (1,1)
+Prototypes: [class_exe158]
+Number of elements: 5
+Elements: class_exe153, class_exe155, class_exe158, class_exe169, class_exe176
+
+Cluster (1,2)
+Prototypes: [class_exe214]
+Number of elements: 7
+Elements: class_exe213, class_exe5, class_exe129, class_exe214, class_exe25, class_exe93, class_exe212
+
+Cluster (1,3)
+Prototypes: [class_exe196]
+Number of elements: 5
+Elements: class_exe196, class_exe202, class_exe49, class_exe204, class_exe210
+
+Cluster (2,0)
+Prototypes: [class_exe208]
+Number of elements: 10
+Elements: class_exe190, class_exe191, class_exe197, class_exe199, class_exe200, class_exe201, class_exe208, class_exe185, class_exe189, class_exe203
+
+Cluster (2,1)
+Prototypes: [class_exe110]
+Number of elements: 2
+Elements: class_exe80, class_exe110
+
+Cluster (2,2)
+Prototypes: [class_exe111]
+Number of elements: 28
+Elements: class_exe18, class_exe24, class_exe27, class_exe34, class_exe35, class_exe43, class_exe57, class_exe66, class_exe71, class_exe76, class_exe86, class_exe101, class_exe111, class_exe143, class_exe12, class_exe31, class_exe63, class_exe87, class_exe108, class_exe122, class_exe136, class_exe30, class_exe40, class_exe47, class_exe53, class_exe64, class_exe79, class_exe134
+
+Cluster (2,3)
+Prototypes: [class_exe68]
+Number of elements: 20
+Elements: class_exe1, class_exe7, class_exe11, class_exe55, class_exe62, class_exe68, class_exe96, class_exe102, class_exe127, class_exe147, class_exe19, class_exe36, class_exe52, class_exe74, class_exe92, class_exe95, class_exe104, class_exe105, class_exe133, class_exe146
+
+Cluster (3,0)
+Prototypes: [class_exe193]
+Number of elements: 10
+Elements: class_exe195, class_exe198, class_exe205, class_exe206, class_exe186, class_exe192, class_exe193, class_exe194, class_exe209, class_exe207
+
+Cluster (3,1)
+Prototypes: [class_exe44]
+Number of elements: 11
+Elements: class_exe98, class_exe14, class_exe44, class_exe188, class_exe2, class_exe38, class_exe42, class_exe73, class_exe128, class_exe137, class_exe145
+
+Cluster (3,2)
+Prototypes: [class_exe97]
+Number of elements: 41
+Elements: class_exe3, class_exe91, class_exe130, class_exe187, class_exe13, class_exe15, class_exe41, class_exe46, class_exe59, class_exe75, class_exe84, class_exe89, class_exe97, class_exe112, class_exe113, class_exe117, class_exe135, class_exe142, class_exe0, class_exe6, class_exe9, class_exe16, class_exe17, class_exe22, class_exe29, class_exe45, class_exe78, class_exe85, class_exe94, class_exe99, class_exe100, class_exe107, class_exe118, class_exe123, class_exe132, class_exe138, class_exe139, class_exe10, class_exe32, class_exe65, class_exe119
+
+Cluster (3,3)
+Prototypes: [class_exe109]
+Number of elements: 46
+Elements: class_exe4, class_exe8, class_exe20, class_exe21, class_exe23, class_exe26, class_exe28, class_exe37, class_exe51, class_exe54, class_exe58, class_exe60, class_exe61, class_exe69, class_exe77, class_exe82, class_exe88, class_exe90, class_exe103, class_exe106, class_exe109, class_exe114, class_exe115, class_exe116, class_exe120, class_exe124, class_exe125, class_exe126, class_exe131, class_exe140, class_exe148, class_exe149, class_exe179, class_exe182, class_exe39, class_exe48, class_exe50, class_exe141, class_exe83, class_exe168, class_exe121, class_exe165, class_exe175, class_exe173, class_exe170, class_exe181
+
+
+Critério de adequação (energia): 38.9338518058
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,3	1,0	1,1	1,2	1,3	2,0	2,1	2,2	2,3	3,0	3,1	3,2	3,3	Total
+
+1	0	 6	 0	 1	 0	 4	 1	 0	 2	 28	 20	 0	 10	 40	 38	 150
+3	0	 0	 0	 1	 0	 3	 4	 10	 0	 0	 0	 10	 1	 1	 0	 30
+2	5	 3	 11	 3	 5	 0	 0	 0	 0	 0	 0	 0	 0	 0	 8	 35
+Total	[ 5  9 11  5  5  7  5 10  2 28 20 10 11 41 46]
+
+Corrected Rand index: 0.311670905813
+F-measure(P,Q): 0.439843514259
+OERC: 0.0883720930233
+Erro Topogr�fico: 0.562790697674
+
+#####################################
+Repetição do experimento: 7
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [class_exe111]
+Number of elements: 34
+Elements: class_exe12, class_exe14, class_exe18, class_exe24, class_exe27, class_exe30, class_exe31, class_exe34, class_exe35, class_exe40, class_exe43, class_exe44, class_exe47, class_exe53, class_exe57, class_exe62, class_exe63, class_exe64, class_exe66, class_exe71, class_exe76, class_exe79, class_exe86, class_exe87, class_exe98, class_exe101, class_exe108, class_exe111, class_exe122, class_exe127, class_exe134, class_exe136, class_exe143, class_exe188
+
+Cluster (0,1)
+Prototypes: [class_exe139]
+Number of elements: 13
+Elements: class_exe3, class_exe10, class_exe65, class_exe138, class_exe139, class_exe187, class_exe15, class_exe32, class_exe89, class_exe100, class_exe113, class_exe130, class_exe5
+
+Cluster (0,2)
+Prototypes: [class_exe196]
+Number of elements: 7
+Elements: class_exe196, class_exe49, class_exe185, class_exe189, class_exe197, class_exe202, class_exe210
+
+Cluster (0,3)
+Prototypes: [class_exe205]
+Number of elements: 9
+Elements: class_exe206, class_exe193, class_exe198, class_exe205, class_exe186, class_exe192, class_exe209, class_exe204, class_exe195
+
+Cluster (1,0)
+Prototypes: [class_exe29]
+Number of elements: 26
+Elements: class_exe6, class_exe11, class_exe29, class_exe46, class_exe59, class_exe75, class_exe78, class_exe97, class_exe99, class_exe112, class_exe118, class_exe123, class_exe135, class_exe9, class_exe16, class_exe22, class_exe41, class_exe85, class_exe92, class_exe94, class_exe107, class_exe133, class_exe147, class_exe68, class_exe102, class_exe55
+
+Cluster (1,1)
+Prototypes: [class_exe151]
+Number of elements: 7
+Elements: class_exe157, class_exe151, class_exe152, class_exe163, class_exe177, class_exe80, class_exe110
+
+Cluster (1,2)
+Prototypes: [class_exe72]
+Number of elements: 17
+Elements: class_exe150, class_exe156, class_exe178, class_exe72, class_exe200, class_exe201, class_exe211, class_exe2, class_exe38, class_exe42, class_exe73, class_exe128, class_exe137, class_exe190, class_exe191, class_exe199, class_exe208
+
+Cluster (1,3)
+Prototypes: [class_exe57]
+Number of elements: 1
+Elements: class_exe145
+
+Cluster (2,0)
+Prototypes: [class_exe132]
+Number of elements: 18
+Elements: class_exe17, class_exe19, class_exe117, class_exe132, class_exe146, class_exe1, class_exe7, class_exe13, class_exe36, class_exe52, class_exe74, class_exe84, class_exe91, class_exe95, class_exe104, class_exe105, class_exe119, class_exe142
+
+Cluster (2,1)
+Prototypes: [class_exe115]
+Number of elements: 39
+Elements: class_exe0, class_exe8, class_exe26, class_exe28, class_exe37, class_exe54, class_exe58, class_exe60, class_exe69, class_exe88, class_exe90, class_exe103, class_exe106, class_exe115, class_exe125, class_exe179, class_exe182, class_exe212, class_exe214, class_exe4, class_exe21, class_exe23, class_exe45, class_exe82, class_exe114, class_exe116, class_exe120, class_exe126, class_exe131, class_exe140, class_exe148, class_exe149, class_exe20, class_exe51, class_exe61, class_exe77, class_exe109, class_exe124, class_exe129
+
+Cluster (2,2)
+Prototypes: [class_exe92]
+Number of elements: 1
+Elements: class_exe96
+
+Cluster (2,3)
+Prototypes: [class_exe194]
+Number of elements: 1
+Elements: class_exe194
+
+Cluster (3,0)
+Prototypes: [class_exe183]
+Number of elements: 14
+Elements: class_exe153, class_exe155, class_exe158, class_exe166, class_exe169, class_exe171, class_exe172, class_exe176, class_exe183, class_exe180, class_exe154, class_exe164, class_exe167, class_exe161
+
+Cluster (3,1)
+Prototypes: [class_exe70]
+Number of elements: 26
+Elements: class_exe25, class_exe39, class_exe48, class_exe50, class_exe93, class_exe141, class_exe213, class_exe67, class_exe70, class_exe83, class_exe121, class_exe144, class_exe165, class_exe168, class_exe175, class_exe56, class_exe159, class_exe170, class_exe173, class_exe181, class_exe33, class_exe81, class_exe184, class_exe160, class_exe162, class_exe174
+
+Cluster (3,2)
+Prototypes: [class_exe125]
+Number of elements: 0
+Elements
+
+Cluster (3,3)
+Prototypes: [class_exe207]
+Number of elements: 2
+Elements: class_exe207, class_exe203
+
+
+Critério de adequação (energia): 40.0936303356
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	1,3	2,0	2,1	2,2	2,3	3,0	3,1	3,3	Total
+
+1	33	 12	 1	 0	 26	 2	 7	 1	 18	 35	 1	 0	 0	 14	 0	 150
+3	1	 1	 6	 9	 0	 0	 7	 0	 0	 2	 0	 1	 0	 1	 2	 30
+2	0	 0	 0	 0	 0	 5	 3	 0	 0	 2	 0	 0	 14	 11	 0	 35
+Total	[34 13  7  9 26  7 17  1 18 39  1  1 14 26  2]
+
+Corrected Rand index: 0.274125489104
+F-measure(P,Q): 0.415821904194
+OERC: 0.144186046512
+Erro Topogr�fico: 0.302325581395
+
+#####################################
+Repetição do experimento: 8
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [class_exe93]
+Number of elements: 12
+Elements: class_exe81, class_exe144, class_exe213, class_exe93, class_exe129, class_exe214, class_exe33, class_exe56, class_exe141, class_exe212, class_exe25, class_exe70
+
+Cluster (0,1)
+Prototypes: [class_exe143]
+Number of elements: 1
+Elements: class_exe110
+
+Cluster (0,2)
+Prototypes: [class_exe151]
+Number of elements: 6
+Elements: class_exe157, class_exe163, class_exe151, class_exe152, class_exe80, class_exe177
+
+Cluster (0,3)
+Prototypes: [class_exe206]
+Number of elements: 6
+Elements: class_exe193, class_exe194, class_exe204, class_exe205, class_exe206, class_exe207
+
+Cluster (1,0)
+Prototypes: [class_exe199]
+Number of elements: 6
+Elements: class_exe200, class_exe201, class_exe211, class_exe190, class_exe191, class_exe199
+
+Cluster (1,1)
+Prototypes: [class_exe192]
+Number of elements: 5
+Elements: class_exe192, class_exe195, class_exe198, class_exe209, class_exe186
+
+Cluster (1,2)
+Prototypes: [class_exe11]
+Number of elements: 0
+Elements
+
+Cluster (1,3)
+Prototypes: [class_exe185]
+Number of elements: 5
+Elements: class_exe189, class_exe203, class_exe185, class_exe197, class_exe208
+
+Cluster (2,0)
+Prototypes: [class_exe96]
+Number of elements: 10
+Elements: class_exe55, class_exe96, class_exe36, class_exe68, class_exe74, class_exe95, class_exe102, class_exe104, class_exe105, class_exe133
+
+Cluster (2,1)
+Prototypes: [class_exe17]
+Number of elements: 10
+Elements: class_exe17, class_exe19, class_exe52, class_exe79, class_exe91, class_exe117, class_exe132, class_exe142, class_exe146, class_exe188
+
+Cluster (2,2)
+Prototypes: [class_exe39]
+Number of elements: 33
+Elements: class_exe39, class_exe48, class_exe50, class_exe67, class_exe83, class_exe121, class_exe159, class_exe165, class_exe168, class_exe170, class_exe173, class_exe174, class_exe175, class_exe181, class_exe184, class_exe20, class_exe23, class_exe61, class_exe77, class_exe109, class_exe116, class_exe124, class_exe126, class_exe131, class_exe149, class_exe21, class_exe51, class_exe60, class_exe82, class_exe114, class_exe120, class_exe69, class_exe148
+
+Cluster (2,3)
+Prototypes: [class_exe119]
+Number of elements: 9
+Elements: class_exe196, class_exe1, class_exe5, class_exe7, class_exe32, class_exe49, class_exe119, class_exe202, class_exe210
+
+Cluster (3,0)
+Prototypes: [class_exe183]
+Number of elements: 16
+Elements: class_exe153, class_exe155, class_exe158, class_exe169, class_exe166, class_exe176, class_exe183, class_exe154, class_exe161, class_exe164, class_exe167, class_exe171, class_exe172, class_exe180, class_exe162, class_exe160
+
+Cluster (3,1)
+Prototypes: [class_exe42]
+Number of elements: 11
+Elements: class_exe150, class_exe178, class_exe2, class_exe38, class_exe42, class_exe72, class_exe73, class_exe128, class_exe137, class_exe145, class_exe156
+
+Cluster (3,2)
+Prototypes: [class_exe111]
+Number of elements: 32
+Elements: class_exe14, class_exe18, class_exe24, class_exe27, class_exe30, class_exe34, class_exe35, class_exe40, class_exe43, class_exe44, class_exe47, class_exe53, class_exe57, class_exe66, class_exe71, class_exe76, class_exe86, class_exe87, class_exe98, class_exe101, class_exe111, class_exe134, class_exe143, class_exe12, class_exe31, class_exe62, class_exe63, class_exe64, class_exe108, class_exe122, class_exe127, class_exe136
+
+Cluster (3,3)
+Prototypes: [class_exe75]
+Number of elements: 53
+Elements: class_exe107, class_exe179, class_exe182, class_exe4, class_exe8, class_exe9, class_exe11, class_exe22, class_exe26, class_exe28, class_exe29, class_exe37, class_exe41, class_exe45, class_exe58, class_exe78, class_exe85, class_exe88, class_exe92, class_exe94, class_exe99, class_exe106, class_exe112, class_exe115, class_exe0, class_exe3, class_exe6, class_exe10, class_exe13, class_exe15, class_exe16, class_exe46, class_exe54, class_exe59, class_exe65, class_exe75, class_exe89, class_exe90, class_exe97, class_exe100, class_exe118, class_exe123, class_exe125, class_exe130, class_exe135, class_exe138, class_exe139, class_exe140, class_exe147, class_exe187, class_exe84, class_exe103, class_exe113
+
+
+Critério de adequação (energia): 33.891787571
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,3	2,0	2,1	2,2	2,3	3,0	3,1	3,2	3,3	Total
+
+1	9	 1	 1	 0	 0	 0	 0	 10	 9	 24	 6	 0	 8	 32	 50	 150
+3	3	 0	 0	 6	 6	 5	 5	 0	 1	 0	 3	 0	 0	 0	 1	 30
+2	0	 0	 5	 0	 0	 0	 0	 0	 0	 9	 0	 16	 3	 0	 2	 35
+Total	[12  1  6  6  6  5  5 10 10 33  9 16 11 32 53]
+
+Corrected Rand index: 0.316909365025
+F-measure(P,Q): 0.49233679037
+OERC: 0.106976744186
+Erro Topogr�fico: 0.716279069767
+
+#####################################
+Repetição do experimento: 9
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [class_exe78]
+Number of elements: 34
+Elements: class_exe0, class_exe6, class_exe8, class_exe9, class_exe11, class_exe22, class_exe26, class_exe28, class_exe29, class_exe37, class_exe41, class_exe46, class_exe54, class_exe58, class_exe59, class_exe75, class_exe78, class_exe85, class_exe90, class_exe94, class_exe99, class_exe106, class_exe107, class_exe112, class_exe115, class_exe125, class_exe135, class_exe147, class_exe151, class_exe163, class_exe177, class_exe179, class_exe182, class_exe157
+
+Cluster (0,1)
+Prototypes: [class_exe20]
+Number of elements: 33
+Elements: class_exe93, class_exe141, class_exe20, class_exe25, class_exe39, class_exe61, class_exe67, class_exe77, class_exe83, class_exe121, class_exe124, class_exe129, class_exe214, class_exe23, class_exe48, class_exe50, class_exe60, class_exe109, class_exe116, class_exe120, class_exe126, class_exe149, class_exe165, class_exe168, class_exe212, class_exe21, class_exe51, class_exe69, class_exe70, class_exe82, class_exe114, class_exe131, class_exe148
+
+Cluster (0,2)
+Prototypes: [class_exe184]
+Number of elements: 14
+Elements: class_exe56, class_exe81, class_exe144, class_exe33, class_exe159, class_exe184, class_exe160, class_exe162, class_exe170, class_exe174, class_exe181, class_exe173, class_exe175, class_exe180
+
+Cluster (0,3)
+Prototypes: [class_exe183]
+Number of elements: 13
+Elements: class_exe169, class_exe155, class_exe153, class_exe158, class_exe166, class_exe172, class_exe176, class_exe183, class_exe154, class_exe161, class_exe164, class_exe167, class_exe171
+
+Cluster (1,0)
+Prototypes: [class_exe139]
+Number of elements: 18
+Elements: class_exe3, class_exe10, class_exe140, class_exe187, class_exe4, class_exe5, class_exe65, class_exe88, class_exe89, class_exe97, class_exe103, class_exe113, class_exe130, class_exe138, class_exe139, class_exe15, class_exe45, class_exe100
+
+Cluster (1,1)
+Prototypes: [class_exe196]
+Number of elements: 5
+Elements: class_exe196, class_exe49, class_exe202, class_exe210, class_exe204
+
+Cluster (1,2)
+Prototypes: [class_exe117]
+Number of elements: 7
+Elements: class_exe17, class_exe32, class_exe84, class_exe117, class_exe118, class_exe119, class_exe146
+
+Cluster (1,3)
+Prototypes: [class_exe213]
+Number of elements: 1
+Elements: class_exe213
+
+Cluster (2,0)
+Prototypes: [class_exe111]
+Number of elements: 0
+Elements
+
+Cluster (2,1)
+Prototypes: [class_exe72]
+Number of elements: 12
+Elements: class_exe72, class_exe150, class_exe178, class_exe38, class_exe42, class_exe128, class_exe156, class_exe2, class_exe137, class_exe73, class_exe145, class_exe211
+
+Cluster (2,2)
+Prototypes: [class_exe208]
+Number of elements: 10
+Elements: class_exe190, class_exe200, class_exe201, class_exe191, class_exe208, class_exe197, class_exe199, class_exe185, class_exe189, class_exe203
+
+Cluster (2,3)
+Prototypes: [class_exe142]
+Number of elements: 2
+Elements: class_exe91, class_exe142
+
+Cluster (3,0)
+Prototypes: [class_exe111]
+Number of elements: 35
+Elements: class_exe12, class_exe14, class_exe18, class_exe24, class_exe27, class_exe30, class_exe31, class_exe34, class_exe35, class_exe40, class_exe43, class_exe44, class_exe47, class_exe53, class_exe57, class_exe63, class_exe64, class_exe66, class_exe71, class_exe76, class_exe79, class_exe80, class_exe86, class_exe87, class_exe98, class_exe101, class_exe108, class_exe110, class_exe111, class_exe122, class_exe127, class_exe134, class_exe136, class_exe143, class_exe188
+
+Cluster (3,1)
+Prototypes: [class_exe36]
+Number of elements: 21
+Elements: class_exe13, class_exe36, class_exe74, class_exe92, class_exe96, class_exe104, class_exe105, class_exe133, class_exe16, class_exe19, class_exe52, class_exe55, class_exe68, class_exe95, class_exe102, class_exe132, class_exe152, class_exe1, class_exe7, class_exe62, class_exe123
+
+Cluster (3,2)
+Prototypes: [class_exe100]
+Number of elements: 0
+Elements
+
+Cluster (3,3)
+Prototypes: [class_exe193]
+Number of elements: 10
+Elements: class_exe186, class_exe192, class_exe193, class_exe194, class_exe195, class_exe198, class_exe205, class_exe206, class_exe209, class_exe207
+
+
+Critério de adequação (energia): 41.1618540412
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	1,3	2,1	2,2	2,3	3,0	3,1	3,3	Total
+
+1	28	 29	 4	 0	 17	 1	 7	 0	 8	 0	 2	 34	 20	 0	 150
+3	0	 2	 0	 0	 1	 4	 0	 1	 1	 10	 0	 1	 0	 10	 30
+2	6	 2	 10	 13	 0	 0	 0	 0	 3	 0	 0	 0	 1	 0	 35
+Total	[34 33 14 13 18  5  7  1 12 10  2 35 21 10]
+
+Corrected Rand index: 0.269149150281
+F-measure(P,Q): 0.414388225435
+OERC: 0.102325581395
+Erro Topogr�fico: 0.297674418605
+
+#####################################
+Repetição do experimento: 10
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [class_exe39]
+Number of elements: 29
+Elements: class_exe159, class_exe67, class_exe70, class_exe170, class_exe173, class_exe175, class_exe181, class_exe39, class_exe48, class_exe50, class_exe83, class_exe93, class_exe121, class_exe141, class_exe165, class_exe168, class_exe20, class_exe21, class_exe23, class_exe51, class_exe61, class_exe77, class_exe109, class_exe116, class_exe126, class_exe131, class_exe163, class_exe82, class_exe114
+
+Cluster (0,1)
+Prototypes: [class_exe75]
+Number of elements: 57
+Elements: class_exe3, class_exe22, class_exe75, class_exe89, class_exe94, class_exe112, class_exe177, class_exe0, class_exe6, class_exe8, class_exe9, class_exe11, class_exe15, class_exe16, class_exe26, class_exe29, class_exe32, class_exe37, class_exe41, class_exe45, class_exe46, class_exe54, class_exe58, class_exe59, class_exe78, class_exe84, class_exe85, class_exe97, class_exe99, class_exe100, class_exe107, class_exe113, class_exe118, class_exe119, class_exe123, class_exe125, class_exe130, class_exe135, class_exe138, class_exe139, class_exe147, class_exe151, class_exe157, class_exe182, class_exe13, class_exe88, class_exe91, class_exe92, class_exe106, class_exe115, class_exe117, class_exe133, class_exe142, class_exe28, class_exe74, class_exe152, class_exe179
+
+Cluster (0,2)
+Prototypes: [class_exe63]
+Number of elements: 51
+Elements: class_exe1, class_exe17, class_exe27, class_exe52, class_exe55, class_exe62, class_exe68, class_exe95, class_exe96, class_exe102, class_exe104, class_exe105, class_exe132, class_exe7, class_exe12, class_exe18, class_exe19, class_exe31, class_exe34, class_exe35, class_exe47, class_exe53, class_exe63, class_exe64, class_exe66, class_exe79, class_exe80, class_exe86, class_exe101, class_exe108, class_exe110, class_exe111, class_exe122, class_exe127, class_exe134, class_exe136, class_exe143, class_exe146, class_exe24, class_exe30, class_exe40, class_exe43, class_exe57, class_exe71, class_exe76, class_exe87, class_exe98, class_exe188, class_exe210, class_exe49, class_exe36
+
+Cluster (0,3)
+Prototypes: [class_exe72]
+Number of elements: 8
+Elements: class_exe38, class_exe42, class_exe72, class_exe128, class_exe150, class_exe156, class_exe178, class_exe211
+
+Cluster (1,0)
+Prototypes: [class_exe69]
+Number of elements: 17
+Elements: class_exe5, class_exe69, class_exe4, class_exe10, class_exe25, class_exe60, class_exe65, class_exe90, class_exe103, class_exe124, class_exe129, class_exe140, class_exe148, class_exe187, class_exe212, class_exe213, class_exe214
+
+Cluster (1,1)
+Prototypes: [class_exe180]
+Number of elements: 12
+Elements: class_exe154, class_exe160, class_exe161, class_exe162, class_exe164, class_exe167, class_exe171, class_exe172, class_exe180, class_exe166, class_exe174, class_exe183
+
+Cluster (1,2)
+Prototypes: [class_exe137]
+Number of elements: 2
+Elements: class_exe44, class_exe137
+
+Cluster (1,3)
+Prototypes: [class_exe56]
+Number of elements: 4
+Elements: class_exe81, class_exe56, class_exe144, class_exe184
+
+Cluster (2,0)
+Prototypes: [class_exe158]
+Number of elements: 5
+Elements: class_exe153, class_exe155, class_exe158, class_exe169, class_exe176
+
+Cluster (2,1)
+Prototypes: [class_exe207]
+Number of elements: 2
+Elements: class_exe194, class_exe207
+
+Cluster (2,2)
+Prototypes: [class_exe33]
+Number of elements: 1
+Elements: class_exe33
+
+Cluster (2,3)
+Prototypes: [class_exe208]
+Number of elements: 10
+Elements: class_exe201, class_exe190, class_exe200, class_exe208, class_exe185, class_exe191, class_exe197, class_exe203, class_exe189, class_exe199
+
+Cluster (3,0)
+Prototypes: [class_exe73]
+Number of elements: 4
+Elements: class_exe2, class_exe14, class_exe73, class_exe145
+
+Cluster (3,1)
+Prototypes: [class_exe192]
+Number of elements: 5
+Elements: class_exe195, class_exe198, class_exe192, class_exe209, class_exe186
+
+Cluster (3,2)
+Prototypes: [class_exe126]
+Number of elements: 2
+Elements: class_exe120, class_exe149
+
+Cluster (3,3)
+Prototypes: [class_exe204]
+Number of elements: 6
+Elements: class_exe206, class_exe193, class_exe205, class_exe204, class_exe202, class_exe196
+
+
+Critério de adequação (energia): 28.0901113529
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	1,3	2,0	2,1	2,2	2,3	3,0	3,1	3,2	3,3	Total
+
+1	21	 51	 49	 4	 13	 0	 2	 3	 0	 0	 1	 0	 4	 0	 2	 0	 150
+3	0	 0	 2	 1	 4	 0	 0	 0	 0	 2	 0	 10	 0	 5	 0	 6	 30
+2	8	 6	 0	 3	 0	 12	 0	 1	 5	 0	 0	 0	 0	 0	 0	 0	 35
+Total	[29 57 51  8 17 12  2  4  5  2  1 10  4  5  2  6]
+
+Corrected Rand index: 0.374011510443
+F-measure(P,Q): 0.496676204204
+OERC: 0.116279069767
+Erro Topogr�fico: 0.418604651163
+
+#####################################
+Repetição do experimento: 11
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [class_exe206]
+Number of elements: 5
+Elements: class_exe193, class_exe194, class_exe205, class_exe206, class_exe207
+
+Cluster (0,1)
+Prototypes: [class_exe192]
+Number of elements: 4
+Elements: class_exe186, class_exe192, class_exe198, class_exe209
+
+Cluster (0,2)
+Prototypes: [class_exe175]
+Number of elements: 8
+Elements: class_exe173, class_exe175, class_exe163, class_exe165, class_exe168, class_exe170, class_exe174, class_exe181
+
+Cluster (0,3)
+Prototypes: [class_exe62]
+Number of elements: 50
+Elements: class_exe1, class_exe7, class_exe12, class_exe17, class_exe18, class_exe19, class_exe27, class_exe31, class_exe34, class_exe35, class_exe36, class_exe52, class_exe55, class_exe62, class_exe63, class_exe64, class_exe66, class_exe68, class_exe74, class_exe79, class_exe80, class_exe86, class_exe92, class_exe95, class_exe96, class_exe101, class_exe102, class_exe104, class_exe105, class_exe108, class_exe110, class_exe111, class_exe122, class_exe127, class_exe132, class_exe133, class_exe134, class_exe136, class_exe143, class_exe146, class_exe147, class_exe151, class_exe152, class_exe177, class_exe157, class_exe30, class_exe47, class_exe53, class_exe98, class_exe188
+
+Cluster (1,0)
+Prototypes: [class_exe208]
+Number of elements: 10
+Elements: class_exe189, class_exe203, class_exe185, class_exe197, class_exe208, class_exe190, class_exe191, class_exe199, class_exe200, class_exe201
+
+Cluster (1,1)
+Prototypes: [class_exe61]
+Number of elements: 0
+Elements
+
+Cluster (1,2)
+Prototypes: [class_exe113]
+Number of elements: 28
+Elements: class_exe32, class_exe113, class_exe119, class_exe130, class_exe3, class_exe5, class_exe15, class_exe46, class_exe59, class_exe84, class_exe89, class_exe91, class_exe97, class_exe117, class_exe118, class_exe135, class_exe139, class_exe142, class_exe187, class_exe6, class_exe11, class_exe13, class_exe16, class_exe29, class_exe41, class_exe75, class_exe123, class_exe138
+
+Cluster (1,3)
+Prototypes: [class_exe115]
+Number of elements: 50
+Elements: class_exe10, class_exe140, class_exe4, class_exe120, class_exe148, class_exe8, class_exe20, class_exe21, class_exe23, class_exe26, class_exe37, class_exe45, class_exe54, class_exe60, class_exe61, class_exe65, class_exe69, class_exe77, class_exe82, class_exe88, class_exe90, class_exe100, class_exe103, class_exe109, class_exe114, class_exe115, class_exe116, class_exe124, class_exe125, class_exe126, class_exe129, class_exe131, class_exe149, class_exe212, class_exe214, class_exe0, class_exe9, class_exe28, class_exe51, class_exe58, class_exe78, class_exe85, class_exe99, class_exe106, class_exe107, class_exe112, class_exe179, class_exe182, class_exe22, class_exe94
+
+Cluster (2,0)
+Prototypes: [class_exe196]
+Number of elements: 5
+Elements: class_exe49, class_exe196, class_exe202, class_exe210, class_exe204
+
+Cluster (2,1)
+Prototypes: [class_exe195]
+Number of elements: 1
+Elements: class_exe195
+
+Cluster (2,2)
+Prototypes: [class_exe159]
+Number of elements: 3
+Elements: class_exe159, class_exe162, class_exe184
+
+Cluster (2,3)
+Prototypes: [class_exe70]
+Number of elements: 15
+Elements: class_exe39, class_exe50, class_exe56, class_exe67, class_exe70, class_exe83, class_exe93, class_exe121, class_exe141, class_exe144, class_exe33, class_exe81, class_exe213, class_exe25, class_exe48
+
+Cluster (3,0)
+Prototypes: [class_exe145]
+Number of elements: 15
+Elements: class_exe178, class_exe38, class_exe42, class_exe72, class_exe128, class_exe150, class_exe156, class_exe211, class_exe2, class_exe14, class_exe44, class_exe73, class_exe87, class_exe137, class_exe145
+
+Cluster (3,1)
+Prototypes: [class_exe71]
+Number of elements: 6
+Elements: class_exe24, class_exe40, class_exe43, class_exe57, class_exe71, class_exe76
+
+Cluster (3,2)
+Prototypes: [class_exe167]
+Number of elements: 6
+Elements: class_exe161, class_exe154, class_exe164, class_exe167, class_exe180, class_exe160
+
+Cluster (3,3)
+Prototypes: [class_exe183]
+Number of elements: 9
+Elements: class_exe153, class_exe155, class_exe158, class_exe166, class_exe169, class_exe171, class_exe172, class_exe176, class_exe183
+
+
+Critério de adequação (energia): 31.4199792516
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,2	1,3	2,0	2,1	2,2	2,3	3,0	3,1	3,2	3,3	Total
+
+1	0	 0	 0	 45	 0	 27	 46	 1	 0	 0	 14	 11	 6	 0	 0	 150
+3	5	 4	 0	 1	 10	 1	 2	 4	 1	 0	 1	 1	 0	 0	 0	 30
+2	0	 0	 8	 4	 0	 0	 2	 0	 0	 3	 0	 3	 0	 6	 9	 35
+Total	[ 5  4  8 50 10 28 50  5  1  3 15 15  6  6  9]
+
+Corrected Rand index: 0.350009729641
+F-measure(P,Q): 0.457293868922
+OERC: 0.0744186046512
+Erro Topogr�fico: 0.358139534884
+
+#####################################
+Repetição do experimento: 12
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [class_exe183]
+Number of elements: 14
+Elements: class_exe169, class_exe155, class_exe158, class_exe153, class_exe164, class_exe166, class_exe171, class_exe172, class_exe176, class_exe180, class_exe183, class_exe154, class_exe161, class_exe167
+
+Cluster (0,1)
+Prototypes: [class_exe159]
+Number of elements: 17
+Elements: class_exe165, class_exe168, class_exe173, class_exe175, class_exe33, class_exe56, class_exe81, class_exe159, class_exe170, class_exe174, class_exe181, class_exe184, class_exe70, class_exe121, class_exe144, class_exe160, class_exe162
+
+Cluster (0,2)
+Prototypes: [class_exe196]
+Number of elements: 6
+Elements: class_exe196, class_exe49, class_exe197, class_exe202, class_exe210, class_exe204
+
+Cluster (0,3)
+Prototypes: [class_exe111]
+Number of elements: 21
+Elements: class_exe14, class_exe18, class_exe24, class_exe30, class_exe34, class_exe40, class_exe47, class_exe53, class_exe57, class_exe64, class_exe66, class_exe86, class_exe87, class_exe98, class_exe111, class_exe122, class_exe134, class_exe136, class_exe44, class_exe79, class_exe188
+
+Cluster (1,0)
+Prototypes: [class_exe20]
+Number of elements: 21
+Elements: class_exe109, class_exe116, class_exe126, class_exe20, class_exe23, class_exe25, class_exe39, class_exe48, class_exe50, class_exe61, class_exe67, class_exe77, class_exe83, class_exe93, class_exe124, class_exe141, class_exe149, class_exe120, class_exe60, class_exe82, class_exe148
+
+Cluster (1,1)
+Prototypes: [class_exe143]
+Number of elements: 4
+Elements: class_exe43, class_exe71, class_exe76, class_exe143
+
+Cluster (1,2)
+Prototypes: [class_exe31]
+Number of elements: 11
+Elements: class_exe27, class_exe31, class_exe101, class_exe12, class_exe19, class_exe35, class_exe52, class_exe62, class_exe63, class_exe108, class_exe127
+
+Cluster (1,3)
+Prototypes: [class_exe68]
+Number of elements: 11
+Elements: class_exe6, class_exe11, class_exe29, class_exe92, class_exe133, class_exe147, class_exe36, class_exe68, class_exe102, class_exe7, class_exe41
+
+Cluster (2,0)
+Prototypes: [class_exe26]
+Number of elements: 37
+Elements: class_exe45, class_exe138, class_exe139, class_exe0, class_exe10, class_exe22, class_exe65, class_exe75, class_exe78, class_exe99, class_exe100, class_exe112, class_exe125, class_exe140, class_exe4, class_exe8, class_exe9, class_exe26, class_exe28, class_exe37, class_exe54, class_exe58, class_exe85, class_exe88, class_exe90, class_exe103, class_exe106, class_exe107, class_exe114, class_exe115, class_exe182, class_exe163, class_exe179, class_exe21, class_exe51, class_exe131, class_exe94
+
+Cluster (2,1)
+Prototypes: [class_exe55]
+Number of elements: 6
+Elements: class_exe55, class_exe74, class_exe95, class_exe96, class_exe104, class_exe105
+
+Cluster (2,2)
+Prototypes: [class_exe68]
+Number of elements: 0
+Elements
+
+Cluster (2,3)
+Prototypes: [class_exe152]
+Number of elements: 6
+Elements: class_exe80, class_exe110, class_exe152, class_exe157, class_exe151, class_exe177
+
+Cluster (3,0)
+Prototypes: [class_exe84]
+Number of elements: 24
+Elements: class_exe119, class_exe32, class_exe59, class_exe84, class_exe91, class_exe113, class_exe117, class_exe142, class_exe13, class_exe15, class_exe17, class_exe97, class_exe118, class_exe123, class_exe130, class_exe132, class_exe135, class_exe146, class_exe1, class_exe3, class_exe16, class_exe46, class_exe89, class_exe187
+
+Cluster (3,1)
+Prototypes: [class_exe72]
+Number of elements: 18
+Elements: class_exe72, class_exe150, class_exe156, class_exe178, class_exe190, class_exe200, class_exe201, class_exe211, class_exe38, class_exe42, class_exe128, class_exe191, class_exe199, class_exe2, class_exe137, class_exe73, class_exe145, class_exe208
+
+Cluster (3,2)
+Prototypes: [class_exe214]
+Number of elements: 6
+Elements: class_exe213, class_exe5, class_exe214, class_exe69, class_exe129, class_exe212
+
+Cluster (3,3)
+Prototypes: [class_exe193]
+Number of elements: 13
+Elements: class_exe195, class_exe198, class_exe203, class_exe205, class_exe186, class_exe192, class_exe209, class_exe185, class_exe193, class_exe206, class_exe194, class_exe207, class_exe189
+
+
+Critério de adequação (energia): 46.6837578193
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	1,3	2,0	2,1	2,3	3,0	3,1	3,2	3,3	Total
+
+1	0	 6	 1	 20	 21	 4	 11	 11	 34	 6	 2	 23	 8	 3	 0	 150
+3	0	 0	 5	 1	 0	 0	 0	 0	 0	 0	 0	 1	 7	 3	 13	 30
+2	14	 11	 0	 0	 0	 0	 0	 0	 3	 0	 4	 0	 3	 0	 0	 35
+Total	[14 17  6 21 21  4 11 11 37  6  6 24 18  6 13]
+
+Corrected Rand index: 0.23406801869
+F-measure(P,Q): 0.431092974089
+OERC: 0.125581395349
+Erro Topogr�fico: 0.423255813953
+
+#####################################
+Repetição do experimento: 13
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [class_exe183]
+Number of elements: 13
+Elements: class_exe153, class_exe154, class_exe155, class_exe158, class_exe161, class_exe164, class_exe166, class_exe167, class_exe169, class_exe171, class_exe172, class_exe176, class_exe183
+
+Cluster (0,1)
+Prototypes: [class_exe124]
+Number of elements: 22
+Elements: class_exe20, class_exe23, class_exe25, class_exe60, class_exe61, class_exe69, class_exe77, class_exe116, class_exe120, class_exe124, class_exe126, class_exe129, class_exe140, class_exe148, class_exe149, class_exe212, class_exe214, class_exe39, class_exe48, class_exe93, class_exe141, class_exe213
+
+Cluster (0,2)
+Prototypes: [class_exe92]
+Number of elements: 7
+Elements: class_exe36, class_exe74, class_exe92, class_exe95, class_exe104, class_exe105, class_exe133
+
+Cluster (0,3)
+Prototypes: [class_exe72]
+Number of elements: 16
+Elements: class_exe2, class_exe38, class_exe42, class_exe72, class_exe128, class_exe137, class_exe150, class_exe156, class_exe178, class_exe190, class_exe191, class_exe199, class_exe200, class_exe201, class_exe211, class_exe208
+
+Cluster (1,0)
+Prototypes: [class_exe159]
+Number of elements: 21
+Elements: class_exe121, class_exe165, class_exe168, class_exe173, class_exe175, class_exe50, class_exe56, class_exe70, class_exe159, class_exe170, class_exe181, class_exe33, class_exe81, class_exe174, class_exe184, class_exe67, class_exe83, class_exe144, class_exe160, class_exe162, class_exe180
+
+Cluster (1,1)
+Prototypes: [class_exe28]
+Number of elements: 22
+Elements: class_exe4, class_exe8, class_exe21, class_exe26, class_exe28, class_exe37, class_exe51, class_exe54, class_exe58, class_exe88, class_exe106, class_exe114, class_exe115, class_exe131, class_exe179, class_exe182, class_exe9, class_exe85, class_exe90, class_exe107, class_exe82, class_exe109
+
+Cluster (1,2)
+Prototypes: [class_exe101]
+Number of elements: 10
+Elements: class_exe34, class_exe80, class_exe110, class_exe35, class_exe101, class_exe143, class_exe27, class_exe31, class_exe62, class_exe96
+
+Cluster (1,3)
+Prototypes: [class_exe57]
+Number of elements: 17
+Elements: class_exe47, class_exe14, class_exe24, class_exe30, class_exe40, class_exe43, class_exe44, class_exe57, class_exe71, class_exe76, class_exe87, class_exe18, class_exe66, class_exe86, class_exe111, class_exe73, class_exe145
+
+Cluster (2,0)
+Prototypes: [class_exe15]
+Number of elements: 19
+Elements: class_exe0, class_exe15, class_exe32, class_exe46, class_exe59, class_exe65, class_exe78, class_exe113, class_exe119, class_exe135, class_exe139, class_exe5, class_exe84, class_exe123, class_exe6, class_exe11, class_exe75, class_exe118, class_exe138
+
+Cluster (2,1)
+Prototypes: [class_exe122]
+Number of elements: 14
+Elements: class_exe188, class_exe12, class_exe64, class_exe79, class_exe122, class_exe134, class_exe136, class_exe17, class_exe19, class_exe52, class_exe53, class_exe63, class_exe98, class_exe146
+
+Cluster (2,2)
+Prototypes: [class_exe177]
+Number of elements: 6
+Elements: class_exe151, class_exe152, class_exe157, class_exe163, class_exe177, class_exe94
+
+Cluster (2,3)
+Prototypes: [class_exe196]
+Number of elements: 6
+Elements: class_exe49, class_exe196, class_exe202, class_exe204, class_exe210, class_exe197
+
+Cluster (3,0)
+Prototypes: [class_exe16]
+Number of elements: 13
+Elements: class_exe16, class_exe41, class_exe97, class_exe91, class_exe117, class_exe142, class_exe13, class_exe112, class_exe130, class_exe3, class_exe132, class_exe22, class_exe29
+
+Cluster (3,1)
+Prototypes: [class_exe102]
+Number of elements: 8
+Elements: class_exe1, class_exe7, class_exe55, class_exe68, class_exe102, class_exe108, class_exe127, class_exe147
+
+Cluster (3,2)
+Prototypes: [class_exe100]
+Number of elements: 8
+Elements: class_exe10, class_exe45, class_exe89, class_exe99, class_exe100, class_exe103, class_exe125, class_exe187
+
+Cluster (3,3)
+Prototypes: [class_exe193]
+Number of elements: 13
+Elements: class_exe185, class_exe186, class_exe192, class_exe193, class_exe194, class_exe195, class_exe198, class_exe203, class_exe205, class_exe206, class_exe209, class_exe189, class_exe207
+
+
+Critério de adequação (energia): 45.2046173051
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	1,3	2,0	2,1	2,2	2,3	3,0	3,1	3,2	3,3	Total
+
+1	0	 19	 7	 6	 9	 20	 10	 17	 19	 13	 1	 1	 13	 8	 7	 0	 150
+3	0	 3	 0	 7	 0	 0	 0	 0	 0	 1	 0	 5	 0	 0	 1	 13	 30
+2	13	 0	 0	 3	 12	 2	 0	 0	 0	 0	 5	 0	 0	 0	 0	 0	 35
+Total	[13 22  7 16 21 22 10 17 19 14  6  6 13  8  8 13]
+
+Corrected Rand index: 0.182860454899
+F-measure(P,Q): 0.334798089057
+OERC: 0.125581395349
+Erro Topogr�fico: 0.381395348837
+
+#####################################
+Repetição do experimento: 14
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [class_exe58]
+Number of elements: 20
+Elements: class_exe9, class_exe22, class_exe28, class_exe51, class_exe58, class_exe85, class_exe94, class_exe99, class_exe106, class_exe107, class_exe179, class_exe182, class_exe8, class_exe26, class_exe37, class_exe114, class_exe0, class_exe54, class_exe90, class_exe125
+
+Cluster (0,1)
+Prototypes: [class_exe15]
+Number of elements: 33
+Elements: class_exe103, class_exe5, class_exe15, class_exe65, class_exe89, class_exe100, class_exe139, class_exe135, class_exe112, class_exe32, class_exe46, class_exe75, class_exe113, class_exe6, class_exe16, class_exe29, class_exe41, class_exe59, class_exe84, class_exe91, class_exe97, class_exe117, class_exe118, class_exe119, class_exe123, class_exe142, class_exe1, class_exe11, class_exe13, class_exe78, class_exe92, class_exe132, class_exe147
+
+Cluster (0,2)
+Prototypes: [class_exe31]
+Number of elements: 51
+Elements: class_exe36, class_exe74, class_exe104, class_exe105, class_exe7, class_exe17, class_exe19, class_exe52, class_exe55, class_exe62, class_exe68, class_exe80, class_exe95, class_exe96, class_exe102, class_exe127, class_exe146, class_exe12, class_exe27, class_exe31, class_exe34, class_exe35, class_exe63, class_exe101, class_exe108, class_exe110, class_exe122, class_exe133, class_exe134, class_exe136, class_exe18, class_exe53, class_exe64, class_exe66, class_exe76, class_exe79, class_exe86, class_exe111, class_exe143, class_exe152, class_exe30, class_exe43, class_exe47, class_exe57, class_exe71, class_exe98, class_exe14, class_exe24, class_exe40, class_exe87, class_exe188
+
+Cluster (0,3)
+Prototypes: [class_exe128]
+Number of elements: 20
+Elements: class_exe44, class_exe72, class_exe137, class_exe190, class_exe191, class_exe197, class_exe199, class_exe200, class_exe201, class_exe211, class_exe38, class_exe73, class_exe128, class_exe42, class_exe145, class_exe150, class_exe2, class_exe156, class_exe178, class_exe208
+
+Cluster (1,0)
+Prototypes: [class_exe168]
+Number of elements: 12
+Elements: class_exe173, class_exe39, class_exe48, class_exe50, class_exe83, class_exe121, class_exe165, class_exe168, class_exe170, class_exe175, class_exe181, class_exe174
+
+Cluster (1,1)
+Prototypes: [class_exe124]
+Number of elements: 17
+Elements: class_exe20, class_exe23, class_exe25, class_exe61, class_exe77, class_exe93, class_exe124, class_exe126, class_exe129, class_exe141, class_exe213, class_exe214, class_exe149, class_exe212, class_exe60, class_exe67, class_exe69
+
+Cluster (1,2)
+Prototypes: [class_exe138]
+Number of elements: 4
+Elements: class_exe3, class_exe130, class_exe138, class_exe187
+
+Cluster (1,3)
+Prototypes: [class_exe4]
+Number of elements: 4
+Elements: class_exe4, class_exe88, class_exe45, class_exe115
+
+Cluster (2,0)
+Prototypes: [class_exe184]
+Number of elements: 9
+Elements: class_exe33, class_exe56, class_exe81, class_exe159, class_exe160, class_exe162, class_exe184, class_exe144, class_exe70
+
+Cluster (2,1)
+Prototypes: [class_exe82]
+Number of elements: 5
+Elements: class_exe21, class_exe82, class_exe109, class_exe116, class_exe131
+
+Cluster (2,2)
+Prototypes: [class_exe158]
+Number of elements: 5
+Elements: class_exe153, class_exe155, class_exe158, class_exe169, class_exe176
+
+Cluster (2,3)
+Prototypes: [class_exe182]
+Number of elements: 4
+Elements: class_exe151, class_exe157, class_exe163, class_exe177
+
+Cluster (3,0)
+Prototypes: [class_exe172]
+Number of elements: 9
+Elements: class_exe166, class_exe183, class_exe171, class_exe172, class_exe154, class_exe161, class_exe164, class_exe167, class_exe180
+
+Cluster (3,1)
+Prototypes: [class_exe148]
+Number of elements: 4
+Elements: class_exe10, class_exe120, class_exe140, class_exe148
+
+Cluster (3,2)
+Prototypes: [class_exe196]
+Number of elements: 5
+Elements: class_exe202, class_exe49, class_exe196, class_exe204, class_exe210
+
+Cluster (3,3)
+Prototypes: [class_exe193]
+Number of elements: 13
+Elements: class_exe186, class_exe192, class_exe195, class_exe198, class_exe207, class_exe209, class_exe193, class_exe194, class_exe205, class_exe206, class_exe185, class_exe189, class_exe203
+
+
+Critério de adequação (energia): 44.4499178905
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	1,3	2,0	2,1	2,2	2,3	3,0	3,1	3,2	3,3	Total
+
+1	18	 33	 49	 9	 5	 14	 3	 4	 5	 5	 0	 0	 0	 4	 1	 0	 150
+3	0	 0	 1	 8	 0	 3	 1	 0	 0	 0	 0	 0	 0	 0	 4	 13	 30
+2	2	 0	 1	 3	 7	 0	 0	 0	 4	 0	 5	 4	 9	 0	 0	 0	 35
+Total	[20 33 51 20 12 17  4  4  9  5  5  4  9  4  5 13]
+
+Corrected Rand index: 0.301067996433
+F-measure(P,Q): 0.491125790977
+OERC: 0.13488372093
+Erro Topogr�fico: 0.246511627907
+
+#####################################
+Repetição do experimento: 15
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [class_exe72]
+Number of elements: 18
+Elements: class_exe150, class_exe156, class_exe178, class_exe72, class_exe190, class_exe201, class_exe211, class_exe2, class_exe38, class_exe42, class_exe128, class_exe137, class_exe191, class_exe199, class_exe200, class_exe208, class_exe73, class_exe145
+
+Cluster (0,1)
+Prototypes: [class_exe76]
+Number of elements: 1
+Elements: class_exe110
+
+Cluster (0,2)
+Prototypes: [class_exe196]
+Number of elements: 6
+Elements: class_exe196, class_exe49, class_exe197, class_exe202, class_exe204, class_exe210
+
+Cluster (0,3)
+Prototypes: [class_exe193]
+Number of elements: 13
+Elements: class_exe203, class_exe185, class_exe186, class_exe192, class_exe193, class_exe194, class_exe195, class_exe198, class_exe205, class_exe206, class_exe209, class_exe189, class_exe207
+
+Cluster (1,0)
+Prototypes: [class_exe168]
+Number of elements: 9
+Elements: class_exe121, class_exe165, class_exe168, class_exe175, class_exe50, class_exe159, class_exe170, class_exe173, class_exe181
+
+Cluster (1,1)
+Prototypes: [class_exe158]
+Number of elements: 6
+Elements: class_exe153, class_exe155, class_exe158, class_exe169, class_exe176, class_exe166
+
+Cluster (1,2)
+Prototypes: [class_exe32]
+Number of elements: 2
+Elements: class_exe32, class_exe119
+
+Cluster (1,3)
+Prototypes: [class_exe179]
+Number of elements: 4
+Elements: class_exe157, class_exe163, class_exe179, class_exe182
+
+Cluster (2,0)
+Prototypes: [class_exe132]
+Number of elements: 25
+Elements: class_exe1, class_exe17, class_exe19, class_exe36, class_exe132, class_exe146, class_exe7, class_exe13, class_exe52, class_exe55, class_exe68, class_exe74, class_exe84, class_exe91, class_exe92, class_exe95, class_exe102, class_exe104, class_exe105, class_exe117, class_exe118, class_exe142, class_exe96, class_exe123, class_exe136
+
+Cluster (2,1)
+Prototypes: [class_exe59]
+Number of elements: 1
+Elements: class_exe113
+
+Cluster (2,2)
+Prototypes: [class_exe75]
+Number of elements: 29
+Elements: class_exe3, class_exe6, class_exe11, class_exe15, class_exe16, class_exe29, class_exe41, class_exe46, class_exe59, class_exe75, class_exe78, class_exe89, class_exe94, class_exe97, class_exe100, class_exe112, class_exe130, class_exe135, class_exe139, class_exe0, class_exe22, class_exe99, class_exe133, class_exe138, class_exe147, class_exe151, class_exe187, class_exe45, class_exe125
+
+Cluster (2,3)
+Prototypes: [class_exe23]
+Number of elements: 34
+Elements: class_exe20, class_exe23, class_exe25, class_exe60, class_exe61, class_exe69, class_exe77, class_exe82, class_exe93, class_exe109, class_exe116, class_exe120, class_exe124, class_exe126, class_exe129, class_exe131, class_exe148, class_exe149, class_exe212, class_exe213, class_exe214, class_exe5, class_exe39, class_exe48, class_exe67, class_exe103, class_exe140, class_exe141, class_exe10, class_exe83, class_exe4, class_exe65, class_exe70, class_exe144
+
+Cluster (3,0)
+Prototypes: [class_exe111]
+Number of elements: 35
+Elements: class_exe12, class_exe27, class_exe31, class_exe34, class_exe35, class_exe63, class_exe64, class_exe66, class_exe79, class_exe101, class_exe108, class_exe111, class_exe122, class_exe134, class_exe143, class_exe18, class_exe24, class_exe30, class_exe40, class_exe43, class_exe47, class_exe53, class_exe57, class_exe62, class_exe71, class_exe76, class_exe80, class_exe86, class_exe87, class_exe98, class_exe127, class_exe14, class_exe44, class_exe152, class_exe188
+
+Cluster (3,1)
+Prototypes: [class_exe111]
+Number of elements: 0
+Elements
+
+Cluster (3,2)
+Prototypes: [class_exe58]
+Number of elements: 17
+Elements: class_exe8, class_exe26, class_exe37, class_exe58, class_exe28, class_exe85, class_exe88, class_exe106, class_exe107, class_exe115, class_exe9, class_exe21, class_exe51, class_exe90, class_exe114, class_exe177, class_exe54
+
+Cluster (3,3)
+Prototypes: [class_exe160]
+Number of elements: 15
+Elements: class_exe33, class_exe56, class_exe81, class_exe154, class_exe160, class_exe161, class_exe162, class_exe164, class_exe167, class_exe171, class_exe172, class_exe174, class_exe180, class_exe184, class_exe183
+
+
+Critério de adequação (energia): 45.6863949505
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	1,3	2,0	2,1	2,2	2,3	3,0	3,2	3,3	Total
+
+1	8	 1	 1	 0	 2	 0	 2	 0	 25	 1	 27	 31	 33	 16	 3	 150
+3	7	 0	 5	 13	 0	 0	 0	 0	 0	 0	 1	 3	 1	 0	 0	 30
+2	3	 0	 0	 0	 7	 6	 0	 4	 0	 0	 1	 0	 1	 1	 12	 35
+Total	[18  1  6 13  9  6  2  4 25  1 29 34 35 17 15]
+
+Corrected Rand index: 0.276485076451
+F-measure(P,Q): 0.411409527429
+OERC: 0.111627906977
+Erro Topogr�fico: 0.376744186047
+
+#####################################
+Repetição do experimento: 16
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [class_exe206]
+Number of elements: 8
+Elements: class_exe207, class_exe193, class_exe194, class_exe206, class_exe205, class_exe189, class_exe203, class_exe185
+
+Cluster (0,1)
+Prototypes: [class_exe99]
+Number of elements: 0
+Elements
+
+Cluster (0,2)
+Prototypes: [class_exe144]
+Number of elements: 9
+Elements: class_exe213, class_exe56, class_exe70, class_exe81, class_exe93, class_exe144, class_exe33, class_exe67, class_exe141
+
+Cluster (0,3)
+Prototypes: [class_exe170]
+Number of elements: 14
+Elements: class_exe50, class_exe121, class_exe159, class_exe160, class_exe165, class_exe168, class_exe170, class_exe173, class_exe174, class_exe175, class_exe180, class_exe181, class_exe184, class_exe162
+
+Cluster (1,0)
+Prototypes: [class_exe5]
+Number of elements: 3
+Elements: class_exe5, class_exe214, class_exe212
+
+Cluster (1,1)
+Prototypes: [class_exe192]
+Number of elements: 5
+Elements: class_exe186, class_exe192, class_exe195, class_exe198, class_exe209
+
+Cluster (1,2)
+Prototypes: [class_exe26]
+Number of elements: 10
+Elements: class_exe0, class_exe8, class_exe26, class_exe28, class_exe37, class_exe45, class_exe54, class_exe78, class_exe100, class_exe125
+
+Cluster (1,3)
+Prototypes: [class_exe82]
+Number of elements: 31
+Elements: class_exe65, class_exe4, class_exe10, class_exe20, class_exe21, class_exe23, class_exe25, class_exe51, class_exe60, class_exe61, class_exe69, class_exe77, class_exe82, class_exe88, class_exe90, class_exe103, class_exe109, class_exe114, class_exe115, class_exe116, class_exe120, class_exe124, class_exe126, class_exe129, class_exe131, class_exe140, class_exe148, class_exe149, class_exe39, class_exe48, class_exe83
+
+Cluster (2,0)
+Prototypes: [class_exe196]
+Number of elements: 6
+Elements: class_exe202, class_exe49, class_exe196, class_exe204, class_exe210, class_exe197
+
+Cluster (2,1)
+Prototypes: [class_exe201]
+Number of elements: 7
+Elements: class_exe190, class_exe201, class_exe208, class_exe199, class_exe200, class_exe211, class_exe191
+
+Cluster (2,2)
+Prototypes: [class_exe16]
+Number of elements: 14
+Elements: class_exe3, class_exe6, class_exe22, class_exe29, class_exe41, class_exe75, class_exe89, class_exe97, class_exe112, class_exe130, class_exe133, class_exe138, class_exe139, class_exe187
+
+Cluster (2,3)
+Prototypes: [class_exe183]
+Number of elements: 13
+Elements: class_exe153, class_exe155, class_exe158, class_exe169, class_exe172, class_exe176, class_exe183, class_exe154, class_exe166, class_exe171, class_exe161, class_exe167, class_exe164
+
+Cluster (3,0)
+Prototypes: [class_exe145]
+Number of elements: 14
+Elements: class_exe38, class_exe42, class_exe72, class_exe73, class_exe128, class_exe137, class_exe150, class_exe156, class_exe178, class_exe44, class_exe145, class_exe2, class_exe14, class_exe87
+
+Cluster (3,1)
+Prototypes: [class_exe34]
+Number of elements: 26
+Elements: class_exe34, class_exe76, class_exe80, class_exe108, class_exe110, class_exe143, class_exe18, class_exe24, class_exe27, class_exe30, class_exe31, class_exe35, class_exe40, class_exe43, class_exe47, class_exe53, class_exe57, class_exe63, class_exe64, class_exe66, class_exe71, class_exe86, class_exe98, class_exe101, class_exe111, class_exe127
+
+Cluster (3,2)
+Prototypes: [class_exe132]
+Number of elements: 41
+Elements: class_exe17, class_exe91, class_exe1, class_exe7, class_exe11, class_exe12, class_exe13, class_exe15, class_exe16, class_exe19, class_exe32, class_exe36, class_exe46, class_exe52, class_exe55, class_exe59, class_exe62, class_exe68, class_exe74, class_exe79, class_exe84, class_exe92, class_exe95, class_exe96, class_exe102, class_exe104, class_exe105, class_exe113, class_exe117, class_exe118, class_exe119, class_exe122, class_exe123, class_exe132, class_exe134, class_exe135, class_exe136, class_exe142, class_exe146, class_exe147, class_exe188
+
+Cluster (3,3)
+Prototypes: [class_exe107]
+Number of elements: 14
+Elements: class_exe151, class_exe177, class_exe157, class_exe9, class_exe85, class_exe107, class_exe58, class_exe163, class_exe179, class_exe182, class_exe94, class_exe99, class_exe106, class_exe152
+
+
+Critério de adequação (energia): 33.5784286153
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	0,3	1,0	1,1	1,2	1,3	2,0	2,1	2,2	2,3	3,0	3,1	3,2	3,3	Total
+
+1	0	 8	 2	 1	 0	 10	 31	 1	 0	 13	 0	 11	 26	 40	 7	 150
+3	8	 1	 0	 2	 5	 0	 0	 5	 7	 1	 0	 0	 0	 1	 0	 30
+2	0	 0	 12	 0	 0	 0	 0	 0	 0	 0	 13	 3	 0	 0	 7	 35
+Total	[ 8  9 14  3  5 10 31  6  7 14 13 14 26 41 14]
+
+Corrected Rand index: 0.282483519779
+F-measure(P,Q): 0.439149476333
+OERC: 0.0790697674419
+Erro Topogr�fico: 0.251162790698
+
+#####################################
+Repetição do experimento: 17
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [class_exe183]
+Number of elements: 14
+Elements: class_exe153, class_exe154, class_exe155, class_exe158, class_exe161, class_exe164, class_exe166, class_exe167, class_exe169, class_exe171, class_exe172, class_exe176, class_exe180, class_exe183
+
+Cluster (0,1)
+Prototypes: [class_exe170]
+Number of elements: 14
+Elements: class_exe67, class_exe70, class_exe83, class_exe121, class_exe159, class_exe165, class_exe168, class_exe170, class_exe173, class_exe175, class_exe181, class_exe50, class_exe174, class_exe39
+
+Cluster (0,2)
+Prototypes: [class_exe214]
+Number of elements: 9
+Elements: class_exe5, class_exe212, class_exe213, class_exe214, class_exe93, class_exe129, class_exe25, class_exe124, class_exe141
+
+Cluster (0,3)
+Prototypes: [class_exe115]
+Number of elements: 37
+Elements: class_exe4, class_exe10, class_exe65, class_exe90, class_exe125, class_exe69, class_exe103, class_exe140, class_exe148, class_exe60, class_exe82, class_exe120, class_exe138, class_exe139, class_exe20, class_exe23, class_exe61, class_exe77, class_exe116, class_exe126, class_exe149, class_exe8, class_exe21, class_exe26, class_exe37, class_exe45, class_exe48, class_exe51, class_exe54, class_exe88, class_exe109, class_exe114, class_exe115, class_exe131, class_exe28, class_exe106, class_exe187
+
+Cluster (1,0)
+Prototypes: [class_exe33]
+Number of elements: 7
+Elements: class_exe33, class_exe81, class_exe56, class_exe144, class_exe160, class_exe162, class_exe184
+
+Cluster (1,1)
+Prototypes: [class_exe6]
+Number of elements: 7
+Elements: class_exe6, class_exe11, class_exe29, class_exe46, class_exe92, class_exe133, class_exe147
+
+Cluster (1,2)
+Prototypes: [class_exe152]
+Number of elements: 6
+Elements: class_exe152, class_exe157, class_exe110, class_exe151, class_exe177, class_exe80
+
+Cluster (1,3)
+Prototypes: [class_exe99]
+Number of elements: 15
+Elements: class_exe163, class_exe9, class_exe22, class_exe85, class_exe94, class_exe99, class_exe107, class_exe182, class_exe41, class_exe58, class_exe75, class_exe78, class_exe100, class_exe112, class_exe179
+
+Cluster (2,0)
+Prototypes: [class_exe118]
+Number of elements: 24
+Elements: class_exe59, class_exe119, class_exe1, class_exe15, class_exe16, class_exe32, class_exe84, class_exe113, class_exe117, class_exe118, class_exe123, class_exe130, class_exe135, class_exe142, class_exe3, class_exe13, class_exe17, class_exe36, class_exe74, class_exe89, class_exe91, class_exe97, class_exe132, class_exe146
+
+Cluster (2,1)
+Prototypes: [class_exe196]
+Number of elements: 5
+Elements: class_exe196, class_exe49, class_exe202, class_exe210, class_exe204
+
+Cluster (2,2)
+Prototypes: [class_exe42]
+Number of elements: 12
+Elements: class_exe38, class_exe42, class_exe72, class_exe128, class_exe137, class_exe150, class_exe156, class_exe178, class_exe2, class_exe73, class_exe145, class_exe211
+
+Cluster (2,3)
+Prototypes: [class_exe0]
+Number of elements: 1
+Elements: class_exe0
+
+Cluster (3,0)
+Prototypes: [class_exe31]
+Number of elements: 31
+Elements: class_exe64, class_exe12, class_exe18, class_exe57, class_exe63, class_exe66, class_exe71, class_exe76, class_exe86, class_exe111, class_exe40, class_exe87, class_exe7, class_exe43, class_exe108, class_exe127, class_exe27, class_exe31, class_exe34, class_exe35, class_exe52, class_exe62, class_exe101, class_exe143, class_exe55, class_exe68, class_exe95, class_exe96, class_exe102, class_exe104, class_exe105
+
+Cluster (3,1)
+Prototypes: [class_exe134]
+Number of elements: 13
+Elements: class_exe47, class_exe98, class_exe134, class_exe188, class_exe14, class_exe19, class_exe24, class_exe30, class_exe44, class_exe53, class_exe79, class_exe122, class_exe136
+
+Cluster (3,2)
+Prototypes: [class_exe208]
+Number of elements: 10
+Elements: class_exe190, class_exe191, class_exe197, class_exe199, class_exe200, class_exe201, class_exe208, class_exe185, class_exe203, class_exe189
+
+Cluster (3,3)
+Prototypes: [class_exe193]
+Number of elements: 10
+Elements: class_exe194, class_exe206, class_exe207, class_exe193, class_exe195, class_exe205, class_exe186, class_exe192, class_exe198, class_exe209
+
+
+Critério de adequação (energia): 39.8336120678
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	1,3	2,0	2,1	2,2	2,3	3,0	3,1	3,2	3,3	Total
+
+1	0	 6	 6	 36	 4	 7	 2	 12	 24	 1	 8	 1	 31	 12	 0	 0	 150
+3	0	 0	 3	 1	 0	 0	 0	 0	 0	 4	 1	 0	 0	 1	 10	 10	 30
+2	14	 8	 0	 0	 3	 0	 4	 3	 0	 0	 3	 0	 0	 0	 0	 0	 35
+Total	[14 14  9 37  7  7  6 15 24  5 12  1 31 13 10 10]
+
+Corrected Rand index: 0.255970773765
+F-measure(P,Q): 0.431414003233
+OERC: 0.111627906977
+Erro Topogr�fico: 0.255813953488
+
+#####################################
+Repetição do experimento: 18
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [class_exe109]
+Number of elements: 30
+Elements: class_exe20, class_exe39, class_exe48, class_exe61, class_exe77, class_exe124, class_exe21, class_exe23, class_exe28, class_exe50, class_exe51, class_exe60, class_exe82, class_exe83, class_exe90, class_exe106, class_exe109, class_exe114, class_exe115, class_exe116, class_exe120, class_exe121, class_exe126, class_exe131, class_exe149, class_exe165, class_exe168, class_exe170, class_exe179, class_exe181
+
+Cluster (0,1)
+Prototypes: [class_exe29]
+Number of elements: 28
+Elements: class_exe147, class_exe6, class_exe11, class_exe16, class_exe29, class_exe84, class_exe118, class_exe123, class_exe151, class_exe152, class_exe177, class_exe22, class_exe41, class_exe46, class_exe59, class_exe75, class_exe94, class_exe97, class_exe119, class_exe9, class_exe78, class_exe85, class_exe99, class_exe107, class_exe112, class_exe135, class_exe0, class_exe58
+
+Cluster (0,2)
+Prototypes: [class_exe63]
+Number of elements: 21
+Elements: class_exe127, class_exe12, class_exe31, class_exe34, class_exe35, class_exe63, class_exe80, class_exe101, class_exe108, class_exe110, class_exe136, class_exe64, class_exe66, class_exe122, class_exe49, class_exe79, class_exe196, class_exe210, class_exe7, class_exe1, class_exe146
+
+Cluster (0,3)
+Prototypes: [class_exe128]
+Number of elements: 17
+Elements: class_exe38, class_exe42, class_exe72, class_exe73, class_exe128, class_exe137, class_exe145, class_exe150, class_exe178, class_exe190, class_exe191, class_exe197, class_exe199, class_exe200, class_exe201, class_exe208, class_exe211
+
+Cluster (1,0)
+Prototypes: [class_exe93]
+Number of elements: 12
+Elements: class_exe144, class_exe213, class_exe214, class_exe25, class_exe56, class_exe70, class_exe81, class_exe93, class_exe129, class_exe141, class_exe67, class_exe159
+
+Cluster (1,1)
+Prototypes: [class_exe139]
+Number of elements: 20
+Elements: class_exe3, class_exe45, class_exe138, class_exe139, class_exe187, class_exe10, class_exe65, class_exe89, class_exe100, class_exe113, class_exe130, class_exe32, class_exe125, class_exe5, class_exe8, class_exe15, class_exe26, class_exe37, class_exe54, class_exe103
+
+Cluster (1,2)
+Prototypes: [class_exe57]
+Number of elements: 19
+Elements: class_exe14, class_exe24, class_exe30, class_exe43, class_exe18, class_exe40, class_exe44, class_exe47, class_exe57, class_exe71, class_exe86, class_exe87, class_exe134, class_exe53, class_exe76, class_exe98, class_exe111, class_exe143, class_exe188
+
+Cluster (1,3)
+Prototypes: [class_exe2]
+Number of elements: 2
+Elements: class_exe2, class_exe156
+
+Cluster (2,0)
+Prototypes: [class_exe180]
+Number of elements: 11
+Elements: class_exe174, class_exe160, class_exe33, class_exe162, class_exe164, class_exe167, class_exe180, class_exe184, class_exe154, class_exe161, class_exe172
+
+Cluster (2,1)
+Prototypes: [class_exe163]
+Number of elements: 5
+Elements: class_exe163, class_exe157, class_exe173, class_exe175, class_exe182
+
+Cluster (2,2)
+Prototypes: [class_exe36]
+Number of elements: 21
+Elements: class_exe96, class_exe104, class_exe17, class_exe19, class_exe27, class_exe36, class_exe52, class_exe55, class_exe62, class_exe74, class_exe95, class_exe105, class_exe13, class_exe68, class_exe92, class_exe102, class_exe117, class_exe132, class_exe91, class_exe133, class_exe142
+
+Cluster (2,3)
+Prototypes: [class_exe148]
+Number of elements: 6
+Elements: class_exe4, class_exe69, class_exe88, class_exe140, class_exe148, class_exe212
+
+Cluster (3,0)
+Prototypes: [class_exe183]
+Number of elements: 4
+Elements: class_exe166, class_exe183, class_exe171, class_exe176
+
+Cluster (3,1)
+Prototypes: [class_exe158]
+Number of elements: 4
+Elements: class_exe153, class_exe158, class_exe155, class_exe169
+
+Cluster (3,2)
+Prototypes: [class_exe27]
+Number of elements: 0
+Elements
+
+Cluster (3,3)
+Prototypes: [class_exe193]
+Number of elements: 15
+Elements: class_exe202, class_exe207, class_exe186, class_exe192, class_exe193, class_exe194, class_exe195, class_exe198, class_exe204, class_exe206, class_exe209, class_exe189, class_exe203, class_exe205, class_exe185
+
+
+Critério de adequação (energia): 44.7054023454
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	1,3	2,0	2,1	2,2	2,3	3,0	3,1	3,3	Total
+
+1	25	 25	 19	 7	 9	 19	 18	 1	 1	 0	 21	 5	 0	 0	 0	 150
+3	0	 0	 2	 8	 2	 1	 1	 0	 0	 0	 0	 1	 0	 0	 15	 30
+2	5	 3	 0	 2	 1	 0	 0	 1	 10	 5	 0	 0	 4	 4	 0	 35
+Total	[30 28 21 17 12 20 19  2 11  5 21  6  4  4 15]
+
+Corrected Rand index: 0.22367771903
+F-measure(P,Q): 0.359777780302
+OERC: 0.125581395349
+Erro Topogr�fico: 0.432558139535
+
+#####################################
+Repetição do experimento: 19
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [class_exe207]
+Number of elements: 2
+Elements: class_exe194, class_exe207
+
+Cluster (0,1)
+Prototypes: [class_exe208]
+Number of elements: 11
+Elements: class_exe201, class_exe185, class_exe190, class_exe191, class_exe197, class_exe199, class_exe200, class_exe203, class_exe208, class_exe211, class_exe189
+
+Cluster (0,2)
+Prototypes: [class_exe39]
+Number of elements: 1
+Elements: class_exe39
+
+Cluster (0,3)
+Prototypes: [class_exe40]
+Number of elements: 32
+Elements: class_exe14, class_exe18, class_exe24, class_exe30, class_exe34, class_exe40, class_exe43, class_exe44, class_exe47, class_exe53, class_exe57, class_exe66, class_exe71, class_exe76, class_exe86, class_exe87, class_exe98, class_exe111, class_exe143, class_exe188, class_exe210, class_exe2, class_exe38, class_exe42, class_exe72, class_exe73, class_exe128, class_exe137, class_exe145, class_exe150, class_exe156, class_exe178
+
+Cluster (1,0)
+Prototypes: [class_exe141]
+Number of elements: 1
+Elements: class_exe141
+
+Cluster (1,1)
+Prototypes: [class_exe50]
+Number of elements: 3
+Elements: class_exe50, class_exe165, class_exe168
+
+Cluster (1,2)
+Prototypes: [class_exe52]
+Number of elements: 30
+Elements: class_exe27, class_exe134, class_exe136, class_exe1, class_exe7, class_exe12, class_exe17, class_exe19, class_exe31, class_exe35, class_exe36, class_exe52, class_exe55, class_exe62, class_exe63, class_exe64, class_exe68, class_exe74, class_exe79, class_exe95, class_exe96, class_exe101, class_exe102, class_exe104, class_exe105, class_exe108, class_exe122, class_exe127, class_exe132, class_exe146
+
+Cluster (1,3)
+Prototypes: [class_exe97]
+Number of elements: 41
+Elements: class_exe3, class_exe13, class_exe15, class_exe16, class_exe41, class_exe45, class_exe75, class_exe84, class_exe89, class_exe91, class_exe97, class_exe100, class_exe112, class_exe113, class_exe117, class_exe130, class_exe138, class_exe139, class_exe142, class_exe187, class_exe0, class_exe6, class_exe9, class_exe11, class_exe22, class_exe29, class_exe32, class_exe46, class_exe59, class_exe65, class_exe78, class_exe85, class_exe92, class_exe94, class_exe99, class_exe118, class_exe119, class_exe123, class_exe133, class_exe135, class_exe147
+
+Cluster (2,0)
+Prototypes: [class_exe192]
+Number of elements: 5
+Elements: class_exe195, class_exe192, class_exe198, class_exe186, class_exe209
+
+Cluster (2,1)
+Prototypes: [class_exe151]
+Number of elements: 8
+Elements: class_exe157, class_exe151, class_exe152, class_exe80, class_exe107, class_exe110, class_exe163, class_exe177
+
+Cluster (2,2)
+Prototypes: [class_exe83]
+Number of elements: 5
+Elements: class_exe67, class_exe83, class_exe159, class_exe48, class_exe121
+
+Cluster (2,3)
+Prototypes: [class_exe82]
+Number of elements: 40
+Elements: class_exe4, class_exe21, class_exe28, class_exe60, class_exe69, class_exe82, class_exe88, class_exe106, class_exe114, class_exe115, class_exe120, class_exe131, class_exe140, class_exe148, class_exe179, class_exe212, class_exe5, class_exe51, class_exe90, class_exe103, class_exe20, class_exe23, class_exe61, class_exe77, class_exe109, class_exe116, class_exe124, class_exe126, class_exe149, class_exe182, class_exe214, class_exe25, class_exe129, class_exe8, class_exe10, class_exe26, class_exe37, class_exe58, class_exe125, class_exe54
+
+Cluster (3,0)
+Prototypes: [class_exe204]
+Number of elements: 7
+Elements: class_exe202, class_exe49, class_exe196, class_exe204, class_exe205, class_exe193, class_exe206
+
+Cluster (3,1)
+Prototypes: [class_exe181]
+Number of elements: 6
+Elements: class_exe170, class_exe173, class_exe175, class_exe181, class_exe174, class_exe160
+
+Cluster (3,2)
+Prototypes: [class_exe144]
+Number of elements: 9
+Elements: class_exe93, class_exe213, class_exe70, class_exe144, class_exe33, class_exe56, class_exe81, class_exe184, class_exe162
+
+Cluster (3,3)
+Prototypes: [class_exe183]
+Number of elements: 14
+Elements: class_exe153, class_exe155, class_exe158, class_exe166, class_exe169, class_exe171, class_exe172, class_exe176, class_exe183, class_exe154, class_exe161, class_exe180, class_exe164, class_exe167
+
+
+Critério de adequação (energia): 31.334924618
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	1,3	2,0	2,1	2,2	2,3	3,0	3,1	3,2	3,3	Total
+
+1	0	 0	 1	 27	 1	 1	 30	 40	 0	 3	 4	 36	 1	 0	 6	 0	 150
+3	2	 11	 0	 2	 0	 0	 0	 1	 5	 0	 0	 2	 6	 0	 1	 0	 30
+2	0	 0	 0	 3	 0	 2	 0	 0	 0	 5	 1	 2	 0	 6	 2	 14	 35
+Total	[ 2 11  1 32  1  3 30 41  5  8  5 40  7  6  9 14]
+
+Corrected Rand index: 0.323204047792
+F-measure(P,Q): 0.460115284216
+OERC: 0.0883720930233
+Erro Topogr�fico: 0.339534883721
+
+#####################################
+Repetição do experimento: 20
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [class_exe164]
+Number of elements: 11
+Elements: class_exe160, class_exe164, class_exe174, class_exe180, class_exe154, class_exe161, class_exe166, class_exe167, class_exe171, class_exe172, class_exe183
+
+Cluster (0,1)
+Prototypes: [class_exe121]
+Number of elements: 13
+Elements: class_exe39, class_exe48, class_exe50, class_exe165, class_exe168, class_exe173, class_exe67, class_exe83, class_exe121, class_exe159, class_exe170, class_exe181, class_exe141
+
+Cluster (0,2)
+Prototypes: [class_exe56]
+Number of elements: 9
+Elements: class_exe33, class_exe56, class_exe81, class_exe184, class_exe70, class_exe93, class_exe144, class_exe162, class_exe213
+
+Cluster (0,3)
+Prototypes: [class_exe193]
+Number of elements: 11
+Elements: class_exe207, class_exe194, class_exe206, class_exe193, class_exe186, class_exe192, class_exe195, class_exe198, class_exe209, class_exe204, class_exe205
+
+Cluster (1,0)
+Prototypes: [class_exe115]
+Number of elements: 41
+Elements: class_exe45, class_exe0, class_exe4, class_exe5, class_exe8, class_exe9, class_exe26, class_exe37, class_exe54, class_exe58, class_exe65, class_exe69, class_exe85, class_exe88, class_exe90, class_exe103, class_exe115, class_exe125, class_exe148, class_exe20, class_exe21, class_exe23, class_exe25, class_exe28, class_exe51, class_exe60, class_exe61, class_exe77, class_exe82, class_exe106, class_exe109, class_exe114, class_exe116, class_exe120, class_exe124, class_exe126, class_exe129, class_exe131, class_exe149, class_exe179, class_exe214
+
+Cluster (1,1)
+Prototypes: [class_exe97]
+Number of elements: 29
+Elements: class_exe16, class_exe41, class_exe91, class_exe97, class_exe130, class_exe142, class_exe15, class_exe22, class_exe75, class_exe89, class_exe112, class_exe113, class_exe135, class_exe13, class_exe32, class_exe46, class_exe59, class_exe78, class_exe84, class_exe100, class_exe117, class_exe118, class_exe138, class_exe139, class_exe6, class_exe29, class_exe99, class_exe119, class_exe123
+
+Cluster (1,2)
+Prototypes: [class_exe133]
+Number of elements: 8
+Elements: class_exe74, class_exe92, class_exe94, class_exe96, class_exe104, class_exe105, class_exe133, class_exe177
+
+Cluster (1,3)
+Prototypes: [class_exe185]
+Number of elements: 8
+Elements: class_exe189, class_exe208, class_exe185, class_exe197, class_exe203, class_exe191, class_exe199, class_exe200
+
+Cluster (2,0)
+Prototypes: [class_exe10]
+Number of elements: 5
+Elements: class_exe10, class_exe140, class_exe187, class_exe3, class_exe212
+
+Cluster (2,1)
+Prototypes: [class_exe72]
+Number of elements: 12
+Elements: class_exe38, class_exe72, class_exe128, class_exe150, class_exe156, class_exe178, class_exe201, class_exe211, class_exe42, class_exe190, class_exe137, class_exe2
+
+Cluster (2,2)
+Prototypes: [class_exe47]
+Number of elements: 2
+Elements: class_exe47, class_exe134
+
+Cluster (2,3)
+Prototypes: [class_exe158]
+Number of elements: 5
+Elements: class_exe153, class_exe176, class_exe155, class_exe158, class_exe169
+
+Cluster (3,0)
+Prototypes: [class_exe79]
+Number of elements: 13
+Elements: class_exe49, class_exe64, class_exe79, class_exe98, class_exe122, class_exe136, class_exe188, class_exe196, class_exe210, class_exe12, class_exe17, class_exe146, class_exe202
+
+Cluster (3,1)
+Prototypes: [class_exe57]
+Number of elements: 20
+Elements: class_exe14, class_exe18, class_exe24, class_exe30, class_exe34, class_exe35, class_exe40, class_exe43, class_exe57, class_exe66, class_exe71, class_exe73, class_exe76, class_exe86, class_exe87, class_exe111, class_exe143, class_exe145, class_exe44, class_exe53
+
+Cluster (3,2)
+Prototypes: [class_exe68]
+Number of elements: 23
+Elements: class_exe151, class_exe152, class_exe80, class_exe110, class_exe1, class_exe55, class_exe68, class_exe102, class_exe7, class_exe11, class_exe27, class_exe31, class_exe36, class_exe52, class_exe62, class_exe63, class_exe95, class_exe101, class_exe108, class_exe127, class_exe132, class_exe147, class_exe19
+
+Cluster (3,3)
+Prototypes: [class_exe163]
+Number of elements: 5
+Elements: class_exe157, class_exe163, class_exe175, class_exe107, class_exe182
+
+
+Critério de adequação (energia): 40.3016016817
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	1,3	2,0	2,1	2,2	2,3	3,0	3,1	3,2	3,3	Total
+
+1	0	 7	 6	 0	 39	 29	 7	 0	 3	 6	 2	 0	 9	 20	 21	 1	 150
+3	0	 0	 1	 11	 1	 0	 0	 8	 2	 3	 0	 0	 4	 0	 0	 0	 30
+2	11	 6	 2	 0	 1	 0	 1	 0	 0	 3	 0	 5	 0	 0	 2	 4	 35
+Total	[11 13  9 11 41 29  8  8  5 12  2  5 13 20 23  5]
+
+Corrected Rand index: 0.257240556593
+F-measure(P,Q): 0.437642957735
+OERC: 0.125581395349
+Erro Topogr�fico: 0.376744186047
+
+#####################################
+Repetição do experimento: 21
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [class_exe159]
+Number of elements: 32
+Elements: class_exe33, class_exe39, class_exe48, class_exe50, class_exe56, class_exe67, class_exe70, class_exe81, class_exe83, class_exe93, class_exe121, class_exe141, class_exe144, class_exe159, class_exe160, class_exe161, class_exe162, class_exe164, class_exe165, class_exe167, class_exe168, class_exe170, class_exe172, class_exe173, class_exe174, class_exe175, class_exe180, class_exe181, class_exe184, class_exe213, class_exe154, class_exe171
+
+Cluster (0,1)
+Prototypes: [class_exe78]
+Number of elements: 22
+Elements: class_exe6, class_exe9, class_exe11, class_exe15, class_exe22, class_exe29, class_exe41, class_exe46, class_exe59, class_exe75, class_exe78, class_exe85, class_exe94, class_exe99, class_exe100, class_exe107, class_exe112, class_exe135, class_exe147, class_exe151, class_exe157, class_exe177
+
+Cluster (0,2)
+Prototypes: [class_exe150]
+Number of elements: 3
+Elements: class_exe150, class_exe156, class_exe178
+
+Cluster (0,3)
+Prototypes: [class_exe1]
+Number of elements: 6
+Elements: class_exe1, class_exe119, class_exe7, class_exe32, class_exe68, class_exe102
+
+Cluster (1,0)
+Prototypes: [class_exe26]
+Number of elements: 37
+Elements: class_exe0, class_exe45, class_exe8, class_exe26, class_exe37, class_exe54, class_exe58, class_exe65, class_exe125, class_exe4, class_exe5, class_exe21, class_exe28, class_exe51, class_exe60, class_exe69, class_exe82, class_exe88, class_exe90, class_exe103, class_exe106, class_exe114, class_exe115, class_exe120, class_exe148, class_exe163, class_exe179, class_exe182, class_exe212, class_exe214, class_exe23, class_exe126, class_exe131, class_exe139, class_exe140, class_exe10, class_exe138
+
+Cluster (1,1)
+Prototypes: [class_exe142]
+Number of elements: 26
+Elements: class_exe3, class_exe91, class_exe130, class_exe187, class_exe13, class_exe16, class_exe17, class_exe19, class_exe52, class_exe74, class_exe84, class_exe89, class_exe104, class_exe105, class_exe113, class_exe117, class_exe132, class_exe142, class_exe146, class_exe36, class_exe92, class_exe95, class_exe97, class_exe118, class_exe123, class_exe133
+
+Cluster (1,2)
+Prototypes: [class_exe114]
+Number of elements: 9
+Elements: class_exe20, class_exe25, class_exe61, class_exe77, class_exe109, class_exe116, class_exe124, class_exe129, class_exe149
+
+Cluster (1,3)
+Prototypes: [class_exe211]
+Number of elements: 3
+Elements: class_exe190, class_exe201, class_exe211
+
+Cluster (2,0)
+Prototypes: [class_exe111]
+Number of elements: 35
+Elements: class_exe14, class_exe18, class_exe24, class_exe30, class_exe40, class_exe43, class_exe44, class_exe47, class_exe53, class_exe57, class_exe66, class_exe71, class_exe76, class_exe86, class_exe87, class_exe111, class_exe27, class_exe31, class_exe34, class_exe35, class_exe63, class_exe108, class_exe143, class_exe101, class_exe110, class_exe127, class_exe62, class_exe80, class_exe12, class_exe55, class_exe96, class_exe122, class_exe134, class_exe136, class_exe152
+
+Cluster (2,1)
+Prototypes: [class_exe79]
+Number of elements: 6
+Elements: class_exe188, class_exe49, class_exe64, class_exe79, class_exe98, class_exe210
+
+Cluster (2,2)
+Prototypes: [class_exe202]
+Number of elements: 4
+Elements: class_exe202, class_exe204, class_exe196, class_exe205
+
+Cluster (2,3)
+Prototypes: [class_exe158]
+Number of elements: 7
+Elements: class_exe153, class_exe155, class_exe158, class_exe166, class_exe176, class_exe169, class_exe183
+
+Cluster (3,0)
+Prototypes: [class_exe199]
+Number of elements: 6
+Elements: class_exe208, class_exe185, class_exe200, class_exe191, class_exe197, class_exe199
+
+Cluster (3,1)
+Prototypes: [class_exe38]
+Number of elements: 8
+Elements: class_exe38, class_exe42, class_exe73, class_exe128, class_exe137, class_exe2, class_exe72, class_exe145
+
+Cluster (3,2)
+Prototypes: [class_exe206]
+Number of elements: 6
+Elements: class_exe193, class_exe206, class_exe194, class_exe207, class_exe203, class_exe189
+
+Cluster (3,3)
+Prototypes: [class_exe192]
+Number of elements: 5
+Elements: class_exe192, class_exe195, class_exe198, class_exe186, class_exe209
+
+
+Critério de adequação (energia): 32.5372487006
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	1,3	2,0	2,1	2,2	2,3	3,0	3,1	3,2	3,3	Total
+
+1	13	 19	 0	 6	 32	 25	 9	 0	 34	 4	 0	 0	 0	 8	 0	 0	 150
+3	1	 0	 0	 0	 2	 1	 0	 3	 0	 2	 4	 0	 6	 0	 6	 5	 30
+2	18	 3	 3	 0	 3	 0	 0	 0	 1	 0	 0	 7	 0	 0	 0	 0	 35
+Total	[32 22  3  6 37 26  9  3 35  6  4  7  6  8  6  5]
+
+Corrected Rand index: 0.262172280276
+F-measure(P,Q): 0.390423745509
+OERC: 0.120930232558
+Erro Topogr�fico: 0.506976744186
+
+#####################################
+Repetição do experimento: 22
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [class_exe39]
+Number of elements: 23
+Elements: class_exe165, class_exe168, class_exe20, class_exe39, class_exe48, class_exe50, class_exe67, class_exe77, class_exe83, class_exe93, class_exe109, class_exe116, class_exe121, class_exe141, class_exe175, class_exe70, class_exe144, class_exe159, class_exe170, class_exe173, class_exe181, class_exe56, class_exe81
+
+Cluster (0,1)
+Prototypes: [class_exe69]
+Number of elements: 12
+Elements: class_exe10, class_exe65, class_exe69, class_exe103, class_exe140, class_exe212, class_exe5, class_exe25, class_exe124, class_exe148, class_exe149, class_exe187
+
+Cluster (0,2)
+Prototypes: [class_exe95]
+Number of elements: 18
+Elements: class_exe55, class_exe95, class_exe96, class_exe104, class_exe17, class_exe19, class_exe27, class_exe31, class_exe36, class_exe52, class_exe62, class_exe68, class_exe74, class_exe91, class_exe101, class_exe102, class_exe105, class_exe132
+
+Cluster (0,3)
+Prototypes: [class_exe158]
+Number of elements: 5
+Elements: class_exe153, class_exe155, class_exe158, class_exe169, class_exe176
+
+Cluster (1,0)
+Prototypes: [class_exe75]
+Number of elements: 37
+Elements: class_exe0, class_exe3, class_exe15, class_exe22, class_exe45, class_exe46, class_exe75, class_exe78, class_exe89, class_exe94, class_exe99, class_exe100, class_exe112, class_exe135, class_exe138, class_exe139, class_exe6, class_exe11, class_exe13, class_exe16, class_exe29, class_exe32, class_exe41, class_exe54, class_exe59, class_exe84, class_exe92, class_exe97, class_exe113, class_exe117, class_exe118, class_exe123, class_exe125, class_exe130, class_exe133, class_exe142, class_exe147
+
+Cluster (1,1)
+Prototypes: [class_exe214]
+Number of elements: 3
+Elements: class_exe213, class_exe129, class_exe214
+
+Cluster (1,2)
+Prototypes: [class_exe60]
+Number of elements: 7
+Elements: class_exe23, class_exe60, class_exe61, class_exe82, class_exe90, class_exe120, class_exe126
+
+Cluster (1,3)
+Prototypes: [class_exe180]
+Number of elements: 14
+Elements: class_exe160, class_exe162, class_exe33, class_exe154, class_exe161, class_exe164, class_exe167, class_exe172, class_exe174, class_exe180, class_exe184, class_exe171, class_exe166, class_exe183
+
+Cluster (2,0)
+Prototypes: [class_exe37]
+Number of elements: 1
+Elements: class_exe4
+
+Cluster (2,1)
+Prototypes: [class_exe208]
+Number of elements: 14
+Elements: class_exe189, class_exe191, class_exe197, class_exe200, class_exe185, class_exe190, class_exe199, class_exe201, class_exe203, class_exe208, class_exe211, class_exe194, class_exe206, class_exe207
+
+Cluster (2,2)
+Prototypes: [class_exe196]
+Number of elements: 5
+Elements: class_exe196, class_exe202, class_exe49, class_exe210, class_exe204
+
+Cluster (2,3)
+Prototypes: [class_exe28]
+Number of elements: 17
+Elements: class_exe8, class_exe28, class_exe88, class_exe106, class_exe114, class_exe179, class_exe182, class_exe9, class_exe21, class_exe26, class_exe37, class_exe51, class_exe58, class_exe85, class_exe107, class_exe115, class_exe131
+
+Cluster (3,0)
+Prototypes: [class_exe186]
+Number of elements: 7
+Elements: class_exe186, class_exe193, class_exe195, class_exe198, class_exe205, class_exe192, class_exe209
+
+Cluster (3,1)
+Prototypes: [class_exe7]
+Number of elements: 11
+Elements: class_exe1, class_exe7, class_exe119, class_exe146, class_exe12, class_exe63, class_exe64, class_exe79, class_exe108, class_exe127, class_exe136
+
+Cluster (3,2)
+Prototypes: [class_exe151]
+Number of elements: 7
+Elements: class_exe157, class_exe163, class_exe80, class_exe110, class_exe151, class_exe152, class_exe177
+
+Cluster (3,3)
+Prototypes: [class_exe40]
+Number of elements: 34
+Elements: class_exe18, class_exe30, class_exe34, class_exe35, class_exe43, class_exe53, class_exe57, class_exe66, class_exe71, class_exe76, class_exe86, class_exe111, class_exe122, class_exe134, class_exe143, class_exe2, class_exe14, class_exe24, class_exe40, class_exe42, class_exe44, class_exe47, class_exe73, class_exe87, class_exe98, class_exe145, class_exe156, class_exe188, class_exe38, class_exe72, class_exe128, class_exe137, class_exe150, class_exe178
+
+
+Critério de adequação (energia): 39.5156580423
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	1,3	2,0	2,1	2,2	2,3	3,0	3,1	3,2	3,3	Total
+
+1	16	 10	 18	 0	 37	 1	 7	 1	 1	 0	 1	 15	 0	 11	 2	 30	 150
+3	0	 2	 0	 0	 0	 2	 0	 0	 0	 14	 4	 0	 7	 0	 0	 1	 30
+2	7	 0	 0	 5	 0	 0	 0	 13	 0	 0	 0	 2	 0	 0	 5	 3	 35
+Total	[23 12 18  5 37  3  7 14  1 14  5 17  7 11  7 34]
+
+Corrected Rand index: 0.256770865097
+F-measure(P,Q): 0.451258727593
+OERC: 0.093023255814
+Erro Topogr�fico: 0.73023255814
+
+#####################################
+Repetição do experimento: 23
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [class_exe206]
+Number of elements: 9
+Elements: class_exe194, class_exe205, class_exe206, class_exe193, class_exe203, class_exe207, class_exe189, class_exe185, class_exe208
+
+Cluster (0,1)
+Prototypes: [class_exe11]
+Number of elements: 0
+Elements
+
+Cluster (0,2)
+Prototypes: [class_exe17]
+Number of elements: 20
+Elements: class_exe91, class_exe130, class_exe17, class_exe19, class_exe117, class_exe122, class_exe134, class_exe136, class_exe142, class_exe146, class_exe13, class_exe16, class_exe64, class_exe79, class_exe84, class_exe98, class_exe118, class_exe123, class_exe132, class_exe188
+
+Cluster (0,3)
+Prototypes: [class_exe128]
+Number of elements: 18
+Elements: class_exe201, class_exe211, class_exe199, class_exe200, class_exe178, class_exe191, class_exe150, class_exe72, class_exe128, class_exe137, class_exe38, class_exe42, class_exe73, class_exe145, class_exe156, class_exe190, class_exe2, class_exe44
+
+Cluster (1,0)
+Prototypes: [class_exe192]
+Number of elements: 4
+Elements: class_exe209, class_exe186, class_exe192, class_exe198
+
+Cluster (1,1)
+Prototypes: [class_exe195]
+Number of elements: 1
+Elements: class_exe195
+
+Cluster (1,2)
+Prototypes: [class_exe50]
+Number of elements: 5
+Elements: class_exe48, class_exe50, class_exe165, class_exe168, class_exe175
+
+Cluster (1,3)
+Prototypes: [class_exe210]
+Number of elements: 6
+Elements: class_exe49, class_exe210, class_exe196, class_exe202, class_exe197, class_exe204
+
+Cluster (2,0)
+Prototypes: [class_exe32]
+Number of elements: 6
+Elements: class_exe32, class_exe15, class_exe59, class_exe113, class_exe119, class_exe135
+
+Cluster (2,1)
+Prototypes: [class_exe164]
+Number of elements: 6
+Elements: class_exe154, class_exe161, class_exe164, class_exe167, class_exe174, class_exe180
+
+Cluster (2,2)
+Prototypes: [class_exe124]
+Number of elements: 19
+Elements: class_exe25, class_exe61, class_exe77, class_exe124, class_exe20, class_exe23, class_exe60, class_exe69, class_exe93, class_exe116, class_exe126, class_exe129, class_exe141, class_exe149, class_exe212, class_exe213, class_exe214, class_exe5, class_exe39
+
+Cluster (2,3)
+Prototypes: [class_exe159]
+Number of elements: 15
+Elements: class_exe70, class_exe83, class_exe121, class_exe170, class_exe173, class_exe181, class_exe33, class_exe56, class_exe81, class_exe159, class_exe184, class_exe67, class_exe144, class_exe160, class_exe162
+
+Cluster (3,0)
+Prototypes: [class_exe62]
+Number of elements: 42
+Elements: class_exe1, class_exe7, class_exe12, class_exe18, class_exe27, class_exe31, class_exe34, class_exe35, class_exe62, class_exe63, class_exe66, class_exe76, class_exe80, class_exe86, class_exe101, class_exe108, class_exe110, class_exe111, class_exe127, class_exe143, class_exe36, class_exe52, class_exe53, class_exe55, class_exe68, class_exe71, class_exe74, class_exe92, class_exe95, class_exe96, class_exe102, class_exe104, class_exe105, class_exe133, class_exe24, class_exe30, class_exe43, class_exe57, class_exe40, class_exe14, class_exe87, class_exe47
+
+Cluster (3,1)
+Prototypes: [class_exe94]
+Number of elements: 22
+Elements: class_exe94, class_exe157, class_exe177, class_exe6, class_exe9, class_exe11, class_exe22, class_exe29, class_exe41, class_exe46, class_exe75, class_exe78, class_exe85, class_exe97, class_exe99, class_exe107, class_exe112, class_exe151, class_exe152, class_exe163, class_exe182, class_exe147
+
+Cluster (3,2)
+Prototypes: [class_exe115]
+Number of elements: 33
+Elements: class_exe0, class_exe3, class_exe4, class_exe8, class_exe10, class_exe26, class_exe37, class_exe45, class_exe54, class_exe58, class_exe65, class_exe89, class_exe90, class_exe100, class_exe103, class_exe115, class_exe125, class_exe138, class_exe139, class_exe140, class_exe187, class_exe21, class_exe28, class_exe82, class_exe88, class_exe106, class_exe114, class_exe120, class_exe131, class_exe148, class_exe179, class_exe51, class_exe109
+
+Cluster (3,3)
+Prototypes: [class_exe183]
+Number of elements: 9
+Elements: class_exe166, class_exe169, class_exe171, class_exe172, class_exe176, class_exe183, class_exe153, class_exe155, class_exe158
+
+
+Critério de adequação (energia): 34.7721275937
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,2	0,3	1,0	1,1	1,2	1,3	2,0	2,1	2,2	2,3	3,0	3,1	3,2	3,3	Total
+
+1	0	 19	 9	 0	 0	 2	 1	 6	 0	 16	 8	 42	 16	 31	 0	 150
+3	9	 1	 6	 4	 1	 0	 5	 0	 0	 3	 0	 0	 0	 1	 0	 30
+2	0	 0	 3	 0	 0	 3	 0	 0	 6	 0	 7	 0	 6	 1	 9	 35
+Total	[ 9 20 18  4  1  5  6  6  6 19 15 42 22 33  9]
+
+Corrected Rand index: 0.271660831219
+F-measure(P,Q): 0.436229468206
+OERC: 0.144186046512
+Erro Topogr�fico: 0.520930232558
+
+#####################################
+Repetição do experimento: 24
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [class_exe24]
+Number of elements: 4
+Elements: class_exe14, class_exe24, class_exe43, class_exe87
+
+Cluster (0,1)
+Prototypes: [class_exe54]
+Number of elements: 5
+Elements: class_exe0, class_exe45, class_exe54, class_exe90, class_exe125
+
+Cluster (0,2)
+Prototypes: [class_exe128]
+Number of elements: 19
+Elements: class_exe2, class_exe38, class_exe42, class_exe72, class_exe73, class_exe128, class_exe137, class_exe145, class_exe150, class_exe156, class_exe178, class_exe190, class_exe191, class_exe197, class_exe199, class_exe200, class_exe201, class_exe211, class_exe208
+
+Cluster (0,3)
+Prototypes: [class_exe193]
+Number of elements: 14
+Elements: class_exe195, class_exe203, class_exe185, class_exe186, class_exe198, class_exe204, class_exe205, class_exe206, class_exe189, class_exe192, class_exe193, class_exe209, class_exe194, class_exe207
+
+Cluster (1,0)
+Prototypes: [class_exe158]
+Number of elements: 5
+Elements: class_exe153, class_exe155, class_exe158, class_exe169, class_exe176
+
+Cluster (1,1)
+Prototypes: [class_exe214]
+Number of elements: 5
+Elements: class_exe213, class_exe214, class_exe25, class_exe129, class_exe212
+
+Cluster (1,2)
+Prototypes: [class_exe142]
+Number of elements: 11
+Elements: class_exe130, class_exe3, class_exe13, class_exe17, class_exe19, class_exe74, class_exe91, class_exe117, class_exe132, class_exe142, class_exe146
+
+Cluster (1,3)
+Prototypes: [class_exe66]
+Number of elements: 24
+Elements: class_exe18, class_exe34, class_exe53, class_exe64, class_exe66, class_exe76, class_exe79, class_exe86, class_exe111, class_exe122, class_exe143, class_exe30, class_exe47, class_exe57, class_exe71, class_exe40, class_exe98, class_exe44, class_exe49, class_exe188, class_exe210, class_exe12, class_exe108, class_exe134
+
+Cluster (2,0)
+Prototypes: [class_exe55]
+Number of elements: 1
+Elements: class_exe152
+
+Cluster (2,1)
+Prototypes: [class_exe62]
+Number of elements: 20
+Elements: class_exe7, class_exe27, class_exe31, class_exe35, class_exe36, class_exe52, class_exe55, class_exe62, class_exe63, class_exe68, class_exe80, class_exe95, class_exe96, class_exe101, class_exe104, class_exe105, class_exe110, class_exe127, class_exe136, class_exe102
+
+Cluster (2,2)
+Prototypes: [class_exe65]
+Number of elements: 11
+Elements: class_exe5, class_exe69, class_exe103, class_exe10, class_exe60, class_exe65, class_exe187, class_exe138, class_exe139, class_exe140, class_exe148
+
+Cluster (2,3)
+Prototypes: [class_exe29]
+Number of elements: 26
+Elements: class_exe6, class_exe11, class_exe16, class_exe29, class_exe59, class_exe92, class_exe94, class_exe97, class_exe118, class_exe123, class_exe147, class_exe151, class_exe157, class_exe177, class_exe46, class_exe135, class_exe15, class_exe41, class_exe75, class_exe78, class_exe89, class_exe100, class_exe112, class_exe133, class_exe22, class_exe99
+
+Cluster (3,0)
+Prototypes: [class_exe172]
+Number of elements: 12
+Elements: class_exe166, class_exe183, class_exe171, class_exe154, class_exe161, class_exe172, class_exe164, class_exe167, class_exe180, class_exe160, class_exe162, class_exe174
+
+Cluster (3,1)
+Prototypes: [class_exe32]
+Number of elements: 7
+Elements: class_exe32, class_exe119, class_exe1, class_exe84, class_exe113, class_exe196, class_exe202
+
+Cluster (3,2)
+Prototypes: [class_exe28]
+Number of elements: 21
+Elements: class_exe4, class_exe37, class_exe8, class_exe26, class_exe58, class_exe88, class_exe115, class_exe182, class_exe28, class_exe106, class_exe114, class_exe120, class_exe179, class_exe21, class_exe82, class_exe85, class_exe107, class_exe131, class_exe163, class_exe9, class_exe51
+
+Cluster (3,3)
+Prototypes: [class_exe39]
+Number of elements: 30
+Elements: class_exe20, class_exe23, class_exe39, class_exe48, class_exe50, class_exe61, class_exe67, class_exe70, class_exe77, class_exe83, class_exe93, class_exe109, class_exe116, class_exe121, class_exe124, class_exe126, class_exe141, class_exe149, class_exe165, class_exe168, class_exe170, class_exe173, class_exe175, class_exe181, class_exe33, class_exe56, class_exe81, class_exe144, class_exe159, class_exe184
+
+
+Critério de adequação (energia): 46.5952586678
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	1,3	2,0	2,1	2,2	2,3	3,0	3,1	3,2	3,3	Total
+
+1	4	 5	 8	 0	 0	 2	 11	 22	 0	 20	 10	 23	 0	 5	 18	 22	 150
+3	0	 0	 8	 14	 0	 3	 0	 2	 0	 0	 1	 0	 0	 2	 0	 0	 30
+2	0	 0	 3	 0	 5	 0	 0	 0	 1	 0	 0	 3	 12	 0	 3	 8	 35
+Total	[ 4  5 19 14  5  5 11 24  1 20 11 26 12  7 21 30]
+
+Corrected Rand index: 0.205149966815
+F-measure(P,Q): 0.354268813819
+OERC: 0.148837209302
+Erro Topogr�fico: 0.660465116279
+
+#####################################
+Repetição do experimento: 25
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [class_exe126]
+Number of elements: 32
+Elements: class_exe103, class_exe212, class_exe214, class_exe69, class_exe25, class_exe124, class_exe129, class_exe148, class_exe149, class_exe20, class_exe23, class_exe60, class_exe61, class_exe77, class_exe82, class_exe88, class_exe90, class_exe115, class_exe116, class_exe120, class_exe126, class_exe141, class_exe21, class_exe39, class_exe48, class_exe51, class_exe109, class_exe114, class_exe131, class_exe28, class_exe106, class_exe179
+
+Cluster (0,1)
+Prototypes: [class_exe144]
+Number of elements: 9
+Elements: class_exe33, class_exe56, class_exe81, class_exe70, class_exe144, class_exe184, class_exe213, class_exe67, class_exe93
+
+Cluster (0,2)
+Prototypes: [class_exe199]
+Number of elements: 11
+Elements: class_exe190, class_exe191, class_exe197, class_exe199, class_exe200, class_exe201, class_exe208, class_exe185, class_exe211, class_exe203, class_exe189
+
+Cluster (0,3)
+Prototypes: [class_exe193]
+Number of elements: 10
+Elements: class_exe194, class_exe186, class_exe192, class_exe193, class_exe195, class_exe198, class_exe205, class_exe206, class_exe207, class_exe209
+
+Cluster (1,0)
+Prototypes: [class_exe168]
+Number of elements: 11
+Elements: class_exe163, class_exe165, class_exe168, class_exe170, class_exe173, class_exe175, class_exe181, class_exe50, class_exe121, class_exe159, class_exe83
+
+Cluster (1,1)
+Prototypes: [class_exe138]
+Number of elements: 16
+Elements: class_exe3, class_exe130, class_exe138, class_exe187, class_exe8, class_exe10, class_exe37, class_exe45, class_exe65, class_exe89, class_exe125, class_exe139, class_exe140, class_exe4, class_exe26, class_exe54
+
+Cluster (1,2)
+Prototypes: [class_exe196]
+Number of elements: 5
+Elements: class_exe202, class_exe49, class_exe196, class_exe210, class_exe204
+
+Cluster (1,3)
+Prototypes: [class_exe142]
+Number of elements: 15
+Elements: class_exe91, class_exe142, class_exe13, class_exe17, class_exe19, class_exe36, class_exe52, class_exe74, class_exe84, class_exe95, class_exe104, class_exe105, class_exe117, class_exe132, class_exe146
+
+Cluster (2,0)
+Prototypes: [class_exe29]
+Number of elements: 36
+Elements: class_exe6, class_exe11, class_exe15, class_exe29, class_exe46, class_exe59, class_exe75, class_exe94, class_exe97, class_exe118, class_exe123, class_exe135, class_exe147, class_exe0, class_exe9, class_exe16, class_exe22, class_exe41, class_exe78, class_exe85, class_exe92, class_exe99, class_exe100, class_exe107, class_exe112, class_exe133, class_exe151, class_exe157, class_exe177, class_exe58, class_exe68, class_exe102, class_exe152, class_exe182, class_exe55, class_exe96
+
+Cluster (2,1)
+Prototypes: [class_exe32]
+Number of elements: 5
+Elements: class_exe32, class_exe119, class_exe1, class_exe5, class_exe113
+
+Cluster (2,2)
+Prototypes: [class_exe166]
+Number of elements: 3
+Elements: class_exe166, class_exe176, class_exe183
+
+Cluster (2,3)
+Prototypes: [class_exe117]
+Number of elements: 0
+Elements
+
+Cluster (3,0)
+Prototypes: [class_exe111]
+Number of elements: 37
+Elements: class_exe110, class_exe80, class_exe7, class_exe12, class_exe18, class_exe27, class_exe31, class_exe34, class_exe35, class_exe57, class_exe62, class_exe63, class_exe64, class_exe66, class_exe71, class_exe76, class_exe86, class_exe101, class_exe108, class_exe111, class_exe122, class_exe127, class_exe134, class_exe136, class_exe143, class_exe14, class_exe24, class_exe30, class_exe40, class_exe44, class_exe47, class_exe53, class_exe79, class_exe87, class_exe98, class_exe188, class_exe43
+
+Cluster (3,1)
+Prototypes: [class_exe42]
+Number of elements: 11
+Elements: class_exe2, class_exe38, class_exe42, class_exe128, class_exe156, class_exe72, class_exe73, class_exe137, class_exe145, class_exe150, class_exe178
+
+Cluster (3,2)
+Prototypes: [class_exe164]
+Number of elements: 10
+Elements: class_exe160, class_exe154, class_exe161, class_exe162, class_exe164, class_exe167, class_exe180, class_exe174, class_exe171, class_exe172
+
+Cluster (3,3)
+Prototypes: [class_exe158]
+Number of elements: 4
+Elements: class_exe153, class_exe155, class_exe158, class_exe169
+
+
+Critério de adequação (energia): 38.6473027227
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	1,3	2,0	2,1	2,2	3,0	3,1	3,2	3,3	Total
+
+1	29	 7	 0	 0	 3	 15	 1	 15	 31	 5	 0	 36	 8	 0	 0	 150
+3	2	 1	 11	 10	 0	 1	 4	 0	 0	 0	 0	 1	 0	 0	 0	 30
+2	1	 1	 0	 0	 8	 0	 0	 0	 5	 0	 3	 0	 3	 10	 4	 35
+Total	[32  9 11 10 11 16  5 15 36  5  3 37 11 10  4]
+
+Corrected Rand index: 0.271627007061
+F-measure(P,Q): 0.415847103378
+OERC: 0.0883720930233
+Erro Topogr�fico: 0.283720930233
+
+#####################################
+Repetição do experimento: 26
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [class_exe158]
+Number of elements: 5
+Elements: class_exe153, class_exe155, class_exe158, class_exe169, class_exe176
+
+Cluster (0,1)
+Prototypes: [class_exe200]
+Number of elements: 2
+Elements: class_exe200, class_exe208
+
+Cluster (0,2)
+Prototypes: [class_exe14]
+Number of elements: 29
+Elements: class_exe2, class_exe38, class_exe42, class_exe73, class_exe128, class_exe137, class_exe145, class_exe156, class_exe14, class_exe18, class_exe24, class_exe30, class_exe40, class_exe43, class_exe44, class_exe47, class_exe53, class_exe57, class_exe71, class_exe76, class_exe86, class_exe87, class_exe98, class_exe188, class_exe66, class_exe111, class_exe134, class_exe143, class_exe34
+
+Cluster (0,3)
+Prototypes: [class_exe132]
+Number of elements: 52
+Elements: class_exe1, class_exe6, class_exe7, class_exe11, class_exe12, class_exe13, class_exe16, class_exe17, class_exe19, class_exe27, class_exe29, class_exe31, class_exe32, class_exe36, class_exe46, class_exe49, class_exe52, class_exe55, class_exe59, class_exe62, class_exe63, class_exe64, class_exe68, class_exe74, class_exe79, class_exe84, class_exe92, class_exe95, class_exe101, class_exe102, class_exe104, class_exe105, class_exe108, class_exe113, class_exe117, class_exe118, class_exe119, class_exe122, class_exe123, class_exe127, class_exe132, class_exe136, class_exe142, class_exe146, class_exe147, class_exe196, class_exe210, class_exe96, class_exe133, class_exe202, class_exe35, class_exe91
+
+Cluster (1,0)
+Prototypes: [class_exe172]
+Number of elements: 11
+Elements: class_exe154, class_exe160, class_exe161, class_exe162, class_exe164, class_exe166, class_exe167, class_exe171, class_exe172, class_exe180, class_exe183
+
+Cluster (1,1)
+Prototypes: [class_exe173]
+Number of elements: 3
+Elements: class_exe173, class_exe170, class_exe184
+
+Cluster (1,2)
+Prototypes: [class_exe177]
+Number of elements: 12
+Elements: class_exe107, class_exe151, class_exe177, class_exe9, class_exe80, class_exe85, class_exe94, class_exe110, class_exe152, class_exe157, class_exe182, class_exe163
+
+Cluster (1,3)
+Prototypes: [class_exe138]
+Number of elements: 28
+Elements: class_exe10, class_exe187, class_exe3, class_exe45, class_exe65, class_exe130, class_exe138, class_exe139, class_exe0, class_exe4, class_exe5, class_exe8, class_exe15, class_exe22, class_exe37, class_exe41, class_exe54, class_exe75, class_exe78, class_exe89, class_exe97, class_exe99, class_exe100, class_exe103, class_exe112, class_exe125, class_exe135, class_exe140
+
+Cluster (2,0)
+Prototypes: [class_exe175]
+Number of elements: 3
+Elements: class_exe175, class_exe174, class_exe181
+
+Cluster (2,1)
+Prototypes: [class_exe211]
+Number of elements: 6
+Elements: class_exe190, class_exe178, class_exe201, class_exe72, class_exe150, class_exe211
+
+Cluster (2,2)
+Prototypes: [class_exe213]
+Number of elements: 1
+Elements: class_exe213
+
+Cluster (2,3)
+Prototypes: [class_exe199]
+Number of elements: 4
+Elements: class_exe197, class_exe185, class_exe191, class_exe199
+
+Cluster (3,0)
+Prototypes: [class_exe109]
+Number of elements: 45
+Elements: class_exe50, class_exe56, class_exe81, class_exe83, class_exe121, class_exe159, class_exe165, class_exe168, class_exe20, class_exe25, class_exe33, class_exe39, class_exe48, class_exe61, class_exe67, class_exe70, class_exe77, class_exe93, class_exe109, class_exe141, class_exe144, class_exe21, class_exe23, class_exe28, class_exe51, class_exe60, class_exe82, class_exe88, class_exe106, class_exe114, class_exe116, class_exe120, class_exe124, class_exe126, class_exe129, class_exe131, class_exe148, class_exe149, class_exe179, class_exe214, class_exe26, class_exe58, class_exe69, class_exe90, class_exe115
+
+Cluster (3,1)
+Prototypes: [class_exe149]
+Number of elements: 1
+Elements: class_exe212
+
+Cluster (3,2)
+Prototypes: [class_exe192]
+Number of elements: 5
+Elements: class_exe192, class_exe195, class_exe198, class_exe209, class_exe186
+
+Cluster (3,3)
+Prototypes: [class_exe206]
+Number of elements: 8
+Elements: class_exe205, class_exe193, class_exe194, class_exe206, class_exe204, class_exe207, class_exe203, class_exe189
+
+
+Critério de adequação (energia): 32.9322950477
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	1,3	2,0	2,1	2,2	2,3	3,0	3,1	3,2	3,3	Total
+
+1	0	 0	 27	 49	 0	 0	 6	 27	 0	 1	 0	 0	 40	 0	 0	 0	 150
+3	0	 2	 1	 3	 0	 0	 0	 1	 0	 3	 1	 4	 1	 1	 5	 8	 30
+2	5	 0	 1	 0	 11	 3	 6	 0	 3	 2	 0	 0	 4	 0	 0	 0	 35
+Total	[ 5  2 29 52 11  3 12 28  3  6  1  4 45  1  5  8]
+
+Corrected Rand index: 0.363436972304
+F-measure(P,Q): 0.475083658651
+OERC: 0.093023255814
+Erro Topogr�fico: 0.246511627907
+
+#####################################
+Repetição do experimento: 27
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [class_exe206]
+Number of elements: 9
+Elements: class_exe185, class_exe189, class_exe193, class_exe195, class_exe203, class_exe206, class_exe207, class_exe208, class_exe194
+
+Cluster (0,1)
+Prototypes: [class_exe23]
+Number of elements: 8
+Elements: class_exe23, class_exe60, class_exe61, class_exe77, class_exe124, class_exe141, class_exe148, class_exe149
+
+Cluster (0,2)
+Prototypes: [class_exe132]
+Number of elements: 53
+Elements: class_exe17, class_exe91, class_exe117, class_exe130, class_exe142, class_exe1, class_exe7, class_exe13, class_exe16, class_exe19, class_exe32, class_exe36, class_exe52, class_exe59, class_exe74, class_exe79, class_exe84, class_exe92, class_exe104, class_exe105, class_exe118, class_exe119, class_exe123, class_exe132, class_exe136, class_exe146, class_exe12, class_exe27, class_exe55, class_exe62, class_exe63, class_exe68, class_exe95, class_exe96, class_exe102, class_exe127, class_exe133, class_exe31, class_exe64, class_exe101, class_exe108, class_exe122, class_exe210, class_exe18, class_exe34, class_exe35, class_exe53, class_exe66, class_exe86, class_exe111, class_exe134, class_exe143, class_exe188
+
+Cluster (0,3)
+Prototypes: [class_exe145]
+Number of elements: 29
+Elements: class_exe2, class_exe14, class_exe24, class_exe30, class_exe40, class_exe42, class_exe43, class_exe57, class_exe71, class_exe76, class_exe87, class_exe150, class_exe156, class_exe178, class_exe38, class_exe44, class_exe47, class_exe72, class_exe73, class_exe98, class_exe128, class_exe137, class_exe145, class_exe191, class_exe200, class_exe211, class_exe199, class_exe201, class_exe190
+
+Cluster (1,0)
+Prototypes: [class_exe204]
+Number of elements: 10
+Elements: class_exe202, class_exe196, class_exe197, class_exe204, class_exe205, class_exe49, class_exe209, class_exe186, class_exe192, class_exe198
+
+Cluster (1,1)
+Prototypes: [class_exe78]
+Number of elements: 29
+Elements: class_exe78, class_exe99, class_exe0, class_exe6, class_exe9, class_exe11, class_exe15, class_exe22, class_exe26, class_exe29, class_exe41, class_exe45, class_exe46, class_exe54, class_exe58, class_exe75, class_exe85, class_exe89, class_exe94, class_exe100, class_exe112, class_exe135, class_exe138, class_exe139, class_exe8, class_exe37, class_exe90, class_exe97, class_exe125
+
+Cluster (1,2)
+Prototypes: [class_exe117]
+Number of elements: 3
+Elements: class_exe3, class_exe113, class_exe187
+
+Cluster (1,3)
+Prototypes: [class_exe152]
+Number of elements: 6
+Elements: class_exe151, class_exe152, class_exe157, class_exe177, class_exe80, class_exe110
+
+Cluster (2,0)
+Prototypes: [class_exe109]
+Number of elements: 14
+Elements: class_exe4, class_exe20, class_exe21, class_exe51, class_exe82, class_exe88, class_exe106, class_exe109, class_exe114, class_exe115, class_exe116, class_exe120, class_exe126, class_exe131
+
+Cluster (2,1)
+Prototypes: [class_exe182]
+Number of elements: 5
+Elements: class_exe163, class_exe179, class_exe182, class_exe28, class_exe107
+
+Cluster (2,2)
+Prototypes: [class_exe169]
+Number of elements: 1
+Elements: class_exe169
+
+Cluster (2,3)
+Prototypes: [class_exe158]
+Number of elements: 4
+Elements: class_exe155, class_exe153, class_exe158, class_exe176
+
+Cluster (3,0)
+Prototypes: [class_exe39]
+Number of elements: 20
+Elements: class_exe33, class_exe39, class_exe48, class_exe50, class_exe56, class_exe67, class_exe70, class_exe81, class_exe83, class_exe93, class_exe121, class_exe144, class_exe159, class_exe165, class_exe168, class_exe170, class_exe173, class_exe175, class_exe181, class_exe184
+
+Cluster (3,1)
+Prototypes: [class_exe212]
+Number of elements: 11
+Elements: class_exe5, class_exe10, class_exe65, class_exe69, class_exe103, class_exe129, class_exe212, class_exe213, class_exe214, class_exe25, class_exe140
+
+Cluster (3,2)
+Prototypes: [class_exe147]
+Number of elements: 1
+Elements: class_exe147
+
+Cluster (3,3)
+Prototypes: [class_exe172]
+Number of elements: 12
+Elements: class_exe166, class_exe183, class_exe171, class_exe172, class_exe154, class_exe161, class_exe164, class_exe167, class_exe180, class_exe160, class_exe162, class_exe174
+
+
+Critério de adequação (energia): 47.2928364611
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	1,3	2,0	2,1	2,2	2,3	3,0	3,1	3,2	3,3	Total
+
+1	0	 8	 51	 20	 1	 29	 2	 2	 14	 2	 0	 0	 12	 8	 1	 0	 150
+3	9	 0	 2	 6	 9	 0	 1	 0	 0	 0	 0	 0	 0	 3	 0	 0	 30
+2	0	 0	 0	 3	 0	 0	 0	 4	 0	 3	 1	 4	 8	 0	 0	 12	 35
+Total	[ 9  8 53 29 10 29  3  6 14  5  1  4 20 11  1 12]
+
+Corrected Rand index: 0.306559567585
+F-measure(P,Q): 0.498083499534
+OERC: 0.13023255814
+Erro Topogr�fico: 0.33023255814
+
+#####################################
+Repetição do experimento: 28
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [class_exe196]
+Number of elements: 4
+Elements: class_exe196, class_exe49, class_exe202, class_exe210
+
+Cluster (0,1)
+Prototypes: [class_exe201]
+Number of elements: 9
+Elements: class_exe190, class_exe201, class_exe208, class_exe211, class_exe200, class_exe178, class_exe191, class_exe199, class_exe150
+
+Cluster (0,2)
+Prototypes: [class_exe32]
+Number of elements: 4
+Elements: class_exe1, class_exe32, class_exe119, class_exe146
+
+Cluster (0,3)
+Prototypes: [class_exe206]
+Number of elements: 7
+Elements: class_exe207, class_exe185, class_exe189, class_exe193, class_exe194, class_exe203, class_exe206
+
+Cluster (1,0)
+Prototypes: [class_exe6]
+Number of elements: 0
+Elements
+
+Cluster (1,1)
+Prototypes: [class_exe192]
+Number of elements: 5
+Elements: class_exe192, class_exe195, class_exe198, class_exe186, class_exe209
+
+Cluster (1,2)
+Prototypes: [class_exe204]
+Number of elements: 3
+Elements: class_exe205, class_exe204, class_exe197
+
+Cluster (1,3)
+Prototypes: [class_exe214]
+Number of elements: 5
+Elements: class_exe5, class_exe213, class_exe214, class_exe129, class_exe212
+
+Cluster (2,0)
+Prototypes: [class_exe20]
+Number of elements: 36
+Elements: class_exe20, class_exe23, class_exe48, class_exe50, class_exe60, class_exe61, class_exe77, class_exe82, class_exe109, class_exe116, class_exe120, class_exe126, class_exe148, class_exe149, class_exe25, class_exe39, class_exe67, class_exe69, class_exe70, class_exe83, class_exe93, class_exe121, class_exe124, class_exe141, class_exe144, class_exe165, class_exe168, class_exe175, class_exe33, class_exe56, class_exe81, class_exe159, class_exe170, class_exe173, class_exe181, class_exe184
+
+Cluster (2,1)
+Prototypes: [class_exe133]
+Number of elements: 13
+Elements: class_exe19, class_exe27, class_exe52, class_exe55, class_exe62, class_exe74, class_exe80, class_exe96, class_exe101, class_exe104, class_exe105, class_exe110, class_exe152
+
+Cluster (2,2)
+Prototypes: [class_exe3]
+Number of elements: 11
+Elements: class_exe187, class_exe3, class_exe10, class_exe89, class_exe91, class_exe113, class_exe117, class_exe130, class_exe138, class_exe139, class_exe142
+
+Cluster (2,3)
+Prototypes: [class_exe14]
+Number of elements: 12
+Elements: class_exe2, class_exe14, class_exe24, class_exe30, class_exe38, class_exe42, class_exe72, class_exe73, class_exe128, class_exe137, class_exe145, class_exe156
+
+Cluster (3,0)
+Prototypes: [class_exe172]
+Number of elements: 17
+Elements: class_exe153, class_exe155, class_exe158, class_exe169, class_exe160, class_exe162, class_exe164, class_exe166, class_exe171, class_exe172, class_exe174, class_exe176, class_exe180, class_exe183, class_exe154, class_exe161, class_exe167
+
+Cluster (3,1)
+Prototypes: [class_exe26]
+Number of elements: 25
+Elements: class_exe163, class_exe0, class_exe58, class_exe179, class_exe182, class_exe4, class_exe8, class_exe26, class_exe28, class_exe37, class_exe45, class_exe54, class_exe65, class_exe85, class_exe88, class_exe90, class_exe103, class_exe106, class_exe114, class_exe115, class_exe125, class_exe21, class_exe51, class_exe131, class_exe140
+
+Cluster (3,2)
+Prototypes: [class_exe29]
+Number of elements: 37
+Elements: class_exe6, class_exe11, class_exe13, class_exe15, class_exe16, class_exe22, class_exe29, class_exe36, class_exe41, class_exe46, class_exe59, class_exe68, class_exe75, class_exe78, class_exe84, class_exe92, class_exe94, class_exe97, class_exe99, class_exe100, class_exe102, class_exe112, class_exe118, class_exe123, class_exe132, class_exe133, class_exe135, class_exe147, class_exe151, class_exe157, class_exe177, class_exe7, class_exe17, class_exe95, class_exe127, class_exe9, class_exe107
+
+Cluster (3,3)
+Prototypes: [class_exe40]
+Number of elements: 27
+Elements: class_exe12, class_exe18, class_exe31, class_exe34, class_exe35, class_exe40, class_exe43, class_exe44, class_exe47, class_exe53, class_exe57, class_exe63, class_exe64, class_exe66, class_exe71, class_exe76, class_exe79, class_exe86, class_exe87, class_exe98, class_exe111, class_exe122, class_exe134, class_exe136, class_exe143, class_exe188, class_exe108
+
+
+Critério de adequação (energia): 37.8894823807
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,1	1,2	1,3	2,0	2,1	2,2	2,3	3,0	3,1	3,2	3,3	Total
+
+1	1	 0	 4	 0	 0	 0	 2	 28	 12	 10	 11	 0	 22	 34	 26	 150
+3	3	 7	 0	 7	 5	 3	 3	 0	 0	 1	 0	 0	 0	 0	 1	 30
+2	0	 2	 0	 0	 0	 0	 0	 8	 1	 0	 1	 17	 3	 3	 0	 35
+Total	[ 4  9  4  7  5  3  5 36 13 11 12 17 25 37 27]
+
+Corrected Rand index: 0.260648874115
+F-measure(P,Q): 0.412936843169
+OERC: 0.106976744186
+Erro Topogr�fico: 0.26976744186
+
+#####################################
+Repetição do experimento: 29
+
+----------Partition----------
+Cluster (0,0)
+Prototypes: [class_exe183]
+Number of elements: 14
+Elements: class_exe153, class_exe154, class_exe158, class_exe161, class_exe166, class_exe176, class_exe155, class_exe164, class_exe167, class_exe169, class_exe171, class_exe172, class_exe180, class_exe183
+
+Cluster (0,1)
+Prototypes: [class_exe170]
+Number of elements: 12
+Elements: class_exe50, class_exe165, class_exe168, class_exe170, class_exe173, class_exe175, class_exe181, class_exe121, class_exe159, class_exe174, class_exe83, class_exe39
+
+Cluster (0,2)
+Prototypes: [class_exe94]
+Number of elements: 21
+Elements: class_exe147, class_exe151, class_exe152, class_exe177, class_exe11, class_exe94, class_exe157, class_exe6, class_exe9, class_exe22, class_exe29, class_exe41, class_exe85, class_exe99, class_exe107, class_exe182, class_exe46, class_exe75, class_exe78, class_exe112, class_exe133
+
+Cluster (0,3)
+Prototypes: [class_exe115]
+Number of elements: 46
+Elements: class_exe0, class_exe4, class_exe5, class_exe8, class_exe20, class_exe21, class_exe23, class_exe25, class_exe26, class_exe28, class_exe37, class_exe45, class_exe51, class_exe54, class_exe58, class_exe60, class_exe61, class_exe65, class_exe69, class_exe77, class_exe82, class_exe88, class_exe89, class_exe90, class_exe100, class_exe103, class_exe106, class_exe109, class_exe114, class_exe115, class_exe116, class_exe120, class_exe124, class_exe125, class_exe126, class_exe129, class_exe131, class_exe138, class_exe139, class_exe140, class_exe148, class_exe149, class_exe179, class_exe212, class_exe214, class_exe48
+
+Cluster (1,0)
+Prototypes: [class_exe56]
+Number of elements: 12
+Elements: class_exe67, class_exe70, class_exe144, class_exe33, class_exe56, class_exe81, class_exe184, class_exe93, class_exe141, class_exe162, class_exe213, class_exe160
+
+Cluster (1,1)
+Prototypes: [class_exe4]
+Number of elements: 2
+Elements: class_exe10, class_exe187
+
+Cluster (1,2)
+Prototypes: [class_exe63]
+Number of elements: 20
+Elements: class_exe12, class_exe34, class_exe35, class_exe63, class_exe64, class_exe79, class_exe108, class_exe122, class_exe7, class_exe31, class_exe66, class_exe80, class_exe101, class_exe111, class_exe127, class_exe1, class_exe62, class_exe136, class_exe27, class_exe102
+
+Cluster (1,3)
+Prototypes: [class_exe132]
+Number of elements: 31
+Elements: class_exe17, class_exe19, class_exe36, class_exe52, class_exe68, class_exe74, class_exe91, class_exe92, class_exe95, class_exe96, class_exe104, class_exe105, class_exe132, class_exe142, class_exe146, class_exe13, class_exe84, class_exe117, class_exe118, class_exe119, class_exe123, class_exe16, class_exe32, class_exe59, class_exe97, class_exe113, class_exe130, class_exe15, class_exe135, class_exe3, class_exe55
+
+Cluster (2,0)
+Prototypes: [class_exe71]
+Number of elements: 11
+Elements: class_exe43, class_exe57, class_exe71, class_exe18, class_exe24, class_exe40, class_exe76, class_exe86, class_exe87, class_exe110, class_exe143
+
+Cluster (2,1)
+Prototypes: [class_exe150]
+Number of elements: 3
+Elements: class_exe150, class_exe178, class_exe156
+
+Cluster (2,2)
+Prototypes: [class_exe85]
+Number of elements: 1
+Elements: class_exe163
+
+Cluster (2,3)
+Prototypes: [class_exe196]
+Number of elements: 5
+Elements: class_exe196, class_exe49, class_exe202, class_exe210, class_exe204
+
+Cluster (3,0)
+Prototypes: [class_exe38]
+Number of elements: 9
+Elements: class_exe2, class_exe38, class_exe42, class_exe72, class_exe73, class_exe128, class_exe137, class_exe145, class_exe211
+
+Cluster (3,1)
+Prototypes: [class_exe47]
+Number of elements: 8
+Elements: class_exe30, class_exe47, class_exe98, class_exe134, class_exe188, class_exe53, class_exe14, class_exe44
+
+Cluster (3,2)
+Prototypes: [class_exe208]
+Number of elements: 13
+Elements: class_exe185, class_exe197, class_exe208, class_exe189, class_exe203, class_exe191, class_exe190, class_exe199, class_exe200, class_exe201, class_exe194, class_exe206, class_exe207
+
+Cluster (3,3)
+Prototypes: [class_exe186]
+Number of elements: 7
+Elements: class_exe186, class_exe192, class_exe193, class_exe195, class_exe198, class_exe205, class_exe209
+
+
+Critério de adequação (energia): 35.3659595399
+=====================================
+	Confusion Matrix
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	0,2	0,3	1,0	1,1	1,2	1,3	2,0	2,1	2,2	2,3	3,0	3,1	3,2	3,3	Total
+
+1	0	 4	 16	 43	 8	 1	 20	 31	 11	 0	 0	 1	 8	 7	 0	 0	 150
+3	0	 0	 0	 2	 1	 1	 0	 0	 0	 0	 0	 4	 1	 1	 13	 7	 30
+2	14	 8	 5	 1	 3	 0	 0	 0	 0	 3	 1	 0	 0	 0	 0	 0	 35
+Total	[14 12 21 46 12  2 20 31 11  3  1  5  9  8 13  7]
+
+Corrected Rand index: 0.282554940771
+F-measure(P,Q): 0.483515634485
+OERC: 0.093023255814
+Erro Topogr�fico: 0.381395348837
+
+Melhor repetição: 10
+M�dia dos crit�rios: 38.6526450429
+Desvio padr�o: 5.40281284856
