@@ -1,0 +1,2609 @@
+Parâmetros iniciais
+
+Topologia: 3x2
+Cardinalidade (q): 1
+Tmin: 0.0105 Tmax: 1.05
+Número de iterações: 300.0
+
+#####################################
+Repetição do experimento: 0
+
+Cluster 0,0 Prototipo: I_8 [49 objetos]Objetos: I_9 I_13 I_14 I_39 I_2 I_46 I_10 I_31 I_3 I_4 I_15 I_19 I_26 I_30 I_33 I_34 I_48 I_6 I_7 I_11 I_16 I_17 I_20 I_23 I_32 I_35 I_37 I_44 I_45 I_47 I_49 I_1 I_5 I_18 I_22 I_24 I_25 I_27 I_28 I_38 I_41 I_43 I_50 I_12 I_21 I_29 I_36 I_40 I_8 
+Cluster 0,1 Prototipo: I_8 [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: I_81 [18 objetos]Objetos: I_58 I_80 I_94 I_99 I_61 I_70 I_81 I_82 I_54 I_63 I_90 I_91 I_93 I_107 I_42 I_69 I_88 I_120 
+Cluster 1,1 Prototipo: I_97 [20 objetos]Objetos: I_62 I_65 I_67 I_85 I_86 I_89 I_96 I_97 I_56 I_100 I_60 I_72 I_74 I_83 I_95 I_98 I_92 I_68 I_79 I_64 
+Cluster 2,0 Prototipo: I_140 [35 objetos]Objetos: I_51 I_53 I_78 I_101 I_103 I_105 I_106 I_108 I_110 I_111 I_113 I_116 I_117 I_118 I_119 I_121 I_123 I_125 I_126 I_130 I_131 I_132 I_136 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 I_87 I_57 
+Cluster 2,1 Prototipo: I_127 [28 objetos]Objetos: I_73 I_75 I_84 I_114 I_135 I_55 I_59 I_77 I_134 I_147 I_76 I_102 I_143 I_52 I_66 I_71 I_122 I_124 I_127 I_128 I_139 I_150 I_109 I_112 I_104 I_115 I_129 I_133 
+
+Critério de adequação (energia): 110.481515652
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	1,0	1,1	2,0	2,1	Total
+
+1	49	 1	 0	 0	 0	 50
+2	0	 15	 20	 5	 10	 50
+3	0	 2	 0	 30	 18	 50
+Total	[49 18 20 35 28]
+Corrected Rand index: 0.685908860676
+
+F-measure(P,Q): 0.75573663809
+OERC: 0.12
+
+#####################################
+Repetição do experimento: 1
+
+Cluster 0,0 Prototipo: I_140 [35 objetos]Objetos: I_53 I_57 I_78 I_87 I_101 I_103 I_105 I_106 I_108 I_110 I_111 I_113 I_116 I_117 I_118 I_119 I_121 I_123 I_125 I_126 I_130 I_131 I_136 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 I_132 I_51 
+Cluster 0,1 Prototipo: I_127 [40 objetos]Objetos: I_55 I_64 I_73 I_75 I_79 I_84 I_92 I_98 I_102 I_114 I_115 I_122 I_124 I_127 I_134 I_135 I_139 I_143 I_147 I_59 I_62 I_71 I_74 I_109 I_112 I_128 I_150 I_52 I_76 I_77 I_86 I_104 I_129 I_133 I_67 I_72 I_66 I_85 I_89 I_96 
+Cluster 1,0 Prototipo: I_90 [25 objetos]Objetos: I_68 I_56 I_58 I_60 I_65 I_70 I_80 I_81 I_82 I_83 I_91 I_93 I_94 I_95 I_99 I_100 I_54 I_61 I_63 I_90 I_107 I_120 I_88 I_69 I_97 
+Cluster 1,1 Prototipo: I_13 [10 objetos]Objetos: I_2 I_26 I_42 I_13 I_46 I_9 I_39 I_14 I_35 I_10 
+Cluster 2,0 Prototipo: I_30 [15 objetos]Objetos: I_3 I_24 I_30 I_36 I_43 I_48 I_4 I_7 I_8 I_12 I_25 I_27 I_31 I_50 I_40 
+Cluster 2,1 Prototipo: I_49 [25 objetos]Objetos: I_1 I_5 I_6 I_11 I_15 I_16 I_17 I_18 I_20 I_21 I_22 I_23 I_28 I_29 I_32 I_33 I_34 I_37 I_38 I_41 I_45 I_47 I_49 I_19 I_44 
+
+Critério de adequação (energia): 94.645860553
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 0	 10	 15	 25	 50
+2	5	 22	 23	 0	 0	 0	 50
+3	30	 18	 2	 0	 0	 0	 50
+Total	[35 40 25 10 15 25]
+Corrected Rand index: 0.52862067511
+
+F-measure(P,Q): 0.661960784314
+OERC: 0.166666666667
+
+#####################################
+Repetição do experimento: 2
+
+Cluster 0,0 Prototipo: I_140 [35 objetos]Objetos: I_51 I_53 I_57 I_78 I_87 I_101 I_103 I_105 I_106 I_108 I_110 I_111 I_113 I_116 I_117 I_118 I_119 I_121 I_123 I_125 I_126 I_130 I_131 I_132 I_136 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 
+Cluster 0,1 Prototipo: I_127 [28 objetos]Objetos: I_55 I_59 I_73 I_75 I_76 I_77 I_84 I_102 I_109 I_112 I_114 I_115 I_122 I_124 I_127 I_128 I_134 I_135 I_139 I_143 I_147 I_150 I_71 I_104 I_129 I_52 I_133 I_66 
+Cluster 1,0 Prototipo: I_97 [20 objetos]Objetos: I_65 I_89 I_96 I_67 I_85 I_86 I_97 I_100 I_56 I_62 I_95 I_83 I_60 I_68 I_72 I_74 I_92 I_98 I_79 I_64 
+Cluster 1,1 Prototipo: I_81 [18 objetos]Objetos: I_70 I_81 I_82 I_90 I_91 I_54 I_58 I_61 I_80 I_93 I_94 I_99 I_107 I_63 I_120 I_42 I_88 I_69 
+Cluster 2,0 Prototipo: I_8 [49 objetos]Objetos: I_1 I_4 I_5 I_7 I_8 I_10 I_12 I_18 I_21 I_22 I_23 I_24 I_25 I_26 I_28 I_29 I_30 I_31 I_32 I_35 I_36 I_40 I_41 I_43 I_44 I_48 I_50 I_3 I_27 I_37 I_38 I_6 I_11 I_15 I_16 I_17 I_19 I_20 I_33 I_34 I_45 I_47 I_49 I_9 I_13 I_39 I_2 I_14 I_46 
+Cluster 2,1 Prototipo: I_8 [0 objetos]Objetos: 
+
+Critério de adequação (energia): 110.481515652
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	Total
+
+1	0	 0	 0	 1	 49	 50
+2	5	 10	 20	 15	 0	 50
+3	30	 18	 0	 2	 0	 50
+Total	[35 28 20 18 49]
+Corrected Rand index: 0.685908860676
+
+F-measure(P,Q): 0.75573663809
+OERC: 0.12
+
+#####################################
+Repetição do experimento: 3
+
+Cluster 0,0 Prototipo: I_8 [49 objetos]Objetos: I_15 I_34 I_6 I_11 I_17 I_19 I_20 I_33 I_45 I_47 I_49 I_16 I_1 I_2 I_3 I_4 I_5 I_7 I_8 I_10 I_12 I_18 I_21 I_22 I_23 I_24 I_25 I_26 I_27 I_28 I_29 I_30 I_31 I_32 I_35 I_36 I_37 I_38 I_40 I_41 I_43 I_44 I_46 I_48 I_50 I_13 I_9 I_14 I_39 
+Cluster 0,1 Prototipo: I_8 [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: I_97 [20 objetos]Objetos: I_89 I_96 I_97 I_85 I_65 I_86 I_67 I_100 I_56 I_62 I_95 I_83 I_60 I_68 I_72 I_74 I_92 I_98 I_79 I_64 
+Cluster 1,1 Prototipo: I_81 [18 objetos]Objetos: I_58 I_61 I_70 I_80 I_81 I_82 I_94 I_99 I_54 I_63 I_90 I_91 I_93 I_107 I_120 I_42 I_88 I_69 
+Cluster 2,0 Prototipo: I_140 [35 objetos]Objetos: I_51 I_53 I_57 I_78 I_87 I_103 I_106 I_108 I_111 I_113 I_117 I_118 I_119 I_123 I_126 I_130 I_131 I_132 I_136 I_138 I_140 I_142 I_101 I_105 I_110 I_116 I_121 I_125 I_137 I_141 I_144 I_145 I_146 I_148 I_149 
+Cluster 2,1 Prototipo: I_127 [28 objetos]Objetos: I_55 I_73 I_75 I_84 I_102 I_109 I_112 I_114 I_115 I_122 I_124 I_127 I_134 I_135 I_139 I_143 I_147 I_150 I_59 I_71 I_77 I_104 I_128 I_76 I_129 I_133 I_52 I_66 
+
+Critério de adequação (energia): 110.481515652
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	1,0	1,1	2,0	2,1	Total
+
+1	49	 0	 1	 0	 0	 50
+2	0	 20	 15	 5	 10	 50
+3	0	 0	 2	 30	 18	 50
+Total	[49 20 18 35 28]
+Corrected Rand index: 0.685908860676
+
+F-measure(P,Q): 0.75573663809
+OERC: 0.12
+
+#####################################
+Repetição do experimento: 4
+
+Cluster 0,0 Prototipo: I_8 [49 objetos]Objetos: I_1 I_2 I_3 I_4 I_5 I_6 I_7 I_8 I_9 I_10 I_11 I_12 I_13 I_14 I_15 I_16 I_17 I_18 I_19 I_20 I_21 I_22 I_23 I_24 I_25 I_26 I_27 I_28 I_29 I_30 I_31 I_32 I_33 I_34 I_35 I_36 I_37 I_38 I_39 I_40 I_41 I_43 I_44 I_45 I_46 I_47 I_48 I_49 I_50 
+Cluster 0,1 Prototipo: I_8 [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: I_81 [20 objetos]Objetos: I_99 I_58 I_94 I_60 I_80 I_68 I_82 I_70 I_81 I_61 I_90 I_91 I_93 I_54 I_63 I_107 I_120 I_88 I_69 I_42 
+Cluster 1,1 Prototipo: I_8 [0 objetos]Objetos: 
+Cluster 2,0 Prototipo: I_140 [37 objetos]Objetos: I_53 I_78 I_87 I_103 I_105 I_106 I_108 I_111 I_113 I_116 I_117 I_119 I_121 I_123 I_126 I_130 I_131 I_136 I_138 I_140 I_141 I_142 I_144 I_146 I_148 I_51 I_101 I_110 I_118 I_125 I_132 I_137 I_145 I_149 I_109 I_129 I_133 
+Cluster 2,1 Prototipo: I_79 [44 objetos]Objetos: I_73 I_84 I_102 I_114 I_122 I_135 I_143 I_147 I_79 I_98 I_64 I_75 I_92 I_134 I_62 I_124 I_55 I_59 I_71 I_115 I_127 I_128 I_139 I_150 I_52 I_76 I_77 I_86 I_104 I_112 I_66 I_67 I_85 I_72 I_74 I_89 I_96 I_97 I_56 I_57 I_65 I_100 I_83 I_95 
+
+Critério de adequação (energia): 117.887216356
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	1,0	2,0	2,1	Total
+
+1	49	 1	 0	 0	 50
+2	0	 17	 4	 29	 50
+3	0	 2	 33	 15	 50
+Total	[49 20 37 44]
+Corrected Rand index: 0.708853141123
+
+F-measure(P,Q): 0.78851365205
+OERC: 0.146666666667
+
+#####################################
+Repetição do experimento: 5
+
+Cluster 0,0 Prototipo: I_6 [13 objetos]Objetos: I_6 I_11 I_15 I_16 I_17 I_19 I_20 I_22 I_33 I_34 I_45 I_47 I_49 
+Cluster 0,1 Prototipo: I_8 [21 objetos]Objetos: I_1 I_7 I_8 I_12 I_18 I_21 I_23 I_24 I_25 I_27 I_29 I_32 I_36 I_40 I_41 I_44 I_50 I_5 I_28 I_38 I_37 
+Cluster 1,0 Prototipo: I_79 [41 objetos]Objetos: I_89 I_96 I_62 I_67 I_65 I_85 I_97 I_79 I_86 I_64 I_92 I_71 I_75 I_98 I_122 I_56 I_72 I_74 I_100 I_52 I_84 I_55 I_57 I_59 I_66 I_76 I_102 I_127 I_128 I_134 I_139 I_143 I_150 I_73 I_124 I_135 I_147 I_77 I_112 I_115 I_104 
+Cluster 1,1 Prototipo: I_4 [16 objetos]Objetos: I_26 I_46 I_2 I_4 I_9 I_10 I_13 I_14 I_31 I_35 I_39 I_42 I_43 I_48 I_3 I_30 
+Cluster 2,0 Prototipo: I_140 [37 objetos]Objetos: I_51 I_53 I_78 I_101 I_103 I_105 I_106 I_108 I_109 I_110 I_113 I_117 I_118 I_119 I_121 I_123 I_125 I_126 I_129 I_130 I_131 I_133 I_136 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_87 I_111 I_116 I_137 I_149 I_132 
+Cluster 2,1 Prototipo: I_90 [22 objetos]Objetos: I_63 I_54 I_60 I_61 I_68 I_70 I_80 I_81 I_82 I_83 I_90 I_91 I_93 I_95 I_107 I_58 I_94 I_99 I_88 I_69 I_120 I_114 
+
+Critério de adequação (energia): 86.225731486
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	13	 21	 0	 16	 0	 0	 50
+2	0	 0	 27	 0	 4	 19	 50
+3	0	 0	 14	 0	 33	 3	 50
+Total	[13 21 41 16 37 22]
+Corrected Rand index: 0.537241365031
+
+F-measure(P,Q): 0.647858859612
+OERC: 0.14
+
+#####################################
+Repetição do experimento: 6
+
+Cluster 0,0 Prototipo: I_140 [33 objetos]Objetos: I_51 I_53 I_78 I_101 I_103 I_105 I_106 I_108 I_110 I_111 I_113 I_116 I_117 I_118 I_119 I_121 I_123 I_125 I_126 I_130 I_131 I_132 I_136 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 
+Cluster 0,1 Prototipo: I_127 [22 objetos]Objetos: I_73 I_84 I_102 I_114 I_122 I_124 I_127 I_143 I_147 I_134 I_135 I_109 I_55 I_112 I_77 I_115 I_128 I_139 I_150 I_104 I_129 I_133 
+Cluster 1,0 Prototipo: I_92 [23 objetos]Objetos: I_62 I_67 I_86 I_85 I_89 I_96 I_52 I_71 I_56 I_65 I_92 I_97 I_72 I_98 I_57 I_79 I_64 I_74 I_75 I_66 I_76 I_59 I_87 
+Cluster 1,1 Prototipo: I_90 [22 objetos]Objetos: I_58 I_80 I_94 I_99 I_60 I_68 I_82 I_83 I_61 I_70 I_81 I_95 I_54 I_90 I_91 I_93 I_107 I_63 I_69 I_88 I_120 I_100 
+Cluster 2,0 Prototipo: I_31 [24 objetos]Objetos: I_42 I_9 I_2 I_10 I_13 I_14 I_26 I_31 I_35 I_39 I_46 I_3 I_4 I_30 I_36 I_43 I_48 I_24 I_50 I_7 I_8 I_12 I_25 I_27 
+Cluster 2,1 Prototipo: I_49 [26 objetos]Objetos: I_1 I_5 I_6 I_11 I_15 I_17 I_18 I_19 I_20 I_21 I_22 I_23 I_28 I_29 I_32 I_33 I_34 I_37 I_38 I_40 I_41 I_44 I_45 I_47 I_49 I_16 
+
+Critério de adequação (energia): 86.188753368
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 0	 0	 24	 26	 50
+2	3	 4	 23	 20	 0	 0	 50
+3	30	 18	 0	 2	 0	 0	 50
+Total	[33 22 23 22 24 26]
+Corrected Rand index: 0.595035319356
+
+F-measure(P,Q): 0.679079692961
+OERC: 0.06
+
+#####################################
+Repetição do experimento: 7
+
+Cluster 0,0 Prototipo: I_140 [33 objetos]Objetos: I_110 I_118 I_132 I_106 I_108 I_123 I_131 I_136 I_103 I_121 I_141 I_144 I_145 I_101 I_126 I_142 I_140 I_113 I_146 I_105 I_125 I_130 I_137 I_116 I_149 I_148 I_111 I_117 I_53 I_78 I_51 I_138 I_119 
+Cluster 0,1 Prototipo: I_90 [22 objetos]Objetos: I_54 I_60 I_61 I_63 I_68 I_69 I_70 I_80 I_81 I_82 I_83 I_88 I_90 I_91 I_93 I_94 I_95 I_107 I_120 I_58 I_99 I_100 
+Cluster 1,0 Prototipo: I_127 [22 objetos]Objetos: I_104 I_109 I_112 I_115 I_129 I_133 I_124 I_127 I_128 I_147 I_55 I_73 I_77 I_84 I_102 I_114 I_134 I_135 I_139 I_143 I_150 I_122 
+Cluster 1,1 Prototipo: I_92 [23 objetos]Objetos: I_65 I_86 I_89 I_62 I_67 I_71 I_85 I_92 I_96 I_97 I_52 I_56 I_57 I_64 I_66 I_72 I_74 I_75 I_79 I_98 I_76 I_59 I_87 
+Cluster 2,0 Prototipo: I_31 [24 objetos]Objetos: I_14 I_2 I_3 I_4 I_9 I_10 I_13 I_26 I_30 I_31 I_35 I_39 I_42 I_43 I_46 I_48 I_36 I_24 I_50 I_7 I_8 I_12 I_25 I_27 
+Cluster 2,1 Prototipo: I_49 [26 objetos]Objetos: I_1 I_5 I_6 I_11 I_15 I_16 I_17 I_18 I_19 I_20 I_21 I_22 I_23 I_28 I_29 I_32 I_33 I_34 I_37 I_38 I_40 I_41 I_44 I_45 I_47 I_49 
+
+Critério de adequação (energia): 86.188753368
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 0	 0	 24	 26	 50
+2	3	 20	 4	 23	 0	 0	 50
+3	30	 2	 18	 0	 0	 0	 50
+Total	[33 22 22 23 24 26]
+Corrected Rand index: 0.595035319356
+
+F-measure(P,Q): 0.679079692961
+OERC: 0.06
+
+#####################################
+Repetição do experimento: 8
+
+Cluster 0,0 Prototipo: I_90 [22 objetos]Objetos: I_69 I_114 I_120 I_54 I_60 I_63 I_70 I_81 I_83 I_88 I_90 I_91 I_93 I_95 I_107 I_58 I_61 I_80 I_82 I_94 I_99 I_68 
+Cluster 0,1 Prototipo: I_140 [34 objetos]Objetos: I_101 I_103 I_105 I_106 I_108 I_111 I_113 I_116 I_119 I_121 I_123 I_125 I_126 I_130 I_131 I_136 I_137 I_140 I_141 I_142 I_144 I_145 I_146 I_78 I_117 I_129 I_133 I_138 I_148 I_109 I_110 I_118 I_132 I_149 
+Cluster 1,0 Prototipo: I_79 [35 objetos]Objetos: I_89 I_96 I_62 I_67 I_85 I_65 I_79 I_97 I_64 I_122 I_56 I_98 I_100 I_150 I_134 I_72 I_74 I_84 I_102 I_143 I_55 I_73 I_75 I_77 I_92 I_115 I_124 I_127 I_128 I_135 I_139 I_147 I_104 I_112 I_59 
+Cluster 1,1 Prototipo: I_52 [9 objetos]Objetos: I_52 I_57 I_51 I_66 I_71 I_76 I_86 I_87 I_53 
+Cluster 2,0 Prototipo: I_49 [26 objetos]Objetos: I_1 I_5 I_6 I_11 I_15 I_16 I_17 I_18 I_19 I_20 I_21 I_22 I_23 I_28 I_29 I_32 I_33 I_34 I_37 I_38 I_40 I_41 I_44 I_45 I_47 I_49 
+Cluster 2,1 Prototipo: I_31 [24 objetos]Objetos: I_42 I_2 I_9 I_10 I_13 I_14 I_26 I_35 I_39 I_46 I_3 I_4 I_30 I_31 I_36 I_43 I_48 I_24 I_50 I_7 I_12 I_25 I_8 I_27 
+
+Critério de adequação (energia): 89.697780328
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 0	 0	 26	 24	 50
+2	19	 1	 21	 9	 0	 0	 50
+3	3	 33	 14	 0	 0	 0	 50
+Total	[22 34 35  9 26 24]
+Corrected Rand index: 0.575539555016
+
+F-measure(P,Q): 0.665900863269
+OERC: 0.12
+
+#####################################
+Repetição do experimento: 9
+
+Cluster 0,0 Prototipo: I_49 [26 objetos]Objetos: I_1 I_5 I_6 I_11 I_15 I_16 I_17 I_18 I_19 I_20 I_21 I_22 I_23 I_28 I_29 I_32 I_33 I_34 I_37 I_38 I_40 I_41 I_44 I_45 I_47 I_49 
+Cluster 0,1 Prototipo: I_81 [19 objetos]Objetos: I_54 I_58 I_60 I_68 I_70 I_80 I_81 I_82 I_90 I_91 I_93 I_94 I_99 I_107 I_63 I_61 I_69 I_88 I_120 
+Cluster 1,0 Prototipo: I_31 [24 objetos]Objetos: I_24 I_26 I_46 I_2 I_3 I_4 I_9 I_10 I_13 I_14 I_30 I_31 I_35 I_36 I_39 I_43 I_48 I_7 I_12 I_25 I_42 I_50 I_27 I_8 
+Cluster 1,1 Prototipo: I_79 [37 objetos]Objetos: I_72 I_62 I_74 I_98 I_56 I_67 I_85 I_89 I_96 I_97 I_79 I_100 I_64 I_92 I_75 I_84 I_73 I_135 I_114 I_122 I_65 I_102 I_143 I_71 I_124 I_127 I_128 I_134 I_139 I_150 I_55 I_147 I_112 I_115 I_104 I_83 I_95 
+Cluster 2,0 Prototipo: I_87 [12 objetos]Objetos: I_51 I_59 I_66 I_76 I_77 I_53 I_87 I_52 I_57 I_86 I_78 I_138 
+Cluster 2,1 Prototipo: I_140 [32 objetos]Objetos: I_101 I_103 I_105 I_106 I_108 I_109 I_110 I_111 I_113 I_116 I_117 I_118 I_119 I_121 I_123 I_125 I_126 I_129 I_130 I_131 I_132 I_133 I_136 I_137 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 
+
+Critério de adequação (energia): 88.779418939
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	26	 0	 24	 0	 0	 0	 50
+2	0	 17	 0	 22	 11	 0	 50
+3	0	 2	 0	 15	 1	 32	 50
+Total	[26 19 24 37 12 32]
+Corrected Rand index: 0.572687211194
+
+F-measure(P,Q): 0.656815152544
+OERC: 0.12
+
+#####################################
+Repetição do experimento: 10
+
+Cluster 0,0 Prototipo: I_50 [36 objetos]Objetos: I_1 I_2 I_3 I_4 I_5 I_7 I_8 I_9 I_10 I_12 I_13 I_14 I_18 I_21 I_23 I_24 I_25 I_26 I_27 I_28 I_29 I_30 I_31 I_32 I_35 I_36 I_37 I_38 I_39 I_40 I_41 I_43 I_44 I_46 I_48 I_50 
+Cluster 0,1 Prototipo: I_6 [13 objetos]Objetos: I_16 I_6 I_11 I_15 I_17 I_19 I_20 I_33 I_34 I_45 I_47 I_49 I_22 
+Cluster 1,0 Prototipo: I_81 [20 objetos]Objetos: I_99 I_58 I_60 I_80 I_68 I_82 I_94 I_70 I_81 I_61 I_90 I_91 I_93 I_54 I_63 I_107 I_88 I_120 I_69 I_42 
+Cluster 1,1 Prototipo: I_140 [37 objetos]Objetos: I_118 I_132 I_109 I_110 I_51 I_53 I_87 I_101 I_106 I_119 I_123 I_129 I_130 I_131 I_133 I_136 I_137 I_138 I_149 I_78 I_105 I_108 I_111 I_116 I_117 I_125 I_126 I_145 I_148 I_103 I_113 I_121 I_141 I_142 I_144 I_146 I_140 
+Cluster 2,0 Prototipo: I_140 [0 objetos]Objetos: 
+Cluster 2,1 Prototipo: I_79 [44 objetos]Objetos: I_55 I_73 I_84 I_102 I_112 I_114 I_115 I_122 I_124 I_127 I_134 I_135 I_143 I_147 I_75 I_64 I_79 I_92 I_98 I_150 I_59 I_77 I_71 I_76 I_104 I_128 I_139 I_62 I_52 I_66 I_86 I_67 I_85 I_72 I_74 I_89 I_96 I_97 I_56 I_57 I_65 I_100 I_83 I_95 
+
+Critério de adequação (energia): 95.568698115
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,1	Total
+
+1	36	 13	 1	 0	 0	 50
+2	0	 0	 17	 4	 29	 50
+3	0	 0	 2	 33	 15	 50
+Total	[36 13 20 37 44]
+Corrected Rand index: 0.611156011384
+
+F-measure(P,Q): 0.737617089525
+OERC: 0.146666666667
+
+#####################################
+Repetição do experimento: 11
+
+Cluster 0,0 Prototipo: I_87 [12 objetos]Objetos: I_51 I_66 I_53 I_59 I_76 I_77 I_87 I_52 I_57 I_86 I_78 I_138 
+Cluster 0,1 Prototipo: I_140 [32 objetos]Objetos: I_101 I_103 I_105 I_106 I_108 I_109 I_110 I_111 I_113 I_116 I_117 I_118 I_119 I_121 I_123 I_125 I_126 I_129 I_130 I_131 I_133 I_136 I_137 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 I_132 
+Cluster 1,0 Prototipo: I_6 [13 objetos]Objetos: I_19 I_15 I_16 I_6 I_11 I_17 I_33 I_34 I_20 I_45 I_47 I_49 I_22 
+Cluster 1,1 Prototipo: I_79 [37 objetos]Objetos: I_75 I_98 I_56 I_62 I_64 I_67 I_72 I_74 I_79 I_85 I_89 I_92 I_96 I_97 I_65 I_73 I_84 I_100 I_114 I_122 I_135 I_102 I_143 I_55 I_71 I_127 I_128 I_134 I_139 I_150 I_124 I_147 I_115 I_112 I_104 I_83 I_95 
+Cluster 2,0 Prototipo: I_50 [36 objetos]Objetos: I_9 I_13 I_14 I_39 I_1 I_2 I_3 I_4 I_5 I_7 I_8 I_10 I_12 I_18 I_21 I_23 I_24 I_25 I_26 I_27 I_28 I_29 I_30 I_31 I_32 I_35 I_36 I_37 I_38 I_40 I_41 I_43 I_44 I_46 I_48 I_50 
+Cluster 2,1 Prototipo: I_81 [20 objetos]Objetos: I_54 I_58 I_60 I_61 I_63 I_68 I_70 I_80 I_81 I_82 I_90 I_91 I_93 I_94 I_99 I_107 I_42 I_69 I_88 I_120 
+
+Critério de adequação (energia): 89.524324629
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 13	 0	 36	 1	 50
+2	11	 0	 0	 22	 0	 17	 50
+3	1	 32	 0	 15	 0	 2	 50
+Total	[12 32 13 37 36 20]
+Corrected Rand index: 0.597138411981
+
+F-measure(P,Q): 0.707814744547
+OERC: 0.126666666667
+
+#####################################
+Repetição do experimento: 12
+
+Cluster 0,0 Prototipo: I_31 [24 objetos]Objetos: I_7 I_8 I_12 I_25 I_50 I_2 I_3 I_4 I_9 I_10 I_13 I_14 I_24 I_26 I_27 I_30 I_31 I_35 I_36 I_39 I_42 I_43 I_46 I_48 
+Cluster 0,1 Prototipo: I_49 [26 objetos]Objetos: I_15 I_16 I_19 I_6 I_17 I_33 I_34 I_45 I_11 I_20 I_22 I_47 I_49 I_37 I_5 I_38 I_28 I_1 I_18 I_21 I_23 I_29 I_32 I_41 I_44 I_40 
+Cluster 1,0 Prototipo: I_90 [22 objetos]Objetos: I_58 I_99 I_94 I_80 I_60 I_61 I_81 I_82 I_54 I_63 I_68 I_70 I_90 I_91 I_93 I_83 I_69 I_88 I_107 I_120 I_95 I_100 
+Cluster 1,1 Prototipo: I_92 [23 objetos]Objetos: I_86 I_89 I_65 I_57 I_85 I_96 I_71 I_67 I_52 I_56 I_62 I_64 I_66 I_72 I_74 I_75 I_79 I_92 I_97 I_98 I_76 I_59 I_87 
+Cluster 2,0 Prototipo: I_127 [22 objetos]Objetos: I_139 I_150 I_122 I_84 I_73 I_102 I_114 I_135 I_143 I_127 I_55 I_134 I_115 I_124 I_128 I_147 I_77 I_104 I_112 I_109 I_129 I_133 
+Cluster 2,1 Prototipo: I_140 [33 objetos]Objetos: I_106 I_119 I_123 I_131 I_136 I_101 I_103 I_105 I_108 I_113 I_121 I_140 I_141 I_142 I_144 I_145 I_146 I_130 I_148 I_126 I_110 I_116 I_117 I_118 I_125 I_132 I_137 I_138 I_78 I_149 I_53 I_111 I_51 
+
+Critério de adequação (energia): 86.188753368
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	24	 26	 0	 0	 0	 0	 50
+2	0	 0	 20	 23	 4	 3	 50
+3	0	 0	 2	 0	 18	 30	 50
+Total	[24 26 22 23 22 33]
+Corrected Rand index: 0.595035319356
+
+F-measure(P,Q): 0.679079692961
+OERC: 0.06
+
+#####################################
+Repetição do experimento: 13
+
+Cluster 0,0 Prototipo: I_140 [35 objetos]Objetos: I_51 I_53 I_101 I_103 I_106 I_108 I_110 I_111 I_113 I_116 I_118 I_119 I_121 I_123 I_125 I_126 I_130 I_131 I_132 I_136 I_137 I_140 I_141 I_142 I_144 I_145 I_149 I_146 I_105 I_87 I_57 I_78 I_138 I_148 I_117 
+Cluster 0,1 Prototipo: I_127 [40 objetos]Objetos: I_55 I_59 I_62 I_64 I_67 I_71 I_72 I_73 I_74 I_75 I_76 I_77 I_79 I_84 I_85 I_89 I_92 I_96 I_98 I_102 I_104 I_109 I_112 I_114 I_115 I_122 I_124 I_127 I_128 I_129 I_133 I_134 I_135 I_139 I_143 I_147 I_150 I_52 I_66 I_86 
+Cluster 1,0 Prototipo: I_8 [21 objetos]Objetos: I_32 I_24 I_27 I_44 I_8 I_40 I_29 I_25 I_7 I_12 I_18 I_21 I_41 I_50 I_1 I_28 I_37 I_36 I_38 I_5 I_23 
+Cluster 1,1 Prototipo: I_90 [25 objetos]Objetos: I_58 I_60 I_65 I_68 I_80 I_94 I_99 I_54 I_61 I_63 I_70 I_81 I_82 I_83 I_90 I_91 I_93 I_107 I_95 I_100 I_88 I_120 I_69 I_56 I_97 
+Cluster 2,0 Prototipo: I_6 [13 objetos]Objetos: I_6 I_11 I_15 I_16 I_17 I_19 I_20 I_22 I_33 I_34 I_45 I_47 I_49 
+Cluster 2,1 Prototipo: I_4 [16 objetos]Objetos: I_42 I_2 I_4 I_9 I_10 I_13 I_14 I_26 I_31 I_35 I_39 I_46 I_3 I_30 I_43 I_48 
+
+Critério de adequação (energia): 88.975403962
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 21	 0	 13	 16	 50
+2	5	 22	 0	 23	 0	 0	 50
+3	30	 18	 0	 2	 0	 0	 50
+Total	[35 40 21 25 13 16]
+Corrected Rand index: 0.517888140625
+
+F-measure(P,Q): 0.636921660683
+OERC: 0.166666666667
+
+#####################################
+Repetição do experimento: 14
+
+Cluster 0,0 Prototipo: I_140 [35 objetos]Objetos: I_51 I_53 I_57 I_78 I_87 I_101 I_103 I_105 I_106 I_108 I_110 I_111 I_113 I_116 I_117 I_118 I_119 I_121 I_123 I_125 I_126 I_130 I_131 I_132 I_136 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 
+Cluster 0,1 Prototipo: I_127 [28 objetos]Objetos: I_55 I_73 I_75 I_84 I_102 I_109 I_112 I_114 I_115 I_122 I_124 I_127 I_134 I_135 I_139 I_143 I_147 I_59 I_71 I_77 I_128 I_150 I_76 I_104 I_129 I_133 I_52 I_66 
+Cluster 1,0 Prototipo: I_97 [20 objetos]Objetos: I_96 I_89 I_65 I_85 I_97 I_67 I_86 I_56 I_100 I_62 I_72 I_74 I_92 I_95 I_98 I_60 I_68 I_79 I_83 I_64 
+Cluster 1,1 Prototipo: I_81 [17 objetos]Objetos: I_58 I_61 I_70 I_80 I_81 I_82 I_90 I_91 I_94 I_99 I_54 I_63 I_93 I_107 I_88 I_120 I_69 
+Cluster 2,0 Prototipo: I_49 [26 objetos]Objetos: I_1 I_5 I_6 I_11 I_15 I_16 I_17 I_18 I_19 I_20 I_21 I_22 I_23 I_28 I_29 I_32 I_33 I_34 I_37 I_38 I_40 I_41 I_44 I_45 I_47 I_49 
+Cluster 2,1 Prototipo: I_31 [24 objetos]Objetos: I_42 I_2 I_4 I_9 I_10 I_13 I_14 I_26 I_31 I_35 I_39 I_46 I_3 I_30 I_36 I_43 I_48 I_50 I_24 I_7 I_12 I_25 I_8 I_27 
+
+Critério de adequação (energia): 87.418091721
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 0	 0	 26	 24	 50
+2	5	 10	 20	 15	 0	 0	 50
+3	30	 18	 0	 2	 0	 0	 50
+Total	[35 28 20 17 26 24]
+Corrected Rand index: 0.552466353346
+
+F-measure(P,Q): 0.653840483562
+OERC: 0.113333333333
+
+#####################################
+Repetição do experimento: 15
+
+Cluster 0,0 Prototipo: I_140 [34 objetos]Objetos: I_78 I_101 I_103 I_105 I_108 I_109 I_110 I_111 I_113 I_116 I_117 I_121 I_125 I_126 I_129 I_130 I_131 I_133 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 I_106 I_118 I_119 I_123 I_132 I_136 
+Cluster 0,1 Prototipo: I_90 [22 objetos]Objetos: I_54 I_60 I_63 I_70 I_80 I_81 I_82 I_90 I_91 I_93 I_95 I_61 I_69 I_88 I_94 I_107 I_114 I_120 I_58 I_99 I_68 I_83 
+Cluster 1,0 Prototipo: I_52 [9 objetos]Objetos: I_86 I_52 I_57 I_71 I_66 I_76 I_51 I_87 I_53 
+Cluster 1,1 Prototipo: I_79 [35 objetos]Objetos: I_65 I_89 I_62 I_67 I_85 I_96 I_64 I_79 I_97 I_122 I_56 I_92 I_98 I_100 I_150 I_134 I_72 I_74 I_84 I_102 I_143 I_55 I_59 I_73 I_75 I_77 I_115 I_124 I_127 I_128 I_135 I_139 I_147 I_104 I_112 
+Cluster 2,0 Prototipo: I_6 [13 objetos]Objetos: I_6 I_11 I_15 I_16 I_17 I_19 I_33 I_34 I_20 I_22 I_45 I_47 I_49 
+Cluster 2,1 Prototipo: I_50 [37 objetos]Objetos: I_1 I_2 I_3 I_4 I_5 I_7 I_8 I_9 I_10 I_12 I_13 I_14 I_18 I_21 I_23 I_24 I_25 I_26 I_27 I_28 I_29 I_30 I_31 I_32 I_35 I_36 I_37 I_38 I_39 I_40 I_41 I_42 I_43 I_44 I_46 I_48 I_50 
+
+Critério de adequação (energia): 91.434248641
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 0	 0	 13	 37	 50
+2	1	 19	 9	 21	 0	 0	 50
+3	33	 3	 0	 14	 0	 0	 50
+Total	[34 22  9 35 13 37]
+Corrected Rand index: 0.610407382793
+
+F-measure(P,Q): 0.721355592045
+OERC: 0.12
+
+#####################################
+Repetição do experimento: 16
+
+Cluster 0,0 Prototipo: I_31 [24 objetos]Objetos: I_2 I_26 I_42 I_46 I_3 I_4 I_9 I_10 I_13 I_14 I_30 I_31 I_35 I_36 I_39 I_48 I_43 I_7 I_24 I_50 I_8 I_12 I_25 I_27 
+Cluster 0,1 Prototipo: I_49 [26 objetos]Objetos: I_1 I_5 I_6 I_11 I_15 I_16 I_17 I_18 I_19 I_20 I_21 I_22 I_23 I_28 I_29 I_32 I_33 I_34 I_37 I_38 I_40 I_41 I_45 I_47 I_49 I_44 
+Cluster 1,0 Prototipo: I_81 [17 objetos]Objetos: I_99 I_58 I_94 I_61 I_70 I_80 I_81 I_82 I_90 I_91 I_54 I_93 I_107 I_63 I_120 I_88 I_69 
+Cluster 1,1 Prototipo: I_97 [20 objetos]Objetos: I_62 I_65 I_67 I_85 I_89 I_96 I_97 I_56 I_86 I_100 I_72 I_68 I_74 I_83 I_92 I_95 I_98 I_60 I_79 I_64 
+Cluster 2,0 Prototipo: I_140 [35 objetos]Objetos: I_105 I_53 I_57 I_78 I_87 I_101 I_103 I_106 I_108 I_111 I_113 I_116 I_117 I_119 I_121 I_123 I_125 I_126 I_130 I_131 I_136 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 I_51 I_110 I_118 I_132 
+Cluster 2,1 Prototipo: I_127 [28 objetos]Objetos: I_73 I_102 I_114 I_122 I_143 I_84 I_135 I_147 I_75 I_134 I_124 I_55 I_59 I_71 I_112 I_115 I_127 I_128 I_139 I_150 I_52 I_76 I_77 I_104 I_109 I_129 I_133 I_66 
+
+Critério de adequação (energia): 87.418091721
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	24	 26	 0	 0	 0	 0	 50
+2	0	 0	 15	 20	 5	 10	 50
+3	0	 0	 2	 0	 30	 18	 50
+Total	[24 26 17 20 35 28]
+Corrected Rand index: 0.552466353346
+
+F-measure(P,Q): 0.653840483562
+OERC: 0.113333333333
+
+#####################################
+Repetição do experimento: 17
+
+Cluster 0,0 Prototipo: I_4 [16 objetos]Objetos: I_2 I_3 I_4 I_9 I_10 I_13 I_14 I_26 I_30 I_31 I_35 I_39 I_46 I_48 I_43 I_42 
+Cluster 0,1 Prototipo: I_8 [19 objetos]Objetos: I_38 I_28 I_1 I_18 I_21 I_23 I_29 I_32 I_41 I_40 I_7 I_8 I_12 I_25 I_27 I_24 I_50 I_36 I_44 
+Cluster 1,0 Prototipo: I_49 [11 objetos]Objetos: I_11 I_49 I_20 I_45 I_47 I_22 I_5 I_6 I_17 I_19 I_37 
+Cluster 1,1 Prototipo: I_34 [4 objetos]Objetos: I_16 I_15 I_34 I_33 
+Cluster 2,0 Prototipo: I_56 [56 objetos]Objetos: I_54 I_55 I_59 I_63 I_69 I_73 I_75 I_88 I_120 I_134 I_135 I_147 I_61 I_64 I_68 I_70 I_72 I_74 I_80 I_81 I_82 I_83 I_92 I_93 I_98 I_56 I_58 I_60 I_62 I_65 I_79 I_84 I_89 I_90 I_91 I_94 I_95 I_96 I_97 I_99 I_100 I_107 I_67 I_85 I_102 I_114 I_122 I_124 I_127 I_139 I_143 I_86 I_150 I_71 I_128 I_115 
+Cluster 2,1 Prototipo: I_140 [44 objetos]Objetos: I_137 I_149 I_101 I_104 I_105 I_110 I_111 I_116 I_121 I_125 I_129 I_133 I_138 I_141 I_142 I_144 I_145 I_146 I_148 I_78 I_103 I_106 I_108 I_112 I_113 I_117 I_118 I_119 I_123 I_126 I_131 I_132 I_136 I_140 I_53 I_130 I_51 I_109 I_87 I_52 I_57 I_66 I_76 I_77 
+
+Critério de adequação (energia): 111.542492343
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	16	 19	 11	 4	 0	 0	 50
+2	0	 0	 0	 0	 41	 9	 50
+3	0	 0	 0	 0	 15	 35	 50
+Total	[16 19 11  4 56 44]
+Corrected Rand index: 0.585905101472
+
+F-measure(P,Q): 0.689663464802
+OERC: 0.16
+
+#####################################
+Repetição do experimento: 18
+
+Cluster 0,0 Prototipo: I_6 [13 objetos]Objetos: I_15 I_16 I_6 I_11 I_17 I_19 I_20 I_22 I_33 I_34 I_45 I_47 I_49 
+Cluster 0,1 Prototipo: I_50 [37 objetos]Objetos: I_1 I_2 I_3 I_4 I_5 I_7 I_8 I_9 I_10 I_12 I_13 I_14 I_18 I_21 I_23 I_24 I_25 I_26 I_27 I_28 I_29 I_30 I_31 I_32 I_35 I_36 I_37 I_38 I_39 I_40 I_41 I_42 I_43 I_44 I_46 I_48 I_50 
+Cluster 1,0 Prototipo: I_52 [9 objetos]Objetos: I_57 I_71 I_86 I_52 I_66 I_51 I_76 I_87 I_53 
+Cluster 1,1 Prototipo: I_79 [35 objetos]Objetos: I_65 I_89 I_62 I_67 I_85 I_96 I_64 I_79 I_97 I_98 I_122 I_56 I_92 I_100 I_150 I_134 I_72 I_74 I_84 I_102 I_143 I_55 I_59 I_73 I_75 I_77 I_115 I_124 I_127 I_128 I_135 I_139 I_147 I_104 I_112 
+Cluster 2,0 Prototipo: I_140 [34 objetos]Objetos: I_103 I_105 I_106 I_110 I_118 I_119 I_121 I_125 I_126 I_132 I_136 I_140 I_141 I_142 I_144 I_145 I_146 I_108 I_113 I_117 I_123 I_129 I_130 I_131 I_133 I_138 I_148 I_78 I_109 I_101 I_116 I_111 I_137 I_149 
+Cluster 2,1 Prototipo: I_90 [22 objetos]Objetos: I_63 I_69 I_88 I_91 I_93 I_95 I_114 I_120 I_54 I_58 I_60 I_61 I_70 I_80 I_81 I_82 I_90 I_94 I_107 I_99 I_68 I_83 
+
+Critério de adequação (energia): 91.434248641
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	13	 37	 0	 0	 0	 0	 50
+2	0	 0	 9	 21	 1	 19	 50
+3	0	 0	 0	 14	 33	 3	 50
+Total	[13 37  9 35 34 22]
+Corrected Rand index: 0.610407382793
+
+F-measure(P,Q): 0.721355592045
+OERC: 0.12
+
+#####################################
+Repetição do experimento: 19
+
+Cluster 0,0 Prototipo: I_140 [31 objetos]Objetos: I_78 I_101 I_103 I_105 I_106 I_108 I_110 I_111 I_113 I_116 I_117 I_118 I_119 I_121 I_123 I_125 I_126 I_130 I_131 I_132 I_136 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 
+Cluster 0,1 Prototipo: I_127 [29 objetos]Objetos: I_73 I_114 I_135 I_55 I_64 I_74 I_79 I_84 I_98 I_102 I_109 I_112 I_122 I_124 I_127 I_134 I_143 I_147 I_77 I_115 I_128 I_139 I_150 I_104 I_129 I_133 I_67 I_72 I_85 
+Cluster 1,0 Prototipo: I_52 [15 objetos]Objetos: I_86 I_52 I_57 I_66 I_76 I_87 I_71 I_51 I_92 I_96 I_53 I_59 I_89 I_75 I_62 
+Cluster 1,1 Prototipo: I_90 [25 objetos]Objetos: I_99 I_58 I_65 I_94 I_60 I_80 I_97 I_68 I_82 I_100 I_83 I_70 I_56 I_61 I_81 I_90 I_91 I_93 I_95 I_54 I_63 I_107 I_88 I_120 I_69 
+Cluster 2,0 Prototipo: I_49 [26 objetos]Objetos: I_6 I_11 I_15 I_16 I_17 I_19 I_20 I_22 I_33 I_34 I_45 I_47 I_49 I_37 I_5 I_38 I_28 I_1 I_18 I_21 I_23 I_29 I_32 I_41 I_44 I_40 
+Cluster 2,1 Prototipo: I_31 [24 objetos]Objetos: I_9 I_42 I_14 I_13 I_39 I_2 I_4 I_26 I_46 I_3 I_7 I_8 I_10 I_12 I_24 I_25 I_27 I_30 I_31 I_35 I_36 I_43 I_48 I_50 
+
+Critério de adequação (energia): 89.710216906
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 0	 0	 26	 24	 50
+2	1	 11	 15	 23	 0	 0	 50
+3	30	 18	 0	 2	 0	 0	 50
+Total	[31 29 15 25 26 24]
+Corrected Rand index: 0.577449554102
+
+F-measure(P,Q): 0.67942820013
+OERC: 0.0933333333333
+
+#####################################
+Repetição do experimento: 20
+
+Cluster 0,0 Prototipo: I_140 [32 objetos]Objetos: I_103 I_105 I_106 I_108 I_113 I_123 I_131 I_133 I_136 I_140 I_141 I_142 I_146 I_101 I_110 I_116 I_118 I_121 I_125 I_126 I_130 I_132 I_137 I_144 I_145 I_111 I_148 I_149 I_129 I_109 I_117 I_119 
+Cluster 0,1 Prototipo: I_79 [37 objetos]Objetos: I_56 I_62 I_64 I_65 I_67 I_71 I_72 I_74 I_75 I_79 I_85 I_89 I_92 I_96 I_97 I_98 I_100 I_128 I_139 I_150 I_55 I_73 I_84 I_102 I_114 I_115 I_122 I_124 I_127 I_134 I_135 I_143 I_147 I_104 I_112 I_83 I_95 
+Cluster 1,0 Prototipo: I_87 [12 objetos]Objetos: I_51 I_53 I_57 I_66 I_76 I_77 I_87 I_52 I_59 I_78 I_86 I_138 
+Cluster 1,1 Prototipo: I_81 [20 objetos]Objetos: I_61 I_63 I_82 I_54 I_58 I_60 I_68 I_70 I_80 I_81 I_90 I_91 I_93 I_94 I_99 I_88 I_69 I_107 I_120 I_42 
+Cluster 2,0 Prototipo: I_6 [13 objetos]Objetos: I_15 I_16 I_6 I_11 I_17 I_19 I_20 I_33 I_34 I_45 I_47 I_22 I_49 
+Cluster 2,1 Prototipo: I_50 [36 objetos]Objetos: I_1 I_2 I_3 I_4 I_5 I_7 I_8 I_9 I_10 I_12 I_13 I_14 I_18 I_21 I_23 I_24 I_25 I_26 I_27 I_28 I_29 I_30 I_31 I_32 I_35 I_36 I_37 I_38 I_39 I_40 I_41 I_43 I_44 I_46 I_48 I_50 
+
+Critério de adequação (energia): 89.524324629
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 0	 1	 13	 36	 50
+2	0	 22	 11	 17	 0	 0	 50
+3	32	 15	 1	 2	 0	 0	 50
+Total	[32 37 12 20 13 36]
+Corrected Rand index: 0.597138411981
+
+F-measure(P,Q): 0.707814744547
+OERC: 0.126666666667
+
+#####################################
+Repetição do experimento: 21
+
+Cluster 0,0 Prototipo: I_8 [49 objetos]Objetos: I_1 I_2 I_3 I_4 I_5 I_6 I_7 I_8 I_9 I_10 I_11 I_12 I_13 I_14 I_15 I_16 I_17 I_18 I_19 I_20 I_21 I_22 I_23 I_24 I_25 I_26 I_27 I_28 I_29 I_30 I_31 I_32 I_33 I_34 I_35 I_36 I_37 I_38 I_39 I_40 I_41 I_43 I_44 I_45 I_46 I_47 I_48 I_49 I_50 
+Cluster 0,1 Prototipo: I_81 [20 objetos]Objetos: I_54 I_58 I_60 I_61 I_68 I_70 I_80 I_81 I_82 I_90 I_91 I_93 I_94 I_99 I_107 I_42 I_63 I_69 I_88 I_120 
+Cluster 1,0 Prototipo: I_52 [9 objetos]Objetos: I_51 I_52 I_57 I_66 I_76 I_87 I_86 I_53 I_71 
+Cluster 1,1 Prototipo: I_79 [23 objetos]Objetos: I_72 I_74 I_75 I_98 I_56 I_89 I_96 I_97 I_100 I_62 I_85 I_65 I_67 I_92 I_64 I_79 I_59 I_139 I_83 I_95 I_122 I_128 I_150 
+Cluster 2,0 Prototipo: I_140 [31 objetos]Objetos: I_106 I_136 I_131 I_108 I_103 I_141 I_101 I_105 I_110 I_111 I_113 I_116 I_118 I_121 I_125 I_126 I_130 I_132 I_137 I_140 I_142 I_144 I_145 I_146 I_148 I_149 I_78 I_117 I_138 I_119 I_123 
+Cluster 2,1 Prototipo: I_124 [18 objetos]Objetos: I_55 I_77 I_84 I_102 I_104 I_109 I_112 I_114 I_124 I_127 I_134 I_135 I_143 I_147 I_73 I_115 I_129 I_133 
+
+Critério de adequação (energia): 104.063916885
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	49	 1	 0	 0	 0	 0	 50
+2	0	 17	 9	 19	 1	 4	 50
+3	0	 2	 0	 4	 30	 14	 50
+Total	[49 20  9 23 31 18]
+Corrected Rand index: 0.691997300753
+
+F-measure(P,Q): 0.750395891948
+OERC: 0.08
+
+#####################################
+Repetição do experimento: 22
+
+Cluster 0,0 Prototipo: I_140 [35 objetos]Objetos: I_101 I_103 I_106 I_108 I_110 I_118 I_119 I_121 I_123 I_125 I_126 I_130 I_132 I_136 I_137 I_144 I_145 I_149 I_111 I_113 I_116 I_131 I_140 I_141 I_142 I_146 I_51 I_53 I_105 I_87 I_57 I_78 I_138 I_148 I_117 
+Cluster 0,1 Prototipo: I_127 [40 objetos]Objetos: I_52 I_55 I_59 I_62 I_64 I_66 I_67 I_71 I_72 I_73 I_74 I_75 I_76 I_77 I_79 I_84 I_86 I_92 I_96 I_98 I_102 I_104 I_109 I_112 I_114 I_115 I_122 I_124 I_127 I_128 I_129 I_133 I_134 I_135 I_139 I_143 I_147 I_150 I_85 I_89 
+Cluster 1,0 Prototipo: I_8 [21 objetos]Objetos: I_24 I_27 I_32 I_44 I_8 I_40 I_29 I_25 I_7 I_12 I_18 I_21 I_41 I_50 I_1 I_28 I_37 I_36 I_38 I_5 I_23 
+Cluster 1,1 Prototipo: I_90 [25 objetos]Objetos: I_58 I_60 I_61 I_65 I_68 I_80 I_82 I_94 I_99 I_54 I_70 I_81 I_90 I_91 I_95 I_107 I_63 I_83 I_93 I_100 I_88 I_69 I_120 I_56 I_97 
+Cluster 2,0 Prototipo: I_6 [13 objetos]Objetos: I_6 I_11 I_15 I_16 I_17 I_19 I_20 I_22 I_33 I_34 I_45 I_47 I_49 
+Cluster 2,1 Prototipo: I_4 [16 objetos]Objetos: I_42 I_9 I_26 I_2 I_4 I_10 I_13 I_14 I_31 I_35 I_39 I_46 I_43 I_3 I_30 I_48 
+
+Critério de adequação (energia): 88.975403962
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 21	 0	 13	 16	 50
+2	5	 22	 0	 23	 0	 0	 50
+3	30	 18	 0	 2	 0	 0	 50
+Total	[35 40 21 25 13 16]
+Corrected Rand index: 0.517888140625
+
+F-measure(P,Q): 0.636921660683
+OERC: 0.166666666667
+
+#####################################
+Repetição do experimento: 23
+
+Cluster 0,0 Prototipo: I_6 [13 objetos]Objetos: I_6 I_11 I_15 I_16 I_17 I_19 I_20 I_22 I_33 I_34 I_45 I_47 I_49 
+Cluster 0,1 Prototipo: I_4 [16 objetos]Objetos: I_42 I_9 I_2 I_4 I_10 I_13 I_14 I_26 I_31 I_35 I_39 I_46 I_43 I_48 I_3 I_30 
+Cluster 1,0 Prototipo: I_8 [21 objetos]Objetos: I_27 I_8 I_24 I_32 I_44 I_40 I_29 I_25 I_7 I_12 I_18 I_21 I_41 I_50 I_1 I_28 I_37 I_36 I_38 I_5 I_23 
+Cluster 1,1 Prototipo: I_90 [25 objetos]Objetos: I_68 I_54 I_58 I_60 I_61 I_63 I_65 I_70 I_80 I_81 I_82 I_83 I_90 I_91 I_93 I_94 I_95 I_99 I_100 I_107 I_69 I_88 I_120 I_56 I_97 
+Cluster 2,0 Prototipo: I_140 [35 objetos]Objetos: I_51 I_53 I_87 I_101 I_103 I_105 I_106 I_108 I_110 I_111 I_113 I_116 I_118 I_119 I_121 I_123 I_125 I_126 I_130 I_131 I_132 I_136 I_137 I_140 I_141 I_142 I_144 I_145 I_146 I_149 I_78 I_138 I_57 I_148 I_117 
+Cluster 2,1 Prototipo: I_127 [40 objetos]Objetos: I_55 I_59 I_62 I_64 I_67 I_71 I_72 I_73 I_74 I_75 I_76 I_77 I_79 I_84 I_85 I_89 I_92 I_96 I_98 I_102 I_104 I_109 I_112 I_114 I_115 I_122 I_124 I_127 I_128 I_129 I_133 I_134 I_135 I_139 I_143 I_147 I_150 I_52 I_66 I_86 
+
+Critério de adequação (energia): 88.975403962
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	13	 16	 21	 0	 0	 0	 50
+2	0	 0	 0	 23	 5	 22	 50
+3	0	 0	 0	 2	 30	 18	 50
+Total	[13 16 21 25 35 40]
+Corrected Rand index: 0.517888140625
+
+F-measure(P,Q): 0.636921660683
+OERC: 0.166666666667
+
+#####################################
+Repetição do experimento: 24
+
+Cluster 0,0 Prototipo: I_140 [31 objetos]Objetos: I_78 I_101 I_103 I_105 I_106 I_108 I_110 I_111 I_113 I_116 I_117 I_118 I_119 I_121 I_123 I_125 I_126 I_130 I_131 I_132 I_136 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 
+Cluster 0,1 Prototipo: I_127 [29 objetos]Objetos: I_79 I_114 I_122 I_64 I_102 I_143 I_84 I_73 I_139 I_150 I_135 I_115 I_127 I_128 I_134 I_55 I_147 I_124 I_109 I_112 I_98 I_77 I_104 I_129 I_133 I_67 I_72 I_74 I_85 
+Cluster 1,0 Prototipo: I_52 [15 objetos]Objetos: I_52 I_57 I_66 I_76 I_86 I_87 I_71 I_51 I_92 I_53 I_59 I_75 I_89 I_96 I_62 
+Cluster 1,1 Prototipo: I_90 [25 objetos]Objetos: I_99 I_58 I_94 I_60 I_65 I_80 I_97 I_68 I_82 I_83 I_100 I_70 I_81 I_95 I_61 I_54 I_56 I_63 I_90 I_91 I_93 I_107 I_88 I_120 I_69 
+Cluster 2,0 Prototipo: I_31 [24 objetos]Objetos: I_42 I_2 I_3 I_4 I_9 I_10 I_13 I_14 I_26 I_30 I_31 I_35 I_36 I_39 I_43 I_46 I_48 I_24 I_50 I_7 I_12 I_25 I_8 I_27 
+Cluster 2,1 Prototipo: I_49 [26 objetos]Objetos: I_1 I_5 I_6 I_11 I_15 I_16 I_17 I_18 I_19 I_20 I_21 I_22 I_23 I_28 I_29 I_32 I_33 I_34 I_37 I_38 I_40 I_41 I_44 I_45 I_47 I_49 
+
+Critério de adequação (energia): 89.710216906
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 0	 0	 24	 26	 50
+2	1	 11	 15	 23	 0	 0	 50
+3	30	 18	 0	 2	 0	 0	 50
+Total	[31 29 15 25 24 26]
+Corrected Rand index: 0.577449554102
+
+F-measure(P,Q): 0.67942820013
+OERC: 0.0933333333333
+
+#####################################
+Repetição do experimento: 25
+
+Cluster 0,0 Prototipo: I_140 [34 objetos]Objetos: I_106 I_110 I_118 I_132 I_136 I_51 I_53 I_78 I_101 I_103 I_105 I_108 I_111 I_113 I_116 I_117 I_121 I_123 I_125 I_126 I_130 I_131 I_133 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 I_119 
+Cluster 0,1 Prototipo: I_79 [29 objetos]Objetos: I_52 I_56 I_57 I_62 I_64 I_65 I_67 I_71 I_72 I_74 I_75 I_79 I_85 I_86 I_89 I_92 I_96 I_97 I_98 I_100 I_102 I_115 I_122 I_128 I_139 I_143 I_150 I_83 I_95 
+Cluster 1,0 Prototipo: I_134 [18 objetos]Objetos: I_109 I_59 I_73 I_77 I_104 I_112 I_135 I_147 I_55 I_124 I_134 I_84 I_76 I_127 I_66 I_129 I_87 I_114 
+Cluster 1,1 Prototipo: I_81 [20 objetos]Objetos: I_58 I_99 I_94 I_61 I_54 I_63 I_70 I_80 I_81 I_82 I_90 I_60 I_68 I_91 I_93 I_88 I_69 I_107 I_120 I_42 
+Cluster 2,0 Prototipo: I_6 [13 objetos]Objetos: I_16 I_6 I_11 I_15 I_17 I_19 I_20 I_22 I_33 I_34 I_45 I_47 I_49 
+Cluster 2,1 Prototipo: I_50 [36 objetos]Objetos: I_1 I_2 I_3 I_4 I_5 I_7 I_8 I_9 I_10 I_12 I_13 I_14 I_18 I_21 I_23 I_24 I_25 I_26 I_27 I_28 I_29 I_30 I_31 I_32 I_35 I_36 I_37 I_38 I_39 I_40 I_41 I_43 I_44 I_46 I_48 I_50 
+
+Critério de adequação (energia): 89.380100849
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 0	 1	 13	 36	 50
+2	3	 22	 8	 17	 0	 0	 50
+3	31	 7	 10	 2	 0	 0	 50
+Total	[34 29 18 20 13 36]
+Corrected Rand index: 0.575443513792
+
+F-measure(P,Q): 0.710755521912
+OERC: 0.14
+
+#####################################
+Repetição do experimento: 26
+
+Cluster 0,0 Prototipo: I_6 [13 objetos]Objetos: I_15 I_16 I_6 I_11 I_17 I_19 I_20 I_22 I_33 I_34 I_45 I_47 I_49 
+Cluster 0,1 Prototipo: I_50 [37 objetos]Objetos: I_1 I_2 I_3 I_4 I_5 I_7 I_8 I_9 I_10 I_12 I_13 I_14 I_18 I_21 I_23 I_24 I_25 I_26 I_27 I_28 I_29 I_30 I_31 I_32 I_35 I_36 I_37 I_38 I_39 I_40 I_41 I_42 I_43 I_44 I_46 I_48 I_50 
+Cluster 1,0 Prototipo: I_52 [9 objetos]Objetos: I_57 I_71 I_86 I_52 I_66 I_51 I_76 I_87 I_53 
+Cluster 1,1 Prototipo: I_79 [35 objetos]Objetos: I_65 I_89 I_62 I_67 I_85 I_96 I_64 I_79 I_97 I_98 I_122 I_56 I_92 I_100 I_150 I_134 I_72 I_74 I_84 I_102 I_143 I_55 I_59 I_73 I_75 I_77 I_115 I_124 I_127 I_128 I_135 I_139 I_147 I_104 I_112 
+Cluster 2,0 Prototipo: I_140 [34 objetos]Objetos: I_109 I_119 I_129 I_133 I_78 I_103 I_105 I_106 I_108 I_110 I_113 I_117 I_121 I_123 I_125 I_126 I_130 I_131 I_136 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_118 I_132 I_101 I_116 I_111 I_137 I_149 
+Cluster 2,1 Prototipo: I_90 [22 objetos]Objetos: I_80 I_58 I_60 I_94 I_54 I_61 I_63 I_70 I_81 I_82 I_90 I_91 I_93 I_95 I_107 I_69 I_88 I_114 I_120 I_99 I_68 I_83 
+
+Critério de adequação (energia): 91.434248641
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	13	 37	 0	 0	 0	 0	 50
+2	0	 0	 9	 21	 1	 19	 50
+3	0	 0	 0	 14	 33	 3	 50
+Total	[13 37  9 35 34 22]
+Corrected Rand index: 0.610407382793
+
+F-measure(P,Q): 0.721355592045
+OERC: 0.12
+
+#####################################
+Repetição do experimento: 27
+
+Cluster 0,0 Prototipo: I_6 [13 objetos]Objetos: I_16 I_15 I_33 I_34 I_6 I_17 I_19 I_11 I_20 I_45 I_47 I_49 I_22 
+Cluster 0,1 Prototipo: I_50 [37 objetos]Objetos: I_5 I_23 I_37 I_38 I_1 I_2 I_3 I_4 I_7 I_8 I_9 I_10 I_12 I_13 I_14 I_18 I_21 I_24 I_25 I_26 I_27 I_28 I_29 I_30 I_31 I_32 I_35 I_36 I_39 I_40 I_41 I_43 I_44 I_46 I_48 I_50 I_42 
+Cluster 1,0 Prototipo: I_121 [21 objetos]Objetos: I_118 I_132 I_110 I_137 I_149 I_101 I_125 I_145 I_121 I_144 I_116 I_126 I_136 I_141 I_106 I_142 I_103 I_119 I_123 I_140 I_146 
+Cluster 1,1 Prototipo: I_79 [34 objetos]Objetos: I_89 I_65 I_96 I_62 I_67 I_85 I_86 I_92 I_64 I_79 I_97 I_122 I_71 I_75 I_98 I_102 I_139 I_143 I_56 I_72 I_74 I_84 I_100 I_55 I_59 I_73 I_127 I_134 I_135 I_150 I_147 I_76 I_124 I_128 
+Cluster 2,0 Prototipo: I_117 [23 objetos]Objetos: I_51 I_52 I_53 I_57 I_66 I_77 I_78 I_87 I_104 I_105 I_108 I_109 I_111 I_112 I_113 I_115 I_117 I_129 I_130 I_131 I_133 I_138 I_148 
+Cluster 2,1 Prototipo: I_90 [22 objetos]Objetos: I_54 I_60 I_61 I_63 I_70 I_80 I_81 I_82 I_90 I_94 I_107 I_91 I_99 I_58 I_68 I_83 I_93 I_95 I_88 I_120 I_69 I_114 
+
+Critério de adequação (energia): 89.065628641
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	13	 37	 0	 0	 0	 0	 50
+2	0	 0	 0	 23	 8	 19	 50
+3	0	 0	 21	 11	 15	 3	 50
+Total	[13 37 21 34 23 22]
+Corrected Rand index: 0.55304898132
+
+F-measure(P,Q): 0.663247685346
+OERC: 0.146666666667
+
+#####################################
+Repetição do experimento: 28
+
+Cluster 0,0 Prototipo: I_49 [26 objetos]Objetos: I_1 I_5 I_18 I_21 I_23 I_28 I_29 I_32 I_38 I_40 I_41 I_44 I_6 I_11 I_15 I_16 I_17 I_19 I_20 I_22 I_33 I_34 I_37 I_45 I_47 I_49 
+Cluster 0,1 Prototipo: I_79 [37 objetos]Objetos: I_62 I_65 I_67 I_72 I_74 I_79 I_85 I_86 I_89 I_92 I_96 I_97 I_98 I_56 I_100 I_64 I_75 I_71 I_102 I_122 I_139 I_143 I_84 I_150 I_55 I_59 I_73 I_127 I_134 I_135 I_76 I_83 I_114 I_95 I_128 I_147 I_124 
+Cluster 1,0 Prototipo: I_31 [24 objetos]Objetos: I_24 I_46 I_2 I_3 I_4 I_9 I_10 I_13 I_14 I_26 I_30 I_31 I_35 I_36 I_39 I_48 I_42 I_43 I_50 I_7 I_12 I_25 I_27 I_8 
+Cluster 1,1 Prototipo: I_121 [21 objetos]Objetos: I_116 I_137 I_149 I_101 I_110 I_118 I_121 I_125 I_132 I_144 I_145 I_126 I_136 I_141 I_142 I_103 I_106 I_119 I_123 I_140 I_146 
+Cluster 2,0 Prototipo: I_81 [19 objetos]Objetos: I_60 I_80 I_82 I_58 I_61 I_94 I_99 I_81 I_68 I_70 I_54 I_63 I_90 I_91 I_93 I_107 I_88 I_69 I_120 
+Cluster 2,1 Prototipo: I_117 [23 objetos]Objetos: I_51 I_53 I_57 I_66 I_77 I_78 I_87 I_104 I_105 I_108 I_109 I_111 I_112 I_113 I_117 I_129 I_130 I_131 I_133 I_138 I_148 I_115 I_52 
+
+Critério de adequação (energia): 87.406399895
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	26	 0	 24	 0	 0	 0	 50
+2	0	 25	 0	 0	 17	 8	 50
+3	0	 12	 0	 21	 2	 15	 50
+Total	[26 37 24 21 19 23]
+Corrected Rand index: 0.519010027603
+
+F-measure(P,Q): 0.616824155256
+OERC: 0.146666666667
+
+#####################################
+Repetição do experimento: 29
+
+Cluster 0,0 Prototipo: I_8 [49 objetos]Objetos: I_1 I_2 I_3 I_4 I_5 I_6 I_7 I_8 I_9 I_10 I_11 I_12 I_13 I_14 I_15 I_16 I_17 I_18 I_19 I_20 I_21 I_22 I_23 I_24 I_25 I_26 I_27 I_28 I_29 I_30 I_31 I_32 I_33 I_34 I_35 I_36 I_37 I_38 I_39 I_40 I_41 I_43 I_44 I_45 I_46 I_47 I_48 I_49 I_50 
+Cluster 0,1 Prototipo: I_8 [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: I_97 [20 objetos]Objetos: I_65 I_89 I_96 I_67 I_85 I_86 I_97 I_100 I_56 I_62 I_95 I_83 I_60 I_68 I_72 I_74 I_92 I_98 I_79 I_64 
+Cluster 1,1 Prototipo: I_81 [18 objetos]Objetos: I_70 I_81 I_82 I_90 I_91 I_54 I_58 I_61 I_80 I_93 I_94 I_99 I_107 I_63 I_120 I_42 I_88 I_69 
+Cluster 2,0 Prototipo: I_140 [35 objetos]Objetos: I_51 I_53 I_57 I_78 I_87 I_101 I_103 I_105 I_106 I_108 I_110 I_111 I_113 I_116 I_117 I_118 I_119 I_121 I_123 I_125 I_126 I_130 I_131 I_132 I_136 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 
+Cluster 2,1 Prototipo: I_127 [28 objetos]Objetos: I_55 I_59 I_73 I_75 I_76 I_77 I_84 I_102 I_109 I_112 I_114 I_115 I_122 I_124 I_127 I_128 I_134 I_135 I_139 I_143 I_147 I_150 I_71 I_104 I_129 I_52 I_133 I_66 
+
+Critério de adequação (energia): 110.481515652
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	1,0	1,1	2,0	2,1	Total
+
+1	49	 0	 1	 0	 0	 50
+2	0	 20	 15	 5	 10	 50
+3	0	 0	 2	 30	 18	 50
+Total	[49 20 18 35 28]
+Corrected Rand index: 0.685908860676
+
+F-measure(P,Q): 0.75573663809
+OERC: 0.12
+
+#####################################
+Repetição do experimento: 30
+
+Cluster 0,0 Prototipo: I_31 [24 objetos]Objetos: I_2 I_3 I_4 I_9 I_10 I_13 I_14 I_26 I_30 I_31 I_35 I_36 I_39 I_43 I_46 I_48 I_42 I_24 I_50 I_7 I_12 I_25 I_8 I_27 
+Cluster 0,1 Prototipo: I_49 [26 objetos]Objetos: I_1 I_5 I_6 I_11 I_15 I_16 I_17 I_18 I_19 I_20 I_21 I_22 I_23 I_28 I_29 I_32 I_33 I_34 I_37 I_38 I_40 I_41 I_44 I_45 I_47 I_49 
+Cluster 1,0 Prototipo: I_81 [17 objetos]Objetos: I_58 I_61 I_94 I_99 I_70 I_80 I_81 I_82 I_54 I_63 I_90 I_91 I_107 I_69 I_93 I_120 I_88 
+Cluster 1,1 Prototipo: I_97 [20 objetos]Objetos: I_65 I_85 I_89 I_96 I_67 I_97 I_100 I_56 I_62 I_72 I_86 I_74 I_92 I_95 I_98 I_60 I_68 I_79 I_83 I_64 
+Cluster 2,0 Prototipo: I_127 [28 objetos]Objetos: I_73 I_75 I_84 I_102 I_114 I_135 I_143 I_147 I_122 I_55 I_115 I_124 I_127 I_134 I_139 I_150 I_59 I_71 I_112 I_128 I_52 I_66 I_76 I_77 I_104 I_109 I_129 I_133 
+Cluster 2,1 Prototipo: I_140 [35 objetos]Objetos: I_51 I_53 I_101 I_103 I_105 I_106 I_108 I_110 I_111 I_113 I_116 I_118 I_121 I_123 I_125 I_126 I_130 I_132 I_136 I_137 I_140 I_141 I_142 I_144 I_145 I_146 I_149 I_119 I_131 I_148 I_78 I_117 I_138 I_87 I_57 
+
+Critério de adequação (energia): 87.418091721
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	24	 26	 0	 0	 0	 0	 50
+2	0	 0	 15	 20	 10	 5	 50
+3	0	 0	 2	 0	 18	 30	 50
+Total	[24 26 17 20 28 35]
+Corrected Rand index: 0.552466353346
+
+F-measure(P,Q): 0.653840483562
+OERC: 0.113333333333
+
+#####################################
+Repetição do experimento: 31
+
+Cluster 0,0 Prototipo: I_8 [49 objetos]Objetos: I_2 I_3 I_4 I_7 I_8 I_10 I_12 I_13 I_14 I_23 I_24 I_25 I_26 I_27 I_29 I_30 I_31 I_35 I_36 I_39 I_40 I_43 I_46 I_48 I_50 I_9 I_44 I_15 I_16 I_19 I_20 I_22 I_32 I_38 I_41 I_6 I_11 I_17 I_18 I_21 I_33 I_34 I_45 I_47 I_49 I_1 I_5 I_28 I_37 
+Cluster 0,1 Prototipo: I_8 [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: I_79 [38 objetos]Objetos: I_89 I_65 I_96 I_62 I_85 I_64 I_67 I_79 I_97 I_122 I_98 I_56 I_92 I_100 I_150 I_134 I_72 I_74 I_84 I_102 I_143 I_55 I_73 I_75 I_77 I_115 I_124 I_127 I_128 I_135 I_139 I_147 I_104 I_112 I_83 I_95 I_114 I_59 
+Cluster 1,1 Prototipo: I_52 [9 objetos]Objetos: I_86 I_57 I_51 I_52 I_66 I_71 I_76 I_87 I_53 
+Cluster 2,0 Prototipo: I_81 [20 objetos]Objetos: I_80 I_99 I_58 I_60 I_91 I_70 I_82 I_94 I_54 I_61 I_63 I_81 I_90 I_93 I_107 I_69 I_88 I_120 I_42 I_68 
+Cluster 2,1 Prototipo: I_140 [34 objetos]Objetos: I_78 I_109 I_117 I_119 I_129 I_131 I_133 I_108 I_123 I_130 I_148 I_103 I_105 I_106 I_113 I_116 I_121 I_136 I_138 I_140 I_141 I_142 I_144 I_146 I_126 I_101 I_111 I_125 I_137 I_145 I_110 I_149 I_118 I_132 
+
+Critério de adequação (energia): 112.838443826
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	1,0	1,1	2,0	2,1	Total
+
+1	49	 0	 0	 1	 0	 50
+2	0	 23	 9	 17	 1	 50
+3	0	 15	 0	 2	 33	 50
+Total	[49 38  9 20 34]
+Corrected Rand index: 0.70493612162
+
+F-measure(P,Q): 0.766113516114
+OERC: 0.126666666667
+
+#####################################
+Repetição do experimento: 32
+
+Cluster 0,0 Prototipo: I_8 [21 objetos]Objetos: I_24 I_36 I_7 I_8 I_12 I_25 I_27 I_29 I_40 I_50 I_32 I_21 I_44 I_1 I_18 I_41 I_28 I_37 I_38 I_5 I_23 
+Cluster 0,1 Prototipo: I_6 [13 objetos]Objetos: I_6 I_11 I_15 I_16 I_17 I_19 I_20 I_22 I_33 I_34 I_45 I_47 I_49 
+Cluster 1,0 Prototipo: I_121 [21 objetos]Objetos: I_110 I_118 I_125 I_132 I_137 I_149 I_101 I_116 I_121 I_126 I_136 I_141 I_142 I_144 I_145 I_106 I_103 I_119 I_123 I_140 I_146 
+Cluster 1,1 Prototipo: I_4 [16 objetos]Objetos: I_42 I_2 I_9 I_13 I_26 I_46 I_4 I_14 I_31 I_35 I_39 I_10 I_43 I_3 I_30 I_48 
+Cluster 2,0 Prototipo: I_117 [37 objetos]Objetos: I_51 I_53 I_55 I_59 I_66 I_75 I_76 I_77 I_78 I_87 I_92 I_104 I_105 I_108 I_109 I_111 I_112 I_113 I_115 I_117 I_124 I_127 I_128 I_129 I_130 I_131 I_133 I_134 I_138 I_139 I_147 I_148 I_150 I_52 I_57 I_71 I_86 
+Cluster 2,1 Prototipo: I_95 [42 objetos]Objetos: I_58 I_60 I_61 I_65 I_80 I_81 I_82 I_94 I_99 I_70 I_68 I_83 I_89 I_96 I_100 I_97 I_91 I_85 I_90 I_95 I_54 I_56 I_63 I_67 I_72 I_93 I_107 I_62 I_74 I_88 I_120 I_69 I_114 I_98 I_79 I_122 I_73 I_84 I_102 I_135 I_143 I_64 
+
+Critério de adequação (energia): 93.946547244
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	21	 13	 0	 16	 0	 0	 50
+2	0	 0	 0	 0	 15	 35	 50
+3	0	 0	 21	 0	 22	 7	 50
+Total	[21 13 21 16 37 42]
+Corrected Rand index: 0.539518886183
+
+F-measure(P,Q): 0.647989385589
+OERC: 0.146666666667
+
+#####################################
+Repetição do experimento: 33
+
+Cluster 0,0 Prototipo: I_78 [23 objetos]Objetos: I_51 I_52 I_53 I_55 I_66 I_76 I_77 I_78 I_87 I_104 I_108 I_109 I_111 I_112 I_117 I_129 I_130 I_131 I_133 I_138 I_148 I_57 I_59 
+Cluster 0,1 Prototipo: I_121 [23 objetos]Objetos: I_110 I_118 I_132 I_137 I_149 I_101 I_125 I_145 I_121 I_136 I_144 I_116 I_126 I_141 I_142 I_106 I_103 I_119 I_123 I_140 I_146 I_105 I_113 
+Cluster 1,0 Prototipo: I_79 [35 objetos]Objetos: I_62 I_74 I_98 I_56 I_67 I_72 I_85 I_89 I_96 I_97 I_79 I_64 I_92 I_75 I_65 I_73 I_84 I_100 I_114 I_122 I_135 I_102 I_143 I_86 I_139 I_71 I_150 I_115 I_127 I_128 I_134 I_147 I_83 I_124 I_95 
+Cluster 1,1 Prototipo: I_6 [13 objetos]Objetos: I_19 I_15 I_16 I_6 I_17 I_33 I_34 I_11 I_20 I_22 I_45 I_47 I_49 
+Cluster 2,0 Prototipo: I_81 [20 objetos]Objetos: I_54 I_58 I_60 I_61 I_63 I_68 I_70 I_80 I_81 I_82 I_90 I_91 I_93 I_94 I_99 I_107 I_42 I_69 I_88 I_120 
+Cluster 2,1 Prototipo: I_50 [36 objetos]Objetos: I_1 I_2 I_3 I_4 I_5 I_7 I_8 I_9 I_10 I_12 I_13 I_14 I_18 I_21 I_23 I_24 I_25 I_26 I_27 I_28 I_29 I_30 I_31 I_32 I_35 I_36 I_37 I_38 I_39 I_40 I_41 I_43 I_44 I_46 I_48 I_50 
+
+Critério de adequação (energia): 86.857487436
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 0	 13	 1	 36	 50
+2	11	 0	 22	 0	 17	 0	 50
+3	12	 23	 13	 0	 2	 0	 50
+Total	[23 23 35 13 20 36]
+Corrected Rand index: 0.538597095069
+
+F-measure(P,Q): 0.66166444915
+OERC: 0.18
+
+#####################################
+Repetição do experimento: 34
+
+Cluster 0,0 Prototipo: I_140 [34 objetos]Objetos: I_51 I_53 I_78 I_101 I_103 I_105 I_106 I_108 I_110 I_111 I_113 I_116 I_117 I_118 I_121 I_123 I_125 I_126 I_130 I_131 I_132 I_133 I_136 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 I_119 
+Cluster 0,1 Prototipo: I_79 [29 objetos]Objetos: I_65 I_56 I_62 I_64 I_67 I_72 I_74 I_75 I_79 I_85 I_89 I_92 I_96 I_97 I_98 I_100 I_102 I_122 I_139 I_143 I_150 I_71 I_86 I_115 I_128 I_52 I_57 I_83 I_95 
+Cluster 1,0 Prototipo: I_134 [18 objetos]Objetos: I_109 I_59 I_73 I_77 I_104 I_112 I_135 I_147 I_55 I_124 I_134 I_84 I_76 I_127 I_66 I_129 I_87 I_114 
+Cluster 1,1 Prototipo: I_81 [20 objetos]Objetos: I_58 I_99 I_94 I_61 I_54 I_63 I_70 I_80 I_81 I_82 I_90 I_60 I_68 I_88 I_91 I_93 I_107 I_69 I_120 I_42 
+Cluster 2,0 Prototipo: I_6 [13 objetos]Objetos: I_16 I_6 I_11 I_15 I_17 I_19 I_20 I_22 I_33 I_34 I_45 I_47 I_49 
+Cluster 2,1 Prototipo: I_50 [36 objetos]Objetos: I_1 I_2 I_3 I_4 I_5 I_7 I_8 I_9 I_10 I_12 I_13 I_14 I_18 I_21 I_23 I_24 I_25 I_26 I_27 I_28 I_29 I_30 I_31 I_32 I_35 I_36 I_37 I_38 I_39 I_40 I_41 I_43 I_44 I_46 I_48 I_50 
+
+Critério de adequação (energia): 89.380100849
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 0	 1	 13	 36	 50
+2	3	 22	 8	 17	 0	 0	 50
+3	31	 7	 10	 2	 0	 0	 50
+Total	[34 29 18 20 13 36]
+Corrected Rand index: 0.575443513792
+
+F-measure(P,Q): 0.710755521912
+OERC: 0.14
+
+#####################################
+Repetição do experimento: 35
+
+Cluster 0,0 Prototipo: I_140 [35 objetos]Objetos: I_57 I_51 I_53 I_78 I_87 I_101 I_103 I_105 I_106 I_108 I_110 I_111 I_113 I_116 I_117 I_118 I_119 I_121 I_123 I_125 I_126 I_130 I_131 I_132 I_136 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 
+Cluster 0,1 Prototipo: I_127 [28 objetos]Objetos: I_55 I_73 I_75 I_84 I_102 I_109 I_112 I_114 I_115 I_122 I_124 I_127 I_134 I_135 I_139 I_143 I_147 I_150 I_59 I_71 I_76 I_77 I_104 I_128 I_129 I_133 I_52 I_66 
+Cluster 1,0 Prototipo: I_97 [20 objetos]Objetos: I_65 I_85 I_89 I_96 I_97 I_100 I_67 I_86 I_56 I_62 I_95 I_83 I_60 I_68 I_72 I_74 I_92 I_98 I_79 I_64 
+Cluster 1,1 Prototipo: I_81 [18 objetos]Objetos: I_107 I_54 I_58 I_61 I_70 I_80 I_81 I_82 I_90 I_91 I_93 I_94 I_63 I_99 I_120 I_42 I_88 I_69 
+Cluster 2,0 Prototipo: I_8 [49 objetos]Objetos: I_1 I_5 I_6 I_7 I_8 I_11 I_12 I_15 I_17 I_18 I_19 I_20 I_21 I_22 I_23 I_24 I_25 I_27 I_28 I_29 I_32 I_33 I_34 I_36 I_37 I_38 I_40 I_41 I_44 I_45 I_47 I_49 I_50 I_3 I_4 I_10 I_26 I_30 I_31 I_35 I_43 I_48 I_16 I_9 I_13 I_39 I_2 I_14 I_46 
+Cluster 2,1 Prototipo: I_8 [0 objetos]Objetos: 
+
+Critério de adequação (energia): 110.481515652
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	Total
+
+1	0	 0	 0	 1	 49	 50
+2	5	 10	 20	 15	 0	 50
+3	30	 18	 0	 2	 0	 50
+Total	[35 28 20 18 49]
+Corrected Rand index: 0.685908860676
+
+F-measure(P,Q): 0.75573663809
+OERC: 0.12
+
+#####################################
+Repetição do experimento: 36
+
+Cluster 0,0 Prototipo: I_4 [17 objetos]Objetos: I_2 I_3 I_4 I_10 I_13 I_14 I_26 I_30 I_31 I_35 I_36 I_39 I_43 I_46 I_48 I_9 I_42 
+Cluster 0,1 Prototipo: I_18 [22 objetos]Objetos: I_1 I_5 I_18 I_23 I_28 I_37 I_38 I_41 I_44 I_8 I_21 I_22 I_24 I_27 I_29 I_32 I_40 I_49 I_7 I_12 I_25 I_50 
+Cluster 1,0 Prototipo: I_6 [11 objetos]Objetos: I_19 I_15 I_16 I_6 I_17 I_33 I_34 I_45 I_20 I_47 I_11 
+Cluster 1,1 Prototipo: I_81 [19 objetos]Objetos: I_99 I_58 I_94 I_61 I_80 I_82 I_81 I_70 I_60 I_90 I_54 I_107 I_91 I_93 I_63 I_120 I_69 I_88 I_68 
+Cluster 2,0 Prototipo: I_140 [37 objetos]Objetos: I_101 I_110 I_118 I_125 I_126 I_132 I_137 I_145 I_149 I_111 I_116 I_121 I_136 I_140 I_141 I_142 I_144 I_146 I_106 I_103 I_51 I_108 I_113 I_119 I_123 I_130 I_131 I_53 I_105 I_87 I_78 I_138 I_148 I_117 I_129 I_133 I_109 
+Cluster 2,1 Prototipo: I_79 [44 objetos]Objetos: I_52 I_55 I_59 I_62 I_64 I_66 I_67 I_72 I_73 I_74 I_75 I_76 I_77 I_79 I_84 I_92 I_98 I_102 I_104 I_112 I_114 I_115 I_122 I_124 I_127 I_128 I_134 I_135 I_139 I_143 I_147 I_150 I_71 I_86 I_85 I_89 I_96 I_97 I_56 I_57 I_65 I_100 I_83 I_95 
+
+Critério de adequação (energia): 86.224794877
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	17	 22	 11	 0	 0	 0	 50
+2	0	 0	 0	 17	 4	 29	 50
+3	0	 0	 0	 2	 33	 15	 50
+Total	[17 22 11 19 37 44]
+Corrected Rand index: 0.545578217461
+
+F-measure(P,Q): 0.662251025787
+OERC: 0.14
+
+#####################################
+Repetição do experimento: 37
+
+Cluster 0,0 Prototipo: I_6 [13 objetos]Objetos: I_6 I_11 I_15 I_16 I_17 I_19 I_20 I_22 I_33 I_34 I_45 I_47 I_49 
+Cluster 0,1 Prototipo: I_8 [21 objetos]Objetos: I_7 I_8 I_12 I_21 I_23 I_24 I_25 I_27 I_29 I_32 I_36 I_40 I_41 I_44 I_50 I_1 I_5 I_18 I_28 I_38 I_37 
+Cluster 1,0 Prototipo: I_90 [25 objetos]Objetos: I_58 I_65 I_94 I_99 I_60 I_80 I_97 I_68 I_82 I_100 I_83 I_70 I_81 I_56 I_61 I_90 I_91 I_93 I_95 I_54 I_63 I_107 I_120 I_88 I_69 
+Cluster 1,1 Prototipo: I_4 [16 objetos]Objetos: I_26 I_42 I_46 I_2 I_4 I_9 I_10 I_13 I_14 I_31 I_35 I_39 I_43 I_48 I_3 I_30 
+Cluster 2,0 Prototipo: I_140 [35 objetos]Objetos: I_78 I_103 I_105 I_106 I_108 I_113 I_117 I_119 I_121 I_123 I_126 I_130 I_131 I_136 I_140 I_141 I_142 I_144 I_146 I_148 I_51 I_53 I_57 I_87 I_101 I_110 I_111 I_116 I_118 I_125 I_132 I_137 I_138 I_145 I_149 
+Cluster 2,1 Prototipo: I_127 [40 objetos]Objetos: I_73 I_84 I_102 I_114 I_122 I_135 I_143 I_79 I_147 I_98 I_64 I_75 I_92 I_134 I_124 I_62 I_55 I_59 I_71 I_112 I_115 I_127 I_128 I_139 I_150 I_52 I_76 I_77 I_86 I_104 I_109 I_129 I_133 I_66 I_67 I_72 I_74 I_85 I_89 I_96 
+
+Critério de adequação (energia): 88.975403962
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	13	 21	 0	 16	 0	 0	 50
+2	0	 0	 23	 0	 5	 22	 50
+3	0	 0	 2	 0	 30	 18	 50
+Total	[13 21 25 16 35 40]
+Corrected Rand index: 0.517888140625
+
+F-measure(P,Q): 0.636921660683
+OERC: 0.166666666667
+
+#####################################
+Repetição do experimento: 38
+
+Cluster 0,0 Prototipo: I_140 [34 objetos]Objetos: I_78 I_101 I_103 I_105 I_106 I_108 I_110 I_111 I_113 I_116 I_117 I_119 I_121 I_123 I_125 I_126 I_129 I_130 I_131 I_133 I_136 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 I_118 I_109 I_132 
+Cluster 0,1 Prototipo: I_90 [22 objetos]Objetos: I_54 I_60 I_63 I_70 I_80 I_81 I_82 I_88 I_90 I_91 I_93 I_95 I_107 I_114 I_120 I_58 I_61 I_94 I_99 I_69 I_68 I_83 
+Cluster 1,0 Prototipo: I_52 [9 objetos]Objetos: I_86 I_52 I_57 I_66 I_51 I_71 I_76 I_87 I_53 
+Cluster 1,1 Prototipo: I_79 [35 objetos]Objetos: I_65 I_89 I_96 I_62 I_85 I_64 I_67 I_79 I_97 I_56 I_92 I_98 I_100 I_122 I_150 I_134 I_72 I_74 I_84 I_102 I_143 I_55 I_59 I_73 I_75 I_77 I_115 I_124 I_127 I_128 I_135 I_139 I_147 I_104 I_112 
+Cluster 2,0 Prototipo: I_49 [26 objetos]Objetos: I_6 I_11 I_15 I_16 I_17 I_19 I_20 I_22 I_33 I_34 I_45 I_47 I_49 I_37 I_5 I_38 I_28 I_1 I_18 I_21 I_23 I_29 I_32 I_41 I_44 I_40 
+Cluster 2,1 Prototipo: I_31 [24 objetos]Objetos: I_2 I_3 I_4 I_7 I_8 I_9 I_10 I_12 I_13 I_14 I_24 I_25 I_26 I_27 I_30 I_31 I_35 I_36 I_39 I_43 I_46 I_48 I_50 I_42 
+
+Critério de adequação (energia): 89.697780328
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 0	 0	 26	 24	 50
+2	1	 19	 9	 21	 0	 0	 50
+3	33	 3	 0	 14	 0	 0	 50
+Total	[34 22  9 35 26 24]
+Corrected Rand index: 0.575539555016
+
+F-measure(P,Q): 0.665900863269
+OERC: 0.12
+
+#####################################
+Repetição do experimento: 39
+
+Cluster 0,0 Prototipo: I_4 [17 objetos]Objetos: I_2 I_3 I_4 I_9 I_10 I_13 I_14 I_26 I_30 I_31 I_35 I_36 I_39 I_43 I_46 I_48 I_42 
+Cluster 0,1 Prototipo: I_18 [22 objetos]Objetos: I_1 I_5 I_7 I_8 I_12 I_18 I_21 I_23 I_25 I_27 I_28 I_29 I_32 I_37 I_38 I_40 I_41 I_44 I_22 I_24 I_49 I_50 
+Cluster 1,0 Prototipo: I_90 [22 objetos]Objetos: I_58 I_99 I_94 I_60 I_80 I_68 I_82 I_83 I_70 I_81 I_61 I_90 I_91 I_93 I_95 I_54 I_63 I_107 I_120 I_88 I_69 I_114 
+Cluster 1,1 Prototipo: I_6 [11 objetos]Objetos: I_15 I_19 I_6 I_16 I_17 I_20 I_33 I_34 I_45 I_47 I_11 
+Cluster 2,0 Prototipo: I_140 [37 objetos]Objetos: I_51 I_53 I_78 I_87 I_101 I_103 I_105 I_106 I_108 I_110 I_111 I_113 I_116 I_117 I_118 I_119 I_121 I_123 I_125 I_126 I_130 I_131 I_132 I_136 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 I_109 I_129 I_133 
+Cluster 2,1 Prototipo: I_79 [41 objetos]Objetos: I_73 I_84 I_102 I_122 I_135 I_143 I_147 I_79 I_98 I_64 I_75 I_92 I_134 I_62 I_124 I_55 I_59 I_71 I_115 I_127 I_128 I_139 I_150 I_52 I_76 I_77 I_86 I_104 I_112 I_66 I_67 I_85 I_72 I_74 I_89 I_96 I_97 I_56 I_57 I_65 I_100 
+
+Critério de adequação (energia): 86.14755531
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	17	 22	 0	 11	 0	 0	 50
+2	0	 0	 19	 0	 4	 27	 50
+3	0	 0	 3	 0	 33	 14	 50
+Total	[17 22 22 11 37 41]
+Corrected Rand index: 0.540763659754
+
+F-measure(P,Q): 0.654379464724
+OERC: 0.14
+
+#####################################
+Repetição do experimento: 40
+
+Cluster 0,0 Prototipo: I_127 [28 objetos]Objetos: I_66 I_104 I_109 I_129 I_133 I_55 I_59 I_71 I_73 I_75 I_76 I_77 I_112 I_115 I_124 I_127 I_128 I_134 I_135 I_139 I_147 I_150 I_84 I_102 I_143 I_114 I_122 I_52 
+Cluster 0,1 Prototipo: I_140 [35 objetos]Objetos: I_110 I_118 I_132 I_125 I_126 I_137 I_149 I_51 I_145 I_101 I_106 I_111 I_116 I_121 I_136 I_140 I_141 I_142 I_144 I_103 I_108 I_119 I_123 I_130 I_131 I_53 I_113 I_146 I_105 I_57 I_78 I_87 I_117 I_138 I_148 
+Cluster 1,0 Prototipo: I_81 [17 objetos]Objetos: I_58 I_99 I_94 I_61 I_70 I_80 I_81 I_82 I_90 I_91 I_54 I_93 I_107 I_63 I_88 I_120 I_69 
+Cluster 1,1 Prototipo: I_97 [20 objetos]Objetos: I_62 I_65 I_67 I_85 I_89 I_96 I_97 I_100 I_56 I_86 I_72 I_74 I_92 I_95 I_98 I_60 I_68 I_79 I_83 I_64 
+Cluster 2,0 Prototipo: I_31 [24 objetos]Objetos: I_42 I_2 I_3 I_4 I_9 I_10 I_13 I_14 I_26 I_30 I_31 I_35 I_36 I_39 I_43 I_46 I_48 I_24 I_50 I_7 I_8 I_12 I_25 I_27 
+Cluster 2,1 Prototipo: I_49 [26 objetos]Objetos: I_1 I_5 I_6 I_11 I_15 I_16 I_17 I_18 I_19 I_20 I_21 I_22 I_23 I_28 I_29 I_32 I_33 I_34 I_37 I_38 I_40 I_41 I_45 I_47 I_49 I_44 
+
+Critério de adequação (energia): 87.418091721
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 0	 0	 24	 26	 50
+2	10	 5	 15	 20	 0	 0	 50
+3	18	 30	 2	 0	 0	 0	 50
+Total	[28 35 17 20 24 26]
+Corrected Rand index: 0.552466353346
+
+F-measure(P,Q): 0.653840483562
+OERC: 0.113333333333
+
+#####################################
+Repetição do experimento: 41
+
+Cluster 0,0 Prototipo: I_49 [26 objetos]Objetos: I_1 I_5 I_6 I_11 I_15 I_16 I_17 I_18 I_19 I_20 I_21 I_22 I_23 I_28 I_29 I_32 I_33 I_34 I_37 I_38 I_40 I_41 I_45 I_47 I_49 I_44 
+Cluster 0,1 Prototipo: I_31 [24 objetos]Objetos: I_2 I_9 I_26 I_42 I_46 I_3 I_4 I_10 I_13 I_14 I_30 I_31 I_35 I_36 I_39 I_43 I_48 I_24 I_50 I_7 I_12 I_25 I_8 I_27 
+Cluster 1,0 Prototipo: I_97 [20 objetos]Objetos: I_65 I_89 I_96 I_67 I_85 I_86 I_97 I_56 I_100 I_62 I_72 I_74 I_92 I_95 I_98 I_60 I_68 I_79 I_83 I_64 
+Cluster 1,1 Prototipo: I_81 [17 objetos]Objetos: I_99 I_58 I_94 I_61 I_80 I_81 I_82 I_70 I_90 I_91 I_54 I_107 I_93 I_63 I_88 I_120 I_69 
+Cluster 2,0 Prototipo: I_140 [35 objetos]Objetos: I_110 I_118 I_132 I_51 I_126 I_106 I_125 I_101 I_103 I_108 I_119 I_121 I_123 I_130 I_136 I_137 I_140 I_141 I_142 I_144 I_145 I_149 I_131 I_116 I_53 I_57 I_78 I_87 I_105 I_111 I_113 I_117 I_138 I_146 I_148 
+Cluster 2,1 Prototipo: I_127 [28 objetos]Objetos: I_52 I_55 I_59 I_71 I_73 I_75 I_76 I_77 I_84 I_102 I_104 I_109 I_112 I_114 I_115 I_122 I_124 I_127 I_128 I_129 I_133 I_134 I_135 I_139 I_143 I_147 I_150 I_66 
+
+Critério de adequação (energia): 87.418091721
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	26	 24	 0	 0	 0	 0	 50
+2	0	 0	 20	 15	 5	 10	 50
+3	0	 0	 0	 2	 30	 18	 50
+Total	[26 24 20 17 35 28]
+Corrected Rand index: 0.552466353346
+
+F-measure(P,Q): 0.653840483562
+OERC: 0.113333333333
+
+#####################################
+Repetição do experimento: 42
+
+Cluster 0,0 Prototipo: I_49 [26 objetos]Objetos: I_1 I_5 I_6 I_11 I_15 I_16 I_17 I_18 I_19 I_20 I_21 I_22 I_23 I_28 I_29 I_32 I_33 I_34 I_37 I_38 I_40 I_41 I_44 I_45 I_47 I_49 
+Cluster 0,1 Prototipo: I_31 [24 objetos]Objetos: I_42 I_2 I_3 I_4 I_9 I_10 I_13 I_14 I_26 I_30 I_31 I_35 I_36 I_39 I_43 I_46 I_48 I_24 I_50 I_7 I_12 I_25 I_8 I_27 
+Cluster 1,0 Prototipo: I_90 [25 objetos]Objetos: I_99 I_58 I_65 I_80 I_94 I_60 I_97 I_68 I_100 I_82 I_83 I_70 I_81 I_95 I_61 I_54 I_56 I_63 I_90 I_91 I_93 I_107 I_88 I_120 I_69 
+Cluster 1,1 Prototipo: I_52 [15 objetos]Objetos: I_86 I_52 I_57 I_66 I_76 I_87 I_71 I_51 I_92 I_53 I_59 I_75 I_89 I_96 I_62 
+Cluster 2,0 Prototipo: I_127 [29 objetos]Objetos: I_73 I_114 I_135 I_98 I_84 I_79 I_64 I_102 I_143 I_147 I_122 I_134 I_124 I_127 I_109 I_55 I_112 I_115 I_128 I_139 I_150 I_77 I_104 I_129 I_133 I_67 I_72 I_74 I_85 
+Cluster 2,1 Prototipo: I_140 [31 objetos]Objetos: I_78 I_101 I_103 I_105 I_106 I_108 I_110 I_111 I_113 I_116 I_117 I_118 I_119 I_121 I_123 I_125 I_126 I_130 I_131 I_132 I_136 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 
+
+Critério de adequação (energia): 89.710216906
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	26	 24	 0	 0	 0	 0	 50
+2	0	 0	 23	 15	 11	 1	 50
+3	0	 0	 2	 0	 18	 30	 50
+Total	[26 24 25 15 29 31]
+Corrected Rand index: 0.577449554102
+
+F-measure(P,Q): 0.67942820013
+OERC: 0.0933333333333
+
+#####################################
+Repetição do experimento: 43
+
+Cluster 0,0 Prototipo: I_50 [36 objetos]Objetos: I_1 I_2 I_3 I_4 I_5 I_7 I_8 I_9 I_10 I_12 I_13 I_14 I_18 I_21 I_23 I_24 I_25 I_26 I_27 I_28 I_29 I_30 I_31 I_32 I_35 I_36 I_37 I_38 I_39 I_40 I_41 I_43 I_44 I_46 I_48 I_50 
+Cluster 0,1 Prototipo: I_81 [20 objetos]Objetos: I_54 I_58 I_60 I_61 I_68 I_70 I_80 I_81 I_82 I_90 I_91 I_93 I_94 I_99 I_107 I_63 I_42 I_69 I_88 I_120 
+Cluster 1,0 Prototipo: I_6 [13 objetos]Objetos: I_19 I_15 I_16 I_6 I_11 I_17 I_33 I_34 I_20 I_45 I_47 I_49 I_22 
+Cluster 1,1 Prototipo: I_79 [37 objetos]Objetos: I_56 I_62 I_67 I_72 I_74 I_85 I_89 I_96 I_97 I_79 I_98 I_100 I_64 I_92 I_75 I_84 I_135 I_73 I_65 I_114 I_122 I_102 I_143 I_55 I_71 I_127 I_128 I_134 I_139 I_150 I_124 I_147 I_115 I_112 I_104 I_83 I_95 
+Cluster 2,0 Prototipo: I_87 [12 objetos]Objetos: I_51 I_59 I_66 I_76 I_53 I_77 I_87 I_52 I_57 I_86 I_78 I_138 
+Cluster 2,1 Prototipo: I_140 [32 objetos]Objetos: I_101 I_103 I_105 I_106 I_108 I_109 I_110 I_111 I_113 I_116 I_117 I_118 I_119 I_121 I_123 I_125 I_126 I_129 I_130 I_131 I_133 I_136 I_137 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 I_132 
+
+Critério de adequação (energia): 89.524324629
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	36	 1	 13	 0	 0	 0	 50
+2	0	 17	 0	 22	 11	 0	 50
+3	0	 2	 0	 15	 1	 32	 50
+Total	[36 20 13 37 12 32]
+Corrected Rand index: 0.597138411981
+
+F-measure(P,Q): 0.707814744547
+OERC: 0.126666666667
+
+#####################################
+Repetição do experimento: 44
+
+Cluster 0,0 Prototipo: I_90 [22 objetos]Objetos: I_54 I_63 I_69 I_70 I_81 I_83 I_88 I_90 I_91 I_93 I_95 I_107 I_120 I_58 I_60 I_61 I_80 I_82 I_94 I_99 I_114 I_68 
+Cluster 0,1 Prototipo: I_140 [34 objetos]Objetos: I_101 I_103 I_105 I_106 I_110 I_111 I_113 I_116 I_118 I_121 I_125 I_126 I_132 I_136 I_137 I_140 I_141 I_142 I_144 I_145 I_146 I_149 I_78 I_108 I_117 I_119 I_123 I_130 I_131 I_133 I_138 I_148 I_129 I_109 
+Cluster 1,0 Prototipo: I_79 [35 objetos]Objetos: I_89 I_96 I_62 I_67 I_85 I_65 I_79 I_97 I_64 I_122 I_56 I_98 I_100 I_150 I_134 I_72 I_74 I_84 I_102 I_143 I_55 I_73 I_75 I_77 I_92 I_115 I_124 I_127 I_128 I_135 I_139 I_147 I_104 I_112 I_59 
+Cluster 1,1 Prototipo: I_52 [9 objetos]Objetos: I_66 I_52 I_57 I_86 I_51 I_76 I_71 I_87 I_53 
+Cluster 2,0 Prototipo: I_49 [26 objetos]Objetos: I_1 I_5 I_18 I_21 I_23 I_28 I_29 I_32 I_37 I_38 I_40 I_41 I_44 I_6 I_11 I_17 I_19 I_20 I_22 I_33 I_45 I_47 I_49 I_15 I_34 I_16 
+Cluster 2,1 Prototipo: I_31 [24 objetos]Objetos: I_42 I_9 I_26 I_2 I_3 I_4 I_10 I_13 I_14 I_30 I_31 I_35 I_36 I_39 I_43 I_46 I_48 I_24 I_50 I_7 I_12 I_25 I_8 I_27 
+
+Critério de adequação (energia): 89.697780328
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 0	 0	 26	 24	 50
+2	19	 1	 21	 9	 0	 0	 50
+3	3	 33	 14	 0	 0	 0	 50
+Total	[22 34 35  9 26 24]
+Corrected Rand index: 0.575539555016
+
+F-measure(P,Q): 0.665900863269
+OERC: 0.12
+
+#####################################
+Repetição do experimento: 45
+
+Cluster 0,0 Prototipo: I_90 [22 objetos]Objetos: I_63 I_69 I_88 I_120 I_114 I_54 I_60 I_61 I_70 I_80 I_81 I_82 I_83 I_90 I_91 I_93 I_94 I_95 I_107 I_58 I_99 I_68 
+Cluster 0,1 Prototipo: I_140 [34 objetos]Objetos: I_101 I_103 I_105 I_106 I_108 I_110 I_111 I_113 I_116 I_117 I_121 I_123 I_125 I_126 I_130 I_136 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_78 I_119 I_129 I_131 I_133 I_109 I_118 I_132 I_149 
+Cluster 1,0 Prototipo: I_79 [35 objetos]Objetos: I_62 I_89 I_96 I_67 I_85 I_98 I_64 I_65 I_79 I_97 I_56 I_100 I_122 I_150 I_134 I_72 I_74 I_84 I_102 I_143 I_55 I_73 I_75 I_77 I_92 I_115 I_124 I_127 I_128 I_135 I_139 I_147 I_104 I_112 I_59 
+Cluster 1,1 Prototipo: I_52 [9 objetos]Objetos: I_86 I_52 I_57 I_71 I_66 I_51 I_76 I_87 I_53 
+Cluster 2,0 Prototipo: I_49 [26 objetos]Objetos: I_1 I_5 I_6 I_11 I_15 I_17 I_18 I_19 I_20 I_21 I_22 I_23 I_28 I_29 I_32 I_33 I_34 I_37 I_38 I_40 I_41 I_44 I_45 I_47 I_49 I_16 
+Cluster 2,1 Prototipo: I_31 [24 objetos]Objetos: I_42 I_2 I_4 I_9 I_10 I_13 I_14 I_26 I_31 I_35 I_39 I_46 I_3 I_30 I_36 I_43 I_48 I_24 I_50 I_7 I_12 I_25 I_8 I_27 
+
+Critério de adequação (energia): 89.697780328
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 0	 0	 26	 24	 50
+2	19	 1	 21	 9	 0	 0	 50
+3	3	 33	 14	 0	 0	 0	 50
+Total	[22 34 35  9 26 24]
+Corrected Rand index: 0.575539555016
+
+F-measure(P,Q): 0.665900863269
+OERC: 0.12
+
+#####################################
+Repetição do experimento: 46
+
+Cluster 0,0 Prototipo: I_4 [17 objetos]Objetos: I_2 I_3 I_4 I_10 I_13 I_14 I_26 I_30 I_31 I_35 I_36 I_39 I_43 I_46 I_48 I_9 I_42 
+Cluster 0,1 Prototipo: I_18 [22 objetos]Objetos: I_1 I_5 I_18 I_22 I_23 I_28 I_37 I_38 I_41 I_44 I_8 I_21 I_24 I_27 I_29 I_32 I_40 I_49 I_7 I_12 I_25 I_50 
+Cluster 1,0 Prototipo: I_6 [11 objetos]Objetos: I_19 I_15 I_16 I_6 I_17 I_33 I_34 I_20 I_45 I_47 I_11 
+Cluster 1,1 Prototipo: I_81 [19 objetos]Objetos: I_61 I_54 I_58 I_60 I_63 I_70 I_80 I_81 I_82 I_90 I_94 I_99 I_91 I_107 I_93 I_88 I_69 I_120 I_68 
+Cluster 2,0 Prototipo: I_140 [37 objetos]Objetos: I_51 I_53 I_101 I_103 I_106 I_108 I_110 I_111 I_113 I_116 I_118 I_119 I_121 I_123 I_125 I_126 I_130 I_131 I_132 I_136 I_137 I_140 I_141 I_142 I_144 I_145 I_149 I_146 I_105 I_87 I_78 I_138 I_148 I_117 I_129 I_133 I_109 
+Cluster 2,1 Prototipo: I_79 [44 objetos]Objetos: I_55 I_56 I_59 I_62 I_64 I_67 I_71 I_72 I_73 I_74 I_75 I_76 I_77 I_79 I_84 I_85 I_89 I_92 I_96 I_97 I_98 I_102 I_104 I_112 I_114 I_115 I_122 I_124 I_127 I_128 I_134 I_135 I_139 I_143 I_147 I_150 I_52 I_66 I_86 I_57 I_65 I_100 I_83 I_95 
+
+Critério de adequação (energia): 86.224794877
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	17	 22	 11	 0	 0	 0	 50
+2	0	 0	 0	 17	 4	 29	 50
+3	0	 0	 0	 2	 33	 15	 50
+Total	[17 22 11 19 37 44]
+Corrected Rand index: 0.545578217461
+
+F-measure(P,Q): 0.662251025787
+OERC: 0.14
+
+#####################################
+Repetição do experimento: 47
+
+Cluster 0,0 Prototipo: I_50 [37 objetos]Objetos: I_42 I_2 I_9 I_26 I_46 I_1 I_3 I_4 I_5 I_7 I_8 I_10 I_12 I_13 I_14 I_18 I_21 I_23 I_24 I_25 I_27 I_28 I_29 I_30 I_31 I_32 I_35 I_36 I_37 I_38 I_39 I_40 I_41 I_43 I_44 I_48 I_50 
+Cluster 0,1 Prototipo: I_6 [13 objetos]Objetos: I_6 I_15 I_16 I_17 I_19 I_33 I_34 I_45 I_20 I_47 I_11 I_22 I_49 
+Cluster 1,0 Prototipo: I_79 [34 objetos]Objetos: I_65 I_89 I_96 I_62 I_67 I_85 I_86 I_92 I_64 I_79 I_97 I_122 I_71 I_75 I_98 I_102 I_139 I_143 I_56 I_72 I_74 I_84 I_100 I_55 I_59 I_73 I_127 I_134 I_135 I_150 I_147 I_76 I_124 I_128 
+Cluster 1,1 Prototipo: I_121 [21 objetos]Objetos: I_110 I_118 I_132 I_137 I_149 I_101 I_125 I_145 I_121 I_144 I_116 I_126 I_136 I_141 I_106 I_142 I_103 I_119 I_123 I_140 I_146 
+Cluster 2,0 Prototipo: I_90 [22 objetos]Objetos: I_54 I_60 I_63 I_68 I_69 I_70 I_80 I_81 I_82 I_83 I_88 I_90 I_91 I_93 I_95 I_99 I_107 I_114 I_120 I_58 I_94 I_61 
+Cluster 2,1 Prototipo: I_117 [23 objetos]Objetos: I_51 I_52 I_53 I_66 I_78 I_87 I_104 I_105 I_108 I_111 I_112 I_113 I_115 I_117 I_129 I_130 I_131 I_133 I_138 I_148 I_77 I_109 I_57 
+
+Critério de adequação (energia): 89.065628641
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	37	 13	 0	 0	 0	 0	 50
+2	0	 0	 23	 0	 19	 8	 50
+3	0	 0	 11	 21	 3	 15	 50
+Total	[37 13 34 21 22 23]
+Corrected Rand index: 0.55304898132
+
+F-measure(P,Q): 0.663247685346
+OERC: 0.146666666667
+
+#####################################
+Repetição do experimento: 48
+
+Cluster 0,0 Prototipo: I_8 [49 objetos]Objetos: I_1 I_2 I_3 I_4 I_5 I_6 I_7 I_8 I_9 I_10 I_11 I_12 I_13 I_14 I_15 I_16 I_17 I_18 I_19 I_20 I_21 I_22 I_23 I_24 I_25 I_26 I_27 I_28 I_29 I_30 I_31 I_32 I_33 I_34 I_35 I_36 I_37 I_38 I_39 I_40 I_41 I_43 I_44 I_45 I_46 I_47 I_48 I_49 I_50 
+Cluster 0,1 Prototipo: I_8 [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: I_97 [20 objetos]Objetos: I_65 I_67 I_85 I_89 I_96 I_97 I_86 I_56 I_100 I_62 I_95 I_83 I_60 I_68 I_72 I_74 I_92 I_98 I_79 I_64 
+Cluster 1,1 Prototipo: I_81 [18 objetos]Objetos: I_58 I_99 I_94 I_61 I_82 I_42 I_80 I_81 I_54 I_63 I_70 I_90 I_91 I_107 I_93 I_88 I_120 I_69 
+Cluster 2,0 Prototipo: I_140 [35 objetos]Objetos: I_118 I_132 I_51 I_53 I_57 I_78 I_87 I_101 I_103 I_105 I_106 I_108 I_110 I_111 I_113 I_116 I_117 I_119 I_121 I_123 I_125 I_126 I_130 I_131 I_136 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 
+Cluster 2,1 Prototipo: I_127 [28 objetos]Objetos: I_55 I_73 I_75 I_84 I_102 I_114 I_115 I_122 I_124 I_127 I_143 I_147 I_109 I_112 I_134 I_135 I_59 I_71 I_77 I_128 I_139 I_150 I_76 I_104 I_52 I_129 I_133 I_66 
+
+Critério de adequação (energia): 110.481515652
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	1,0	1,1	2,0	2,1	Total
+
+1	49	 0	 1	 0	 0	 50
+2	0	 20	 15	 5	 10	 50
+3	0	 0	 2	 30	 18	 50
+Total	[49 20 18 35 28]
+Corrected Rand index: 0.685908860676
+
+F-measure(P,Q): 0.75573663809
+OERC: 0.12
+
+#####################################
+Repetição do experimento: 49
+
+Cluster 0,0 Prototipo: I_31 [24 objetos]Objetos: I_2 I_3 I_4 I_7 I_8 I_9 I_10 I_12 I_13 I_14 I_24 I_25 I_27 I_30 I_31 I_35 I_36 I_39 I_43 I_46 I_48 I_50 I_26 I_42 
+Cluster 0,1 Prototipo: I_49 [26 objetos]Objetos: I_15 I_19 I_11 I_16 I_6 I_17 I_20 I_33 I_34 I_47 I_49 I_22 I_45 I_37 I_5 I_38 I_28 I_1 I_18 I_21 I_23 I_29 I_32 I_41 I_44 I_40 
+Cluster 1,0 Prototipo: I_79 [35 objetos]Objetos: I_65 I_89 I_96 I_62 I_85 I_64 I_67 I_79 I_97 I_56 I_92 I_98 I_100 I_122 I_150 I_134 I_72 I_74 I_84 I_102 I_143 I_55 I_59 I_73 I_75 I_77 I_115 I_124 I_127 I_128 I_135 I_139 I_147 I_104 I_112 
+Cluster 1,1 Prototipo: I_52 [9 objetos]Objetos: I_66 I_52 I_57 I_86 I_51 I_71 I_76 I_87 I_53 
+Cluster 2,0 Prototipo: I_90 [22 objetos]Objetos: I_54 I_58 I_60 I_61 I_70 I_80 I_81 I_82 I_90 I_91 I_93 I_94 I_95 I_99 I_107 I_114 I_63 I_120 I_69 I_88 I_68 I_83 
+Cluster 2,1 Prototipo: I_140 [34 objetos]Objetos: I_78 I_103 I_105 I_106 I_108 I_109 I_110 I_113 I_117 I_118 I_119 I_121 I_123 I_125 I_126 I_129 I_130 I_131 I_132 I_133 I_136 I_140 I_141 I_142 I_144 I_146 I_148 I_138 I_145 I_101 I_111 I_116 I_137 I_149 
+
+Critério de adequação (energia): 89.697780328
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	24	 26	 0	 0	 0	 0	 50
+2	0	 0	 21	 9	 19	 1	 50
+3	0	 0	 14	 0	 3	 33	 50
+Total	[24 26 35  9 22 34]
+Corrected Rand index: 0.575539555016
+
+F-measure(P,Q): 0.665900863269
+OERC: 0.12
+
+#####################################
+Repetição do experimento: 50
+
+Cluster 0,0 Prototipo: I_140 [33 objetos]Objetos: I_51 I_53 I_78 I_101 I_103 I_105 I_106 I_108 I_110 I_111 I_113 I_116 I_117 I_118 I_119 I_121 I_123 I_125 I_126 I_130 I_131 I_132 I_136 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 
+Cluster 0,1 Prototipo: I_127 [22 objetos]Objetos: I_73 I_84 I_102 I_114 I_122 I_124 I_127 I_143 I_147 I_134 I_135 I_109 I_55 I_112 I_77 I_115 I_128 I_139 I_150 I_104 I_129 I_133 
+Cluster 1,0 Prototipo: I_92 [23 objetos]Objetos: I_62 I_67 I_86 I_85 I_89 I_96 I_52 I_71 I_56 I_65 I_92 I_97 I_72 I_98 I_57 I_79 I_64 I_74 I_75 I_66 I_76 I_59 I_87 
+Cluster 1,1 Prototipo: I_90 [22 objetos]Objetos: I_58 I_99 I_94 I_60 I_80 I_68 I_82 I_83 I_61 I_70 I_81 I_95 I_54 I_90 I_91 I_93 I_107 I_63 I_69 I_88 I_120 I_100 
+Cluster 2,0 Prototipo: I_31 [24 objetos]Objetos: I_9 I_14 I_39 I_2 I_4 I_13 I_26 I_42 I_46 I_3 I_10 I_30 I_31 I_35 I_43 I_48 I_36 I_24 I_50 I_7 I_8 I_12 I_25 I_27 
+Cluster 2,1 Prototipo: I_49 [26 objetos]Objetos: I_1 I_5 I_6 I_11 I_15 I_16 I_17 I_18 I_19 I_21 I_22 I_28 I_29 I_32 I_34 I_37 I_40 I_41 I_44 I_49 I_20 I_23 I_33 I_38 I_45 I_47 
+
+Critério de adequação (energia): 86.188753368
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 0	 0	 24	 26	 50
+2	3	 4	 23	 20	 0	 0	 50
+3	30	 18	 0	 2	 0	 0	 50
+Total	[33 22 23 22 24 26]
+Corrected Rand index: 0.595035319356
+
+F-measure(P,Q): 0.679079692961
+OERC: 0.06
+
+#####################################
+Repetição do experimento: 51
+
+Cluster 0,0 Prototipo: I_90 [22 objetos]Objetos: I_54 I_58 I_60 I_61 I_63 I_68 I_70 I_80 I_81 I_82 I_83 I_88 I_90 I_91 I_93 I_94 I_95 I_99 I_107 I_69 I_114 I_120 
+Cluster 0,1 Prototipo: I_140 [33 objetos]Objetos: I_101 I_103 I_105 I_106 I_108 I_109 I_111 I_113 I_116 I_117 I_119 I_121 I_123 I_125 I_126 I_129 I_130 I_131 I_133 I_136 I_137 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 I_110 I_132 I_118 I_138 
+Cluster 1,0 Prototipo: I_79 [33 objetos]Objetos: I_89 I_96 I_62 I_67 I_71 I_85 I_86 I_65 I_79 I_97 I_150 I_64 I_92 I_98 I_122 I_127 I_128 I_139 I_102 I_143 I_56 I_72 I_74 I_84 I_100 I_73 I_115 I_124 I_134 I_135 I_147 I_104 I_112 
+Cluster 1,1 Prototipo: I_76 [12 objetos]Objetos: I_57 I_87 I_52 I_51 I_59 I_66 I_76 I_75 I_55 I_77 I_53 I_78 
+Cluster 2,0 Prototipo: I_49 [26 objetos]Objetos: I_1 I_5 I_6 I_11 I_15 I_16 I_17 I_18 I_19 I_20 I_21 I_22 I_23 I_28 I_29 I_32 I_33 I_34 I_37 I_38 I_40 I_41 I_44 I_45 I_47 I_49 
+Cluster 2,1 Prototipo: I_31 [24 objetos]Objetos: I_42 I_2 I_4 I_9 I_10 I_13 I_14 I_26 I_31 I_35 I_39 I_46 I_3 I_30 I_36 I_43 I_48 I_24 I_50 I_7 I_12 I_25 I_8 I_27 
+
+Critério de adequação (energia): 89.060914702
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 0	 0	 26	 24	 50
+2	19	 0	 19	 12	 0	 0	 50
+3	3	 33	 14	 0	 0	 0	 50
+Total	[22 33 33 12 26 24]
+Corrected Rand index: 0.579499009547
+
+F-measure(P,Q): 0.669056342328
+OERC: 0.113333333333
+
+#####################################
+Repetição do experimento: 52
+
+Cluster 0,0 Prototipo: I_90 [22 objetos]Objetos: I_54 I_60 I_63 I_68 I_69 I_70 I_81 I_83 I_88 I_90 I_91 I_93 I_95 I_107 I_120 I_61 I_80 I_82 I_58 I_94 I_99 I_114 
+Cluster 0,1 Prototipo: I_140 [37 objetos]Objetos: I_78 I_101 I_103 I_105 I_106 I_108 I_109 I_110 I_111 I_113 I_116 I_117 I_118 I_119 I_121 I_123 I_125 I_126 I_129 I_130 I_131 I_133 I_136 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 I_132 I_51 I_53 I_87 
+Cluster 1,0 Prototipo: I_13 [10 objetos]Objetos: I_42 I_2 I_13 I_26 I_46 I_9 I_14 I_39 I_35 I_10 
+Cluster 1,1 Prototipo: I_79 [41 objetos]Objetos: I_66 I_52 I_59 I_75 I_76 I_86 I_92 I_55 I_57 I_64 I_71 I_77 I_98 I_134 I_139 I_127 I_128 I_150 I_62 I_67 I_72 I_74 I_79 I_96 I_124 I_56 I_65 I_84 I_85 I_89 I_97 I_102 I_122 I_135 I_143 I_73 I_100 I_115 I_147 I_104 I_112 
+Cluster 2,0 Prototipo: I_49 [25 objetos]Objetos: I_1 I_5 I_18 I_21 I_22 I_23 I_28 I_29 I_37 I_38 I_41 I_44 I_6 I_11 I_17 I_19 I_20 I_33 I_45 I_47 I_49 I_15 I_16 I_34 I_32 
+Cluster 2,1 Prototipo: I_30 [15 objetos]Objetos: I_24 I_3 I_30 I_36 I_43 I_48 I_50 I_4 I_7 I_8 I_12 I_25 I_27 I_31 I_40 
+
+Critério de adequação (energia): 91.896188077
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 10	 0	 25	 15	 50
+2	19	 4	 0	 27	 0	 0	 50
+3	3	 33	 0	 14	 0	 0	 50
+Total	[22 37 10 41 25 15]
+Corrected Rand index: 0.5477576034
+
+F-measure(P,Q): 0.672897983243
+OERC: 0.14
+
+#####################################
+Repetição do experimento: 53
+
+Cluster 0,0 Prototipo: I_81 [20 objetos]Objetos: I_54 I_60 I_61 I_70 I_80 I_81 I_82 I_90 I_91 I_94 I_107 I_58 I_63 I_68 I_93 I_99 I_42 I_69 I_88 I_120 
+Cluster 0,1 Prototipo: I_50 [36 objetos]Objetos: I_1 I_2 I_3 I_4 I_5 I_7 I_8 I_9 I_10 I_12 I_13 I_14 I_18 I_21 I_23 I_24 I_25 I_26 I_27 I_28 I_29 I_30 I_31 I_32 I_35 I_36 I_37 I_38 I_39 I_40 I_41 I_43 I_44 I_46 I_48 I_50 
+Cluster 1,0 Prototipo: I_79 [37 objetos]Objetos: I_62 I_67 I_85 I_56 I_64 I_72 I_74 I_79 I_89 I_92 I_96 I_97 I_98 I_65 I_75 I_84 I_100 I_135 I_73 I_114 I_122 I_102 I_143 I_55 I_71 I_124 I_127 I_134 I_139 I_150 I_128 I_147 I_115 I_112 I_104 I_83 I_95 
+Cluster 1,1 Prototipo: I_6 [13 objetos]Objetos: I_19 I_15 I_16 I_6 I_11 I_17 I_33 I_34 I_20 I_45 I_47 I_49 I_22 
+Cluster 2,0 Prototipo: I_140 [32 objetos]Objetos: I_101 I_103 I_105 I_106 I_108 I_109 I_111 I_113 I_116 I_117 I_119 I_121 I_123 I_125 I_126 I_129 I_130 I_131 I_132 I_133 I_136 I_137 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 I_118 I_110 
+Cluster 2,1 Prototipo: I_87 [12 objetos]Objetos: I_51 I_52 I_57 I_66 I_76 I_77 I_87 I_53 I_59 I_86 I_78 I_138 
+
+Critério de adequação (energia): 89.524324629
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	1	 36	 0	 13	 0	 0	 50
+2	17	 0	 22	 0	 0	 11	 50
+3	2	 0	 15	 0	 32	 1	 50
+Total	[20 36 37 13 32 12]
+Corrected Rand index: 0.597138411981
+
+F-measure(P,Q): 0.707814744547
+OERC: 0.126666666667
+
+#####################################
+Repetição do experimento: 54
+
+Cluster 0,0 Prototipo: I_31 [24 objetos]Objetos: I_42 I_9 I_2 I_4 I_13 I_14 I_26 I_31 I_39 I_46 I_10 I_35 I_43 I_30 I_48 I_3 I_36 I_24 I_50 I_7 I_12 I_25 I_27 I_8 
+Cluster 0,1 Prototipo: I_49 [26 objetos]Objetos: I_1 I_5 I_6 I_11 I_15 I_16 I_17 I_18 I_19 I_20 I_21 I_22 I_23 I_28 I_29 I_32 I_33 I_34 I_37 I_38 I_40 I_41 I_44 I_45 I_47 I_49 
+Cluster 1,0 Prototipo: I_121 [23 objetos]Objetos: I_118 I_101 I_106 I_110 I_121 I_125 I_132 I_137 I_144 I_145 I_149 I_116 I_136 I_141 I_142 I_119 I_103 I_123 I_126 I_140 I_146 I_105 I_113 
+Cluster 1,1 Prototipo: I_95 [28 objetos]Objetos: I_56 I_58 I_60 I_65 I_67 I_68 I_70 I_80 I_82 I_83 I_85 I_89 I_94 I_95 I_96 I_97 I_99 I_100 I_61 I_81 I_90 I_91 I_93 I_54 I_63 I_107 I_72 I_62 
+Cluster 2,0 Prototipo: I_78 [25 objetos]Objetos: I_52 I_53 I_55 I_59 I_66 I_75 I_76 I_77 I_78 I_87 I_117 I_130 I_138 I_148 I_51 I_57 I_86 I_71 I_104 I_108 I_111 I_128 I_129 I_131 I_133 
+Cluster 2,1 Prototipo: I_84 [24 objetos]Objetos: I_102 I_114 I_115 I_122 I_143 I_150 I_69 I_84 I_120 I_147 I_64 I_73 I_74 I_79 I_88 I_112 I_124 I_127 I_135 I_139 I_92 I_98 I_109 I_134 
+
+Critério de adequação (energia): 90.894445175
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	24	 26	 0	 0	 0	 0	 50
+2	0	 0	 0	 27	 14	 9	 50
+3	0	 0	 23	 1	 11	 15	 50
+Total	[24 26 23 28 25 24]
+Corrected Rand index: 0.544227597744
+
+F-measure(P,Q): 0.668885068308
+OERC: 0.14
+
+#####################################
+Repetição do experimento: 55
+
+Cluster 0,0 Prototipo: I_140 [35 objetos]Objetos: I_51 I_53 I_57 I_78 I_87 I_101 I_103 I_105 I_106 I_108 I_110 I_111 I_113 I_116 I_117 I_118 I_119 I_121 I_123 I_125 I_126 I_130 I_131 I_132 I_136 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 
+Cluster 0,1 Prototipo: I_127 [28 objetos]Objetos: I_55 I_73 I_75 I_84 I_102 I_112 I_114 I_122 I_124 I_127 I_135 I_143 I_147 I_109 I_134 I_59 I_71 I_77 I_115 I_128 I_139 I_150 I_52 I_76 I_104 I_129 I_133 I_66 
+Cluster 1,0 Prototipo: I_97 [20 objetos]Objetos: I_89 I_96 I_65 I_85 I_97 I_86 I_67 I_100 I_56 I_62 I_95 I_83 I_60 I_68 I_72 I_74 I_92 I_98 I_79 I_64 
+Cluster 1,1 Prototipo: I_81 [18 objetos]Objetos: I_99 I_58 I_94 I_80 I_82 I_61 I_70 I_81 I_54 I_90 I_63 I_107 I_91 I_93 I_120 I_42 I_88 I_69 
+Cluster 2,0 Prototipo: I_8 [49 objetos]Objetos: I_6 I_11 I_15 I_16 I_17 I_19 I_20 I_33 I_34 I_45 I_47 I_49 I_1 I_5 I_7 I_8 I_12 I_18 I_21 I_22 I_23 I_24 I_25 I_27 I_28 I_29 I_30 I_32 I_37 I_38 I_40 I_41 I_44 I_50 I_3 I_4 I_10 I_26 I_31 I_35 I_36 I_43 I_48 I_9 I_13 I_39 I_2 I_14 I_46 
+Cluster 2,1 Prototipo: I_8 [0 objetos]Objetos: 
+
+Critério de adequação (energia): 110.481515652
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	Total
+
+1	0	 0	 0	 1	 49	 50
+2	5	 10	 20	 15	 0	 50
+3	30	 18	 0	 2	 0	 50
+Total	[35 28 20 18 49]
+Corrected Rand index: 0.685908860676
+
+F-measure(P,Q): 0.75573663809
+OERC: 0.12
+
+#####################################
+Repetição do experimento: 56
+
+Cluster 0,0 Prototipo: I_4 [17 objetos]Objetos: I_2 I_3 I_4 I_10 I_13 I_14 I_26 I_30 I_31 I_35 I_36 I_39 I_43 I_46 I_48 I_9 I_42 
+Cluster 0,1 Prototipo: I_18 [22 objetos]Objetos: I_1 I_5 I_18 I_22 I_23 I_28 I_37 I_38 I_41 I_44 I_8 I_21 I_24 I_27 I_29 I_32 I_40 I_49 I_7 I_12 I_25 I_50 
+Cluster 1,0 Prototipo: I_6 [11 objetos]Objetos: I_19 I_15 I_16 I_6 I_17 I_33 I_34 I_20 I_45 I_47 I_11 
+Cluster 1,1 Prototipo: I_81 [19 objetos]Objetos: I_58 I_60 I_61 I_80 I_82 I_94 I_99 I_54 I_63 I_70 I_81 I_90 I_91 I_93 I_107 I_88 I_120 I_69 I_68 
+Cluster 2,0 Prototipo: I_140 [37 objetos]Objetos: I_101 I_106 I_110 I_118 I_125 I_126 I_132 I_137 I_145 I_149 I_51 I_103 I_111 I_116 I_121 I_136 I_140 I_141 I_142 I_144 I_123 I_53 I_108 I_113 I_119 I_130 I_131 I_146 I_105 I_78 I_87 I_138 I_148 I_117 I_129 I_133 I_109 
+Cluster 2,1 Prototipo: I_79 [44 objetos]Objetos: I_52 I_55 I_56 I_59 I_62 I_64 I_66 I_67 I_71 I_72 I_73 I_74 I_75 I_76 I_77 I_79 I_84 I_85 I_89 I_92 I_96 I_97 I_98 I_102 I_104 I_112 I_114 I_115 I_122 I_124 I_127 I_128 I_134 I_135 I_139 I_143 I_147 I_150 I_86 I_57 I_65 I_100 I_83 I_95 
+
+Critério de adequação (energia): 86.224794877
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	17	 22	 11	 0	 0	 0	 50
+2	0	 0	 0	 17	 4	 29	 50
+3	0	 0	 0	 2	 33	 15	 50
+Total	[17 22 11 19 37 44]
+Corrected Rand index: 0.545578217461
+
+F-measure(P,Q): 0.662251025787
+OERC: 0.14
+
+#####################################
+Repetição do experimento: 57
+
+Cluster 0,0 Prototipo: I_124 [19 objetos]Objetos: I_55 I_77 I_104 I_109 I_112 I_115 I_124 I_127 I_129 I_133 I_134 I_147 I_73 I_84 I_102 I_114 I_122 I_135 I_143 
+Cluster 0,1 Prototipo: I_140 [33 objetos]Objetos: I_51 I_53 I_110 I_118 I_132 I_137 I_149 I_103 I_105 I_106 I_111 I_113 I_116 I_121 I_125 I_126 I_136 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_78 I_108 I_117 I_119 I_123 I_130 I_131 I_148 I_101 
+Cluster 1,0 Prototipo: I_90 [22 objetos]Objetos: I_99 I_60 I_68 I_80 I_58 I_83 I_94 I_95 I_54 I_61 I_63 I_70 I_81 I_82 I_90 I_91 I_93 I_107 I_120 I_88 I_69 I_100 
+Cluster 1,1 Prototipo: I_92 [26 objetos]Objetos: I_52 I_57 I_62 I_66 I_71 I_86 I_92 I_128 I_139 I_150 I_59 I_64 I_67 I_72 I_74 I_75 I_76 I_79 I_87 I_96 I_98 I_56 I_65 I_85 I_89 I_97 
+Cluster 2,0 Prototipo: I_49 [26 objetos]Objetos: I_1 I_5 I_6 I_11 I_15 I_17 I_18 I_19 I_20 I_21 I_22 I_23 I_28 I_29 I_32 I_33 I_34 I_37 I_38 I_40 I_41 I_44 I_45 I_47 I_49 I_16 
+Cluster 2,1 Prototipo: I_31 [24 objetos]Objetos: I_42 I_2 I_9 I_13 I_14 I_26 I_39 I_46 I_4 I_10 I_31 I_35 I_43 I_48 I_3 I_30 I_36 I_50 I_7 I_8 I_12 I_24 I_25 I_27 
+
+Critério de adequação (energia): 85.393209398
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 0	 0	 26	 24	 50
+2	4	 3	 20	 23	 0	 0	 50
+3	15	 30	 2	 3	 0	 0	 50
+Total	[19 33 22 26 26 24]
+Corrected Rand index: 0.57747241446
+
+F-measure(P,Q): 0.670788416825
+OERC: 0.08
+
+#####################################
+Repetição do experimento: 58
+
+Cluster 0,0 Prototipo: I_6 [13 objetos]Objetos: I_15 I_16 I_6 I_11 I_17 I_19 I_20 I_33 I_34 I_45 I_47 I_22 I_49 
+Cluster 0,1 Prototipo: I_50 [36 objetos]Objetos: I_1 I_2 I_3 I_4 I_5 I_7 I_8 I_9 I_10 I_12 I_13 I_14 I_18 I_21 I_23 I_24 I_25 I_26 I_27 I_28 I_29 I_30 I_31 I_32 I_35 I_36 I_37 I_38 I_39 I_40 I_41 I_43 I_44 I_46 I_48 I_50 
+Cluster 1,0 Prototipo: I_87 [12 objetos]Objetos: I_51 I_53 I_57 I_66 I_76 I_77 I_87 I_52 I_59 I_78 I_86 I_138 
+Cluster 1,1 Prototipo: I_81 [20 objetos]Objetos: I_58 I_60 I_61 I_70 I_80 I_81 I_82 I_94 I_99 I_54 I_63 I_68 I_90 I_91 I_93 I_88 I_69 I_107 I_120 I_42 
+Cluster 2,0 Prototipo: I_140 [32 objetos]Objetos: I_101 I_103 I_106 I_108 I_110 I_111 I_113 I_116 I_118 I_121 I_123 I_125 I_126 I_132 I_136 I_137 I_140 I_141 I_142 I_144 I_145 I_146 I_149 I_105 I_130 I_131 I_117 I_133 I_148 I_129 I_109 I_119 
+Cluster 2,1 Prototipo: I_79 [37 objetos]Objetos: I_55 I_56 I_62 I_64 I_67 I_71 I_72 I_73 I_74 I_75 I_79 I_84 I_85 I_89 I_92 I_96 I_97 I_98 I_100 I_102 I_104 I_112 I_114 I_115 I_122 I_124 I_127 I_128 I_134 I_135 I_139 I_143 I_147 I_150 I_65 I_83 I_95 
+
+Critério de adequação (energia): 89.524324629
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	13	 36	 0	 1	 0	 0	 50
+2	0	 0	 11	 17	 0	 22	 50
+3	0	 0	 1	 2	 32	 15	 50
+Total	[13 36 12 20 32 37]
+Corrected Rand index: 0.597138411981
+
+F-measure(P,Q): 0.707814744547
+OERC: 0.126666666667
+
+#####################################
+Repetição do experimento: 59
+
+Cluster 0,0 Prototipo: I_127 [28 objetos]Objetos: I_114 I_55 I_73 I_75 I_84 I_102 I_109 I_112 I_115 I_124 I_127 I_134 I_135 I_143 I_147 I_150 I_122 I_59 I_77 I_71 I_76 I_104 I_128 I_139 I_129 I_52 I_133 I_66 
+Cluster 0,1 Prototipo: I_140 [35 objetos]Objetos: I_51 I_53 I_87 I_110 I_118 I_126 I_132 I_57 I_78 I_103 I_106 I_108 I_111 I_113 I_119 I_121 I_123 I_125 I_130 I_131 I_136 I_137 I_140 I_141 I_142 I_144 I_145 I_149 I_101 I_105 I_116 I_117 I_138 I_146 I_148 
+Cluster 1,0 Prototipo: I_81 [18 objetos]Objetos: I_58 I_80 I_99 I_82 I_94 I_61 I_70 I_81 I_90 I_91 I_93 I_54 I_107 I_63 I_88 I_120 I_69 I_42 
+Cluster 1,1 Prototipo: I_97 [20 objetos]Objetos: I_85 I_67 I_86 I_96 I_89 I_65 I_97 I_56 I_100 I_62 I_60 I_83 I_95 I_68 I_72 I_74 I_92 I_98 I_79 I_64 
+Cluster 2,0 Prototipo: I_20 [16 objetos]Objetos: I_15 I_33 I_34 I_16 I_6 I_11 I_17 I_19 I_20 I_45 I_47 I_22 I_49 I_5 I_38 I_23 
+Cluster 2,1 Prototipo: I_50 [33 objetos]Objetos: I_1 I_2 I_3 I_4 I_7 I_8 I_9 I_10 I_12 I_13 I_14 I_18 I_21 I_24 I_25 I_26 I_27 I_29 I_30 I_31 I_32 I_35 I_36 I_39 I_40 I_41 I_43 I_44 I_46 I_48 I_50 I_28 I_37 
+
+Critério de adequação (energia): 89.41341901
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 1	 0	 16	 33	 50
+2	10	 5	 15	 20	 0	 0	 50
+3	18	 30	 2	 0	 0	 0	 50
+Total	[28 35 18 20 16 33]
+Corrected Rand index: 0.562865742466
+
+F-measure(P,Q): 0.690830549087
+OERC: 0.12
+
+#####################################
+Repetição do experimento: 60
+
+Cluster 0,0 Prototipo: I_30 [15 objetos]Objetos: I_4 I_31 I_3 I_30 I_43 I_48 I_36 I_24 I_50 I_7 I_12 I_25 I_8 I_27 I_40 
+Cluster 0,1 Prototipo: I_49 [25 objetos]Objetos: I_1 I_5 I_6 I_11 I_15 I_16 I_17 I_18 I_19 I_20 I_21 I_22 I_23 I_28 I_29 I_32 I_33 I_34 I_37 I_38 I_41 I_44 I_45 I_47 I_49 
+Cluster 1,0 Prototipo: I_79 [41 objetos]Objetos: I_59 I_66 I_75 I_76 I_77 I_52 I_55 I_57 I_64 I_71 I_86 I_92 I_98 I_134 I_139 I_127 I_128 I_150 I_62 I_67 I_72 I_74 I_79 I_96 I_124 I_56 I_65 I_84 I_85 I_89 I_97 I_102 I_122 I_135 I_143 I_73 I_100 I_115 I_147 I_104 I_112 
+Cluster 1,1 Prototipo: I_13 [10 objetos]Objetos: I_42 I_26 I_2 I_13 I_46 I_9 I_14 I_39 I_35 I_10 
+Cluster 2,0 Prototipo: I_140 [37 objetos]Objetos: I_78 I_101 I_103 I_105 I_106 I_108 I_109 I_110 I_111 I_113 I_116 I_117 I_118 I_121 I_125 I_126 I_129 I_130 I_131 I_132 I_133 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 I_119 I_123 I_136 I_51 I_53 I_87 
+Cluster 2,1 Prototipo: I_90 [22 objetos]Objetos: I_90 I_91 I_95 I_107 I_54 I_58 I_60 I_61 I_68 I_70 I_80 I_81 I_82 I_83 I_93 I_94 I_99 I_63 I_88 I_120 I_69 I_114 
+
+Critério de adequação (energia): 91.896188077
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	15	 25	 0	 10	 0	 0	 50
+2	0	 0	 27	 0	 4	 19	 50
+3	0	 0	 14	 0	 33	 3	 50
+Total	[15 25 41 10 37 22]
+Corrected Rand index: 0.5477576034
+
+F-measure(P,Q): 0.672897983243
+OERC: 0.14
+
+#####################################
+Repetição do experimento: 61
+
+Cluster 0,0 Prototipo: I_121 [28 objetos]Objetos: I_149 I_118 I_132 I_137 I_101 I_106 I_110 I_111 I_116 I_121 I_125 I_126 I_136 I_141 I_142 I_144 I_145 I_103 I_140 I_146 I_105 I_113 I_123 I_108 I_119 I_131 I_130 I_51 
+Cluster 0,1 Prototipo: I_127 [47 objetos]Objetos: I_52 I_53 I_55 I_59 I_62 I_64 I_66 I_73 I_74 I_75 I_76 I_77 I_78 I_79 I_84 I_87 I_92 I_98 I_102 I_104 I_109 I_112 I_114 I_115 I_117 I_122 I_124 I_127 I_128 I_129 I_133 I_134 I_135 I_138 I_139 I_143 I_147 I_148 I_150 I_71 I_57 I_86 I_67 I_72 I_85 I_89 I_96 
+Cluster 1,0 Prototipo: I_8 [21 objetos]Objetos: I_24 I_27 I_32 I_44 I_8 I_40 I_29 I_25 I_7 I_12 I_18 I_21 I_41 I_50 I_1 I_28 I_37 I_36 I_38 I_5 I_23 
+Cluster 1,1 Prototipo: I_90 [25 objetos]Objetos: I_60 I_61 I_65 I_68 I_70 I_80 I_81 I_82 I_83 I_100 I_54 I_56 I_58 I_63 I_90 I_91 I_93 I_94 I_95 I_99 I_107 I_88 I_120 I_69 I_97 
+Cluster 2,0 Prototipo: I_6 [13 objetos]Objetos: I_6 I_11 I_15 I_16 I_17 I_19 I_20 I_22 I_33 I_34 I_45 I_47 I_49 
+Cluster 2,1 Prototipo: I_4 [16 objetos]Objetos: I_42 I_26 I_2 I_9 I_46 I_4 I_10 I_13 I_14 I_31 I_35 I_39 I_43 I_48 I_3 I_30 
+
+Critério de adequação (energia): 89.571983971
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 21	 0	 13	 16	 50
+2	1	 26	 0	 23	 0	 0	 50
+3	27	 21	 0	 2	 0	 0	 50
+Total	[28 47 21 25 13 16]
+Corrected Rand index: 0.529955480294
+
+F-measure(P,Q): 0.632396773805
+OERC: 0.16
+
+#####################################
+Repetição do experimento: 62
+
+Cluster 0,0 Prototipo: I_79 [35 objetos]Objetos: I_55 I_73 I_84 I_102 I_122 I_124 I_127 I_134 I_135 I_143 I_147 I_56 I_62 I_64 I_67 I_72 I_74 I_79 I_85 I_89 I_92 I_96 I_97 I_98 I_100 I_139 I_150 I_75 I_59 I_65 I_77 I_115 I_128 I_104 I_112 
+Cluster 0,1 Prototipo: I_140 [34 objetos]Objetos: I_118 I_126 I_130 I_78 I_103 I_106 I_108 I_110 I_119 I_121 I_123 I_125 I_131 I_136 I_140 I_113 I_117 I_141 I_142 I_144 I_145 I_101 I_105 I_111 I_116 I_137 I_138 I_146 I_148 I_149 I_109 I_129 I_133 I_132 
+Cluster 1,0 Prototipo: I_90 [22 objetos]Objetos: I_58 I_80 I_94 I_99 I_54 I_61 I_63 I_70 I_81 I_82 I_90 I_60 I_69 I_88 I_91 I_93 I_107 I_120 I_68 I_83 I_95 I_114 
+Cluster 1,1 Prototipo: I_52 [9 objetos]Objetos: I_57 I_86 I_52 I_66 I_51 I_87 I_76 I_53 I_71 
+Cluster 2,0 Prototipo: I_31 [24 objetos]Objetos: I_2 I_3 I_4 I_9 I_10 I_13 I_14 I_26 I_30 I_31 I_35 I_39 I_42 I_43 I_46 I_48 I_36 I_24 I_50 I_7 I_8 I_12 I_25 I_27 
+Cluster 2,1 Prototipo: I_49 [26 objetos]Objetos: I_6 I_15 I_16 I_17 I_19 I_33 I_34 I_11 I_20 I_37 I_45 I_47 I_49 I_22 I_5 I_38 I_1 I_18 I_21 I_23 I_28 I_29 I_32 I_41 I_44 I_40 
+
+Critério de adequação (energia): 89.697780328
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 0	 0	 24	 26	 50
+2	21	 1	 19	 9	 0	 0	 50
+3	14	 33	 3	 0	 0	 0	 50
+Total	[35 34 22  9 24 26]
+Corrected Rand index: 0.575539555016
+
+F-measure(P,Q): 0.665900863269
+OERC: 0.12
+
+#####################################
+Repetição do experimento: 63
+
+Cluster 0,0 Prototipo: I_140 [37 objetos]Objetos: I_51 I_53 I_78 I_87 I_101 I_103 I_105 I_106 I_108 I_111 I_113 I_116 I_117 I_119 I_121 I_123 I_125 I_126 I_130 I_131 I_136 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 I_110 I_118 I_132 I_109 I_129 I_133 
+Cluster 0,1 Prototipo: I_79 [41 objetos]Objetos: I_73 I_147 I_102 I_143 I_122 I_84 I_135 I_62 I_79 I_98 I_64 I_75 I_92 I_134 I_124 I_55 I_59 I_71 I_115 I_127 I_128 I_139 I_150 I_52 I_76 I_77 I_86 I_104 I_112 I_66 I_67 I_85 I_72 I_74 I_89 I_96 I_97 I_56 I_57 I_65 I_100 
+Cluster 1,0 Prototipo: I_90 [22 objetos]Objetos: I_99 I_58 I_94 I_60 I_61 I_68 I_70 I_80 I_81 I_82 I_54 I_63 I_83 I_90 I_91 I_93 I_95 I_107 I_88 I_120 I_69 I_114 
+Cluster 1,1 Prototipo: I_8 [21 objetos]Objetos: I_8 I_24 I_27 I_32 I_44 I_40 I_25 I_29 I_12 I_21 I_7 I_18 I_41 I_50 I_1 I_28 I_37 I_36 I_38 I_5 I_23 
+Cluster 2,0 Prototipo: I_4 [16 objetos]Objetos: I_2 I_26 I_13 I_9 I_46 I_14 I_39 I_42 I_4 I_31 I_35 I_10 I_30 I_48 I_3 I_43 
+Cluster 2,1 Prototipo: I_6 [13 objetos]Objetos: I_6 I_16 I_17 I_20 I_22 I_45 I_11 I_15 I_19 I_33 I_34 I_47 I_49 
+
+Critério de adequação (energia): 86.225731486
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 0	 21	 16	 13	 50
+2	4	 27	 19	 0	 0	 0	 50
+3	33	 14	 3	 0	 0	 0	 50
+Total	[37 41 22 21 16 13]
+Corrected Rand index: 0.537241365031
+
+F-measure(P,Q): 0.647858859612
+OERC: 0.14
+
+#####################################
+Repetição do experimento: 64
+
+Cluster 0,0 Prototipo: I_90 [22 objetos]Objetos: I_54 I_58 I_60 I_61 I_63 I_69 I_70 I_80 I_81 I_82 I_83 I_88 I_90 I_91 I_93 I_94 I_95 I_99 I_107 I_114 I_120 I_68 
+Cluster 0,1 Prototipo: I_140 [34 objetos]Objetos: I_101 I_103 I_106 I_110 I_119 I_121 I_123 I_125 I_126 I_136 I_137 I_141 I_142 I_144 I_145 I_149 I_118 I_108 I_140 I_113 I_116 I_130 I_131 I_146 I_105 I_111 I_148 I_78 I_109 I_117 I_129 I_132 I_133 I_138 
+Cluster 1,0 Prototipo: I_79 [35 objetos]Objetos: I_96 I_62 I_67 I_89 I_85 I_65 I_79 I_97 I_64 I_122 I_56 I_98 I_100 I_150 I_134 I_72 I_74 I_84 I_102 I_143 I_55 I_73 I_75 I_77 I_92 I_115 I_124 I_127 I_128 I_135 I_139 I_147 I_104 I_112 I_59 
+Cluster 1,1 Prototipo: I_52 [9 objetos]Objetos: I_86 I_71 I_52 I_57 I_76 I_66 I_51 I_87 I_53 
+Cluster 2,0 Prototipo: I_49 [26 objetos]Objetos: I_1 I_5 I_6 I_11 I_15 I_16 I_17 I_18 I_19 I_20 I_21 I_22 I_28 I_33 I_34 I_37 I_38 I_41 I_45 I_47 I_49 I_44 I_32 I_23 I_29 I_40 
+Cluster 2,1 Prototipo: I_31 [24 objetos]Objetos: I_24 I_42 I_2 I_3 I_4 I_9 I_10 I_13 I_14 I_26 I_31 I_35 I_36 I_39 I_46 I_30 I_43 I_48 I_50 I_7 I_12 I_25 I_8 I_27 
+
+Critério de adequação (energia): 89.697780328
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 0	 0	 26	 24	 50
+2	19	 1	 21	 9	 0	 0	 50
+3	3	 33	 14	 0	 0	 0	 50
+Total	[22 34 35  9 26 24]
+Corrected Rand index: 0.575539555016
+
+F-measure(P,Q): 0.665900863269
+OERC: 0.12
+
+#####################################
+Repetição do experimento: 65
+
+Cluster 0,0 Prototipo: I_140 [35 objetos]Objetos: I_51 I_53 I_101 I_103 I_106 I_108 I_110 I_111 I_113 I_116 I_118 I_119 I_121 I_123 I_125 I_126 I_130 I_131 I_132 I_136 I_137 I_140 I_141 I_142 I_144 I_145 I_149 I_146 I_105 I_87 I_57 I_78 I_138 I_148 I_117 
+Cluster 0,1 Prototipo: I_127 [40 objetos]Objetos: I_55 I_59 I_62 I_64 I_67 I_71 I_72 I_73 I_74 I_75 I_76 I_77 I_79 I_84 I_85 I_89 I_92 I_96 I_98 I_102 I_104 I_109 I_112 I_114 I_115 I_122 I_124 I_127 I_128 I_129 I_133 I_134 I_135 I_139 I_143 I_147 I_150 I_52 I_66 I_86 
+Cluster 1,0 Prototipo: I_8 [21 objetos]Objetos: I_24 I_27 I_32 I_44 I_8 I_40 I_29 I_25 I_7 I_12 I_18 I_21 I_41 I_50 I_1 I_28 I_37 I_36 I_38 I_5 I_23 
+Cluster 1,1 Prototipo: I_90 [25 objetos]Objetos: I_61 I_54 I_58 I_60 I_63 I_68 I_70 I_80 I_81 I_82 I_90 I_91 I_94 I_99 I_107 I_65 I_83 I_93 I_95 I_100 I_88 I_120 I_69 I_56 I_97 
+Cluster 2,0 Prototipo: I_6 [13 objetos]Objetos: I_6 I_11 I_15 I_16 I_17 I_20 I_22 I_33 I_34 I_45 I_47 I_49 I_19 
+Cluster 2,1 Prototipo: I_4 [16 objetos]Objetos: I_42 I_2 I_4 I_9 I_10 I_13 I_14 I_26 I_31 I_35 I_39 I_46 I_3 I_30 I_43 I_48 
+
+Critério de adequação (energia): 88.975403962
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 21	 0	 13	 16	 50
+2	5	 22	 0	 23	 0	 0	 50
+3	30	 18	 0	 2	 0	 0	 50
+Total	[35 40 21 25 13 16]
+Corrected Rand index: 0.517888140625
+
+F-measure(P,Q): 0.636921660683
+OERC: 0.166666666667
+
+#####################################
+Repetição do experimento: 66
+
+Cluster 0,0 Prototipo: I_140 [35 objetos]Objetos: I_51 I_53 I_78 I_87 I_101 I_103 I_105 I_106 I_108 I_110 I_111 I_113 I_116 I_118 I_119 I_121 I_123 I_125 I_126 I_130 I_131 I_132 I_136 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 I_57 I_117 
+Cluster 0,1 Prototipo: I_127 [28 objetos]Objetos: I_55 I_59 I_73 I_75 I_76 I_77 I_84 I_102 I_109 I_112 I_114 I_115 I_122 I_124 I_127 I_128 I_134 I_135 I_139 I_143 I_147 I_150 I_71 I_104 I_129 I_52 I_66 I_133 
+Cluster 1,0 Prototipo: I_81 [18 objetos]Objetos: I_99 I_58 I_94 I_80 I_82 I_70 I_81 I_61 I_90 I_91 I_93 I_54 I_63 I_107 I_69 I_88 I_120 I_42 
+Cluster 1,1 Prototipo: I_97 [20 objetos]Objetos: I_56 I_62 I_65 I_67 I_72 I_85 I_89 I_96 I_97 I_100 I_83 I_86 I_95 I_74 I_98 I_60 I_68 I_92 I_79 I_64 
+Cluster 2,0 Prototipo: I_50 [36 objetos]Objetos: I_1 I_2 I_3 I_4 I_5 I_7 I_8 I_9 I_10 I_12 I_13 I_14 I_18 I_21 I_23 I_24 I_25 I_26 I_27 I_28 I_29 I_30 I_31 I_32 I_35 I_36 I_37 I_38 I_39 I_40 I_41 I_43 I_44 I_46 I_48 I_50 
+Cluster 2,1 Prototipo: I_6 [13 objetos]Objetos: I_16 I_34 I_6 I_15 I_17 I_33 I_11 I_19 I_20 I_22 I_45 I_47 I_49 
+
+Critério de adequação (energia): 88.162997411
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 1	 0	 36	 13	 50
+2	5	 10	 15	 20	 0	 0	 50
+3	30	 18	 2	 0	 0	 0	 50
+Total	[35 28 18 20 36 13]
+Corrected Rand index: 0.577996126421
+
+F-measure(P,Q): 0.704840075565
+OERC: 0.12
+
+#####################################
+Repetição do experimento: 67
+
+Cluster 0,0 Prototipo: I_31 [24 objetos]Objetos: I_2 I_3 I_4 I_7 I_9 I_10 I_12 I_13 I_14 I_24 I_25 I_26 I_27 I_30 I_31 I_35 I_36 I_39 I_43 I_46 I_48 I_50 I_42 I_8 
+Cluster 0,1 Prototipo: I_49 [26 objetos]Objetos: I_6 I_11 I_15 I_17 I_19 I_20 I_22 I_33 I_34 I_45 I_47 I_49 I_37 I_5 I_28 I_38 I_1 I_18 I_21 I_32 I_41 I_44 I_16 I_29 I_23 I_40 
+Cluster 1,0 Prototipo: I_79 [35 objetos]Objetos: I_65 I_89 I_62 I_67 I_85 I_96 I_64 I_79 I_97 I_122 I_56 I_92 I_98 I_100 I_150 I_134 I_72 I_74 I_84 I_102 I_143 I_55 I_59 I_73 I_75 I_77 I_115 I_124 I_127 I_128 I_135 I_139 I_147 I_104 I_112 
+Cluster 1,1 Prototipo: I_52 [9 objetos]Objetos: I_52 I_57 I_71 I_86 I_66 I_76 I_51 I_87 I_53 
+Cluster 2,0 Prototipo: I_90 [22 objetos]Objetos: I_63 I_69 I_88 I_93 I_114 I_120 I_54 I_70 I_80 I_81 I_82 I_90 I_91 I_95 I_107 I_60 I_61 I_94 I_58 I_99 I_68 I_83 
+Cluster 2,1 Prototipo: I_140 [34 objetos]Objetos: I_78 I_101 I_103 I_106 I_110 I_111 I_113 I_116 I_117 I_118 I_121 I_125 I_126 I_130 I_132 I_136 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 I_105 I_108 I_119 I_123 I_129 I_131 I_133 I_109 
+
+Critério de adequação (energia): 89.697780328
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	24	 26	 0	 0	 0	 0	 50
+2	0	 0	 21	 9	 19	 1	 50
+3	0	 0	 14	 0	 3	 33	 50
+Total	[24 26 35  9 22 34]
+Corrected Rand index: 0.575539555016
+
+F-measure(P,Q): 0.665900863269
+OERC: 0.12
+
+#####################################
+Repetição do experimento: 68
+
+Cluster 0,0 Prototipo: I_8 [49 objetos]Objetos: I_1 I_2 I_3 I_4 I_5 I_6 I_7 I_8 I_9 I_10 I_11 I_12 I_13 I_14 I_15 I_16 I_17 I_18 I_19 I_20 I_21 I_22 I_23 I_24 I_25 I_26 I_27 I_28 I_29 I_30 I_31 I_32 I_33 I_34 I_35 I_36 I_37 I_38 I_39 I_40 I_41 I_43 I_44 I_45 I_46 I_47 I_48 I_49 I_50 
+Cluster 0,1 Prototipo: I_8 [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: I_97 [20 objetos]Objetos: I_65 I_67 I_85 I_89 I_96 I_97 I_86 I_56 I_100 I_62 I_95 I_83 I_60 I_68 I_72 I_74 I_92 I_98 I_79 I_64 
+Cluster 1,1 Prototipo: I_81 [18 objetos]Objetos: I_42 I_54 I_58 I_61 I_70 I_80 I_81 I_82 I_90 I_94 I_99 I_63 I_91 I_93 I_107 I_88 I_120 I_69 
+Cluster 2,0 Prototipo: I_140 [35 objetos]Objetos: I_53 I_57 I_78 I_87 I_101 I_103 I_105 I_106 I_108 I_110 I_111 I_113 I_116 I_117 I_118 I_119 I_121 I_123 I_125 I_126 I_130 I_131 I_136 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 I_51 I_132 
+Cluster 2,1 Prototipo: I_127 [28 objetos]Objetos: I_55 I_73 I_75 I_84 I_102 I_114 I_115 I_122 I_124 I_127 I_135 I_143 I_147 I_109 I_112 I_134 I_59 I_71 I_76 I_77 I_104 I_128 I_139 I_150 I_52 I_129 I_133 I_66 
+
+Critério de adequação (energia): 110.481515652
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	1,0	1,1	2,0	2,1	Total
+
+1	49	 0	 1	 0	 0	 50
+2	0	 20	 15	 5	 10	 50
+3	0	 0	 2	 30	 18	 50
+Total	[49 20 18 35 28]
+Corrected Rand index: 0.685908860676
+
+F-measure(P,Q): 0.75573663809
+OERC: 0.12
+
+#####################################
+Repetição do experimento: 69
+
+Cluster 0,0 Prototipo: I_127 [24 objetos]Objetos: I_129 I_133 I_104 I_71 I_128 I_112 I_124 I_127 I_115 I_134 I_139 I_150 I_147 I_102 I_122 I_143 I_84 I_114 I_135 I_73 I_109 I_117 I_138 I_148 
+Cluster 0,1 Prototipo: I_81 [18 objetos]Objetos: I_54 I_63 I_69 I_70 I_81 I_88 I_90 I_91 I_93 I_107 I_120 I_58 I_61 I_80 I_82 I_94 I_99 I_42 
+Cluster 1,0 Prototipo: I_121 [27 objetos]Objetos: I_137 I_149 I_101 I_110 I_111 I_116 I_118 I_121 I_125 I_132 I_141 I_142 I_144 I_145 I_103 I_105 I_106 I_126 I_136 I_140 I_146 I_113 I_108 I_123 I_130 I_131 I_119 
+Cluster 1,1 Prototipo: I_97 [18 objetos]Objetos: I_56 I_62 I_65 I_67 I_85 I_89 I_96 I_97 I_100 I_95 I_72 I_60 I_68 I_74 I_83 I_92 I_79 I_64 
+Cluster 2,0 Prototipo: I_76 [14 objetos]Objetos: I_51 I_52 I_53 I_57 I_59 I_66 I_75 I_76 I_77 I_87 I_98 I_78 I_86 I_55 
+Cluster 2,1 Prototipo: I_8 [49 objetos]Objetos: I_1 I_2 I_3 I_4 I_5 I_6 I_7 I_8 I_9 I_10 I_11 I_12 I_13 I_14 I_15 I_16 I_17 I_18 I_19 I_20 I_21 I_22 I_23 I_24 I_25 I_26 I_27 I_28 I_29 I_30 I_31 I_32 I_33 I_34 I_35 I_36 I_37 I_38 I_39 I_40 I_41 I_43 I_44 I_45 I_46 I_47 I_48 I_49 I_50 
+
+Critério de adequação (energia): 102.251085401
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 1	 0	 0	 0	 49	 50
+2	3	 15	 0	 18	 14	 0	 50
+3	21	 2	 27	 0	 0	 0	 50
+Total	[24 18 27 18 14 49]
+Corrected Rand index: 0.711489352913
+
+F-measure(P,Q): 0.740203151968
+OERC: 0.04
+
+#####################################
+Repetição do experimento: 70
+
+Cluster 0,0 Prototipo: I_140 [33 objetos]Objetos: I_51 I_53 I_78 I_101 I_103 I_105 I_106 I_108 I_110 I_111 I_113 I_116 I_117 I_118 I_119 I_121 I_123 I_125 I_126 I_130 I_131 I_132 I_136 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 
+Cluster 0,1 Prototipo: I_127 [22 objetos]Objetos: I_73 I_84 I_102 I_114 I_122 I_135 I_143 I_147 I_134 I_124 I_55 I_115 I_127 I_128 I_139 I_150 I_77 I_104 I_109 I_112 I_129 I_133 
+Cluster 1,0 Prototipo: I_81 [22 objetos]Objetos: I_99 I_58 I_94 I_60 I_80 I_68 I_82 I_83 I_70 I_81 I_61 I_90 I_91 I_93 I_95 I_54 I_63 I_107 I_120 I_88 I_42 I_69 
+Cluster 1,1 Prototipo: I_92 [24 objetos]Objetos: I_62 I_65 I_67 I_74 I_85 I_86 I_89 I_92 I_96 I_97 I_98 I_52 I_56 I_57 I_64 I_71 I_72 I_75 I_79 I_100 I_66 I_76 I_59 I_87 
+Cluster 2,0 Prototipo: I_8 [49 objetos]Objetos: I_2 I_3 I_4 I_9 I_10 I_13 I_14 I_26 I_30 I_31 I_35 I_39 I_43 I_46 I_48 I_7 I_36 I_50 I_33 I_12 I_15 I_16 I_19 I_22 I_23 I_32 I_34 I_37 I_6 I_11 I_17 I_20 I_21 I_24 I_25 I_27 I_38 I_41 I_44 I_45 I_47 I_49 I_1 I_5 I_18 I_28 I_29 I_40 I_8 
+Cluster 2,1 Prototipo: I_8 [0 objetos]Objetos: 
+
+Critério de adequação (energia): 109.231959816
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	Total
+
+1	0	 0	 1	 0	 49	 50
+2	3	 4	 19	 24	 0	 50
+3	30	 18	 2	 0	 0	 50
+Total	[33 22 22 24 49]
+Corrected Rand index: 0.72617295259
+
+F-measure(P,Q): 0.787146401604
+OERC: 0.0666666666667
+
+#####################################
+Repetição do experimento: 71
+
+Cluster 0,0 Prototipo: I_140 [35 objetos]Objetos: I_119 I_123 I_131 I_146 I_103 I_105 I_108 I_113 I_136 I_148 I_51 I_53 I_78 I_87 I_101 I_106 I_110 I_111 I_116 I_118 I_121 I_125 I_126 I_130 I_132 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_149 I_117 I_57 
+Cluster 0,1 Prototipo: I_127 [28 objetos]Objetos: I_73 I_84 I_102 I_114 I_122 I_143 I_147 I_135 I_75 I_134 I_55 I_59 I_109 I_112 I_124 I_127 I_150 I_76 I_77 I_104 I_115 I_128 I_129 I_139 I_52 I_66 I_71 I_133 
+Cluster 1,0 Prototipo: I_81 [17 objetos]Objetos: I_99 I_58 I_80 I_94 I_61 I_70 I_81 I_82 I_90 I_91 I_54 I_93 I_107 I_63 I_69 I_88 I_120 
+Cluster 1,1 Prototipo: I_97 [20 objetos]Objetos: I_62 I_65 I_67 I_85 I_89 I_96 I_97 I_86 I_100 I_56 I_72 I_68 I_74 I_83 I_92 I_95 I_98 I_60 I_79 I_64 
+Cluster 2,0 Prototipo: I_31 [24 objetos]Objetos: I_4 I_30 I_31 I_35 I_43 I_2 I_3 I_9 I_10 I_13 I_14 I_26 I_36 I_39 I_46 I_48 I_24 I_42 I_50 I_7 I_12 I_25 I_8 I_27 
+Cluster 2,1 Prototipo: I_49 [26 objetos]Objetos: I_1 I_5 I_6 I_11 I_15 I_16 I_17 I_18 I_19 I_20 I_21 I_22 I_23 I_28 I_29 I_32 I_33 I_34 I_37 I_38 I_40 I_41 I_44 I_45 I_47 I_49 
+
+Critério de adequação (energia): 87.418091721
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 0	 0	 24	 26	 50
+2	5	 10	 15	 20	 0	 0	 50
+3	30	 18	 2	 0	 0	 0	 50
+Total	[35 28 17 20 24 26]
+Corrected Rand index: 0.552466353346
+
+F-measure(P,Q): 0.653840483562
+OERC: 0.113333333333
+
+#####################################
+Repetição do experimento: 72
+
+Cluster 0,0 Prototipo: I_127 [28 objetos]Objetos: I_55 I_59 I_77 I_109 I_112 I_124 I_134 I_147 I_73 I_84 I_135 I_75 I_114 I_127 I_102 I_143 I_122 I_150 I_115 I_128 I_139 I_71 I_104 I_76 I_129 I_133 I_52 I_66 
+Cluster 0,1 Prototipo: I_140 [35 objetos]Objetos: I_57 I_101 I_105 I_110 I_111 I_116 I_118 I_121 I_125 I_132 I_137 I_138 I_141 I_142 I_144 I_145 I_146 I_148 I_149 I_140 I_113 I_51 I_53 I_78 I_87 I_103 I_106 I_108 I_117 I_126 I_130 I_136 I_119 I_123 I_131 
+Cluster 1,0 Prototipo: I_81 [17 objetos]Objetos: I_61 I_58 I_70 I_80 I_81 I_82 I_94 I_99 I_54 I_63 I_90 I_91 I_93 I_107 I_88 I_120 I_69 
+Cluster 1,1 Prototipo: I_97 [20 objetos]Objetos: I_65 I_89 I_96 I_85 I_97 I_67 I_86 I_56 I_100 I_62 I_72 I_74 I_92 I_95 I_98 I_60 I_68 I_79 I_83 I_64 
+Cluster 2,0 Prototipo: I_31 [24 objetos]Objetos: I_42 I_2 I_4 I_9 I_10 I_13 I_14 I_26 I_31 I_35 I_39 I_46 I_3 I_30 I_36 I_43 I_48 I_50 I_24 I_7 I_12 I_25 I_8 I_27 
+Cluster 2,1 Prototipo: I_49 [26 objetos]Objetos: I_1 I_5 I_6 I_11 I_15 I_16 I_17 I_18 I_19 I_20 I_21 I_22 I_23 I_28 I_29 I_32 I_33 I_34 I_37 I_38 I_40 I_41 I_44 I_45 I_47 I_49 
+
+Critério de adequação (energia): 87.418091721
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 0	 0	 24	 26	 50
+2	10	 5	 15	 20	 0	 0	 50
+3	18	 30	 2	 0	 0	 0	 50
+Total	[28 35 17 20 24 26]
+Corrected Rand index: 0.552466353346
+
+F-measure(P,Q): 0.653840483562
+OERC: 0.113333333333
+
+#####################################
+Repetição do experimento: 73
+
+Cluster 0,0 Prototipo: I_81 [19 objetos]Objetos: I_54 I_58 I_60 I_68 I_70 I_80 I_81 I_82 I_90 I_91 I_93 I_94 I_99 I_107 I_61 I_63 I_69 I_88 I_120 
+Cluster 0,1 Prototipo: I_49 [26 objetos]Objetos: I_1 I_5 I_11 I_18 I_20 I_21 I_22 I_23 I_28 I_29 I_32 I_37 I_38 I_40 I_41 I_44 I_45 I_47 I_49 I_6 I_15 I_16 I_17 I_19 I_33 I_34 
+Cluster 1,0 Prototipo: I_79 [38 objetos]Objetos: I_62 I_72 I_74 I_98 I_79 I_56 I_67 I_85 I_89 I_96 I_97 I_100 I_64 I_92 I_75 I_73 I_84 I_135 I_114 I_122 I_102 I_143 I_65 I_59 I_134 I_55 I_86 I_139 I_150 I_76 I_71 I_127 I_83 I_95 I_52 I_124 I_147 I_128 
+Cluster 1,1 Prototipo: I_31 [24 objetos]Objetos: I_24 I_26 I_46 I_2 I_3 I_4 I_9 I_10 I_13 I_14 I_30 I_31 I_35 I_36 I_39 I_43 I_48 I_7 I_12 I_25 I_42 I_50 I_27 I_8 
+Cluster 2,0 Prototipo: I_148 [27 objetos]Objetos: I_57 I_66 I_77 I_78 I_87 I_101 I_104 I_105 I_111 I_115 I_116 I_117 I_137 I_138 I_140 I_144 I_145 I_148 I_149 I_109 I_112 I_113 I_129 I_133 I_141 I_142 I_146 
+Cluster 2,1 Prototipo: I_126 [16 objetos]Objetos: I_118 I_132 I_110 I_136 I_106 I_123 I_126 I_130 I_108 I_119 I_51 I_131 I_103 I_121 I_125 I_53 
+
+Critério de adequação (energia): 86.636298667
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 26	 0	 24	 0	 0	 50
+2	17	 0	 26	 0	 5	 2	 50
+3	2	 0	 12	 0	 22	 14	 50
+Total	[19 26 38 24 27 16]
+Corrected Rand index: 0.520192121354
+
+F-measure(P,Q): 0.615516062884
+OERC: 0.14
+
+#####################################
+Repetição do experimento: 74
+
+Cluster 0,0 Prototipo: I_6 [13 objetos]Objetos: I_6 I_11 I_15 I_16 I_17 I_19 I_20 I_22 I_33 I_34 I_45 I_47 I_49 
+Cluster 0,1 Prototipo: I_4 [16 objetos]Objetos: I_42 I_2 I_4 I_9 I_10 I_13 I_14 I_26 I_31 I_35 I_39 I_46 I_30 I_43 I_48 I_3 
+Cluster 1,0 Prototipo: I_8 [21 objetos]Objetos: I_27 I_8 I_24 I_32 I_44 I_40 I_29 I_25 I_7 I_12 I_18 I_21 I_41 I_50 I_1 I_28 I_37 I_36 I_38 I_5 I_23 
+Cluster 1,1 Prototipo: I_90 [25 objetos]Objetos: I_58 I_60 I_61 I_70 I_80 I_81 I_82 I_94 I_99 I_107 I_54 I_63 I_68 I_90 I_91 I_65 I_83 I_93 I_95 I_100 I_88 I_69 I_120 I_56 I_97 
+Cluster 2,0 Prototipo: I_140 [35 objetos]Objetos: I_101 I_106 I_110 I_118 I_125 I_126 I_132 I_137 I_145 I_149 I_51 I_103 I_111 I_116 I_121 I_123 I_136 I_140 I_141 I_142 I_144 I_53 I_108 I_113 I_119 I_130 I_131 I_146 I_105 I_87 I_78 I_138 I_57 I_148 I_117 
+Cluster 2,1 Prototipo: I_127 [40 objetos]Objetos: I_52 I_55 I_59 I_62 I_64 I_66 I_67 I_71 I_72 I_73 I_74 I_75 I_76 I_77 I_79 I_84 I_85 I_89 I_92 I_96 I_98 I_102 I_104 I_109 I_112 I_114 I_115 I_122 I_124 I_127 I_128 I_129 I_133 I_134 I_135 I_139 I_143 I_147 I_150 I_86 
+
+Critério de adequação (energia): 88.975403962
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	13	 16	 21	 0	 0	 0	 50
+2	0	 0	 0	 23	 5	 22	 50
+3	0	 0	 0	 2	 30	 18	 50
+Total	[13 16 21 25 35 40]
+Corrected Rand index: 0.517888140625
+
+F-measure(P,Q): 0.636921660683
+OERC: 0.166666666667
+
+#####################################
+Repetição do experimento: 75
+
+Cluster 0,0 Prototipo: I_31 [24 objetos]Objetos: I_42 I_2 I_3 I_4 I_9 I_10 I_13 I_14 I_26 I_30 I_31 I_35 I_39 I_43 I_46 I_48 I_24 I_36 I_50 I_7 I_12 I_25 I_8 I_27 
+Cluster 0,1 Prototipo: I_49 [26 objetos]Objetos: I_1 I_5 I_6 I_11 I_17 I_18 I_19 I_20 I_21 I_22 I_23 I_28 I_29 I_32 I_33 I_37 I_38 I_40 I_41 I_44 I_45 I_47 I_49 I_15 I_16 I_34 
+Cluster 1,0 Prototipo: I_52 [9 objetos]Objetos: I_66 I_52 I_76 I_57 I_86 I_71 I_87 I_51 I_53 
+Cluster 1,1 Prototipo: I_79 [35 objetos]Objetos: I_62 I_89 I_96 I_67 I_85 I_98 I_64 I_65 I_79 I_97 I_56 I_100 I_122 I_150 I_134 I_72 I_74 I_84 I_102 I_143 I_55 I_73 I_75 I_77 I_92 I_115 I_124 I_127 I_128 I_135 I_139 I_147 I_104 I_112 I_59 
+Cluster 2,0 Prototipo: I_140 [34 objetos]Objetos: I_106 I_110 I_118 I_126 I_130 I_132 I_136 I_108 I_119 I_123 I_131 I_78 I_103 I_105 I_111 I_113 I_117 I_121 I_125 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_101 I_116 I_129 I_133 I_137 I_149 I_109 
+Cluster 2,1 Prototipo: I_90 [22 objetos]Objetos: I_54 I_58 I_60 I_61 I_63 I_69 I_70 I_80 I_81 I_82 I_83 I_88 I_90 I_91 I_93 I_94 I_95 I_107 I_114 I_120 I_99 I_68 
+
+Critério de adequação (energia): 89.697780328
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	24	 26	 0	 0	 0	 0	 50
+2	0	 0	 9	 21	 1	 19	 50
+3	0	 0	 0	 14	 33	 3	 50
+Total	[24 26  9 35 34 22]
+Corrected Rand index: 0.575539555016
+
+F-measure(P,Q): 0.665900863269
+OERC: 0.12
+
+#####################################
+Repetição do experimento: 76
+
+Cluster 0,0 Prototipo: I_8 [49 objetos]Objetos: I_16 I_6 I_11 I_15 I_17 I_19 I_20 I_22 I_33 I_34 I_37 I_45 I_47 I_49 I_32 I_9 I_39 I_5 I_7 I_14 I_18 I_28 I_35 I_43 I_44 I_1 I_3 I_23 I_25 I_26 I_29 I_30 I_36 I_38 I_41 I_48 I_2 I_4 I_10 I_13 I_24 I_27 I_31 I_46 I_50 I_12 I_21 I_40 I_8 
+Cluster 0,1 Prototipo: I_8 [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: I_92 [25 objetos]Objetos: I_62 I_64 I_75 I_79 I_86 I_92 I_98 I_52 I_71 I_55 I_57 I_59 I_66 I_76 I_127 I_128 I_134 I_139 I_150 I_77 I_87 I_124 I_104 I_115 I_112 
+Cluster 1,1 Prototipo: I_56 [24 objetos]Objetos: I_65 I_85 I_89 I_96 I_97 I_56 I_67 I_100 I_68 I_72 I_83 I_102 I_122 I_143 I_74 I_84 I_95 I_135 I_60 I_73 I_91 I_114 I_93 I_147 
+Cluster 2,0 Prototipo: I_140 [36 objetos]Objetos: I_51 I_53 I_78 I_101 I_103 I_105 I_106 I_108 I_109 I_110 I_111 I_113 I_116 I_117 I_118 I_119 I_121 I_123 I_125 I_126 I_129 I_130 I_131 I_132 I_133 I_136 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_137 I_149 
+Cluster 2,1 Prototipo: I_81 [16 objetos]Objetos: I_58 I_80 I_94 I_99 I_82 I_61 I_70 I_54 I_63 I_81 I_90 I_107 I_88 I_69 I_120 I_42 
+
+Critério de adequação (energia): 115.338194949
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	1,0	1,1	2,0	2,1	Total
+
+1	49	 0	 0	 0	 1	 50
+2	0	 16	 18	 3	 13	 50
+3	0	 9	 6	 33	 2	 50
+Total	[49 25 24 36 16]
+Corrected Rand index: 0.683179527813
+
+F-measure(P,Q): 0.747942445617
+OERC: 0.14
+
+#####################################
+Repetição do experimento: 77
+
+Cluster 0,0 Prototipo: I_95 [42 objetos]Objetos: I_58 I_65 I_94 I_99 I_60 I_80 I_89 I_96 I_85 I_82 I_97 I_68 I_61 I_100 I_54 I_56 I_62 I_67 I_70 I_72 I_81 I_83 I_90 I_91 I_93 I_95 I_107 I_63 I_88 I_69 I_120 I_74 I_114 I_79 I_98 I_122 I_73 I_84 I_102 I_143 I_135 I_64 
+Cluster 0,1 Prototipo: I_117 [37 objetos]Objetos: I_51 I_52 I_53 I_55 I_57 I_59 I_66 I_71 I_75 I_76 I_77 I_78 I_87 I_92 I_104 I_105 I_108 I_109 I_111 I_112 I_113 I_115 I_117 I_124 I_127 I_128 I_129 I_130 I_131 I_133 I_134 I_138 I_139 I_147 I_148 I_150 I_86 
+Cluster 1,0 Prototipo: I_4 [16 objetos]Objetos: I_42 I_9 I_26 I_2 I_4 I_13 I_14 I_31 I_35 I_39 I_46 I_10 I_3 I_30 I_43 I_48 
+Cluster 1,1 Prototipo: I_121 [21 objetos]Objetos: I_118 I_132 I_110 I_137 I_149 I_145 I_101 I_125 I_121 I_144 I_116 I_136 I_126 I_141 I_142 I_106 I_103 I_119 I_123 I_140 I_146 
+Cluster 2,0 Prototipo: I_6 [13 objetos]Objetos: I_6 I_11 I_15 I_17 I_19 I_20 I_22 I_33 I_34 I_45 I_47 I_49 I_16 
+Cluster 2,1 Prototipo: I_8 [21 objetos]Objetos: I_24 I_32 I_27 I_29 I_50 I_40 I_44 I_7 I_8 I_12 I_25 I_36 I_41 I_21 I_18 I_23 I_1 I_28 I_37 I_5 I_38 
+
+Critério de adequação (energia): 93.946547244
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 16	 0	 13	 21	 50
+2	35	 15	 0	 0	 0	 0	 50
+3	7	 22	 0	 21	 0	 0	 50
+Total	[42 37 16 21 13 21]
+Corrected Rand index: 0.539518886183
+
+F-measure(P,Q): 0.647989385589
+OERC: 0.146666666667
+
+#####################################
+Repetição do experimento: 78
+
+Cluster 0,0 Prototipo: I_140 [35 objetos]Objetos: I_53 I_78 I_87 I_101 I_103 I_105 I_106 I_108 I_110 I_111 I_113 I_116 I_118 I_119 I_121 I_123 I_125 I_126 I_130 I_131 I_132 I_136 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 I_51 I_117 I_57 
+Cluster 0,1 Prototipo: I_127 [28 objetos]Objetos: I_73 I_102 I_114 I_122 I_143 I_84 I_135 I_147 I_55 I_59 I_75 I_109 I_112 I_124 I_127 I_134 I_150 I_76 I_77 I_104 I_115 I_128 I_129 I_139 I_52 I_66 I_71 I_133 
+Cluster 1,0 Prototipo: I_81 [17 objetos]Objetos: I_99 I_58 I_94 I_61 I_70 I_80 I_81 I_82 I_90 I_91 I_54 I_93 I_107 I_63 I_69 I_88 I_120 
+Cluster 1,1 Prototipo: I_97 [20 objetos]Objetos: I_62 I_65 I_67 I_85 I_89 I_96 I_97 I_86 I_100 I_56 I_72 I_68 I_74 I_83 I_92 I_95 I_98 I_60 I_79 I_64 
+Cluster 2,0 Prototipo: I_31 [24 objetos]Objetos: I_4 I_24 I_31 I_35 I_10 I_2 I_3 I_9 I_13 I_14 I_26 I_30 I_36 I_39 I_43 I_46 I_48 I_42 I_50 I_7 I_12 I_25 I_8 I_27 
+Cluster 2,1 Prototipo: I_49 [26 objetos]Objetos: I_1 I_5 I_6 I_11 I_15 I_16 I_17 I_18 I_19 I_20 I_21 I_22 I_23 I_28 I_29 I_32 I_33 I_34 I_37 I_38 I_40 I_41 I_44 I_45 I_47 I_49 
+
+Critério de adequação (energia): 87.418091721
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 0	 0	 24	 26	 50
+2	5	 10	 15	 20	 0	 0	 50
+3	30	 18	 2	 0	 0	 0	 50
+Total	[35 28 17 20 24 26]
+Corrected Rand index: 0.552466353346
+
+F-measure(P,Q): 0.653840483562
+OERC: 0.113333333333
+
+#####################################
+Repetição do experimento: 79
+
+Cluster 0,0 Prototipo: I_140 [33 objetos]Objetos: I_51 I_53 I_78 I_103 I_105 I_106 I_108 I_111 I_113 I_116 I_117 I_118 I_119 I_121 I_123 I_125 I_126 I_130 I_131 I_132 I_136 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_101 I_110 I_137 I_149 
+Cluster 0,1 Prototipo: I_127 [22 objetos]Objetos: I_73 I_135 I_84 I_114 I_102 I_122 I_143 I_139 I_150 I_55 I_127 I_134 I_77 I_124 I_128 I_147 I_115 I_104 I_112 I_109 I_129 I_133 
+Cluster 1,0 Prototipo: I_92 [23 objetos]Objetos: I_86 I_89 I_65 I_57 I_85 I_96 I_71 I_67 I_52 I_56 I_62 I_64 I_66 I_72 I_74 I_75 I_79 I_92 I_97 I_98 I_76 I_59 I_87 
+Cluster 1,1 Prototipo: I_90 [22 objetos]Objetos: I_99 I_58 I_94 I_80 I_60 I_61 I_82 I_54 I_63 I_68 I_70 I_81 I_90 I_91 I_93 I_69 I_107 I_120 I_88 I_83 I_95 I_100 
+Cluster 2,0 Prototipo: I_49 [26 objetos]Objetos: I_6 I_15 I_16 I_17 I_19 I_33 I_34 I_45 I_11 I_20 I_22 I_47 I_49 I_37 I_5 I_28 I_38 I_1 I_18 I_21 I_23 I_29 I_32 I_41 I_44 I_40 
+Cluster 2,1 Prototipo: I_31 [24 objetos]Objetos: I_2 I_3 I_4 I_7 I_8 I_9 I_10 I_12 I_13 I_14 I_24 I_25 I_26 I_30 I_31 I_35 I_36 I_39 I_42 I_43 I_46 I_48 I_50 I_27 
+
+Critério de adequação (energia): 86.188753368
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 0	 0	 26	 24	 50
+2	3	 4	 23	 20	 0	 0	 50
+3	30	 18	 0	 2	 0	 0	 50
+Total	[33 22 23 22 26 24]
+Corrected Rand index: 0.595035319356
+
+F-measure(P,Q): 0.679079692961
+OERC: 0.06
+
+#####################################
+Repetição do experimento: 80
+
+Cluster 0,0 Prototipo: I_6 [13 objetos]Objetos: I_15 I_16 I_19 I_34 I_6 I_11 I_17 I_20 I_33 I_45 I_47 I_49 I_22 
+Cluster 0,1 Prototipo: I_50 [37 objetos]Objetos: I_1 I_2 I_3 I_4 I_5 I_7 I_8 I_9 I_10 I_12 I_13 I_14 I_18 I_21 I_23 I_24 I_25 I_26 I_27 I_28 I_29 I_30 I_31 I_32 I_35 I_36 I_37 I_38 I_39 I_40 I_41 I_42 I_43 I_44 I_46 I_48 I_50 
+Cluster 1,0 Prototipo: I_52 [9 objetos]Objetos: I_51 I_52 I_57 I_66 I_76 I_86 I_87 I_71 I_53 
+Cluster 1,1 Prototipo: I_79 [35 objetos]Objetos: I_65 I_89 I_62 I_67 I_85 I_96 I_64 I_79 I_97 I_122 I_56 I_92 I_98 I_100 I_150 I_134 I_72 I_74 I_84 I_102 I_143 I_55 I_59 I_73 I_75 I_77 I_115 I_124 I_127 I_128 I_135 I_139 I_147 I_104 I_112 
+Cluster 2,0 Prototipo: I_140 [34 objetos]Objetos: I_78 I_101 I_103 I_105 I_106 I_108 I_109 I_110 I_111 I_113 I_116 I_117 I_118 I_119 I_121 I_123 I_125 I_126 I_129 I_130 I_131 I_133 I_136 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 I_132 
+Cluster 2,1 Prototipo: I_90 [22 objetos]Objetos: I_60 I_70 I_80 I_90 I_91 I_93 I_95 I_107 I_114 I_54 I_63 I_69 I_81 I_82 I_88 I_120 I_61 I_94 I_58 I_99 I_68 I_83 
+
+Critério de adequação (energia): 91.434248641
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	13	 37	 0	 0	 0	 0	 50
+2	0	 0	 9	 21	 1	 19	 50
+3	0	 0	 0	 14	 33	 3	 50
+Total	[13 37  9 35 34 22]
+Corrected Rand index: 0.610407382793
+
+F-measure(P,Q): 0.721355592045
+OERC: 0.12
+
+#####################################
+Repetição do experimento: 81
+
+Cluster 0,0 Prototipo: I_6 [11 objetos]Objetos: I_16 I_6 I_15 I_17 I_19 I_33 I_34 I_45 I_11 I_20 I_47 
+Cluster 0,1 Prototipo: I_4 [17 objetos]Objetos: I_2 I_3 I_4 I_9 I_10 I_13 I_14 I_26 I_30 I_31 I_35 I_36 I_39 I_43 I_46 I_48 I_42 
+Cluster 1,0 Prototipo: I_79 [41 objetos]Objetos: I_66 I_52 I_57 I_59 I_75 I_76 I_86 I_55 I_71 I_77 I_92 I_134 I_64 I_98 I_139 I_128 I_127 I_150 I_124 I_62 I_67 I_72 I_74 I_79 I_96 I_104 I_115 I_56 I_65 I_84 I_85 I_89 I_97 I_102 I_122 I_135 I_143 I_73 I_100 I_112 I_147 
+Cluster 1,1 Prototipo: I_18 [22 objetos]Objetos: I_24 I_44 I_32 I_27 I_1 I_5 I_8 I_18 I_21 I_28 I_29 I_37 I_38 I_40 I_41 I_7 I_12 I_22 I_23 I_25 I_50 I_49 
+Cluster 2,0 Prototipo: I_140 [37 objetos]Objetos: I_78 I_101 I_103 I_105 I_106 I_108 I_109 I_110 I_111 I_113 I_116 I_117 I_118 I_119 I_121 I_123 I_125 I_126 I_129 I_130 I_131 I_133 I_136 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 I_132 I_51 I_53 I_87 
+Cluster 2,1 Prototipo: I_90 [22 objetos]Objetos: I_58 I_60 I_61 I_68 I_70 I_80 I_81 I_82 I_83 I_90 I_91 I_94 I_95 I_99 I_107 I_54 I_93 I_63 I_88 I_120 I_69 I_114 
+
+Critério de adequação (energia): 86.14755531
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	11	 17	 0	 22	 0	 0	 50
+2	0	 0	 27	 0	 4	 19	 50
+3	0	 0	 14	 0	 33	 3	 50
+Total	[11 17 41 22 37 22]
+Corrected Rand index: 0.540763659754
+
+F-measure(P,Q): 0.654379464724
+OERC: 0.14
+
+#####################################
+Repetição do experimento: 82
+
+Cluster 0,0 Prototipo: I_49 [26 objetos]Objetos: I_1 I_5 I_6 I_11 I_15 I_16 I_17 I_18 I_19 I_20 I_21 I_22 I_23 I_28 I_29 I_32 I_33 I_34 I_37 I_38 I_40 I_41 I_44 I_45 I_47 I_49 
+Cluster 0,1 Prototipo: I_31 [24 objetos]Objetos: I_46 I_26 I_2 I_3 I_4 I_9 I_10 I_13 I_14 I_30 I_31 I_35 I_36 I_39 I_42 I_43 I_48 I_50 I_7 I_12 I_24 I_25 I_8 I_27 
+Cluster 1,0 Prototipo: I_90 [22 objetos]Objetos: I_58 I_99 I_94 I_61 I_80 I_82 I_54 I_63 I_70 I_81 I_90 I_68 I_60 I_91 I_93 I_88 I_107 I_69 I_120 I_83 I_95 I_114 
+Cluster 1,1 Prototipo: I_125 [14 objetos]Objetos: I_110 I_118 I_101 I_132 I_137 I_149 I_125 I_145 I_116 I_111 I_144 I_121 I_126 I_57 
+Cluster 2,0 Prototipo: I_79 [38 objetos]Objetos: I_52 I_55 I_56 I_59 I_62 I_64 I_67 I_71 I_72 I_73 I_74 I_75 I_76 I_79 I_84 I_85 I_86 I_89 I_92 I_97 I_98 I_100 I_102 I_122 I_124 I_127 I_128 I_134 I_135 I_139 I_143 I_147 I_150 I_96 I_115 I_66 I_77 I_65 
+Cluster 2,1 Prototipo: I_113 [26 objetos]Objetos: I_103 I_105 I_106 I_108 I_109 I_113 I_119 I_123 I_129 I_130 I_131 I_133 I_136 I_140 I_141 I_142 I_146 I_148 I_51 I_53 I_78 I_87 I_117 I_138 I_104 I_112 
+
+Critério de adequação (energia): 87.205406184
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	26	 24	 0	 0	 0	 0	 50
+2	0	 0	 19	 1	 26	 4	 50
+3	0	 0	 3	 13	 12	 22	 50
+Total	[26 24 22 14 38 26]
+Corrected Rand index: 0.526484165527
+
+F-measure(P,Q): 0.618022328549
+OERC: 0.133333333333
+
+#####################################
+Repetição do experimento: 83
+
+Cluster 0,0 Prototipo: I_140 [34 objetos]Objetos: I_78 I_101 I_103 I_105 I_106 I_108 I_109 I_110 I_111 I_113 I_116 I_117 I_118 I_119 I_121 I_123 I_125 I_126 I_129 I_130 I_131 I_132 I_133 I_136 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 
+Cluster 0,1 Prototipo: I_90 [22 objetos]Objetos: I_54 I_60 I_61 I_63 I_69 I_70 I_80 I_81 I_82 I_88 I_90 I_91 I_93 I_94 I_95 I_107 I_114 I_120 I_58 I_99 I_68 I_83 
+Cluster 1,0 Prototipo: I_52 [9 objetos]Objetos: I_52 I_57 I_71 I_86 I_66 I_51 I_76 I_87 I_53 
+Cluster 1,1 Prototipo: I_79 [35 objetos]Objetos: I_65 I_89 I_62 I_67 I_85 I_96 I_64 I_79 I_97 I_98 I_122 I_56 I_92 I_100 I_150 I_134 I_72 I_74 I_84 I_102 I_143 I_55 I_59 I_73 I_75 I_77 I_115 I_124 I_127 I_128 I_135 I_139 I_147 I_104 I_112 
+Cluster 2,0 Prototipo: I_6 [13 objetos]Objetos: I_16 I_6 I_15 I_17 I_33 I_34 I_11 I_19 I_20 I_22 I_45 I_47 I_49 
+Cluster 2,1 Prototipo: I_50 [37 objetos]Objetos: I_1 I_2 I_3 I_4 I_7 I_8 I_9 I_10 I_12 I_13 I_14 I_18 I_21 I_23 I_24 I_25 I_26 I_27 I_28 I_29 I_30 I_31 I_32 I_35 I_36 I_37 I_39 I_40 I_41 I_42 I_43 I_44 I_46 I_48 I_50 I_5 I_38 
+
+Critério de adequação (energia): 91.434248641
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 0	 0	 13	 37	 50
+2	1	 19	 9	 21	 0	 0	 50
+3	33	 3	 0	 14	 0	 0	 50
+Total	[34 22  9 35 13 37]
+Corrected Rand index: 0.610407382793
+
+F-measure(P,Q): 0.721355592045
+OERC: 0.12
+
+#####################################
+Repetição do experimento: 84
+
+Cluster 0,0 Prototipo: I_31 [24 objetos]Objetos: I_2 I_3 I_4 I_7 I_8 I_9 I_10 I_12 I_13 I_14 I_24 I_25 I_26 I_27 I_30 I_31 I_35 I_36 I_39 I_43 I_46 I_48 I_50 I_42 
+Cluster 0,1 Prototipo: I_49 [26 objetos]Objetos: I_15 I_16 I_19 I_6 I_11 I_17 I_20 I_33 I_34 I_45 I_47 I_22 I_49 I_5 I_23 I_38 I_18 I_28 I_37 I_44 I_1 I_21 I_29 I_32 I_41 I_40 
+Cluster 1,0 Prototipo: I_90 [22 objetos]Objetos: I_58 I_99 I_94 I_61 I_60 I_80 I_82 I_81 I_54 I_63 I_68 I_70 I_90 I_91 I_93 I_69 I_88 I_107 I_120 I_83 I_95 I_114 
+Cluster 1,1 Prototipo: I_76 [12 objetos]Objetos: I_59 I_66 I_77 I_51 I_52 I_53 I_57 I_75 I_76 I_87 I_55 I_78 
+Cluster 2,0 Prototipo: I_79 [33 objetos]Objetos: I_56 I_62 I_67 I_72 I_85 I_86 I_89 I_96 I_97 I_100 I_64 I_74 I_79 I_92 I_98 I_71 I_122 I_73 I_84 I_102 I_135 I_139 I_143 I_150 I_134 I_127 I_128 I_124 I_147 I_65 I_115 I_104 I_112 
+Cluster 2,1 Prototipo: I_140 [33 objetos]Objetos: I_101 I_103 I_105 I_106 I_108 I_110 I_111 I_113 I_116 I_117 I_118 I_119 I_121 I_123 I_125 I_126 I_129 I_130 I_131 I_133 I_136 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 I_132 I_109 
+
+Critério de adequação (energia): 89.060914702
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	24	 26	 0	 0	 0	 0	 50
+2	0	 0	 19	 12	 19	 0	 50
+3	0	 0	 3	 0	 14	 33	 50
+Total	[24 26 22 12 33 33]
+Corrected Rand index: 0.579499009547
+
+F-measure(P,Q): 0.669056342328
+OERC: 0.113333333333
+
+#####################################
+Repetição do experimento: 85
+
+Cluster 0,0 Prototipo: I_18 [22 objetos]Objetos: I_22 I_44 I_5 I_23 I_1 I_18 I_28 I_32 I_37 I_38 I_41 I_8 I_21 I_24 I_27 I_29 I_40 I_49 I_7 I_12 I_25 I_50 
+Cluster 0,1 Prototipo: I_4 [17 objetos]Objetos: I_2 I_3 I_4 I_9 I_10 I_13 I_14 I_26 I_30 I_31 I_35 I_36 I_39 I_43 I_46 I_48 I_42 
+Cluster 1,0 Prototipo: I_121 [28 objetos]Objetos: I_110 I_118 I_101 I_111 I_116 I_121 I_125 I_126 I_132 I_136 I_137 I_142 I_144 I_145 I_149 I_103 I_106 I_140 I_141 I_146 I_105 I_113 I_119 I_123 I_108 I_131 I_51 I_130 
+Cluster 1,1 Prototipo: I_6 [11 objetos]Objetos: I_16 I_6 I_15 I_17 I_19 I_33 I_34 I_20 I_45 I_47 I_11 
+Cluster 2,0 Prototipo: I_127 [47 objetos]Objetos: I_52 I_53 I_55 I_59 I_62 I_64 I_66 I_71 I_72 I_73 I_74 I_75 I_76 I_77 I_78 I_79 I_84 I_87 I_92 I_98 I_102 I_104 I_109 I_112 I_117 I_124 I_127 I_128 I_129 I_133 I_134 I_135 I_138 I_139 I_143 I_147 I_148 I_150 I_57 I_114 I_115 I_122 I_86 I_67 I_85 I_89 I_96 
+Cluster 2,1 Prototipo: I_90 [25 objetos]Objetos: I_58 I_60 I_94 I_99 I_107 I_54 I_56 I_61 I_63 I_65 I_68 I_70 I_80 I_81 I_82 I_83 I_90 I_91 I_93 I_95 I_100 I_69 I_120 I_88 I_97 
+
+Critério de adequação (energia): 89.493807795
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	22	 17	 0	 11	 0	 0	 50
+2	0	 0	 1	 0	 26	 23	 50
+3	0	 0	 27	 0	 21	 2	 50
+Total	[22 17 28 11 47 25]
+Corrected Rand index: 0.533469931097
+
+F-measure(P,Q): 0.638917378917
+OERC: 0.16
+
+#####################################
+Repetição do experimento: 86
+
+Cluster 0,0 Prototipo: I_6 [13 objetos]Objetos: I_15 I_16 I_6 I_11 I_17 I_19 I_20 I_33 I_34 I_45 I_47 I_49 I_22 
+Cluster 0,1 Prototipo: I_50 [36 objetos]Objetos: I_1 I_2 I_3 I_4 I_5 I_7 I_8 I_9 I_10 I_12 I_13 I_14 I_18 I_21 I_23 I_24 I_25 I_26 I_27 I_28 I_29 I_30 I_31 I_32 I_35 I_36 I_37 I_38 I_39 I_40 I_41 I_43 I_44 I_46 I_48 I_50 
+Cluster 1,0 Prototipo: I_126 [16 objetos]Objetos: I_118 I_132 I_51 I_110 I_126 I_106 I_130 I_123 I_136 I_103 I_108 I_119 I_131 I_121 I_53 I_125 
+Cluster 1,1 Prototipo: I_94 [10 objetos]Objetos: I_99 I_58 I_61 I_94 I_42 I_81 I_82 I_54 I_63 I_107 
+Cluster 2,0 Prototipo: I_148 [40 objetos]Objetos: I_78 I_101 I_104 I_105 I_109 I_111 I_112 I_113 I_116 I_117 I_129 I_133 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 I_87 I_57 I_66 I_76 I_77 I_115 I_52 I_55 I_59 I_71 I_86 I_124 I_127 I_128 I_139 I_147 I_150 I_134 
+Cluster 2,1 Prototipo: I_56 [35 objetos]Objetos: I_56 I_62 I_64 I_67 I_68 I_69 I_72 I_73 I_74 I_75 I_79 I_83 I_84 I_85 I_88 I_91 I_92 I_93 I_95 I_96 I_97 I_98 I_100 I_102 I_114 I_120 I_122 I_135 I_143 I_70 I_80 I_90 I_65 I_89 I_60 
+
+Critério de adequação (energia): 92.585375711
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	13	 36	 0	 1	 0	 0	 50
+2	0	 0	 2	 8	 11	 29	 50
+3	0	 0	 14	 1	 29	 6	 50
+Total	[13 36 16 10 40 35]
+Corrected Rand index: 0.577410083466
+
+F-measure(P,Q): 0.721335562649
+OERC: 0.14
+
+#####################################
+Repetição do experimento: 87
+
+Cluster 0,0 Prototipo: I_81 [20 objetos]Objetos: I_54 I_58 I_60 I_61 I_63 I_68 I_70 I_80 I_81 I_82 I_90 I_91 I_93 I_94 I_99 I_42 I_107 I_69 I_88 I_120 
+Cluster 0,1 Prototipo: I_50 [36 objetos]Objetos: I_1 I_2 I_3 I_4 I_5 I_7 I_8 I_9 I_10 I_12 I_13 I_14 I_18 I_21 I_23 I_24 I_25 I_26 I_27 I_28 I_29 I_30 I_31 I_32 I_35 I_36 I_37 I_38 I_39 I_40 I_41 I_43 I_44 I_46 I_48 I_50 
+Cluster 1,0 Prototipo: I_79 [35 objetos]Objetos: I_85 I_56 I_62 I_67 I_72 I_74 I_79 I_89 I_96 I_97 I_98 I_100 I_64 I_92 I_75 I_73 I_84 I_135 I_65 I_114 I_122 I_102 I_143 I_86 I_139 I_71 I_150 I_115 I_127 I_128 I_134 I_147 I_83 I_124 I_95 
+Cluster 1,1 Prototipo: I_6 [13 objetos]Objetos: I_15 I_16 I_19 I_6 I_17 I_33 I_34 I_11 I_20 I_22 I_45 I_47 I_49 
+Cluster 2,0 Prototipo: I_78 [23 objetos]Objetos: I_51 I_52 I_53 I_55 I_57 I_66 I_76 I_77 I_78 I_87 I_104 I_108 I_109 I_111 I_112 I_117 I_129 I_130 I_131 I_133 I_138 I_148 I_59 
+Cluster 2,1 Prototipo: I_121 [23 objetos]Objetos: I_118 I_101 I_110 I_121 I_125 I_132 I_137 I_144 I_145 I_149 I_136 I_116 I_126 I_141 I_142 I_106 I_103 I_119 I_123 I_140 I_146 I_105 I_113 
+
+Critério de adequação (energia): 86.857487436
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	1	 36	 0	 13	 0	 0	 50
+2	17	 0	 22	 0	 11	 0	 50
+3	2	 0	 13	 0	 12	 23	 50
+Total	[20 36 35 13 23 23]
+Corrected Rand index: 0.538597095069
+
+F-measure(P,Q): 0.66166444915
+OERC: 0.18
+
+#####################################
+Repetição do experimento: 88
+
+Cluster 0,0 Prototipo: I_140 [35 objetos]Objetos: I_51 I_53 I_57 I_78 I_87 I_101 I_103 I_105 I_106 I_108 I_110 I_111 I_113 I_116 I_117 I_118 I_119 I_121 I_123 I_125 I_126 I_130 I_131 I_132 I_136 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 
+Cluster 0,1 Prototipo: I_127 [28 objetos]Objetos: I_55 I_59 I_73 I_75 I_76 I_77 I_84 I_102 I_114 I_115 I_122 I_124 I_127 I_135 I_143 I_147 I_52 I_71 I_104 I_109 I_112 I_128 I_134 I_139 I_150 I_129 I_133 I_66 
+Cluster 1,0 Prototipo: I_97 [20 objetos]Objetos: I_65 I_85 I_89 I_96 I_97 I_67 I_86 I_56 I_100 I_62 I_72 I_74 I_92 I_95 I_98 I_60 I_68 I_79 I_83 I_64 
+Cluster 1,1 Prototipo: I_81 [17 objetos]Objetos: I_70 I_82 I_54 I_58 I_61 I_63 I_80 I_81 I_90 I_91 I_93 I_94 I_99 I_107 I_88 I_120 I_69 
+Cluster 2,0 Prototipo: I_49 [26 objetos]Objetos: I_1 I_5 I_6 I_11 I_15 I_17 I_18 I_19 I_20 I_21 I_22 I_23 I_28 I_29 I_32 I_33 I_34 I_37 I_38 I_40 I_41 I_44 I_45 I_47 I_49 I_16 
+Cluster 2,1 Prototipo: I_31 [24 objetos]Objetos: I_2 I_9 I_26 I_42 I_46 I_13 I_39 I_31 I_35 I_4 I_10 I_14 I_30 I_43 I_48 I_3 I_36 I_24 I_50 I_7 I_12 I_25 I_8 I_27 
+
+Critério de adequação (energia): 87.418091721
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 0	 0	 26	 24	 50
+2	5	 10	 20	 15	 0	 0	 50
+3	30	 18	 0	 2	 0	 0	 50
+Total	[35 28 20 17 26 24]
+Corrected Rand index: 0.552466353346
+
+F-measure(P,Q): 0.653840483562
+OERC: 0.113333333333
+
+#####################################
+Repetição do experimento: 89
+
+Cluster 0,0 Prototipo: I_6 [13 objetos]Objetos: I_6 I_11 I_15 I_16 I_17 I_19 I_20 I_22 I_33 I_34 I_45 I_47 I_49 
+Cluster 0,1 Prototipo: I_4 [16 objetos]Objetos: I_42 I_2 I_9 I_26 I_46 I_3 I_4 I_10 I_13 I_14 I_30 I_31 I_35 I_39 I_43 I_48 
+Cluster 1,0 Prototipo: I_8 [21 objetos]Objetos: I_27 I_24 I_32 I_44 I_8 I_40 I_29 I_25 I_7 I_12 I_18 I_21 I_41 I_50 I_1 I_28 I_37 I_36 I_38 I_5 I_23 
+Cluster 1,1 Prototipo: I_90 [25 objetos]Objetos: I_58 I_60 I_61 I_65 I_68 I_70 I_80 I_81 I_82 I_94 I_99 I_54 I_63 I_83 I_90 I_91 I_93 I_95 I_107 I_100 I_88 I_120 I_69 I_56 I_97 
+Cluster 2,0 Prototipo: I_140 [35 objetos]Objetos: I_101 I_106 I_108 I_110 I_118 I_121 I_123 I_125 I_126 I_130 I_132 I_136 I_137 I_144 I_145 I_149 I_51 I_53 I_103 I_111 I_113 I_116 I_119 I_131 I_140 I_141 I_142 I_146 I_105 I_87 I_78 I_138 I_57 I_148 I_117 
+Cluster 2,1 Prototipo: I_127 [40 objetos]Objetos: I_52 I_55 I_59 I_62 I_64 I_66 I_67 I_71 I_72 I_73 I_74 I_75 I_76 I_77 I_79 I_84 I_85 I_86 I_89 I_92 I_96 I_98 I_102 I_104 I_109 I_112 I_114 I_115 I_122 I_124 I_127 I_128 I_129 I_133 I_134 I_135 I_139 I_143 I_147 I_150 
+
+Critério de adequação (energia): 88.975403962
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	13	 16	 21	 0	 0	 0	 50
+2	0	 0	 0	 23	 5	 22	 50
+3	0	 0	 0	 2	 30	 18	 50
+Total	[13 16 21 25 35 40]
+Corrected Rand index: 0.517888140625
+
+F-measure(P,Q): 0.636921660683
+OERC: 0.166666666667
+
+#####################################
+Repetição do experimento: 90
+
+Cluster 0,0 Prototipo: I_8 [49 objetos]Objetos: I_1 I_2 I_3 I_4 I_5 I_6 I_7 I_8 I_9 I_10 I_11 I_12 I_13 I_14 I_15 I_16 I_17 I_18 I_19 I_20 I_21 I_22 I_23 I_24 I_25 I_26 I_27 I_28 I_29 I_30 I_31 I_32 I_33 I_34 I_35 I_36 I_37 I_38 I_39 I_40 I_41 I_43 I_44 I_45 I_46 I_47 I_48 I_49 I_50 
+Cluster 0,1 Prototipo: I_8 [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: I_79 [38 objetos]Objetos: I_65 I_89 I_62 I_67 I_85 I_96 I_64 I_79 I_97 I_122 I_98 I_56 I_92 I_100 I_150 I_134 I_72 I_74 I_84 I_102 I_143 I_55 I_73 I_75 I_77 I_115 I_124 I_127 I_128 I_135 I_139 I_147 I_104 I_112 I_83 I_95 I_114 I_59 
+Cluster 1,1 Prototipo: I_52 [9 objetos]Objetos: I_52 I_57 I_71 I_86 I_66 I_76 I_51 I_87 I_53 
+Cluster 2,0 Prototipo: I_81 [20 objetos]Objetos: I_63 I_70 I_80 I_81 I_82 I_93 I_94 I_54 I_60 I_61 I_88 I_90 I_91 I_107 I_69 I_120 I_58 I_99 I_42 I_68 
+Cluster 2,1 Prototipo: I_140 [34 objetos]Objetos: I_78 I_101 I_103 I_105 I_106 I_108 I_109 I_110 I_111 I_113 I_116 I_117 I_118 I_119 I_121 I_123 I_125 I_126 I_129 I_130 I_131 I_132 I_133 I_136 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 
+
+Critério de adequação (energia): 112.838443826
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	1,0	1,1	2,0	2,1	Total
+
+1	49	 0	 0	 1	 0	 50
+2	0	 23	 9	 17	 1	 50
+3	0	 15	 0	 2	 33	 50
+Total	[49 38  9 20 34]
+Corrected Rand index: 0.70493612162
+
+F-measure(P,Q): 0.766113516114
+OERC: 0.126666666667
+
+#####################################
+Repetição do experimento: 91
+
+Cluster 0,0 Prototipo: I_140 [33 objetos]Objetos: I_101 I_103 I_105 I_106 I_108 I_109 I_110 I_111 I_113 I_116 I_117 I_118 I_119 I_121 I_123 I_125 I_126 I_129 I_131 I_133 I_136 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 I_132 I_130 
+Cluster 0,1 Prototipo: I_90 [22 objetos]Objetos: I_54 I_58 I_60 I_61 I_68 I_70 I_80 I_81 I_82 I_83 I_90 I_91 I_93 I_94 I_95 I_99 I_107 I_63 I_88 I_69 I_114 I_120 
+Cluster 1,0 Prototipo: I_76 [12 objetos]Objetos: I_52 I_59 I_66 I_76 I_51 I_57 I_87 I_75 I_55 I_77 I_53 I_78 
+Cluster 1,1 Prototipo: I_79 [33 objetos]Objetos: I_89 I_96 I_62 I_67 I_71 I_85 I_86 I_65 I_79 I_97 I_150 I_64 I_92 I_98 I_122 I_127 I_128 I_139 I_102 I_143 I_56 I_72 I_74 I_84 I_100 I_73 I_115 I_124 I_134 I_135 I_147 I_104 I_112 
+Cluster 2,0 Prototipo: I_31 [24 objetos]Objetos: I_42 I_2 I_4 I_9 I_10 I_13 I_14 I_26 I_31 I_35 I_39 I_46 I_3 I_30 I_36 I_43 I_48 I_24 I_50 I_7 I_12 I_25 I_8 I_27 
+Cluster 2,1 Prototipo: I_49 [26 objetos]Objetos: I_1 I_5 I_6 I_11 I_15 I_16 I_17 I_18 I_19 I_20 I_21 I_22 I_23 I_28 I_29 I_32 I_33 I_34 I_37 I_38 I_40 I_41 I_44 I_45 I_47 I_49 
+
+Critério de adequação (energia): 89.060914702
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 0	 0	 24	 26	 50
+2	0	 19	 12	 19	 0	 0	 50
+3	33	 3	 0	 14	 0	 0	 50
+Total	[33 22 12 33 24 26]
+Corrected Rand index: 0.579499009547
+
+F-measure(P,Q): 0.669056342328
+OERC: 0.113333333333
+
+#####################################
+Repetição do experimento: 92
+
+Cluster 0,0 Prototipo: I_140 [34 objetos]Objetos: I_103 I_106 I_108 I_110 I_113 I_118 I_121 I_123 I_126 I_130 I_131 I_132 I_133 I_136 I_140 I_141 I_142 I_144 I_105 I_146 I_145 I_78 I_101 I_117 I_125 I_148 I_51 I_53 I_116 I_137 I_111 I_138 I_149 I_119 
+Cluster 0,1 Prototipo: I_79 [29 objetos]Objetos: I_52 I_56 I_57 I_62 I_64 I_65 I_67 I_71 I_72 I_74 I_75 I_79 I_85 I_89 I_92 I_96 I_97 I_98 I_100 I_102 I_115 I_122 I_128 I_139 I_143 I_150 I_86 I_83 I_95 
+Cluster 1,0 Prototipo: I_134 [18 objetos]Objetos: I_109 I_59 I_73 I_77 I_104 I_112 I_135 I_147 I_55 I_124 I_134 I_84 I_76 I_127 I_66 I_129 I_87 I_114 
+Cluster 1,1 Prototipo: I_81 [20 objetos]Objetos: I_58 I_94 I_99 I_61 I_54 I_63 I_70 I_80 I_81 I_82 I_90 I_60 I_68 I_91 I_93 I_88 I_69 I_107 I_120 I_42 
+Cluster 2,0 Prototipo: I_6 [13 objetos]Objetos: I_16 I_6 I_11 I_15 I_17 I_19 I_20 I_22 I_33 I_34 I_45 I_47 I_49 
+Cluster 2,1 Prototipo: I_50 [36 objetos]Objetos: I_1 I_2 I_3 I_4 I_5 I_7 I_8 I_9 I_10 I_12 I_13 I_14 I_18 I_21 I_23 I_24 I_25 I_26 I_27 I_28 I_29 I_30 I_31 I_32 I_35 I_36 I_37 I_38 I_39 I_40 I_41 I_43 I_44 I_46 I_48 I_50 
+
+Critério de adequação (energia): 89.380100849
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 0	 1	 13	 36	 50
+2	3	 22	 8	 17	 0	 0	 50
+3	31	 7	 10	 2	 0	 0	 50
+Total	[34 29 18 20 13 36]
+Corrected Rand index: 0.575443513792
+
+F-measure(P,Q): 0.710755521912
+OERC: 0.14
+
+#####################################
+Repetição do experimento: 93
+
+Cluster 0,0 Prototipo: I_140 [33 objetos]Objetos: I_53 I_78 I_101 I_103 I_105 I_106 I_108 I_110 I_111 I_113 I_116 I_117 I_118 I_119 I_121 I_123 I_125 I_126 I_130 I_131 I_136 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 I_51 I_132 
+Cluster 0,1 Prototipo: I_81 [22 objetos]Objetos: I_54 I_63 I_93 I_107 I_69 I_88 I_90 I_91 I_95 I_120 I_61 I_68 I_70 I_81 I_82 I_83 I_58 I_60 I_80 I_94 I_99 I_42 
+Cluster 1,0 Prototipo: I_92 [24 objetos]Objetos: I_85 I_67 I_86 I_89 I_65 I_96 I_97 I_100 I_56 I_62 I_71 I_72 I_92 I_52 I_57 I_64 I_66 I_74 I_75 I_76 I_79 I_98 I_59 I_87 
+Cluster 1,1 Prototipo: I_127 [22 objetos]Objetos: I_122 I_55 I_84 I_102 I_134 I_135 I_139 I_143 I_150 I_124 I_127 I_128 I_147 I_73 I_77 I_112 I_115 I_104 I_109 I_114 I_129 I_133 
+Cluster 2,0 Prototipo: I_8 [49 objetos]Objetos: I_1 I_2 I_3 I_4 I_5 I_6 I_7 I_8 I_9 I_10 I_11 I_12 I_13 I_14 I_15 I_16 I_17 I_18 I_19 I_20 I_21 I_22 I_23 I_24 I_25 I_26 I_27 I_28 I_29 I_30 I_31 I_32 I_33 I_34 I_35 I_36 I_37 I_38 I_39 I_40 I_41 I_43 I_44 I_45 I_46 I_47 I_48 I_49 I_50 
+Cluster 2,1 Prototipo: I_8 [0 objetos]Objetos: 
+
+Critério de adequação (energia): 109.231959816
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	Total
+
+1	0	 1	 0	 0	 49	 50
+2	3	 19	 24	 4	 0	 50
+3	30	 2	 0	 18	 0	 50
+Total	[33 22 24 22 49]
+Corrected Rand index: 0.72617295259
+
+F-measure(P,Q): 0.787146401604
+OERC: 0.0666666666667
+
+#####################################
+Repetição do experimento: 94
+
+Cluster 0,0 Prototipo: I_8 [21 objetos]Objetos: I_24 I_36 I_7 I_8 I_12 I_25 I_27 I_40 I_50 I_32 I_44 I_29 I_18 I_21 I_41 I_1 I_28 I_37 I_38 I_5 I_23 
+Cluster 0,1 Prototipo: I_6 [13 objetos]Objetos: I_6 I_11 I_15 I_16 I_17 I_19 I_20 I_22 I_33 I_34 I_45 I_47 I_49 
+Cluster 1,0 Prototipo: I_103 [20 objetos]Objetos: I_103 I_106 I_108 I_110 I_113 I_118 I_119 I_121 I_123 I_126 I_130 I_131 I_132 I_136 I_140 I_141 I_142 I_144 I_145 I_146 
+Cluster 1,1 Prototipo: I_4 [16 objetos]Objetos: I_42 I_2 I_9 I_13 I_26 I_46 I_4 I_14 I_31 I_39 I_10 I_35 I_43 I_3 I_30 I_48 
+Cluster 2,0 Prototipo: I_117 [38 objetos]Objetos: I_51 I_52 I_53 I_55 I_57 I_59 I_66 I_71 I_76 I_77 I_78 I_86 I_87 I_101 I_104 I_105 I_109 I_111 I_112 I_115 I_116 I_117 I_124 I_127 I_128 I_129 I_133 I_134 I_137 I_138 I_139 I_147 I_148 I_149 I_150 I_75 I_92 I_125 
+Cluster 2,1 Prototipo: I_95 [42 objetos]Objetos: I_58 I_94 I_99 I_61 I_82 I_80 I_60 I_65 I_81 I_70 I_68 I_89 I_96 I_54 I_63 I_83 I_85 I_90 I_91 I_93 I_95 I_97 I_100 I_107 I_56 I_67 I_72 I_88 I_120 I_69 I_62 I_74 I_114 I_98 I_79 I_122 I_73 I_84 I_102 I_143 I_135 I_64 
+
+Critério de adequação (energia): 94.59155622
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	21	 13	 0	 16	 0	 0	 50
+2	0	 0	 0	 0	 15	 35	 50
+3	0	 0	 20	 0	 23	 7	 50
+Total	[21 13 20 16 38 42]
+Corrected Rand index: 0.538632845199
+
+F-measure(P,Q): 0.641282477474
+OERC: 0.146666666667
+
+#####################################
+Repetição do experimento: 95
+
+Cluster 0,0 Prototipo: I_140 [35 objetos]Objetos: I_51 I_53 I_78 I_87 I_101 I_103 I_105 I_106 I_108 I_110 I_111 I_113 I_116 I_118 I_119 I_121 I_123 I_125 I_126 I_130 I_131 I_132 I_136 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 I_117 I_57 
+Cluster 0,1 Prototipo: I_127 [28 objetos]Objetos: I_73 I_84 I_102 I_114 I_122 I_143 I_147 I_135 I_75 I_134 I_55 I_59 I_109 I_112 I_124 I_127 I_150 I_76 I_77 I_104 I_115 I_128 I_129 I_139 I_52 I_66 I_71 I_133 
+Cluster 1,0 Prototipo: I_81 [17 objetos]Objetos: I_99 I_58 I_80 I_94 I_61 I_70 I_81 I_82 I_90 I_91 I_54 I_93 I_107 I_63 I_69 I_88 I_120 
+Cluster 1,1 Prototipo: I_97 [20 objetos]Objetos: I_62 I_65 I_67 I_85 I_89 I_96 I_97 I_86 I_100 I_56 I_72 I_68 I_74 I_83 I_92 I_95 I_98 I_60 I_79 I_64 
+Cluster 2,0 Prototipo: I_31 [24 objetos]Objetos: I_4 I_30 I_31 I_35 I_43 I_2 I_3 I_9 I_10 I_13 I_14 I_26 I_36 I_39 I_46 I_48 I_24 I_42 I_50 I_7 I_12 I_25 I_8 I_27 
+Cluster 2,1 Prototipo: I_49 [26 objetos]Objetos: I_1 I_5 I_6 I_11 I_15 I_16 I_17 I_18 I_19 I_20 I_21 I_22 I_23 I_28 I_29 I_32 I_33 I_34 I_37 I_38 I_40 I_41 I_44 I_45 I_47 I_49 
+
+Critério de adequação (energia): 87.418091721
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 0	 0	 24	 26	 50
+2	5	 10	 15	 20	 0	 0	 50
+3	30	 18	 2	 0	 0	 0	 50
+Total	[35 28 17 20 24 26]
+Corrected Rand index: 0.552466353346
+
+F-measure(P,Q): 0.653840483562
+OERC: 0.113333333333
+
+#####################################
+Repetição do experimento: 96
+
+Cluster 0,0 Prototipo: I_140 [31 objetos]Objetos: I_78 I_101 I_103 I_105 I_106 I_108 I_111 I_113 I_116 I_117 I_119 I_121 I_123 I_125 I_126 I_130 I_131 I_136 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_110 I_118 I_132 I_137 I_149 
+Cluster 0,1 Prototipo: I_127 [29 objetos]Objetos: I_64 I_73 I_79 I_84 I_98 I_55 I_102 I_114 I_122 I_134 I_135 I_143 I_127 I_147 I_124 I_139 I_150 I_128 I_115 I_109 I_112 I_77 I_104 I_129 I_133 I_67 I_72 I_74 I_85 
+Cluster 1,0 Prototipo: I_52 [15 objetos]Objetos: I_57 I_86 I_52 I_66 I_76 I_87 I_71 I_51 I_92 I_53 I_59 I_75 I_89 I_96 I_62 
+Cluster 1,1 Prototipo: I_90 [25 objetos]Objetos: I_58 I_60 I_65 I_94 I_99 I_80 I_97 I_68 I_100 I_82 I_83 I_70 I_81 I_95 I_61 I_54 I_56 I_63 I_90 I_91 I_93 I_107 I_88 I_120 I_69 
+Cluster 2,0 Prototipo: I_31 [24 objetos]Objetos: I_42 I_2 I_3 I_4 I_9 I_10 I_13 I_14 I_26 I_30 I_31 I_35 I_36 I_39 I_43 I_46 I_48 I_24 I_50 I_7 I_12 I_25 I_8 I_27 
+Cluster 2,1 Prototipo: I_49 [26 objetos]Objetos: I_1 I_5 I_6 I_11 I_15 I_16 I_17 I_18 I_19 I_20 I_22 I_23 I_28 I_33 I_34 I_37 I_38 I_41 I_45 I_47 I_49 I_21 I_29 I_32 I_40 I_44 
+
+Critério de adequação (energia): 89.710216906
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 0	 0	 24	 26	 50
+2	1	 11	 15	 23	 0	 0	 50
+3	30	 18	 0	 2	 0	 0	 50
+Total	[31 29 15 25 24 26]
+Corrected Rand index: 0.577449554102
+
+F-measure(P,Q): 0.67942820013
+OERC: 0.0933333333333
+
+#####################################
+Repetição do experimento: 97
+
+Cluster 0,0 Prototipo: I_8 [49 objetos]Objetos: I_9 I_13 I_14 I_39 I_2 I_46 I_10 I_31 I_3 I_4 I_15 I_19 I_26 I_30 I_33 I_34 I_48 I_6 I_7 I_11 I_16 I_17 I_20 I_23 I_32 I_35 I_37 I_44 I_45 I_47 I_49 I_1 I_5 I_18 I_22 I_24 I_25 I_27 I_28 I_38 I_41 I_43 I_50 I_12 I_21 I_29 I_36 I_40 I_8 
+Cluster 0,1 Prototipo: I_8 [0 objetos]Objetos: 
+Cluster 1,0 Prototipo: I_81 [18 objetos]Objetos: I_58 I_99 I_80 I_94 I_82 I_70 I_81 I_61 I_90 I_91 I_93 I_54 I_63 I_107 I_42 I_69 I_88 I_120 
+Cluster 1,1 Prototipo: I_97 [20 objetos]Objetos: I_62 I_65 I_67 I_72 I_85 I_86 I_89 I_96 I_97 I_56 I_60 I_74 I_83 I_95 I_98 I_100 I_92 I_68 I_79 I_64 
+Cluster 2,0 Prototipo: I_140 [35 objetos]Objetos: I_78 I_103 I_105 I_108 I_113 I_117 I_119 I_123 I_131 I_138 I_141 I_146 I_148 I_51 I_53 I_57 I_87 I_101 I_106 I_110 I_111 I_116 I_121 I_125 I_126 I_130 I_136 I_137 I_140 I_142 I_144 I_145 I_149 I_118 I_132 
+Cluster 2,1 Prototipo: I_127 [28 objetos]Objetos: I_73 I_84 I_102 I_114 I_122 I_135 I_143 I_147 I_124 I_75 I_134 I_55 I_59 I_71 I_112 I_115 I_127 I_128 I_139 I_150 I_52 I_76 I_77 I_104 I_109 I_129 I_133 I_66 
+
+Critério de adequação (energia): 110.481515652
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	1,0	1,1	2,0	2,1	Total
+
+1	49	 1	 0	 0	 0	 50
+2	0	 15	 20	 5	 10	 50
+3	0	 2	 0	 30	 18	 50
+Total	[49 18 20 35 28]
+Corrected Rand index: 0.685908860676
+
+F-measure(P,Q): 0.75573663809
+OERC: 0.12
+
+#####################################
+Repetição do experimento: 98
+
+Cluster 0,0 Prototipo: I_140 [35 objetos]Objetos: I_51 I_53 I_57 I_78 I_87 I_101 I_103 I_105 I_106 I_108 I_110 I_111 I_113 I_116 I_117 I_119 I_121 I_123 I_125 I_126 I_130 I_131 I_136 I_137 I_138 I_140 I_141 I_142 I_144 I_145 I_146 I_148 I_149 I_118 I_132 
+Cluster 0,1 Prototipo: I_127 [28 objetos]Objetos: I_73 I_84 I_102 I_114 I_122 I_143 I_147 I_135 I_75 I_134 I_124 I_55 I_59 I_71 I_115 I_127 I_128 I_139 I_150 I_52 I_76 I_77 I_104 I_109 I_112 I_129 I_66 I_133 
+Cluster 1,0 Prototipo: I_81 [17 objetos]Objetos: I_99 I_58 I_80 I_94 I_54 I_61 I_70 I_81 I_82 I_90 I_91 I_93 I_63 I_107 I_69 I_88 I_120 
+Cluster 1,1 Prototipo: I_97 [20 objetos]Objetos: I_62 I_65 I_67 I_85 I_89 I_96 I_97 I_56 I_86 I_100 I_72 I_68 I_74 I_83 I_92 I_95 I_98 I_60 I_79 I_64 
+Cluster 2,0 Prototipo: I_31 [24 objetos]Objetos: I_42 I_2 I_4 I_9 I_10 I_13 I_14 I_26 I_31 I_35 I_39 I_46 I_3 I_30 I_43 I_48 I_36 I_50 I_7 I_8 I_12 I_24 I_25 I_27 
+Cluster 2,1 Prototipo: I_49 [26 objetos]Objetos: I_1 I_5 I_6 I_11 I_15 I_16 I_17 I_18 I_20 I_21 I_22 I_23 I_28 I_29 I_32 I_33 I_34 I_37 I_38 I_40 I_41 I_44 I_45 I_47 I_49 I_19 
+
+Critério de adequação (energia): 87.418091721
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	0	 0	 0	 0	 24	 26	 50
+2	5	 10	 15	 20	 0	 0	 50
+3	30	 18	 2	 0	 0	 0	 50
+Total	[35 28 17 20 24 26]
+Corrected Rand index: 0.552466353346
+
+F-measure(P,Q): 0.653840483562
+OERC: 0.113333333333
+
+#####################################
+Repetição do experimento: 99
+
+Cluster 0,0 Prototipo: I_6 [13 objetos]Objetos: I_6 I_11 I_15 I_17 I_19 I_20 I_22 I_33 I_34 I_45 I_47 I_49 I_16 
+Cluster 0,1 Prototipo: I_4 [16 objetos]Objetos: I_42 I_2 I_9 I_13 I_14 I_26 I_39 I_46 I_4 I_10 I_31 I_35 I_43 I_3 I_30 I_48 
+Cluster 1,0 Prototipo: I_8 [21 objetos]Objetos: I_24 I_27 I_25 I_32 I_44 I_8 I_12 I_40 I_7 I_29 I_41 I_50 I_21 I_18 I_1 I_28 I_37 I_36 I_38 I_5 I_23 
+Cluster 1,1 Prototipo: I_121 [21 objetos]Objetos: I_132 I_110 I_118 I_137 I_145 I_149 I_101 I_125 I_121 I_144 I_116 I_126 I_136 I_141 I_142 I_106 I_103 I_119 I_123 I_140 I_146 
+Cluster 2,0 Prototipo: I_95 [42 objetos]Objetos: I_58 I_65 I_94 I_99 I_60 I_89 I_96 I_80 I_85 I_61 I_82 I_97 I_68 I_54 I_56 I_67 I_70 I_72 I_81 I_83 I_90 I_91 I_93 I_95 I_100 I_107 I_63 I_69 I_88 I_120 I_62 I_74 I_114 I_79 I_98 I_122 I_73 I_84 I_102 I_143 I_135 I_64 
+Cluster 2,1 Prototipo: I_117 [37 objetos]Objetos: I_51 I_52 I_53 I_55 I_57 I_59 I_66 I_71 I_75 I_76 I_77 I_78 I_86 I_87 I_92 I_104 I_105 I_108 I_109 I_111 I_112 I_113 I_115 I_117 I_124 I_127 I_128 I_129 I_130 I_131 I_133 I_134 I_138 I_139 I_147 I_148 I_150 
+
+Critério de adequação (energia): 93.946547244
+=====================================
+	matriz de confusão
+Classes			 Clusters
+---------------------------------------
+	0,0	0,1	1,0	1,1	2,0	2,1	Total
+
+1	13	 16	 21	 0	 0	 0	 50
+2	0	 0	 0	 0	 35	 15	 50
+3	0	 0	 0	 21	 7	 22	 50
+Total	[13 16 21 21 42 37]
+Corrected Rand index: 0.539518886183
+
+F-measure(P,Q): 0.647989385589
+OERC: 0.146666666667
+
+Melhor repetição: 57
+Menor oerc: 69
